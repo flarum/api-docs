@@ -1,0 +1,21 @@
+{
+  "source": "../../../../flarum/js",
+  "destination": "./",
+  "package": "../../../package.json",
+  "title": "Flarum API",
+  "excludes": ["dist"],
+  "includeSource": false,
+  "lint": false,
+  "plugins": [
+    {
+      "name": "../../node_modules/esdoc-importpath-plugin/out/src/Plugin.js",
+      "option": {
+        "replaces": [
+          {"from": "js/forum/src/", "to": ""},
+          {"from": "js/admin/src/", "to": ""},
+          {"from": "js/lib/", "to": ""}
+        ]
+      }
+    }
+  ]
+}

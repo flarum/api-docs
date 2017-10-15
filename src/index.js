@@ -27,7 +27,7 @@ const createJSDoc = async (BRANCH) => {
     progress.step(`Documentation JS (${BRANCH})`).setTotal(4);
     await exec(`cd flarum && git checkout ${BRANCH} && git pull origin ${BRANCH}`);
     progress.addTick()
-    await exec(`cd docs/docs/js && mkdir -p ${BRANCH} && cat ../../esdoc.json > ${BRANCH}/esdoc.json && sudo cp ../../src/js-readme.md ${BRANCH}/README.md`);
+    await exec(`cd docs/docs/js && mkdir -p ${BRANCH} && cat ../../esdoc.json > ${BRANCH}/esdoc.json && cp ../../src/readme-js.md ${BRANCH}/README.md`);
     progress.addTick();
     await exec(`cd docs/docs/js/${BRANCH} && esdoc -c esdoc.json`);
     progress.addTick();
@@ -51,7 +51,7 @@ const createPHPDoc = async (BRANCH) => {
       handleError(e);
     });
     progress.addTick();
-    await exec(`cd docs && php sami.phar render sami-config.php --only-version=${BRANCH} --force -n`);
+    await exec(`cd docs && php sami.phar render sami-config.php --only-version=${BRANCH} --force -n -v`);
     progress.addTick();
   } catch (err) {
     handleError(err);
@@ -60,7 +60,7 @@ const createPHPDoc = async (BRANCH) => {
 
 const jsDocumentation = async () => {
   await createJSDoc(`master`);
-  await createJSDoc(`next-front`);
+  // await createJSDoc(`next-front`);
   await createJSDoc(`v0.1.0-beta`);
   await createJSDoc(`v0.1.0-beta.2`);
   await createJSDoc(`v0.1.0-beta.3`);
@@ -85,8 +85,8 @@ const phpDocumentation = async () => {
 }
 
 const main = async () => {
-  cli.info(`=> Creating Documentation: JavaScript`);
-  await jsDocumentation();
+  // cli.info(`=> Creating Documentation: JavaScript`);
+  // await jsDocumentation();
   cli.info(`=> Creating Documentation: PHP`);
   await phpDocumentation();
 }

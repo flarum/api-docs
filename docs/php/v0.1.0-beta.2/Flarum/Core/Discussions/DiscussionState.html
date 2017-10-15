@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Core\Discussions\DiscussionState | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Core_Discussions_DiscussionState" data-root-path="../../../">
+        <div id="content">
+  <nav id="flarum-header">
+  <h1 class="flarum-title">Flarum API</h1>
+  <ul>
+    <li><a href="http://flarum.org">Flarum</a></li>
+    <li><a href="https://discuss.flarum.org">Forum</a></li>
+    <li class="active"><a href="../../../index.html">PHP Docs</a></li>
+    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
+  </ul>
+
+  <ul class="socials">
+    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+  </ul>
+  <ul class="navbar-right">
+    <li class="version">
+      <a href="../../../../index.html">v0.1.0-beta.2</a>
+    </li>
+  </ul>
+</nav>
+
+  <nav id="site-nav" class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-elements">
+      <ul class="nav navbar-nav">
+        <li><a href="../../../classes.html">Classes</a></li>
+
+                <li><a href="../../../namespaces.html">Namespaces</a></li>
+                <li><a href="../../../interfaces.html">Interfaces</a></li>
+        <li><a href="../../../traits.html">Traits</a></li>
+        <li><a href="../../../doc-index.html">Index</a></li>
+        <li><a href="../../../search.html">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div id="left-column">
+    <div id="control-panel">
+  <form id="search-form" action="../../../search.html" method="GET">
+    <span class="glyphicon glyphicon-search"></span>
+    <input name="search"
+    class="typeahead form-control"
+    type="search"
+    placeholder="Search">
+  </form>
+</div>
+
+    <div id="api-tree"></div>
+
+  </div>
+  <div id="right-column">
+    <div id="page-content">
+      
+    <div class="page-header">
+        <h1>DiscussionState</h1>
+    </div>
+
+    <p>class
+    <strong>DiscussionState</strong>        extends <a href="../../../Flarum/Core/Model.html"><abbr title="Flarum\Core\Model">Model</abbr></a></p>
+
+            <div class="description">
+            <p>Models a discussion-user state record in the database.</p>            <p>Stores information about how much of a discussion a user has read. Can also
+be used to store other information, if the appropriate columns are added to
+the database, like a user's subscription status for a discussion.</p>        </div>
+    
+            <h2>Traits</h2>
+
+        <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Flarum/Core/Support/EventGenerator.html"><abbr title="Flarum\Core\Support\EventGenerator">Flarum\Core\Support\EventGenerator</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_timestamps">
+                                                                                boolean
+                </td>
+                <td>$timestamps</td>
+                <td class="last">Indicates if the model should be timestamped. Turn off by default.</td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Core/Model.html#property_timestamps"><abbr title="Flarum\Core\Model">Model</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div id="methods-summary" class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getDates">getDates</a>()
+                                            <p class="method-description">Get the attributes that should be converted to dates.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Core/Model.html#method_getDates"><abbr title="Flarum\Core\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getAttribute">getAttribute</a>(string $key)
+                                            <p class="method-description">Get an attribute from the model. If nothing is found, attempt to load
+a custom relation method with this key.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Core/Model.html#method_getAttribute"><abbr title="Flarum\Core\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method___call">__call</a>($method, $arguments)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Core/Model.html#method___call"><abbr title="Flarum\Core\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_raise">raise</a>(mixed $event)
+                                            <p class="method-description">Raise a new event.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Core/Support/EventGenerator.html#method_raise"><abbr title="Flarum\Core\Support\EventGenerator">EventGenerator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_releaseEvents">releaseEvents</a>()
+                                            <p class="method-description">Return and reset all pending events.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Core/Support/EventGenerator.html#method_releaseEvents"><abbr title="Flarum\Core\Support\EventGenerator">EventGenerator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Flarum\Core\Discussions\$this">$this</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_read">read</a>(int $number)
+                                            <p class="method-description">Mark the discussion as being read up to a certain point. Raises the
+DiscussionWasRead event.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_discussion">discussion</a>()
+                                            <p class="method-description">Define the relationship with the discussion that this state is for.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_user">user</a>()
+                                            <p class="method-description">Define the relationship with the user that this state is for.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getDates">
+        <div class="location">in <a href="../../../Flarum/Core/Model.html#method_getDates"><abbr title="Flarum\Core\Model">Model</abbr></a> at line 43</div>
+        <code>                    array
+    <strong>getDates</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the attributes that should be converted to dates.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttribute">
+        <div class="location">in <a href="../../../Flarum/Core/Model.html#method_getAttribute"><abbr title="Flarum\Core\Model">Model</abbr></a> at line 65</div>
+        <code>                    mixed
+    <strong>getAttribute</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get an attribute from the model. If nothing is found, attempt to load
+a custom relation method with this key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../Flarum/Core/Model.html#method___call"><abbr title="Flarum\Core\Model">Model</abbr></a> at line 100</div>
+        <code>                    
+    <strong>__call</strong>($method, $arguments)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_raise">
+        <div class="location">in <a href="../../../Flarum/Core/Support/EventGenerator.html#method_raise"><abbr title="Flarum\Core\Support\EventGenerator">EventGenerator</abbr></a> at line 25</div>
+        <code>                    
+    <strong>raise</strong>(mixed $event)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Raise a new event.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_releaseEvents">
+        <div class="location">in <a href="../../../Flarum/Core/Support/EventGenerator.html#method_releaseEvents"><abbr title="Flarum\Core\Support\EventGenerator">EventGenerator</abbr></a> at line 35</div>
+        <code>                    array
+    <strong>releaseEvents</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return and reset all pending events.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_read">
+        <div class="location">at line 48</div>
+        <code>                    <abbr title="Flarum\Core\Discussions\$this">$this</abbr>
+    <strong>read</strong>(int $number)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Mark the discussion as being read up to a certain point. Raises the
+DiscussionWasRead event.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$number</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Core\Discussions\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_discussion">
+        <div class="location">at line 65</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+    <strong>discussion</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the discussion that this state is for.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_user">
+        <div class="location">at line 75</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+    <strong>user</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the user that this state is for.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+    </div>
+    <div id="footer">
+  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+</div>
+
+  </div>
+</div>
+    </body>
+
+</html>

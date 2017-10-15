@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Frontend\FrontendView | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Frontend_FrontendView" data-root-path="../../">
+        <div id="content">
+  <nav id="flarum-header">
+  <h1 class="flarum-title">Flarum API</h1>
+  <ul>
+    <li><a href="http://flarum.org">Flarum</a></li>
+    <li><a href="https://discuss.flarum.org">Forum</a></li>
+    <li class="active"><a href="../../index.html">PHP Docs</a></li>
+    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
+  </ul>
+
+  <ul class="socials">
+    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+  </ul>
+  <ul class="navbar-right">
+    <li class="version">
+      <a href="../../../index.html">next-back</a>
+    </li>
+  </ul>
+</nav>
+
+  <nav id="site-nav" class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-elements">
+      <ul class="nav navbar-nav">
+        <li><a href="../../classes.html">Classes</a></li>
+
+                <li><a href="../../namespaces.html">Namespaces</a></li>
+                <li><a href="../../interfaces.html">Interfaces</a></li>
+        <li><a href="../../traits.html">Traits</a></li>
+        <li><a href="../../doc-index.html">Index</a></li>
+        <li><a href="../../search.html">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div id="left-column">
+    <div id="control-panel">
+  <form id="search-form" action="../../search.html" method="GET">
+    <span class="glyphicon glyphicon-search"></span>
+    <input name="search"
+    class="typeahead form-control"
+    type="search"
+    placeholder="Search">
+  </form>
+</div>
+
+    <div id="api-tree"></div>
+
+  </div>
+  <div id="right-column">
+    <div id="page-content">
+      
+    <div class="page-header">
+        <h1>FrontendView</h1>
+    </div>
+
+    <p>class
+    <strong>FrontendView</strong></p>
+
+            <div class="description">
+            <p>This class represents a view which boots up Flarum's client.</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_title">
+                                                                                null|string
+                </td>
+                <td>$title</td>
+                <td class="last">The title of the document, displayed in the <title> tag.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_description">
+                                                                                null|string
+                </td>
+                <td>$description</td>
+                <td class="last">The description of the document, displayed in a <meta> tag.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_language">
+                                                                                null|string
+                </td>
+                <td>$language</td>
+                <td class="last">The language of the document, displayed as the value of the attribute <code>dir</code> in the <html> tag.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_direction">
+                                                                                null|string
+                </td>
+                <td>$direction</td>
+                <td class="last">The text direction of the document, displayed as the value of the attribute <code>dir</code> in the <html> tag.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_layout">
+                                                                                string
+                </td>
+                <td>$layout</td>
+                <td class="last">The path to the client layout view to display.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_content">
+                                                                                string
+                </td>
+                <td>$content</td>
+                <td class="last">The SEO content of the page, displayed within the layout in <noscript>
+tags.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_document">
+                                                                                null|array|object
+                </td>
+                <td>$document</td>
+                <td class="last">An API response to be preloaded into the page.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div id="methods-summary" class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method___construct">__construct</a>(string $layout, <a href="../../Flarum/Frontend/FrontendAssets.html"><abbr title="Flarum\Frontend\FrontendAssets">FrontendAssets</abbr></a> $assets, <a href="../../Flarum/Api/Client.html"><abbr title="Flarum\Api\Client">Client</abbr></a> $api, <abbr title="Illuminate\View\Factory">Factory</abbr> $view, <a href="../../Flarum/Locale/LocaleManager.html"><abbr title="Flarum\Locale\LocaleManager">LocaleManager</abbr></a> $locales, <a href="../../Flarum/Api/Serializer/AbstractSerializer.html"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a> $userSerializer, <a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a> $app)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_addHeadString">addHeadString</a>(string $string, null|string $name = null)
+                                            <p class="method-description">Add a string to be appended to the page's <head>.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_addFootString">addFootString</a>(string $string)
+                                            <p class="method-description">Add a string to be prepended before the page's </body>.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_link">link</a>(string $relation, string $target)
+                                            <p class="method-description">Configure a <link> tag.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_setCanonicalUrl">setCanonicalUrl</a>(string $url)
+                                            <p class="method-description">Configure the canonical URL for this page.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_setVariable">setVariable</a>(string $name, mixed $value)
+                                            <p class="method-description">Set a variable to be preloaded into the app.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_loadModule">loadModule</a>(string $module)
+                                            <p class="method-description">Add a JavaScript module to be imported before the app is booted.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_render">render</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+                                            <p class="method-description">Get the string contents of the view.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <a href="../../Flarum/Frontend/Asset/CompilerInterface.html"><abbr title="Flarum\Frontend\Asset\CompilerInterface">CompilerInterface</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getJs">getJs</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <a href="../../Flarum/Frontend/Asset/CompilerInterface.html"><abbr title="Flarum\Frontend\Asset\CompilerInterface">CompilerInterface</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getCss">getCss</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <a href="../../Flarum/Frontend/Asset/LocaleJsCompiler.html"><abbr title="Flarum\Frontend\Asset\LocaleJsCompiler">LocaleJsCompiler</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getLocaleJs">getLocaleJs</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <a href="../../Flarum/Frontend/Asset/CompilerInterface.html"><abbr title="Flarum\Frontend\Asset\CompilerInterface">CompilerInterface</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getLocaleCss">getLocaleCss</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 176</div>
+        <code>                    
+    <strong>__construct</strong>(string $layout, <a href="../../Flarum/Frontend/FrontendAssets.html"><abbr title="Flarum\Frontend\FrontendAssets">FrontendAssets</abbr></a> $assets, <a href="../../Flarum/Api/Client.html"><abbr title="Flarum\Api\Client">Client</abbr></a> $api, <abbr title="Illuminate\View\Factory">Factory</abbr> $view, <a href="../../Flarum/Locale/LocaleManager.html"><abbr title="Flarum\Locale\LocaleManager">LocaleManager</abbr></a> $locales, <a href="../../Flarum/Api/Serializer/AbstractSerializer.html"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a> $userSerializer, <a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a> $app)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$layout</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Frontend/FrontendAssets.html"><abbr title="Flarum\Frontend\FrontendAssets">FrontendAssets</abbr></a></td>
+                <td>$assets</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Api/Client.html"><abbr title="Flarum\Api\Client">Client</abbr></a></td>
+                <td>$api</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\View\Factory">Factory</abbr></td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Locale/LocaleManager.html"><abbr title="Flarum\Locale\LocaleManager">LocaleManager</abbr></a></td>
+                <td>$locales</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Api/Serializer/AbstractSerializer.html"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></td>
+                <td>$userSerializer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a></td>
+                <td>$app</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addHeadString">
+        <div class="location">at line 210</div>
+        <code>                    
+    <strong>addHeadString</strong>(string $string, null|string $name = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a string to be appended to the page's <head>.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFootString">
+        <div class="location">at line 224</div>
+        <code>                    
+    <strong>addFootString</strong>(string $string)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a string to be prepended before the page's </body>.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_link">
+        <div class="location">at line 235</div>
+        <code>                    
+    <strong>link</strong>(string $relation, string $target)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Configure a <link> tag.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCanonicalUrl">
+        <div class="location">at line 249</div>
+        <code>                    
+    <strong>setCanonicalUrl</strong>(string $url)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Configure the canonical URL for this page.</p>                    <p>This will signal to search engines what URL should be used for this
+content, if it can be found under multiple addresses. This is an
+important tool to tackle duplicate content.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVariable">
+        <div class="location">at line 260</div>
+        <code>                    
+    <strong>setVariable</strong>(string $name, mixed $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set a variable to be preloaded into the app.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadModule">
+        <div class="location">at line 270</div>
+        <code>                    
+    <strong>loadModule</strong>(string $module)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a JavaScript module to be imported before the app is booted.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$module</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">at line 281</div>
+        <code>                    string
+    <strong>render</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the string contents of the view.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJs">
+        <div class="location">at line 386</div>
+        <code>                    <a href="../../Flarum/Frontend/Asset/CompilerInterface.html"><abbr title="Flarum\Frontend\Asset\CompilerInterface">CompilerInterface</abbr></a>
+    <strong>getJs</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Frontend/Asset/CompilerInterface.html"><abbr title="Flarum\Frontend\Asset\CompilerInterface">CompilerInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCss">
+        <div class="location">at line 394</div>
+        <code>                    <a href="../../Flarum/Frontend/Asset/CompilerInterface.html"><abbr title="Flarum\Frontend\Asset\CompilerInterface">CompilerInterface</abbr></a>
+    <strong>getCss</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Frontend/Asset/CompilerInterface.html"><abbr title="Flarum\Frontend\Asset\CompilerInterface">CompilerInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLocaleJs">
+        <div class="location">at line 402</div>
+        <code>                    <a href="../../Flarum/Frontend/Asset/LocaleJsCompiler.html"><abbr title="Flarum\Frontend\Asset\LocaleJsCompiler">LocaleJsCompiler</abbr></a>
+    <strong>getLocaleJs</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Frontend/Asset/LocaleJsCompiler.html"><abbr title="Flarum\Frontend\Asset\LocaleJsCompiler">LocaleJsCompiler</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLocaleCss">
+        <div class="location">at line 410</div>
+        <code>                    <a href="../../Flarum/Frontend/Asset/CompilerInterface.html"><abbr title="Flarum\Frontend\Asset\CompilerInterface">CompilerInterface</abbr></a>
+    <strong>getLocaleCss</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Frontend/Asset/CompilerInterface.html"><abbr title="Flarum\Frontend\Asset\CompilerInterface">CompilerInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+    </div>
+    <div id="footer">
+  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+</div>
+
+  </div>
+</div>
+    </body>
+
+</html>

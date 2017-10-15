@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Core\Discussion | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Core_Discussion" data-root-path="../../">
+        <div id="content">
+  <nav id="flarum-header">
+  <h1 class="flarum-title">Flarum API</h1>
+  <ul>
+    <li><a href="http://flarum.org">Flarum</a></li>
+    <li><a href="https://discuss.flarum.org">Forum</a></li>
+    <li class="active"><a href="../../index.html">PHP Docs</a></li>
+    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
+  </ul>
+
+  <ul class="socials">
+    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+  </ul>
+  <ul class="navbar-right">
+    <li class="version">
+      <a href="../../../index.html">v0.1.0-beta.7</a>
+    </li>
+  </ul>
+</nav>
+
+  <nav id="site-nav" class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-elements">
+      <ul class="nav navbar-nav">
+        <li><a href="../../classes.html">Classes</a></li>
+
+                <li><a href="../../namespaces.html">Namespaces</a></li>
+                <li><a href="../../interfaces.html">Interfaces</a></li>
+        <li><a href="../../traits.html">Traits</a></li>
+        <li><a href="../../doc-index.html">Index</a></li>
+        <li><a href="../../search.html">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div id="left-column">
+    <div id="control-panel">
+  <form id="search-form" action="../../search.html" method="GET">
+    <span class="glyphicon glyphicon-search"></span>
+    <input name="search"
+    class="typeahead form-control"
+    type="search"
+    placeholder="Search">
+  </form>
+</div>
+
+    <div id="api-tree"></div>
+
+  </div>
+  <div id="right-column">
+    <div id="page-content">
+      
+    <div class="page-header">
+        <h1>Discussion</h1>
+    </div>
+
+    <p>class
+    <strong>Discussion</strong>        extends <a href="../../Flarum/Database/AbstractModel.html"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></p>
+
+    
+            <h2>Traits</h2>
+
+        <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Flarum/Core/Support/EventGeneratorTrait.html"><abbr title="Flarum\Core\Support\EventGeneratorTrait">Flarum\Core\Support\EventGeneratorTrait</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Flarum/Core/Support/ScopeVisibilityTrait.html"><abbr title="Flarum\Core\Support\ScopeVisibilityTrait">Flarum\Core\Support\ScopeVisibilityTrait</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_timestamps">
+                                                                                bool
+                </td>
+                <td>$timestamps</td>
+                <td class="last">Indicates if the model should be timestamped. Turn off by default.</td>
+                <td><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#property_timestamps"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_id">
+                                                                                int
+                </td>
+                <td>$id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_title">
+                                                                                string
+                </td>
+                <td>$title</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_slug">
+                                                                                string
+                </td>
+                <td>$slug</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_comments_count">
+                                                                                int
+                </td>
+                <td>$comments_count</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_participants_count">
+                                                                                int
+                </td>
+                <td>$participants_count</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_number_index">
+                                                                                int
+                </td>
+                <td>$number_index</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_start_time">
+                                                                                <abbr title="Carbon\Carbon">Carbon</abbr>
+                </td>
+                <td>$start_time</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_start_user_id">
+                                                                                <abbr title="int|null">int|null</abbr>
+                </td>
+                <td>$start_user_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_start_post_id">
+                                                                                <abbr title="int|null">int|null</abbr>
+                </td>
+                <td>$start_post_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_last_time">
+                                                                                <abbr title="Carbon\Carbon|null">Carbon|null</abbr>
+                </td>
+                <td>$last_time</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_last_user_id">
+                                                                                <abbr title="int|null">int|null</abbr>
+                </td>
+                <td>$last_user_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_last_post_id">
+                                                                                <abbr title="int|null">int|null</abbr>
+                </td>
+                <td>$last_post_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_last_post_number">
+                                                                                <abbr title="int|null">int|null</abbr>
+                </td>
+                <td>$last_post_number</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hide_time">
+                                                                                <abbr title="Carbon\Carbon|null">Carbon|null</abbr>
+                </td>
+                <td>$hide_time</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hide_user_id">
+                                                                                <abbr title="int|null">int|null</abbr>
+                </td>
+                <td>$hide_user_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_state">
+                                                                                <abbr title="DiscussionState|null">DiscussionState|null</abbr>
+                </td>
+                <td>$state</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_posts">
+                                                                                <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+                </td>
+                <td>$posts</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_comments">
+                                                                                <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+                </td>
+                <td>$comments</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_participants">
+                                                                                <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+                </td>
+                <td>$participants</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_startPost">
+                                                                                <abbr title="Post|null">Post|null</abbr>
+                </td>
+                <td>$startPost</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_startUser">
+                                                                                <abbr title="User|null">User|null</abbr>
+                </td>
+                <td>$startUser</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_lastPost">
+                                                                                <abbr title="Post|null">Post|null</abbr>
+                </td>
+                <td>$lastPost</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_lastUser">
+                                                                                <abbr title="User|null">User|null</abbr>
+                </td>
+                <td>$lastUser</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_readers">
+                                                                                <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+                </td>
+                <td>$readers</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_is_private">
+                                                                                bool
+                </td>
+                <td>$is_private</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div id="methods-summary" class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_boot">boot</a>()
+                                            <p class="method-description">Boot the model.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method___construct">__construct</a>(array $attributes = array())
+                                            <p class="method-description">{@inheritdoc}</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method___construct"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getDates">getDates</a>()
+                                            <p class="method-description">Get the attributes that should be converted to dates.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_getDates"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getAttribute">getAttribute</a>(string $key)
+                                            <p class="method-description">Get an attribute from the model. If nothing is found, attempt to load
+a custom relation method with this key.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_getAttribute"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_afterSave">afterSave</a>(callable $callback)
+                                            <p class="method-description">Register a callback to be run once after the model is saved.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_afterSave"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_afterDelete">afterDelete</a>(callable $callback)
+                                            <p class="method-description">Register a callback to be run once after the model is deleted.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_afterDelete"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    callable[]
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_releaseAfterSaveCallbacks">releaseAfterSaveCallbacks</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterSaveCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    callable[]
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_releaseAfterDeleteCallbacks">releaseAfterDeleteCallbacks</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterDeleteCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method___call">__call</a>($method, $arguments)
+                                            <p class="method-description">{@inheritdoc}</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method___call"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_raise">raise</a>(mixed $event)
+                                            <p class="method-description">Raise a new event.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Core/Support/EventGeneratorTrait.html#method_raise"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_releaseEvents">releaseEvents</a>()
+                                            <p class="method-description">Return and reset all pending events.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Core/Support/EventGeneratorTrait.html#method_releaseEvents"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_scopeWhereVisibleTo">scopeWhereVisibleTo</a>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, <a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $actor)
+                                            <p class="method-description">Scope a query to only include records that are visible to a user.</p>                </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Core/Support/ScopeVisibilityTrait.html#method_scopeWhereVisibleTo"><abbr title="Flarum\Core\Support\ScopeVisibilityTrait">ScopeVisibilityTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    static&nbsp;<a href="../../Flarum/Core/Discussion.html"><abbr title="Flarum\Core\Discussion">Discussion</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_start">start</a>(string $title, <a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)
+                                            <p class="method-description">Start a new discussion. Raises the DiscussionWasStarted event.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Flarum\Core\$this">$this</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_rename">rename</a>(string $title)
+                                            <p class="method-description">Rename the discussion. Raises the DiscussionWasRenamed event.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Flarum\Core\$this">$this</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_hide">hide</a>(<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $actor = null)
+                                            <p class="method-description">Hide the discussion.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Flarum\Core\$this">$this</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_restore">restore</a>()
+                                            <p class="method-description">Restore the discussion.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Flarum\Core\$this">$this</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_setStartPost">setStartPost</a>(<a href="../../Flarum/Core/Post.html"><abbr title="Flarum\Core\Post">Post</abbr></a> $post)
+                                            <p class="method-description">Set the discussion's start post details.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Flarum\Core\$this">$this</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_setLastPost">setLastPost</a>(<a href="../../Flarum/Core/Post.html"><abbr title="Flarum\Core\Post">Post</abbr></a> $post)
+                                            <p class="method-description">Set the discussion's last post details.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Flarum\Core\$this">$this</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_refreshLastPost">refreshLastPost</a>()
+                                            <p class="method-description">Refresh a discussion's last post details.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Flarum\Core\$this">$this</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_refreshCommentsCount">refreshCommentsCount</a>()
+                                            <p class="method-description">Refresh the discussion's comments count.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Flarum\Core\$this">$this</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_refreshParticipantsCount">refreshParticipantsCount</a>()
+                                            <p class="method-description">Refresh the discussion's participants count.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <a href="../../Flarum/Core/Post.html"><abbr title="Flarum\Core\Post">Post</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_mergePost">mergePost</a>(<a href="../../Flarum/Core/Post/MergeableInterface.html"><abbr title="Flarum\Core\Post\MergeableInterface">MergeableInterface</abbr></a> $post)
+                                            <p class="method-description">Save a post, attempting to merge it with the discussion's last post.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getModifiedPosts">getModifiedPosts</a>()
+                                            <p class="method-description">Get the posts that have been modified during this request.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_posts">posts</a>()
+                                            <p class="method-description">Define the relationship with the discussion's posts.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_postsVisibleTo">postsVisibleTo</a>(<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)
+                                            <p class="method-description">Define the relationship with the discussion's posts, but only ones which
+are visible to the given user.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_comments">comments</a>()
+                                            <p class="method-description">Define the relationship with the discussion's publicly-visible comments.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_participants">participants</a>()
+                                            <p class="method-description">Query the discussion's participants (a list of unique users who have
+posted in the discussion).</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_startPost">startPost</a>()
+                                            <p class="method-description">Define the relationship with the discussion's first post.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_startUser">startUser</a>()
+                                            <p class="method-description">Define the relationship with the discussion's author.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_lastPost">lastPost</a>()
+                                            <p class="method-description">Define the relationship with the discussion's last post.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_lastUser">lastUser</a>()
+                                            <p class="method-description">Define the relationship with the discussion's most recent author.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_readers">readers</a>()
+                                            <p class="method-description">Define the relationship with the discussion's readers.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\HasOne">HasOne</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_state">state</a>(<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user = null)
+                                            <p class="method-description">Define the relationship with the discussion's state for a particular
+user.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <a href="../../Flarum/Core/DiscussionState.html"><abbr title="Flarum\Core\DiscussionState">DiscussionState</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_stateFor">stateFor</a>(<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)
+                                            <p class="method-description">Get the state model for a user, or instantiate a new one if it does not
+exist.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_setStateUser">setStateUser</a>(<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)
+                                            <p class="method-description">Set the user for which the state relationship should be loaded.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_boot">
+        <div class="location">at line 97</div>
+        <code>        static            
+    <strong>boot</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Boot the model.</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../Flarum/Database/AbstractModel.html#method___construct"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a> at line 74</div>
+        <code>                    
+    <strong>__construct</strong>(array $attributes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>{@inheritdoc}</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDates">
+        <div class="location">in <a href="../../Flarum/Database/AbstractModel.html#method_getDates"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a> at line 92</div>
+        <code>                    array
+    <strong>getDates</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the attributes that should be converted to dates.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttribute">
+        <div class="location">in <a href="../../Flarum/Database/AbstractModel.html#method_getAttribute"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a> at line 116</div>
+        <code>                    mixed
+    <strong>getAttribute</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get an attribute from the model. If nothing is found, attempt to load
+a custom relation method with this key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterSave">
+        <div class="location">in <a href="../../Flarum/Database/AbstractModel.html#method_afterSave"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a> at line 155</div>
+        <code>                    void
+    <strong>afterSave</strong>(callable $callback)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register a callback to be run once after the model is saved.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterDelete">
+        <div class="location">in <a href="../../Flarum/Database/AbstractModel.html#method_afterDelete"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a> at line 166</div>
+        <code>                    void
+    <strong>afterDelete</strong>(callable $callback)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register a callback to be run once after the model is deleted.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_releaseAfterSaveCallbacks">
+        <div class="location">in <a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterSaveCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a> at line 174</div>
+        <code>                    callable[]
+    <strong>releaseAfterSaveCallbacks</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_releaseAfterDeleteCallbacks">
+        <div class="location">in <a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterDeleteCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a> at line 186</div>
+        <code>                    callable[]
+    <strong>releaseAfterDeleteCallbacks</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../Flarum/Database/AbstractModel.html#method___call"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a> at line 198</div>
+        <code>                    
+    <strong>__call</strong>($method, $arguments)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>{@inheritdoc}</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_raise">
+        <div class="location">in <a href="../../Flarum/Core/Support/EventGeneratorTrait.html#method_raise"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a> at line 26</div>
+        <code>                    
+    <strong>raise</strong>(mixed $event)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Raise a new event.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_releaseEvents">
+        <div class="location">in <a href="../../Flarum/Core/Support/EventGeneratorTrait.html#method_releaseEvents"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a> at line 36</div>
+        <code>                    array
+    <strong>releaseEvents</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return and reset all pending events.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeWhereVisibleTo">
+        <div class="location">in <a href="../../Flarum/Core/Support/ScopeVisibilityTrait.html#method_scopeWhereVisibleTo"><abbr title="Flarum\Core\Support\ScopeVisibilityTrait">ScopeVisibilityTrait</abbr></a> at line 26</div>
+        <code>                    
+    <strong>scopeWhereVisibleTo</strong>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, <a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $actor)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Scope a query to only include records that are visible to a user.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a></td>
+                <td>$actor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_start">
+        <div class="location">at line 128</div>
+        <code>        static            <a href="../../Flarum/Core/Discussion.html"><abbr title="Flarum\Core\Discussion">Discussion</abbr></a>
+    <strong>start</strong>(string $title, <a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Start a new discussion. Raises the DiscussionWasStarted event.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Core/Discussion.html"><abbr title="Flarum\Core\Discussion">Discussion</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rename">
+        <div class="location">at line 149</div>
+        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
+    <strong>rename</strong>(string $title)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Rename the discussion. Raises the DiscussionWasRenamed event.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hide">
+        <div class="location">at line 167</div>
+        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
+    <strong>hide</strong>(<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $actor = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Hide the discussion.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a></td>
+                <td>$actor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location">at line 184</div>
+        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
+    <strong>restore</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Restore the discussion.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStartPost">
+        <div class="location">at line 202</div>
+        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
+    <strong>setStartPost</strong>(<a href="../../Flarum/Core/Post.html"><abbr title="Flarum\Core\Post">Post</abbr></a> $post)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the discussion's start post details.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Core/Post.html"><abbr title="Flarum\Core\Post">Post</abbr></a></td>
+                <td>$post</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLastPost">
+        <div class="location">at line 217</div>
+        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
+    <strong>setLastPost</strong>(<a href="../../Flarum/Core/Post.html"><abbr title="Flarum\Core\Post">Post</abbr></a> $post)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the discussion's last post details.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Core/Post.html"><abbr title="Flarum\Core\Post">Post</abbr></a></td>
+                <td>$post</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_refreshLastPost">
+        <div class="location">at line 232</div>
+        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
+    <strong>refreshLastPost</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Refresh a discussion's last post details.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_refreshCommentsCount">
+        <div class="location">at line 246</div>
+        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
+    <strong>refreshCommentsCount</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Refresh the discussion's comments count.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_refreshParticipantsCount">
+        <div class="location">at line 258</div>
+        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
+    <strong>refreshParticipantsCount</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Refresh the discussion's participants count.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergePost">
+        <div class="location">at line 278</div>
+        <code>                    <a href="../../Flarum/Core/Post.html"><abbr title="Flarum\Core\Post">Post</abbr></a>
+    <strong>mergePost</strong>(<a href="../../Flarum/Core/Post/MergeableInterface.html"><abbr title="Flarum\Core\Post\MergeableInterface">MergeableInterface</abbr></a> $post)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Save a post, attempting to merge it with the discussion's last post.</p>                    <p>The merge logic is delegated to the new post. (As an example, a
+DiscussionRenamedPost will merge if adjacent to another
+DiscussionRenamedPost, and delete if the title has been reverted
+completely.)</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Core/Post/MergeableInterface.html"><abbr title="Flarum\Core\Post\MergeableInterface">MergeableInterface</abbr></a></td>
+                <td>$post</td>
+                <td>The post to save.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Core/Post.html"><abbr title="Flarum\Core\Post">Post</abbr></a></td>
+            <td>The resulting post. It may or may not be the same post as
+    was originally intended to be saved. It also may not exist, if the
+    merge logic resulted in deletion.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModifiedPosts">
+        <div class="location">at line 292</div>
+        <code>                    array
+    <strong>getModifiedPosts</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the posts that have been modified during this request.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_posts">
+        <div class="location">at line 302</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
+    <strong>posts</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the discussion's posts.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_postsVisibleTo">
+        <div class="location">at line 314</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
+    <strong>postsVisibleTo</strong>(<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the discussion's posts, but only ones which
+are visible to the given user.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_comments">
+        <div class="location">at line 330</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
+    <strong>comments</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the discussion's publicly-visible comments.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_participants">
+        <div class="location">at line 341</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+    <strong>participants</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Query the discussion's participants (a list of unique users who have
+posted in the discussion).</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startPost">
+        <div class="location">at line 354</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+    <strong>startPost</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the discussion's first post.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startUser">
+        <div class="location">at line 364</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+    <strong>startUser</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the discussion's author.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lastPost">
+        <div class="location">at line 374</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+    <strong>lastPost</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the discussion's last post.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lastUser">
+        <div class="location">at line 384</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+    <strong>lastUser</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the discussion's most recent author.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readers">
+        <div class="location">at line 394</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
+    <strong>readers</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the discussion's readers.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_state">
+        <div class="location">at line 411</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\HasOne">HasOne</abbr>
+    <strong>state</strong>(<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define the relationship with the discussion's state for a particular
+user.</p>                    <p>If no user is passed (i.e. in the case of eager loading the 'state'
+relation), then the static <code>$stateUser</code> property is used.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\HasOne">HasOne</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Discussion::setStateUser()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stateFor">
+        <div class="location">at line 425</div>
+        <code>                    <a href="../../Flarum/Core/DiscussionState.html"><abbr title="Flarum\Core\DiscussionState">DiscussionState</abbr></a>
+    <strong>stateFor</strong>(<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the state model for a user, or instantiate a new one if it does not
+exist.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Core/DiscussionState.html"><abbr title="Flarum\Core\DiscussionState">DiscussionState</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStateUser">
+        <div class="location">at line 443</div>
+        <code>        static            
+    <strong>setStateUser</strong>(<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the user for which the state relationship should be loaded.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+    </div>
+    <div id="footer">
+  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+</div>
+
+  </div>
+</div>
+    </body>
+
+</html>

@@ -60,7 +60,6 @@ const createPHPDoc = async (BRANCH) => {
 
 const jsDocumentation = async () => {
   await createJSDoc(`master`);
-  // await createJSDoc(`next-front`);
   await createJSDoc(`v0.1.0-beta`);
   await createJSDoc(`v0.1.0-beta.2`);
   await createJSDoc(`v0.1.0-beta.3`);
@@ -85,8 +84,8 @@ const phpDocumentation = async () => {
 }
 
 const main = async () => {
-  // cli.info(`=> Creating Documentation: JavaScript`);
-  // await jsDocumentation();
+  cli.info(`=> Creating Documentation: JavaScript`);
+  await jsDocumentation();
   cli.info(`=> Creating Documentation: PHP`);
   await phpDocumentation();
 }

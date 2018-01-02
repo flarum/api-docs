@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Post\MergeableInterface | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Post_MergeableInterface" data-root-path="../../">
+        <div id="content">
+  <nav id="flarum-header">
+  <h1 class="flarum-title">Flarum API</h1>
+  <ul>
+    <li><a href="http://flarum.org">Flarum</a></li>
+    <li><a href="https://discuss.flarum.org">Forum</a></li>
+    <li class="active"><a href="../../index.html">PHP Docs</a></li>
+    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
+  </ul>
+
+  <ul class="socials">
+    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+  </ul>
+  <ul class="navbar-right">
+    <li class="version">
+      <a href="../../../index.html">master</a>
+    </li>
+  </ul>
+</nav>
+
+  <nav id="site-nav" class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-elements">
+      <ul class="nav navbar-nav">
+        <li><a href="../../classes.html">Classes</a></li>
+
+                <li><a href="../../namespaces.html">Namespaces</a></li>
+                <li><a href="../../interfaces.html">Interfaces</a></li>
+        <li><a href="../../traits.html">Traits</a></li>
+        <li><a href="../../doc-index.html">Index</a></li>
+        <li><a href="../../search.html">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div id="left-column">
+    <div id="control-panel">
+  <form id="search-form" action="../../search.html" method="GET">
+    <span class="glyphicon glyphicon-search"></span>
+    <input name="search"
+    class="typeahead form-control"
+    type="search"
+    placeholder="Search">
+  </form>
+</div>
+
+    <div id="api-tree"></div>
+
+  </div>
+  <div id="right-column">
+    <div id="page-content">
+      
+    <div class="page-header">
+        <h1>MergeableInterface</h1>
+    </div>
+
+    <p>interface
+    <strong>MergeableInterface</strong></p>
+
+            <div class="description">
+            <p>A post that has the ability to be merged into an adjacent post.</p>            <p>This is only implemented by certain types of posts. For example,
+if a "discussion renamed" post is posted immediately after another
+"discussion renamed" post, then the new one will be merged into the old one.</p>        </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div id="methods-summary" class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <a href="../../Flarum/Post/Post.html"><abbr title="Flarum\Post\Post">Post</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_saveAfter">saveAfter</a>(<a href="../../Flarum/Post/Post.html"><abbr title="Flarum\Post\Post">Post</abbr></a> $previous = null)
+                                            <p class="method-description">Save the model, given that it is going to appear immediately after the
+passed model.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_saveAfter">
+        <div class="location">at line 32</div>
+        <code>                    <a href="../../Flarum/Post/Post.html"><abbr title="Flarum\Post\Post">Post</abbr></a>
+    <strong>saveAfter</strong>(<a href="../../Flarum/Post/Post.html"><abbr title="Flarum\Post\Post">Post</abbr></a> $previous = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Save the model, given that it is going to appear immediately after the
+passed model.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Post/Post.html"><abbr title="Flarum\Post\Post">Post</abbr></a></td>
+                <td>$previous</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Post/Post.html"><abbr title="Flarum\Post\Post">Post</abbr></a></td>
+            <td>The model resulting after the merge. If the merge is
+    unsuccessful, this should be the current model instance. Otherwise,
+    it should be the model that was merged into.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+    </div>
+    <div id="footer">
+  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+</div>
+
+  </div>
+</div>
+    </body>
+
+</html>

@@ -1,344 +1,344 @@
 window.esdocSearchIndex = [
   [
-    "flarum/js/lib/component.js~component",
+    "flarum/component.js~component",
     "class/js/lib/Component.js~Component.html",
-    "<span>Component</span> <span class=\"search-result-import-path\">flarum/js/lib/Component.js</span>",
+    "<span>Component</span> <span class=\"search-result-import-path\">flarum/Component.js</span>",
     "class"
   ],
   [
-    "flarum/js/forum/src/components/composerbutton.js~composerbutton",
+    "flarum/components/composerbutton.js~composerbutton",
     "class/js/forum/src/components/ComposerButton.js~ComposerButton.html",
-    "<span>ComposerButton</span> <span class=\"search-result-import-path\">flarum/js/forum/src/components/ComposerButton.js</span>",
+    "<span>ComposerButton</span> <span class=\"search-result-import-path\">flarum/components/ComposerButton.js</span>",
     "class"
   ],
   [
-    "flarum/js/forum/src/components/discussionrenamednotification.js~discussionrenamednotification",
+    "flarum/components/discussionrenamednotification.js~discussionrenamednotification",
     "class/js/forum/src/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html",
-    "<span>DiscussionRenamedNotification</span> <span class=\"search-result-import-path\">flarum/js/forum/src/components/DiscussionRenamedNotification.js</span>",
+    "<span>DiscussionRenamedNotification</span> <span class=\"search-result-import-path\">flarum/components/DiscussionRenamedNotification.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/utils/drawer.js~drawer",
+    "flarum/utils/drawer.js~drawer",
     "class/js/lib/utils/Drawer.js~Drawer.html",
-    "<span>Drawer</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/Drawer.js</span>",
+    "<span>Drawer</span> <span class=\"search-result-import-path\">flarum/utils/Drawer.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/models/forum.js~forum",
+    "flarum/models/forum.js~forum",
     "class/js/lib/models/Forum.js~Forum.html",
-    "<span>Forum</span> <span class=\"search-result-import-path\">flarum/js/lib/models/Forum.js</span>",
+    "<span>Forum</span> <span class=\"search-result-import-path\">flarum/models/Forum.js</span>",
     "class"
   ],
   [
-    "flarum/js/forum/src/forumapp.js~forumapp",
+    "flarum/forumapp.js~forumapp",
     "class/js/forum/src/ForumApp.js~ForumApp.html",
-    "<span>ForumApp</span> <span class=\"search-result-import-path\">flarum/js/forum/src/ForumApp.js</span>",
+    "<span>ForumApp</span> <span class=\"search-result-import-path\">flarum/ForumApp.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/models/group.js~group",
+    "flarum/models/group.js~group",
     "class/js/lib/models/Group.js~Group.html",
-    "<span>Group</span> <span class=\"search-result-import-path\">flarum/js/lib/models/Group.js</span>",
+    "<span>Group</span> <span class=\"search-result-import-path\">flarum/models/Group.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/components/groupbadge.js~groupbadge",
+    "flarum/components/groupbadge.js~groupbadge",
     "class/js/lib/components/GroupBadge.js~GroupBadge.html",
-    "<span>GroupBadge</span> <span class=\"search-result-import-path\">flarum/js/lib/components/GroupBadge.js</span>",
+    "<span>GroupBadge</span> <span class=\"search-result-import-path\">flarum/components/GroupBadge.js</span>",
     "class"
   ],
   [
-    "flarum/js/forum/src/utils/history.js~history",
+    "flarum/utils/history.js~history",
     "class/js/forum/src/utils/History.js~History.html",
-    "<span>History</span> <span class=\"search-result-import-path\">flarum/js/forum/src/utils/History.js</span>",
+    "<span>History</span> <span class=\"search-result-import-path\">flarum/utils/History.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/utils/itemlist.js~itemlist",
+    "flarum/utils/itemlist.js~itemlist",
     "class/js/lib/utils/ItemList.js~ItemList.html",
-    "<span>ItemList</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/ItemList.js</span>",
+    "<span>ItemList</span> <span class=\"search-result-import-path\">flarum/utils/ItemList.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/components/linkbutton.js~linkbutton",
+    "flarum/components/linkbutton.js~linkbutton",
     "class/js/lib/components/LinkButton.js~LinkButton.html",
-    "<span>LinkButton</span> <span class=\"search-result-import-path\">flarum/js/lib/components/LinkButton.js</span>",
+    "<span>LinkButton</span> <span class=\"search-result-import-path\">flarum/components/LinkButton.js</span>",
     "class"
   ],
   [
-    "flarum/js/admin/src/components/loadingmodal.js~loadingmodal",
+    "flarum/components/loadingmodal.js~loadingmodal",
     "class/js/admin/src/components/LoadingModal.js~LoadingModal.html",
-    "<span>LoadingModal</span> <span class=\"search-result-import-path\">flarum/js/admin/src/components/LoadingModal.js</span>",
+    "<span>LoadingModal</span> <span class=\"search-result-import-path\">flarum/components/LoadingModal.js</span>",
     "class"
   ],
   [
-    "flarum/js/forum/src/components/loginbutton.js~loginbutton",
+    "flarum/components/loginbutton.js~loginbutton",
     "class/js/forum/src/components/LogInButton.js~LogInButton.html",
-    "<span>LogInButton</span> <span class=\"search-result-import-path\">flarum/js/forum/src/components/LogInButton.js</span>",
+    "<span>LogInButton</span> <span class=\"search-result-import-path\">flarum/components/LogInButton.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/model.js~model",
+    "flarum/model.js~model",
     "class/js/lib/Model.js~Model.html",
-    "<span>Model</span> <span class=\"search-result-import-path\">flarum/js/lib/Model.js</span>",
+    "<span>Model</span> <span class=\"search-result-import-path\">flarum/Model.js</span>",
     "class"
   ],
   [
-    "flarum/js/forum/src/components/page.js~page",
+    "flarum/components/page.js~page",
     "class/js/forum/src/components/Page.js~Page.html",
-    "<span>Page</span> <span class=\"search-result-import-path\">flarum/js/forum/src/components/Page.js</span>",
+    "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page.js</span>",
     "class"
   ],
   [
-    "flarum/js/forum/src/utils/pane.js~pane",
+    "flarum/utils/pane.js~pane",
     "class/js/forum/src/utils/Pane.js~Pane.html",
-    "<span>Pane</span> <span class=\"search-result-import-path\">flarum/js/forum/src/utils/Pane.js</span>",
+    "<span>Pane</span> <span class=\"search-result-import-path\">flarum/utils/Pane.js</span>",
     "class"
   ],
   [
-    "flarum/js/admin/src/components/permissiondropdown.js~permissiondropdown",
+    "flarum/components/permissiondropdown.js~permissiondropdown",
     "class/js/admin/src/components/PermissionDropdown.js~PermissionDropdown.html",
-    "<span>PermissionDropdown</span> <span class=\"search-result-import-path\">flarum/js/admin/src/components/PermissionDropdown.js</span>",
+    "<span>PermissionDropdown</span> <span class=\"search-result-import-path\">flarum/components/PermissionDropdown.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/utils/requesterror.js~requesterror",
+    "flarum/utils/requesterror.js~requesterror",
     "class/js/lib/utils/RequestError.js~RequestError.html",
-    "<span>RequestError</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/RequestError.js</span>",
+    "<span>RequestError</span> <span class=\"search-result-import-path\">flarum/utils/RequestError.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/utils/scrolllistener.js~scrolllistener",
+    "flarum/utils/scrolllistener.js~scrolllistener",
     "class/js/lib/utils/ScrollListener.js~ScrollListener.html",
-    "<span>ScrollListener</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/ScrollListener.js</span>",
+    "<span>ScrollListener</span> <span class=\"search-result-import-path\">flarum/utils/ScrollListener.js</span>",
     "class"
   ],
   [
-    "flarum/js/forum/src/components/searchsource.js~searchsource",
+    "flarum/components/searchsource.js~searchsource",
     "class/js/forum/src/components/SearchSource.js~SearchSource.html",
-    "<span>SearchSource</span> <span class=\"search-result-import-path\">flarum/js/forum/src/components/SearchSource.js</span>",
+    "<span>SearchSource</span> <span class=\"search-result-import-path\">flarum/components/SearchSource.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/session.js~session",
+    "flarum/session.js~session",
     "class/js/lib/Session.js~Session.html",
-    "<span>Session</span> <span class=\"search-result-import-path\">flarum/js/lib/Session.js</span>",
+    "<span>Session</span> <span class=\"search-result-import-path\">flarum/Session.js</span>",
     "class"
   ],
   [
-    "flarum/js/admin/src/components/settingdropdown.js~settingdropdown",
+    "flarum/components/settingdropdown.js~settingdropdown",
     "class/js/admin/src/components/SettingDropdown.js~SettingDropdown.html",
-    "<span>SettingDropdown</span> <span class=\"search-result-import-path\">flarum/js/admin/src/components/SettingDropdown.js</span>",
+    "<span>SettingDropdown</span> <span class=\"search-result-import-path\">flarum/components/SettingDropdown.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/store.js~store",
+    "flarum/store.js~store",
     "class/js/lib/Store.js~Store.html",
-    "<span>Store</span> <span class=\"search-result-import-path\">flarum/js/lib/Store.js</span>",
+    "<span>Store</span> <span class=\"search-result-import-path\">flarum/Store.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/utils/subtreeretainer.js~subtreeretainer",
+    "flarum/utils/subtreeretainer.js~subtreeretainer",
     "class/js/lib/utils/SubtreeRetainer.js~SubtreeRetainer.html",
-    "<span>SubtreeRetainer</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/SubtreeRetainer.js</span>",
+    "<span>SubtreeRetainer</span> <span class=\"search-result-import-path\">flarum/utils/SubtreeRetainer.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/components/switch.js~switch",
+    "flarum/components/switch.js~switch",
     "class/js/lib/components/Switch.js~Switch.html",
-    "<span>Switch</span> <span class=\"search-result-import-path\">flarum/js/lib/components/Switch.js</span>",
+    "<span>Switch</span> <span class=\"search-result-import-path\">flarum/components/Switch.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/translator.js~translator",
+    "flarum/translator.js~translator",
     "class/js/lib/Translator.js~Translator.html",
-    "<span>Translator</span> <span class=\"search-result-import-path\">flarum/js/lib/Translator.js</span>",
+    "<span>Translator</span> <span class=\"search-result-import-path\">flarum/Translator.js</span>",
     "class"
   ],
   [
-    "flarum/js/lib/utils/abbreviatenumber.js~abbreviatenumber",
+    "flarum/utils/abbreviatenumber.js~abbreviatenumber",
     "function/index.html#static-function-abbreviateNumber",
-    "<span>abbreviateNumber</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/abbreviateNumber.js</span>",
+    "<span>abbreviateNumber</span> <span class=\"search-result-import-path\">flarum/utils/abbreviateNumber.js</span>",
     "function"
   ],
   [
-    "flarum/js/forum/src/utils/affixsidebar.js~affixsidebar",
+    "flarum/utils/affixsidebar.js~affixsidebar",
     "function/index.html#static-function-affixSidebar",
-    "<span>affixSidebar</span> <span class=\"search-result-import-path\">flarum/js/forum/src/utils/affixSidebar.js</span>",
+    "<span>affixSidebar</span> <span class=\"search-result-import-path\">flarum/utils/affixSidebar.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/anchorscroll.js~anchorscroll",
+    "flarum/utils/anchorscroll.js~anchorscroll",
     "function/index.html#static-function-anchorScroll",
-    "<span>anchorScroll</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/anchorScroll.js</span>",
+    "<span>anchorScroll</span> <span class=\"search-result-import-path\">flarum/utils/anchorScroll.js</span>",
     "function"
   ],
   [
-    "flarum/js/admin/src/initializers/boot.js~boot",
+    "flarum/initializers/boot.js~boot",
     "function/index.html#static-function-boot",
-    "<span>boot</span> <span class=\"search-result-import-path\">flarum/js/admin/src/initializers/boot.js</span>",
+    "<span>boot</span> <span class=\"search-result-import-path\">flarum/initializers/boot.js</span>",
     "function"
   ],
   [
-    "flarum/js/forum/src/initializers/boot.js~boot",
+    "flarum/initializers/boot.js~boot",
     "function/index.html#static-function-boot",
-    "<span>boot</span> <span class=\"search-result-import-path\">flarum/js/forum/src/initializers/boot.js</span>",
+    "<span>boot</span> <span class=\"search-result-import-path\">flarum/initializers/boot.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/classlist.js~classlist",
+    "flarum/utils/classlist.js~classlist",
     "function/index.html#static-function-classList",
-    "<span>classList</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/classList.js</span>",
+    "<span>classList</span> <span class=\"search-result-import-path\">flarum/utils/classList.js</span>",
     "function"
   ],
   [
-    "flarum/js/forum/src/initializers/components.js~components",
+    "flarum/initializers/components.js~components",
     "function/index.html#static-function-components",
-    "<span>components</span> <span class=\"search-result-import-path\">flarum/js/forum/src/initializers/components.js</span>",
+    "<span>components</span> <span class=\"search-result-import-path\">flarum/initializers/components.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/computed.js~computed",
+    "flarum/utils/computed.js~computed",
     "function/index.html#static-function-computed",
-    "<span>computed</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/computed.js</span>",
+    "<span>computed</span> <span class=\"search-result-import-path\">flarum/utils/computed.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/extend.js~extend",
+    "flarum/extend.js~extend",
     "function/index.html#static-function-extend",
-    "<span>extend</span> <span class=\"search-result-import-path\">flarum/js/lib/extend.js</span>",
+    "<span>extend</span> <span class=\"search-result-import-path\">flarum/extend.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/extract.js~extract",
+    "flarum/utils/extract.js~extract",
     "function/index.html#static-function-extract",
-    "<span>extract</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/extract.js</span>",
+    "<span>extract</span> <span class=\"search-result-import-path\">flarum/utils/extract.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/extracttext.js~extracttext",
+    "flarum/utils/extracttext.js~extracttext",
     "function/index.html#static-function-extractText",
-    "<span>extractText</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/extractText.js</span>",
+    "<span>extractText</span> <span class=\"search-result-import-path\">flarum/utils/extractText.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/formatnumber.js~formatnumber",
+    "flarum/utils/formatnumber.js~formatnumber",
     "function/index.html#static-function-formatNumber",
-    "<span>formatNumber</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/formatNumber.js</span>",
+    "<span>formatNumber</span> <span class=\"search-result-import-path\">flarum/utils/formatNumber.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/string.js~getplaincontent",
+    "flarum/utils/string.js~getplaincontent",
     "function/index.html#static-function-getPlainContent",
-    "<span>getPlainContent</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/string.js</span>",
+    "<span>getPlainContent</span> <span class=\"search-result-import-path\">flarum/utils/string.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/helpers/highlight.js~highlight",
+    "flarum/helpers/highlight.js~highlight",
     "function/index.html#static-function-highlight",
-    "<span>highlight</span> <span class=\"search-result-import-path\">flarum/js/lib/helpers/highlight.js</span>",
+    "<span>highlight</span> <span class=\"search-result-import-path\">flarum/helpers/highlight.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/initializers/humantime.js~humantime",
+    "flarum/initializers/humantime.js~humantime",
     "function/index.html#static-function-humanTime",
-    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/js/lib/initializers/humanTime.js</span>",
+    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/initializers/humanTime.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/humantime.js~humantime",
+    "flarum/utils/humantime.js~humantime",
     "function/index.html#static-function-humanTime",
-    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/humanTime.js</span>",
+    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/utils/humanTime.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/maproutes.js~maproutes",
+    "flarum/utils/maproutes.js~maproutes",
     "function/index.html#static-function-mapRoutes",
-    "<span>mapRoutes</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/mapRoutes.js</span>",
+    "<span>mapRoutes</span> <span class=\"search-result-import-path\">flarum/utils/mapRoutes.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/mixin.js~mixin",
+    "flarum/utils/mixin.js~mixin",
     "function/index.html#static-function-mixin",
-    "<span>mixin</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/mixin.js</span>",
+    "<span>mixin</span> <span class=\"search-result-import-path\">flarum/utils/mixin.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/extend.js~override",
+    "flarum/extend.js~override",
     "function/index.html#static-function-override",
-    "<span>override</span> <span class=\"search-result-import-path\">flarum/js/lib/extend.js</span>",
+    "<span>override</span> <span class=\"search-result-import-path\">flarum/extend.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/patchmithril.js~patchmithril",
+    "flarum/utils/patchmithril.js~patchmithril",
     "function/index.html#static-function-patchMithril",
-    "<span>patchMithril</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/patchMithril.js</span>",
+    "<span>patchMithril</span> <span class=\"search-result-import-path\">flarum/utils/patchMithril.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/initializers/preload.js~preload",
+    "flarum/initializers/preload.js~preload",
     "function/index.html#static-function-preload",
-    "<span>preload</span> <span class=\"search-result-import-path\">flarum/js/lib/initializers/preload.js</span>",
+    "<span>preload</span> <span class=\"search-result-import-path\">flarum/initializers/preload.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/helpers/punctuateseries.js~punctuateseries",
+    "flarum/helpers/punctuateseries.js~punctuateseries",
     "function/index.html#static-function-punctuateSeries",
-    "<span>punctuateSeries</span> <span class=\"search-result-import-path\">flarum/js/lib/helpers/punctuateSeries.js</span>",
+    "<span>punctuateSeries</span> <span class=\"search-result-import-path\">flarum/helpers/punctuateSeries.js</span>",
     "function"
   ],
   [
-    "flarum/js/admin/src/initializers/routes.js~routes",
+    "flarum/initializers/routes.js~routes",
     "function/index.html#static-function-routes",
-    "<span>routes</span> <span class=\"search-result-import-path\">flarum/js/admin/src/initializers/routes.js</span>",
+    "<span>routes</span> <span class=\"search-result-import-path\">flarum/initializers/routes.js</span>",
     "function"
   ],
   [
-    "flarum/js/forum/src/initializers/routes.js~routes",
+    "flarum/initializers/routes.js~routes",
     "function/index.html#static-function-routes",
-    "<span>routes</span> <span class=\"search-result-import-path\">flarum/js/forum/src/initializers/routes.js</span>",
+    "<span>routes</span> <span class=\"search-result-import-path\">flarum/initializers/routes.js</span>",
     "function"
   ],
   [
-    "flarum/js/admin/src/utils/savesettings.js~savesettings",
+    "flarum/utils/savesettings.js~savesettings",
     "function/index.html#static-function-saveSettings",
-    "<span>saveSettings</span> <span class=\"search-result-import-path\">flarum/js/admin/src/utils/saveSettings.js</span>",
+    "<span>saveSettings</span> <span class=\"search-result-import-path\">flarum/utils/saveSettings.js</span>",
     "function"
   ],
   [
-    "flarum/js/forum/src/utils/slidable.js~slidable",
+    "flarum/utils/slidable.js~slidable",
     "function/index.html#static-function-slidable",
-    "<span>slidable</span> <span class=\"search-result-import-path\">flarum/js/forum/src/utils/slidable.js</span>",
+    "<span>slidable</span> <span class=\"search-result-import-path\">flarum/utils/slidable.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/string.js~slug",
+    "flarum/utils/string.js~slug",
     "function/index.html#static-function-slug",
-    "<span>slug</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/string.js</span>",
+    "<span>slug</span> <span class=\"search-result-import-path\">flarum/utils/string.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/initializers/store.js~store",
+    "flarum/initializers/store.js~store",
     "function/index.html#static-function-store",
-    "<span>store</span> <span class=\"search-result-import-path\">flarum/js/lib/initializers/store.js</span>",
+    "<span>store</span> <span class=\"search-result-import-path\">flarum/initializers/store.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/stringtocolor.js~stringtocolor",
+    "flarum/utils/stringtocolor.js~stringtocolor",
     "function/index.html#static-function-stringToColor",
-    "<span>stringToColor</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/stringToColor.js</span>",
+    "<span>stringToColor</span> <span class=\"search-result-import-path\">flarum/utils/stringToColor.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/string.js~truncate",
+    "flarum/utils/string.js~truncate",
     "function/index.html#static-function-truncate",
-    "<span>truncate</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/string.js</span>",
+    "<span>truncate</span> <span class=\"search-result-import-path\">flarum/utils/string.js</span>",
     "function"
   ],
   [
-    "flarum/js/lib/utils/string.js~ucfirst",
+    "flarum/utils/string.js~ucfirst",
     "function/index.html#static-function-ucfirst",
-    "<span>ucfirst</span> <span class=\"search-result-import-path\">flarum/js/lib/utils/string.js</span>",
+    "<span>ucfirst</span> <span class=\"search-result-import-path\">flarum/utils/string.js</span>",
     "function"
   ],
   [

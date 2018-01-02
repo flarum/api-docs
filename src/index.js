@@ -72,7 +72,6 @@ const jsDocumentation = async () => {
 
 const phpDocumentation = async () => {
   await createPHPDoc(`master`);
-  await createPHPDoc(`next-back`);
   await createPHPDoc(`v0.1.0-beta`);
   await createPHPDoc(`v0.1.0-beta.2`);
   await createPHPDoc(`v0.1.0-beta.3`);

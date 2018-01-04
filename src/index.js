@@ -29,7 +29,7 @@ const createJSDoc = async (BRANCH) => {
     progress.addTick()
     await exec(`cd docs/docs/js && mkdir -p ${BRANCH} && cat ../../esdoc.json > ${BRANCH}/esdoc.json && cp ../../src/readme-js.md ${BRANCH}/README.md`);
     progress.addTick();
-    await exec(`cd docs/docs/js/${BRANCH} && esdoc -c esdoc.json`);
+    await exec(`cd docs/docs/js/${BRANCH} && npx esdoc -c esdoc.json`);
     progress.addTick();
     await exec(`cd docs/docs/js/${BRANCH} && rm -rf ast`);
     progress.addTick();

@@ -204,6 +204,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/components/editcustomfootermodal.js~editcustomfootermodal",
+    "class/js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal.html",
+    "<span>EditCustomFooterModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomFooterModal.js</span>",
+    "class"
+  ],
+  [
     "flarum/components/editcustomheadermodal.js~editcustomheadermodal",
     "class/js/admin/src/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html",
     "<span>EditCustomHeaderModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomHeaderModal.js</span>",
@@ -433,13 +439,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/page.js~page",
-    "class/js/admin/src/components/Page.js~Page.html",
+    "class/js/forum/src/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page.js</span>",
     "class"
   ],
   [
     "flarum/components/page.js~page",
-    "class/js/forum/src/components/Page.js~Page.html",
+    "class/js/admin/src/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page.js</span>",
     "class"
   ],
@@ -1491,6 +1497,36 @@ window.esdocSearchIndex = [
     "js/admin/src/components/editcustomcssmodal.js~editcustomcssmodal#title",
     "class/js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal.html#instance-method-title",
     "js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal#title",
+    "method"
+  ],
+  [
+    "js/admin/src/components/editcustomfootermodal.js",
+    "file/js/admin/src/components/EditCustomFooterModal.js.html",
+    "js/admin/src/components/EditCustomFooterModal.js",
+    "file"
+  ],
+  [
+    "js/admin/src/components/editcustomfootermodal.js~editcustomfootermodal#classname",
+    "class/js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-className",
+    "js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal#className",
+    "method"
+  ],
+  [
+    "js/admin/src/components/editcustomfootermodal.js~editcustomfootermodal#form",
+    "class/js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-form",
+    "js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal#form",
+    "method"
+  ],
+  [
+    "js/admin/src/components/editcustomfootermodal.js~editcustomfootermodal#onsaved",
+    "class/js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-onsaved",
+    "js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal#onsaved",
+    "method"
+  ],
+  [
+    "js/admin/src/components/editcustomfootermodal.js~editcustomfootermodal#title",
+    "class/js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-title",
+    "js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal#title",
     "method"
   ],
   [
@@ -5007,6 +5043,12 @@ window.esdocSearchIndex = [
     "js/forum/src/components/signupmodal.js~signupmodal#init",
     "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-init",
     "js/forum/src/components/SignUpModal.js~SignUpModal#init",
+    "method"
+  ],
+  [
+    "js/forum/src/components/signupmodal.js~signupmodal#isprovided",
+    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-isProvided",
+    "js/forum/src/components/SignUpModal.js~SignUpModal#isProvided",
     "method"
   ],
   [

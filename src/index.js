@@ -60,26 +60,12 @@ const createPHPDoc = async (BRANCH) => {
 
 const jsDocumentation = async () => {
   await createJSDoc(`master`);
-  await createJSDoc(`v0.1.0-beta`);
-  await createJSDoc(`v0.1.0-beta.2`);
-  await createJSDoc(`v0.1.0-beta.3`);
-  await createJSDoc(`v0.1.0-beta.4`);
-  await createJSDoc(`v0.1.0-beta.5`);
-  await createJSDoc(`v0.1.0-beta.6`);
-  await createJSDoc(`v0.1.0-beta.7`);
-  await exec(`cd flarum && git checkout master`);
+  // await exec(`cd flarum && git checkout master`);
 }
 
 const phpDocumentation = async () => {
   await createPHPDoc(`master`);
-  await createPHPDoc(`v0.1.0-beta`);
-  await createPHPDoc(`v0.1.0-beta.2`);
-  await createPHPDoc(`v0.1.0-beta.3`);
-  await createPHPDoc(`v0.1.0-beta.4`);
-  await createPHPDoc(`v0.1.0-beta.5`);
-  await createPHPDoc(`v0.1.0-beta.6`);
-  await createPHPDoc(`v0.1.0-beta.7`);
-  await exec(`cd flarum && git checkout master`);
+  // await exec(`cd flarum && git checkout master`);
 }
 
 const main = async () => {

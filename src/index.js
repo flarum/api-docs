@@ -60,12 +60,12 @@ const createPHPDoc = async (BRANCH) => {
 
 const jsDocumentation = async () => {
   await createJSDoc(`master`);
-  // await exec(`cd flarum && git checkout master`);
+  await createJSDoc(`v0.1.0-beta.7.1`);
 }
 
 const phpDocumentation = async () => {
   await createPHPDoc(`master`);
-  // await exec(`cd flarum && git checkout master`);
+  await createJSDoc(`v0.1.0-beta.7.1`);
 }
 
 const main = async () => {

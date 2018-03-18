@@ -283,13 +283,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary.js~headerprimary",
-    "class/js/admin/src/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/js/forum/src/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary.js</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary.js~headerprimary",
-    "class/js/forum/src/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/js/admin/src/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary.js</span>",
     "class"
   ],
@@ -439,13 +439,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/page.js~page",
-    "class/js/forum/src/components/Page.js~Page.html",
+    "class/js/admin/src/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page.js</span>",
     "class"
   ],
   [
     "flarum/components/page.js~page",
-    "class/js/admin/src/components/Page.js~Page.html",
+    "class/js/forum/src/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page.js</span>",
     "class"
   ],
@@ -2988,6 +2988,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "js/forum/src/components/discussionlistitem.js~discussionlistitem#highlightregexp",
+    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-member-highlightRegExp",
+    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#highlightRegExp",
+    "member"
+  ],
+  [
     "js/forum/src/components/discussionlistitem.js~discussionlistitem#infoitems",
     "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-infoItems",
     "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#infoItems",
@@ -3814,6 +3820,12 @@ window.esdocSearchIndex = [
     "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-member-methods",
     "js/forum/src/components/NotificationGrid.js~NotificationGrid#methods",
     "member"
+  ],
+  [
+    "js/forum/src/components/notificationgrid.js~notificationgrid#notificationmethods",
+    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-method-notificationMethods",
+    "js/forum/src/components/NotificationGrid.js~NotificationGrid#notificationMethods",
+    "method"
   ],
   [
     "js/forum/src/components/notificationgrid.js~notificationgrid#notificationtypes",

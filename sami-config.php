@@ -13,7 +13,7 @@ $iterator = Finder::create()
 
 $versions = GitVersionCollection::create('../flarum')
   ->addFromTags('v0.1.*')
-  ->add('master', 'master')
+  ->add('master', 'master');
 
 return new Sami($iterator, array(
   'theme'                 => 'flarum',

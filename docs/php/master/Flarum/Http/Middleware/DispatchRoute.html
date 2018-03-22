@@ -83,7 +83,8 @@
     </div>
 
     <p>class
-    <strong>DispatchRoute</strong></p>
+    <strong>DispatchRoute</strong>        implements
+        <abbr title="Interop\Http\ServerMiddleware\MiddlewareInterface">MiddlewareInterface</abbr></p>
 
     
     
@@ -106,7 +107,7 @@
                     <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___invoke">__invoke</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable $out = null)
+                    <a class="signature" href="#method_process">process</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Interop\Http\ServerMiddleware\DelegateInterface">DelegateInterface</abbr> $delegate)
                                             <p class="method-description">Dispatch the given request to our route collection.</p>                </div>
                 <div class="col-md-2 method-inheritance"></div>
             </div>
@@ -118,7 +119,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 38</div>
+        <div class="location">at line 40</div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../Flarum/Http/RouteCollection.html"><abbr title="Flarum\Http\RouteCollection">RouteCollection</abbr></a> $routes)</code>
     </h3>
@@ -144,10 +145,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___invoke">
-        <div class="location">at line 53</div>
+                    <h3 id="method_process">
+        <div class="location">at line 54</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>__invoke</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable $out = null)</code>
+    <strong>process</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Interop\Http\ServerMiddleware\DelegateInterface">DelegateInterface</abbr> $delegate)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -162,13 +163,8 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-                <td>$response</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>callable</td>
-                <td>$out</td>
+                <td><abbr title="Interop\Http\ServerMiddleware\DelegateInterface">DelegateInterface</abbr></td>
+                <td>$delegate</td>
                 <td></td>
             </tr>
             </table>

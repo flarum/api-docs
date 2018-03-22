@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Api\Controller\DeleteAvatarController | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Api_Controller_DeleteAvatarController" data-root-path="../../../">
+        <div id="content">
+  <nav id="flarum-header">
+  <h1 class="flarum-title">Flarum API</h1>
+  <ul>
+    <li><a href="http://flarum.org">Flarum</a></li>
+    <li><a href="https://discuss.flarum.org">Forum</a></li>
+    <li class="active"><a href="../../../index.html">PHP Docs</a></li>
+    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
+  </ul>
+
+  <ul class="socials">
+    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+  </ul>
+  <ul class="navbar-right">
+    <li class="version">
+      <a href="../../../../index.html">v0.1.0-beta.7.1</a>
+    </li>
+  </ul>
+</nav>
+
+  <nav id="site-nav" class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-elements">
+      <ul class="nav navbar-nav">
+        <li><a href="../../../classes.html">Classes</a></li>
+
+                <li><a href="../../../namespaces.html">Namespaces</a></li>
+                <li><a href="../../../interfaces.html">Interfaces</a></li>
+        <li><a href="../../../traits.html">Traits</a></li>
+        <li><a href="../../../doc-index.html">Index</a></li>
+        <li><a href="../../../search.html">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div id="left-column">
+    <div id="control-panel">
+  <form id="search-form" action="../../../search.html" method="GET">
+    <span class="glyphicon glyphicon-search"></span>
+    <input name="search"
+    class="typeahead form-control"
+    type="search"
+    placeholder="Search">
+  </form>
+</div>
+
+    <div id="api-tree"></div>
+
+  </div>
+  <div id="right-column">
+    <div id="page-content">
+      
+    <div class="page-header">
+        <h1>DeleteAvatarController</h1>
+    </div>
+
+    <p>class
+    <strong>DeleteAvatarController</strong>        extends <a href="../../../Flarum/Api/Controller/AbstractResourceController.html"><abbr title="Flarum\Api\Controller\AbstractResourceController">AbstractResourceController</abbr></a></p>
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_serializer">
+                                                                                
+                </td>
+                <td>$serializer</td>
+                <td class="last">{@inheritdoc}</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_include">
+                                                                                array
+                </td>
+                <td>$include</td>
+                <td class="last">The relationships that are included by default.</td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_include"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_optionalInclude">
+                                                                                array
+                </td>
+                <td>$optionalInclude</td>
+                <td class="last">The relationships that are available to be included.</td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_optionalInclude"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maxLimit">
+                                                                                int
+                </td>
+                <td>$maxLimit</td>
+                <td class="last">The maximum number of records that can be requested.</td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_maxLimit"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_limit">
+                                                                                int
+                </td>
+                <td>$limit</td>
+                <td class="last">The number of records included by default.</td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_limit"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sortFields">
+                                                                                array
+                </td>
+                <td>$sortFields</td>
+                <td class="last">The fields that are available to be sorted by.</td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_sortFields"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sort">
+                                                                                array|null
+                </td>
+                <td>$sort</td>
+                <td class="last">The default sort field and order to user.</td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_sort"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div id="methods-summary" class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_handle"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    static&nbsp;<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getEventDispatcher">getEventDispatcher</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_getEventDispatcher"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_setEventDispatcher">setEventDispatcher</a>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_setEventDispatcher"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    static&nbsp;<abbr title="Illuminate\Contracts\Container\Container">Container</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_getContainer">getContainer</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_getContainer"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_setContainer">setContainer</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_setContainer"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Bus\Dispatcher">Dispatcher</abbr> $bus)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2 method-inheritance"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_handle"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a> at line 89</div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEventDispatcher">
+        <div class="location">in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_getEventDispatcher"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a> at line 204</div>
+        <code>        static            <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>
+    <strong>getEventDispatcher</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEventDispatcher">
+        <div class="location">in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_setEventDispatcher"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a> at line 212</div>
+        <code>        static            
+    <strong>setEventDispatcher</strong>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></td>
+                <td>$events</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContainer">
+        <div class="location">in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_getContainer"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a> at line 220</div>
+        <code>        static            <abbr title="Illuminate\Contracts\Container\Container">Container</abbr>
+    <strong>getContainer</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContainer">
+        <div class="location">in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_setContainer"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a> at line 228</div>
+        <code>        static            
+    <strong>setContainer</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 34</div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Bus\Dispatcher">Dispatcher</abbr> $bus)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Bus\Dispatcher">Dispatcher</abbr></td>
+                <td>$bus</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+    </div>
+    <div id="footer">
+  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+</div>
+
+  </div>
+</div>
+    </body>
+
+</html>

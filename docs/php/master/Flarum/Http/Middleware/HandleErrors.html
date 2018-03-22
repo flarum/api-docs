@@ -83,7 +83,8 @@
     </div>
 
     <p>class
-    <strong>HandleErrors</strong></p>
+    <strong>HandleErrors</strong>        implements
+        <abbr title="Interop\Http\ServerMiddleware\MiddlewareInterface">MiddlewareInterface</abbr></p>
 
     
     
@@ -107,7 +108,7 @@
                     <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___invoke">__invoke</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable $out = null)
+                    <a class="signature" href="#method_process">process</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Interop\Http\ServerMiddleware\DelegateInterface">DelegateInterface</abbr> $delegate)
                                             <p class="method-description">Catch all errors that happen during further middleware execution.</p>                </div>
                 <div class="col-md-2 method-inheritance"></div>
             </div>
@@ -119,7 +120,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 58</div>
+        <div class="location">at line 60</div>
         <code>                    
     <strong>__construct</strong>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, bool $debug = false)</code>
     </h3>
@@ -163,10 +164,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___invoke">
-        <div class="location">at line 75</div>
+                    <h3 id="method_process">
+        <div class="location">at line 76</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>__invoke</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable $out = null)</code>
+    <strong>process</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Interop\Http\ServerMiddleware\DelegateInterface">DelegateInterface</abbr> $delegate)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -181,13 +182,8 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-                <td>$response</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>callable</td>
-                <td>$out</td>
+                <td><abbr title="Interop\Http\ServerMiddleware\DelegateInterface">DelegateInterface</abbr></td>
+                <td>$delegate</td>
                 <td></td>
             </tr>
             </table>

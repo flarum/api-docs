@@ -85,9 +85,6 @@
     <p>class
     <strong>DiscussionSearcher</strong></p>
 
-            <div class="description">
-            <p>Takes a DiscussionSearchCriteria object, performs a search using gambits,
-and spits out a DiscussionSearchResults object.</p>                    </div>
     
             <h2>Traits</h2>
 
@@ -112,7 +109,7 @@ and spits out a DiscussionSearchResults object.</p>                    </div>
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>(<a href="../../../Flarum/Search/GambitManager.html"><abbr title="Flarum\Search\GambitManager">GambitManager</abbr></a> $gambits, <a href="../../../Flarum/Discussion/DiscussionRepository.html"><abbr title="Flarum\Discussion\DiscussionRepository">DiscussionRepository</abbr></a> $discussions, <a href="../../../Flarum/Post/PostRepository.html"><abbr title="Flarum\Post\PostRepository">PostRepository</abbr></a> $posts)
+                    <a class="signature" href="#method___construct">__construct</a>(<a href="../../../Flarum/Search/GambitManager.html"><abbr title="Flarum\Search\GambitManager">GambitManager</abbr></a> $gambits, <a href="../../../Flarum/Discussion/DiscussionRepository.html"><abbr title="Flarum\Discussion\DiscussionRepository">DiscussionRepository</abbr></a> $discussions, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2 method-inheritance"></div>
@@ -122,7 +119,7 @@ and spits out a DiscussionSearchResults object.</p>                    </div>
                     <a href="../../../Flarum/Search/SearchResults.html"><abbr title="Flarum\Search\SearchResults">SearchResults</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_search">search</a>(<a href="../../../Flarum/Search/SearchCriteria.html"><abbr title="Flarum\Search\SearchCriteria">SearchCriteria</abbr></a> $criteria, int|null $limit = null, int $offset, array $load = array())
+                    <a class="signature" href="#method_search">search</a>(<a href="../../../Flarum/Search/SearchCriteria.html"><abbr title="Flarum\Search\SearchCriteria">SearchCriteria</abbr></a> $criteria, int|null $limit = null, int $offset)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2 method-inheritance"></div>
@@ -135,9 +132,9 @@ and spits out a DiscussionSearchResults object.</p>                    </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 52</div>
+        <div class="location">at line 46</div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Search/GambitManager.html"><abbr title="Flarum\Search\GambitManager">GambitManager</abbr></a> $gambits, <a href="../../../Flarum/Discussion/DiscussionRepository.html"><abbr title="Flarum\Discussion\DiscussionRepository">DiscussionRepository</abbr></a> $discussions, <a href="../../../Flarum/Post/PostRepository.html"><abbr title="Flarum\Post\PostRepository">PostRepository</abbr></a> $posts)</code>
+    <strong>__construct</strong>(<a href="../../../Flarum/Search/GambitManager.html"><abbr title="Flarum\Search\GambitManager">GambitManager</abbr></a> $gambits, <a href="../../../Flarum/Discussion/DiscussionRepository.html"><abbr title="Flarum\Discussion\DiscussionRepository">DiscussionRepository</abbr></a> $discussions, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -155,8 +152,8 @@ and spits out a DiscussionSearchResults object.</p>                    </div>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Flarum/Post/PostRepository.html"><abbr title="Flarum\Post\PostRepository">PostRepository</abbr></a></td>
-                <td>$posts</td>
+                <td><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></td>
+                <td>$events</td>
                 <td></td>
             </tr>
             </table>
@@ -170,9 +167,9 @@ and spits out a DiscussionSearchResults object.</p>                    </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_search">
-        <div class="location">at line 69</div>
+        <div class="location">at line 60</div>
         <code>                    <a href="../../../Flarum/Search/SearchResults.html"><abbr title="Flarum\Search\SearchResults">SearchResults</abbr></a>
-    <strong>search</strong>(<a href="../../../Flarum/Search/SearchCriteria.html"><abbr title="Flarum\Search\SearchCriteria">SearchCriteria</abbr></a> $criteria, int|null $limit = null, int $offset, array $load = array())</code>
+    <strong>search</strong>(<a href="../../../Flarum/Search/SearchCriteria.html"><abbr title="Flarum\Search\SearchCriteria">SearchCriteria</abbr></a> $criteria, int|null $limit = null, int $offset)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -193,11 +190,6 @@ and spits out a DiscussionSearchResults object.</p>                    </div>
                 <td>int</td>
                 <td>$offset</td>
                 <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$load</td>
-                <td>An array of relationships to load on the results.</td>
             </tr>
             </table>
 

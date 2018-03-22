@@ -59,13 +59,12 @@ const createPHPDoc = async (BRANCH) => {
 }
 
 const jsDocumentation = async () => {
-  await createJSDoc(`master`);
-  await createJSDoc(`v0.1.0-beta.7.1`);
+  // await createJSDoc(`master`);
 }
 
 const phpDocumentation = async () => {
   await createPHPDoc(`master`);
-  await createJSDoc(`v0.1.0-beta.7.1`);
+  await createPHPDoc(`v0.1.0-beta.7.1`);
 }
 
 const main = async () => {

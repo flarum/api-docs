@@ -1,5 +1,5 @@
 {% extends "layout/layout.twig" %}
-{% from "macros.twig" import class_link %}
+{% from "macros.twig" import class_link, github_link %}
 {% block title %}Traits | {{ parent() }}{% endblock %}
 {% block body_class 'traits' %}
 
@@ -15,8 +15,11 @@
                     <div class="col-md-6">
                         {{ class_link(class, true) }}
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         {{ class.shortdesc|desc(class) }}
+                    </div>
+                    <div class="col-md-1 text-right">
+                        {{ github_link(class.name) }}
                     </div>
                 </div>
             {% endif %}

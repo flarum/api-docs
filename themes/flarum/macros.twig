@@ -65,8 +65,11 @@
                         {{ _self.class_link(class, true) }}
                     {% endif %}
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     {{ class.shortdesc|desc(class) }}
+                </div>
+                <div class="col-md-1 text-right">
+                    {{ _self.github_link(class.name) }}
                 </div>
             </div>
         {% endfor %}
@@ -83,4 +86,10 @@
         {% endif %}
         <li><a href="{{ namespace_path(current_ns) }}">{{ ns }}</a></li>
     {% endfor %}
+{% endmacro %}
+
+{% macro github_link(name, line, height, tree) %}
+    <a href="https://github.com/flarum/core/{% if tree %}tree{% else %}blob{% endif %}/{{ project.version }}/src/{{ name|split('\\')|slice(1)|join('/') }}{% if tree != true %}.php{% if line %}#L{{ line }}{% endif %}{% endif %}">
+        <img src="{{ path('img/code.svg') }}" {% if height %}height="{{ height }}"{% endif %} />
+    </a>
 {% endmacro %}

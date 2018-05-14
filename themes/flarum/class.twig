@@ -1,5 +1,5 @@
 {% extends "layout/layout.twig" %}
-{% from "macros.twig" import render_classes, breadcrumbs, namespace_link, class_link, property_link, method_link, hint_link %}
+{% from "macros.twig" import render_classes, breadcrumbs, namespace_link, class_link, property_link, method_link, hint_link, github_link %}
 {% block title %}{{ class.name }} | {{ parent() }}{% endblock %}
 {% block body_class 'class' %}
 {% block page_id 'class:' ~ (class.name|replace({'\\': '_'})) %}
@@ -19,7 +19,11 @@
 {% block page_content %}
 
     <div class="page-header">
-        <h1>{{ class.name|split('\\')|last }}</h1>
+        <h1>
+            {{ class.name|split('\\')|last }}
+            &nbsp;
+            {{ github_link(class.name, null, 30) }}
+        </h1>
     </div>
 
     <p>{{ block('class_signature') }}</p>
@@ -169,6 +173,7 @@
                         <small>from&nbsp;{{ property_link(property, false, true) }}</small>
                     {%- endif -%}
                 </td>
+                <td width="24px">{{ github_link(class.name, property.line, 18) }}</td>
             </tr>
         {% endfor %}
     </table>
@@ -194,6 +199,9 @@
                         <small>from&nbsp;{{ method_link(method, false, true) }}</small>
                     {%- endif -%}
                 </div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                    {{ github_link(class.name, method.line, 18) }}
+                </div>
             </div>
         {% endfor %}
     </div>
@@ -211,7 +219,14 @@
 
 {% block method %}
     <h3 id="method_{{ method.name }}">
-        <div class="location">{% if method.class is not sameas(class) %}in {{ method_link(method, false, true) }} {% endif %}at line {{ method.line }}</div>
+        <div class="location">
+            {% if method.class is not sameas(class) %}
+                in {{ method_link(method, false, true) }}
+            {% endif %}
+            <a href="https://github.com/flarum/core/blob/{{ project.version }}/src/{{ method.class.name|split('\\')|slice(1)|join('/') }}.php#L{{ method.line }}">
+                at line {{ method.line }}
+            </a>
+        </div>
         <code>{{ block('method_signature') }}</code>
     </h3>
     <div class="details">

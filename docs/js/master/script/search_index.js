@@ -283,25 +283,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary.js~headerprimary",
-    "class/js/forum/src/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary.js</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary.js~headerprimary",
     "class/js/admin/src/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary.js</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary.js~headersecondary",
-    "class/js/forum/src/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary.js</span>",
+    "flarum/components/headerprimary.js~headerprimary",
+    "class/js/forum/src/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary.js</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary.js~headersecondary",
     "class/js/admin/src/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary.js</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary.js~headersecondary",
+    "class/js/forum/src/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary.js</span>",
     "class"
   ],
@@ -3672,6 +3672,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "js/forum/src/components/loginmodal.js~loginmodal#body",
+    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-body",
+    "js/forum/src/components/LogInModal.js~LogInModal#body",
+    "method"
+  ],
+  [
     "js/forum/src/components/loginmodal.js~loginmodal#classname",
     "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-className",
     "js/forum/src/components/LogInModal.js~LogInModal#className",
@@ -3681,6 +3687,18 @@ window.esdocSearchIndex = [
     "js/forum/src/components/loginmodal.js~loginmodal#content",
     "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-content",
     "js/forum/src/components/LogInModal.js~LogInModal#content",
+    "method"
+  ],
+  [
+    "js/forum/src/components/loginmodal.js~loginmodal#fields",
+    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-fields",
+    "js/forum/src/components/LogInModal.js~LogInModal#fields",
+    "method"
+  ],
+  [
+    "js/forum/src/components/loginmodal.js~loginmodal#footer",
+    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-footer",
+    "js/forum/src/components/LogInModal.js~LogInModal#footer",
     "method"
   ],
   [
@@ -5044,6 +5062,12 @@ window.esdocSearchIndex = [
     "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-member-email",
     "js/forum/src/components/SignUpModal.js~SignUpModal#email",
     "member"
+  ],
+  [
+    "js/forum/src/components/signupmodal.js~signupmodal#fields",
+    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-fields",
+    "js/forum/src/components/SignUpModal.js~SignUpModal#fields",
+    "method"
   ],
   [
     "js/forum/src/components/signupmodal.js~signupmodal#footer",

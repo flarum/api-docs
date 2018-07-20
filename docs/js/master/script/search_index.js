@@ -1,968 +1,938 @@
 window.esdocSearchIndex = [
   [
-    "flarum/components/addextensionmodal.js~addextensionmodal",
-    "class/js/admin/src/components/AddExtensionModal.js~AddExtensionModal.html",
-    "<span>AddExtensionModal</span> <span class=\"search-result-import-path\">flarum/components/AddExtensionModal.js</span>",
+    "flarum/js/src/admin/components/addextensionmodal.js~addextensionmodal",
+    "class/js/src/admin/components/AddExtensionModal.js~AddExtensionModal.html",
+    "<span>AddExtensionModal</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/AddExtensionModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/adminlinkbutton.js~adminlinkbutton",
-    "class/js/admin/src/components/AdminLinkButton.js~AdminLinkButton.html",
-    "<span>AdminLinkButton</span> <span class=\"search-result-import-path\">flarum/components/AdminLinkButton.js</span>",
+    "flarum/js/src/admin/components/adminlinkbutton.js~adminlinkbutton",
+    "class/js/src/admin/components/AdminLinkButton.js~AdminLinkButton.html",
+    "<span>AdminLinkButton</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/AdminLinkButton.js</span>",
     "class"
   ],
   [
-    "flarum/components/adminnav.js~adminnav",
-    "class/js/admin/src/components/AdminNav.js~AdminNav.html",
-    "<span>AdminNav</span> <span class=\"search-result-import-path\">flarum/components/AdminNav.js</span>",
+    "flarum/js/src/admin/components/adminnav.js~adminnav",
+    "class/js/src/admin/components/AdminNav.js~AdminNav.html",
+    "<span>AdminNav</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/AdminNav.js</span>",
     "class"
   ],
   [
-    "flarum/components/alert.js~alert",
-    "class/js/lib/components/Alert.js~Alert.html",
-    "<span>Alert</span> <span class=\"search-result-import-path\">flarum/components/Alert.js</span>",
+    "flarum/js/src/common/components/alert.js~alert",
+    "class/js/src/common/components/Alert.js~Alert.html",
+    "<span>Alert</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Alert.js</span>",
     "class"
   ],
   [
-    "flarum/components/alertmanager.js~alertmanager",
-    "class/js/lib/components/AlertManager.js~AlertManager.html",
-    "<span>AlertManager</span> <span class=\"search-result-import-path\">flarum/components/AlertManager.js</span>",
+    "flarum/js/src/common/components/alertmanager.js~alertmanager",
+    "class/js/src/common/components/AlertManager.js~AlertManager.html",
+    "<span>AlertManager</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/AlertManager.js</span>",
     "class"
   ],
   [
-    "flarum/app.js~app",
-    "class/js/lib/App.js~App.html",
-    "<span>App</span> <span class=\"search-result-import-path\">flarum/App.js</span>",
+    "flarum/js/src/admin/components/appearancepage.js~appearancepage",
+    "class/js/src/admin/components/AppearancePage.js~AppearancePage.html",
+    "<span>AppearancePage</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/AppearancePage.js</span>",
     "class"
   ],
   [
-    "flarum/components/appearancepage.js~appearancepage",
-    "class/js/admin/src/components/AppearancePage.js~AppearancePage.html",
-    "<span>AppearancePage</span> <span class=\"search-result-import-path\">flarum/components/AppearancePage.js</span>",
+    "flarum/js/src/forum/components/avatareditor.js~avatareditor",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html",
+    "<span>AvatarEditor</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/AvatarEditor.js</span>",
     "class"
   ],
   [
-    "flarum/components/avatareditor.js~avatareditor",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html",
-    "<span>AvatarEditor</span> <span class=\"search-result-import-path\">flarum/components/AvatarEditor.js</span>",
+    "flarum/js/src/common/components/badge.js~badge",
+    "class/js/src/common/components/Badge.js~Badge.html",
+    "<span>Badge</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Badge.js</span>",
     "class"
   ],
   [
-    "flarum/components/badge.js~badge",
-    "class/js/lib/components/Badge.js~Badge.html",
-    "<span>Badge</span> <span class=\"search-result-import-path\">flarum/components/Badge.js</span>",
+    "flarum/js/src/admin/components/basicspage.js~basicspage",
+    "class/js/src/admin/components/BasicsPage.js~BasicsPage.html",
+    "<span>BasicsPage</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/BasicsPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/basicspage.js~basicspage",
-    "class/js/admin/src/components/BasicsPage.js~BasicsPage.html",
-    "<span>BasicsPage</span> <span class=\"search-result-import-path\">flarum/components/BasicsPage.js</span>",
+    "flarum/js/src/common/components/button.js~button",
+    "class/js/src/common/components/Button.js~Button.html",
+    "<span>Button</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Button.js</span>",
     "class"
   ],
   [
-    "flarum/components/button.js~button",
-    "class/js/lib/components/Button.js~Button.html",
-    "<span>Button</span> <span class=\"search-result-import-path\">flarum/components/Button.js</span>",
+    "flarum/js/src/forum/components/changeemailmodal.js~changeemailmodal",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html",
+    "<span>ChangeEmailModal</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/ChangeEmailModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/changeemailmodal.js~changeemailmodal",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html",
-    "<span>ChangeEmailModal</span> <span class=\"search-result-import-path\">flarum/components/ChangeEmailModal.js</span>",
+    "flarum/js/src/forum/components/changepasswordmodal.js~changepasswordmodal",
+    "class/js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal.html",
+    "<span>ChangePasswordModal</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/ChangePasswordModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/changepasswordmodal.js~changepasswordmodal",
-    "class/js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal.html",
-    "<span>ChangePasswordModal</span> <span class=\"search-result-import-path\">flarum/components/ChangePasswordModal.js</span>",
+    "flarum/js/src/common/components/checkbox.js~checkbox",
+    "class/js/src/common/components/Checkbox.js~Checkbox.html",
+    "<span>Checkbox</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Checkbox.js</span>",
     "class"
   ],
   [
-    "flarum/components/checkbox.js~checkbox",
-    "class/js/lib/components/Checkbox.js~Checkbox.html",
-    "<span>Checkbox</span> <span class=\"search-result-import-path\">flarum/components/Checkbox.js</span>",
+    "flarum/js/src/forum/components/commentpost.js~commentpost",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html",
+    "<span>CommentPost</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/CommentPost.js</span>",
     "class"
   ],
   [
-    "flarum/components/commentpost.js~commentpost",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html",
-    "<span>CommentPost</span> <span class=\"search-result-import-path\">flarum/components/CommentPost.js</span>",
+    "flarum/js/src/common/component.js~component",
+    "class/js/src/common/Component.js~Component.html",
+    "<span>Component</span> <span class=\"search-result-import-path\">flarum/js/src/common/Component.js</span>",
     "class"
   ],
   [
-    "flarum/component.js~component",
-    "class/js/lib/Component.js~Component.html",
-    "<span>Component</span> <span class=\"search-result-import-path\">flarum/Component.js</span>",
+    "flarum/js/src/forum/components/composer.js~composer",
+    "class/js/src/forum/components/Composer.js~Composer.html",
+    "<span>Composer</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/Composer.js</span>",
     "class"
   ],
   [
-    "flarum/components/composer.js~composer",
-    "class/js/forum/src/components/Composer.js~Composer.html",
-    "<span>Composer</span> <span class=\"search-result-import-path\">flarum/components/Composer.js</span>",
+    "flarum/js/src/forum/components/composerbody.js~composerbody",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html",
+    "<span>ComposerBody</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/ComposerBody.js</span>",
     "class"
   ],
   [
-    "flarum/components/composerbody.js~composerbody",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html",
-    "<span>ComposerBody</span> <span class=\"search-result-import-path\">flarum/components/ComposerBody.js</span>",
+    "flarum/js/src/forum/components/composerbutton.js~composerbutton",
+    "class/js/src/forum/components/ComposerButton.js~ComposerButton.html",
+    "<span>ComposerButton</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/ComposerButton.js</span>",
     "class"
   ],
   [
-    "flarum/components/composerbutton.js~composerbutton",
-    "class/js/forum/src/components/ComposerButton.js~ComposerButton.html",
-    "<span>ComposerButton</span> <span class=\"search-result-import-path\">flarum/components/ComposerButton.js</span>",
+    "flarum/js/src/admin/components/dashboardpage.js~dashboardpage",
+    "class/js/src/admin/components/DashboardPage.js~DashboardPage.html",
+    "<span>DashboardPage</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/DashboardPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/dashboardpage.js~dashboardpage",
-    "class/js/admin/src/components/DashboardPage.js~DashboardPage.html",
-    "<span>DashboardPage</span> <span class=\"search-result-import-path\">flarum/components/DashboardPage.js</span>",
+    "flarum/js/src/admin/components/widget.js~dashboardwidget",
+    "class/js/src/admin/components/Widget.js~DashboardWidget.html",
+    "<span>DashboardWidget</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/Widget.js</span>",
     "class"
   ],
   [
-    "flarum/components/widget.js~dashboardwidget",
-    "class/js/admin/src/components/Widget.js~DashboardWidget.html",
-    "<span>DashboardWidget</span> <span class=\"search-result-import-path\">flarum/components/Widget.js</span>",
+    "flarum/js/src/common/models/discussion.js~discussion",
+    "class/js/src/common/models/Discussion.js~Discussion.html",
+    "<span>Discussion</span> <span class=\"search-result-import-path\">flarum/js/src/common/models/Discussion.js</span>",
     "class"
   ],
   [
-    "flarum/models/discussion.js~discussion",
-    "class/js/lib/models/Discussion.js~Discussion.html",
-    "<span>Discussion</span> <span class=\"search-result-import-path\">flarum/models/Discussion.js</span>",
+    "flarum/js/src/forum/components/discussioncomposer.js~discussioncomposer",
+    "class/js/src/forum/components/DiscussionComposer.js~DiscussionComposer.html",
+    "<span>DiscussionComposer</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/DiscussionComposer.js</span>",
     "class"
   ],
   [
-    "flarum/components/discussioncomposer.js~discussioncomposer",
-    "class/js/forum/src/components/DiscussionComposer.js~DiscussionComposer.html",
-    "<span>DiscussionComposer</span> <span class=\"search-result-import-path\">flarum/components/DiscussionComposer.js</span>",
+    "flarum/js/src/forum/components/discussionhero.js~discussionhero",
+    "class/js/src/forum/components/DiscussionHero.js~DiscussionHero.html",
+    "<span>DiscussionHero</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/DiscussionHero.js</span>",
     "class"
   ],
   [
-    "flarum/components/discussionhero.js~discussionhero",
-    "class/js/forum/src/components/DiscussionHero.js~DiscussionHero.html",
-    "<span>DiscussionHero</span> <span class=\"search-result-import-path\">flarum/components/DiscussionHero.js</span>",
+    "flarum/js/src/forum/components/discussionlist.js~discussionlist",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html",
+    "<span>DiscussionList</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/DiscussionList.js</span>",
     "class"
   ],
   [
-    "flarum/components/discussionlist.js~discussionlist",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html",
-    "<span>DiscussionList</span> <span class=\"search-result-import-path\">flarum/components/DiscussionList.js</span>",
+    "flarum/js/src/forum/components/discussionlistitem.js~discussionlistitem",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html",
+    "<span>DiscussionListItem</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/DiscussionListItem.js</span>",
     "class"
   ],
   [
-    "flarum/components/discussionlistitem.js~discussionlistitem",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html",
-    "<span>DiscussionListItem</span> <span class=\"search-result-import-path\">flarum/components/DiscussionListItem.js</span>",
+    "flarum/js/src/forum/components/discussionpage.js~discussionpage",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html",
+    "<span>DiscussionPage</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/DiscussionPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/discussionpage.js~discussionpage",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html",
-    "<span>DiscussionPage</span> <span class=\"search-result-import-path\">flarum/components/DiscussionPage.js</span>",
+    "flarum/js/src/forum/components/discussionrenamednotification.js~discussionrenamednotification",
+    "class/js/src/forum/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html",
+    "<span>DiscussionRenamedNotification</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/DiscussionRenamedNotification.js</span>",
     "class"
   ],
   [
-    "flarum/components/discussionrenamednotification.js~discussionrenamednotification",
-    "class/js/forum/src/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html",
-    "<span>DiscussionRenamedNotification</span> <span class=\"search-result-import-path\">flarum/components/DiscussionRenamedNotification.js</span>",
+    "flarum/js/src/forum/components/discussionrenamedpost.js~discussionrenamedpost",
+    "class/js/src/forum/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html",
+    "<span>DiscussionRenamedPost</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/DiscussionRenamedPost.js</span>",
     "class"
   ],
   [
-    "flarum/components/discussionrenamedpost.js~discussionrenamedpost",
-    "class/js/forum/src/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html",
-    "<span>DiscussionRenamedPost</span> <span class=\"search-result-import-path\">flarum/components/DiscussionRenamedPost.js</span>",
+    "flarum/js/src/forum/components/discussionssearchsource.js~discussionssearchsource",
+    "class/js/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html",
+    "<span>DiscussionsSearchSource</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/DiscussionsSearchSource.js</span>",
     "class"
   ],
   [
-    "flarum/components/discussionssearchsource.js~discussionssearchsource",
-    "class/js/forum/src/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html",
-    "<span>DiscussionsSearchSource</span> <span class=\"search-result-import-path\">flarum/components/DiscussionsSearchSource.js</span>",
+    "flarum/js/src/forum/components/discussionsuserpage.js~discussionsuserpage",
+    "class/js/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html",
+    "<span>DiscussionsUserPage</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/DiscussionsUserPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/discussionsuserpage.js~discussionsuserpage",
-    "class/js/forum/src/components/DiscussionsUserPage.js~DiscussionsUserPage.html",
-    "<span>DiscussionsUserPage</span> <span class=\"search-result-import-path\">flarum/components/DiscussionsUserPage.js</span>",
+    "flarum/js/src/common/utils/drawer.js~drawer",
+    "class/js/src/common/utils/Drawer.js~Drawer.html",
+    "<span>Drawer</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/Drawer.js</span>",
     "class"
   ],
   [
-    "flarum/utils/drawer.js~drawer",
-    "class/js/lib/utils/Drawer.js~Drawer.html",
-    "<span>Drawer</span> <span class=\"search-result-import-path\">flarum/utils/Drawer.js</span>",
+    "flarum/js/src/common/components/dropdown.js~dropdown",
+    "class/js/src/common/components/Dropdown.js~Dropdown.html",
+    "<span>Dropdown</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Dropdown.js</span>",
     "class"
   ],
   [
-    "flarum/components/dropdown.js~dropdown",
-    "class/js/lib/components/Dropdown.js~Dropdown.html",
-    "<span>Dropdown</span> <span class=\"search-result-import-path\">flarum/components/Dropdown.js</span>",
+    "flarum/js/src/admin/components/editcustomcssmodal.js~editcustomcssmodal",
+    "class/js/src/admin/components/EditCustomCssModal.js~EditCustomCssModal.html",
+    "<span>EditCustomCssModal</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/EditCustomCssModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/editcustomcssmodal.js~editcustomcssmodal",
-    "class/js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal.html",
-    "<span>EditCustomCssModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomCssModal.js</span>",
+    "flarum/js/src/admin/components/editcustomfootermodal.js~editcustomfootermodal",
+    "class/js/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal.html",
+    "<span>EditCustomFooterModal</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/EditCustomFooterModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/editcustomfootermodal.js~editcustomfootermodal",
-    "class/js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal.html",
-    "<span>EditCustomFooterModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomFooterModal.js</span>",
+    "flarum/js/src/admin/components/editcustomheadermodal.js~editcustomheadermodal",
+    "class/js/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html",
+    "<span>EditCustomHeaderModal</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/EditCustomHeaderModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/editcustomheadermodal.js~editcustomheadermodal",
-    "class/js/admin/src/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html",
-    "<span>EditCustomHeaderModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomHeaderModal.js</span>",
+    "flarum/js/src/admin/components/editgroupmodal.js~editgroupmodal",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html",
+    "<span>EditGroupModal</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/EditGroupModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/editgroupmodal.js~editgroupmodal",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html",
-    "<span>EditGroupModal</span> <span class=\"search-result-import-path\">flarum/components/EditGroupModal.js</span>",
+    "flarum/js/src/forum/components/editpostcomposer.js~editpostcomposer",
+    "class/js/src/forum/components/EditPostComposer.js~EditPostComposer.html",
+    "<span>EditPostComposer</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/EditPostComposer.js</span>",
     "class"
   ],
   [
-    "flarum/components/editpostcomposer.js~editpostcomposer",
-    "class/js/forum/src/components/EditPostComposer.js~EditPostComposer.html",
-    "<span>EditPostComposer</span> <span class=\"search-result-import-path\">flarum/components/EditPostComposer.js</span>",
+    "flarum/js/src/forum/components/editusermodal.js~editusermodal",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html",
+    "<span>EditUserModal</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/EditUserModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/editusermodal.js~editusermodal",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html",
-    "<span>EditUserModal</span> <span class=\"search-result-import-path\">flarum/components/EditUserModal.js</span>",
+    "flarum/js/src/forum/components/eventpost.js~eventpost",
+    "class/js/src/forum/components/EventPost.js~EventPost.html",
+    "<span>EventPost</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/EventPost.js</span>",
     "class"
   ],
   [
-    "flarum/components/eventpost.js~eventpost",
-    "class/js/forum/src/components/EventPost.js~EventPost.html",
-    "<span>EventPost</span> <span class=\"search-result-import-path\">flarum/components/EventPost.js</span>",
+    "flarum/js/src/admin/components/extensionspage.js~extensionspage",
+    "class/js/src/admin/components/ExtensionsPage.js~ExtensionsPage.html",
+    "<span>ExtensionsPage</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/ExtensionsPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/extensionspage.js~extensionspage",
-    "class/js/admin/src/components/ExtensionsPage.js~ExtensionsPage.html",
-    "<span>ExtensionsPage</span> <span class=\"search-result-import-path\">flarum/components/ExtensionsPage.js</span>",
+    "flarum/js/src/common/components/fieldset.js~fieldset",
+    "class/js/src/common/components/FieldSet.js~FieldSet.html",
+    "<span>FieldSet</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/FieldSet.js</span>",
     "class"
   ],
   [
-    "flarum/components/fieldset.js~fieldset",
-    "class/js/lib/components/FieldSet.js~FieldSet.html",
-    "<span>FieldSet</span> <span class=\"search-result-import-path\">flarum/components/FieldSet.js</span>",
+    "flarum/js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html",
+    "<span>ForgotPasswordModal</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/ForgotPasswordModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/forgotpasswordmodal.js~forgotpasswordmodal",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html",
-    "<span>ForgotPasswordModal</span> <span class=\"search-result-import-path\">flarum/components/ForgotPasswordModal.js</span>",
+    "flarum/js/src/common/models/forum.js~forum",
+    "class/js/src/common/models/Forum.js~Forum.html",
+    "<span>Forum</span> <span class=\"search-result-import-path\">flarum/js/src/common/models/Forum.js</span>",
     "class"
   ],
   [
-    "flarum/models/forum.js~forum",
-    "class/js/lib/models/Forum.js~Forum.html",
-    "<span>Forum</span> <span class=\"search-result-import-path\">flarum/models/Forum.js</span>",
+    "flarum/js/src/common/models/group.js~group",
+    "class/js/src/common/models/Group.js~Group.html",
+    "<span>Group</span> <span class=\"search-result-import-path\">flarum/js/src/common/models/Group.js</span>",
     "class"
   ],
   [
-    "flarum/forumapp.js~forumapp",
-    "class/js/forum/src/ForumApp.js~ForumApp.html",
-    "<span>ForumApp</span> <span class=\"search-result-import-path\">flarum/ForumApp.js</span>",
+    "flarum/js/src/common/components/groupbadge.js~groupbadge",
+    "class/js/src/common/components/GroupBadge.js~GroupBadge.html",
+    "<span>GroupBadge</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/GroupBadge.js</span>",
     "class"
   ],
   [
-    "flarum/models/group.js~group",
-    "class/js/lib/models/Group.js~Group.html",
-    "<span>Group</span> <span class=\"search-result-import-path\">flarum/models/Group.js</span>",
+    "flarum/js/src/admin/components/headerprimary.js~headerprimary",
+    "class/js/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/HeaderPrimary.js</span>",
     "class"
   ],
   [
-    "flarum/components/groupbadge.js~groupbadge",
-    "class/js/lib/components/GroupBadge.js~GroupBadge.html",
-    "<span>GroupBadge</span> <span class=\"search-result-import-path\">flarum/components/GroupBadge.js</span>",
+    "flarum/js/src/forum/components/headerprimary.js~headerprimary",
+    "class/js/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/HeaderPrimary.js</span>",
     "class"
   ],
   [
-    "flarum/components/headerprimary.js~headerprimary",
-    "class/js/admin/src/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary.js</span>",
+    "flarum/js/src/admin/components/headersecondary.js~headersecondary",
+    "class/js/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/HeaderSecondary.js</span>",
     "class"
   ],
   [
-    "flarum/components/headerprimary.js~headerprimary",
-    "class/js/forum/src/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary.js</span>",
+    "flarum/js/src/forum/components/headersecondary.js~headersecondary",
+    "class/js/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/HeaderSecondary.js</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary.js~headersecondary",
-    "class/js/admin/src/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary.js</span>",
+    "flarum/js/src/forum/utils/history.js~history",
+    "class/js/src/forum/utils/History.js~History.html",
+    "<span>History</span> <span class=\"search-result-import-path\">flarum/js/src/forum/utils/History.js</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary.js~headersecondary",
-    "class/js/forum/src/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary.js</span>",
+    "flarum/js/src/forum/components/indexpage.js~indexpage",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html",
+    "<span>IndexPage</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/IndexPage.js</span>",
     "class"
   ],
   [
-    "flarum/utils/history.js~history",
-    "class/js/forum/src/utils/History.js~History.html",
-    "<span>History</span> <span class=\"search-result-import-path\">flarum/utils/History.js</span>",
+    "flarum/js/src/common/utils/itemlist.js~itemlist",
+    "class/js/src/common/utils/ItemList.js~ItemList.html",
+    "<span>ItemList</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/ItemList.js</span>",
     "class"
   ],
   [
-    "flarum/components/indexpage.js~indexpage",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html",
-    "<span>IndexPage</span> <span class=\"search-result-import-path\">flarum/components/IndexPage.js</span>",
+    "flarum/js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html",
+    "<span>KeyboardNavigatable</span> <span class=\"search-result-import-path\">flarum/js/src/forum/utils/KeyboardNavigatable.js</span>",
     "class"
   ],
   [
-    "flarum/utils/itemlist.js~itemlist",
-    "class/js/lib/utils/ItemList.js~ItemList.html",
-    "<span>ItemList</span> <span class=\"search-result-import-path\">flarum/utils/ItemList.js</span>",
+    "flarum/js/src/common/components/linkbutton.js~linkbutton",
+    "class/js/src/common/components/LinkButton.js~LinkButton.html",
+    "<span>LinkButton</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/LinkButton.js</span>",
     "class"
   ],
   [
-    "flarum/utils/keyboardnavigatable.js~keyboardnavigatable",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html",
-    "<span>KeyboardNavigatable</span> <span class=\"search-result-import-path\">flarum/utils/KeyboardNavigatable.js</span>",
+    "flarum/js/src/common/components/loadingindicator.js~loadingindicator",
+    "class/js/src/common/components/LoadingIndicator.js~LoadingIndicator.html",
+    "<span>LoadingIndicator</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/LoadingIndicator.js</span>",
     "class"
   ],
   [
-    "flarum/components/linkbutton.js~linkbutton",
-    "class/js/lib/components/LinkButton.js~LinkButton.html",
-    "<span>LinkButton</span> <span class=\"search-result-import-path\">flarum/components/LinkButton.js</span>",
+    "flarum/js/src/admin/components/loadingmodal.js~loadingmodal",
+    "class/js/src/admin/components/LoadingModal.js~LoadingModal.html",
+    "<span>LoadingModal</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/LoadingModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/loadingindicator.js~loadingindicator",
-    "class/js/lib/components/LoadingIndicator.js~LoadingIndicator.html",
-    "<span>LoadingIndicator</span> <span class=\"search-result-import-path\">flarum/components/LoadingIndicator.js</span>",
+    "flarum/js/src/forum/components/loadingpost.js~loadingpost",
+    "class/js/src/forum/components/LoadingPost.js~LoadingPost.html",
+    "<span>LoadingPost</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/LoadingPost.js</span>",
     "class"
   ],
   [
-    "flarum/components/loadingmodal.js~loadingmodal",
-    "class/js/admin/src/components/LoadingModal.js~LoadingModal.html",
-    "<span>LoadingModal</span> <span class=\"search-result-import-path\">flarum/components/LoadingModal.js</span>",
+    "flarum/js/src/forum/components/loginbutton.js~loginbutton",
+    "class/js/src/forum/components/LogInButton.js~LogInButton.html",
+    "<span>LogInButton</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/LogInButton.js</span>",
     "class"
   ],
   [
-    "flarum/components/loadingpost.js~loadingpost",
-    "class/js/forum/src/components/LoadingPost.js~LoadingPost.html",
-    "<span>LoadingPost</span> <span class=\"search-result-import-path\">flarum/components/LoadingPost.js</span>",
+    "flarum/js/src/forum/components/loginbuttons.js~loginbuttons",
+    "class/js/src/forum/components/LogInButtons.js~LogInButtons.html",
+    "<span>LogInButtons</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/LogInButtons.js</span>",
     "class"
   ],
   [
-    "flarum/components/loginbutton.js~loginbutton",
-    "class/js/forum/src/components/LogInButton.js~LogInButton.html",
-    "<span>LogInButton</span> <span class=\"search-result-import-path\">flarum/components/LogInButton.js</span>",
+    "flarum/js/src/forum/components/loginmodal.js~loginmodal",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html",
+    "<span>LogInModal</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/LogInModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/loginbuttons.js~loginbuttons",
-    "class/js/forum/src/components/LogInButtons.js~LogInButtons.html",
-    "<span>LogInButtons</span> <span class=\"search-result-import-path\">flarum/components/LogInButtons.js</span>",
+    "flarum/js/src/admin/components/mailpage.js~mailpage",
+    "class/js/src/admin/components/MailPage.js~MailPage.html",
+    "<span>MailPage</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/MailPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/loginmodal.js~loginmodal",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html",
-    "<span>LogInModal</span> <span class=\"search-result-import-path\">flarum/components/LogInModal.js</span>",
+    "flarum/js/src/common/components/modal.js~modal",
+    "class/js/src/common/components/Modal.js~Modal.html",
+    "<span>Modal</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Modal.js</span>",
     "class"
   ],
   [
-    "flarum/components/mailpage.js~mailpage",
-    "class/js/admin/src/components/MailPage.js~MailPage.html",
-    "<span>MailPage</span> <span class=\"search-result-import-path\">flarum/components/MailPage.js</span>",
+    "flarum/js/src/common/components/modalmanager.js~modalmanager",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html",
+    "<span>ModalManager</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/ModalManager.js</span>",
     "class"
   ],
   [
-    "flarum/components/modal.js~modal",
-    "class/js/lib/components/Modal.js~Modal.html",
-    "<span>Modal</span> <span class=\"search-result-import-path\">flarum/components/Modal.js</span>",
+    "flarum/js/src/common/model.js~model",
+    "class/js/src/common/Model.js~Model.html",
+    "<span>Model</span> <span class=\"search-result-import-path\">flarum/js/src/common/Model.js</span>",
     "class"
   ],
   [
-    "flarum/components/modalmanager.js~modalmanager",
-    "class/js/lib/components/ModalManager.js~ModalManager.html",
-    "<span>ModalManager</span> <span class=\"search-result-import-path\">flarum/components/ModalManager.js</span>",
+    "flarum/js/src/common/components/navigation.js~navigation",
+    "class/js/src/common/components/Navigation.js~Navigation.html",
+    "<span>Navigation</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Navigation.js</span>",
     "class"
   ],
   [
-    "flarum/model.js~model",
-    "class/js/lib/Model.js~Model.html",
-    "<span>Model</span> <span class=\"search-result-import-path\">flarum/Model.js</span>",
+    "flarum/js/src/common/models/notification.js~notification",
+    "class/js/src/common/models/Notification.js~Notification.html",
+    "<span>Notification</span> <span class=\"search-result-import-path\">flarum/js/src/common/models/Notification.js</span>",
     "class"
   ],
   [
-    "flarum/components/navigation.js~navigation",
-    "class/js/lib/components/Navigation.js~Navigation.html",
-    "<span>Navigation</span> <span class=\"search-result-import-path\">flarum/components/Navigation.js</span>",
+    "flarum/js/src/forum/components/notification.js~notification",
+    "class/js/src/forum/components/Notification.js~Notification.html",
+    "<span>Notification</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/Notification.js</span>",
     "class"
   ],
   [
-    "flarum/components/notification.js~notification",
-    "class/js/forum/src/components/Notification.js~Notification.html",
-    "<span>Notification</span> <span class=\"search-result-import-path\">flarum/components/Notification.js</span>",
+    "flarum/js/src/forum/components/notificationgrid.js~notificationgrid",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html",
+    "<span>NotificationGrid</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/NotificationGrid.js</span>",
     "class"
   ],
   [
-    "flarum/models/notification.js~notification",
-    "class/js/lib/models/Notification.js~Notification.html",
-    "<span>Notification</span> <span class=\"search-result-import-path\">flarum/models/Notification.js</span>",
+    "flarum/js/src/forum/components/notificationlist.js~notificationlist",
+    "class/js/src/forum/components/NotificationList.js~NotificationList.html",
+    "<span>NotificationList</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/NotificationList.js</span>",
     "class"
   ],
   [
-    "flarum/components/notificationgrid.js~notificationgrid",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html",
-    "<span>NotificationGrid</span> <span class=\"search-result-import-path\">flarum/components/NotificationGrid.js</span>",
+    "flarum/js/src/forum/components/notificationsdropdown.js~notificationsdropdown",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html",
+    "<span>NotificationsDropdown</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/NotificationsDropdown.js</span>",
     "class"
   ],
   [
-    "flarum/components/notificationlist.js~notificationlist",
-    "class/js/forum/src/components/NotificationList.js~NotificationList.html",
-    "<span>NotificationList</span> <span class=\"search-result-import-path\">flarum/components/NotificationList.js</span>",
+    "flarum/js/src/forum/components/notificationspage.js~notificationspage",
+    "class/js/src/forum/components/NotificationsPage.js~NotificationsPage.html",
+    "<span>NotificationsPage</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/NotificationsPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/notificationsdropdown.js~notificationsdropdown",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html",
-    "<span>NotificationsDropdown</span> <span class=\"search-result-import-path\">flarum/components/NotificationsDropdown.js</span>",
+    "flarum/js/src/admin/components/page.js~page",
+    "class/js/src/admin/components/Page.js~Page.html",
+    "<span>Page</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/Page.js</span>",
     "class"
   ],
   [
-    "flarum/components/notificationspage.js~notificationspage",
-    "class/js/forum/src/components/NotificationsPage.js~NotificationsPage.html",
-    "<span>NotificationsPage</span> <span class=\"search-result-import-path\">flarum/components/NotificationsPage.js</span>",
+    "flarum/js/src/forum/components/page.js~page",
+    "class/js/src/forum/components/Page.js~Page.html",
+    "<span>Page</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/Page.js</span>",
     "class"
   ],
   [
-    "flarum/components/page.js~page",
-    "class/js/admin/src/components/Page.js~Page.html",
-    "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page.js</span>",
+    "flarum/js/src/forum/utils/pane.js~pane",
+    "class/js/src/forum/utils/Pane.js~Pane.html",
+    "<span>Pane</span> <span class=\"search-result-import-path\">flarum/js/src/forum/utils/Pane.js</span>",
     "class"
   ],
   [
-    "flarum/components/page.js~page",
-    "class/js/forum/src/components/Page.js~Page.html",
-    "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page.js</span>",
+    "flarum/js/src/admin/components/permissiondropdown.js~permissiondropdown",
+    "class/js/src/admin/components/PermissionDropdown.js~PermissionDropdown.html",
+    "<span>PermissionDropdown</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/PermissionDropdown.js</span>",
     "class"
   ],
   [
-    "flarum/utils/pane.js~pane",
-    "class/js/forum/src/utils/Pane.js~Pane.html",
-    "<span>Pane</span> <span class=\"search-result-import-path\">flarum/utils/Pane.js</span>",
+    "flarum/js/src/admin/components/permissiongrid.js~permissiongrid",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html",
+    "<span>PermissionGrid</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/PermissionGrid.js</span>",
     "class"
   ],
   [
-    "flarum/components/permissiondropdown.js~permissiondropdown",
-    "class/js/admin/src/components/PermissionDropdown.js~PermissionDropdown.html",
-    "<span>PermissionDropdown</span> <span class=\"search-result-import-path\">flarum/components/PermissionDropdown.js</span>",
+    "flarum/js/src/admin/components/permissionspage.js~permissionspage",
+    "class/js/src/admin/components/PermissionsPage.js~PermissionsPage.html",
+    "<span>PermissionsPage</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/PermissionsPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/permissiongrid.js~permissiongrid",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html",
-    "<span>PermissionGrid</span> <span class=\"search-result-import-path\">flarum/components/PermissionGrid.js</span>",
+    "flarum/js/src/common/components/placeholder.js~placeholder",
+    "class/js/src/common/components/Placeholder.js~Placeholder.html",
+    "<span>Placeholder</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Placeholder.js</span>",
     "class"
   ],
   [
-    "flarum/components/permissionspage.js~permissionspage",
-    "class/js/admin/src/components/PermissionsPage.js~PermissionsPage.html",
-    "<span>PermissionsPage</span> <span class=\"search-result-import-path\">flarum/components/PermissionsPage.js</span>",
+    "flarum/js/src/common/models/post.js~post",
+    "class/js/src/common/models/Post.js~Post.html",
+    "<span>Post</span> <span class=\"search-result-import-path\">flarum/js/src/common/models/Post.js</span>",
     "class"
   ],
   [
-    "flarum/components/placeholder.js~placeholder",
-    "class/js/lib/components/Placeholder.js~Placeholder.html",
-    "<span>Placeholder</span> <span class=\"search-result-import-path\">flarum/components/Placeholder.js</span>",
+    "flarum/js/src/forum/components/post.js~post",
+    "class/js/src/forum/components/Post.js~Post.html",
+    "<span>Post</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/Post.js</span>",
     "class"
   ],
   [
-    "flarum/components/post.js~post",
-    "class/js/forum/src/components/Post.js~Post.html",
-    "<span>Post</span> <span class=\"search-result-import-path\">flarum/components/Post.js</span>",
+    "flarum/js/src/forum/components/postedited.js~postedited",
+    "class/js/src/forum/components/PostEdited.js~PostEdited.html",
+    "<span>PostEdited</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/PostEdited.js</span>",
     "class"
   ],
   [
-    "flarum/models/post.js~post",
-    "class/js/lib/models/Post.js~Post.html",
-    "<span>Post</span> <span class=\"search-result-import-path\">flarum/models/Post.js</span>",
+    "flarum/js/src/forum/components/postmeta.js~postmeta",
+    "class/js/src/forum/components/PostMeta.js~PostMeta.html",
+    "<span>PostMeta</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/PostMeta.js</span>",
     "class"
   ],
   [
-    "flarum/components/postedited.js~postedited",
-    "class/js/forum/src/components/PostEdited.js~PostEdited.html",
-    "<span>PostEdited</span> <span class=\"search-result-import-path\">flarum/components/PostEdited.js</span>",
+    "flarum/js/src/forum/components/postpreview.js~postpreview",
+    "class/js/src/forum/components/PostPreview.js~PostPreview.html",
+    "<span>PostPreview</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/PostPreview.js</span>",
     "class"
   ],
   [
-    "flarum/components/postmeta.js~postmeta",
-    "class/js/forum/src/components/PostMeta.js~PostMeta.html",
-    "<span>PostMeta</span> <span class=\"search-result-import-path\">flarum/components/PostMeta.js</span>",
+    "flarum/js/src/forum/components/poststream.js~poststream",
+    "class/js/src/forum/components/PostStream.js~PostStream.html",
+    "<span>PostStream</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/PostStream.js</span>",
     "class"
   ],
   [
-    "flarum/components/postpreview.js~postpreview",
-    "class/js/forum/src/components/PostPreview.js~PostPreview.html",
-    "<span>PostPreview</span> <span class=\"search-result-import-path\">flarum/components/PostPreview.js</span>",
+    "flarum/js/src/forum/components/poststreamscrubber.js~poststreamscrubber",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html",
+    "<span>PostStreamScrubber</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/PostStreamScrubber.js</span>",
     "class"
   ],
   [
-    "flarum/components/poststream.js~poststream",
-    "class/js/forum/src/components/PostStream.js~PostStream.html",
-    "<span>PostStream</span> <span class=\"search-result-import-path\">flarum/components/PostStream.js</span>",
+    "flarum/js/src/forum/components/postuser.js~postuser",
+    "class/js/src/forum/components/PostUser.js~PostUser.html",
+    "<span>PostUser</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/PostUser.js</span>",
     "class"
   ],
   [
-    "flarum/components/poststreamscrubber.js~poststreamscrubber",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html",
-    "<span>PostStreamScrubber</span> <span class=\"search-result-import-path\">flarum/components/PostStreamScrubber.js</span>",
+    "flarum/js/src/forum/components/postsuserpage.js~postsuserpage",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html",
+    "<span>PostsUserPage</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/PostsUserPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/postuser.js~postuser",
-    "class/js/forum/src/components/PostUser.js~PostUser.html",
-    "<span>PostUser</span> <span class=\"search-result-import-path\">flarum/components/PostUser.js</span>",
+    "flarum/js/src/forum/components/renamediscussionmodal.js~renamediscussionmodal",
+    "class/js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html",
+    "<span>RenameDiscussionModal</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/RenameDiscussionModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/postsuserpage.js~postsuserpage",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html",
-    "<span>PostsUserPage</span> <span class=\"search-result-import-path\">flarum/components/PostsUserPage.js</span>",
+    "flarum/js/src/forum/components/replycomposer.js~replycomposer",
+    "class/js/src/forum/components/ReplyComposer.js~ReplyComposer.html",
+    "<span>ReplyComposer</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/ReplyComposer.js</span>",
     "class"
   ],
   [
-    "flarum/components/renamediscussionmodal.js~renamediscussionmodal",
-    "class/js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal.html",
-    "<span>RenameDiscussionModal</span> <span class=\"search-result-import-path\">flarum/components/RenameDiscussionModal.js</span>",
+    "flarum/js/src/forum/components/replyplaceholder.js~replyplaceholder",
+    "class/js/src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder.html",
+    "<span>ReplyPlaceholder</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/ReplyPlaceholder.js</span>",
     "class"
   ],
   [
-    "flarum/components/replycomposer.js~replycomposer",
-    "class/js/forum/src/components/ReplyComposer.js~ReplyComposer.html",
-    "<span>ReplyComposer</span> <span class=\"search-result-import-path\">flarum/components/ReplyComposer.js</span>",
+    "flarum/js/src/common/utils/requesterror.js~requesterror",
+    "class/js/src/common/utils/RequestError.js~RequestError.html",
+    "<span>RequestError</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/RequestError.js</span>",
     "class"
   ],
   [
-    "flarum/components/replyplaceholder.js~replyplaceholder",
-    "class/js/forum/src/components/ReplyPlaceholder.js~ReplyPlaceholder.html",
-    "<span>ReplyPlaceholder</span> <span class=\"search-result-import-path\">flarum/components/ReplyPlaceholder.js</span>",
+    "flarum/js/src/common/components/requesterrormodal.js~requesterrormodal",
+    "class/js/src/common/components/RequestErrorModal.js~RequestErrorModal.html",
+    "<span>RequestErrorModal</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/RequestErrorModal.js</span>",
     "class"
   ],
   [
-    "flarum/utils/requesterror.js~requesterror",
-    "class/js/lib/utils/RequestError.js~RequestError.html",
-    "<span>RequestError</span> <span class=\"search-result-import-path\">flarum/utils/RequestError.js</span>",
+    "flarum/js/src/common/utils/scrolllistener.js~scrolllistener",
+    "class/js/src/common/utils/ScrollListener.js~ScrollListener.html",
+    "<span>ScrollListener</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/ScrollListener.js</span>",
     "class"
   ],
   [
-    "flarum/components/requesterrormodal.js~requesterrormodal",
-    "class/js/lib/components/RequestErrorModal.js~RequestErrorModal.html",
-    "<span>RequestErrorModal</span> <span class=\"search-result-import-path\">flarum/components/RequestErrorModal.js</span>",
+    "flarum/js/src/forum/components/search.js~search",
+    "class/js/src/forum/components/Search.js~Search.html",
+    "<span>Search</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/Search.js</span>",
     "class"
   ],
   [
-    "flarum/utils/scrolllistener.js~scrolllistener",
-    "class/js/lib/utils/ScrollListener.js~ScrollListener.html",
-    "<span>ScrollListener</span> <span class=\"search-result-import-path\">flarum/utils/ScrollListener.js</span>",
+    "flarum/js/src/forum/components/searchsource.js~searchsource",
+    "class/js/src/forum/components/SearchSource.js~SearchSource.html",
+    "<span>SearchSource</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/SearchSource.js</span>",
     "class"
   ],
   [
-    "flarum/components/search.js~search",
-    "class/js/forum/src/components/Search.js~Search.html",
-    "<span>Search</span> <span class=\"search-result-import-path\">flarum/components/Search.js</span>",
+    "flarum/js/src/common/components/select.js~select",
+    "class/js/src/common/components/Select.js~Select.html",
+    "<span>Select</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Select.js</span>",
     "class"
   ],
   [
-    "flarum/components/searchsource.js~searchsource",
-    "class/js/forum/src/components/SearchSource.js~SearchSource.html",
-    "<span>SearchSource</span> <span class=\"search-result-import-path\">flarum/components/SearchSource.js</span>",
+    "flarum/js/src/common/components/selectdropdown.js~selectdropdown",
+    "class/js/src/common/components/SelectDropdown.js~SelectDropdown.html",
+    "<span>SelectDropdown</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/SelectDropdown.js</span>",
     "class"
   ],
   [
-    "flarum/components/select.js~select",
-    "class/js/lib/components/Select.js~Select.html",
-    "<span>Select</span> <span class=\"search-result-import-path\">flarum/components/Select.js</span>",
+    "flarum/js/src/common/components/separator.js~separator",
+    "class/js/src/common/components/Separator.js~Separator.html",
+    "<span>Separator</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Separator.js</span>",
     "class"
   ],
   [
-    "flarum/components/selectdropdown.js~selectdropdown",
-    "class/js/lib/components/SelectDropdown.js~SelectDropdown.html",
-    "<span>SelectDropdown</span> <span class=\"search-result-import-path\">flarum/components/SelectDropdown.js</span>",
+    "flarum/js/src/common/session.js~session",
+    "class/js/src/common/Session.js~Session.html",
+    "<span>Session</span> <span class=\"search-result-import-path\">flarum/js/src/common/Session.js</span>",
     "class"
   ],
   [
-    "flarum/components/separator.js~separator",
-    "class/js/lib/components/Separator.js~Separator.html",
-    "<span>Separator</span> <span class=\"search-result-import-path\">flarum/components/Separator.js</span>",
+    "flarum/js/src/admin/components/sessiondropdown.js~sessiondropdown",
+    "class/js/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/SessionDropdown.js</span>",
     "class"
   ],
   [
-    "flarum/session.js~session",
-    "class/js/lib/Session.js~Session.html",
-    "<span>Session</span> <span class=\"search-result-import-path\">flarum/Session.js</span>",
+    "flarum/js/src/forum/components/sessiondropdown.js~sessiondropdown",
+    "class/js/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/SessionDropdown.js</span>",
     "class"
   ],
   [
-    "flarum/components/sessiondropdown.js~sessiondropdown",
-    "class/js/admin/src/components/SessionDropdown.js~SessionDropdown.html",
-    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown.js</span>",
+    "flarum/js/src/admin/components/settingdropdown.js~settingdropdown",
+    "class/js/src/admin/components/SettingDropdown.js~SettingDropdown.html",
+    "<span>SettingDropdown</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/SettingDropdown.js</span>",
     "class"
   ],
   [
-    "flarum/components/sessiondropdown.js~sessiondropdown",
-    "class/js/forum/src/components/SessionDropdown.js~SessionDropdown.html",
-    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown.js</span>",
+    "flarum/js/src/admin/components/settingsmodal.js~settingsmodal",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html",
+    "<span>SettingsModal</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/SettingsModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/settingdropdown.js~settingdropdown",
-    "class/js/admin/src/components/SettingDropdown.js~SettingDropdown.html",
-    "<span>SettingDropdown</span> <span class=\"search-result-import-path\">flarum/components/SettingDropdown.js</span>",
+    "flarum/js/src/forum/components/settingspage.js~settingspage",
+    "class/js/src/forum/components/SettingsPage.js~SettingsPage.html",
+    "<span>SettingsPage</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/SettingsPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/settingsmodal.js~settingsmodal",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html",
-    "<span>SettingsModal</span> <span class=\"search-result-import-path\">flarum/components/SettingsModal.js</span>",
+    "flarum/js/src/forum/components/signupmodal.js~signupmodal",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html",
+    "<span>SignUpModal</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/SignUpModal.js</span>",
     "class"
   ],
   [
-    "flarum/components/settingspage.js~settingspage",
-    "class/js/forum/src/components/SettingsPage.js~SettingsPage.html",
-    "<span>SettingsPage</span> <span class=\"search-result-import-path\">flarum/components/SettingsPage.js</span>",
+    "flarum/js/src/common/components/splitdropdown.js~splitdropdown",
+    "class/js/src/common/components/SplitDropdown.js~SplitDropdown.html",
+    "<span>SplitDropdown</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/SplitDropdown.js</span>",
     "class"
   ],
   [
-    "flarum/components/signupmodal.js~signupmodal",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html",
-    "<span>SignUpModal</span> <span class=\"search-result-import-path\">flarum/components/SignUpModal.js</span>",
+    "flarum/js/src/admin/components/statuswidget.js~statuswidget",
+    "class/js/src/admin/components/StatusWidget.js~StatusWidget.html",
+    "<span>StatusWidget</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/StatusWidget.js</span>",
     "class"
   ],
   [
-    "flarum/components/splitdropdown.js~splitdropdown",
-    "class/js/lib/components/SplitDropdown.js~SplitDropdown.html",
-    "<span>SplitDropdown</span> <span class=\"search-result-import-path\">flarum/components/SplitDropdown.js</span>",
+    "flarum/js/src/common/store.js~store",
+    "class/js/src/common/Store.js~Store.html",
+    "<span>Store</span> <span class=\"search-result-import-path\">flarum/js/src/common/Store.js</span>",
     "class"
   ],
   [
-    "flarum/components/statuswidget.js~statuswidget",
-    "class/js/admin/src/components/StatusWidget.js~StatusWidget.html",
-    "<span>StatusWidget</span> <span class=\"search-result-import-path\">flarum/components/StatusWidget.js</span>",
+    "flarum/js/src/common/utils/subtreeretainer.js~subtreeretainer",
+    "class/js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html",
+    "<span>SubtreeRetainer</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/SubtreeRetainer.js</span>",
     "class"
   ],
   [
-    "flarum/store.js~store",
-    "class/js/lib/Store.js~Store.html",
-    "<span>Store</span> <span class=\"search-result-import-path\">flarum/Store.js</span>",
+    "flarum/js/src/common/components/switch.js~switch",
+    "class/js/src/common/components/Switch.js~Switch.html",
+    "<span>Switch</span> <span class=\"search-result-import-path\">flarum/js/src/common/components/Switch.js</span>",
     "class"
   ],
   [
-    "flarum/utils/subtreeretainer.js~subtreeretainer",
-    "class/js/lib/utils/SubtreeRetainer.js~SubtreeRetainer.html",
-    "<span>SubtreeRetainer</span> <span class=\"search-result-import-path\">flarum/utils/SubtreeRetainer.js</span>",
+    "flarum/js/src/forum/components/terminalpost.js~terminalpost",
+    "class/js/src/forum/components/TerminalPost.js~TerminalPost.html",
+    "<span>TerminalPost</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/TerminalPost.js</span>",
     "class"
   ],
   [
-    "flarum/components/switch.js~switch",
-    "class/js/lib/components/Switch.js~Switch.html",
-    "<span>Switch</span> <span class=\"search-result-import-path\">flarum/components/Switch.js</span>",
+    "flarum/js/src/forum/components/texteditor.js~texteditor",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html",
+    "<span>TextEditor</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/TextEditor.js</span>",
     "class"
   ],
   [
-    "flarum/components/terminalpost.js~terminalpost",
-    "class/js/forum/src/components/TerminalPost.js~TerminalPost.html",
-    "<span>TerminalPost</span> <span class=\"search-result-import-path\">flarum/components/TerminalPost.js</span>",
+    "flarum/js/src/common/translator.js~translator",
+    "class/js/src/common/Translator.js~Translator.html",
+    "<span>Translator</span> <span class=\"search-result-import-path\">flarum/js/src/common/Translator.js</span>",
     "class"
   ],
   [
-    "flarum/components/texteditor.js~texteditor",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html",
-    "<span>TextEditor</span> <span class=\"search-result-import-path\">flarum/components/TextEditor.js</span>",
+    "flarum/js/src/admin/components/uploadimagebutton.js~uploadimagebutton",
+    "class/js/src/admin/components/UploadImageButton.js~UploadImageButton.html",
+    "<span>UploadImageButton</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/UploadImageButton.js</span>",
     "class"
   ],
   [
-    "flarum/translator.js~translator",
-    "class/js/lib/Translator.js~Translator.html",
-    "<span>Translator</span> <span class=\"search-result-import-path\">flarum/Translator.js</span>",
+    "flarum/js/src/common/models/user.js~user",
+    "class/js/src/common/models/User.js~User.html",
+    "<span>User</span> <span class=\"search-result-import-path\">flarum/js/src/common/models/User.js</span>",
     "class"
   ],
   [
-    "flarum/components/uploadimagebutton.js~uploadimagebutton",
-    "class/js/admin/src/components/UploadImageButton.js~UploadImageButton.html",
-    "<span>UploadImageButton</span> <span class=\"search-result-import-path\">flarum/components/UploadImageButton.js</span>",
+    "flarum/js/src/forum/components/usercard.js~usercard",
+    "class/js/src/forum/components/UserCard.js~UserCard.html",
+    "<span>UserCard</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/UserCard.js</span>",
     "class"
   ],
   [
-    "flarum/models/user.js~user",
-    "class/js/lib/models/User.js~User.html",
-    "<span>User</span> <span class=\"search-result-import-path\">flarum/models/User.js</span>",
+    "flarum/js/src/forum/components/userpage.js~userpage",
+    "class/js/src/forum/components/UserPage.js~UserPage.html",
+    "<span>UserPage</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/UserPage.js</span>",
     "class"
   ],
   [
-    "flarum/components/usercard.js~usercard",
-    "class/js/forum/src/components/UserCard.js~UserCard.html",
-    "<span>UserCard</span> <span class=\"search-result-import-path\">flarum/components/UserCard.js</span>",
+    "flarum/js/src/forum/components/userssearchsource.js~userssearchresults",
+    "class/js/src/forum/components/UsersSearchSource.js~UsersSearchResults.html",
+    "<span>UsersSearchResults</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/UsersSearchSource.js</span>",
     "class"
   ],
   [
-    "flarum/components/userpage.js~userpage",
-    "class/js/forum/src/components/UserPage.js~UserPage.html",
-    "<span>UserPage</span> <span class=\"search-result-import-path\">flarum/components/UserPage.js</span>",
+    "flarum/js/src/forum/components/welcomehero.js~welcomehero",
+    "class/js/src/forum/components/WelcomeHero.js~WelcomeHero.html",
+    "<span>WelcomeHero</span> <span class=\"search-result-import-path\">flarum/js/src/forum/components/WelcomeHero.js</span>",
     "class"
   ],
   [
-    "flarum/components/userssearchsource.js~userssearchresults",
-    "class/js/forum/src/components/UsersSearchSource.js~UsersSearchResults.html",
-    "<span>UsersSearchResults</span> <span class=\"search-result-import-path\">flarum/components/UsersSearchSource.js</span>",
+    "flarum/js/src/admin/components/dashboardwidget.js~widget",
+    "class/js/src/admin/components/DashboardWidget.js~Widget.html",
+    "<span>Widget</span> <span class=\"search-result-import-path\">flarum/js/src/admin/components/DashboardWidget.js</span>",
     "class"
   ],
   [
-    "flarum/components/welcomehero.js~welcomehero",
-    "class/js/forum/src/components/WelcomeHero.js~WelcomeHero.html",
-    "<span>WelcomeHero</span> <span class=\"search-result-import-path\">flarum/components/WelcomeHero.js</span>",
-    "class"
-  ],
-  [
-    "flarum/components/dashboardwidget.js~widget",
-    "class/js/admin/src/components/DashboardWidget.js~Widget.html",
-    "<span>Widget</span> <span class=\"search-result-import-path\">flarum/components/DashboardWidget.js</span>",
-    "class"
-  ],
-  [
-    "flarum/utils/abbreviatenumber.js~abbreviatenumber",
+    "flarum/js/src/common/utils/abbreviatenumber.js~abbreviatenumber",
     "function/index.html#static-function-abbreviateNumber",
-    "<span>abbreviateNumber</span> <span class=\"search-result-import-path\">flarum/utils/abbreviateNumber.js</span>",
+    "<span>abbreviateNumber</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/abbreviateNumber.js</span>",
     "function"
   ],
   [
-    "flarum/utils/affixsidebar.js~affixsidebar",
+    "flarum/js/src/forum/utils/affixsidebar.js~affixsidebar",
     "function/index.html#static-function-affixSidebar",
-    "<span>affixSidebar</span> <span class=\"search-result-import-path\">flarum/utils/affixSidebar.js</span>",
+    "<span>affixSidebar</span> <span class=\"search-result-import-path\">flarum/js/src/forum/utils/affixSidebar.js</span>",
     "function"
   ],
   [
-    "flarum/initializers/alertemailconfirmation.js~alertemailconfirmation",
+    "flarum/js/src/forum/utils/alertemailconfirmation.js~alertemailconfirmation",
     "function/index.html#static-function-alertEmailConfirmation",
-    "<span>alertEmailConfirmation</span> <span class=\"search-result-import-path\">flarum/initializers/alertEmailConfirmation.js</span>",
+    "<span>alertEmailConfirmation</span> <span class=\"search-result-import-path\">flarum/js/src/forum/utils/alertEmailConfirmation.js</span>",
     "function"
   ],
   [
-    "flarum/utils/anchorscroll.js~anchorscroll",
+    "flarum/js/src/common/utils/anchorscroll.js~anchorscroll",
     "function/index.html#static-function-anchorScroll",
-    "<span>anchorScroll</span> <span class=\"search-result-import-path\">flarum/utils/anchorScroll.js</span>",
+    "<span>anchorScroll</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/anchorScroll.js</span>",
     "function"
   ],
   [
-    "flarum/helpers/avatar.js~avatar",
+    "flarum/js/src/admin/index.js~app",
+    "variable/index.html#static-variable-app",
+    "<span>app</span> <span class=\"search-result-import-path\">flarum/js/src/admin/index.js</span>",
+    "variable"
+  ],
+  [
+    "flarum/js/src/forum/index.js~app",
+    "variable/index.html#static-variable-app",
+    "<span>app</span> <span class=\"search-result-import-path\">flarum/js/src/forum/index.js</span>",
+    "variable"
+  ],
+  [
+    "flarum/js/src/common/helpers/avatar.js~avatar",
     "function/index.html#static-function-avatar",
-    "<span>avatar</span> <span class=\"search-result-import-path\">flarum/helpers/avatar.js</span>",
+    "<span>avatar</span> <span class=\"search-result-import-path\">flarum/js/src/common/helpers/avatar.js</span>",
     "function"
   ],
   [
-    "flarum/initializers/boot.js~boot",
-    "function/index.html#static-function-boot",
-    "<span>boot</span> <span class=\"search-result-import-path\">flarum/initializers/boot.js</span>",
-    "function"
-  ],
-  [
-    "flarum/initializers/boot.js~boot",
-    "function/index.html#static-function-boot",
-    "<span>boot</span> <span class=\"search-result-import-path\">flarum/initializers/boot.js</span>",
-    "function"
-  ],
-  [
-    "flarum/utils/classlist.js~classlist",
+    "flarum/js/src/common/utils/classlist.js~classlist",
     "function/index.html#static-function-classList",
-    "<span>classList</span> <span class=\"search-result-import-path\">flarum/utils/classList.js</span>",
+    "<span>classList</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/classList.js</span>",
     "function"
   ],
   [
-    "flarum/initializers/components.js~components",
-    "function/index.html#static-function-components",
-    "<span>components</span> <span class=\"search-result-import-path\">flarum/initializers/components.js</span>",
-    "function"
-  ],
-  [
-    "flarum/utils/computed.js~computed",
+    "flarum/js/src/common/utils/computed.js~computed",
     "function/index.html#static-function-computed",
-    "<span>computed</span> <span class=\"search-result-import-path\">flarum/utils/computed.js</span>",
+    "<span>computed</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/computed.js</span>",
     "function"
   ],
   [
-    "flarum/extend.js~extend",
+    "flarum/js/src/common/extend.js~extend",
     "function/index.html#static-function-extend",
-    "<span>extend</span> <span class=\"search-result-import-path\">flarum/extend.js</span>",
+    "<span>extend</span> <span class=\"search-result-import-path\">flarum/js/src/common/extend.js</span>",
     "function"
   ],
   [
-    "flarum/utils/extract.js~extract",
+    "flarum/js/src/common/utils/extract.js~extract",
     "function/index.html#static-function-extract",
-    "<span>extract</span> <span class=\"search-result-import-path\">flarum/utils/extract.js</span>",
+    "<span>extract</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/extract.js</span>",
     "function"
   ],
   [
-    "flarum/utils/extracttext.js~extracttext",
+    "flarum/js/src/common/utils/extracttext.js~extracttext",
     "function/index.html#static-function-extractText",
-    "<span>extractText</span> <span class=\"search-result-import-path\">flarum/utils/extractText.js</span>",
+    "<span>extractText</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/extractText.js</span>",
     "function"
   ],
   [
-    "flarum/utils/formatnumber.js~formatnumber",
+    "flarum/js/src/common/utils/formatnumber.js~formatnumber",
     "function/index.html#static-function-formatNumber",
-    "<span>formatNumber</span> <span class=\"search-result-import-path\">flarum/utils/formatNumber.js</span>",
+    "<span>formatNumber</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/formatNumber.js</span>",
     "function"
   ],
   [
-    "flarum/helpers/fulltime.js~fulltime",
+    "flarum/js/src/common/helpers/fulltime.js~fulltime",
     "function/index.html#static-function-fullTime",
-    "<span>fullTime</span> <span class=\"search-result-import-path\">flarum/helpers/fullTime.js</span>",
+    "<span>fullTime</span> <span class=\"search-result-import-path\">flarum/js/src/common/helpers/fullTime.js</span>",
     "function"
   ],
   [
-    "flarum/utils/string.js~getplaincontent",
+    "flarum/js/src/common/utils/string.js~getplaincontent",
     "function/index.html#static-function-getPlainContent",
-    "<span>getPlainContent</span> <span class=\"search-result-import-path\">flarum/utils/string.js</span>",
+    "<span>getPlainContent</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/string.js</span>",
     "function"
   ],
   [
-    "flarum/helpers/highlight.js~highlight",
+    "flarum/js/src/common/helpers/highlight.js~highlight",
     "function/index.html#static-function-highlight",
-    "<span>highlight</span> <span class=\"search-result-import-path\">flarum/helpers/highlight.js</span>",
+    "<span>highlight</span> <span class=\"search-result-import-path\">flarum/js/src/common/helpers/highlight.js</span>",
     "function"
   ],
   [
-    "flarum/helpers/humantime.js~humantime",
+    "flarum/js/src/common/helpers/humantime.js~humantime",
     "function/index.html#static-function-humanTime",
-    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/helpers/humanTime.js</span>",
+    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/js/src/common/helpers/humanTime.js</span>",
     "function"
   ],
   [
-    "flarum/initializers/humantime.js~humantime",
+    "flarum/js/src/common/utils/humantime.js~humantime",
     "function/index.html#static-function-humanTime",
-    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/initializers/humanTime.js</span>",
+    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/humanTime.js</span>",
     "function"
   ],
   [
-    "flarum/utils/humantime.js~humantime",
+    "flarum/js/src/common/utils/livehumantimes.js~humantime",
     "function/index.html#static-function-humanTime",
-    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/utils/humanTime.js</span>",
+    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/liveHumanTimes.js</span>",
     "function"
   ],
   [
-    "flarum/helpers/icon.js~icon",
+    "flarum/js/src/common/helpers/icon.js~icon",
     "function/index.html#static-function-icon",
-    "<span>icon</span> <span class=\"search-result-import-path\">flarum/helpers/icon.js</span>",
+    "<span>icon</span> <span class=\"search-result-import-path\">flarum/js/src/common/helpers/icon.js</span>",
     "function"
   ],
   [
-    "flarum/helpers/listitems.js~listitems",
+    "flarum/js/src/common/helpers/listitems.js~listitems",
     "function/index.html#static-function-listItems",
-    "<span>listItems</span> <span class=\"search-result-import-path\">flarum/helpers/listItems.js</span>",
+    "<span>listItems</span> <span class=\"search-result-import-path\">flarum/js/src/common/helpers/listItems.js</span>",
     "function"
   ],
   [
-    "flarum/utils/maproutes.js~maproutes",
+    "flarum/js/src/common/utils/maproutes.js~maproutes",
     "function/index.html#static-function-mapRoutes",
-    "<span>mapRoutes</span> <span class=\"search-result-import-path\">flarum/utils/mapRoutes.js</span>",
+    "<span>mapRoutes</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/mapRoutes.js</span>",
     "function"
   ],
   [
-    "flarum/utils/mixin.js~mixin",
+    "flarum/js/src/common/utils/mixin.js~mixin",
     "function/index.html#static-function-mixin",
-    "<span>mixin</span> <span class=\"search-result-import-path\">flarum/utils/mixin.js</span>",
+    "<span>mixin</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/mixin.js</span>",
     "function"
   ],
   [
-    "flarum/extend.js~override",
+    "flarum/js/src/common/extend.js~override",
     "function/index.html#static-function-override",
-    "<span>override</span> <span class=\"search-result-import-path\">flarum/extend.js</span>",
+    "<span>override</span> <span class=\"search-result-import-path\">flarum/js/src/common/extend.js</span>",
     "function"
   ],
   [
-    "flarum/utils/patchmithril.js~patchmithril",
+    "flarum/js/src/common/utils/patchmithril.js~patchmithril",
     "function/index.html#static-function-patchMithril",
-    "<span>patchMithril</span> <span class=\"search-result-import-path\">flarum/utils/patchMithril.js</span>",
+    "<span>patchMithril</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/patchMithril.js</span>",
     "function"
   ],
   [
-    "flarum/initializers/preload.js~preload",
-    "function/index.html#static-function-preload",
-    "<span>preload</span> <span class=\"search-result-import-path\">flarum/initializers/preload.js</span>",
-    "function"
-  ],
-  [
-    "flarum/helpers/punctuateseries.js~punctuateseries",
+    "flarum/js/src/common/helpers/punctuateseries.js~punctuateseries",
     "function/index.html#static-function-punctuateSeries",
-    "<span>punctuateSeries</span> <span class=\"search-result-import-path\">flarum/helpers/punctuateSeries.js</span>",
+    "<span>punctuateSeries</span> <span class=\"search-result-import-path\">flarum/js/src/common/helpers/punctuateSeries.js</span>",
     "function"
   ],
   [
-    "flarum/initializers/routes.js~routes",
+    "flarum/js/src/admin/routes.js~routes",
     "function/index.html#static-function-routes",
-    "<span>routes</span> <span class=\"search-result-import-path\">flarum/initializers/routes.js</span>",
+    "<span>routes</span> <span class=\"search-result-import-path\">flarum/js/src/admin/routes.js</span>",
     "function"
   ],
   [
-    "flarum/initializers/routes.js~routes",
+    "flarum/js/src/forum/routes.js~routes",
     "function/index.html#static-function-routes",
-    "<span>routes</span> <span class=\"search-result-import-path\">flarum/initializers/routes.js</span>",
+    "<span>routes</span> <span class=\"search-result-import-path\">flarum/js/src/forum/routes.js</span>",
     "function"
   ],
   [
-    "flarum/utils/savesettings.js~savesettings",
+    "flarum/js/src/admin/utils/savesettings.js~savesettings",
     "function/index.html#static-function-saveSettings",
-    "<span>saveSettings</span> <span class=\"search-result-import-path\">flarum/utils/saveSettings.js</span>",
+    "<span>saveSettings</span> <span class=\"search-result-import-path\">flarum/js/src/admin/utils/saveSettings.js</span>",
     "function"
   ],
   [
-    "flarum/utils/slidable.js~slidable",
+    "flarum/js/src/forum/utils/slidable.js~slidable",
     "function/index.html#static-function-slidable",
-    "<span>slidable</span> <span class=\"search-result-import-path\">flarum/utils/slidable.js</span>",
+    "<span>slidable</span> <span class=\"search-result-import-path\">flarum/js/src/forum/utils/slidable.js</span>",
     "function"
   ],
   [
-    "flarum/utils/string.js~slug",
+    "flarum/js/src/common/utils/string.js~slug",
     "function/index.html#static-function-slug",
-    "<span>slug</span> <span class=\"search-result-import-path\">flarum/utils/string.js</span>",
+    "<span>slug</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/string.js</span>",
     "function"
   ],
   [
-    "flarum/initializers/store.js~store",
-    "function/index.html#static-function-store",
-    "<span>store</span> <span class=\"search-result-import-path\">flarum/initializers/store.js</span>",
-    "function"
-  ],
-  [
-    "flarum/utils/stringtocolor.js~stringtocolor",
+    "flarum/js/src/common/utils/stringtocolor.js~stringtocolor",
     "function/index.html#static-function-stringToColor",
-    "<span>stringToColor</span> <span class=\"search-result-import-path\">flarum/utils/stringToColor.js</span>",
+    "<span>stringToColor</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/stringToColor.js</span>",
     "function"
   ],
   [
-    "flarum/utils/string.js~truncate",
+    "flarum/js/src/common/utils/string.js~truncate",
     "function/index.html#static-function-truncate",
-    "<span>truncate</span> <span class=\"search-result-import-path\">flarum/utils/string.js</span>",
+    "<span>truncate</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/string.js</span>",
     "function"
   ],
   [
-    "flarum/utils/string.js~ucfirst",
+    "flarum/js/src/common/utils/string.js~ucfirst",
     "function/index.html#static-function-ucfirst",
-    "<span>ucfirst</span> <span class=\"search-result-import-path\">flarum/utils/string.js</span>",
+    "<span>ucfirst</span> <span class=\"search-result-import-path\">flarum/js/src/common/utils/string.js</span>",
     "function"
   ],
   [
-    "flarum/helpers/useronline.js~useronline",
+    "flarum/js/src/common/helpers/useronline.js~useronline",
     "function/index.html#static-function-userOnline",
-    "<span>userOnline</span> <span class=\"search-result-import-path\">flarum/helpers/userOnline.js</span>",
+    "<span>userOnline</span> <span class=\"search-result-import-path\">flarum/js/src/common/helpers/userOnline.js</span>",
     "function"
   ],
   [
-    "flarum/helpers/username.js~username",
+    "flarum/js/src/common/helpers/username.js~username",
     "function/index.html#static-function-username",
-    "<span>username</span> <span class=\"search-result-import-path\">flarum/helpers/username.js</span>",
+    "<span>username</span> <span class=\"search-result-import-path\">flarum/js/src/common/helpers/username.js</span>",
     "function"
   ],
   [
@@ -1248,5895 +1218,5709 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "js/admin/gulpfile.js",
-    "file/js/admin/Gulpfile.js.html",
-    "js/admin/Gulpfile.js",
+    "js/admin.js",
+    "file/js/admin.js.html",
+    "js/admin.js",
     "file"
   ],
   [
-    "js/admin/src/app.js",
-    "file/js/admin/src/app.js.html",
-    "js/admin/src/app.js",
+    "js/forum.js",
+    "file/js/forum.js.html",
+    "js/forum.js",
     "file"
   ],
   [
-    "js/admin/src/components/addextensionmodal.js",
-    "file/js/admin/src/components/AddExtensionModal.js.html",
-    "js/admin/src/components/AddExtensionModal.js",
+    "js/src/admin/compat.js",
+    "file/js/src/admin/compat.js.html",
+    "js/src/admin/compat.js",
     "file"
   ],
   [
-    "js/admin/src/components/addextensionmodal.js~addextensionmodal#classname",
-    "class/js/admin/src/components/AddExtensionModal.js~AddExtensionModal.html#instance-method-className",
-    "js/admin/src/components/AddExtensionModal.js~AddExtensionModal#className",
+    "js/src/admin/components/addextensionmodal.js",
+    "file/js/src/admin/components/AddExtensionModal.js.html",
+    "js/src/admin/components/AddExtensionModal.js",
+    "file"
+  ],
+  [
+    "js/src/admin/components/addextensionmodal.js~addextensionmodal#classname",
+    "class/js/src/admin/components/AddExtensionModal.js~AddExtensionModal.html#instance-method-className",
+    "js/src/admin/components/AddExtensionModal.js~AddExtensionModal#className",
     "method"
   ],
   [
-    "js/admin/src/components/addextensionmodal.js~addextensionmodal#content",
-    "class/js/admin/src/components/AddExtensionModal.js~AddExtensionModal.html#instance-method-content",
-    "js/admin/src/components/AddExtensionModal.js~AddExtensionModal#content",
+    "js/src/admin/components/addextensionmodal.js~addextensionmodal#content",
+    "class/js/src/admin/components/AddExtensionModal.js~AddExtensionModal.html#instance-method-content",
+    "js/src/admin/components/AddExtensionModal.js~AddExtensionModal#content",
     "method"
   ],
   [
-    "js/admin/src/components/addextensionmodal.js~addextensionmodal#title",
-    "class/js/admin/src/components/AddExtensionModal.js~AddExtensionModal.html#instance-method-title",
-    "js/admin/src/components/AddExtensionModal.js~AddExtensionModal#title",
+    "js/src/admin/components/addextensionmodal.js~addextensionmodal#title",
+    "class/js/src/admin/components/AddExtensionModal.js~AddExtensionModal.html#instance-method-title",
+    "js/src/admin/components/AddExtensionModal.js~AddExtensionModal#title",
     "method"
   ],
   [
-    "js/admin/src/components/adminlinkbutton.js",
-    "file/js/admin/src/components/AdminLinkButton.js.html",
-    "js/admin/src/components/AdminLinkButton.js",
+    "js/src/admin/components/adminlinkbutton.js",
+    "file/js/src/admin/components/AdminLinkButton.js.html",
+    "js/src/admin/components/AdminLinkButton.js",
     "file"
   ],
   [
-    "js/admin/src/components/adminlinkbutton.js~adminlinkbutton#getbuttoncontent",
-    "class/js/admin/src/components/AdminLinkButton.js~AdminLinkButton.html#instance-method-getButtonContent",
-    "js/admin/src/components/AdminLinkButton.js~AdminLinkButton#getButtonContent",
+    "js/src/admin/components/adminlinkbutton.js~adminlinkbutton#getbuttoncontent",
+    "class/js/src/admin/components/AdminLinkButton.js~AdminLinkButton.html#instance-method-getButtonContent",
+    "js/src/admin/components/AdminLinkButton.js~AdminLinkButton#getButtonContent",
     "method"
   ],
   [
-    "js/admin/src/components/adminnav.js",
-    "file/js/admin/src/components/AdminNav.js.html",
-    "js/admin/src/components/AdminNav.js",
+    "js/src/admin/components/adminnav.js",
+    "file/js/src/admin/components/AdminNav.js.html",
+    "js/src/admin/components/AdminNav.js",
     "file"
   ],
   [
-    "js/admin/src/components/adminnav.js~adminnav#items",
-    "class/js/admin/src/components/AdminNav.js~AdminNav.html#instance-method-items",
-    "js/admin/src/components/AdminNav.js~AdminNav#items",
+    "js/src/admin/components/adminnav.js~adminnav#items",
+    "class/js/src/admin/components/AdminNav.js~AdminNav.html#instance-method-items",
+    "js/src/admin/components/AdminNav.js~AdminNav#items",
     "method"
   ],
   [
-    "js/admin/src/components/adminnav.js~adminnav#view",
-    "class/js/admin/src/components/AdminNav.js~AdminNav.html#instance-method-view",
-    "js/admin/src/components/AdminNav.js~AdminNav#view",
+    "js/src/admin/components/adminnav.js~adminnav#view",
+    "class/js/src/admin/components/AdminNav.js~AdminNav.html#instance-method-view",
+    "js/src/admin/components/AdminNav.js~AdminNav#view",
     "method"
   ],
   [
-    "js/admin/src/components/appearancepage.js",
-    "file/js/admin/src/components/AppearancePage.js.html",
-    "js/admin/src/components/AppearancePage.js",
+    "js/src/admin/components/appearancepage.js",
+    "file/js/src/admin/components/AppearancePage.js.html",
+    "js/src/admin/components/AppearancePage.js",
     "file"
   ],
   [
-    "js/admin/src/components/appearancepage.js~appearancepage#coloredheader",
-    "class/js/admin/src/components/AppearancePage.js~AppearancePage.html#instance-member-coloredHeader",
-    "js/admin/src/components/AppearancePage.js~AppearancePage#coloredHeader",
+    "js/src/admin/components/appearancepage.js~appearancepage#coloredheader",
+    "class/js/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-coloredHeader",
+    "js/src/admin/components/AppearancePage.js~AppearancePage#coloredHeader",
     "member"
   ],
   [
-    "js/admin/src/components/appearancepage.js~appearancepage#darkmode",
-    "class/js/admin/src/components/AppearancePage.js~AppearancePage.html#instance-member-darkMode",
-    "js/admin/src/components/AppearancePage.js~AppearancePage#darkMode",
+    "js/src/admin/components/appearancepage.js~appearancepage#darkmode",
+    "class/js/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-darkMode",
+    "js/src/admin/components/AppearancePage.js~AppearancePage#darkMode",
     "member"
   ],
   [
-    "js/admin/src/components/appearancepage.js~appearancepage#init",
-    "class/js/admin/src/components/AppearancePage.js~AppearancePage.html#instance-method-init",
-    "js/admin/src/components/AppearancePage.js~AppearancePage#init",
+    "js/src/admin/components/appearancepage.js~appearancepage#init",
+    "class/js/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-init",
+    "js/src/admin/components/AppearancePage.js~AppearancePage#init",
     "method"
   ],
   [
-    "js/admin/src/components/appearancepage.js~appearancepage#loading",
-    "class/js/admin/src/components/AppearancePage.js~AppearancePage.html#instance-member-loading",
-    "js/admin/src/components/AppearancePage.js~AppearancePage#loading",
+    "js/src/admin/components/appearancepage.js~appearancepage#loading",
+    "class/js/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-loading",
+    "js/src/admin/components/AppearancePage.js~AppearancePage#loading",
     "member"
   ],
   [
-    "js/admin/src/components/appearancepage.js~appearancepage#onsubmit",
-    "class/js/admin/src/components/AppearancePage.js~AppearancePage.html#instance-method-onsubmit",
-    "js/admin/src/components/AppearancePage.js~AppearancePage#onsubmit",
+    "js/src/admin/components/appearancepage.js~appearancepage#onsubmit",
+    "class/js/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-onsubmit",
+    "js/src/admin/components/AppearancePage.js~AppearancePage#onsubmit",
     "method"
   ],
   [
-    "js/admin/src/components/appearancepage.js~appearancepage#primarycolor",
-    "class/js/admin/src/components/AppearancePage.js~AppearancePage.html#instance-member-primaryColor",
-    "js/admin/src/components/AppearancePage.js~AppearancePage#primaryColor",
+    "js/src/admin/components/appearancepage.js~appearancepage#primarycolor",
+    "class/js/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-primaryColor",
+    "js/src/admin/components/AppearancePage.js~AppearancePage#primaryColor",
     "member"
   ],
   [
-    "js/admin/src/components/appearancepage.js~appearancepage#secondarycolor",
-    "class/js/admin/src/components/AppearancePage.js~AppearancePage.html#instance-member-secondaryColor",
-    "js/admin/src/components/AppearancePage.js~AppearancePage#secondaryColor",
+    "js/src/admin/components/appearancepage.js~appearancepage#secondarycolor",
+    "class/js/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-secondaryColor",
+    "js/src/admin/components/AppearancePage.js~AppearancePage#secondaryColor",
     "member"
   ],
   [
-    "js/admin/src/components/appearancepage.js~appearancepage#view",
-    "class/js/admin/src/components/AppearancePage.js~AppearancePage.html#instance-method-view",
-    "js/admin/src/components/AppearancePage.js~AppearancePage#view",
+    "js/src/admin/components/appearancepage.js~appearancepage#view",
+    "class/js/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-view",
+    "js/src/admin/components/AppearancePage.js~AppearancePage#view",
     "method"
   ],
   [
-    "js/admin/src/components/basicspage.js",
-    "file/js/admin/src/components/BasicsPage.js.html",
-    "js/admin/src/components/BasicsPage.js",
+    "js/src/admin/components/basicspage.js",
+    "file/js/src/admin/components/BasicsPage.js.html",
+    "js/src/admin/components/BasicsPage.js",
     "file"
   ],
   [
-    "js/admin/src/components/basicspage.js~basicspage#changed",
-    "class/js/admin/src/components/BasicsPage.js~BasicsPage.html#instance-method-changed",
-    "js/admin/src/components/BasicsPage.js~BasicsPage#changed",
+    "js/src/admin/components/basicspage.js~basicspage#changed",
+    "class/js/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-changed",
+    "js/src/admin/components/BasicsPage.js~BasicsPage#changed",
     "method"
   ],
   [
-    "js/admin/src/components/basicspage.js~basicspage#fields",
-    "class/js/admin/src/components/BasicsPage.js~BasicsPage.html#instance-member-fields",
-    "js/admin/src/components/BasicsPage.js~BasicsPage#fields",
+    "js/src/admin/components/basicspage.js~basicspage#fields",
+    "class/js/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-fields",
+    "js/src/admin/components/BasicsPage.js~BasicsPage#fields",
     "member"
   ],
   [
-    "js/admin/src/components/basicspage.js~basicspage#homepageitems",
-    "class/js/admin/src/components/BasicsPage.js~BasicsPage.html#instance-method-homePageItems",
-    "js/admin/src/components/BasicsPage.js~BasicsPage#homePageItems",
+    "js/src/admin/components/basicspage.js~basicspage#homepageitems",
+    "class/js/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-homePageItems",
+    "js/src/admin/components/BasicsPage.js~BasicsPage#homePageItems",
     "method"
   ],
   [
-    "js/admin/src/components/basicspage.js~basicspage#init",
-    "class/js/admin/src/components/BasicsPage.js~BasicsPage.html#instance-method-init",
-    "js/admin/src/components/BasicsPage.js~BasicsPage#init",
+    "js/src/admin/components/basicspage.js~basicspage#init",
+    "class/js/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-init",
+    "js/src/admin/components/BasicsPage.js~BasicsPage#init",
     "method"
   ],
   [
-    "js/admin/src/components/basicspage.js~basicspage#loading",
-    "class/js/admin/src/components/BasicsPage.js~BasicsPage.html#instance-member-loading",
-    "js/admin/src/components/BasicsPage.js~BasicsPage#loading",
+    "js/src/admin/components/basicspage.js~basicspage#loading",
+    "class/js/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-loading",
+    "js/src/admin/components/BasicsPage.js~BasicsPage#loading",
     "member"
   ],
   [
-    "js/admin/src/components/basicspage.js~basicspage#localeoptions",
-    "class/js/admin/src/components/BasicsPage.js~BasicsPage.html#instance-member-localeOptions",
-    "js/admin/src/components/BasicsPage.js~BasicsPage#localeOptions",
+    "js/src/admin/components/basicspage.js~basicspage#localeoptions",
+    "class/js/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-localeOptions",
+    "js/src/admin/components/BasicsPage.js~BasicsPage#localeOptions",
     "member"
   ],
   [
-    "js/admin/src/components/basicspage.js~basicspage#onsubmit",
-    "class/js/admin/src/components/BasicsPage.js~BasicsPage.html#instance-method-onsubmit",
-    "js/admin/src/components/BasicsPage.js~BasicsPage#onsubmit",
+    "js/src/admin/components/basicspage.js~basicspage#onsubmit",
+    "class/js/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-onsubmit",
+    "js/src/admin/components/BasicsPage.js~BasicsPage#onsubmit",
     "method"
   ],
   [
-    "js/admin/src/components/basicspage.js~basicspage#values",
-    "class/js/admin/src/components/BasicsPage.js~BasicsPage.html#instance-member-values",
-    "js/admin/src/components/BasicsPage.js~BasicsPage#values",
+    "js/src/admin/components/basicspage.js~basicspage#values",
+    "class/js/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-values",
+    "js/src/admin/components/BasicsPage.js~BasicsPage#values",
     "member"
   ],
   [
-    "js/admin/src/components/basicspage.js~basicspage#view",
-    "class/js/admin/src/components/BasicsPage.js~BasicsPage.html#instance-method-view",
-    "js/admin/src/components/BasicsPage.js~BasicsPage#view",
+    "js/src/admin/components/basicspage.js~basicspage#view",
+    "class/js/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-view",
+    "js/src/admin/components/BasicsPage.js~BasicsPage#view",
     "method"
   ],
   [
-    "js/admin/src/components/dashboardpage.js",
-    "file/js/admin/src/components/DashboardPage.js.html",
-    "js/admin/src/components/DashboardPage.js",
+    "js/src/admin/components/dashboardpage.js",
+    "file/js/src/admin/components/DashboardPage.js.html",
+    "js/src/admin/components/DashboardPage.js",
     "file"
   ],
   [
-    "js/admin/src/components/dashboardpage.js~dashboardpage#availablewidgets",
-    "class/js/admin/src/components/DashboardPage.js~DashboardPage.html#instance-method-availableWidgets",
-    "js/admin/src/components/DashboardPage.js~DashboardPage#availableWidgets",
+    "js/src/admin/components/dashboardpage.js~dashboardpage#availablewidgets",
+    "class/js/src/admin/components/DashboardPage.js~DashboardPage.html#instance-method-availableWidgets",
+    "js/src/admin/components/DashboardPage.js~DashboardPage#availableWidgets",
     "method"
   ],
   [
-    "js/admin/src/components/dashboardpage.js~dashboardpage#view",
-    "class/js/admin/src/components/DashboardPage.js~DashboardPage.html#instance-method-view",
-    "js/admin/src/components/DashboardPage.js~DashboardPage#view",
+    "js/src/admin/components/dashboardpage.js~dashboardpage#view",
+    "class/js/src/admin/components/DashboardPage.js~DashboardPage.html#instance-method-view",
+    "js/src/admin/components/DashboardPage.js~DashboardPage#view",
     "method"
   ],
   [
-    "js/admin/src/components/dashboardwidget.js",
-    "file/js/admin/src/components/DashboardWidget.js.html",
-    "js/admin/src/components/DashboardWidget.js",
+    "js/src/admin/components/dashboardwidget.js",
+    "file/js/src/admin/components/DashboardWidget.js.html",
+    "js/src/admin/components/DashboardWidget.js",
     "file"
   ],
   [
-    "js/admin/src/components/dashboardwidget.js~widget#classname",
-    "class/js/admin/src/components/DashboardWidget.js~Widget.html#instance-method-className",
-    "js/admin/src/components/DashboardWidget.js~Widget#className",
+    "js/src/admin/components/dashboardwidget.js~widget#classname",
+    "class/js/src/admin/components/DashboardWidget.js~Widget.html#instance-method-className",
+    "js/src/admin/components/DashboardWidget.js~Widget#className",
     "method"
   ],
   [
-    "js/admin/src/components/dashboardwidget.js~widget#content",
-    "class/js/admin/src/components/DashboardWidget.js~Widget.html#instance-method-content",
-    "js/admin/src/components/DashboardWidget.js~Widget#content",
+    "js/src/admin/components/dashboardwidget.js~widget#content",
+    "class/js/src/admin/components/DashboardWidget.js~Widget.html#instance-method-content",
+    "js/src/admin/components/DashboardWidget.js~Widget#content",
     "method"
   ],
   [
-    "js/admin/src/components/dashboardwidget.js~widget#view",
-    "class/js/admin/src/components/DashboardWidget.js~Widget.html#instance-method-view",
-    "js/admin/src/components/DashboardWidget.js~Widget#view",
+    "js/src/admin/components/dashboardwidget.js~widget#view",
+    "class/js/src/admin/components/DashboardWidget.js~Widget.html#instance-method-view",
+    "js/src/admin/components/DashboardWidget.js~Widget#view",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomcssmodal.js",
-    "file/js/admin/src/components/EditCustomCssModal.js.html",
-    "js/admin/src/components/EditCustomCssModal.js",
+    "js/src/admin/components/editcustomcssmodal.js",
+    "file/js/src/admin/components/EditCustomCssModal.js.html",
+    "js/src/admin/components/EditCustomCssModal.js",
     "file"
   ],
   [
-    "js/admin/src/components/editcustomcssmodal.js~editcustomcssmodal#classname",
-    "class/js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal.html#instance-method-className",
-    "js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal#className",
+    "js/src/admin/components/editcustomcssmodal.js~editcustomcssmodal#classname",
+    "class/js/src/admin/components/EditCustomCssModal.js~EditCustomCssModal.html#instance-method-className",
+    "js/src/admin/components/EditCustomCssModal.js~EditCustomCssModal#className",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomcssmodal.js~editcustomcssmodal#form",
-    "class/js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal.html#instance-method-form",
-    "js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal#form",
+    "js/src/admin/components/editcustomcssmodal.js~editcustomcssmodal#form",
+    "class/js/src/admin/components/EditCustomCssModal.js~EditCustomCssModal.html#instance-method-form",
+    "js/src/admin/components/EditCustomCssModal.js~EditCustomCssModal#form",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomcssmodal.js~editcustomcssmodal#onsaved",
-    "class/js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal.html#instance-method-onsaved",
-    "js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal#onsaved",
+    "js/src/admin/components/editcustomcssmodal.js~editcustomcssmodal#onsaved",
+    "class/js/src/admin/components/EditCustomCssModal.js~EditCustomCssModal.html#instance-method-onsaved",
+    "js/src/admin/components/EditCustomCssModal.js~EditCustomCssModal#onsaved",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomcssmodal.js~editcustomcssmodal#title",
-    "class/js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal.html#instance-method-title",
-    "js/admin/src/components/EditCustomCssModal.js~EditCustomCssModal#title",
+    "js/src/admin/components/editcustomcssmodal.js~editcustomcssmodal#title",
+    "class/js/src/admin/components/EditCustomCssModal.js~EditCustomCssModal.html#instance-method-title",
+    "js/src/admin/components/EditCustomCssModal.js~EditCustomCssModal#title",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomfootermodal.js",
-    "file/js/admin/src/components/EditCustomFooterModal.js.html",
-    "js/admin/src/components/EditCustomFooterModal.js",
+    "js/src/admin/components/editcustomfootermodal.js",
+    "file/js/src/admin/components/EditCustomFooterModal.js.html",
+    "js/src/admin/components/EditCustomFooterModal.js",
     "file"
   ],
   [
-    "js/admin/src/components/editcustomfootermodal.js~editcustomfootermodal#classname",
-    "class/js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-className",
-    "js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal#className",
+    "js/src/admin/components/editcustomfootermodal.js~editcustomfootermodal#classname",
+    "class/js/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-className",
+    "js/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal#className",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomfootermodal.js~editcustomfootermodal#form",
-    "class/js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-form",
-    "js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal#form",
+    "js/src/admin/components/editcustomfootermodal.js~editcustomfootermodal#form",
+    "class/js/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-form",
+    "js/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal#form",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomfootermodal.js~editcustomfootermodal#onsaved",
-    "class/js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-onsaved",
-    "js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal#onsaved",
+    "js/src/admin/components/editcustomfootermodal.js~editcustomfootermodal#onsaved",
+    "class/js/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-onsaved",
+    "js/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal#onsaved",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomfootermodal.js~editcustomfootermodal#title",
-    "class/js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-title",
-    "js/admin/src/components/EditCustomFooterModal.js~EditCustomFooterModal#title",
+    "js/src/admin/components/editcustomfootermodal.js~editcustomfootermodal#title",
+    "class/js/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal.html#instance-method-title",
+    "js/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal#title",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomheadermodal.js",
-    "file/js/admin/src/components/EditCustomHeaderModal.js.html",
-    "js/admin/src/components/EditCustomHeaderModal.js",
+    "js/src/admin/components/editcustomheadermodal.js",
+    "file/js/src/admin/components/EditCustomHeaderModal.js.html",
+    "js/src/admin/components/EditCustomHeaderModal.js",
     "file"
   ],
   [
-    "js/admin/src/components/editcustomheadermodal.js~editcustomheadermodal#classname",
-    "class/js/admin/src/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html#instance-method-className",
-    "js/admin/src/components/EditCustomHeaderModal.js~EditCustomHeaderModal#className",
+    "js/src/admin/components/editcustomheadermodal.js~editcustomheadermodal#classname",
+    "class/js/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html#instance-method-className",
+    "js/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal#className",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomheadermodal.js~editcustomheadermodal#form",
-    "class/js/admin/src/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html#instance-method-form",
-    "js/admin/src/components/EditCustomHeaderModal.js~EditCustomHeaderModal#form",
+    "js/src/admin/components/editcustomheadermodal.js~editcustomheadermodal#form",
+    "class/js/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html#instance-method-form",
+    "js/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal#form",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomheadermodal.js~editcustomheadermodal#onsaved",
-    "class/js/admin/src/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html#instance-method-onsaved",
-    "js/admin/src/components/EditCustomHeaderModal.js~EditCustomHeaderModal#onsaved",
+    "js/src/admin/components/editcustomheadermodal.js~editcustomheadermodal#onsaved",
+    "class/js/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html#instance-method-onsaved",
+    "js/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal#onsaved",
     "method"
   ],
   [
-    "js/admin/src/components/editcustomheadermodal.js~editcustomheadermodal#title",
-    "class/js/admin/src/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html#instance-method-title",
-    "js/admin/src/components/EditCustomHeaderModal.js~EditCustomHeaderModal#title",
+    "js/src/admin/components/editcustomheadermodal.js~editcustomheadermodal#title",
+    "class/js/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html#instance-method-title",
+    "js/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal#title",
     "method"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js",
-    "file/js/admin/src/components/EditGroupModal.js.html",
-    "js/admin/src/components/EditGroupModal.js",
+    "js/src/admin/components/editgroupmodal.js",
+    "file/js/src/admin/components/EditGroupModal.js.html",
+    "js/src/admin/components/EditGroupModal.js",
     "file"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#classname",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-method-className",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#className",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#classname",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-className",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#className",
     "method"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#color",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-member-color",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#color",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#color",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-member-color",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#color",
     "member"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#content",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-method-content",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#content",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#content",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-content",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#content",
     "method"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#deletegroup",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-method-deleteGroup",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#deleteGroup",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#deletegroup",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-deleteGroup",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#deleteGroup",
     "method"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#group",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-member-group",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#group",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#group",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-member-group",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#group",
     "member"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#icon",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-member-icon",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#icon",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#icon",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-member-icon",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#icon",
     "member"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#init",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-method-init",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#init",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#init",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-init",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#init",
     "method"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#loading",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-member-loading",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#loading",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#loading",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-member-loading",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#loading",
     "member"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#nameplural",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-member-namePlural",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#namePlural",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#nameplural",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-member-namePlural",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#namePlural",
     "member"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#namesingular",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-member-nameSingular",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#nameSingular",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#namesingular",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-member-nameSingular",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#nameSingular",
     "member"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#onsubmit",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-method-onsubmit",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#onsubmit",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#onsubmit",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-onsubmit",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#onsubmit",
     "method"
   ],
   [
-    "js/admin/src/components/editgroupmodal.js~editgroupmodal#title",
-    "class/js/admin/src/components/EditGroupModal.js~EditGroupModal.html#instance-method-title",
-    "js/admin/src/components/EditGroupModal.js~EditGroupModal#title",
+    "js/src/admin/components/editgroupmodal.js~editgroupmodal#title",
+    "class/js/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-title",
+    "js/src/admin/components/EditGroupModal.js~EditGroupModal#title",
     "method"
   ],
   [
-    "js/admin/src/components/extensionspage.js",
-    "file/js/admin/src/components/ExtensionsPage.js.html",
-    "js/admin/src/components/ExtensionsPage.js",
+    "js/src/admin/components/extensionspage.js",
+    "file/js/src/admin/components/ExtensionsPage.js.html",
+    "js/src/admin/components/ExtensionsPage.js",
     "file"
   ],
   [
-    "js/admin/src/components/extensionspage.js~extensionspage#controlitems",
-    "class/js/admin/src/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-controlItems",
-    "js/admin/src/components/ExtensionsPage.js~ExtensionsPage#controlItems",
+    "js/src/admin/components/extensionspage.js~extensionspage#controlitems",
+    "class/js/src/admin/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-controlItems",
+    "js/src/admin/components/ExtensionsPage.js~ExtensionsPage#controlItems",
     "method"
   ],
   [
-    "js/admin/src/components/extensionspage.js~extensionspage#isenabled",
-    "class/js/admin/src/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-isEnabled",
-    "js/admin/src/components/ExtensionsPage.js~ExtensionsPage#isEnabled",
+    "js/src/admin/components/extensionspage.js~extensionspage#isenabled",
+    "class/js/src/admin/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-isEnabled",
+    "js/src/admin/components/ExtensionsPage.js~ExtensionsPage#isEnabled",
     "method"
   ],
   [
-    "js/admin/src/components/extensionspage.js~extensionspage#toggle",
-    "class/js/admin/src/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-toggle",
-    "js/admin/src/components/ExtensionsPage.js~ExtensionsPage#toggle",
+    "js/src/admin/components/extensionspage.js~extensionspage#toggle",
+    "class/js/src/admin/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-toggle",
+    "js/src/admin/components/ExtensionsPage.js~ExtensionsPage#toggle",
     "method"
   ],
   [
-    "js/admin/src/components/extensionspage.js~extensionspage#view",
-    "class/js/admin/src/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-view",
-    "js/admin/src/components/ExtensionsPage.js~ExtensionsPage#view",
+    "js/src/admin/components/extensionspage.js~extensionspage#view",
+    "class/js/src/admin/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-view",
+    "js/src/admin/components/ExtensionsPage.js~ExtensionsPage#view",
     "method"
   ],
   [
-    "js/admin/src/components/headerprimary.js",
-    "file/js/admin/src/components/HeaderPrimary.js.html",
-    "js/admin/src/components/HeaderPrimary.js",
+    "js/src/admin/components/headerprimary.js",
+    "file/js/src/admin/components/HeaderPrimary.js.html",
+    "js/src/admin/components/HeaderPrimary.js",
     "file"
   ],
   [
-    "js/admin/src/components/headerprimary.js~headerprimary#config",
-    "class/js/admin/src/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-config",
-    "js/admin/src/components/HeaderPrimary.js~HeaderPrimary#config",
+    "js/src/admin/components/headerprimary.js~headerprimary#config",
+    "class/js/src/admin/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-config",
+    "js/src/admin/components/HeaderPrimary.js~HeaderPrimary#config",
     "method"
   ],
   [
-    "js/admin/src/components/headerprimary.js~headerprimary#items",
-    "class/js/admin/src/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-items",
-    "js/admin/src/components/HeaderPrimary.js~HeaderPrimary#items",
+    "js/src/admin/components/headerprimary.js~headerprimary#items",
+    "class/js/src/admin/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-items",
+    "js/src/admin/components/HeaderPrimary.js~HeaderPrimary#items",
     "method"
   ],
   [
-    "js/admin/src/components/headerprimary.js~headerprimary#view",
-    "class/js/admin/src/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-view",
-    "js/admin/src/components/HeaderPrimary.js~HeaderPrimary#view",
+    "js/src/admin/components/headerprimary.js~headerprimary#view",
+    "class/js/src/admin/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-view",
+    "js/src/admin/components/HeaderPrimary.js~HeaderPrimary#view",
     "method"
   ],
   [
-    "js/admin/src/components/headersecondary.js",
-    "file/js/admin/src/components/HeaderSecondary.js.html",
-    "js/admin/src/components/HeaderSecondary.js",
+    "js/src/admin/components/headersecondary.js",
+    "file/js/src/admin/components/HeaderSecondary.js.html",
+    "js/src/admin/components/HeaderSecondary.js",
     "file"
   ],
   [
-    "js/admin/src/components/headersecondary.js~headersecondary#config",
-    "class/js/admin/src/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-config",
-    "js/admin/src/components/HeaderSecondary.js~HeaderSecondary#config",
+    "js/src/admin/components/headersecondary.js~headersecondary#config",
+    "class/js/src/admin/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-config",
+    "js/src/admin/components/HeaderSecondary.js~HeaderSecondary#config",
     "method"
   ],
   [
-    "js/admin/src/components/headersecondary.js~headersecondary#items",
-    "class/js/admin/src/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-items",
-    "js/admin/src/components/HeaderSecondary.js~HeaderSecondary#items",
+    "js/src/admin/components/headersecondary.js~headersecondary#items",
+    "class/js/src/admin/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-items",
+    "js/src/admin/components/HeaderSecondary.js~HeaderSecondary#items",
     "method"
   ],
   [
-    "js/admin/src/components/headersecondary.js~headersecondary#view",
-    "class/js/admin/src/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-view",
-    "js/admin/src/components/HeaderSecondary.js~HeaderSecondary#view",
+    "js/src/admin/components/headersecondary.js~headersecondary#view",
+    "class/js/src/admin/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-view",
+    "js/src/admin/components/HeaderSecondary.js~HeaderSecondary#view",
     "method"
   ],
   [
-    "js/admin/src/components/loadingmodal.js",
-    "file/js/admin/src/components/LoadingModal.js.html",
-    "js/admin/src/components/LoadingModal.js",
+    "js/src/admin/components/loadingmodal.js",
+    "file/js/src/admin/components/LoadingModal.js.html",
+    "js/src/admin/components/LoadingModal.js",
     "file"
   ],
   [
-    "js/admin/src/components/loadingmodal.js~loadingmodal#classname",
-    "class/js/admin/src/components/LoadingModal.js~LoadingModal.html#instance-method-className",
-    "js/admin/src/components/LoadingModal.js~LoadingModal#className",
+    "js/src/admin/components/loadingmodal.js~loadingmodal#classname",
+    "class/js/src/admin/components/LoadingModal.js~LoadingModal.html#instance-method-className",
+    "js/src/admin/components/LoadingModal.js~LoadingModal#className",
     "method"
   ],
   [
-    "js/admin/src/components/loadingmodal.js~loadingmodal#content",
-    "class/js/admin/src/components/LoadingModal.js~LoadingModal.html#instance-method-content",
-    "js/admin/src/components/LoadingModal.js~LoadingModal#content",
+    "js/src/admin/components/loadingmodal.js~loadingmodal#content",
+    "class/js/src/admin/components/LoadingModal.js~LoadingModal.html#instance-method-content",
+    "js/src/admin/components/LoadingModal.js~LoadingModal#content",
     "method"
   ],
   [
-    "js/admin/src/components/loadingmodal.js~loadingmodal#isdismissible",
-    "class/js/admin/src/components/LoadingModal.js~LoadingModal.html#instance-method-isDismissible",
-    "js/admin/src/components/LoadingModal.js~LoadingModal#isDismissible",
+    "js/src/admin/components/loadingmodal.js~loadingmodal#isdismissible",
+    "class/js/src/admin/components/LoadingModal.js~LoadingModal.html#instance-method-isDismissible",
+    "js/src/admin/components/LoadingModal.js~LoadingModal#isDismissible",
     "method"
   ],
   [
-    "js/admin/src/components/loadingmodal.js~loadingmodal#title",
-    "class/js/admin/src/components/LoadingModal.js~LoadingModal.html#instance-method-title",
-    "js/admin/src/components/LoadingModal.js~LoadingModal#title",
+    "js/src/admin/components/loadingmodal.js~loadingmodal#title",
+    "class/js/src/admin/components/LoadingModal.js~LoadingModal.html#instance-method-title",
+    "js/src/admin/components/LoadingModal.js~LoadingModal#title",
     "method"
   ],
   [
-    "js/admin/src/components/mailpage.js",
-    "file/js/admin/src/components/MailPage.js.html",
-    "js/admin/src/components/MailPage.js",
+    "js/src/admin/components/mailpage.js",
+    "file/js/src/admin/components/MailPage.js.html",
+    "js/src/admin/components/MailPage.js",
     "file"
   ],
   [
-    "js/admin/src/components/mailpage.js~mailpage#changed",
-    "class/js/admin/src/components/MailPage.js~MailPage.html#instance-method-changed",
-    "js/admin/src/components/MailPage.js~MailPage#changed",
+    "js/src/admin/components/mailpage.js~mailpage#changed",
+    "class/js/src/admin/components/MailPage.js~MailPage.html#instance-method-changed",
+    "js/src/admin/components/MailPage.js~MailPage#changed",
     "method"
   ],
   [
-    "js/admin/src/components/mailpage.js~mailpage#fields",
-    "class/js/admin/src/components/MailPage.js~MailPage.html#instance-member-fields",
-    "js/admin/src/components/MailPage.js~MailPage#fields",
+    "js/src/admin/components/mailpage.js~mailpage#fields",
+    "class/js/src/admin/components/MailPage.js~MailPage.html#instance-member-fields",
+    "js/src/admin/components/MailPage.js~MailPage#fields",
     "member"
   ],
   [
-    "js/admin/src/components/mailpage.js~mailpage#init",
-    "class/js/admin/src/components/MailPage.js~MailPage.html#instance-method-init",
-    "js/admin/src/components/MailPage.js~MailPage#init",
+    "js/src/admin/components/mailpage.js~mailpage#init",
+    "class/js/src/admin/components/MailPage.js~MailPage.html#instance-method-init",
+    "js/src/admin/components/MailPage.js~MailPage#init",
     "method"
   ],
   [
-    "js/admin/src/components/mailpage.js~mailpage#loading",
-    "class/js/admin/src/components/MailPage.js~MailPage.html#instance-member-loading",
-    "js/admin/src/components/MailPage.js~MailPage#loading",
+    "js/src/admin/components/mailpage.js~mailpage#loading",
+    "class/js/src/admin/components/MailPage.js~MailPage.html#instance-member-loading",
+    "js/src/admin/components/MailPage.js~MailPage#loading",
     "member"
   ],
   [
-    "js/admin/src/components/mailpage.js~mailpage#localeoptions",
-    "class/js/admin/src/components/MailPage.js~MailPage.html#instance-member-localeOptions",
-    "js/admin/src/components/MailPage.js~MailPage#localeOptions",
+    "js/src/admin/components/mailpage.js~mailpage#localeoptions",
+    "class/js/src/admin/components/MailPage.js~MailPage.html#instance-member-localeOptions",
+    "js/src/admin/components/MailPage.js~MailPage#localeOptions",
     "member"
   ],
   [
-    "js/admin/src/components/mailpage.js~mailpage#onsubmit",
-    "class/js/admin/src/components/MailPage.js~MailPage.html#instance-method-onsubmit",
-    "js/admin/src/components/MailPage.js~MailPage#onsubmit",
+    "js/src/admin/components/mailpage.js~mailpage#onsubmit",
+    "class/js/src/admin/components/MailPage.js~MailPage.html#instance-method-onsubmit",
+    "js/src/admin/components/MailPage.js~MailPage#onsubmit",
     "method"
   ],
   [
-    "js/admin/src/components/mailpage.js~mailpage#values",
-    "class/js/admin/src/components/MailPage.js~MailPage.html#instance-member-values",
-    "js/admin/src/components/MailPage.js~MailPage#values",
+    "js/src/admin/components/mailpage.js~mailpage#values",
+    "class/js/src/admin/components/MailPage.js~MailPage.html#instance-member-values",
+    "js/src/admin/components/MailPage.js~MailPage#values",
     "member"
   ],
   [
-    "js/admin/src/components/mailpage.js~mailpage#view",
-    "class/js/admin/src/components/MailPage.js~MailPage.html#instance-method-view",
-    "js/admin/src/components/MailPage.js~MailPage#view",
+    "js/src/admin/components/mailpage.js~mailpage#view",
+    "class/js/src/admin/components/MailPage.js~MailPage.html#instance-method-view",
+    "js/src/admin/components/MailPage.js~MailPage#view",
     "method"
   ],
   [
-    "js/admin/src/components/page.js",
-    "file/js/admin/src/components/Page.js.html",
-    "js/admin/src/components/Page.js",
+    "js/src/admin/components/page.js",
+    "file/js/src/admin/components/Page.js.html",
+    "js/src/admin/components/Page.js",
     "file"
   ],
   [
-    "js/admin/src/components/page.js~page#bodyclass",
-    "class/js/admin/src/components/Page.js~Page.html#instance-member-bodyClass",
-    "js/admin/src/components/Page.js~Page#bodyClass",
+    "js/src/admin/components/page.js~page#bodyclass",
+    "class/js/src/admin/components/Page.js~Page.html#instance-member-bodyClass",
+    "js/src/admin/components/Page.js~Page#bodyClass",
     "member"
   ],
   [
-    "js/admin/src/components/page.js~page#config",
-    "class/js/admin/src/components/Page.js~Page.html#instance-method-config",
-    "js/admin/src/components/Page.js~Page#config",
+    "js/src/admin/components/page.js~page#config",
+    "class/js/src/admin/components/Page.js~Page.html#instance-method-config",
+    "js/src/admin/components/Page.js~Page#config",
     "method"
   ],
   [
-    "js/admin/src/components/page.js~page#init",
-    "class/js/admin/src/components/Page.js~Page.html#instance-method-init",
-    "js/admin/src/components/Page.js~Page#init",
+    "js/src/admin/components/page.js~page#init",
+    "class/js/src/admin/components/Page.js~Page.html#instance-method-init",
+    "js/src/admin/components/Page.js~Page#init",
     "method"
   ],
   [
-    "js/admin/src/components/permissiondropdown.js",
-    "file/js/admin/src/components/PermissionDropdown.js.html",
-    "js/admin/src/components/PermissionDropdown.js",
+    "js/src/admin/components/permissiondropdown.js",
+    "file/js/src/admin/components/PermissionDropdown.js.html",
+    "js/src/admin/components/PermissionDropdown.js",
     "file"
   ],
   [
-    "js/admin/src/components/permissiondropdown.js~permissiondropdown#isgroupdisabled",
-    "class/js/admin/src/components/PermissionDropdown.js~PermissionDropdown.html#instance-method-isGroupDisabled",
-    "js/admin/src/components/PermissionDropdown.js~PermissionDropdown#isGroupDisabled",
+    "js/src/admin/components/permissiondropdown.js~permissiondropdown#isgroupdisabled",
+    "class/js/src/admin/components/PermissionDropdown.js~PermissionDropdown.html#instance-method-isGroupDisabled",
+    "js/src/admin/components/PermissionDropdown.js~PermissionDropdown#isGroupDisabled",
     "method"
   ],
   [
-    "js/admin/src/components/permissiondropdown.js~permissiondropdown#save",
-    "class/js/admin/src/components/PermissionDropdown.js~PermissionDropdown.html#instance-method-save",
-    "js/admin/src/components/PermissionDropdown.js~PermissionDropdown#save",
+    "js/src/admin/components/permissiondropdown.js~permissiondropdown#save",
+    "class/js/src/admin/components/PermissionDropdown.js~PermissionDropdown.html#instance-method-save",
+    "js/src/admin/components/PermissionDropdown.js~PermissionDropdown#save",
     "method"
   ],
   [
-    "js/admin/src/components/permissiondropdown.js~permissiondropdown#toggle",
-    "class/js/admin/src/components/PermissionDropdown.js~PermissionDropdown.html#instance-method-toggle",
-    "js/admin/src/components/PermissionDropdown.js~PermissionDropdown#toggle",
+    "js/src/admin/components/permissiondropdown.js~permissiondropdown#toggle",
+    "class/js/src/admin/components/PermissionDropdown.js~PermissionDropdown.html#instance-method-toggle",
+    "js/src/admin/components/PermissionDropdown.js~PermissionDropdown#toggle",
     "method"
   ],
   [
-    "js/admin/src/components/permissiondropdown.js~permissiondropdown#view",
-    "class/js/admin/src/components/PermissionDropdown.js~PermissionDropdown.html#instance-method-view",
-    "js/admin/src/components/PermissionDropdown.js~PermissionDropdown#view",
+    "js/src/admin/components/permissiondropdown.js~permissiondropdown#view",
+    "class/js/src/admin/components/PermissionDropdown.js~PermissionDropdown.html#instance-method-view",
+    "js/src/admin/components/PermissionDropdown.js~PermissionDropdown#view",
     "method"
   ],
   [
-    "js/admin/src/components/permissiondropdown.js~permissiondropdown.initprops",
-    "class/js/admin/src/components/PermissionDropdown.js~PermissionDropdown.html#static-method-initProps",
-    "js/admin/src/components/PermissionDropdown.js~PermissionDropdown.initProps",
+    "js/src/admin/components/permissiondropdown.js~permissiondropdown.initprops",
+    "class/js/src/admin/components/PermissionDropdown.js~PermissionDropdown.html#static-method-initProps",
+    "js/src/admin/components/PermissionDropdown.js~PermissionDropdown.initProps",
     "method"
   ],
   [
-    "js/admin/src/components/permissiongrid.js",
-    "file/js/admin/src/components/PermissionGrid.js.html",
-    "js/admin/src/components/PermissionGrid.js",
+    "js/src/admin/components/permissiongrid.js",
+    "file/js/src/admin/components/PermissionGrid.js.html",
+    "js/src/admin/components/PermissionGrid.js",
     "file"
   ],
   [
-    "js/admin/src/components/permissiongrid.js~permissiongrid#init",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html#instance-method-init",
-    "js/admin/src/components/PermissionGrid.js~PermissionGrid#init",
+    "js/src/admin/components/permissiongrid.js~permissiongrid#init",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-init",
+    "js/src/admin/components/PermissionGrid.js~PermissionGrid#init",
     "method"
   ],
   [
-    "js/admin/src/components/permissiongrid.js~permissiongrid#moderateitems",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html#instance-method-moderateItems",
-    "js/admin/src/components/PermissionGrid.js~PermissionGrid#moderateItems",
+    "js/src/admin/components/permissiongrid.js~permissiongrid#moderateitems",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-moderateItems",
+    "js/src/admin/components/PermissionGrid.js~PermissionGrid#moderateItems",
     "method"
   ],
   [
-    "js/admin/src/components/permissiongrid.js~permissiongrid#permissionitems",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html#instance-method-permissionItems",
-    "js/admin/src/components/PermissionGrid.js~PermissionGrid#permissionItems",
+    "js/src/admin/components/permissiongrid.js~permissiongrid#permissionitems",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-permissionItems",
+    "js/src/admin/components/PermissionGrid.js~PermissionGrid#permissionItems",
     "method"
   ],
   [
-    "js/admin/src/components/permissiongrid.js~permissiongrid#permissions",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html#instance-member-permissions",
-    "js/admin/src/components/PermissionGrid.js~PermissionGrid#permissions",
+    "js/src/admin/components/permissiongrid.js~permissiongrid#permissions",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-member-permissions",
+    "js/src/admin/components/PermissionGrid.js~PermissionGrid#permissions",
     "member"
   ],
   [
-    "js/admin/src/components/permissiongrid.js~permissiongrid#replyitems",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html#instance-method-replyItems",
-    "js/admin/src/components/PermissionGrid.js~PermissionGrid#replyItems",
+    "js/src/admin/components/permissiongrid.js~permissiongrid#replyitems",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-replyItems",
+    "js/src/admin/components/PermissionGrid.js~PermissionGrid#replyItems",
     "method"
   ],
   [
-    "js/admin/src/components/permissiongrid.js~permissiongrid#scopecontrolitems",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html#instance-method-scopeControlItems",
-    "js/admin/src/components/PermissionGrid.js~PermissionGrid#scopeControlItems",
+    "js/src/admin/components/permissiongrid.js~permissiongrid#scopecontrolitems",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-scopeControlItems",
+    "js/src/admin/components/PermissionGrid.js~PermissionGrid#scopeControlItems",
     "method"
   ],
   [
-    "js/admin/src/components/permissiongrid.js~permissiongrid#scopeitems",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html#instance-method-scopeItems",
-    "js/admin/src/components/PermissionGrid.js~PermissionGrid#scopeItems",
+    "js/src/admin/components/permissiongrid.js~permissiongrid#scopeitems",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-scopeItems",
+    "js/src/admin/components/PermissionGrid.js~PermissionGrid#scopeItems",
     "method"
   ],
   [
-    "js/admin/src/components/permissiongrid.js~permissiongrid#startitems",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html#instance-method-startItems",
-    "js/admin/src/components/PermissionGrid.js~PermissionGrid#startItems",
+    "js/src/admin/components/permissiongrid.js~permissiongrid#startitems",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-startItems",
+    "js/src/admin/components/PermissionGrid.js~PermissionGrid#startItems",
     "method"
   ],
   [
-    "js/admin/src/components/permissiongrid.js~permissiongrid#view",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html#instance-method-view",
-    "js/admin/src/components/PermissionGrid.js~PermissionGrid#view",
+    "js/src/admin/components/permissiongrid.js~permissiongrid#view",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-view",
+    "js/src/admin/components/PermissionGrid.js~PermissionGrid#view",
     "method"
   ],
   [
-    "js/admin/src/components/permissiongrid.js~permissiongrid#viewitems",
-    "class/js/admin/src/components/PermissionGrid.js~PermissionGrid.html#instance-method-viewItems",
-    "js/admin/src/components/PermissionGrid.js~PermissionGrid#viewItems",
+    "js/src/admin/components/permissiongrid.js~permissiongrid#viewitems",
+    "class/js/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-viewItems",
+    "js/src/admin/components/PermissionGrid.js~PermissionGrid#viewItems",
     "method"
   ],
   [
-    "js/admin/src/components/permissionspage.js",
-    "file/js/admin/src/components/PermissionsPage.js.html",
-    "js/admin/src/components/PermissionsPage.js",
+    "js/src/admin/components/permissionspage.js",
+    "file/js/src/admin/components/PermissionsPage.js.html",
+    "js/src/admin/components/PermissionsPage.js",
     "file"
   ],
   [
-    "js/admin/src/components/permissionspage.js~permissionspage#view",
-    "class/js/admin/src/components/PermissionsPage.js~PermissionsPage.html#instance-method-view",
-    "js/admin/src/components/PermissionsPage.js~PermissionsPage#view",
+    "js/src/admin/components/permissionspage.js~permissionspage#view",
+    "class/js/src/admin/components/PermissionsPage.js~PermissionsPage.html#instance-method-view",
+    "js/src/admin/components/PermissionsPage.js~PermissionsPage#view",
     "method"
   ],
   [
-    "js/admin/src/components/sessiondropdown.js",
-    "file/js/admin/src/components/SessionDropdown.js.html",
-    "js/admin/src/components/SessionDropdown.js",
+    "js/src/admin/components/sessiondropdown.js",
+    "file/js/src/admin/components/SessionDropdown.js.html",
+    "js/src/admin/components/SessionDropdown.js",
     "file"
   ],
   [
-    "js/admin/src/components/sessiondropdown.js~sessiondropdown#getbuttoncontent",
-    "class/js/admin/src/components/SessionDropdown.js~SessionDropdown.html#instance-method-getButtonContent",
-    "js/admin/src/components/SessionDropdown.js~SessionDropdown#getButtonContent",
+    "js/src/admin/components/sessiondropdown.js~sessiondropdown#getbuttoncontent",
+    "class/js/src/admin/components/SessionDropdown.js~SessionDropdown.html#instance-method-getButtonContent",
+    "js/src/admin/components/SessionDropdown.js~SessionDropdown#getButtonContent",
     "method"
   ],
   [
-    "js/admin/src/components/sessiondropdown.js~sessiondropdown#items",
-    "class/js/admin/src/components/SessionDropdown.js~SessionDropdown.html#instance-method-items",
-    "js/admin/src/components/SessionDropdown.js~SessionDropdown#items",
+    "js/src/admin/components/sessiondropdown.js~sessiondropdown#items",
+    "class/js/src/admin/components/SessionDropdown.js~SessionDropdown.html#instance-method-items",
+    "js/src/admin/components/SessionDropdown.js~SessionDropdown#items",
     "method"
   ],
   [
-    "js/admin/src/components/sessiondropdown.js~sessiondropdown#view",
-    "class/js/admin/src/components/SessionDropdown.js~SessionDropdown.html#instance-method-view",
-    "js/admin/src/components/SessionDropdown.js~SessionDropdown#view",
+    "js/src/admin/components/sessiondropdown.js~sessiondropdown#view",
+    "class/js/src/admin/components/SessionDropdown.js~SessionDropdown.html#instance-method-view",
+    "js/src/admin/components/SessionDropdown.js~SessionDropdown#view",
     "method"
   ],
   [
-    "js/admin/src/components/sessiondropdown.js~sessiondropdown.initprops",
-    "class/js/admin/src/components/SessionDropdown.js~SessionDropdown.html#static-method-initProps",
-    "js/admin/src/components/SessionDropdown.js~SessionDropdown.initProps",
+    "js/src/admin/components/sessiondropdown.js~sessiondropdown.initprops",
+    "class/js/src/admin/components/SessionDropdown.js~SessionDropdown.html#static-method-initProps",
+    "js/src/admin/components/SessionDropdown.js~SessionDropdown.initProps",
     "method"
   ],
   [
-    "js/admin/src/components/settingdropdown.js",
-    "file/js/admin/src/components/SettingDropdown.js.html",
-    "js/admin/src/components/SettingDropdown.js",
+    "js/src/admin/components/settingdropdown.js",
+    "file/js/src/admin/components/SettingDropdown.js.html",
+    "js/src/admin/components/SettingDropdown.js",
     "file"
   ],
   [
-    "js/admin/src/components/settingdropdown.js~settingdropdown.initprops",
-    "class/js/admin/src/components/SettingDropdown.js~SettingDropdown.html#static-method-initProps",
-    "js/admin/src/components/SettingDropdown.js~SettingDropdown.initProps",
+    "js/src/admin/components/settingdropdown.js~settingdropdown.initprops",
+    "class/js/src/admin/components/SettingDropdown.js~SettingDropdown.html#static-method-initProps",
+    "js/src/admin/components/SettingDropdown.js~SettingDropdown.initProps",
     "method"
   ],
   [
-    "js/admin/src/components/settingsmodal.js",
-    "file/js/admin/src/components/SettingsModal.js.html",
-    "js/admin/src/components/SettingsModal.js",
+    "js/src/admin/components/settingsmodal.js",
+    "file/js/src/admin/components/SettingsModal.js.html",
+    "js/src/admin/components/SettingsModal.js",
     "file"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#changed",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-method-changed",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#changed",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#changed",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-changed",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#changed",
     "method"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#content",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-method-content",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#content",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#content",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-content",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#content",
     "method"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#dirty",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-method-dirty",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#dirty",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#dirty",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-dirty",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#dirty",
     "method"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#form",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-method-form",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#form",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#form",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-form",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#form",
     "method"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#init",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-method-init",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#init",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#init",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-init",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#init",
     "method"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#loading",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-member-loading",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#loading",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#loading",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-member-loading",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#loading",
     "member"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#onsaved",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-method-onsaved",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#onsaved",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#onsaved",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-onsaved",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#onsaved",
     "method"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#onsubmit",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-method-onsubmit",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#onsubmit",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#onsubmit",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-onsubmit",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#onsubmit",
     "method"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#setting",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-method-setting",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#setting",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#setting",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-setting",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#setting",
     "method"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#settings",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-member-settings",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#settings",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#settings",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-member-settings",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#settings",
     "member"
   ],
   [
-    "js/admin/src/components/settingsmodal.js~settingsmodal#submitbutton",
-    "class/js/admin/src/components/SettingsModal.js~SettingsModal.html#instance-method-submitButton",
-    "js/admin/src/components/SettingsModal.js~SettingsModal#submitButton",
+    "js/src/admin/components/settingsmodal.js~settingsmodal#submitbutton",
+    "class/js/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-submitButton",
+    "js/src/admin/components/SettingsModal.js~SettingsModal#submitButton",
     "method"
   ],
   [
-    "js/admin/src/components/statuswidget.js",
-    "file/js/admin/src/components/StatusWidget.js.html",
-    "js/admin/src/components/StatusWidget.js",
+    "js/src/admin/components/statuswidget.js",
+    "file/js/src/admin/components/StatusWidget.js.html",
+    "js/src/admin/components/StatusWidget.js",
     "file"
   ],
   [
-    "js/admin/src/components/statuswidget.js~statuswidget#classname",
-    "class/js/admin/src/components/StatusWidget.js~StatusWidget.html#instance-method-className",
-    "js/admin/src/components/StatusWidget.js~StatusWidget#className",
+    "js/src/admin/components/statuswidget.js~statuswidget#classname",
+    "class/js/src/admin/components/StatusWidget.js~StatusWidget.html#instance-method-className",
+    "js/src/admin/components/StatusWidget.js~StatusWidget#className",
     "method"
   ],
   [
-    "js/admin/src/components/statuswidget.js~statuswidget#content",
-    "class/js/admin/src/components/StatusWidget.js~StatusWidget.html#instance-method-content",
-    "js/admin/src/components/StatusWidget.js~StatusWidget#content",
+    "js/src/admin/components/statuswidget.js~statuswidget#content",
+    "class/js/src/admin/components/StatusWidget.js~StatusWidget.html#instance-method-content",
+    "js/src/admin/components/StatusWidget.js~StatusWidget#content",
     "method"
   ],
   [
-    "js/admin/src/components/statuswidget.js~statuswidget#items",
-    "class/js/admin/src/components/StatusWidget.js~StatusWidget.html#instance-method-items",
-    "js/admin/src/components/StatusWidget.js~StatusWidget#items",
+    "js/src/admin/components/statuswidget.js~statuswidget#items",
+    "class/js/src/admin/components/StatusWidget.js~StatusWidget.html#instance-method-items",
+    "js/src/admin/components/StatusWidget.js~StatusWidget#items",
     "method"
   ],
   [
-    "js/admin/src/components/uploadimagebutton.js",
-    "file/js/admin/src/components/UploadImageButton.js.html",
-    "js/admin/src/components/UploadImageButton.js",
+    "js/src/admin/components/uploadimagebutton.js",
+    "file/js/src/admin/components/UploadImageButton.js.html",
+    "js/src/admin/components/UploadImageButton.js",
     "file"
   ],
   [
-    "js/admin/src/components/uploadimagebutton.js~uploadimagebutton#failure",
-    "class/js/admin/src/components/UploadImageButton.js~UploadImageButton.html#instance-method-failure",
-    "js/admin/src/components/UploadImageButton.js~UploadImageButton#failure",
+    "js/src/admin/components/uploadimagebutton.js~uploadimagebutton#failure",
+    "class/js/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-method-failure",
+    "js/src/admin/components/UploadImageButton.js~UploadImageButton#failure",
     "method"
   ],
   [
-    "js/admin/src/components/uploadimagebutton.js~uploadimagebutton#init",
-    "class/js/admin/src/components/UploadImageButton.js~UploadImageButton.html#instance-method-init",
-    "js/admin/src/components/UploadImageButton.js~UploadImageButton#init",
+    "js/src/admin/components/uploadimagebutton.js~uploadimagebutton#init",
+    "class/js/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-method-init",
+    "js/src/admin/components/UploadImageButton.js~UploadImageButton#init",
     "method"
   ],
   [
-    "js/admin/src/components/uploadimagebutton.js~uploadimagebutton#loading",
-    "class/js/admin/src/components/UploadImageButton.js~UploadImageButton.html#instance-member-loading",
-    "js/admin/src/components/UploadImageButton.js~UploadImageButton#loading",
+    "js/src/admin/components/uploadimagebutton.js~uploadimagebutton#loading",
+    "class/js/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-member-loading",
+    "js/src/admin/components/UploadImageButton.js~UploadImageButton#loading",
     "member"
   ],
   [
-    "js/admin/src/components/uploadimagebutton.js~uploadimagebutton#remove",
-    "class/js/admin/src/components/UploadImageButton.js~UploadImageButton.html#instance-method-remove",
-    "js/admin/src/components/UploadImageButton.js~UploadImageButton#remove",
+    "js/src/admin/components/uploadimagebutton.js~uploadimagebutton#remove",
+    "class/js/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-method-remove",
+    "js/src/admin/components/UploadImageButton.js~UploadImageButton#remove",
     "method"
   ],
   [
-    "js/admin/src/components/uploadimagebutton.js~uploadimagebutton#resourceurl",
-    "class/js/admin/src/components/UploadImageButton.js~UploadImageButton.html#instance-method-resourceUrl",
-    "js/admin/src/components/UploadImageButton.js~UploadImageButton#resourceUrl",
+    "js/src/admin/components/uploadimagebutton.js~uploadimagebutton#resourceurl",
+    "class/js/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-method-resourceUrl",
+    "js/src/admin/components/UploadImageButton.js~UploadImageButton#resourceUrl",
     "method"
   ],
   [
-    "js/admin/src/components/uploadimagebutton.js~uploadimagebutton#success",
-    "class/js/admin/src/components/UploadImageButton.js~UploadImageButton.html#instance-method-success",
-    "js/admin/src/components/UploadImageButton.js~UploadImageButton#success",
+    "js/src/admin/components/uploadimagebutton.js~uploadimagebutton#success",
+    "class/js/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-method-success",
+    "js/src/admin/components/UploadImageButton.js~UploadImageButton#success",
     "method"
   ],
   [
-    "js/admin/src/components/uploadimagebutton.js~uploadimagebutton#upload",
-    "class/js/admin/src/components/UploadImageButton.js~UploadImageButton.html#instance-method-upload",
-    "js/admin/src/components/UploadImageButton.js~UploadImageButton#upload",
+    "js/src/admin/components/uploadimagebutton.js~uploadimagebutton#upload",
+    "class/js/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-method-upload",
+    "js/src/admin/components/UploadImageButton.js~UploadImageButton#upload",
     "method"
   ],
   [
-    "js/admin/src/components/uploadimagebutton.js~uploadimagebutton#view",
-    "class/js/admin/src/components/UploadImageButton.js~UploadImageButton.html#instance-method-view",
-    "js/admin/src/components/UploadImageButton.js~UploadImageButton#view",
+    "js/src/admin/components/uploadimagebutton.js~uploadimagebutton#view",
+    "class/js/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-method-view",
+    "js/src/admin/components/UploadImageButton.js~UploadImageButton#view",
     "method"
   ],
   [
-    "js/admin/src/components/widget.js",
-    "file/js/admin/src/components/Widget.js.html",
-    "js/admin/src/components/Widget.js",
+    "js/src/admin/components/widget.js",
+    "file/js/src/admin/components/Widget.js.html",
+    "js/src/admin/components/Widget.js",
     "file"
   ],
   [
-    "js/admin/src/components/widget.js~dashboardwidget#classname",
-    "class/js/admin/src/components/Widget.js~DashboardWidget.html#instance-method-className",
-    "js/admin/src/components/Widget.js~DashboardWidget#className",
+    "js/src/admin/components/widget.js~dashboardwidget#classname",
+    "class/js/src/admin/components/Widget.js~DashboardWidget.html#instance-method-className",
+    "js/src/admin/components/Widget.js~DashboardWidget#className",
     "method"
   ],
   [
-    "js/admin/src/components/widget.js~dashboardwidget#content",
-    "class/js/admin/src/components/Widget.js~DashboardWidget.html#instance-method-content",
-    "js/admin/src/components/Widget.js~DashboardWidget#content",
+    "js/src/admin/components/widget.js~dashboardwidget#content",
+    "class/js/src/admin/components/Widget.js~DashboardWidget.html#instance-method-content",
+    "js/src/admin/components/Widget.js~DashboardWidget#content",
     "method"
   ],
   [
-    "js/admin/src/components/widget.js~dashboardwidget#view",
-    "class/js/admin/src/components/Widget.js~DashboardWidget.html#instance-method-view",
-    "js/admin/src/components/Widget.js~DashboardWidget#view",
+    "js/src/admin/components/widget.js~dashboardwidget#view",
+    "class/js/src/admin/components/Widget.js~DashboardWidget.html#instance-method-view",
+    "js/src/admin/components/Widget.js~DashboardWidget#view",
     "method"
-  ],
-  [
-    "js/admin/src/initializers/boot.js",
-    "file/js/admin/src/initializers/boot.js.html",
-    "js/admin/src/initializers/boot.js",
-    "file"
   ],
   [
-    "js/admin/src/initializers/routes.js",
-    "file/js/admin/src/initializers/routes.js.html",
-    "js/admin/src/initializers/routes.js",
+    "js/src/admin/index.js",
+    "file/js/src/admin/index.js.html",
+    "js/src/admin/index.js",
     "file"
   ],
   [
-    "js/admin/src/utils/savesettings.js",
-    "file/js/admin/src/utils/saveSettings.js.html",
-    "js/admin/src/utils/saveSettings.js",
+    "js/src/admin/routes.js",
+    "file/js/src/admin/routes.js.html",
+    "js/src/admin/routes.js",
     "file"
   ],
   [
-    "js/forum/gulpfile.js",
-    "file/js/forum/Gulpfile.js.html",
-    "js/forum/Gulpfile.js",
+    "js/src/admin/utils/savesettings.js",
+    "file/js/src/admin/utils/saveSettings.js.html",
+    "js/src/admin/utils/saveSettings.js",
     "file"
   ],
   [
-    "js/forum/src/forumapp.js",
-    "file/js/forum/src/ForumApp.js.html",
-    "js/forum/src/ForumApp.js",
+    "js/src/common/component.js",
+    "file/js/src/common/Component.js.html",
+    "js/src/common/Component.js",
     "file"
   ],
   [
-    "js/forum/src/forumapp.js~forumapp#authenticationcomplete",
-    "class/js/forum/src/ForumApp.js~ForumApp.html#instance-method-authenticationComplete",
-    "js/forum/src/ForumApp.js~ForumApp#authenticationComplete",
+    "js/src/common/component.js~component#$",
+    "class/js/src/common/Component.js~Component.html#instance-method-$",
+    "js/src/common/Component.js~Component#$",
     "method"
   ],
   [
-    "js/forum/src/forumapp.js~forumapp#composingreplyto",
-    "class/js/forum/src/ForumApp.js~ForumApp.html#instance-method-composingReplyTo",
-    "js/forum/src/ForumApp.js~ForumApp#composingReplyTo",
+    "js/src/common/component.js~component#config",
+    "class/js/src/common/Component.js~Component.html#instance-method-config",
+    "js/src/common/Component.js~Component#config",
     "method"
   ],
   [
-    "js/forum/src/forumapp.js~forumapp#constructor",
-    "class/js/forum/src/ForumApp.js~ForumApp.html#instance-constructor-constructor",
-    "js/forum/src/ForumApp.js~ForumApp#constructor",
+    "js/src/common/component.js~component#constructor",
+    "class/js/src/common/Component.js~Component.html#instance-constructor-constructor",
+    "js/src/common/Component.js~Component#constructor",
     "method"
   ],
   [
-    "js/forum/src/forumapp.js~forumapp#drawer",
-    "class/js/forum/src/ForumApp.js~ForumApp.html#instance-member-drawer",
-    "js/forum/src/ForumApp.js~ForumApp#drawer",
+    "js/src/common/component.js~component#element",
+    "class/js/src/common/Component.js~Component.html#instance-member-element",
+    "js/src/common/Component.js~Component#element",
     "member"
   ],
   [
-    "js/forum/src/forumapp.js~forumapp#history",
-    "class/js/forum/src/ForumApp.js~ForumApp.html#instance-member-history",
-    "js/forum/src/ForumApp.js~ForumApp#history",
-    "member"
+    "js/src/common/component.js~component#init",
+    "class/js/src/common/Component.js~Component.html#instance-method-init",
+    "js/src/common/Component.js~Component#init",
+    "method"
   ],
   [
-    "js/forum/src/forumapp.js~forumapp#notificationcomponents",
-    "class/js/forum/src/ForumApp.js~ForumApp.html#instance-member-notificationComponents",
-    "js/forum/src/ForumApp.js~ForumApp#notificationComponents",
-    "member"
+    "js/src/common/component.js~component#onunload",
+    "class/js/src/common/Component.js~Component.html#instance-method-onunload",
+    "js/src/common/Component.js~Component#onunload",
+    "method"
   ],
   [
-    "js/forum/src/forumapp.js~forumapp#pane",
-    "class/js/forum/src/ForumApp.js~ForumApp.html#instance-member-pane",
-    "js/forum/src/ForumApp.js~ForumApp#pane",
+    "js/src/common/component.js~component#props",
+    "class/js/src/common/Component.js~Component.html#instance-member-props",
+    "js/src/common/Component.js~Component#props",
     "member"
   ],
   [
-    "js/forum/src/forumapp.js~forumapp#postcomponents",
-    "class/js/forum/src/ForumApp.js~ForumApp.html#instance-member-postComponents",
-    "js/forum/src/ForumApp.js~ForumApp#postComponents",
-    "member"
+    "js/src/common/component.js~component#render",
+    "class/js/src/common/Component.js~Component.html#instance-method-render",
+    "js/src/common/Component.js~Component#render",
+    "method"
   ],
   [
-    "js/forum/src/forumapp.js~forumapp#search",
-    "class/js/forum/src/ForumApp.js~ForumApp.html#instance-member-search",
-    "js/forum/src/ForumApp.js~ForumApp#search",
+    "js/src/common/component.js~component#retain",
+    "class/js/src/common/Component.js~Component.html#instance-member-retain",
+    "js/src/common/Component.js~Component#retain",
     "member"
   ],
   [
-    "js/forum/src/forumapp.js~forumapp#viewingdiscussion",
-    "class/js/forum/src/ForumApp.js~ForumApp.html#instance-method-viewingDiscussion",
-    "js/forum/src/ForumApp.js~ForumApp#viewingDiscussion",
+    "js/src/common/component.js~component#view",
+    "class/js/src/common/Component.js~Component.html#instance-method-view",
+    "js/src/common/Component.js~Component#view",
     "method"
   ],
   [
-    "js/forum/src/app.js",
-    "file/js/forum/src/app.js.html",
-    "js/forum/src/app.js",
-    "file"
+    "js/src/common/component.js~component.component",
+    "class/js/src/common/Component.js~Component.html#static-method-component",
+    "js/src/common/Component.js~Component.component",
+    "method"
+  ],
+  [
+    "js/src/common/component.js~component.initprops",
+    "class/js/src/common/Component.js~Component.html#static-method-initProps",
+    "js/src/common/Component.js~Component.initProps",
+    "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js",
-    "file/js/forum/src/components/AvatarEditor.js.html",
-    "js/forum/src/components/AvatarEditor.js",
+    "js/src/common/model.js",
+    "file/js/src/common/Model.js.html",
+    "js/src/common/Model.js",
     "file"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#controlitems",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-controlItems",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#controlItems",
+    "js/src/common/model.js~model#apiendpoint",
+    "class/js/src/common/Model.js~Model.html#instance-method-apiEndpoint",
+    "js/src/common/Model.js~Model#apiEndpoint",
     "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#disabledragover",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-disableDragover",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#disableDragover",
+    "js/src/common/model.js~model#attribute",
+    "class/js/src/common/Model.js~Model.html#instance-method-attribute",
+    "js/src/common/Model.js~Model#attribute",
     "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#dropupload",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-dropUpload",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#dropUpload",
+    "js/src/common/model.js~model#constructor",
+    "class/js/src/common/Model.js~Model.html#instance-constructor-constructor",
+    "js/src/common/Model.js~Model#constructor",
     "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#enabledragover",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-enableDragover",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#enableDragover",
+    "js/src/common/model.js~model#copydata",
+    "class/js/src/common/Model.js~Model.html#instance-method-copyData",
+    "js/src/common/Model.js~Model#copyData",
     "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#failure",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-failure",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#failure",
-    "method"
+    "js/src/common/model.js~model#data",
+    "class/js/src/common/Model.js~Model.html#instance-member-data",
+    "js/src/common/Model.js~Model#data",
+    "member"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#init",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-init",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#init",
+    "js/src/common/model.js~model#delete",
+    "class/js/src/common/Model.js~Model.html#instance-method-delete",
+    "js/src/common/Model.js~Model#delete",
     "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#isdraggedover",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-member-isDraggedOver",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#isDraggedOver",
+    "js/src/common/model.js~model#exists",
+    "class/js/src/common/Model.js~Model.html#instance-member-exists",
+    "js/src/common/Model.js~Model#exists",
     "member"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#loading",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-member-loading",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#loading",
+    "js/src/common/model.js~model#freshness",
+    "class/js/src/common/Model.js~Model.html#instance-member-freshness",
+    "js/src/common/Model.js~Model#freshness",
     "member"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#openpicker",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-openPicker",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#openPicker",
+    "js/src/common/model.js~model#id",
+    "class/js/src/common/Model.js~Model.html#instance-method-id",
+    "js/src/common/Model.js~Model#id",
     "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#quickupload",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-quickUpload",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#quickUpload",
+    "js/src/common/model.js~model#pushattributes",
+    "class/js/src/common/Model.js~Model.html#instance-method-pushAttributes",
+    "js/src/common/Model.js~Model#pushAttributes",
     "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#remove",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-remove",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#remove",
+    "js/src/common/model.js~model#pushdata",
+    "class/js/src/common/Model.js~Model.html#instance-method-pushData",
+    "js/src/common/Model.js~Model#pushData",
     "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#success",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-success",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#success",
+    "js/src/common/model.js~model#save",
+    "class/js/src/common/Model.js~Model.html#instance-method-save",
+    "js/src/common/Model.js~Model#save",
     "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#upload",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-upload",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#upload",
-    "method"
+    "js/src/common/model.js~model#store",
+    "class/js/src/common/Model.js~Model.html#instance-member-store",
+    "js/src/common/Model.js~Model#store",
+    "member"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor#view",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#instance-method-view",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor#view",
+    "js/src/common/model.js~model.attribute",
+    "class/js/src/common/Model.js~Model.html#static-method-attribute",
+    "js/src/common/Model.js~Model.attribute",
     "method"
   ],
   [
-    "js/forum/src/components/avatareditor.js~avatareditor.initprops",
-    "class/js/forum/src/components/AvatarEditor.js~AvatarEditor.html#static-method-initProps",
-    "js/forum/src/components/AvatarEditor.js~AvatarEditor.initProps",
+    "js/src/common/model.js~model.getidentifier",
+    "class/js/src/common/Model.js~Model.html#static-method-getIdentifier",
+    "js/src/common/Model.js~Model.getIdentifier",
     "method"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js",
-    "file/js/forum/src/components/ChangeEmailModal.js.html",
-    "js/forum/src/components/ChangeEmailModal.js",
-    "file"
+    "js/src/common/model.js~model.hasmany",
+    "class/js/src/common/Model.js~Model.html#static-method-hasMany",
+    "js/src/common/Model.js~Model.hasMany",
+    "method"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js~changeemailmodal#classname",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-className",
-    "js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal#className",
+    "js/src/common/model.js~model.hasone",
+    "class/js/src/common/Model.js~Model.html#static-method-hasOne",
+    "js/src/common/Model.js~Model.hasOne",
     "method"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js~changeemailmodal#content",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-content",
-    "js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal#content",
+    "js/src/common/model.js~model.transformdate",
+    "class/js/src/common/Model.js~Model.html#static-method-transformDate",
+    "js/src/common/Model.js~Model.transformDate",
     "method"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js~changeemailmodal#email",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-member-email",
-    "js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal#email",
-    "member"
+    "js/src/common/session.js",
+    "file/js/src/common/Session.js.html",
+    "js/src/common/Session.js",
+    "file"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js~changeemailmodal#init",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-init",
-    "js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal#init",
+    "js/src/common/session.js~session#constructor",
+    "class/js/src/common/Session.js~Session.html#instance-constructor-constructor",
+    "js/src/common/Session.js~Session#constructor",
     "method"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js~changeemailmodal#loading",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-member-loading",
-    "js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal#loading",
+    "js/src/common/session.js~session#csrftoken",
+    "class/js/src/common/Session.js~Session.html#instance-member-csrfToken",
+    "js/src/common/Session.js~Session#csrfToken",
     "member"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js~changeemailmodal#onerror",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-onerror",
-    "js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal#onerror",
+    "js/src/common/session.js~session#login",
+    "class/js/src/common/Session.js~Session.html#instance-method-login",
+    "js/src/common/Session.js~Session#login",
     "method"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js~changeemailmodal#onsubmit",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-onsubmit",
-    "js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal#onsubmit",
+    "js/src/common/session.js~session#logout",
+    "class/js/src/common/Session.js~Session.html#instance-method-logout",
+    "js/src/common/Session.js~Session#logout",
     "method"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js~changeemailmodal#password",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-member-password",
-    "js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal#password",
+    "js/src/common/session.js~session#user",
+    "class/js/src/common/Session.js~Session.html#instance-member-user",
+    "js/src/common/Session.js~Session#user",
     "member"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js~changeemailmodal#success",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-member-success",
-    "js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal#success",
-    "member"
+    "js/src/common/store.js",
+    "file/js/src/common/Store.js.html",
+    "js/src/common/Store.js",
+    "file"
   ],
   [
-    "js/forum/src/components/changeemailmodal.js~changeemailmodal#title",
-    "class/js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-title",
-    "js/forum/src/components/ChangeEmailModal.js~ChangeEmailModal#title",
+    "js/src/common/store.js~store#all",
+    "class/js/src/common/Store.js~Store.html#instance-method-all",
+    "js/src/common/Store.js~Store#all",
     "method"
-  ],
-  [
-    "js/forum/src/components/changepasswordmodal.js",
-    "file/js/forum/src/components/ChangePasswordModal.js.html",
-    "js/forum/src/components/ChangePasswordModal.js",
-    "file"
   ],
   [
-    "js/forum/src/components/changepasswordmodal.js~changepasswordmodal#classname",
-    "class/js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal.html#instance-method-className",
-    "js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal#className",
+    "js/src/common/store.js~store#constructor",
+    "class/js/src/common/Store.js~Store.html#instance-constructor-constructor",
+    "js/src/common/Store.js~Store#constructor",
     "method"
   ],
   [
-    "js/forum/src/components/changepasswordmodal.js~changepasswordmodal#content",
-    "class/js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal.html#instance-method-content",
-    "js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal#content",
+    "js/src/common/store.js~store#createrecord",
+    "class/js/src/common/Store.js~Store.html#instance-method-createRecord",
+    "js/src/common/Store.js~Store#createRecord",
     "method"
   ],
   [
-    "js/forum/src/components/changepasswordmodal.js~changepasswordmodal#loading",
-    "class/js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal.html#instance-member-loading",
-    "js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal#loading",
+    "js/src/common/store.js~store#data",
+    "class/js/src/common/Store.js~Store.html#instance-member-data",
+    "js/src/common/Store.js~Store#data",
     "member"
   ],
   [
-    "js/forum/src/components/changepasswordmodal.js~changepasswordmodal#onsubmit",
-    "class/js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal.html#instance-method-onsubmit",
-    "js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal#onsubmit",
+    "js/src/common/store.js~store#find",
+    "class/js/src/common/Store.js~Store.html#instance-method-find",
+    "js/src/common/Store.js~Store#find",
     "method"
   ],
   [
-    "js/forum/src/components/changepasswordmodal.js~changepasswordmodal#title",
-    "class/js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal.html#instance-method-title",
-    "js/forum/src/components/ChangePasswordModal.js~ChangePasswordModal#title",
+    "js/src/common/store.js~store#getby",
+    "class/js/src/common/Store.js~Store.html#instance-method-getBy",
+    "js/src/common/Store.js~Store#getBy",
     "method"
   ],
   [
-    "js/forum/src/components/commentpost.js",
-    "file/js/forum/src/components/CommentPost.js.html",
-    "js/forum/src/components/CommentPost.js",
-    "file"
+    "js/src/common/store.js~store#getbyid",
+    "class/js/src/common/Store.js~Store.html#instance-method-getById",
+    "js/src/common/Store.js~Store#getById",
+    "method"
   ],
   [
-    "js/forum/src/components/commentpost.js~commentpost#attrs",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html#instance-method-attrs",
-    "js/forum/src/components/CommentPost.js~CommentPost#attrs",
+    "js/src/common/store.js~store#models",
+    "class/js/src/common/Store.js~Store.html#instance-member-models",
+    "js/src/common/Store.js~Store#models",
+    "member"
+  ],
+  [
+    "js/src/common/store.js~store#pushobject",
+    "class/js/src/common/Store.js~Store.html#instance-method-pushObject",
+    "js/src/common/Store.js~Store#pushObject",
     "method"
   ],
   [
-    "js/forum/src/components/commentpost.js~commentpost#config",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html#instance-method-config",
-    "js/forum/src/components/CommentPost.js~CommentPost#config",
+    "js/src/common/store.js~store#pushpayload",
+    "class/js/src/common/Store.js~Store.html#instance-method-pushPayload",
+    "js/src/common/Store.js~Store#pushPayload",
     "method"
   ],
   [
-    "js/forum/src/components/commentpost.js~commentpost#configpreview",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html#instance-method-configPreview",
-    "js/forum/src/components/CommentPost.js~CommentPost#configPreview",
+    "js/src/common/store.js~store#remove",
+    "class/js/src/common/Store.js~Store.html#instance-method-remove",
+    "js/src/common/Store.js~Store#remove",
     "method"
+  ],
+  [
+    "js/src/common/translator.js",
+    "file/js/src/common/Translator.js.html",
+    "js/src/common/Translator.js",
+    "file"
   ],
   [
-    "js/forum/src/components/commentpost.js~commentpost#content",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html#instance-method-content",
-    "js/forum/src/components/CommentPost.js~CommentPost#content",
+    "js/src/common/translator.js~translator#addtranslations",
+    "class/js/src/common/Translator.js~Translator.html#instance-method-addTranslations",
+    "js/src/common/Translator.js~Translator#addTranslations",
     "method"
   ],
   [
-    "js/forum/src/components/commentpost.js~commentpost#headeritems",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html#instance-method-headerItems",
-    "js/forum/src/components/CommentPost.js~CommentPost#headerItems",
+    "js/src/common/translator.js~translator#apply",
+    "class/js/src/common/Translator.js~Translator.html#instance-method-apply",
+    "js/src/common/Translator.js~Translator#apply",
     "method"
   ],
   [
-    "js/forum/src/components/commentpost.js~commentpost#init",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html#instance-method-init",
-    "js/forum/src/components/CommentPost.js~CommentPost#init",
+    "js/src/common/translator.js~translator#constructor",
+    "class/js/src/common/Translator.js~Translator.html#instance-constructor-constructor",
+    "js/src/common/Translator.js~Translator#constructor",
     "method"
   ],
   [
-    "js/forum/src/components/commentpost.js~commentpost#isediting",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html#instance-method-isEditing",
-    "js/forum/src/components/CommentPost.js~CommentPost#isEditing",
+    "js/src/common/translator.js~translator#convertnumber",
+    "class/js/src/common/Translator.js~Translator.html#instance-method-convertNumber",
+    "js/src/common/Translator.js~Translator#convertNumber",
     "method"
   ],
   [
-    "js/forum/src/components/commentpost.js~commentpost#postuser",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html#instance-member-postUser",
-    "js/forum/src/components/CommentPost.js~CommentPost#postUser",
+    "js/src/common/translator.js~translator#locale",
+    "class/js/src/common/Translator.js~Translator.html#instance-member-locale",
+    "js/src/common/Translator.js~Translator#locale",
     "member"
   ],
   [
-    "js/forum/src/components/commentpost.js~commentpost#revealcontent",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html#instance-member-revealContent",
-    "js/forum/src/components/CommentPost.js~CommentPost#revealContent",
-    "member"
+    "js/src/common/translator.js~translator#pluralposition",
+    "class/js/src/common/Translator.js~Translator.html#instance-method-pluralPosition",
+    "js/src/common/Translator.js~Translator#pluralPosition",
+    "method"
   ],
   [
-    "js/forum/src/components/commentpost.js~commentpost#togglecontent",
-    "class/js/forum/src/components/CommentPost.js~CommentPost.html#instance-method-toggleContent",
-    "js/forum/src/components/CommentPost.js~CommentPost#toggleContent",
+    "js/src/common/translator.js~translator#pluralize",
+    "class/js/src/common/Translator.js~Translator.html#instance-method-pluralize",
+    "js/src/common/Translator.js~Translator#pluralize",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js",
-    "file/js/forum/src/components/Composer.js.html",
-    "js/forum/src/components/Composer.js",
-    "file"
+    "js/src/common/translator.js~translator#trans",
+    "class/js/src/common/Translator.js~Translator.html#instance-method-trans",
+    "js/src/common/Translator.js~Translator#trans",
+    "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#$backdrop",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-member-$backdrop",
-    "js/forum/src/components/Composer.js~Composer#$backdrop",
-    "member"
+    "js/src/common/translator.js~translator#transchoice",
+    "class/js/src/common/Translator.js~Translator.html#instance-method-transChoice",
+    "js/src/common/Translator.js~Translator#transChoice",
+    "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#active",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-member-active",
-    "js/forum/src/components/Composer.js~Composer#active",
+    "js/src/common/translator.js~translator#translations",
+    "class/js/src/common/Translator.js~Translator.html#instance-member-translations",
+    "js/src/common/Translator.js~Translator#translations",
     "member"
   ],
   [
-    "js/forum/src/components/composer.js~composer#animatetoposition",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-animateToPosition",
-    "js/forum/src/components/Composer.js~Composer#animateToPosition",
-    "method"
+    "js/src/common/compat.js",
+    "file/js/src/common/compat.js.html",
+    "js/src/common/compat.js",
+    "file"
   ],
   [
-    "js/forum/src/components/composer.js~composer#changeheight",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-changeHeight",
-    "js/forum/src/components/Composer.js~Composer#changeHeight",
-    "method"
+    "js/src/common/components/alert.js",
+    "file/js/src/common/components/Alert.js.html",
+    "js/src/common/components/Alert.js",
+    "file"
   ],
   [
-    "js/forum/src/components/composer.js~composer#clear",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-clear",
-    "js/forum/src/components/Composer.js~Composer#clear",
+    "js/src/common/components/alert.js~alert#view",
+    "class/js/src/common/components/Alert.js~Alert.html#instance-method-view",
+    "js/src/common/components/Alert.js~Alert#view",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#close",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-close",
-    "js/forum/src/components/Composer.js~Composer#close",
+    "js/src/common/components/alertmanager.js",
+    "file/js/src/common/components/AlertManager.js.html",
+    "js/src/common/components/AlertManager.js",
+    "file"
+  ],
+  [
+    "js/src/common/components/alertmanager.js~alertmanager#clear",
+    "class/js/src/common/components/AlertManager.js~AlertManager.html#instance-method-clear",
+    "js/src/common/components/AlertManager.js~AlertManager#clear",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#component",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-member-component",
-    "js/forum/src/components/Composer.js~Composer#component",
+    "js/src/common/components/alertmanager.js~alertmanager#components",
+    "class/js/src/common/components/AlertManager.js~AlertManager.html#instance-member-components",
+    "js/src/common/components/AlertManager.js~AlertManager#components",
     "member"
   ],
   [
-    "js/forum/src/components/composer.js~composer#computedheight",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-computedHeight",
-    "js/forum/src/components/Composer.js~Composer#computedHeight",
+    "js/src/common/components/alertmanager.js~alertmanager#config",
+    "class/js/src/common/components/AlertManager.js~AlertManager.html#instance-method-config",
+    "js/src/common/components/AlertManager.js~AlertManager#config",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#config",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-config",
-    "js/forum/src/components/Composer.js~Composer#config",
+    "js/src/common/components/alertmanager.js~alertmanager#dismiss",
+    "class/js/src/common/components/AlertManager.js~AlertManager.html#instance-method-dismiss",
+    "js/src/common/components/AlertManager.js~AlertManager#dismiss",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#confighandle",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-configHandle",
-    "js/forum/src/components/Composer.js~Composer#configHandle",
+    "js/src/common/components/alertmanager.js~alertmanager#init",
+    "class/js/src/common/components/AlertManager.js~AlertManager.html#instance-method-init",
+    "js/src/common/components/AlertManager.js~AlertManager#init",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#controlitems",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-controlItems",
-    "js/forum/src/components/Composer.js~Composer#controlItems",
+    "js/src/common/components/alertmanager.js~alertmanager#show",
+    "class/js/src/common/components/AlertManager.js~AlertManager.html#instance-method-show",
+    "js/src/common/components/AlertManager.js~AlertManager#show",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#defaultheight",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-defaultHeight",
-    "js/forum/src/components/Composer.js~Composer#defaultHeight",
+    "js/src/common/components/alertmanager.js~alertmanager#view",
+    "class/js/src/common/components/AlertManager.js~AlertManager.html#instance-method-view",
+    "js/src/common/components/AlertManager.js~AlertManager#view",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#exitfullscreen",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-exitFullScreen",
-    "js/forum/src/components/Composer.js~Composer#exitFullScreen",
-    "method"
+    "js/src/common/components/badge.js",
+    "file/js/src/common/components/Badge.js.html",
+    "js/src/common/components/Badge.js",
+    "file"
   ],
   [
-    "js/forum/src/components/composer.js~composer#fullscreen",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-fullScreen",
-    "js/forum/src/components/Composer.js~Composer#fullScreen",
+    "js/src/common/components/badge.js~badge#config",
+    "class/js/src/common/components/Badge.js~Badge.html#instance-method-config",
+    "js/src/common/components/Badge.js~Badge#config",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#handle",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-member-handle",
-    "js/forum/src/components/Composer.js~Composer#handle",
-    "member"
+    "js/src/common/components/badge.js~badge#view",
+    "class/js/src/common/components/Badge.js~Badge.html#instance-method-view",
+    "js/src/common/components/Badge.js~Badge#view",
+    "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#height",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-member-height",
-    "js/forum/src/components/Composer.js~Composer#height",
-    "member"
+    "js/src/common/components/button.js",
+    "file/js/src/common/components/Button.js.html",
+    "js/src/common/components/Button.js",
+    "file"
   ],
   [
-    "js/forum/src/components/composer.js~composer#hide",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-hide",
-    "js/forum/src/components/Composer.js~Composer#hide",
+    "js/src/common/components/button.js~button#getbuttoncontent",
+    "class/js/src/common/components/Button.js~Button.html#instance-method-getButtonContent",
+    "js/src/common/components/Button.js~Button#getButtonContent",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#hidebackdrop",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-hideBackdrop",
-    "js/forum/src/components/Composer.js~Composer#hideBackdrop",
+    "js/src/common/components/button.js~button#view",
+    "class/js/src/common/components/Button.js~Button.html#instance-method-view",
+    "js/src/common/components/Button.js~Button#view",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#init",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-init",
-    "js/forum/src/components/Composer.js~Composer#init",
-    "method"
+    "js/src/common/components/checkbox.js",
+    "file/js/src/common/components/Checkbox.js.html",
+    "js/src/common/components/Checkbox.js",
+    "file"
   ],
   [
-    "js/forum/src/components/composer.js~composer#initializeheight",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-initializeHeight",
-    "js/forum/src/components/Composer.js~Composer#initializeHeight",
+    "js/src/common/components/checkbox.js~checkbox#getdisplay",
+    "class/js/src/common/components/Checkbox.js~Checkbox.html#instance-method-getDisplay",
+    "js/src/common/components/Checkbox.js~Checkbox#getDisplay",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#isfullscreen",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-isFullScreen",
-    "js/forum/src/components/Composer.js~Composer#isFullScreen",
+    "js/src/common/components/checkbox.js~checkbox#init",
+    "class/js/src/common/components/Checkbox.js~Checkbox.html#instance-method-init",
+    "js/src/common/components/Checkbox.js~Checkbox#init",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#load",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-load",
-    "js/forum/src/components/Composer.js~Composer#load",
-    "method"
+    "js/src/common/components/checkbox.js~checkbox#loading",
+    "class/js/src/common/components/Checkbox.js~Checkbox.html#instance-member-loading",
+    "js/src/common/components/Checkbox.js~Checkbox#loading",
+    "member"
   ],
   [
-    "js/forum/src/components/composer.js~composer#maximumheight",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-maximumHeight",
-    "js/forum/src/components/Composer.js~Composer#maximumHeight",
+    "js/src/common/components/checkbox.js~checkbox#onchange",
+    "class/js/src/common/components/Checkbox.js~Checkbox.html#instance-method-onchange",
+    "js/src/common/components/Checkbox.js~Checkbox#onchange",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#minimize",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-minimize",
-    "js/forum/src/components/Composer.js~Composer#minimize",
+    "js/src/common/components/checkbox.js~checkbox#view",
+    "class/js/src/common/components/Checkbox.js~Checkbox.html#instance-method-view",
+    "js/src/common/components/Checkbox.js~Checkbox#view",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#minimumheight",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-minimumHeight",
-    "js/forum/src/components/Composer.js~Composer#minimumHeight",
-    "method"
+    "js/src/common/components/dropdown.js",
+    "file/js/src/common/components/Dropdown.js.html",
+    "js/src/common/components/Dropdown.js",
+    "file"
   ],
   [
-    "js/forum/src/components/composer.js~composer#onmousemove",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-onmousemove",
-    "js/forum/src/components/Composer.js~Composer#onmousemove",
+    "js/src/common/components/dropdown.js~dropdown#config",
+    "class/js/src/common/components/Dropdown.js~Dropdown.html#instance-method-config",
+    "js/src/common/components/Dropdown.js~Dropdown#config",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#onmouseup",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-onmouseup",
-    "js/forum/src/components/Composer.js~Composer#onmouseup",
+    "js/src/common/components/dropdown.js~dropdown#getbutton",
+    "class/js/src/common/components/Dropdown.js~Dropdown.html#instance-method-getButton",
+    "js/src/common/components/Dropdown.js~Dropdown#getButton",
     "method"
-  ],
-  [
-    "js/forum/src/components/composer.js~composer#position",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-member-position",
-    "js/forum/src/components/Composer.js~Composer#position",
-    "member"
   ],
   [
-    "js/forum/src/components/composer.js~composer#preventexit",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-preventExit",
-    "js/forum/src/components/Composer.js~Composer#preventExit",
+    "js/src/common/components/dropdown.js~dropdown#getbuttoncontent",
+    "class/js/src/common/components/Dropdown.js~Dropdown.html#instance-method-getButtonContent",
+    "js/src/common/components/Dropdown.js~Dropdown#getButtonContent",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#show",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-show",
-    "js/forum/src/components/Composer.js~Composer#show",
+    "js/src/common/components/dropdown.js~dropdown#getmenu",
+    "class/js/src/common/components/Dropdown.js~Dropdown.html#instance-method-getMenu",
+    "js/src/common/components/Dropdown.js~Dropdown#getMenu",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#showbackdrop",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-showBackdrop",
-    "js/forum/src/components/Composer.js~Composer#showBackdrop",
+    "js/src/common/components/dropdown.js~dropdown#init",
+    "class/js/src/common/components/Dropdown.js~Dropdown.html#instance-method-init",
+    "js/src/common/components/Dropdown.js~Dropdown#init",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#updatebodypadding",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-updateBodyPadding",
-    "js/forum/src/components/Composer.js~Composer#updateBodyPadding",
-    "method"
+    "js/src/common/components/dropdown.js~dropdown#showing",
+    "class/js/src/common/components/Dropdown.js~Dropdown.html#instance-member-showing",
+    "js/src/common/components/Dropdown.js~Dropdown#showing",
+    "member"
   ],
   [
-    "js/forum/src/components/composer.js~composer#updateheight",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-updateHeight",
-    "js/forum/src/components/Composer.js~Composer#updateHeight",
+    "js/src/common/components/dropdown.js~dropdown#view",
+    "class/js/src/common/components/Dropdown.js~Dropdown.html#instance-method-view",
+    "js/src/common/components/Dropdown.js~Dropdown#view",
     "method"
   ],
   [
-    "js/forum/src/components/composer.js~composer#view",
-    "class/js/forum/src/components/Composer.js~Composer.html#instance-method-view",
-    "js/forum/src/components/Composer.js~Composer#view",
+    "js/src/common/components/dropdown.js~dropdown.initprops",
+    "class/js/src/common/components/Dropdown.js~Dropdown.html#static-method-initProps",
+    "js/src/common/components/Dropdown.js~Dropdown.initProps",
     "method"
   ],
   [
-    "js/forum/src/components/composerbody.js",
-    "file/js/forum/src/components/ComposerBody.js.html",
-    "js/forum/src/components/ComposerBody.js",
+    "js/src/common/components/fieldset.js",
+    "file/js/src/common/components/FieldSet.js.html",
+    "js/src/common/components/FieldSet.js",
     "file"
   ],
   [
-    "js/forum/src/components/composerbody.js~composerbody#content",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html#instance-member-content",
-    "js/forum/src/components/ComposerBody.js~ComposerBody#content",
-    "member"
+    "js/src/common/components/fieldset.js~fieldset#view",
+    "class/js/src/common/components/FieldSet.js~FieldSet.html#instance-method-view",
+    "js/src/common/components/FieldSet.js~FieldSet#view",
+    "method"
   ],
   [
-    "js/forum/src/components/composerbody.js~composerbody#editor",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html#instance-member-editor",
-    "js/forum/src/components/ComposerBody.js~ComposerBody#editor",
-    "member"
+    "js/src/common/components/groupbadge.js",
+    "file/js/src/common/components/GroupBadge.js.html",
+    "js/src/common/components/GroupBadge.js",
+    "file"
   ],
   [
-    "js/forum/src/components/composerbody.js~composerbody#focus",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html#instance-method-focus",
-    "js/forum/src/components/ComposerBody.js~ComposerBody#focus",
+    "js/src/common/components/groupbadge.js~groupbadge.initprops",
+    "class/js/src/common/components/GroupBadge.js~GroupBadge.html#static-method-initProps",
+    "js/src/common/components/GroupBadge.js~GroupBadge.initProps",
     "method"
   ],
   [
-    "js/forum/src/components/composerbody.js~composerbody#headeritems",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html#instance-method-headerItems",
-    "js/forum/src/components/ComposerBody.js~ComposerBody#headerItems",
-    "method"
+    "js/src/common/components/linkbutton.js",
+    "file/js/src/common/components/LinkButton.js.html",
+    "js/src/common/components/LinkButton.js",
+    "file"
   ],
   [
-    "js/forum/src/components/composerbody.js~composerbody#init",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html#instance-method-init",
-    "js/forum/src/components/ComposerBody.js~ComposerBody#init",
+    "js/src/common/components/linkbutton.js~linkbutton#view",
+    "class/js/src/common/components/LinkButton.js~LinkButton.html#instance-method-view",
+    "js/src/common/components/LinkButton.js~LinkButton#view",
     "method"
   ],
   [
-    "js/forum/src/components/composerbody.js~composerbody#loaded",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html#instance-method-loaded",
-    "js/forum/src/components/ComposerBody.js~ComposerBody#loaded",
+    "js/src/common/components/linkbutton.js~linkbutton.initprops",
+    "class/js/src/common/components/LinkButton.js~LinkButton.html#static-method-initProps",
+    "js/src/common/components/LinkButton.js~LinkButton.initProps",
     "method"
   ],
   [
-    "js/forum/src/components/composerbody.js~composerbody#loading",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html#instance-member-loading",
-    "js/forum/src/components/ComposerBody.js~ComposerBody#loading",
-    "member"
+    "js/src/common/components/linkbutton.js~linkbutton.isactive",
+    "class/js/src/common/components/LinkButton.js~LinkButton.html#static-method-isActive",
+    "js/src/common/components/LinkButton.js~LinkButton.isActive",
+    "method"
   ],
   [
-    "js/forum/src/components/composerbody.js~composerbody#onsubmit",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html#instance-method-onsubmit",
-    "js/forum/src/components/ComposerBody.js~ComposerBody#onsubmit",
-    "method"
+    "js/src/common/components/loadingindicator.js",
+    "file/js/src/common/components/LoadingIndicator.js.html",
+    "js/src/common/components/LoadingIndicator.js",
+    "file"
   ],
   [
-    "js/forum/src/components/composerbody.js~composerbody#preventexit",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html#instance-method-preventExit",
-    "js/forum/src/components/ComposerBody.js~ComposerBody#preventExit",
+    "js/src/common/components/loadingindicator.js~loadingindicator#config",
+    "class/js/src/common/components/LoadingIndicator.js~LoadingIndicator.html#instance-method-config",
+    "js/src/common/components/LoadingIndicator.js~LoadingIndicator#config",
     "method"
   ],
   [
-    "js/forum/src/components/composerbody.js~composerbody#view",
-    "class/js/forum/src/components/ComposerBody.js~ComposerBody.html#instance-method-view",
-    "js/forum/src/components/ComposerBody.js~ComposerBody#view",
+    "js/src/common/components/loadingindicator.js~loadingindicator#view",
+    "class/js/src/common/components/LoadingIndicator.js~LoadingIndicator.html#instance-method-view",
+    "js/src/common/components/LoadingIndicator.js~LoadingIndicator#view",
     "method"
   ],
   [
-    "js/forum/src/components/composerbutton.js",
-    "file/js/forum/src/components/ComposerButton.js.html",
-    "js/forum/src/components/ComposerButton.js",
+    "js/src/common/components/modal.js",
+    "file/js/src/common/components/Modal.js.html",
+    "js/src/common/components/Modal.js",
     "file"
+  ],
+  [
+    "js/src/common/components/modal.js~modal#alert",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-member-alert",
+    "js/src/common/components/Modal.js~Modal#alert",
+    "member"
   ],
   [
-    "js/forum/src/components/composerbutton.js~composerbutton.initprops",
-    "class/js/forum/src/components/ComposerButton.js~ComposerButton.html#static-method-initProps",
-    "js/forum/src/components/ComposerButton.js~ComposerButton.initProps",
+    "js/src/common/components/modal.js~modal#classname",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-className",
+    "js/src/common/components/Modal.js~Modal#className",
     "method"
   ],
   [
-    "js/forum/src/components/discussioncomposer.js",
-    "file/js/forum/src/components/DiscussionComposer.js.html",
-    "js/forum/src/components/DiscussionComposer.js",
-    "file"
+    "js/src/common/components/modal.js~modal#content",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-content",
+    "js/src/common/components/Modal.js~Modal#content",
+    "method"
+  ],
+  [
+    "js/src/common/components/modal.js~modal#hide",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-hide",
+    "js/src/common/components/Modal.js~Modal#hide",
+    "method"
   ],
   [
-    "js/forum/src/components/discussioncomposer.js~discussioncomposer#data",
-    "class/js/forum/src/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-data",
-    "js/forum/src/components/DiscussionComposer.js~DiscussionComposer#data",
+    "js/src/common/components/modal.js~modal#init",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-init",
+    "js/src/common/components/Modal.js~Modal#init",
     "method"
   ],
   [
-    "js/forum/src/components/discussioncomposer.js~discussioncomposer#headeritems",
-    "class/js/forum/src/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-headerItems",
-    "js/forum/src/components/DiscussionComposer.js~DiscussionComposer#headerItems",
+    "js/src/common/components/modal.js~modal#isdismissible",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-isDismissible",
+    "js/src/common/components/Modal.js~Modal#isDismissible",
     "method"
   ],
   [
-    "js/forum/src/components/discussioncomposer.js~discussioncomposer#init",
-    "class/js/forum/src/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-init",
-    "js/forum/src/components/DiscussionComposer.js~DiscussionComposer#init",
+    "js/src/common/components/modal.js~modal#loaded",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-loaded",
+    "js/src/common/components/Modal.js~Modal#loaded",
     "method"
   ],
   [
-    "js/forum/src/components/discussioncomposer.js~discussioncomposer#loading",
-    "class/js/forum/src/components/DiscussionComposer.js~DiscussionComposer.html#instance-member-loading",
-    "js/forum/src/components/DiscussionComposer.js~DiscussionComposer#loading",
+    "js/src/common/components/modal.js~modal#loading",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-member-loading",
+    "js/src/common/components/Modal.js~Modal#loading",
     "member"
   ],
   [
-    "js/forum/src/components/discussioncomposer.js~discussioncomposer#onkeydown",
-    "class/js/forum/src/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-onkeydown",
-    "js/forum/src/components/DiscussionComposer.js~DiscussionComposer#onkeydown",
+    "js/src/common/components/modal.js~modal#onerror",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-onerror",
+    "js/src/common/components/Modal.js~Modal#onerror",
     "method"
   ],
   [
-    "js/forum/src/components/discussioncomposer.js~discussioncomposer#onsubmit",
-    "class/js/forum/src/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-onsubmit",
-    "js/forum/src/components/DiscussionComposer.js~DiscussionComposer#onsubmit",
+    "js/src/common/components/modal.js~modal#onhide",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-onhide",
+    "js/src/common/components/Modal.js~Modal#onhide",
     "method"
   ],
   [
-    "js/forum/src/components/discussioncomposer.js~discussioncomposer#preventexit",
-    "class/js/forum/src/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-preventExit",
-    "js/forum/src/components/DiscussionComposer.js~DiscussionComposer#preventExit",
+    "js/src/common/components/modal.js~modal#onready",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-onready",
+    "js/src/common/components/Modal.js~Modal#onready",
     "method"
   ],
   [
-    "js/forum/src/components/discussioncomposer.js~discussioncomposer#title",
-    "class/js/forum/src/components/DiscussionComposer.js~DiscussionComposer.html#instance-member-title",
-    "js/forum/src/components/DiscussionComposer.js~DiscussionComposer#title",
-    "member"
+    "js/src/common/components/modal.js~modal#onsubmit",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-onsubmit",
+    "js/src/common/components/Modal.js~Modal#onsubmit",
+    "method"
   ],
   [
-    "js/forum/src/components/discussioncomposer.js~discussioncomposer.initprops",
-    "class/js/forum/src/components/DiscussionComposer.js~DiscussionComposer.html#static-method-initProps",
-    "js/forum/src/components/DiscussionComposer.js~DiscussionComposer.initProps",
+    "js/src/common/components/modal.js~modal#title",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-title",
+    "js/src/common/components/Modal.js~Modal#title",
     "method"
   ],
   [
-    "js/forum/src/components/discussionhero.js",
-    "file/js/forum/src/components/DiscussionHero.js.html",
-    "js/forum/src/components/DiscussionHero.js",
+    "js/src/common/components/modal.js~modal#view",
+    "class/js/src/common/components/Modal.js~Modal.html#instance-method-view",
+    "js/src/common/components/Modal.js~Modal#view",
+    "method"
+  ],
+  [
+    "js/src/common/components/modalmanager.js",
+    "file/js/src/common/components/ModalManager.js.html",
+    "js/src/common/components/ModalManager.js",
     "file"
   ],
   [
-    "js/forum/src/components/discussionhero.js~discussionhero#items",
-    "class/js/forum/src/components/DiscussionHero.js~DiscussionHero.html#instance-method-items",
-    "js/forum/src/components/DiscussionHero.js~DiscussionHero#items",
+    "js/src/common/components/modalmanager.js~modalmanager#clear",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html#instance-method-clear",
+    "js/src/common/components/ModalManager.js~ModalManager#clear",
     "method"
   ],
   [
-    "js/forum/src/components/discussionhero.js~discussionhero#view",
-    "class/js/forum/src/components/DiscussionHero.js~DiscussionHero.html#instance-method-view",
-    "js/forum/src/components/DiscussionHero.js~DiscussionHero#view",
+    "js/src/common/components/modalmanager.js~modalmanager#close",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html#instance-method-close",
+    "js/src/common/components/ModalManager.js~ModalManager#close",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlist.js",
-    "file/js/forum/src/components/DiscussionList.js.html",
-    "js/forum/src/components/DiscussionList.js",
-    "file"
+    "js/src/common/components/modalmanager.js~modalmanager#component",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html#instance-member-component",
+    "js/src/common/components/ModalManager.js~ModalManager#component",
+    "member"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#adddiscussion",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-method-addDiscussion",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#addDiscussion",
+    "js/src/common/components/modalmanager.js~modalmanager#config",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html#instance-method-config",
+    "js/src/common/components/ModalManager.js~ModalManager#config",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#discussions",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-member-discussions",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#discussions",
+    "js/src/common/components/modalmanager.js~modalmanager#hidetimeout",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html#instance-member-hideTimeout",
+    "js/src/common/components/ModalManager.js~ModalManager#hideTimeout",
     "member"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#init",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-method-init",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#init",
+    "js/src/common/components/modalmanager.js~modalmanager#init",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html#instance-method-init",
+    "js/src/common/components/ModalManager.js~ModalManager#init",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#loadmore",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-method-loadMore",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#loadMore",
+    "js/src/common/components/modalmanager.js~modalmanager#onready",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html#instance-method-onready",
+    "js/src/common/components/ModalManager.js~ModalManager#onready",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#loadresults",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-method-loadResults",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#loadResults",
+    "js/src/common/components/modalmanager.js~modalmanager#show",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html#instance-method-show",
+    "js/src/common/components/ModalManager.js~ModalManager#show",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#loading",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-member-loading",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#loading",
+    "js/src/common/components/modalmanager.js~modalmanager#showing",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html#instance-member-showing",
+    "js/src/common/components/ModalManager.js~ModalManager#showing",
     "member"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#moreresults",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-member-moreResults",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#moreResults",
-    "member"
+    "js/src/common/components/modalmanager.js~modalmanager#view",
+    "class/js/src/common/components/ModalManager.js~ModalManager.html#instance-method-view",
+    "js/src/common/components/ModalManager.js~ModalManager#view",
+    "method"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#parseresults",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-method-parseResults",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#parseResults",
-    "method"
+    "js/src/common/components/navigation.js",
+    "file/js/src/common/components/Navigation.js.html",
+    "js/src/common/components/Navigation.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#refresh",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-method-refresh",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#refresh",
+    "js/src/common/components/navigation.js~navigation#config",
+    "class/js/src/common/components/Navigation.js~Navigation.html#instance-method-config",
+    "js/src/common/components/Navigation.js~Navigation#config",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#removediscussion",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-method-removeDiscussion",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#removeDiscussion",
+    "js/src/common/components/navigation.js~navigation#getbackbutton",
+    "class/js/src/common/components/Navigation.js~Navigation.html#instance-method-getBackButton",
+    "js/src/common/components/Navigation.js~Navigation#getBackButton",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#requestparams",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-method-requestParams",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#requestParams",
+    "js/src/common/components/navigation.js~navigation#getdrawerbutton",
+    "class/js/src/common/components/Navigation.js~Navigation.html#instance-method-getDrawerButton",
+    "js/src/common/components/Navigation.js~Navigation#getDrawerButton",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#sortmap",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-method-sortMap",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#sortMap",
+    "js/src/common/components/navigation.js~navigation#getpanebutton",
+    "class/js/src/common/components/Navigation.js~Navigation.html#instance-method-getPaneButton",
+    "js/src/common/components/Navigation.js~Navigation#getPaneButton",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlist.js~discussionlist#view",
-    "class/js/forum/src/components/DiscussionList.js~DiscussionList.html#instance-method-view",
-    "js/forum/src/components/DiscussionList.js~DiscussionList#view",
+    "js/src/common/components/navigation.js~navigation#view",
+    "class/js/src/common/components/Navigation.js~Navigation.html#instance-method-view",
+    "js/src/common/components/Navigation.js~Navigation#view",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js",
-    "file/js/forum/src/components/DiscussionListItem.js.html",
-    "js/forum/src/components/DiscussionListItem.js",
+    "js/src/common/components/placeholder.js",
+    "file/js/src/common/components/Placeholder.js.html",
+    "js/src/common/components/Placeholder.js",
     "file"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#active",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-active",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#active",
+    "js/src/common/components/placeholder.js~placeholder#view",
+    "class/js/src/common/components/Placeholder.js~Placeholder.html#instance-method-view",
+    "js/src/common/components/Placeholder.js~Placeholder#view",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#attrs",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-attrs",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#attrs",
-    "method"
+    "js/src/common/components/requesterrormodal.js",
+    "file/js/src/common/components/RequestErrorModal.js.html",
+    "js/src/common/components/RequestErrorModal.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#config",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-config",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#config",
+    "js/src/common/components/requesterrormodal.js~requesterrormodal#classname",
+    "class/js/src/common/components/RequestErrorModal.js~RequestErrorModal.html#instance-method-className",
+    "js/src/common/components/RequestErrorModal.js~RequestErrorModal#className",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#highlightregexp",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-member-highlightRegExp",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#highlightRegExp",
-    "member"
+    "js/src/common/components/requesterrormodal.js~requesterrormodal#content",
+    "class/js/src/common/components/RequestErrorModal.js~RequestErrorModal.html#instance-method-content",
+    "js/src/common/components/RequestErrorModal.js~RequestErrorModal#content",
+    "method"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#infoitems",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-infoItems",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#infoItems",
+    "js/src/common/components/requesterrormodal.js~requesterrormodal#title",
+    "class/js/src/common/components/RequestErrorModal.js~RequestErrorModal.html#instance-method-title",
+    "js/src/common/components/RequestErrorModal.js~RequestErrorModal#title",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#init",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-init",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#init",
-    "method"
+    "js/src/common/components/select.js",
+    "file/js/src/common/components/Select.js.html",
+    "js/src/common/components/Select.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#markasread",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-markAsRead",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#markAsRead",
+    "js/src/common/components/select.js~select#view",
+    "class/js/src/common/components/Select.js~Select.html#instance-method-view",
+    "js/src/common/components/Select.js~Select#view",
     "method"
+  ],
+  [
+    "js/src/common/components/selectdropdown.js",
+    "file/js/src/common/components/SelectDropdown.js.html",
+    "js/src/common/components/SelectDropdown.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#showrepliescount",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-showRepliesCount",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#showRepliesCount",
+    "js/src/common/components/selectdropdown.js~selectdropdown#getbuttoncontent",
+    "class/js/src/common/components/SelectDropdown.js~SelectDropdown.html#instance-method-getButtonContent",
+    "js/src/common/components/SelectDropdown.js~SelectDropdown#getButtonContent",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#showstartpost",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-showStartPost",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#showStartPost",
+    "js/src/common/components/selectdropdown.js~selectdropdown.initprops",
+    "class/js/src/common/components/SelectDropdown.js~SelectDropdown.html#static-method-initProps",
+    "js/src/common/components/SelectDropdown.js~SelectDropdown.initProps",
     "method"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#subtree",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-member-subtree",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#subtree",
-    "member"
+    "js/src/common/components/separator.js",
+    "file/js/src/common/components/Separator.js.html",
+    "js/src/common/components/Separator.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionlistitem.js~discussionlistitem#view",
-    "class/js/forum/src/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-view",
-    "js/forum/src/components/DiscussionListItem.js~DiscussionListItem#view",
+    "js/src/common/components/separator.js~separator#view",
+    "class/js/src/common/components/Separator.js~Separator.html#instance-method-view",
+    "js/src/common/components/Separator.js~Separator#view",
     "method"
   ],
   [
-    "js/forum/src/components/discussionpage.js",
-    "file/js/forum/src/components/DiscussionPage.js.html",
-    "js/forum/src/components/DiscussionPage.js",
+    "js/src/common/components/splitdropdown.js",
+    "file/js/src/common/components/SplitDropdown.js.html",
+    "js/src/common/components/SplitDropdown.js",
     "file"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#bodyclass",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-member-bodyClass",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#bodyClass",
-    "member"
-  ],
-  [
-    "js/forum/src/components/discussionpage.js~discussionpage#configpane",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-method-configPane",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#configPane",
+    "js/src/common/components/splitdropdown.js~splitdropdown#getbutton",
+    "class/js/src/common/components/SplitDropdown.js~SplitDropdown.html#instance-method-getButton",
+    "js/src/common/components/SplitDropdown.js~SplitDropdown#getButton",
     "method"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#discussion",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-member-discussion",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#discussion",
-    "member"
+    "js/src/common/components/splitdropdown.js~splitdropdown#getfirstchild",
+    "class/js/src/common/components/SplitDropdown.js~SplitDropdown.html#instance-method-getFirstChild",
+    "js/src/common/components/SplitDropdown.js~SplitDropdown#getFirstChild",
+    "method"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#init",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-method-init",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#init",
+    "js/src/common/components/splitdropdown.js~splitdropdown.initprops",
+    "class/js/src/common/components/SplitDropdown.js~SplitDropdown.html#static-method-initProps",
+    "js/src/common/components/SplitDropdown.js~SplitDropdown.initProps",
     "method"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#near",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-member-near",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#near",
-    "member"
+    "js/src/common/components/switch.js",
+    "file/js/src/common/components/Switch.js.html",
+    "js/src/common/components/Switch.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#onunload",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-method-onunload",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#onunload",
+    "js/src/common/components/switch.js~switch#getdisplay",
+    "class/js/src/common/components/Switch.js~Switch.html#instance-method-getDisplay",
+    "js/src/common/components/Switch.js~Switch#getDisplay",
     "method"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#positionchanged",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-method-positionChanged",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#positionChanged",
+    "js/src/common/components/switch.js~switch.initprops",
+    "class/js/src/common/components/Switch.js~Switch.html#static-method-initProps",
+    "js/src/common/components/Switch.js~Switch.initProps",
     "method"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#refresh",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-method-refresh",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#refresh",
-    "method"
+    "js/src/common/extend.js",
+    "file/js/src/common/extend.js.html",
+    "js/src/common/extend.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#requestparams",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-method-requestParams",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#requestParams",
-    "method"
+    "js/src/common/extend/index.js",
+    "file/js/src/common/extend/index.js.html",
+    "js/src/common/extend/index.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#show",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-method-show",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#show",
-    "method"
+    "js/src/common/helpers/avatar.js",
+    "file/js/src/common/helpers/avatar.js.html",
+    "js/src/common/helpers/avatar.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#sidebaritems",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-method-sidebarItems",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#sidebarItems",
-    "method"
+    "js/src/common/helpers/fulltime.js",
+    "file/js/src/common/helpers/fullTime.js.html",
+    "js/src/common/helpers/fullTime.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#stream",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-member-stream",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#stream",
-    "member"
+    "js/src/common/helpers/highlight.js",
+    "file/js/src/common/helpers/highlight.js.html",
+    "js/src/common/helpers/highlight.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionpage.js~discussionpage#view",
-    "class/js/forum/src/components/DiscussionPage.js~DiscussionPage.html#instance-method-view",
-    "js/forum/src/components/DiscussionPage.js~DiscussionPage#view",
-    "method"
+    "js/src/common/helpers/humantime.js",
+    "file/js/src/common/helpers/humanTime.js.html",
+    "js/src/common/helpers/humanTime.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionrenamednotification.js",
-    "file/js/forum/src/components/DiscussionRenamedNotification.js.html",
-    "js/forum/src/components/DiscussionRenamedNotification.js",
+    "js/src/common/helpers/icon.js",
+    "file/js/src/common/helpers/icon.js.html",
+    "js/src/common/helpers/icon.js",
     "file"
   ],
   [
-    "js/forum/src/components/discussionrenamednotification.js~discussionrenamednotification#content",
-    "class/js/forum/src/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html#instance-method-content",
-    "js/forum/src/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification#content",
-    "method"
+    "js/src/common/helpers/listitems.js",
+    "file/js/src/common/helpers/listItems.js.html",
+    "js/src/common/helpers/listItems.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionrenamednotification.js~discussionrenamednotification#href",
-    "class/js/forum/src/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html#instance-method-href",
-    "js/forum/src/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification#href",
-    "method"
+    "js/src/common/helpers/punctuateseries.js",
+    "file/js/src/common/helpers/punctuateSeries.js.html",
+    "js/src/common/helpers/punctuateSeries.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionrenamednotification.js~discussionrenamednotification#icon",
-    "class/js/forum/src/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html#instance-method-icon",
-    "js/forum/src/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification#icon",
-    "method"
+    "js/src/common/helpers/useronline.js",
+    "file/js/src/common/helpers/userOnline.js.html",
+    "js/src/common/helpers/userOnline.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionrenamedpost.js",
-    "file/js/forum/src/components/DiscussionRenamedPost.js.html",
-    "js/forum/src/components/DiscussionRenamedPost.js",
+    "js/src/common/helpers/username.js",
+    "file/js/src/common/helpers/username.js.html",
+    "js/src/common/helpers/username.js",
     "file"
   ],
   [
-    "js/forum/src/components/discussionrenamedpost.js~discussionrenamedpost#description",
-    "class/js/forum/src/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html#instance-method-description",
-    "js/forum/src/components/DiscussionRenamedPost.js~DiscussionRenamedPost#description",
-    "method"
+    "js/src/common/index.js",
+    "file/js/src/common/index.js.html",
+    "js/src/common/index.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionrenamedpost.js~discussionrenamedpost#descriptiondata",
-    "class/js/forum/src/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html#instance-method-descriptionData",
-    "js/forum/src/components/DiscussionRenamedPost.js~DiscussionRenamedPost#descriptionData",
-    "method"
+    "js/src/common/models/discussion.js",
+    "file/js/src/common/models/Discussion.js.html",
+    "js/src/common/models/Discussion.js",
+    "file"
+  ],
+  [
+    "js/src/common/models/forum.js",
+    "file/js/src/common/models/Forum.js.html",
+    "js/src/common/models/Forum.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionrenamedpost.js~discussionrenamedpost#icon",
-    "class/js/forum/src/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html#instance-method-icon",
-    "js/forum/src/components/DiscussionRenamedPost.js~DiscussionRenamedPost#icon",
+    "js/src/common/models/forum.js~forum#apiendpoint",
+    "class/js/src/common/models/Forum.js~Forum.html#instance-method-apiEndpoint",
+    "js/src/common/models/Forum.js~Forum#apiEndpoint",
     "method"
   ],
   [
-    "js/forum/src/components/discussionssearchsource.js",
-    "file/js/forum/src/components/DiscussionsSearchSource.js.html",
-    "js/forum/src/components/DiscussionsSearchSource.js",
+    "js/src/common/models/group.js",
+    "file/js/src/common/models/Group.js.html",
+    "js/src/common/models/Group.js",
     "file"
   ],
   [
-    "js/forum/src/components/discussionssearchsource.js~discussionssearchsource#constructor",
-    "class/js/forum/src/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-constructor-constructor",
-    "js/forum/src/components/DiscussionsSearchSource.js~DiscussionsSearchSource#constructor",
-    "method"
+    "js/src/common/models/notification.js",
+    "file/js/src/common/models/Notification.js.html",
+    "js/src/common/models/Notification.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionssearchsource.js~discussionssearchsource#results",
-    "class/js/forum/src/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-member-results",
-    "js/forum/src/components/DiscussionsSearchSource.js~DiscussionsSearchSource#results",
-    "member"
+    "js/src/common/models/post.js",
+    "file/js/src/common/models/Post.js.html",
+    "js/src/common/models/Post.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionssearchsource.js~discussionssearchsource#search",
-    "class/js/forum/src/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-method-search",
-    "js/forum/src/components/DiscussionsSearchSource.js~DiscussionsSearchSource#search",
-    "method"
+    "js/src/common/models/user.js",
+    "file/js/src/common/models/User.js.html",
+    "js/src/common/models/User.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionssearchsource.js~discussionssearchsource#view",
-    "class/js/forum/src/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-method-view",
-    "js/forum/src/components/DiscussionsSearchSource.js~DiscussionsSearchSource#view",
-    "method"
+    "js/src/common/utils/drawer.js",
+    "file/js/src/common/utils/Drawer.js.html",
+    "js/src/common/utils/Drawer.js",
+    "file"
   ],
   [
-    "js/forum/src/components/discussionsuserpage.js",
-    "file/js/forum/src/components/DiscussionsUserPage.js.html",
-    "js/forum/src/components/DiscussionsUserPage.js",
-    "file"
+    "js/src/common/utils/drawer.js~drawer#$backdrop",
+    "class/js/src/common/utils/Drawer.js~Drawer.html#instance-member-$backdrop",
+    "js/src/common/utils/Drawer.js~Drawer#$backdrop",
+    "member"
   ],
   [
-    "js/forum/src/components/discussionsuserpage.js~discussionsuserpage#content",
-    "class/js/forum/src/components/DiscussionsUserPage.js~DiscussionsUserPage.html#instance-method-content",
-    "js/forum/src/components/DiscussionsUserPage.js~DiscussionsUserPage#content",
+    "js/src/common/utils/drawer.js~drawer#constructor",
+    "class/js/src/common/utils/Drawer.js~Drawer.html#instance-constructor-constructor",
+    "js/src/common/utils/Drawer.js~Drawer#constructor",
     "method"
   ],
   [
-    "js/forum/src/components/discussionsuserpage.js~discussionsuserpage#init",
-    "class/js/forum/src/components/DiscussionsUserPage.js~DiscussionsUserPage.html#instance-method-init",
-    "js/forum/src/components/DiscussionsUserPage.js~DiscussionsUserPage#init",
+    "js/src/common/utils/drawer.js~drawer#hide",
+    "class/js/src/common/utils/Drawer.js~Drawer.html#instance-method-hide",
+    "js/src/common/utils/Drawer.js~Drawer#hide",
     "method"
   ],
   [
-    "js/forum/src/components/editpostcomposer.js",
-    "file/js/forum/src/components/EditPostComposer.js.html",
-    "js/forum/src/components/EditPostComposer.js",
-    "file"
+    "js/src/common/utils/drawer.js~drawer#isopen",
+    "class/js/src/common/utils/Drawer.js~Drawer.html#instance-method-isOpen",
+    "js/src/common/utils/Drawer.js~Drawer#isOpen",
+    "method"
   ],
   [
-    "js/forum/src/components/editpostcomposer.js~editpostcomposer#data",
-    "class/js/forum/src/components/EditPostComposer.js~EditPostComposer.html#instance-method-data",
-    "js/forum/src/components/EditPostComposer.js~EditPostComposer#data",
+    "js/src/common/utils/drawer.js~drawer#show",
+    "class/js/src/common/utils/Drawer.js~Drawer.html#instance-method-show",
+    "js/src/common/utils/Drawer.js~Drawer#show",
     "method"
   ],
   [
-    "js/forum/src/components/editpostcomposer.js~editpostcomposer#headeritems",
-    "class/js/forum/src/components/EditPostComposer.js~EditPostComposer.html#instance-method-headerItems",
-    "js/forum/src/components/EditPostComposer.js~EditPostComposer#headerItems",
+    "js/src/common/utils/itemlist.js",
+    "file/js/src/common/utils/ItemList.js.html",
+    "js/src/common/utils/ItemList.js",
+    "file"
+  ],
+  [
+    "js/src/common/utils/itemlist.js~itemlist#add",
+    "class/js/src/common/utils/ItemList.js~ItemList.html#instance-method-add",
+    "js/src/common/utils/ItemList.js~ItemList#add",
     "method"
   ],
   [
-    "js/forum/src/components/editpostcomposer.js~editpostcomposer#init",
-    "class/js/forum/src/components/EditPostComposer.js~EditPostComposer.html#instance-method-init",
-    "js/forum/src/components/EditPostComposer.js~EditPostComposer#init",
+    "js/src/common/utils/itemlist.js~itemlist#constructor",
+    "class/js/src/common/utils/ItemList.js~ItemList.html#instance-constructor-constructor",
+    "js/src/common/utils/ItemList.js~ItemList#constructor",
     "method"
   ],
   [
-    "js/forum/src/components/editpostcomposer.js~editpostcomposer#loading",
-    "class/js/forum/src/components/EditPostComposer.js~EditPostComposer.html#instance-member-loading",
-    "js/forum/src/components/EditPostComposer.js~EditPostComposer#loading",
-    "member"
+    "js/src/common/utils/itemlist.js~itemlist#get",
+    "class/js/src/common/utils/ItemList.js~ItemList.html#instance-method-get",
+    "js/src/common/utils/ItemList.js~ItemList#get",
+    "method"
   ],
   [
-    "js/forum/src/components/editpostcomposer.js~editpostcomposer#onsubmit",
-    "class/js/forum/src/components/EditPostComposer.js~EditPostComposer.html#instance-method-onsubmit",
-    "js/forum/src/components/EditPostComposer.js~EditPostComposer#onsubmit",
+    "js/src/common/utils/itemlist.js~itemlist#has",
+    "class/js/src/common/utils/ItemList.js~ItemList.html#instance-method-has",
+    "js/src/common/utils/ItemList.js~ItemList#has",
     "method"
   ],
   [
-    "js/forum/src/components/editpostcomposer.js~editpostcomposer.initprops",
-    "class/js/forum/src/components/EditPostComposer.js~EditPostComposer.html#static-method-initProps",
-    "js/forum/src/components/EditPostComposer.js~EditPostComposer.initProps",
+    "js/src/common/utils/itemlist.js~itemlist#isempty",
+    "class/js/src/common/utils/ItemList.js~ItemList.html#instance-method-isEmpty",
+    "js/src/common/utils/ItemList.js~ItemList#isEmpty",
     "method"
   ],
   [
-    "js/forum/src/components/editusermodal.js",
-    "file/js/forum/src/components/EditUserModal.js.html",
-    "js/forum/src/components/EditUserModal.js",
-    "file"
+    "js/src/common/utils/itemlist.js~itemlist#items",
+    "class/js/src/common/utils/ItemList.js~ItemList.html#instance-member-items",
+    "js/src/common/utils/ItemList.js~ItemList#items",
+    "member"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#activate",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-method-activate",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#activate",
+    "js/src/common/utils/itemlist.js~itemlist#merge",
+    "class/js/src/common/utils/ItemList.js~ItemList.html#instance-method-merge",
+    "js/src/common/utils/ItemList.js~ItemList#merge",
     "method"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#classname",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-method-className",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#className",
+    "js/src/common/utils/itemlist.js~itemlist#remove",
+    "class/js/src/common/utils/ItemList.js~ItemList.html#instance-method-remove",
+    "js/src/common/utils/ItemList.js~ItemList#remove",
     "method"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#content",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-method-content",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#content",
+    "js/src/common/utils/itemlist.js~itemlist#replace",
+    "class/js/src/common/utils/ItemList.js~ItemList.html#instance-method-replace",
+    "js/src/common/utils/ItemList.js~ItemList#replace",
     "method"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#data",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-method-data",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#data",
+    "js/src/common/utils/itemlist.js~itemlist#toarray",
+    "class/js/src/common/utils/ItemList.js~ItemList.html#instance-method-toArray",
+    "js/src/common/utils/ItemList.js~ItemList#toArray",
     "method"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#email",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-member-email",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#email",
-    "member"
+    "js/src/common/utils/requesterror.js",
+    "file/js/src/common/utils/RequestError.js.html",
+    "js/src/common/utils/RequestError.js",
+    "file"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#groups",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-member-groups",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#groups",
+    "js/src/common/utils/requesterror.js~requesterror#alert",
+    "class/js/src/common/utils/RequestError.js~RequestError.html#instance-member-alert",
+    "js/src/common/utils/RequestError.js~RequestError#alert",
     "member"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#init",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-method-init",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#init",
+    "js/src/common/utils/requesterror.js~requesterror#constructor",
+    "class/js/src/common/utils/RequestError.js~RequestError.html#instance-constructor-constructor",
+    "js/src/common/utils/RequestError.js~RequestError#constructor",
     "method"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#isactivated",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-member-isActivated",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#isActivated",
+    "js/src/common/utils/requesterror.js~requesterror#options",
+    "class/js/src/common/utils/RequestError.js~RequestError.html#instance-member-options",
+    "js/src/common/utils/RequestError.js~RequestError#options",
     "member"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#loading",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-member-loading",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#loading",
+    "js/src/common/utils/requesterror.js~requesterror#response",
+    "class/js/src/common/utils/RequestError.js~RequestError.html#instance-member-response",
+    "js/src/common/utils/RequestError.js~RequestError#response",
     "member"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#onsubmit",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-method-onsubmit",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#onsubmit",
-    "method"
+    "js/src/common/utils/requesterror.js~requesterror#responsetext",
+    "class/js/src/common/utils/RequestError.js~RequestError.html#instance-member-responseText",
+    "js/src/common/utils/RequestError.js~RequestError#responseText",
+    "member"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#password",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-member-password",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#password",
+    "js/src/common/utils/requesterror.js~requesterror#status",
+    "class/js/src/common/utils/RequestError.js~RequestError.html#instance-member-status",
+    "js/src/common/utils/RequestError.js~RequestError#status",
     "member"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#setpassword",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-member-setPassword",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#setPassword",
+    "js/src/common/utils/requesterror.js~requesterror#xhr",
+    "class/js/src/common/utils/RequestError.js~RequestError.html#instance-member-xhr",
+    "js/src/common/utils/RequestError.js~RequestError#xhr",
     "member"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#title",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-method-title",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#title",
-    "method"
+    "js/src/common/utils/scrolllistener.js",
+    "file/js/src/common/utils/ScrollListener.js.html",
+    "js/src/common/utils/ScrollListener.js",
+    "file"
   ],
   [
-    "js/forum/src/components/editusermodal.js~editusermodal#username",
-    "class/js/forum/src/components/EditUserModal.js~EditUserModal.html#instance-member-username",
-    "js/forum/src/components/EditUserModal.js~EditUserModal#username",
+    "js/src/common/utils/scrolllistener.js~scrolllistener#active",
+    "class/js/src/common/utils/ScrollListener.js~ScrollListener.html#instance-member-active",
+    "js/src/common/utils/ScrollListener.js~ScrollListener#active",
     "member"
   ],
   [
-    "js/forum/src/components/eventpost.js",
-    "file/js/forum/src/components/EventPost.js.html",
-    "js/forum/src/components/EventPost.js",
-    "file"
+    "js/src/common/utils/scrolllistener.js~scrolllistener#callback",
+    "class/js/src/common/utils/ScrollListener.js~ScrollListener.html#instance-member-callback",
+    "js/src/common/utils/ScrollListener.js~ScrollListener#callback",
+    "member"
   ],
   [
-    "js/forum/src/components/eventpost.js~eventpost#attrs",
-    "class/js/forum/src/components/EventPost.js~EventPost.html#instance-method-attrs",
-    "js/forum/src/components/EventPost.js~EventPost#attrs",
+    "js/src/common/utils/scrolllistener.js~scrolllistener#constructor",
+    "class/js/src/common/utils/ScrollListener.js~ScrollListener.html#instance-constructor-constructor",
+    "js/src/common/utils/ScrollListener.js~ScrollListener#constructor",
     "method"
   ],
   [
-    "js/forum/src/components/eventpost.js~eventpost#content",
-    "class/js/forum/src/components/EventPost.js~EventPost.html#instance-method-content",
-    "js/forum/src/components/EventPost.js~EventPost#content",
-    "method"
+    "js/src/common/utils/scrolllistener.js~scrolllistener#lasttop",
+    "class/js/src/common/utils/ScrollListener.js~ScrollListener.html#instance-member-lastTop",
+    "js/src/common/utils/ScrollListener.js~ScrollListener#lastTop",
+    "member"
   ],
   [
-    "js/forum/src/components/eventpost.js~eventpost#description",
-    "class/js/forum/src/components/EventPost.js~EventPost.html#instance-method-description",
-    "js/forum/src/components/EventPost.js~EventPost#description",
+    "js/src/common/utils/scrolllistener.js~scrolllistener#loop",
+    "class/js/src/common/utils/ScrollListener.js~ScrollListener.html#instance-method-loop",
+    "js/src/common/utils/ScrollListener.js~ScrollListener#loop",
     "method"
   ],
   [
-    "js/forum/src/components/eventpost.js~eventpost#descriptiondata",
-    "class/js/forum/src/components/EventPost.js~EventPost.html#instance-method-descriptionData",
-    "js/forum/src/components/EventPost.js~EventPost#descriptionData",
+    "js/src/common/utils/scrolllistener.js~scrolllistener#start",
+    "class/js/src/common/utils/ScrollListener.js~ScrollListener.html#instance-method-start",
+    "js/src/common/utils/ScrollListener.js~ScrollListener#start",
     "method"
   ],
   [
-    "js/forum/src/components/eventpost.js~eventpost#descriptionkey",
-    "class/js/forum/src/components/EventPost.js~EventPost.html#instance-method-descriptionKey",
-    "js/forum/src/components/EventPost.js~EventPost#descriptionKey",
+    "js/src/common/utils/scrolllistener.js~scrolllistener#stop",
+    "class/js/src/common/utils/ScrollListener.js~ScrollListener.html#instance-method-stop",
+    "js/src/common/utils/ScrollListener.js~ScrollListener#stop",
     "method"
   ],
   [
-    "js/forum/src/components/eventpost.js~eventpost#icon",
-    "class/js/forum/src/components/EventPost.js~EventPost.html#instance-method-icon",
-    "js/forum/src/components/EventPost.js~EventPost#icon",
+    "js/src/common/utils/scrolllistener.js~scrolllistener#update",
+    "class/js/src/common/utils/ScrollListener.js~ScrollListener.html#instance-method-update",
+    "js/src/common/utils/ScrollListener.js~ScrollListener#update",
     "method"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js",
-    "file/js/forum/src/components/ForgotPasswordModal.js.html",
-    "js/forum/src/components/ForgotPasswordModal.js",
+    "js/src/common/utils/subtreeretainer.js",
+    "file/js/src/common/utils/SubtreeRetainer.js.html",
+    "js/src/common/utils/SubtreeRetainer.js",
     "file"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js~forgotpasswordmodal#alert",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-member-alert",
-    "js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal#alert",
+    "js/src/common/utils/subtreeretainer.js~subtreeretainer#callbacks",
+    "class/js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-member-callbacks",
+    "js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer#callbacks",
     "member"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js~forgotpasswordmodal#classname",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-className",
-    "js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal#className",
+    "js/src/common/utils/subtreeretainer.js~subtreeretainer#check",
+    "class/js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-method-check",
+    "js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer#check",
     "method"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js~forgotpasswordmodal#content",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-content",
-    "js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal#content",
+    "js/src/common/utils/subtreeretainer.js~subtreeretainer#constructor",
+    "class/js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-constructor-constructor",
+    "js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer#constructor",
     "method"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js~forgotpasswordmodal#email",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-member-email",
-    "js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal#email",
+    "js/src/common/utils/subtreeretainer.js~subtreeretainer#data",
+    "class/js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-member-data",
+    "js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer#data",
     "member"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js~forgotpasswordmodal#init",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-init",
-    "js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal#init",
+    "js/src/common/utils/subtreeretainer.js~subtreeretainer#invalidate",
+    "class/js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-method-invalidate",
+    "js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer#invalidate",
     "method"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js~forgotpasswordmodal#loading",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-member-loading",
-    "js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal#loading",
-    "member"
+    "js/src/common/utils/subtreeretainer.js~subtreeretainer#retain",
+    "class/js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-method-retain",
+    "js/src/common/utils/SubtreeRetainer.js~SubtreeRetainer#retain",
+    "method"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js~forgotpasswordmodal#onerror",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-onerror",
-    "js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal#onerror",
-    "method"
+    "js/src/common/utils/abbreviatenumber.js",
+    "file/js/src/common/utils/abbreviateNumber.js.html",
+    "js/src/common/utils/abbreviateNumber.js",
+    "file"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js~forgotpasswordmodal#onsubmit",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-onsubmit",
-    "js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal#onsubmit",
-    "method"
+    "js/src/common/utils/anchorscroll.js",
+    "file/js/src/common/utils/anchorScroll.js.html",
+    "js/src/common/utils/anchorScroll.js",
+    "file"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js~forgotpasswordmodal#success",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-member-success",
-    "js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal#success",
-    "member"
+    "js/src/common/utils/classlist.js",
+    "file/js/src/common/utils/classList.js.html",
+    "js/src/common/utils/classList.js",
+    "file"
   ],
   [
-    "js/forum/src/components/forgotpasswordmodal.js~forgotpasswordmodal#title",
-    "class/js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-title",
-    "js/forum/src/components/ForgotPasswordModal.js~ForgotPasswordModal#title",
-    "method"
+    "js/src/common/utils/computed.js",
+    "file/js/src/common/utils/computed.js.html",
+    "js/src/common/utils/computed.js",
+    "file"
   ],
   [
-    "js/forum/src/components/headerprimary.js",
-    "file/js/forum/src/components/HeaderPrimary.js.html",
-    "js/forum/src/components/HeaderPrimary.js",
+    "js/src/common/utils/evented.js",
+    "file/js/src/common/utils/evented.js.html",
+    "js/src/common/utils/evented.js",
     "file"
   ],
   [
-    "js/forum/src/components/headerprimary.js~headerprimary#config",
-    "class/js/forum/src/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-config",
-    "js/forum/src/components/HeaderPrimary.js~HeaderPrimary#config",
-    "method"
+    "js/src/common/utils/extract.js",
+    "file/js/src/common/utils/extract.js.html",
+    "js/src/common/utils/extract.js",
+    "file"
   ],
   [
-    "js/forum/src/components/headerprimary.js~headerprimary#items",
-    "class/js/forum/src/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-items",
-    "js/forum/src/components/HeaderPrimary.js~HeaderPrimary#items",
-    "method"
+    "js/src/common/utils/extracttext.js",
+    "file/js/src/common/utils/extractText.js.html",
+    "js/src/common/utils/extractText.js",
+    "file"
   ],
   [
-    "js/forum/src/components/headerprimary.js~headerprimary#view",
-    "class/js/forum/src/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-view",
-    "js/forum/src/components/HeaderPrimary.js~HeaderPrimary#view",
-    "method"
+    "js/src/common/utils/formatnumber.js",
+    "file/js/src/common/utils/formatNumber.js.html",
+    "js/src/common/utils/formatNumber.js",
+    "file"
   ],
   [
-    "js/forum/src/components/headersecondary.js",
-    "file/js/forum/src/components/HeaderSecondary.js.html",
-    "js/forum/src/components/HeaderSecondary.js",
+    "js/src/common/utils/humantime.js",
+    "file/js/src/common/utils/humanTime.js.html",
+    "js/src/common/utils/humanTime.js",
     "file"
   ],
   [
-    "js/forum/src/components/headersecondary.js~headersecondary#config",
-    "class/js/forum/src/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-config",
-    "js/forum/src/components/HeaderSecondary.js~HeaderSecondary#config",
-    "method"
+    "js/src/common/utils/livehumantimes.js",
+    "file/js/src/common/utils/liveHumanTimes.js.html",
+    "js/src/common/utils/liveHumanTimes.js",
+    "file"
   ],
   [
-    "js/forum/src/components/headersecondary.js~headersecondary#items",
-    "class/js/forum/src/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-items",
-    "js/forum/src/components/HeaderSecondary.js~HeaderSecondary#items",
-    "method"
+    "js/src/common/utils/maproutes.js",
+    "file/js/src/common/utils/mapRoutes.js.html",
+    "js/src/common/utils/mapRoutes.js",
+    "file"
   ],
   [
-    "js/forum/src/components/headersecondary.js~headersecondary#view",
-    "class/js/forum/src/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-view",
-    "js/forum/src/components/HeaderSecondary.js~HeaderSecondary#view",
-    "method"
+    "js/src/common/utils/mixin.js",
+    "file/js/src/common/utils/mixin.js.html",
+    "js/src/common/utils/mixin.js",
+    "file"
   ],
   [
-    "js/forum/src/components/indexpage.js",
-    "file/js/forum/src/components/IndexPage.js.html",
-    "js/forum/src/components/IndexPage.js",
+    "js/src/common/utils/patchmithril.js",
+    "file/js/src/common/utils/patchMithril.js.html",
+    "js/src/common/utils/patchMithril.js",
     "file"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#actionitems",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-actionItems",
-    "js/forum/src/components/IndexPage.js~IndexPage#actionItems",
-    "method"
+    "js/src/common/utils/string.js",
+    "file/js/src/common/utils/string.js.html",
+    "js/src/common/utils/string.js",
+    "file"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#bodyclass",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-member-bodyClass",
-    "js/forum/src/components/IndexPage.js~IndexPage#bodyClass",
-    "member"
+    "js/src/common/utils/stringtocolor.js",
+    "file/js/src/common/utils/stringToColor.js.html",
+    "js/src/common/utils/stringToColor.js",
+    "file"
+  ],
+  [
+    "js/src/forum/compat.js",
+    "file/js/src/forum/compat.js.html",
+    "js/src/forum/compat.js",
+    "file"
+  ],
+  [
+    "js/src/forum/components/avatareditor.js",
+    "file/js/src/forum/components/AvatarEditor.js.html",
+    "js/src/forum/components/AvatarEditor.js",
+    "file"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#changesort",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-changeSort",
-    "js/forum/src/components/IndexPage.js~IndexPage#changeSort",
+    "js/src/forum/components/avatareditor.js~avatareditor#controlitems",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-controlItems",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#controlItems",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#clearsearch",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-clearSearch",
-    "js/forum/src/components/IndexPage.js~IndexPage#clearSearch",
+    "js/src/forum/components/avatareditor.js~avatareditor#disabledragover",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-disableDragover",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#disableDragover",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#composenewdiscussion",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-composeNewDiscussion",
-    "js/forum/src/components/IndexPage.js~IndexPage#composeNewDiscussion",
+    "js/src/forum/components/avatareditor.js~avatareditor#dropupload",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-dropUpload",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#dropUpload",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#config",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-config",
-    "js/forum/src/components/IndexPage.js~IndexPage#config",
+    "js/src/forum/components/avatareditor.js~avatareditor#enabledragover",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-enableDragover",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#enableDragover",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#hero",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-hero",
-    "js/forum/src/components/IndexPage.js~IndexPage#hero",
+    "js/src/forum/components/avatareditor.js~avatareditor#failure",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-failure",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#failure",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#init",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-init",
-    "js/forum/src/components/IndexPage.js~IndexPage#init",
+    "js/src/forum/components/avatareditor.js~avatareditor#init",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-init",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#init",
     "method"
+  ],
+  [
+    "js/src/forum/components/avatareditor.js~avatareditor#isdraggedover",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-member-isDraggedOver",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#isDraggedOver",
+    "member"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#lastdiscussion",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-member-lastDiscussion",
-    "js/forum/src/components/IndexPage.js~IndexPage#lastDiscussion",
+    "js/src/forum/components/avatareditor.js~avatareditor#loading",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-member-loading",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#loading",
     "member"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#markallasread",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-markAllAsRead",
-    "js/forum/src/components/IndexPage.js~IndexPage#markAllAsRead",
+    "js/src/forum/components/avatareditor.js~avatareditor#openpicker",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-openPicker",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#openPicker",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#navitems",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-navItems",
-    "js/forum/src/components/IndexPage.js~IndexPage#navItems",
+    "js/src/forum/components/avatareditor.js~avatareditor#quickupload",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-quickUpload",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#quickUpload",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#newdiscussion",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-newDiscussion",
-    "js/forum/src/components/IndexPage.js~IndexPage#newDiscussion",
+    "js/src/forum/components/avatareditor.js~avatareditor#remove",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-remove",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#remove",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#onunload",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-onunload",
-    "js/forum/src/components/IndexPage.js~IndexPage#onunload",
+    "js/src/forum/components/avatareditor.js~avatareditor#success",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-success",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#success",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#params",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-params",
-    "js/forum/src/components/IndexPage.js~IndexPage#params",
+    "js/src/forum/components/avatareditor.js~avatareditor#upload",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-upload",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#upload",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#searching",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-searching",
-    "js/forum/src/components/IndexPage.js~IndexPage#searching",
+    "js/src/forum/components/avatareditor.js~avatareditor#view",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-view",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor#view",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#sidebaritems",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-sidebarItems",
-    "js/forum/src/components/IndexPage.js~IndexPage#sidebarItems",
+    "js/src/forum/components/avatareditor.js~avatareditor.initprops",
+    "class/js/src/forum/components/AvatarEditor.js~AvatarEditor.html#static-method-initProps",
+    "js/src/forum/components/AvatarEditor.js~AvatarEditor.initProps",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#stickyparams",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-stickyParams",
-    "js/forum/src/components/IndexPage.js~IndexPage#stickyParams",
+    "js/src/forum/components/changeemailmodal.js",
+    "file/js/src/forum/components/ChangeEmailModal.js.html",
+    "js/src/forum/components/ChangeEmailModal.js",
+    "file"
+  ],
+  [
+    "js/src/forum/components/changeemailmodal.js~changeemailmodal#classname",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-className",
+    "js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal#className",
     "method"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#view",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-view",
-    "js/forum/src/components/IndexPage.js~IndexPage#view",
+    "js/src/forum/components/changeemailmodal.js~changeemailmodal#content",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-content",
+    "js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal#content",
     "method"
+  ],
+  [
+    "js/src/forum/components/changeemailmodal.js~changeemailmodal#email",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-member-email",
+    "js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal#email",
+    "member"
   ],
   [
-    "js/forum/src/components/indexpage.js~indexpage#viewitems",
-    "class/js/forum/src/components/IndexPage.js~IndexPage.html#instance-method-viewItems",
-    "js/forum/src/components/IndexPage.js~IndexPage#viewItems",
+    "js/src/forum/components/changeemailmodal.js~changeemailmodal#init",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-init",
+    "js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal#init",
     "method"
   ],
   [
-    "js/forum/src/components/loadingpost.js",
-    "file/js/forum/src/components/LoadingPost.js.html",
-    "js/forum/src/components/LoadingPost.js",
-    "file"
+    "js/src/forum/components/changeemailmodal.js~changeemailmodal#loading",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-member-loading",
+    "js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal#loading",
+    "member"
   ],
   [
-    "js/forum/src/components/loadingpost.js~loadingpost#view",
-    "class/js/forum/src/components/LoadingPost.js~LoadingPost.html#instance-method-view",
-    "js/forum/src/components/LoadingPost.js~LoadingPost#view",
+    "js/src/forum/components/changeemailmodal.js~changeemailmodal#onerror",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-onerror",
+    "js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal#onerror",
     "method"
   ],
   [
-    "js/forum/src/components/loginbutton.js",
-    "file/js/forum/src/components/LogInButton.js.html",
-    "js/forum/src/components/LogInButton.js",
-    "file"
+    "js/src/forum/components/changeemailmodal.js~changeemailmodal#onsubmit",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-onsubmit",
+    "js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal#onsubmit",
+    "method"
+  ],
+  [
+    "js/src/forum/components/changeemailmodal.js~changeemailmodal#password",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-member-password",
+    "js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal#password",
+    "member"
+  ],
+  [
+    "js/src/forum/components/changeemailmodal.js~changeemailmodal#success",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-member-success",
+    "js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal#success",
+    "member"
   ],
   [
-    "js/forum/src/components/loginbutton.js~loginbutton.initprops",
-    "class/js/forum/src/components/LogInButton.js~LogInButton.html#static-method-initProps",
-    "js/forum/src/components/LogInButton.js~LogInButton.initProps",
+    "js/src/forum/components/changeemailmodal.js~changeemailmodal#title",
+    "class/js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-title",
+    "js/src/forum/components/ChangeEmailModal.js~ChangeEmailModal#title",
     "method"
   ],
   [
-    "js/forum/src/components/loginbuttons.js",
-    "file/js/forum/src/components/LogInButtons.js.html",
-    "js/forum/src/components/LogInButtons.js",
+    "js/src/forum/components/changepasswordmodal.js",
+    "file/js/src/forum/components/ChangePasswordModal.js.html",
+    "js/src/forum/components/ChangePasswordModal.js",
     "file"
   ],
   [
-    "js/forum/src/components/loginbuttons.js~loginbuttons#items",
-    "class/js/forum/src/components/LogInButtons.js~LogInButtons.html#instance-method-items",
-    "js/forum/src/components/LogInButtons.js~LogInButtons#items",
+    "js/src/forum/components/changepasswordmodal.js~changepasswordmodal#classname",
+    "class/js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal.html#instance-method-className",
+    "js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal#className",
     "method"
   ],
   [
-    "js/forum/src/components/loginbuttons.js~loginbuttons#view",
-    "class/js/forum/src/components/LogInButtons.js~LogInButtons.html#instance-method-view",
-    "js/forum/src/components/LogInButtons.js~LogInButtons#view",
+    "js/src/forum/components/changepasswordmodal.js~changepasswordmodal#content",
+    "class/js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal.html#instance-method-content",
+    "js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal#content",
     "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js",
-    "file/js/forum/src/components/LogInModal.js.html",
-    "js/forum/src/components/LogInModal.js",
-    "file"
+    "js/src/forum/components/changepasswordmodal.js~changepasswordmodal#loading",
+    "class/js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal.html#instance-member-loading",
+    "js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal#loading",
+    "member"
+  ],
+  [
+    "js/src/forum/components/changepasswordmodal.js~changepasswordmodal#onsubmit",
+    "class/js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal.html#instance-method-onsubmit",
+    "js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal#onsubmit",
+    "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#body",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-body",
-    "js/forum/src/components/LogInModal.js~LogInModal#body",
+    "js/src/forum/components/changepasswordmodal.js~changepasswordmodal#title",
+    "class/js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal.html#instance-method-title",
+    "js/src/forum/components/ChangePasswordModal.js~ChangePasswordModal#title",
     "method"
+  ],
+  [
+    "js/src/forum/components/commentpost.js",
+    "file/js/src/forum/components/CommentPost.js.html",
+    "js/src/forum/components/CommentPost.js",
+    "file"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#classname",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-className",
-    "js/forum/src/components/LogInModal.js~LogInModal#className",
+    "js/src/forum/components/commentpost.js~commentpost#attrs",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html#instance-method-attrs",
+    "js/src/forum/components/CommentPost.js~CommentPost#attrs",
     "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#content",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-content",
-    "js/forum/src/components/LogInModal.js~LogInModal#content",
+    "js/src/forum/components/commentpost.js~commentpost#config",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html#instance-method-config",
+    "js/src/forum/components/CommentPost.js~CommentPost#config",
     "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#fields",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-fields",
-    "js/forum/src/components/LogInModal.js~LogInModal#fields",
+    "js/src/forum/components/commentpost.js~commentpost#configpreview",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html#instance-method-configPreview",
+    "js/src/forum/components/CommentPost.js~CommentPost#configPreview",
     "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#footer",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-footer",
-    "js/forum/src/components/LogInModal.js~LogInModal#footer",
+    "js/src/forum/components/commentpost.js~commentpost#content",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html#instance-method-content",
+    "js/src/forum/components/CommentPost.js~CommentPost#content",
     "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#forgotpassword",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-forgotPassword",
-    "js/forum/src/components/LogInModal.js~LogInModal#forgotPassword",
+    "js/src/forum/components/commentpost.js~commentpost#headeritems",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html#instance-method-headerItems",
+    "js/src/forum/components/CommentPost.js~CommentPost#headerItems",
     "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#identification",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-member-identification",
-    "js/forum/src/components/LogInModal.js~LogInModal#identification",
-    "member"
+    "js/src/forum/components/commentpost.js~commentpost#init",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html#instance-method-init",
+    "js/src/forum/components/CommentPost.js~CommentPost#init",
+    "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#init",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-init",
-    "js/forum/src/components/LogInModal.js~LogInModal#init",
+    "js/src/forum/components/commentpost.js~commentpost#isediting",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html#instance-method-isEditing",
+    "js/src/forum/components/CommentPost.js~CommentPost#isEditing",
     "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#loading",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-member-loading",
-    "js/forum/src/components/LogInModal.js~LogInModal#loading",
+    "js/src/forum/components/commentpost.js~commentpost#postuser",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html#instance-member-postUser",
+    "js/src/forum/components/CommentPost.js~CommentPost#postUser",
     "member"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#onerror",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-onerror",
-    "js/forum/src/components/LogInModal.js~LogInModal#onerror",
-    "method"
+    "js/src/forum/components/commentpost.js~commentpost#revealcontent",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html#instance-member-revealContent",
+    "js/src/forum/components/CommentPost.js~CommentPost#revealContent",
+    "member"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#onready",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-onready",
-    "js/forum/src/components/LogInModal.js~LogInModal#onready",
+    "js/src/forum/components/commentpost.js~commentpost#togglecontent",
+    "class/js/src/forum/components/CommentPost.js~CommentPost.html#instance-method-toggleContent",
+    "js/src/forum/components/CommentPost.js~CommentPost#toggleContent",
     "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#onsubmit",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-onsubmit",
-    "js/forum/src/components/LogInModal.js~LogInModal#onsubmit",
-    "method"
+    "js/src/forum/components/composer.js",
+    "file/js/src/forum/components/Composer.js.html",
+    "js/src/forum/components/Composer.js",
+    "file"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#password",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-member-password",
-    "js/forum/src/components/LogInModal.js~LogInModal#password",
+    "js/src/forum/components/composer.js~composer#$backdrop",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-member-$backdrop",
+    "js/src/forum/components/Composer.js~Composer#$backdrop",
     "member"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#remember",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-member-remember",
-    "js/forum/src/components/LogInModal.js~LogInModal#remember",
+    "js/src/forum/components/composer.js~composer#active",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-member-active",
+    "js/src/forum/components/Composer.js~Composer#active",
     "member"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#signup",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-signUp",
-    "js/forum/src/components/LogInModal.js~LogInModal#signUp",
+    "js/src/forum/components/composer.js~composer#animatetoposition",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-animateToPosition",
+    "js/src/forum/components/Composer.js~Composer#animateToPosition",
     "method"
   ],
   [
-    "js/forum/src/components/loginmodal.js~loginmodal#title",
-    "class/js/forum/src/components/LogInModal.js~LogInModal.html#instance-method-title",
-    "js/forum/src/components/LogInModal.js~LogInModal#title",
+    "js/src/forum/components/composer.js~composer#changeheight",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-changeHeight",
+    "js/src/forum/components/Composer.js~Composer#changeHeight",
     "method"
   ],
   [
-    "js/forum/src/components/notification.js",
-    "file/js/forum/src/components/Notification.js.html",
-    "js/forum/src/components/Notification.js",
-    "file"
+    "js/src/forum/components/composer.js~composer#clear",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-clear",
+    "js/src/forum/components/Composer.js~Composer#clear",
+    "method"
   ],
   [
-    "js/forum/src/components/notification.js~notification#content",
-    "class/js/forum/src/components/Notification.js~Notification.html#instance-method-content",
-    "js/forum/src/components/Notification.js~Notification#content",
+    "js/src/forum/components/composer.js~composer#close",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-close",
+    "js/src/forum/components/Composer.js~Composer#close",
     "method"
   ],
   [
-    "js/forum/src/components/notification.js~notification#excerpt",
-    "class/js/forum/src/components/Notification.js~Notification.html#instance-method-excerpt",
-    "js/forum/src/components/Notification.js~Notification#excerpt",
-    "method"
+    "js/src/forum/components/composer.js~composer#component",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-member-component",
+    "js/src/forum/components/Composer.js~Composer#component",
+    "member"
   ],
   [
-    "js/forum/src/components/notification.js~notification#href",
-    "class/js/forum/src/components/Notification.js~Notification.html#instance-method-href",
-    "js/forum/src/components/Notification.js~Notification#href",
+    "js/src/forum/components/composer.js~composer#computedheight",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-computedHeight",
+    "js/src/forum/components/Composer.js~Composer#computedHeight",
     "method"
   ],
   [
-    "js/forum/src/components/notification.js~notification#icon",
-    "class/js/forum/src/components/Notification.js~Notification.html#instance-method-icon",
-    "js/forum/src/components/Notification.js~Notification#icon",
+    "js/src/forum/components/composer.js~composer#config",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-config",
+    "js/src/forum/components/Composer.js~Composer#config",
     "method"
   ],
   [
-    "js/forum/src/components/notification.js~notification#markasread",
-    "class/js/forum/src/components/Notification.js~Notification.html#instance-method-markAsRead",
-    "js/forum/src/components/Notification.js~Notification#markAsRead",
+    "js/src/forum/components/composer.js~composer#confighandle",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-configHandle",
+    "js/src/forum/components/Composer.js~Composer#configHandle",
     "method"
   ],
   [
-    "js/forum/src/components/notification.js~notification#view",
-    "class/js/forum/src/components/Notification.js~Notification.html#instance-method-view",
-    "js/forum/src/components/Notification.js~Notification#view",
+    "js/src/forum/components/composer.js~composer#controlitems",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-controlItems",
+    "js/src/forum/components/Composer.js~Composer#controlItems",
     "method"
   ],
   [
-    "js/forum/src/components/notificationgrid.js",
-    "file/js/forum/src/components/NotificationGrid.js.html",
-    "js/forum/src/components/NotificationGrid.js",
-    "file"
+    "js/src/forum/components/composer.js~composer#defaultheight",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-defaultHeight",
+    "js/src/forum/components/Composer.js~Composer#defaultHeight",
+    "method"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#config",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-method-config",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#config",
+    "js/src/forum/components/composer.js~composer#exitfullscreen",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-exitFullScreen",
+    "js/src/forum/components/Composer.js~Composer#exitFullScreen",
     "method"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#init",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-method-init",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#init",
+    "js/src/forum/components/composer.js~composer#fullscreen",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-fullScreen",
+    "js/src/forum/components/Composer.js~Composer#fullScreen",
     "method"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#inputs",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-member-inputs",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#inputs",
+    "js/src/forum/components/composer.js~composer#handle",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-member-handle",
+    "js/src/forum/components/Composer.js~Composer#handle",
     "member"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#methods",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-member-methods",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#methods",
+    "js/src/forum/components/composer.js~composer#height",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-member-height",
+    "js/src/forum/components/Composer.js~Composer#height",
     "member"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#notificationmethods",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-method-notificationMethods",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#notificationMethods",
+    "js/src/forum/components/composer.js~composer#hide",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-hide",
+    "js/src/forum/components/Composer.js~Composer#hide",
     "method"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#notificationtypes",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-method-notificationTypes",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#notificationTypes",
+    "js/src/forum/components/composer.js~composer#hidebackdrop",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-hideBackdrop",
+    "js/src/forum/components/Composer.js~Composer#hideBackdrop",
     "method"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#preferencekey",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-method-preferenceKey",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#preferenceKey",
+    "js/src/forum/components/composer.js~composer#init",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-init",
+    "js/src/forum/components/Composer.js~Composer#init",
     "method"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#toggle",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-method-toggle",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#toggle",
+    "js/src/forum/components/composer.js~composer#initializeheight",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-initializeHeight",
+    "js/src/forum/components/Composer.js~Composer#initializeHeight",
     "method"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#togglemethod",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-method-toggleMethod",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#toggleMethod",
+    "js/src/forum/components/composer.js~composer#isfullscreen",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-isFullScreen",
+    "js/src/forum/components/Composer.js~Composer#isFullScreen",
     "method"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#toggletype",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-method-toggleType",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#toggleType",
+    "js/src/forum/components/composer.js~composer#load",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-load",
+    "js/src/forum/components/Composer.js~Composer#load",
     "method"
   ],
   [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#types",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-member-types",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#types",
-    "member"
-  ],
-  [
-    "js/forum/src/components/notificationgrid.js~notificationgrid#view",
-    "class/js/forum/src/components/NotificationGrid.js~NotificationGrid.html#instance-method-view",
-    "js/forum/src/components/NotificationGrid.js~NotificationGrid#view",
+    "js/src/forum/components/composer.js~composer#maximumheight",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-maximumHeight",
+    "js/src/forum/components/Composer.js~Composer#maximumHeight",
     "method"
-  ],
-  [
-    "js/forum/src/components/notificationlist.js",
-    "file/js/forum/src/components/NotificationList.js.html",
-    "js/forum/src/components/NotificationList.js",
-    "file"
   ],
   [
-    "js/forum/src/components/notificationlist.js~notificationlist#config",
-    "class/js/forum/src/components/NotificationList.js~NotificationList.html#instance-method-config",
-    "js/forum/src/components/NotificationList.js~NotificationList#config",
+    "js/src/forum/components/composer.js~composer#minimize",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-minimize",
+    "js/src/forum/components/Composer.js~Composer#minimize",
     "method"
   ],
   [
-    "js/forum/src/components/notificationlist.js~notificationlist#init",
-    "class/js/forum/src/components/NotificationList.js~NotificationList.html#instance-method-init",
-    "js/forum/src/components/NotificationList.js~NotificationList#init",
+    "js/src/forum/components/composer.js~composer#minimumheight",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-minimumHeight",
+    "js/src/forum/components/Composer.js~Composer#minimumHeight",
     "method"
   ],
   [
-    "js/forum/src/components/notificationlist.js~notificationlist#load",
-    "class/js/forum/src/components/NotificationList.js~NotificationList.html#instance-method-load",
-    "js/forum/src/components/NotificationList.js~NotificationList#load",
+    "js/src/forum/components/composer.js~composer#onmousemove",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-onmousemove",
+    "js/src/forum/components/Composer.js~Composer#onmousemove",
     "method"
   ],
   [
-    "js/forum/src/components/notificationlist.js~notificationlist#loadmore",
-    "class/js/forum/src/components/NotificationList.js~NotificationList.html#instance-method-loadMore",
-    "js/forum/src/components/NotificationList.js~NotificationList#loadMore",
+    "js/src/forum/components/composer.js~composer#onmouseup",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-onmouseup",
+    "js/src/forum/components/Composer.js~Composer#onmouseup",
     "method"
   ],
   [
-    "js/forum/src/components/notificationlist.js~notificationlist#loading",
-    "class/js/forum/src/components/NotificationList.js~NotificationList.html#instance-member-loading",
-    "js/forum/src/components/NotificationList.js~NotificationList#loading",
+    "js/src/forum/components/composer.js~composer#position",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-member-position",
+    "js/src/forum/components/Composer.js~Composer#position",
     "member"
   ],
   [
-    "js/forum/src/components/notificationlist.js~notificationlist#markallasread",
-    "class/js/forum/src/components/NotificationList.js~NotificationList.html#instance-method-markAllAsRead",
-    "js/forum/src/components/NotificationList.js~NotificationList#markAllAsRead",
+    "js/src/forum/components/composer.js~composer#preventexit",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-preventExit",
+    "js/src/forum/components/Composer.js~Composer#preventExit",
     "method"
   ],
   [
-    "js/forum/src/components/notificationlist.js~notificationlist#moreresults",
-    "class/js/forum/src/components/NotificationList.js~NotificationList.html#instance-member-moreResults",
-    "js/forum/src/components/NotificationList.js~NotificationList#moreResults",
-    "member"
+    "js/src/forum/components/composer.js~composer#show",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-show",
+    "js/src/forum/components/Composer.js~Composer#show",
+    "method"
   ],
   [
-    "js/forum/src/components/notificationlist.js~notificationlist#parseresults",
-    "class/js/forum/src/components/NotificationList.js~NotificationList.html#instance-method-parseResults",
-    "js/forum/src/components/NotificationList.js~NotificationList#parseResults",
+    "js/src/forum/components/composer.js~composer#showbackdrop",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-showBackdrop",
+    "js/src/forum/components/Composer.js~Composer#showBackdrop",
     "method"
   ],
   [
-    "js/forum/src/components/notificationlist.js~notificationlist#view",
-    "class/js/forum/src/components/NotificationList.js~NotificationList.html#instance-method-view",
-    "js/forum/src/components/NotificationList.js~NotificationList#view",
+    "js/src/forum/components/composer.js~composer#updatebodypadding",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-updateBodyPadding",
+    "js/src/forum/components/Composer.js~Composer#updateBodyPadding",
     "method"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js",
-    "file/js/forum/src/components/NotificationsDropdown.js.html",
-    "js/forum/src/components/NotificationsDropdown.js",
-    "file"
+    "js/src/forum/components/composer.js~composer#updateheight",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-updateHeight",
+    "js/src/forum/components/Composer.js~Composer#updateHeight",
+    "method"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown#getbutton",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-getButton",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown#getButton",
+    "js/src/forum/components/composer.js~composer#view",
+    "class/js/src/forum/components/Composer.js~Composer.html#instance-method-view",
+    "js/src/forum/components/Composer.js~Composer#view",
     "method"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown#getbuttoncontent",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-getButtonContent",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown#getButtonContent",
-    "method"
+    "js/src/forum/components/composerbody.js",
+    "file/js/src/forum/components/ComposerBody.js.html",
+    "js/src/forum/components/ComposerBody.js",
+    "file"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown#getmenu",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-getMenu",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown#getMenu",
-    "method"
+    "js/src/forum/components/composerbody.js~composerbody#content",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html#instance-member-content",
+    "js/src/forum/components/ComposerBody.js~ComposerBody#content",
+    "member"
+  ],
+  [
+    "js/src/forum/components/composerbody.js~composerbody#editor",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html#instance-member-editor",
+    "js/src/forum/components/ComposerBody.js~ComposerBody#editor",
+    "member"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown#getnewcount",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-getNewCount",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown#getNewCount",
+    "js/src/forum/components/composerbody.js~composerbody#focus",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-focus",
+    "js/src/forum/components/ComposerBody.js~ComposerBody#focus",
     "method"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown#getunreadcount",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-getUnreadCount",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown#getUnreadCount",
+    "js/src/forum/components/composerbody.js~composerbody#headeritems",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-headerItems",
+    "js/src/forum/components/ComposerBody.js~ComposerBody#headerItems",
     "method"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown#gotoroute",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-goToRoute",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown#goToRoute",
+    "js/src/forum/components/composerbody.js~composerbody#init",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-init",
+    "js/src/forum/components/ComposerBody.js~ComposerBody#init",
     "method"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown#init",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-init",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown#init",
+    "js/src/forum/components/composerbody.js~composerbody#loaded",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-loaded",
+    "js/src/forum/components/ComposerBody.js~ComposerBody#loaded",
     "method"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown#list",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-member-list",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown#list",
+    "js/src/forum/components/composerbody.js~composerbody#loading",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html#instance-member-loading",
+    "js/src/forum/components/ComposerBody.js~ComposerBody#loading",
     "member"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown#menuclick",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-menuClick",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown#menuClick",
+    "js/src/forum/components/composerbody.js~composerbody#onsubmit",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-onsubmit",
+    "js/src/forum/components/ComposerBody.js~ComposerBody#onsubmit",
     "method"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown#onclick",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-onclick",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown#onclick",
+    "js/src/forum/components/composerbody.js~composerbody#preventexit",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-preventExit",
+    "js/src/forum/components/ComposerBody.js~ComposerBody#preventExit",
     "method"
   ],
   [
-    "js/forum/src/components/notificationsdropdown.js~notificationsdropdown.initprops",
-    "class/js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.html#static-method-initProps",
-    "js/forum/src/components/NotificationsDropdown.js~NotificationsDropdown.initProps",
+    "js/src/forum/components/composerbody.js~composerbody#view",
+    "class/js/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-view",
+    "js/src/forum/components/ComposerBody.js~ComposerBody#view",
     "method"
   ],
   [
-    "js/forum/src/components/notificationspage.js",
-    "file/js/forum/src/components/NotificationsPage.js.html",
-    "js/forum/src/components/NotificationsPage.js",
+    "js/src/forum/components/composerbutton.js",
+    "file/js/src/forum/components/ComposerButton.js.html",
+    "js/src/forum/components/ComposerButton.js",
     "file"
   ],
   [
-    "js/forum/src/components/notificationspage.js~notificationspage#bodyclass",
-    "class/js/forum/src/components/NotificationsPage.js~NotificationsPage.html#instance-member-bodyClass",
-    "js/forum/src/components/NotificationsPage.js~NotificationsPage#bodyClass",
-    "member"
+    "js/src/forum/components/composerbutton.js~composerbutton.initprops",
+    "class/js/src/forum/components/ComposerButton.js~ComposerButton.html#static-method-initProps",
+    "js/src/forum/components/ComposerButton.js~ComposerButton.initProps",
+    "method"
   ],
   [
-    "js/forum/src/components/notificationspage.js~notificationspage#init",
-    "class/js/forum/src/components/NotificationsPage.js~NotificationsPage.html#instance-method-init",
-    "js/forum/src/components/NotificationsPage.js~NotificationsPage#init",
-    "method"
+    "js/src/forum/components/discussioncomposer.js",
+    "file/js/src/forum/components/DiscussionComposer.js.html",
+    "js/src/forum/components/DiscussionComposer.js",
+    "file"
   ],
   [
-    "js/forum/src/components/notificationspage.js~notificationspage#list",
-    "class/js/forum/src/components/NotificationsPage.js~NotificationsPage.html#instance-member-list",
-    "js/forum/src/components/NotificationsPage.js~NotificationsPage#list",
-    "member"
+    "js/src/forum/components/discussioncomposer.js~discussioncomposer#data",
+    "class/js/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-data",
+    "js/src/forum/components/DiscussionComposer.js~DiscussionComposer#data",
+    "method"
   ],
   [
-    "js/forum/src/components/notificationspage.js~notificationspage#view",
-    "class/js/forum/src/components/NotificationsPage.js~NotificationsPage.html#instance-method-view",
-    "js/forum/src/components/NotificationsPage.js~NotificationsPage#view",
+    "js/src/forum/components/discussioncomposer.js~discussioncomposer#headeritems",
+    "class/js/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-headerItems",
+    "js/src/forum/components/DiscussionComposer.js~DiscussionComposer#headerItems",
     "method"
   ],
   [
-    "js/forum/src/components/page.js",
-    "file/js/forum/src/components/Page.js.html",
-    "js/forum/src/components/Page.js",
-    "file"
+    "js/src/forum/components/discussioncomposer.js~discussioncomposer#init",
+    "class/js/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-init",
+    "js/src/forum/components/DiscussionComposer.js~DiscussionComposer#init",
+    "method"
   ],
   [
-    "js/forum/src/components/page.js~page#bodyclass",
-    "class/js/forum/src/components/Page.js~Page.html#instance-member-bodyClass",
-    "js/forum/src/components/Page.js~Page#bodyClass",
+    "js/src/forum/components/discussioncomposer.js~discussioncomposer#loading",
+    "class/js/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-member-loading",
+    "js/src/forum/components/DiscussionComposer.js~DiscussionComposer#loading",
     "member"
   ],
   [
-    "js/forum/src/components/page.js~page#config",
-    "class/js/forum/src/components/Page.js~Page.html#instance-method-config",
-    "js/forum/src/components/Page.js~Page#config",
+    "js/src/forum/components/discussioncomposer.js~discussioncomposer#onkeydown",
+    "class/js/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-onkeydown",
+    "js/src/forum/components/DiscussionComposer.js~DiscussionComposer#onkeydown",
     "method"
   ],
   [
-    "js/forum/src/components/page.js~page#init",
-    "class/js/forum/src/components/Page.js~Page.html#instance-method-init",
-    "js/forum/src/components/Page.js~Page#init",
+    "js/src/forum/components/discussioncomposer.js~discussioncomposer#onsubmit",
+    "class/js/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-onsubmit",
+    "js/src/forum/components/DiscussionComposer.js~DiscussionComposer#onsubmit",
     "method"
   ],
   [
-    "js/forum/src/components/post.js",
-    "file/js/forum/src/components/Post.js.html",
-    "js/forum/src/components/Post.js",
-    "file"
+    "js/src/forum/components/discussioncomposer.js~discussioncomposer#preventexit",
+    "class/js/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-preventExit",
+    "js/src/forum/components/DiscussionComposer.js~DiscussionComposer#preventExit",
+    "method"
   ],
   [
-    "js/forum/src/components/post.js~post#actionitems",
-    "class/js/forum/src/components/Post.js~Post.html#instance-method-actionItems",
-    "js/forum/src/components/Post.js~Post#actionItems",
-    "method"
+    "js/src/forum/components/discussioncomposer.js~discussioncomposer#title",
+    "class/js/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-member-title",
+    "js/src/forum/components/DiscussionComposer.js~DiscussionComposer#title",
+    "member"
   ],
   [
-    "js/forum/src/components/post.js~post#attrs",
-    "class/js/forum/src/components/Post.js~Post.html#instance-method-attrs",
-    "js/forum/src/components/Post.js~Post#attrs",
+    "js/src/forum/components/discussioncomposer.js~discussioncomposer.initprops",
+    "class/js/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#static-method-initProps",
+    "js/src/forum/components/DiscussionComposer.js~DiscussionComposer.initProps",
     "method"
   ],
   [
-    "js/forum/src/components/post.js~post#config",
-    "class/js/forum/src/components/Post.js~Post.html#instance-method-config",
-    "js/forum/src/components/Post.js~Post#config",
-    "method"
+    "js/src/forum/components/discussionhero.js",
+    "file/js/src/forum/components/DiscussionHero.js.html",
+    "js/src/forum/components/DiscussionHero.js",
+    "file"
   ],
   [
-    "js/forum/src/components/post.js~post#content",
-    "class/js/forum/src/components/Post.js~Post.html#instance-method-content",
-    "js/forum/src/components/Post.js~Post#content",
+    "js/src/forum/components/discussionhero.js~discussionhero#items",
+    "class/js/src/forum/components/DiscussionHero.js~DiscussionHero.html#instance-method-items",
+    "js/src/forum/components/DiscussionHero.js~DiscussionHero#items",
     "method"
   ],
   [
-    "js/forum/src/components/post.js~post#footeritems",
-    "class/js/forum/src/components/Post.js~Post.html#instance-method-footerItems",
-    "js/forum/src/components/Post.js~Post#footerItems",
+    "js/src/forum/components/discussionhero.js~discussionhero#view",
+    "class/js/src/forum/components/DiscussionHero.js~DiscussionHero.html#instance-method-view",
+    "js/src/forum/components/DiscussionHero.js~DiscussionHero#view",
     "method"
   ],
   [
-    "js/forum/src/components/post.js~post#init",
-    "class/js/forum/src/components/Post.js~Post.html#instance-method-init",
-    "js/forum/src/components/Post.js~Post#init",
-    "method"
+    "js/src/forum/components/discussionlist.js",
+    "file/js/src/forum/components/DiscussionList.js.html",
+    "js/src/forum/components/DiscussionList.js",
+    "file"
   ],
   [
-    "js/forum/src/components/post.js~post#loading",
-    "class/js/forum/src/components/Post.js~Post.html#instance-member-loading",
-    "js/forum/src/components/Post.js~Post#loading",
-    "member"
+    "js/src/forum/components/discussionlist.js~discussionlist#adddiscussion",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-addDiscussion",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#addDiscussion",
+    "method"
   ],
   [
-    "js/forum/src/components/post.js~post#subtree",
-    "class/js/forum/src/components/Post.js~Post.html#instance-member-subtree",
-    "js/forum/src/components/Post.js~Post#subtree",
+    "js/src/forum/components/discussionlist.js~discussionlist#discussions",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-member-discussions",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#discussions",
     "member"
   ],
   [
-    "js/forum/src/components/post.js~post#view",
-    "class/js/forum/src/components/Post.js~Post.html#instance-method-view",
-    "js/forum/src/components/Post.js~Post#view",
+    "js/src/forum/components/discussionlist.js~discussionlist#init",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-init",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#init",
     "method"
-  ],
-  [
-    "js/forum/src/components/postedited.js",
-    "file/js/forum/src/components/PostEdited.js.html",
-    "js/forum/src/components/PostEdited.js",
-    "file"
   ],
   [
-    "js/forum/src/components/postedited.js~postedited#config",
-    "class/js/forum/src/components/PostEdited.js~PostEdited.html#instance-method-config",
-    "js/forum/src/components/PostEdited.js~PostEdited#config",
+    "js/src/forum/components/discussionlist.js~discussionlist#loadmore",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-loadMore",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#loadMore",
     "method"
   ],
   [
-    "js/forum/src/components/postedited.js~postedited#init",
-    "class/js/forum/src/components/PostEdited.js~PostEdited.html#instance-method-init",
-    "js/forum/src/components/PostEdited.js~PostEdited#init",
+    "js/src/forum/components/discussionlist.js~discussionlist#loadresults",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-loadResults",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#loadResults",
     "method"
   ],
   [
-    "js/forum/src/components/postedited.js~postedited#oldeditedinfo",
-    "class/js/forum/src/components/PostEdited.js~PostEdited.html#instance-member-oldEditedInfo",
-    "js/forum/src/components/PostEdited.js~PostEdited#oldEditedInfo",
+    "js/src/forum/components/discussionlist.js~discussionlist#loading",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-member-loading",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#loading",
     "member"
   ],
   [
-    "js/forum/src/components/postedited.js~postedited#shouldupdatetooltip",
-    "class/js/forum/src/components/PostEdited.js~PostEdited.html#instance-member-shouldUpdateTooltip",
-    "js/forum/src/components/PostEdited.js~PostEdited#shouldUpdateTooltip",
+    "js/src/forum/components/discussionlist.js~discussionlist#moreresults",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-member-moreResults",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#moreResults",
     "member"
   ],
   [
-    "js/forum/src/components/postedited.js~postedited#view",
-    "class/js/forum/src/components/PostEdited.js~PostEdited.html#instance-method-view",
-    "js/forum/src/components/PostEdited.js~PostEdited#view",
+    "js/src/forum/components/discussionlist.js~discussionlist#parseresults",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-parseResults",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#parseResults",
     "method"
   ],
   [
-    "js/forum/src/components/postmeta.js",
-    "file/js/forum/src/components/PostMeta.js.html",
-    "js/forum/src/components/PostMeta.js",
-    "file"
+    "js/src/forum/components/discussionlist.js~discussionlist#refresh",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-refresh",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#refresh",
+    "method"
   ],
   [
-    "js/forum/src/components/postmeta.js~postmeta#getpermalink",
-    "class/js/forum/src/components/PostMeta.js~PostMeta.html#instance-method-getPermalink",
-    "js/forum/src/components/PostMeta.js~PostMeta#getPermalink",
+    "js/src/forum/components/discussionlist.js~discussionlist#removediscussion",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-removeDiscussion",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#removeDiscussion",
     "method"
   ],
   [
-    "js/forum/src/components/postmeta.js~postmeta#view",
-    "class/js/forum/src/components/PostMeta.js~PostMeta.html#instance-method-view",
-    "js/forum/src/components/PostMeta.js~PostMeta#view",
+    "js/src/forum/components/discussionlist.js~discussionlist#requestparams",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-requestParams",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#requestParams",
     "method"
   ],
   [
-    "js/forum/src/components/postpreview.js",
-    "file/js/forum/src/components/PostPreview.js.html",
-    "js/forum/src/components/PostPreview.js",
-    "file"
+    "js/src/forum/components/discussionlist.js~discussionlist#sortmap",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-sortMap",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#sortMap",
+    "method"
   ],
   [
-    "js/forum/src/components/postpreview.js~postpreview#view",
-    "class/js/forum/src/components/PostPreview.js~PostPreview.html#instance-method-view",
-    "js/forum/src/components/PostPreview.js~PostPreview#view",
+    "js/src/forum/components/discussionlist.js~discussionlist#view",
+    "class/js/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-view",
+    "js/src/forum/components/DiscussionList.js~DiscussionList#view",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js",
-    "file/js/forum/src/components/PostStream.js.html",
-    "js/forum/src/components/PostStream.js",
+    "js/src/forum/components/discussionlistitem.js",
+    "file/js/src/forum/components/DiscussionListItem.js.html",
+    "js/src/forum/components/DiscussionListItem.js",
     "file"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#calculateposition",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-calculatePosition",
-    "js/forum/src/components/PostStream.js~PostStream#calculatePosition",
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#active",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-active",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#active",
     "method"
-  ],
-  [
-    "js/forum/src/components/poststream.js~poststream#calculatepositiontimeout",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-member-calculatePositionTimeout",
-    "js/forum/src/components/PostStream.js~PostStream#calculatePositionTimeout",
-    "member"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#config",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-config",
-    "js/forum/src/components/PostStream.js~PostStream#config",
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#attrs",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-attrs",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#attrs",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#count",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-count",
-    "js/forum/src/components/PostStream.js~PostStream#count",
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#config",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-config",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#config",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#discussion",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-member-discussion",
-    "js/forum/src/components/PostStream.js~PostStream#discussion",
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#highlightregexp",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-member-highlightRegExp",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#highlightRegExp",
     "member"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#flashitem",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-flashItem",
-    "js/forum/src/components/PostStream.js~PostStream#flashItem",
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#infoitems",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-infoItems",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#infoItems",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#getmargintop",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-getMarginTop",
-    "js/forum/src/components/PostStream.js~PostStream#getMarginTop",
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#init",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-init",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#init",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#gotofirst",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-goToFirst",
-    "js/forum/src/components/PostStream.js~PostStream#goToFirst",
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#markasread",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-markAsRead",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#markAsRead",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#gotoindex",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-goToIndex",
-    "js/forum/src/components/PostStream.js~PostStream#goToIndex",
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#showrepliescount",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-showRepliesCount",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#showRepliesCount",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#gotolast",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-goToLast",
-    "js/forum/src/components/PostStream.js~PostStream#goToLast",
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#showstartpost",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-showStartPost",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#showStartPost",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#gotonumber",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-goToNumber",
-    "js/forum/src/components/PostStream.js~PostStream#goToNumber",
-    "method"
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#subtree",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-member-subtree",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#subtree",
+    "member"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#init",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-init",
-    "js/forum/src/components/PostStream.js~PostStream#init",
+    "js/src/forum/components/discussionlistitem.js~discussionlistitem#view",
+    "class/js/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-view",
+    "js/src/forum/components/DiscussionListItem.js~DiscussionListItem#view",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#loadnearindex",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-loadNearIndex",
-    "js/forum/src/components/PostStream.js~PostStream#loadNearIndex",
-    "method"
+    "js/src/forum/components/discussionpage.js",
+    "file/js/src/forum/components/DiscussionPage.js.html",
+    "js/src/forum/components/DiscussionPage.js",
+    "file"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#loadnearnumber",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-loadNearNumber",
-    "js/forum/src/components/PostStream.js~PostStream#loadNearNumber",
-    "method"
+    "js/src/forum/components/discussionpage.js~discussionpage#bodyclass",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-bodyClass",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#bodyClass",
+    "member"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#loadnext",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-loadNext",
-    "js/forum/src/components/PostStream.js~PostStream#loadNext",
+    "js/src/forum/components/discussionpage.js~discussionpage#configpane",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-configPane",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#configPane",
     "method"
+  ],
+  [
+    "js/src/forum/components/discussionpage.js~discussionpage#discussion",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-discussion",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#discussion",
+    "member"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#loadpage",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-loadPage",
-    "js/forum/src/components/PostStream.js~PostStream#loadPage",
+    "js/src/forum/components/discussionpage.js~discussionpage#init",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-init",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#init",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#loadpagetimeouts",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-member-loadPageTimeouts",
-    "js/forum/src/components/PostStream.js~PostStream#loadPageTimeouts",
+    "js/src/forum/components/discussionpage.js~discussionpage#near",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-near",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#near",
     "member"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#loadprevious",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-loadPrevious",
-    "js/forum/src/components/PostStream.js~PostStream#loadPrevious",
+    "js/src/forum/components/discussionpage.js~discussionpage#onunload",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-onunload",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#onunload",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#loadrange",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-loadRange",
-    "js/forum/src/components/PostStream.js~PostStream#loadRange",
+    "js/src/forum/components/discussionpage.js~discussionpage#positionchanged",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-positionChanged",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#positionChanged",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#onscroll",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-onscroll",
-    "js/forum/src/components/PostStream.js~PostStream#onscroll",
+    "js/src/forum/components/discussionpage.js~discussionpage#refresh",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-refresh",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#refresh",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#pagesloading",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-member-pagesLoading",
-    "js/forum/src/components/PostStream.js~PostStream#pagesLoading",
-    "member"
+    "js/src/forum/components/discussionpage.js~discussionpage#requestparams",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-requestParams",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#requestParams",
+    "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#paused",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-member-paused",
-    "js/forum/src/components/PostStream.js~PostStream#paused",
-    "member"
+    "js/src/forum/components/discussionpage.js~discussionpage#show",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-show",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#show",
+    "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#posts",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-posts",
-    "js/forum/src/components/PostStream.js~PostStream#posts",
+    "js/src/forum/components/discussionpage.js~discussionpage#sidebaritems",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-sidebarItems",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#sidebarItems",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#reset",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-reset",
-    "js/forum/src/components/PostStream.js~PostStream#reset",
-    "method"
+    "js/src/forum/components/discussionpage.js~discussionpage#stream",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-stream",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#stream",
+    "member"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#sanitizeindex",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-sanitizeIndex",
-    "js/forum/src/components/PostStream.js~PostStream#sanitizeIndex",
+    "js/src/forum/components/discussionpage.js~discussionpage#view",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-view",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#view",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#scrolllistener",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-member-scrollListener",
-    "js/forum/src/components/PostStream.js~PostStream#scrollListener",
-    "member"
+    "js/src/forum/components/discussionrenamednotification.js",
+    "file/js/src/forum/components/DiscussionRenamedNotification.js.html",
+    "js/src/forum/components/DiscussionRenamedNotification.js",
+    "file"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#scrolltoindex",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-scrollToIndex",
-    "js/forum/src/components/PostStream.js~PostStream#scrollToIndex",
+    "js/src/forum/components/discussionrenamednotification.js~discussionrenamednotification#content",
+    "class/js/src/forum/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html#instance-method-content",
+    "js/src/forum/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification#content",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#scrolltoitem",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-scrollToItem",
-    "js/forum/src/components/PostStream.js~PostStream#scrollToItem",
+    "js/src/forum/components/discussionrenamednotification.js~discussionrenamednotification#href",
+    "class/js/src/forum/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html#instance-method-href",
+    "js/src/forum/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification#href",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#scrolltonumber",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-scrollToNumber",
-    "js/forum/src/components/PostStream.js~PostStream#scrollToNumber",
+    "js/src/forum/components/discussionrenamednotification.js~discussionrenamednotification#icon",
+    "class/js/src/forum/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html#instance-method-icon",
+    "js/src/forum/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification#icon",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#show",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-show",
-    "js/forum/src/components/PostStream.js~PostStream#show",
-    "method"
+    "js/src/forum/components/discussionrenamedpost.js",
+    "file/js/src/forum/components/DiscussionRenamedPost.js.html",
+    "js/src/forum/components/DiscussionRenamedPost.js",
+    "file"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#unpause",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-unpause",
-    "js/forum/src/components/PostStream.js~PostStream#unpause",
+    "js/src/forum/components/discussionrenamedpost.js~discussionrenamedpost#description",
+    "class/js/src/forum/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html#instance-method-description",
+    "js/src/forum/components/DiscussionRenamedPost.js~DiscussionRenamedPost#description",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#update",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-update",
-    "js/forum/src/components/PostStream.js~PostStream#update",
+    "js/src/forum/components/discussionrenamedpost.js~discussionrenamedpost#descriptiondata",
+    "class/js/src/forum/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html#instance-method-descriptionData",
+    "js/src/forum/components/DiscussionRenamedPost.js~DiscussionRenamedPost#descriptionData",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#view",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-method-view",
-    "js/forum/src/components/PostStream.js~PostStream#view",
+    "js/src/forum/components/discussionrenamedpost.js~discussionrenamedpost#icon",
+    "class/js/src/forum/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html#instance-method-icon",
+    "js/src/forum/components/DiscussionRenamedPost.js~DiscussionRenamedPost#icon",
     "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#viewingend",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-member-viewingEnd",
-    "js/forum/src/components/PostStream.js~PostStream#viewingEnd",
-    "member"
+    "js/src/forum/components/discussionssearchsource.js",
+    "file/js/src/forum/components/DiscussionsSearchSource.js.html",
+    "js/src/forum/components/DiscussionsSearchSource.js",
+    "file"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#visibleend",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-member-visibleEnd",
-    "js/forum/src/components/PostStream.js~PostStream#visibleEnd",
-    "member"
+    "js/src/forum/components/discussionssearchsource.js~discussionssearchsource#constructor",
+    "class/js/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-constructor-constructor",
+    "js/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource#constructor",
+    "method"
   ],
   [
-    "js/forum/src/components/poststream.js~poststream#visiblestart",
-    "class/js/forum/src/components/PostStream.js~PostStream.html#instance-member-visibleStart",
-    "js/forum/src/components/PostStream.js~PostStream#visibleStart",
+    "js/src/forum/components/discussionssearchsource.js~discussionssearchsource#results",
+    "class/js/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-member-results",
+    "js/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource#results",
     "member"
-  ],
-  [
-    "js/forum/src/components/poststreamscrubber.js",
-    "file/js/forum/src/components/PostStreamScrubber.js.html",
-    "js/forum/src/components/PostStreamScrubber.js",
-    "file"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#config",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-config",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#config",
+    "js/src/forum/components/discussionssearchsource.js~discussionssearchsource#search",
+    "class/js/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-method-search",
+    "js/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource#search",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#count",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-count",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#count",
+    "js/src/forum/components/discussionssearchsource.js~discussionssearchsource#view",
+    "class/js/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-method-view",
+    "js/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource#view",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#description",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-description",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#description",
-    "member"
+    "js/src/forum/components/discussionsuserpage.js",
+    "file/js/src/forum/components/DiscussionsUserPage.js.html",
+    "js/src/forum/components/DiscussionsUserPage.js",
+    "file"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#disabled",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-disabled",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#disabled",
+    "js/src/forum/components/discussionsuserpage.js~discussionsuserpage#content",
+    "class/js/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html#instance-method-content",
+    "js/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage#content",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#dragging",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-dragging",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#dragging",
-    "member"
+    "js/src/forum/components/discussionsuserpage.js~discussionsuserpage#init",
+    "class/js/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html#instance-method-init",
+    "js/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage#init",
+    "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#gotofirst",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-goToFirst",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#goToFirst",
-    "method"
+    "js/src/forum/components/editpostcomposer.js",
+    "file/js/src/forum/components/EditPostComposer.js.html",
+    "js/src/forum/components/EditPostComposer.js",
+    "file"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#gotolast",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-goToLast",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#goToLast",
+    "js/src/forum/components/editpostcomposer.js~editpostcomposer#data",
+    "class/js/src/forum/components/EditPostComposer.js~EditPostComposer.html#instance-method-data",
+    "js/src/forum/components/EditPostComposer.js~EditPostComposer#data",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#handlers",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-handlers",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#handlers",
-    "member"
+    "js/src/forum/components/editpostcomposer.js~editpostcomposer#headeritems",
+    "class/js/src/forum/components/EditPostComposer.js~EditPostComposer.html#instance-method-headerItems",
+    "js/src/forum/components/EditPostComposer.js~EditPostComposer#headerItems",
+    "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#index",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-index",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#index",
-    "member"
+    "js/src/forum/components/editpostcomposer.js~editpostcomposer#init",
+    "class/js/src/forum/components/EditPostComposer.js~EditPostComposer.html#instance-method-init",
+    "js/src/forum/components/EditPostComposer.js~EditPostComposer#init",
+    "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#indexstart",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-indexStart",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#indexStart",
+    "js/src/forum/components/editpostcomposer.js~editpostcomposer#loading",
+    "class/js/src/forum/components/EditPostComposer.js~EditPostComposer.html#instance-member-loading",
+    "js/src/forum/components/EditPostComposer.js~EditPostComposer#loading",
     "member"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#init",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-init",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#init",
+    "js/src/forum/components/editpostcomposer.js~editpostcomposer#onsubmit",
+    "class/js/src/forum/components/EditPostComposer.js~EditPostComposer.html#instance-method-onsubmit",
+    "js/src/forum/components/EditPostComposer.js~EditPostComposer#onsubmit",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#mousestart",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-mouseStart",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#mouseStart",
-    "member"
+    "js/src/forum/components/editpostcomposer.js~editpostcomposer.initprops",
+    "class/js/src/forum/components/EditPostComposer.js~EditPostComposer.html#static-method-initProps",
+    "js/src/forum/components/EditPostComposer.js~EditPostComposer.initProps",
+    "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#onclick",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onclick",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#onclick",
-    "method"
+    "js/src/forum/components/editusermodal.js",
+    "file/js/src/forum/components/EditUserModal.js.html",
+    "js/src/forum/components/EditUserModal.js",
+    "file"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#ondestroy",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-ondestroy",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#ondestroy",
+    "js/src/forum/components/editusermodal.js~editusermodal#activate",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-activate",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#activate",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#onmousedown",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onmousedown",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#onmousedown",
+    "js/src/forum/components/editusermodal.js~editusermodal#classname",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-className",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#className",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#onmousemove",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onmousemove",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#onmousemove",
+    "js/src/forum/components/editusermodal.js~editusermodal#content",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-content",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#content",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#onmouseup",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onmouseup",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#onmouseup",
+    "js/src/forum/components/editusermodal.js~editusermodal#data",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-data",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#data",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#onresize",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onresize",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#onresize",
-    "method"
+    "js/src/forum/components/editusermodal.js~editusermodal#email",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-email",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#email",
+    "member"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#onscroll",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onscroll",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#onscroll",
-    "method"
+    "js/src/forum/components/editusermodal.js~editusermodal#groups",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-groups",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#groups",
+    "member"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#percentperpost",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-percentPerPost",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#percentPerPost",
+    "js/src/forum/components/editusermodal.js~editusermodal#init",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-init",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#init",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#renderscrollbar",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-renderScrollbar",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#renderScrollbar",
-    "method"
+    "js/src/forum/components/editusermodal.js~editusermodal#isactivated",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-isActivated",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#isActivated",
+    "member"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#scrolllistener",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-scrollListener",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#scrollListener",
+    "js/src/forum/components/editusermodal.js~editusermodal#loading",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-loading",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#loading",
     "member"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#streamwasunpaused",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-streamWasUnpaused",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#streamWasUnpaused",
+    "js/src/forum/components/editusermodal.js~editusermodal#onsubmit",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-onsubmit",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#onsubmit",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#subtree",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-subtree",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#subtree",
+    "js/src/forum/components/editusermodal.js~editusermodal#password",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-password",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#password",
     "member"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#update",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-update",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#update",
-    "method"
+    "js/src/forum/components/editusermodal.js~editusermodal#setpassword",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-setPassword",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#setPassword",
+    "member"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#view",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-view",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#view",
+    "js/src/forum/components/editusermodal.js~editusermodal#title",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-title",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#title",
     "method"
   ],
   [
-    "js/forum/src/components/poststreamscrubber.js~poststreamscrubber#visible",
-    "class/js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-visible",
-    "js/forum/src/components/PostStreamScrubber.js~PostStreamScrubber#visible",
+    "js/src/forum/components/editusermodal.js~editusermodal#username",
+    "class/js/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-username",
+    "js/src/forum/components/EditUserModal.js~EditUserModal#username",
     "member"
   ],
   [
-    "js/forum/src/components/postuser.js",
-    "file/js/forum/src/components/PostUser.js.html",
-    "js/forum/src/components/PostUser.js",
+    "js/src/forum/components/eventpost.js",
+    "file/js/src/forum/components/EventPost.js.html",
+    "js/src/forum/components/EventPost.js",
     "file"
-  ],
-  [
-    "js/forum/src/components/postuser.js~postuser#cardvisible",
-    "class/js/forum/src/components/PostUser.js~PostUser.html#instance-member-cardVisible",
-    "js/forum/src/components/PostUser.js~PostUser#cardVisible",
-    "member"
   ],
   [
-    "js/forum/src/components/postuser.js~postuser#config",
-    "class/js/forum/src/components/PostUser.js~PostUser.html#instance-method-config",
-    "js/forum/src/components/PostUser.js~PostUser#config",
+    "js/src/forum/components/eventpost.js~eventpost#attrs",
+    "class/js/src/forum/components/EventPost.js~EventPost.html#instance-method-attrs",
+    "js/src/forum/components/EventPost.js~EventPost#attrs",
     "method"
   ],
   [
-    "js/forum/src/components/postuser.js~postuser#hidecard",
-    "class/js/forum/src/components/PostUser.js~PostUser.html#instance-method-hideCard",
-    "js/forum/src/components/PostUser.js~PostUser#hideCard",
+    "js/src/forum/components/eventpost.js~eventpost#content",
+    "class/js/src/forum/components/EventPost.js~EventPost.html#instance-method-content",
+    "js/src/forum/components/EventPost.js~EventPost#content",
     "method"
   ],
   [
-    "js/forum/src/components/postuser.js~postuser#init",
-    "class/js/forum/src/components/PostUser.js~PostUser.html#instance-method-init",
-    "js/forum/src/components/PostUser.js~PostUser#init",
+    "js/src/forum/components/eventpost.js~eventpost#description",
+    "class/js/src/forum/components/EventPost.js~EventPost.html#instance-method-description",
+    "js/src/forum/components/EventPost.js~EventPost#description",
     "method"
   ],
   [
-    "js/forum/src/components/postuser.js~postuser#showcard",
-    "class/js/forum/src/components/PostUser.js~PostUser.html#instance-method-showCard",
-    "js/forum/src/components/PostUser.js~PostUser#showCard",
+    "js/src/forum/components/eventpost.js~eventpost#descriptiondata",
+    "class/js/src/forum/components/EventPost.js~EventPost.html#instance-method-descriptionData",
+    "js/src/forum/components/EventPost.js~EventPost#descriptionData",
     "method"
   ],
   [
-    "js/forum/src/components/postuser.js~postuser#view",
-    "class/js/forum/src/components/PostUser.js~PostUser.html#instance-method-view",
-    "js/forum/src/components/PostUser.js~PostUser#view",
+    "js/src/forum/components/eventpost.js~eventpost#descriptionkey",
+    "class/js/src/forum/components/EventPost.js~EventPost.html#instance-method-descriptionKey",
+    "js/src/forum/components/EventPost.js~EventPost#descriptionKey",
     "method"
-  ],
-  [
-    "js/forum/src/components/postsuserpage.js",
-    "file/js/forum/src/components/PostsUserPage.js.html",
-    "js/forum/src/components/PostsUserPage.js",
-    "file"
   ],
   [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#content",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-method-content",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#content",
+    "js/src/forum/components/eventpost.js~eventpost#icon",
+    "class/js/src/forum/components/EventPost.js~EventPost.html#instance-method-icon",
+    "js/src/forum/components/EventPost.js~EventPost#icon",
     "method"
   ],
   [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#init",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-method-init",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#init",
-    "method"
+    "js/src/forum/components/forgotpasswordmodal.js",
+    "file/js/src/forum/components/ForgotPasswordModal.js.html",
+    "js/src/forum/components/ForgotPasswordModal.js",
+    "file"
   ],
   [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#loadlimit",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-member-loadLimit",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#loadLimit",
+    "js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#alert",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-member-alert",
+    "js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#alert",
     "member"
   ],
   [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#loadmore",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-method-loadMore",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#loadMore",
+    "js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#classname",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-className",
+    "js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#className",
     "method"
   ],
   [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#loadresults",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-method-loadResults",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#loadResults",
+    "js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#content",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-content",
+    "js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#content",
     "method"
-  ],
-  [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#loading",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-member-loading",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#loading",
-    "member"
   ],
   [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#moreresults",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-member-moreResults",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#moreResults",
+    "js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#email",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-member-email",
+    "js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#email",
     "member"
   ],
   [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#parseresults",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-method-parseResults",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#parseResults",
+    "js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#init",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-init",
+    "js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#init",
     "method"
   ],
   [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#posts",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-member-posts",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#posts",
+    "js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#loading",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-member-loading",
+    "js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#loading",
     "member"
   ],
   [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#refresh",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-method-refresh",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#refresh",
+    "js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#onerror",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-onerror",
+    "js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#onerror",
     "method"
   ],
   [
-    "js/forum/src/components/postsuserpage.js~postsuserpage#show",
-    "class/js/forum/src/components/PostsUserPage.js~PostsUserPage.html#instance-method-show",
-    "js/forum/src/components/PostsUserPage.js~PostsUserPage#show",
+    "js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#onsubmit",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-onsubmit",
+    "js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#onsubmit",
     "method"
   ],
   [
-    "js/forum/src/components/renamediscussionmodal.js",
-    "file/js/forum/src/components/RenameDiscussionModal.js.html",
-    "js/forum/src/components/RenameDiscussionModal.js",
-    "file"
+    "js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#success",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-member-success",
+    "js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#success",
+    "member"
   ],
   [
-    "js/forum/src/components/renamediscussionmodal.js~renamediscussionmodal#classname",
-    "class/js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-className",
-    "js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal#className",
+    "js/src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#title",
+    "class/js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-title",
+    "js/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#title",
     "method"
   ],
   [
-    "js/forum/src/components/renamediscussionmodal.js~renamediscussionmodal#content",
-    "class/js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-content",
-    "js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal#content",
-    "method"
+    "js/src/forum/components/headerprimary.js",
+    "file/js/src/forum/components/HeaderPrimary.js.html",
+    "js/src/forum/components/HeaderPrimary.js",
+    "file"
   ],
   [
-    "js/forum/src/components/renamediscussionmodal.js~renamediscussionmodal#currenttitle",
-    "class/js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-member-currentTitle",
-    "js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal#currentTitle",
-    "member"
+    "js/src/forum/components/headerprimary.js~headerprimary#config",
+    "class/js/src/forum/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-config",
+    "js/src/forum/components/HeaderPrimary.js~HeaderPrimary#config",
+    "method"
   ],
   [
-    "js/forum/src/components/renamediscussionmodal.js~renamediscussionmodal#discussion",
-    "class/js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-member-discussion",
-    "js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal#discussion",
-    "member"
+    "js/src/forum/components/headerprimary.js~headerprimary#items",
+    "class/js/src/forum/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-items",
+    "js/src/forum/components/HeaderPrimary.js~HeaderPrimary#items",
+    "method"
   ],
   [
-    "js/forum/src/components/renamediscussionmodal.js~renamediscussionmodal#init",
-    "class/js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-init",
-    "js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal#init",
+    "js/src/forum/components/headerprimary.js~headerprimary#view",
+    "class/js/src/forum/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-view",
+    "js/src/forum/components/HeaderPrimary.js~HeaderPrimary#view",
     "method"
   ],
   [
-    "js/forum/src/components/renamediscussionmodal.js~renamediscussionmodal#loading",
-    "class/js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-member-loading",
-    "js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal#loading",
-    "member"
+    "js/src/forum/components/headersecondary.js",
+    "file/js/src/forum/components/HeaderSecondary.js.html",
+    "js/src/forum/components/HeaderSecondary.js",
+    "file"
   ],
   [
-    "js/forum/src/components/renamediscussionmodal.js~renamediscussionmodal#newtitle",
-    "class/js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-member-newTitle",
-    "js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal#newTitle",
-    "member"
+    "js/src/forum/components/headersecondary.js~headersecondary#config",
+    "class/js/src/forum/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-config",
+    "js/src/forum/components/HeaderSecondary.js~HeaderSecondary#config",
+    "method"
   ],
   [
-    "js/forum/src/components/renamediscussionmodal.js~renamediscussionmodal#onsubmit",
-    "class/js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-onsubmit",
-    "js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal#onsubmit",
+    "js/src/forum/components/headersecondary.js~headersecondary#items",
+    "class/js/src/forum/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-items",
+    "js/src/forum/components/HeaderSecondary.js~HeaderSecondary#items",
     "method"
   ],
   [
-    "js/forum/src/components/renamediscussionmodal.js~renamediscussionmodal#title",
-    "class/js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-title",
-    "js/forum/src/components/RenameDiscussionModal.js~RenameDiscussionModal#title",
+    "js/src/forum/components/headersecondary.js~headersecondary#view",
+    "class/js/src/forum/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-view",
+    "js/src/forum/components/HeaderSecondary.js~HeaderSecondary#view",
     "method"
   ],
   [
-    "js/forum/src/components/replycomposer.js",
-    "file/js/forum/src/components/ReplyComposer.js.html",
-    "js/forum/src/components/ReplyComposer.js",
+    "js/src/forum/components/indexpage.js",
+    "file/js/src/forum/components/IndexPage.js.html",
+    "js/src/forum/components/IndexPage.js",
     "file"
   ],
   [
-    "js/forum/src/components/replycomposer.js~replycomposer#data",
-    "class/js/forum/src/components/ReplyComposer.js~ReplyComposer.html#instance-method-data",
-    "js/forum/src/components/ReplyComposer.js~ReplyComposer#data",
+    "js/src/forum/components/indexpage.js~indexpage#actionitems",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-actionItems",
+    "js/src/forum/components/IndexPage.js~IndexPage#actionItems",
     "method"
   ],
   [
-    "js/forum/src/components/replycomposer.js~replycomposer#headeritems",
-    "class/js/forum/src/components/ReplyComposer.js~ReplyComposer.html#instance-method-headerItems",
-    "js/forum/src/components/ReplyComposer.js~ReplyComposer#headerItems",
-    "method"
+    "js/src/forum/components/indexpage.js~indexpage#bodyclass",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-member-bodyClass",
+    "js/src/forum/components/IndexPage.js~IndexPage#bodyClass",
+    "member"
   ],
   [
-    "js/forum/src/components/replycomposer.js~replycomposer#init",
-    "class/js/forum/src/components/ReplyComposer.js~ReplyComposer.html#instance-method-init",
-    "js/forum/src/components/ReplyComposer.js~ReplyComposer#init",
+    "js/src/forum/components/indexpage.js~indexpage#changesort",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-changeSort",
+    "js/src/forum/components/IndexPage.js~IndexPage#changeSort",
     "method"
   ],
   [
-    "js/forum/src/components/replycomposer.js~replycomposer#loading",
-    "class/js/forum/src/components/ReplyComposer.js~ReplyComposer.html#instance-member-loading",
-    "js/forum/src/components/ReplyComposer.js~ReplyComposer#loading",
-    "member"
-  ],
-  [
-    "js/forum/src/components/replycomposer.js~replycomposer#onsubmit",
-    "class/js/forum/src/components/ReplyComposer.js~ReplyComposer.html#instance-method-onsubmit",
-    "js/forum/src/components/ReplyComposer.js~ReplyComposer#onsubmit",
+    "js/src/forum/components/indexpage.js~indexpage#clearsearch",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-clearSearch",
+    "js/src/forum/components/IndexPage.js~IndexPage#clearSearch",
     "method"
   ],
   [
-    "js/forum/src/components/replycomposer.js~replycomposer.initprops",
-    "class/js/forum/src/components/ReplyComposer.js~ReplyComposer.html#static-method-initProps",
-    "js/forum/src/components/ReplyComposer.js~ReplyComposer.initProps",
+    "js/src/forum/components/indexpage.js~indexpage#composenewdiscussion",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-composeNewDiscussion",
+    "js/src/forum/components/IndexPage.js~IndexPage#composeNewDiscussion",
     "method"
   ],
   [
-    "js/forum/src/components/replyplaceholder.js",
-    "file/js/forum/src/components/ReplyPlaceholder.js.html",
-    "js/forum/src/components/ReplyPlaceholder.js",
-    "file"
+    "js/src/forum/components/indexpage.js~indexpage#config",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-config",
+    "js/src/forum/components/IndexPage.js~IndexPage#config",
+    "method"
   ],
   [
-    "js/forum/src/components/replyplaceholder.js~replyplaceholder#configpreview",
-    "class/js/forum/src/components/ReplyPlaceholder.js~ReplyPlaceholder.html#instance-method-configPreview",
-    "js/forum/src/components/ReplyPlaceholder.js~ReplyPlaceholder#configPreview",
+    "js/src/forum/components/indexpage.js~indexpage#hero",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-hero",
+    "js/src/forum/components/IndexPage.js~IndexPage#hero",
     "method"
   ],
   [
-    "js/forum/src/components/replyplaceholder.js~replyplaceholder#view",
-    "class/js/forum/src/components/ReplyPlaceholder.js~ReplyPlaceholder.html#instance-method-view",
-    "js/forum/src/components/ReplyPlaceholder.js~ReplyPlaceholder#view",
+    "js/src/forum/components/indexpage.js~indexpage#init",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-init",
+    "js/src/forum/components/IndexPage.js~IndexPage#init",
     "method"
   ],
   [
-    "js/forum/src/components/search.js",
-    "file/js/forum/src/components/Search.js.html",
-    "js/forum/src/components/Search.js",
-    "file"
+    "js/src/forum/components/indexpage.js~indexpage#lastdiscussion",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-member-lastDiscussion",
+    "js/src/forum/components/IndexPage.js~IndexPage#lastDiscussion",
+    "member"
   ],
   [
-    "js/forum/src/components/search.js~search#clear",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-clear",
-    "js/forum/src/components/Search.js~Search#clear",
+    "js/src/forum/components/indexpage.js~indexpage#markallasread",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-markAllAsRead",
+    "js/src/forum/components/IndexPage.js~IndexPage#markAllAsRead",
     "method"
   ],
   [
-    "js/forum/src/components/search.js~search#config",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-config",
-    "js/forum/src/components/Search.js~Search#config",
+    "js/src/forum/components/indexpage.js~indexpage#navitems",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-navItems",
+    "js/src/forum/components/IndexPage.js~IndexPage#navItems",
     "method"
   ],
   [
-    "js/forum/src/components/search.js~search#getcurrentnumericindex",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-getCurrentNumericIndex",
-    "js/forum/src/components/Search.js~Search#getCurrentNumericIndex",
+    "js/src/forum/components/indexpage.js~indexpage#newdiscussion",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-newDiscussion",
+    "js/src/forum/components/IndexPage.js~IndexPage#newDiscussion",
     "method"
   ],
   [
-    "js/forum/src/components/search.js~search#getcurrentsearch",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-getCurrentSearch",
-    "js/forum/src/components/Search.js~Search#getCurrentSearch",
+    "js/src/forum/components/indexpage.js~indexpage#onunload",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-onunload",
+    "js/src/forum/components/IndexPage.js~IndexPage#onunload",
     "method"
   ],
   [
-    "js/forum/src/components/search.js~search#getitem",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-getItem",
-    "js/forum/src/components/Search.js~Search#getItem",
+    "js/src/forum/components/indexpage.js~indexpage#params",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-params",
+    "js/src/forum/components/IndexPage.js~IndexPage#params",
     "method"
   ],
   [
-    "js/forum/src/components/search.js~search#hasfocus",
-    "class/js/forum/src/components/Search.js~Search.html#instance-member-hasFocus",
-    "js/forum/src/components/Search.js~Search#hasFocus",
-    "member"
-  ],
-  [
-    "js/forum/src/components/search.js~search#index",
-    "class/js/forum/src/components/Search.js~Search.html#instance-member-index",
-    "js/forum/src/components/Search.js~Search#index",
-    "member"
-  ],
-  [
-    "js/forum/src/components/search.js~search#init",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-init",
-    "js/forum/src/components/Search.js~Search#init",
+    "js/src/forum/components/indexpage.js~indexpage#searching",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-searching",
+    "js/src/forum/components/IndexPage.js~IndexPage#searching",
     "method"
   ],
   [
-    "js/forum/src/components/search.js~search#loadingsources",
-    "class/js/forum/src/components/Search.js~Search.html#instance-member-loadingSources",
-    "js/forum/src/components/Search.js~Search#loadingSources",
-    "member"
-  ],
-  [
-    "js/forum/src/components/search.js~search#navigator",
-    "class/js/forum/src/components/Search.js~Search.html#instance-member-navigator",
-    "js/forum/src/components/Search.js~Search#navigator",
-    "member"
-  ],
-  [
-    "js/forum/src/components/search.js~search#searched",
-    "class/js/forum/src/components/Search.js~Search.html#instance-member-searched",
-    "js/forum/src/components/Search.js~Search#searched",
-    "member"
+    "js/src/forum/components/indexpage.js~indexpage#sidebaritems",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-sidebarItems",
+    "js/src/forum/components/IndexPage.js~IndexPage#sidebarItems",
+    "method"
   ],
   [
-    "js/forum/src/components/search.js~search#selectresult",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-selectResult",
-    "js/forum/src/components/Search.js~Search#selectResult",
+    "js/src/forum/components/indexpage.js~indexpage#stickyparams",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-stickyParams",
+    "js/src/forum/components/IndexPage.js~IndexPage#stickyParams",
     "method"
   ],
   [
-    "js/forum/src/components/search.js~search#selectableitems",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-selectableItems",
-    "js/forum/src/components/Search.js~Search#selectableItems",
+    "js/src/forum/components/indexpage.js~indexpage#view",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-view",
+    "js/src/forum/components/IndexPage.js~IndexPage#view",
     "method"
   ],
   [
-    "js/forum/src/components/search.js~search#setindex",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-setIndex",
-    "js/forum/src/components/Search.js~Search#setIndex",
+    "js/src/forum/components/indexpage.js~indexpage#viewitems",
+    "class/js/src/forum/components/IndexPage.js~IndexPage.html#instance-method-viewItems",
+    "js/src/forum/components/IndexPage.js~IndexPage#viewItems",
     "method"
   ],
   [
-    "js/forum/src/components/search.js~search#sourceitems",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-sourceItems",
-    "js/forum/src/components/Search.js~Search#sourceItems",
-    "method"
+    "js/src/forum/components/loadingpost.js",
+    "file/js/src/forum/components/LoadingPost.js.html",
+    "js/src/forum/components/LoadingPost.js",
+    "file"
   ],
   [
-    "js/forum/src/components/search.js~search#sources",
-    "class/js/forum/src/components/Search.js~Search.html#instance-member-sources",
-    "js/forum/src/components/Search.js~Search#sources",
-    "member"
+    "js/src/forum/components/loadingpost.js~loadingpost#view",
+    "class/js/src/forum/components/LoadingPost.js~LoadingPost.html#instance-method-view",
+    "js/src/forum/components/LoadingPost.js~LoadingPost#view",
+    "method"
   ],
   [
-    "js/forum/src/components/search.js~search#value",
-    "class/js/forum/src/components/Search.js~Search.html#instance-member-value",
-    "js/forum/src/components/Search.js~Search#value",
-    "member"
+    "js/src/forum/components/loginbutton.js",
+    "file/js/src/forum/components/LogInButton.js.html",
+    "js/src/forum/components/LogInButton.js",
+    "file"
   ],
   [
-    "js/forum/src/components/search.js~search#view",
-    "class/js/forum/src/components/Search.js~Search.html#instance-method-view",
-    "js/forum/src/components/Search.js~Search#view",
+    "js/src/forum/components/loginbutton.js~loginbutton.initprops",
+    "class/js/src/forum/components/LogInButton.js~LogInButton.html#static-method-initProps",
+    "js/src/forum/components/LogInButton.js~LogInButton.initProps",
     "method"
   ],
   [
-    "js/forum/src/components/searchsource.js",
-    "file/js/forum/src/components/SearchSource.js.html",
-    "js/forum/src/components/SearchSource.js",
+    "js/src/forum/components/loginbuttons.js",
+    "file/js/src/forum/components/LogInButtons.js.html",
+    "js/src/forum/components/LogInButtons.js",
     "file"
   ],
   [
-    "js/forum/src/components/searchsource.js~searchsource#search",
-    "class/js/forum/src/components/SearchSource.js~SearchSource.html#instance-method-search",
-    "js/forum/src/components/SearchSource.js~SearchSource#search",
+    "js/src/forum/components/loginbuttons.js~loginbuttons#items",
+    "class/js/src/forum/components/LogInButtons.js~LogInButtons.html#instance-method-items",
+    "js/src/forum/components/LogInButtons.js~LogInButtons#items",
     "method"
   ],
   [
-    "js/forum/src/components/searchsource.js~searchsource#view",
-    "class/js/forum/src/components/SearchSource.js~SearchSource.html#instance-method-view",
-    "js/forum/src/components/SearchSource.js~SearchSource#view",
+    "js/src/forum/components/loginbuttons.js~loginbuttons#view",
+    "class/js/src/forum/components/LogInButtons.js~LogInButtons.html#instance-method-view",
+    "js/src/forum/components/LogInButtons.js~LogInButtons#view",
     "method"
   ],
   [
-    "js/forum/src/components/sessiondropdown.js",
-    "file/js/forum/src/components/SessionDropdown.js.html",
-    "js/forum/src/components/SessionDropdown.js",
+    "js/src/forum/components/loginmodal.js",
+    "file/js/src/forum/components/LogInModal.js.html",
+    "js/src/forum/components/LogInModal.js",
     "file"
   ],
   [
-    "js/forum/src/components/sessiondropdown.js~sessiondropdown#getbuttoncontent",
-    "class/js/forum/src/components/SessionDropdown.js~SessionDropdown.html#instance-method-getButtonContent",
-    "js/forum/src/components/SessionDropdown.js~SessionDropdown#getButtonContent",
+    "js/src/forum/components/loginmodal.js~loginmodal#body",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-body",
+    "js/src/forum/components/LogInModal.js~LogInModal#body",
     "method"
   ],
   [
-    "js/forum/src/components/sessiondropdown.js~sessiondropdown#items",
-    "class/js/forum/src/components/SessionDropdown.js~SessionDropdown.html#instance-method-items",
-    "js/forum/src/components/SessionDropdown.js~SessionDropdown#items",
+    "js/src/forum/components/loginmodal.js~loginmodal#classname",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-className",
+    "js/src/forum/components/LogInModal.js~LogInModal#className",
     "method"
   ],
   [
-    "js/forum/src/components/sessiondropdown.js~sessiondropdown#view",
-    "class/js/forum/src/components/SessionDropdown.js~SessionDropdown.html#instance-method-view",
-    "js/forum/src/components/SessionDropdown.js~SessionDropdown#view",
+    "js/src/forum/components/loginmodal.js~loginmodal#content",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-content",
+    "js/src/forum/components/LogInModal.js~LogInModal#content",
     "method"
   ],
   [
-    "js/forum/src/components/sessiondropdown.js~sessiondropdown.initprops",
-    "class/js/forum/src/components/SessionDropdown.js~SessionDropdown.html#static-method-initProps",
-    "js/forum/src/components/SessionDropdown.js~SessionDropdown.initProps",
+    "js/src/forum/components/loginmodal.js~loginmodal#fields",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-fields",
+    "js/src/forum/components/LogInModal.js~LogInModal#fields",
     "method"
   ],
   [
-    "js/forum/src/components/settingspage.js",
-    "file/js/forum/src/components/SettingsPage.js.html",
-    "js/forum/src/components/SettingsPage.js",
-    "file"
+    "js/src/forum/components/loginmodal.js~loginmodal#footer",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-footer",
+    "js/src/forum/components/LogInModal.js~LogInModal#footer",
+    "method"
   ],
   [
-    "js/forum/src/components/settingspage.js~settingspage#accountitems",
-    "class/js/forum/src/components/SettingsPage.js~SettingsPage.html#instance-method-accountItems",
-    "js/forum/src/components/SettingsPage.js~SettingsPage#accountItems",
+    "js/src/forum/components/loginmodal.js~loginmodal#forgotpassword",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-forgotPassword",
+    "js/src/forum/components/LogInModal.js~LogInModal#forgotPassword",
     "method"
   ],
   [
-    "js/forum/src/components/settingspage.js~settingspage#content",
-    "class/js/forum/src/components/SettingsPage.js~SettingsPage.html#instance-method-content",
-    "js/forum/src/components/SettingsPage.js~SettingsPage#content",
-    "method"
+    "js/src/forum/components/loginmodal.js~loginmodal#identification",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-member-identification",
+    "js/src/forum/components/LogInModal.js~LogInModal#identification",
+    "member"
   ],
   [
-    "js/forum/src/components/settingspage.js~settingspage#init",
-    "class/js/forum/src/components/SettingsPage.js~SettingsPage.html#instance-method-init",
-    "js/forum/src/components/SettingsPage.js~SettingsPage#init",
+    "js/src/forum/components/loginmodal.js~loginmodal#init",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-init",
+    "js/src/forum/components/LogInModal.js~LogInModal#init",
     "method"
   ],
   [
-    "js/forum/src/components/settingspage.js~settingspage#notificationsitems",
-    "class/js/forum/src/components/SettingsPage.js~SettingsPage.html#instance-method-notificationsItems",
-    "js/forum/src/components/SettingsPage.js~SettingsPage#notificationsItems",
-    "method"
+    "js/src/forum/components/loginmodal.js~loginmodal#loading",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-member-loading",
+    "js/src/forum/components/LogInModal.js~LogInModal#loading",
+    "member"
   ],
   [
-    "js/forum/src/components/settingspage.js~settingspage#preferencesaver",
-    "class/js/forum/src/components/SettingsPage.js~SettingsPage.html#instance-method-preferenceSaver",
-    "js/forum/src/components/SettingsPage.js~SettingsPage#preferenceSaver",
+    "js/src/forum/components/loginmodal.js~loginmodal#onerror",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-onerror",
+    "js/src/forum/components/LogInModal.js~LogInModal#onerror",
     "method"
   ],
   [
-    "js/forum/src/components/settingspage.js~settingspage#privacyitems",
-    "class/js/forum/src/components/SettingsPage.js~SettingsPage.html#instance-method-privacyItems",
-    "js/forum/src/components/SettingsPage.js~SettingsPage#privacyItems",
+    "js/src/forum/components/loginmodal.js~loginmodal#onready",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-onready",
+    "js/src/forum/components/LogInModal.js~LogInModal#onready",
     "method"
   ],
   [
-    "js/forum/src/components/settingspage.js~settingspage#settingsitems",
-    "class/js/forum/src/components/SettingsPage.js~SettingsPage.html#instance-method-settingsItems",
-    "js/forum/src/components/SettingsPage.js~SettingsPage#settingsItems",
+    "js/src/forum/components/loginmodal.js~loginmodal#onsubmit",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-onsubmit",
+    "js/src/forum/components/LogInModal.js~LogInModal#onsubmit",
     "method"
   ],
   [
-    "js/forum/src/components/signupmodal.js",
-    "file/js/forum/src/components/SignUpModal.js.html",
-    "js/forum/src/components/SignUpModal.js",
-    "file"
+    "js/src/forum/components/loginmodal.js~loginmodal#password",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-member-password",
+    "js/src/forum/components/LogInModal.js~LogInModal#password",
+    "member"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#body",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-body",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#body",
-    "method"
+    "js/src/forum/components/loginmodal.js~loginmodal#remember",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-member-remember",
+    "js/src/forum/components/LogInModal.js~LogInModal#remember",
+    "member"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#classname",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-className",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#className",
+    "js/src/forum/components/loginmodal.js~loginmodal#signup",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-signUp",
+    "js/src/forum/components/LogInModal.js~LogInModal#signUp",
     "method"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#content",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-content",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#content",
+    "js/src/forum/components/loginmodal.js~loginmodal#title",
+    "class/js/src/forum/components/LogInModal.js~LogInModal.html#instance-method-title",
+    "js/src/forum/components/LogInModal.js~LogInModal#title",
     "method"
-  ],
-  [
-    "js/forum/src/components/signupmodal.js~signupmodal#email",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-member-email",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#email",
-    "member"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#fields",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-fields",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#fields",
-    "method"
+    "js/src/forum/components/notification.js",
+    "file/js/src/forum/components/Notification.js.html",
+    "js/src/forum/components/Notification.js",
+    "file"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#footer",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-footer",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#footer",
+    "js/src/forum/components/notification.js~notification#content",
+    "class/js/src/forum/components/Notification.js~Notification.html#instance-method-content",
+    "js/src/forum/components/Notification.js~Notification#content",
     "method"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#init",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-init",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#init",
+    "js/src/forum/components/notification.js~notification#excerpt",
+    "class/js/src/forum/components/Notification.js~Notification.html#instance-method-excerpt",
+    "js/src/forum/components/Notification.js~Notification#excerpt",
     "method"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#isprovided",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-isProvided",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#isProvided",
+    "js/src/forum/components/notification.js~notification#href",
+    "class/js/src/forum/components/Notification.js~Notification.html#instance-method-href",
+    "js/src/forum/components/Notification.js~Notification#href",
     "method"
-  ],
-  [
-    "js/forum/src/components/signupmodal.js~signupmodal#loading",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-member-loading",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#loading",
-    "member"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#login",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-logIn",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#logIn",
+    "js/src/forum/components/notification.js~notification#icon",
+    "class/js/src/forum/components/Notification.js~Notification.html#instance-method-icon",
+    "js/src/forum/components/Notification.js~Notification#icon",
     "method"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#onready",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-onready",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#onready",
+    "js/src/forum/components/notification.js~notification#markasread",
+    "class/js/src/forum/components/Notification.js~Notification.html#instance-method-markAsRead",
+    "js/src/forum/components/Notification.js~Notification#markAsRead",
     "method"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#onsubmit",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-onsubmit",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#onsubmit",
+    "js/src/forum/components/notification.js~notification#view",
+    "class/js/src/forum/components/Notification.js~Notification.html#instance-method-view",
+    "js/src/forum/components/Notification.js~Notification#view",
     "method"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#password",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-member-password",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#password",
-    "member"
+    "js/src/forum/components/notificationgrid.js",
+    "file/js/src/forum/components/NotificationGrid.js.html",
+    "js/src/forum/components/NotificationGrid.js",
+    "file"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#submitdata",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-submitData",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#submitData",
+    "js/src/forum/components/notificationgrid.js~notificationgrid#config",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-config",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#config",
     "method"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#title",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-method-title",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#title",
+    "js/src/forum/components/notificationgrid.js~notificationgrid#init",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-init",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#init",
     "method"
   ],
   [
-    "js/forum/src/components/signupmodal.js~signupmodal#username",
-    "class/js/forum/src/components/SignUpModal.js~SignUpModal.html#instance-member-username",
-    "js/forum/src/components/SignUpModal.js~SignUpModal#username",
+    "js/src/forum/components/notificationgrid.js~notificationgrid#inputs",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-member-inputs",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#inputs",
     "member"
   ],
   [
-    "js/forum/src/components/terminalpost.js",
-    "file/js/forum/src/components/TerminalPost.js.html",
-    "js/forum/src/components/TerminalPost.js",
-    "file"
+    "js/src/forum/components/notificationgrid.js~notificationgrid#methods",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-member-methods",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#methods",
+    "member"
   ],
   [
-    "js/forum/src/components/terminalpost.js~terminalpost#view",
-    "class/js/forum/src/components/TerminalPost.js~TerminalPost.html#instance-method-view",
-    "js/forum/src/components/TerminalPost.js~TerminalPost#view",
+    "js/src/forum/components/notificationgrid.js~notificationgrid#notificationmethods",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-notificationMethods",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#notificationMethods",
     "method"
   ],
   [
-    "js/forum/src/components/texteditor.js",
-    "file/js/forum/src/components/TextEditor.js.html",
-    "js/forum/src/components/TextEditor.js",
-    "file"
+    "js/src/forum/components/notificationgrid.js~notificationgrid#notificationtypes",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-notificationTypes",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#notificationTypes",
+    "method"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#configtextarea",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-method-configTextarea",
-    "js/forum/src/components/TextEditor.js~TextEditor#configTextarea",
+    "js/src/forum/components/notificationgrid.js~notificationgrid#preferencekey",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-preferenceKey",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#preferenceKey",
     "method"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#controlitems",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-method-controlItems",
-    "js/forum/src/components/TextEditor.js~TextEditor#controlItems",
+    "js/src/forum/components/notificationgrid.js~notificationgrid#toggle",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-toggle",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#toggle",
     "method"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#getselectionrange",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-method-getSelectionRange",
-    "js/forum/src/components/TextEditor.js~TextEditor#getSelectionRange",
+    "js/src/forum/components/notificationgrid.js~notificationgrid#togglemethod",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-toggleMethod",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#toggleMethod",
     "method"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#init",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-method-init",
-    "js/forum/src/components/TextEditor.js~TextEditor#init",
+    "js/src/forum/components/notificationgrid.js~notificationgrid#toggletype",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-toggleType",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#toggleType",
     "method"
+  ],
+  [
+    "js/src/forum/components/notificationgrid.js~notificationgrid#types",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-member-types",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#types",
+    "member"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#insertatcursor",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-method-insertAtCursor",
-    "js/forum/src/components/TextEditor.js~TextEditor#insertAtCursor",
+    "js/src/forum/components/notificationgrid.js~notificationgrid#view",
+    "class/js/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-view",
+    "js/src/forum/components/NotificationGrid.js~NotificationGrid#view",
     "method"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#oninput",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-method-oninput",
-    "js/forum/src/components/TextEditor.js~TextEditor#oninput",
+    "js/src/forum/components/notificationlist.js",
+    "file/js/src/forum/components/NotificationList.js.html",
+    "js/src/forum/components/NotificationList.js",
+    "file"
+  ],
+  [
+    "js/src/forum/components/notificationlist.js~notificationlist#config",
+    "class/js/src/forum/components/NotificationList.js~NotificationList.html#instance-method-config",
+    "js/src/forum/components/NotificationList.js~NotificationList#config",
     "method"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#onsubmit",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-method-onsubmit",
-    "js/forum/src/components/TextEditor.js~TextEditor#onsubmit",
+    "js/src/forum/components/notificationlist.js~notificationlist#init",
+    "class/js/src/forum/components/NotificationList.js~NotificationList.html#instance-method-init",
+    "js/src/forum/components/NotificationList.js~NotificationList#init",
     "method"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#setselectionrange",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-method-setSelectionRange",
-    "js/forum/src/components/TextEditor.js~TextEditor#setSelectionRange",
+    "js/src/forum/components/notificationlist.js~notificationlist#load",
+    "class/js/src/forum/components/NotificationList.js~NotificationList.html#instance-method-load",
+    "js/src/forum/components/NotificationList.js~NotificationList#load",
     "method"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#setvalue",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-method-setValue",
-    "js/forum/src/components/TextEditor.js~TextEditor#setValue",
+    "js/src/forum/components/notificationlist.js~notificationlist#loadmore",
+    "class/js/src/forum/components/NotificationList.js~NotificationList.html#instance-method-loadMore",
+    "js/src/forum/components/NotificationList.js~NotificationList#loadMore",
     "method"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#value",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-member-value",
-    "js/forum/src/components/TextEditor.js~TextEditor#value",
+    "js/src/forum/components/notificationlist.js~notificationlist#loading",
+    "class/js/src/forum/components/NotificationList.js~NotificationList.html#instance-member-loading",
+    "js/src/forum/components/NotificationList.js~NotificationList#loading",
     "member"
   ],
   [
-    "js/forum/src/components/texteditor.js~texteditor#view",
-    "class/js/forum/src/components/TextEditor.js~TextEditor.html#instance-method-view",
-    "js/forum/src/components/TextEditor.js~TextEditor#view",
+    "js/src/forum/components/notificationlist.js~notificationlist#markallasread",
+    "class/js/src/forum/components/NotificationList.js~NotificationList.html#instance-method-markAllAsRead",
+    "js/src/forum/components/NotificationList.js~NotificationList#markAllAsRead",
     "method"
   ],
   [
-    "js/forum/src/components/usercard.js",
-    "file/js/forum/src/components/UserCard.js.html",
-    "js/forum/src/components/UserCard.js",
-    "file"
+    "js/src/forum/components/notificationlist.js~notificationlist#moreresults",
+    "class/js/src/forum/components/NotificationList.js~NotificationList.html#instance-member-moreResults",
+    "js/src/forum/components/NotificationList.js~NotificationList#moreResults",
+    "member"
   ],
   [
-    "js/forum/src/components/usercard.js~usercard#infoitems",
-    "class/js/forum/src/components/UserCard.js~UserCard.html#instance-method-infoItems",
-    "js/forum/src/components/UserCard.js~UserCard#infoItems",
+    "js/src/forum/components/notificationlist.js~notificationlist#parseresults",
+    "class/js/src/forum/components/NotificationList.js~NotificationList.html#instance-method-parseResults",
+    "js/src/forum/components/NotificationList.js~NotificationList#parseResults",
     "method"
   ],
   [
-    "js/forum/src/components/usercard.js~usercard#view",
-    "class/js/forum/src/components/UserCard.js~UserCard.html#instance-method-view",
-    "js/forum/src/components/UserCard.js~UserCard#view",
+    "js/src/forum/components/notificationlist.js~notificationlist#view",
+    "class/js/src/forum/components/NotificationList.js~NotificationList.html#instance-method-view",
+    "js/src/forum/components/NotificationList.js~NotificationList#view",
     "method"
   ],
   [
-    "js/forum/src/components/userpage.js",
-    "file/js/forum/src/components/UserPage.js.html",
-    "js/forum/src/components/UserPage.js",
+    "js/src/forum/components/notificationsdropdown.js",
+    "file/js/src/forum/components/NotificationsDropdown.js.html",
+    "js/src/forum/components/NotificationsDropdown.js",
     "file"
-  ],
-  [
-    "js/forum/src/components/userpage.js~userpage#bodyclass",
-    "class/js/forum/src/components/UserPage.js~UserPage.html#instance-member-bodyClass",
-    "js/forum/src/components/UserPage.js~UserPage#bodyClass",
-    "member"
   ],
   [
-    "js/forum/src/components/userpage.js~userpage#content",
-    "class/js/forum/src/components/UserPage.js~UserPage.html#instance-method-content",
-    "js/forum/src/components/UserPage.js~UserPage#content",
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown#getbutton",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-getButton",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown#getButton",
     "method"
   ],
   [
-    "js/forum/src/components/userpage.js~userpage#init",
-    "class/js/forum/src/components/UserPage.js~UserPage.html#instance-method-init",
-    "js/forum/src/components/UserPage.js~UserPage#init",
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown#getbuttoncontent",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-getButtonContent",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown#getButtonContent",
     "method"
   ],
   [
-    "js/forum/src/components/userpage.js~userpage#loaduser",
-    "class/js/forum/src/components/UserPage.js~UserPage.html#instance-method-loadUser",
-    "js/forum/src/components/UserPage.js~UserPage#loadUser",
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown#getmenu",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-getMenu",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown#getMenu",
     "method"
   ],
   [
-    "js/forum/src/components/userpage.js~userpage#navitems",
-    "class/js/forum/src/components/UserPage.js~UserPage.html#instance-method-navItems",
-    "js/forum/src/components/UserPage.js~UserPage#navItems",
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown#getnewcount",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-getNewCount",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown#getNewCount",
     "method"
   ],
   [
-    "js/forum/src/components/userpage.js~userpage#show",
-    "class/js/forum/src/components/UserPage.js~UserPage.html#instance-method-show",
-    "js/forum/src/components/UserPage.js~UserPage#show",
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown#getunreadcount",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-getUnreadCount",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown#getUnreadCount",
     "method"
   ],
   [
-    "js/forum/src/components/userpage.js~userpage#sidebaritems",
-    "class/js/forum/src/components/UserPage.js~UserPage.html#instance-method-sidebarItems",
-    "js/forum/src/components/UserPage.js~UserPage#sidebarItems",
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown#gotoroute",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-goToRoute",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown#goToRoute",
     "method"
-  ],
-  [
-    "js/forum/src/components/userpage.js~userpage#user",
-    "class/js/forum/src/components/UserPage.js~UserPage.html#instance-member-user",
-    "js/forum/src/components/UserPage.js~UserPage#user",
-    "member"
   ],
   [
-    "js/forum/src/components/userpage.js~userpage#view",
-    "class/js/forum/src/components/UserPage.js~UserPage.html#instance-method-view",
-    "js/forum/src/components/UserPage.js~UserPage#view",
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown#init",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-init",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown#init",
     "method"
   ],
   [
-    "js/forum/src/components/userssearchsource.js",
-    "file/js/forum/src/components/UsersSearchSource.js.html",
-    "js/forum/src/components/UsersSearchSource.js",
-    "file"
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown#list",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-member-list",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown#list",
+    "member"
   ],
   [
-    "js/forum/src/components/userssearchsource.js~userssearchresults#constructor",
-    "class/js/forum/src/components/UsersSearchSource.js~UsersSearchResults.html#instance-constructor-constructor",
-    "js/forum/src/components/UsersSearchSource.js~UsersSearchResults#constructor",
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown#menuclick",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-menuClick",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown#menuClick",
     "method"
   ],
   [
-    "js/forum/src/components/userssearchsource.js~userssearchresults#results",
-    "class/js/forum/src/components/UsersSearchSource.js~UsersSearchResults.html#instance-member-results",
-    "js/forum/src/components/UsersSearchSource.js~UsersSearchResults#results",
-    "member"
-  ],
-  [
-    "js/forum/src/components/userssearchsource.js~userssearchresults#search",
-    "class/js/forum/src/components/UsersSearchSource.js~UsersSearchResults.html#instance-method-search",
-    "js/forum/src/components/UsersSearchSource.js~UsersSearchResults#search",
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown#onclick",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-onclick",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown#onclick",
     "method"
   ],
   [
-    "js/forum/src/components/userssearchsource.js~userssearchresults#view",
-    "class/js/forum/src/components/UsersSearchSource.js~UsersSearchResults.html#instance-method-view",
-    "js/forum/src/components/UsersSearchSource.js~UsersSearchResults#view",
+    "js/src/forum/components/notificationsdropdown.js~notificationsdropdown.initprops",
+    "class/js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#static-method-initProps",
+    "js/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.initProps",
     "method"
   ],
   [
-    "js/forum/src/components/welcomehero.js",
-    "file/js/forum/src/components/WelcomeHero.js.html",
-    "js/forum/src/components/WelcomeHero.js",
+    "js/src/forum/components/notificationspage.js",
+    "file/js/src/forum/components/NotificationsPage.js.html",
+    "js/src/forum/components/NotificationsPage.js",
     "file"
   ],
   [
-    "js/forum/src/components/welcomehero.js~welcomehero#hidden",
-    "class/js/forum/src/components/WelcomeHero.js~WelcomeHero.html#instance-member-hidden",
-    "js/forum/src/components/WelcomeHero.js~WelcomeHero#hidden",
+    "js/src/forum/components/notificationspage.js~notificationspage#bodyclass",
+    "class/js/src/forum/components/NotificationsPage.js~NotificationsPage.html#instance-member-bodyClass",
+    "js/src/forum/components/NotificationsPage.js~NotificationsPage#bodyClass",
     "member"
   ],
   [
-    "js/forum/src/components/welcomehero.js~welcomehero#hide",
-    "class/js/forum/src/components/WelcomeHero.js~WelcomeHero.html#instance-method-hide",
-    "js/forum/src/components/WelcomeHero.js~WelcomeHero#hide",
+    "js/src/forum/components/notificationspage.js~notificationspage#init",
+    "class/js/src/forum/components/NotificationsPage.js~NotificationsPage.html#instance-method-init",
+    "js/src/forum/components/NotificationsPage.js~NotificationsPage#init",
     "method"
   ],
   [
-    "js/forum/src/components/welcomehero.js~welcomehero#init",
-    "class/js/forum/src/components/WelcomeHero.js~WelcomeHero.html#instance-method-init",
-    "js/forum/src/components/WelcomeHero.js~WelcomeHero#init",
-    "method"
+    "js/src/forum/components/notificationspage.js~notificationspage#list",
+    "class/js/src/forum/components/NotificationsPage.js~NotificationsPage.html#instance-member-list",
+    "js/src/forum/components/NotificationsPage.js~NotificationsPage#list",
+    "member"
   ],
   [
-    "js/forum/src/components/welcomehero.js~welcomehero#view",
-    "class/js/forum/src/components/WelcomeHero.js~WelcomeHero.html#instance-method-view",
-    "js/forum/src/components/WelcomeHero.js~WelcomeHero#view",
+    "js/src/forum/components/notificationspage.js~notificationspage#view",
+    "class/js/src/forum/components/NotificationsPage.js~NotificationsPage.html#instance-method-view",
+    "js/src/forum/components/NotificationsPage.js~NotificationsPage#view",
     "method"
-  ],
-  [
-    "js/forum/src/initializers/alertemailconfirmation.js",
-    "file/js/forum/src/initializers/alertEmailConfirmation.js.html",
-    "js/forum/src/initializers/alertEmailConfirmation.js",
-    "file"
-  ],
-  [
-    "js/forum/src/initializers/boot.js",
-    "file/js/forum/src/initializers/boot.js.html",
-    "js/forum/src/initializers/boot.js",
-    "file"
-  ],
-  [
-    "js/forum/src/initializers/components.js",
-    "file/js/forum/src/initializers/components.js.html",
-    "js/forum/src/initializers/components.js",
-    "file"
   ],
   [
-    "js/forum/src/initializers/routes.js",
-    "file/js/forum/src/initializers/routes.js.html",
-    "js/forum/src/initializers/routes.js",
+    "js/src/forum/components/page.js",
+    "file/js/src/forum/components/Page.js.html",
+    "js/src/forum/components/Page.js",
     "file"
   ],
   [
-    "js/forum/src/utils/discussioncontrols.js",
-    "file/js/forum/src/utils/DiscussionControls.js.html",
-    "js/forum/src/utils/DiscussionControls.js",
-    "file"
+    "js/src/forum/components/page.js~page#bodyclass",
+    "class/js/src/forum/components/Page.js~Page.html#instance-member-bodyClass",
+    "js/src/forum/components/Page.js~Page#bodyClass",
+    "member"
   ],
   [
-    "js/forum/src/utils/history.js",
-    "file/js/forum/src/utils/History.js.html",
-    "js/forum/src/utils/History.js",
-    "file"
+    "js/src/forum/components/page.js~page#config",
+    "class/js/src/forum/components/Page.js~Page.html#instance-method-config",
+    "js/src/forum/components/Page.js~Page#config",
+    "method"
   ],
   [
-    "js/forum/src/utils/history.js~history#back",
-    "class/js/forum/src/utils/History.js~History.html#instance-method-back",
-    "js/forum/src/utils/History.js~History#back",
+    "js/src/forum/components/page.js~page#init",
+    "class/js/src/forum/components/Page.js~Page.html#instance-method-init",
+    "js/src/forum/components/Page.js~Page#init",
     "method"
   ],
   [
-    "js/forum/src/utils/history.js~history#backurl",
-    "class/js/forum/src/utils/History.js~History.html#instance-method-backUrl",
-    "js/forum/src/utils/History.js~History#backUrl",
-    "method"
+    "js/src/forum/components/post.js",
+    "file/js/src/forum/components/Post.js.html",
+    "js/src/forum/components/Post.js",
+    "file"
   ],
   [
-    "js/forum/src/utils/history.js~history#cangoback",
-    "class/js/forum/src/utils/History.js~History.html#instance-method-canGoBack",
-    "js/forum/src/utils/History.js~History#canGoBack",
+    "js/src/forum/components/post.js~post#actionitems",
+    "class/js/src/forum/components/Post.js~Post.html#instance-method-actionItems",
+    "js/src/forum/components/Post.js~Post#actionItems",
     "method"
   ],
   [
-    "js/forum/src/utils/history.js~history#constructor",
-    "class/js/forum/src/utils/History.js~History.html#instance-constructor-constructor",
-    "js/forum/src/utils/History.js~History#constructor",
+    "js/src/forum/components/post.js~post#attrs",
+    "class/js/src/forum/components/Post.js~Post.html#instance-method-attrs",
+    "js/src/forum/components/Post.js~Post#attrs",
     "method"
   ],
   [
-    "js/forum/src/utils/history.js~history#getcurrent",
-    "class/js/forum/src/utils/History.js~History.html#instance-method-getCurrent",
-    "js/forum/src/utils/History.js~History#getCurrent",
+    "js/src/forum/components/post.js~post#config",
+    "class/js/src/forum/components/Post.js~Post.html#instance-method-config",
+    "js/src/forum/components/Post.js~Post#config",
     "method"
   ],
   [
-    "js/forum/src/utils/history.js~history#getprevious",
-    "class/js/forum/src/utils/History.js~History.html#instance-method-getPrevious",
-    "js/forum/src/utils/History.js~History#getPrevious",
+    "js/src/forum/components/post.js~post#content",
+    "class/js/src/forum/components/Post.js~Post.html#instance-method-content",
+    "js/src/forum/components/Post.js~Post#content",
     "method"
   ],
   [
-    "js/forum/src/utils/history.js~history#home",
-    "class/js/forum/src/utils/History.js~History.html#instance-method-home",
-    "js/forum/src/utils/History.js~History#home",
+    "js/src/forum/components/post.js~post#footeritems",
+    "class/js/src/forum/components/Post.js~Post.html#instance-method-footerItems",
+    "js/src/forum/components/Post.js~Post#footerItems",
     "method"
   ],
   [
-    "js/forum/src/utils/history.js~history#push",
-    "class/js/forum/src/utils/History.js~History.html#instance-method-push",
-    "js/forum/src/utils/History.js~History#push",
+    "js/src/forum/components/post.js~post#init",
+    "class/js/src/forum/components/Post.js~Post.html#instance-method-init",
+    "js/src/forum/components/Post.js~Post#init",
     "method"
   ],
   [
-    "js/forum/src/utils/history.js~history#stack",
-    "class/js/forum/src/utils/History.js~History.html#instance-member-stack",
-    "js/forum/src/utils/History.js~History#stack",
+    "js/src/forum/components/post.js~post#loading",
+    "class/js/src/forum/components/Post.js~Post.html#instance-member-loading",
+    "js/src/forum/components/Post.js~Post#loading",
     "member"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js",
-    "file/js/forum/src/utils/KeyboardNavigatable.js.html",
-    "js/forum/src/utils/KeyboardNavigatable.js",
-    "file"
+    "js/src/forum/components/post.js~post#subtree",
+    "class/js/src/forum/components/Post.js~Post.html#instance-member-subtree",
+    "js/src/forum/components/Post.js~Post#subtree",
+    "member"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#bindto",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-bindTo",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#bindTo",
+    "js/src/forum/components/post.js~post#view",
+    "class/js/src/forum/components/Post.js~Post.html#instance-method-view",
+    "js/src/forum/components/Post.js~Post#view",
     "method"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#callbacks",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-member-callbacks",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#callbacks",
-    "member"
+    "js/src/forum/components/postedited.js",
+    "file/js/src/forum/components/PostEdited.js.html",
+    "js/src/forum/components/PostEdited.js",
+    "file"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#constructor",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-constructor-constructor",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#constructor",
+    "js/src/forum/components/postedited.js~postedited#config",
+    "class/js/src/forum/components/PostEdited.js~PostEdited.html#instance-method-config",
+    "js/src/forum/components/PostEdited.js~PostEdited#config",
     "method"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#navigate",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-navigate",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#navigate",
+    "js/src/forum/components/postedited.js~postedited#init",
+    "class/js/src/forum/components/PostEdited.js~PostEdited.html#instance-method-init",
+    "js/src/forum/components/PostEdited.js~PostEdited#init",
     "method"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#oncancel",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onCancel",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#onCancel",
-    "method"
+    "js/src/forum/components/postedited.js~postedited#oldeditedinfo",
+    "class/js/src/forum/components/PostEdited.js~PostEdited.html#instance-member-oldEditedInfo",
+    "js/src/forum/components/PostEdited.js~PostEdited#oldEditedInfo",
+    "member"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#ondown",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onDown",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#onDown",
-    "method"
+    "js/src/forum/components/postedited.js~postedited#shouldupdatetooltip",
+    "class/js/src/forum/components/PostEdited.js~PostEdited.html#instance-member-shouldUpdateTooltip",
+    "js/src/forum/components/PostEdited.js~PostEdited#shouldUpdateTooltip",
+    "member"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#onremove",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onRemove",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#onRemove",
+    "js/src/forum/components/postedited.js~postedited#view",
+    "class/js/src/forum/components/PostEdited.js~PostEdited.html#instance-method-view",
+    "js/src/forum/components/PostEdited.js~PostEdited#view",
     "method"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#onselect",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onSelect",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#onSelect",
-    "method"
+    "js/src/forum/components/postmeta.js",
+    "file/js/src/forum/components/PostMeta.js.html",
+    "js/src/forum/components/PostMeta.js",
+    "file"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#onup",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onUp",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#onUp",
+    "js/src/forum/components/postmeta.js~postmeta#getpermalink",
+    "class/js/src/forum/components/PostMeta.js~PostMeta.html#instance-method-getPermalink",
+    "js/src/forum/components/PostMeta.js~PostMeta#getPermalink",
     "method"
   ],
   [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#when",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-when",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#when",
+    "js/src/forum/components/postmeta.js~postmeta#view",
+    "class/js/src/forum/components/PostMeta.js~PostMeta.html#instance-method-view",
+    "js/src/forum/components/PostMeta.js~PostMeta#view",
     "method"
-  ],
-  [
-    "js/forum/src/utils/keyboardnavigatable.js~keyboardnavigatable#whencallback",
-    "class/js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-member-whenCallback",
-    "js/forum/src/utils/KeyboardNavigatable.js~KeyboardNavigatable#whenCallback",
-    "member"
   ],
   [
-    "js/forum/src/utils/pane.js",
-    "file/js/forum/src/utils/Pane.js.html",
-    "js/forum/src/utils/Pane.js",
+    "js/src/forum/components/postpreview.js",
+    "file/js/src/forum/components/PostPreview.js.html",
+    "js/src/forum/components/PostPreview.js",
     "file"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#$element",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-member-$element",
-    "js/forum/src/utils/Pane.js~Pane#$element",
-    "member"
+    "js/src/forum/components/postpreview.js~postpreview#view",
+    "class/js/src/forum/components/PostPreview.js~PostPreview.html#instance-method-view",
+    "js/src/forum/components/PostPreview.js~PostPreview#view",
+    "method"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#active",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-member-active",
-    "js/forum/src/utils/Pane.js~Pane#active",
-    "member"
+    "js/src/forum/components/poststream.js",
+    "file/js/src/forum/components/PostStream.js.html",
+    "js/src/forum/components/PostStream.js",
+    "file"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#constructor",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-constructor-constructor",
-    "js/forum/src/utils/Pane.js~Pane#constructor",
+    "js/src/forum/components/poststream.js~poststream#calculateposition",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-calculatePosition",
+    "js/src/forum/components/PostStream.js~PostStream#calculatePosition",
     "method"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#disable",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-method-disable",
-    "js/forum/src/utils/Pane.js~Pane#disable",
-    "method"
+    "js/src/forum/components/poststream.js~poststream#calculatepositiontimeout",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-member-calculatePositionTimeout",
+    "js/src/forum/components/PostStream.js~PostStream#calculatePositionTimeout",
+    "member"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#enable",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-method-enable",
-    "js/forum/src/utils/Pane.js~Pane#enable",
+    "js/src/forum/components/poststream.js~poststream#config",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-config",
+    "js/src/forum/components/PostStream.js~PostStream#config",
     "method"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#hide",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-method-hide",
-    "js/forum/src/utils/Pane.js~Pane#hide",
+    "js/src/forum/components/poststream.js~poststream#count",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-count",
+    "js/src/forum/components/PostStream.js~PostStream#count",
     "method"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#hidetimeout",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-member-hideTimeout",
-    "js/forum/src/utils/Pane.js~Pane#hideTimeout",
+    "js/src/forum/components/poststream.js~poststream#discussion",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-member-discussion",
+    "js/src/forum/components/PostStream.js~PostStream#discussion",
     "member"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#onmouseleave",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-method-onmouseleave",
-    "js/forum/src/utils/Pane.js~Pane#onmouseleave",
+    "js/src/forum/components/poststream.js~poststream#flashitem",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-flashItem",
+    "js/src/forum/components/PostStream.js~PostStream#flashItem",
     "method"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#pinned",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-member-pinned",
-    "js/forum/src/utils/Pane.js~Pane#pinned",
-    "member"
+    "js/src/forum/components/poststream.js~poststream#getmargintop",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-getMarginTop",
+    "js/src/forum/components/PostStream.js~PostStream#getMarginTop",
+    "method"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#pinnedkey",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-member-pinnedKey",
-    "js/forum/src/utils/Pane.js~Pane#pinnedKey",
-    "member"
+    "js/src/forum/components/poststream.js~poststream#gotofirst",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-goToFirst",
+    "js/src/forum/components/PostStream.js~PostStream#goToFirst",
+    "method"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#render",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-method-render",
-    "js/forum/src/utils/Pane.js~Pane#render",
+    "js/src/forum/components/poststream.js~poststream#gotoindex",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-goToIndex",
+    "js/src/forum/components/PostStream.js~PostStream#goToIndex",
     "method"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#show",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-method-show",
-    "js/forum/src/utils/Pane.js~Pane#show",
+    "js/src/forum/components/poststream.js~poststream#gotolast",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-goToLast",
+    "js/src/forum/components/PostStream.js~PostStream#goToLast",
     "method"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#showing",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-member-showing",
-    "js/forum/src/utils/Pane.js~Pane#showing",
-    "member"
+    "js/src/forum/components/poststream.js~poststream#gotonumber",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-goToNumber",
+    "js/src/forum/components/PostStream.js~PostStream#goToNumber",
+    "method"
   ],
   [
-    "js/forum/src/utils/pane.js~pane#togglepinned",
-    "class/js/forum/src/utils/Pane.js~Pane.html#instance-method-togglePinned",
-    "js/forum/src/utils/Pane.js~Pane#togglePinned",
+    "js/src/forum/components/poststream.js~poststream#init",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-init",
+    "js/src/forum/components/PostStream.js~PostStream#init",
     "method"
   ],
   [
-    "js/forum/src/utils/postcontrols.js",
-    "file/js/forum/src/utils/PostControls.js.html",
-    "js/forum/src/utils/PostControls.js",
-    "file"
+    "js/src/forum/components/poststream.js~poststream#loadnearindex",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNearIndex",
+    "js/src/forum/components/PostStream.js~PostStream#loadNearIndex",
+    "method"
   ],
   [
-    "js/forum/src/utils/usercontrols.js",
-    "file/js/forum/src/utils/UserControls.js.html",
-    "js/forum/src/utils/UserControls.js",
-    "file"
+    "js/src/forum/components/poststream.js~poststream#loadnearnumber",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNearNumber",
+    "js/src/forum/components/PostStream.js~PostStream#loadNearNumber",
+    "method"
   ],
   [
-    "js/forum/src/utils/affixsidebar.js",
-    "file/js/forum/src/utils/affixSidebar.js.html",
-    "js/forum/src/utils/affixSidebar.js",
-    "file"
+    "js/src/forum/components/poststream.js~poststream#loadnext",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNext",
+    "js/src/forum/components/PostStream.js~PostStream#loadNext",
+    "method"
   ],
   [
-    "js/forum/src/utils/slidable.js",
-    "file/js/forum/src/utils/slidable.js.html",
-    "js/forum/src/utils/slidable.js",
-    "file"
+    "js/src/forum/components/poststream.js~poststream#loadpage",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-loadPage",
+    "js/src/forum/components/PostStream.js~PostStream#loadPage",
+    "method"
   ],
   [
-    "js/lib/app.js",
-    "file/js/lib/App.js.html",
-    "js/lib/App.js",
-    "file"
+    "js/src/forum/components/poststream.js~poststream#loadpagetimeouts",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-member-loadPageTimeouts",
+    "js/src/forum/components/PostStream.js~PostStream#loadPageTimeouts",
+    "member"
   ],
   [
-    "js/lib/app.js~app#boot",
-    "class/js/lib/App.js~App.html#instance-method-boot",
-    "js/lib/App.js~App#boot",
+    "js/src/forum/components/poststream.js~poststream#loadprevious",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-loadPrevious",
+    "js/src/forum/components/PostStream.js~PostStream#loadPrevious",
     "method"
   ],
   [
-    "js/lib/app.js~app#booted",
-    "class/js/lib/App.js~App.html#instance-member-booted",
-    "js/lib/App.js~App#booted",
-    "member"
-  ],
-  [
-    "js/lib/app.js~app#cache",
-    "class/js/lib/App.js~App.html#instance-member-cache",
-    "js/lib/App.js~App#cache",
-    "member"
+    "js/src/forum/components/poststream.js~poststream#loadrange",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-loadRange",
+    "js/src/forum/components/PostStream.js~PostStream#loadRange",
+    "method"
   ],
   [
-    "js/lib/app.js~app#constructor",
-    "class/js/lib/App.js~App.html#instance-constructor-constructor",
-    "js/lib/App.js~App#constructor",
+    "js/src/forum/components/poststream.js~poststream#onscroll",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-onscroll",
+    "js/src/forum/components/PostStream.js~PostStream#onscroll",
     "method"
   ],
   [
-    "js/lib/app.js~app#data",
-    "class/js/lib/App.js~App.html#instance-member-data",
-    "js/lib/App.js~App#data",
+    "js/src/forum/components/poststream.js~poststream#pagesloading",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-member-pagesLoading",
+    "js/src/forum/components/PostStream.js~PostStream#pagesLoading",
     "member"
   ],
   [
-    "js/lib/app.js~app#forum",
-    "class/js/lib/App.js~App.html#instance-member-forum",
-    "js/lib/App.js~App#forum",
+    "js/src/forum/components/poststream.js~poststream#paused",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-member-paused",
+    "js/src/forum/components/PostStream.js~PostStream#paused",
     "member"
   ],
   [
-    "js/lib/app.js~app#initializers",
-    "class/js/lib/App.js~App.html#instance-member-initializers",
-    "js/lib/App.js~App#initializers",
-    "member"
+    "js/src/forum/components/poststream.js~poststream#posts",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-posts",
+    "js/src/forum/components/PostStream.js~PostStream#posts",
+    "method"
   ],
   [
-    "js/lib/app.js~app#preloadeddocument",
-    "class/js/lib/App.js~App.html#instance-method-preloadedDocument",
-    "js/lib/App.js~App#preloadedDocument",
+    "js/src/forum/components/poststream.js~poststream#reset",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-reset",
+    "js/src/forum/components/PostStream.js~PostStream#reset",
     "method"
   ],
   [
-    "js/lib/app.js~app#request",
-    "class/js/lib/App.js~App.html#instance-method-request",
-    "js/lib/App.js~App#request",
+    "js/src/forum/components/poststream.js~poststream#sanitizeindex",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-sanitizeIndex",
+    "js/src/forum/components/PostStream.js~PostStream#sanitizeIndex",
     "method"
   ],
   [
-    "js/lib/app.js~app#requesterror",
-    "class/js/lib/App.js~App.html#instance-member-requestError",
-    "js/lib/App.js~App#requestError",
+    "js/src/forum/components/poststream.js~poststream#scrolllistener",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-member-scrollListener",
+    "js/src/forum/components/PostStream.js~PostStream#scrollListener",
     "member"
   ],
   [
-    "js/lib/app.js~app#route",
-    "class/js/lib/App.js~App.html#instance-method-route",
-    "js/lib/App.js~App#route",
+    "js/src/forum/components/poststream.js~poststream#scrolltoindex",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-scrollToIndex",
+    "js/src/forum/components/PostStream.js~PostStream#scrollToIndex",
     "method"
   ],
   [
-    "js/lib/app.js~app#routes",
-    "class/js/lib/App.js~App.html#instance-member-routes",
-    "js/lib/App.js~App#routes",
-    "member"
+    "js/src/forum/components/poststream.js~poststream#scrolltoitem",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-scrollToItem",
+    "js/src/forum/components/PostStream.js~PostStream#scrollToItem",
+    "method"
   ],
   [
-    "js/lib/app.js~app#session",
-    "class/js/lib/App.js~App.html#instance-member-session",
-    "js/lib/App.js~App#session",
-    "member"
+    "js/src/forum/components/poststream.js~poststream#scrolltonumber",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-scrollToNumber",
+    "js/src/forum/components/PostStream.js~PostStream#scrollToNumber",
+    "method"
   ],
   [
-    "js/lib/app.js~app#settitle",
-    "class/js/lib/App.js~App.html#instance-method-setTitle",
-    "js/lib/App.js~App#setTitle",
+    "js/src/forum/components/poststream.js~poststream#show",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-show",
+    "js/src/forum/components/PostStream.js~PostStream#show",
     "method"
   ],
   [
-    "js/lib/app.js~app#settitlecount",
-    "class/js/lib/App.js~App.html#instance-method-setTitleCount",
-    "js/lib/App.js~App#setTitleCount",
+    "js/src/forum/components/poststream.js~poststream#unpause",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-unpause",
+    "js/src/forum/components/PostStream.js~PostStream#unpause",
     "method"
   ],
   [
-    "js/lib/app.js~app#showdebug",
-    "class/js/lib/App.js~App.html#instance-method-showDebug",
-    "js/lib/App.js~App#showDebug",
+    "js/src/forum/components/poststream.js~poststream#update",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-update",
+    "js/src/forum/components/PostStream.js~PostStream#update",
     "method"
   ],
   [
-    "js/lib/app.js~app#store",
-    "class/js/lib/App.js~App.html#instance-member-store",
-    "js/lib/App.js~App#store",
-    "member"
+    "js/src/forum/components/poststream.js~poststream#view",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-method-view",
+    "js/src/forum/components/PostStream.js~PostStream#view",
+    "method"
   ],
   [
-    "js/lib/app.js~app#title",
-    "class/js/lib/App.js~App.html#instance-member-title",
-    "js/lib/App.js~App#title",
+    "js/src/forum/components/poststream.js~poststream#viewingend",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-member-viewingEnd",
+    "js/src/forum/components/PostStream.js~PostStream#viewingEnd",
     "member"
   ],
   [
-    "js/lib/app.js~app#titlecount",
-    "class/js/lib/App.js~App.html#instance-member-titleCount",
-    "js/lib/App.js~App#titleCount",
+    "js/src/forum/components/poststream.js~poststream#visibleend",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-member-visibleEnd",
+    "js/src/forum/components/PostStream.js~PostStream#visibleEnd",
     "member"
   ],
   [
-    "js/lib/app.js~app#translator",
-    "class/js/lib/App.js~App.html#instance-member-translator",
-    "js/lib/App.js~App#translator",
+    "js/src/forum/components/poststream.js~poststream#visiblestart",
+    "class/js/src/forum/components/PostStream.js~PostStream.html#instance-member-visibleStart",
+    "js/src/forum/components/PostStream.js~PostStream#visibleStart",
     "member"
-  ],
-  [
-    "js/lib/app.js~app#updatetitle",
-    "class/js/lib/App.js~App.html#instance-method-updateTitle",
-    "js/lib/App.js~App#updateTitle",
-    "method"
   ],
   [
-    "js/lib/component.js",
-    "file/js/lib/Component.js.html",
-    "js/lib/Component.js",
+    "js/src/forum/components/poststreamscrubber.js",
+    "file/js/src/forum/components/PostStreamScrubber.js.html",
+    "js/src/forum/components/PostStreamScrubber.js",
     "file"
   ],
   [
-    "js/lib/component.js~component#$",
-    "class/js/lib/Component.js~Component.html#instance-method-$",
-    "js/lib/Component.js~Component#$",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#config",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-config",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#config",
     "method"
   ],
   [
-    "js/lib/component.js~component#config",
-    "class/js/lib/Component.js~Component.html#instance-method-config",
-    "js/lib/Component.js~Component#config",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#count",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-count",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#count",
     "method"
+  ],
+  [
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#description",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-description",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#description",
+    "member"
   ],
   [
-    "js/lib/component.js~component#constructor",
-    "class/js/lib/Component.js~Component.html#instance-constructor-constructor",
-    "js/lib/Component.js~Component#constructor",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#disabled",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-disabled",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#disabled",
     "method"
   ],
   [
-    "js/lib/component.js~component#element",
-    "class/js/lib/Component.js~Component.html#instance-member-element",
-    "js/lib/Component.js~Component#element",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#dragging",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-dragging",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#dragging",
     "member"
   ],
   [
-    "js/lib/component.js~component#init",
-    "class/js/lib/Component.js~Component.html#instance-method-init",
-    "js/lib/Component.js~Component#init",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#gotofirst",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-goToFirst",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#goToFirst",
     "method"
   ],
   [
-    "js/lib/component.js~component#onunload",
-    "class/js/lib/Component.js~Component.html#instance-method-onunload",
-    "js/lib/Component.js~Component#onunload",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#gotolast",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-goToLast",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#goToLast",
     "method"
   ],
   [
-    "js/lib/component.js~component#props",
-    "class/js/lib/Component.js~Component.html#instance-member-props",
-    "js/lib/Component.js~Component#props",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#handlers",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-handlers",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#handlers",
     "member"
   ],
   [
-    "js/lib/component.js~component#render",
-    "class/js/lib/Component.js~Component.html#instance-method-render",
-    "js/lib/Component.js~Component#render",
-    "method"
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#index",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-index",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#index",
+    "member"
   ],
   [
-    "js/lib/component.js~component#retain",
-    "class/js/lib/Component.js~Component.html#instance-member-retain",
-    "js/lib/Component.js~Component#retain",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#indexstart",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-indexStart",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#indexStart",
     "member"
   ],
   [
-    "js/lib/component.js~component#view",
-    "class/js/lib/Component.js~Component.html#instance-method-view",
-    "js/lib/Component.js~Component#view",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#init",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-init",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#init",
     "method"
   ],
   [
-    "js/lib/component.js~component.component",
-    "class/js/lib/Component.js~Component.html#static-method-component",
-    "js/lib/Component.js~Component.component",
-    "method"
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#mousestart",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-mouseStart",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#mouseStart",
+    "member"
   ],
   [
-    "js/lib/component.js~component.initprops",
-    "class/js/lib/Component.js~Component.html#static-method-initProps",
-    "js/lib/Component.js~Component.initProps",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#onclick",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onclick",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onclick",
     "method"
   ],
   [
-    "js/lib/model.js",
-    "file/js/lib/Model.js.html",
-    "js/lib/Model.js",
-    "file"
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#ondestroy",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-ondestroy",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#ondestroy",
+    "method"
   ],
   [
-    "js/lib/model.js~model#apiendpoint",
-    "class/js/lib/Model.js~Model.html#instance-method-apiEndpoint",
-    "js/lib/Model.js~Model#apiEndpoint",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#onmousedown",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onmousedown",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onmousedown",
     "method"
   ],
   [
-    "js/lib/model.js~model#attribute",
-    "class/js/lib/Model.js~Model.html#instance-method-attribute",
-    "js/lib/Model.js~Model#attribute",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#onmousemove",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onmousemove",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onmousemove",
     "method"
   ],
   [
-    "js/lib/model.js~model#constructor",
-    "class/js/lib/Model.js~Model.html#instance-constructor-constructor",
-    "js/lib/Model.js~Model#constructor",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#onmouseup",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onmouseup",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onmouseup",
     "method"
   ],
   [
-    "js/lib/model.js~model#copydata",
-    "class/js/lib/Model.js~Model.html#instance-method-copyData",
-    "js/lib/Model.js~Model#copyData",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#onresize",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onresize",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onresize",
     "method"
   ],
   [
-    "js/lib/model.js~model#data",
-    "class/js/lib/Model.js~Model.html#instance-member-data",
-    "js/lib/Model.js~Model#data",
-    "member"
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#onscroll",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onscroll",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onscroll",
+    "method"
   ],
   [
-    "js/lib/model.js~model#delete",
-    "class/js/lib/Model.js~Model.html#instance-method-delete",
-    "js/lib/Model.js~Model#delete",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#percentperpost",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-percentPerPost",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#percentPerPost",
     "method"
   ],
   [
-    "js/lib/model.js~model#exists",
-    "class/js/lib/Model.js~Model.html#instance-member-exists",
-    "js/lib/Model.js~Model#exists",
-    "member"
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#renderscrollbar",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-renderScrollbar",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#renderScrollbar",
+    "method"
   ],
   [
-    "js/lib/model.js~model#freshness",
-    "class/js/lib/Model.js~Model.html#instance-member-freshness",
-    "js/lib/Model.js~Model#freshness",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#scrolllistener",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-scrollListener",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#scrollListener",
     "member"
   ],
   [
-    "js/lib/model.js~model#id",
-    "class/js/lib/Model.js~Model.html#instance-method-id",
-    "js/lib/Model.js~Model#id",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#streamwasunpaused",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-streamWasUnpaused",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#streamWasUnpaused",
     "method"
   ],
   [
-    "js/lib/model.js~model#pushattributes",
-    "class/js/lib/Model.js~Model.html#instance-method-pushAttributes",
-    "js/lib/Model.js~Model#pushAttributes",
-    "method"
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#subtree",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-subtree",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#subtree",
+    "member"
   ],
   [
-    "js/lib/model.js~model#pushdata",
-    "class/js/lib/Model.js~Model.html#instance-method-pushData",
-    "js/lib/Model.js~Model#pushData",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#update",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-update",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#update",
     "method"
   ],
   [
-    "js/lib/model.js~model#save",
-    "class/js/lib/Model.js~Model.html#instance-method-save",
-    "js/lib/Model.js~Model#save",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#view",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-view",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#view",
     "method"
   ],
   [
-    "js/lib/model.js~model#store",
-    "class/js/lib/Model.js~Model.html#instance-member-store",
-    "js/lib/Model.js~Model#store",
+    "js/src/forum/components/poststreamscrubber.js~poststreamscrubber#visible",
+    "class/js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-visible",
+    "js/src/forum/components/PostStreamScrubber.js~PostStreamScrubber#visible",
     "member"
   ],
   [
-    "js/lib/model.js~model.attribute",
-    "class/js/lib/Model.js~Model.html#static-method-attribute",
-    "js/lib/Model.js~Model.attribute",
-    "method"
+    "js/src/forum/components/postuser.js",
+    "file/js/src/forum/components/PostUser.js.html",
+    "js/src/forum/components/PostUser.js",
+    "file"
   ],
   [
-    "js/lib/model.js~model.getidentifier",
-    "class/js/lib/Model.js~Model.html#static-method-getIdentifier",
-    "js/lib/Model.js~Model.getIdentifier",
-    "method"
+    "js/src/forum/components/postuser.js~postuser#cardvisible",
+    "class/js/src/forum/components/PostUser.js~PostUser.html#instance-member-cardVisible",
+    "js/src/forum/components/PostUser.js~PostUser#cardVisible",
+    "member"
   ],
   [
-    "js/lib/model.js~model.hasmany",
-    "class/js/lib/Model.js~Model.html#static-method-hasMany",
-    "js/lib/Model.js~Model.hasMany",
+    "js/src/forum/components/postuser.js~postuser#config",
+    "class/js/src/forum/components/PostUser.js~PostUser.html#instance-method-config",
+    "js/src/forum/components/PostUser.js~PostUser#config",
     "method"
   ],
   [
-    "js/lib/model.js~model.hasone",
-    "class/js/lib/Model.js~Model.html#static-method-hasOne",
-    "js/lib/Model.js~Model.hasOne",
+    "js/src/forum/components/postuser.js~postuser#hidecard",
+    "class/js/src/forum/components/PostUser.js~PostUser.html#instance-method-hideCard",
+    "js/src/forum/components/PostUser.js~PostUser#hideCard",
     "method"
   ],
   [
-    "js/lib/model.js~model.transformdate",
-    "class/js/lib/Model.js~Model.html#static-method-transformDate",
-    "js/lib/Model.js~Model.transformDate",
+    "js/src/forum/components/postuser.js~postuser#init",
+    "class/js/src/forum/components/PostUser.js~PostUser.html#instance-method-init",
+    "js/src/forum/components/PostUser.js~PostUser#init",
     "method"
   ],
   [
-    "js/lib/session.js",
-    "file/js/lib/Session.js.html",
-    "js/lib/Session.js",
-    "file"
+    "js/src/forum/components/postuser.js~postuser#showcard",
+    "class/js/src/forum/components/PostUser.js~PostUser.html#instance-method-showCard",
+    "js/src/forum/components/PostUser.js~PostUser#showCard",
+    "method"
   ],
   [
-    "js/lib/session.js~session#constructor",
-    "class/js/lib/Session.js~Session.html#instance-constructor-constructor",
-    "js/lib/Session.js~Session#constructor",
+    "js/src/forum/components/postuser.js~postuser#view",
+    "class/js/src/forum/components/PostUser.js~PostUser.html#instance-method-view",
+    "js/src/forum/components/PostUser.js~PostUser#view",
     "method"
   ],
   [
-    "js/lib/session.js~session#csrftoken",
-    "class/js/lib/Session.js~Session.html#instance-member-csrfToken",
-    "js/lib/Session.js~Session#csrfToken",
-    "member"
+    "js/src/forum/components/postsuserpage.js",
+    "file/js/src/forum/components/PostsUserPage.js.html",
+    "js/src/forum/components/PostsUserPage.js",
+    "file"
   ],
   [
-    "js/lib/session.js~session#login",
-    "class/js/lib/Session.js~Session.html#instance-method-login",
-    "js/lib/Session.js~Session#login",
+    "js/src/forum/components/postsuserpage.js~postsuserpage#content",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-method-content",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#content",
     "method"
   ],
   [
-    "js/lib/session.js~session#logout",
-    "class/js/lib/Session.js~Session.html#instance-method-logout",
-    "js/lib/Session.js~Session#logout",
+    "js/src/forum/components/postsuserpage.js~postsuserpage#init",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-method-init",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#init",
     "method"
   ],
   [
-    "js/lib/session.js~session#user",
-    "class/js/lib/Session.js~Session.html#instance-member-user",
-    "js/lib/Session.js~Session#user",
+    "js/src/forum/components/postsuserpage.js~postsuserpage#loadlimit",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-member-loadLimit",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#loadLimit",
     "member"
-  ],
-  [
-    "js/lib/store.js",
-    "file/js/lib/Store.js.html",
-    "js/lib/Store.js",
-    "file"
-  ],
-  [
-    "js/lib/store.js~store#all",
-    "class/js/lib/Store.js~Store.html#instance-method-all",
-    "js/lib/Store.js~Store#all",
-    "method"
   ],
   [
-    "js/lib/store.js~store#constructor",
-    "class/js/lib/Store.js~Store.html#instance-constructor-constructor",
-    "js/lib/Store.js~Store#constructor",
+    "js/src/forum/components/postsuserpage.js~postsuserpage#loadmore",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-method-loadMore",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#loadMore",
     "method"
   ],
   [
-    "js/lib/store.js~store#createrecord",
-    "class/js/lib/Store.js~Store.html#instance-method-createRecord",
-    "js/lib/Store.js~Store#createRecord",
+    "js/src/forum/components/postsuserpage.js~postsuserpage#loadresults",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-method-loadResults",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#loadResults",
     "method"
   ],
   [
-    "js/lib/store.js~store#data",
-    "class/js/lib/Store.js~Store.html#instance-member-data",
-    "js/lib/Store.js~Store#data",
+    "js/src/forum/components/postsuserpage.js~postsuserpage#loading",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-member-loading",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#loading",
     "member"
-  ],
-  [
-    "js/lib/store.js~store#find",
-    "class/js/lib/Store.js~Store.html#instance-method-find",
-    "js/lib/Store.js~Store#find",
-    "method"
   ],
   [
-    "js/lib/store.js~store#getby",
-    "class/js/lib/Store.js~Store.html#instance-method-getBy",
-    "js/lib/Store.js~Store#getBy",
-    "method"
+    "js/src/forum/components/postsuserpage.js~postsuserpage#moreresults",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-member-moreResults",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#moreResults",
+    "member"
   ],
   [
-    "js/lib/store.js~store#getbyid",
-    "class/js/lib/Store.js~Store.html#instance-method-getById",
-    "js/lib/Store.js~Store#getById",
+    "js/src/forum/components/postsuserpage.js~postsuserpage#parseresults",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-method-parseResults",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#parseResults",
     "method"
   ],
   [
-    "js/lib/store.js~store#models",
-    "class/js/lib/Store.js~Store.html#instance-member-models",
-    "js/lib/Store.js~Store#models",
+    "js/src/forum/components/postsuserpage.js~postsuserpage#posts",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-member-posts",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#posts",
     "member"
-  ],
-  [
-    "js/lib/store.js~store#pushobject",
-    "class/js/lib/Store.js~Store.html#instance-method-pushObject",
-    "js/lib/Store.js~Store#pushObject",
-    "method"
   ],
   [
-    "js/lib/store.js~store#pushpayload",
-    "class/js/lib/Store.js~Store.html#instance-method-pushPayload",
-    "js/lib/Store.js~Store#pushPayload",
+    "js/src/forum/components/postsuserpage.js~postsuserpage#refresh",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-method-refresh",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#refresh",
     "method"
   ],
   [
-    "js/lib/store.js~store#remove",
-    "class/js/lib/Store.js~Store.html#instance-method-remove",
-    "js/lib/Store.js~Store#remove",
+    "js/src/forum/components/postsuserpage.js~postsuserpage#show",
+    "class/js/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-method-show",
+    "js/src/forum/components/PostsUserPage.js~PostsUserPage#show",
     "method"
   ],
   [
-    "js/lib/translator.js",
-    "file/js/lib/Translator.js.html",
-    "js/lib/Translator.js",
+    "js/src/forum/components/renamediscussionmodal.js",
+    "file/js/src/forum/components/RenameDiscussionModal.js.html",
+    "js/src/forum/components/RenameDiscussionModal.js",
     "file"
   ],
   [
-    "js/lib/translator.js~translator#apply",
-    "class/js/lib/Translator.js~Translator.html#instance-method-apply",
-    "js/lib/Translator.js~Translator#apply",
+    "js/src/forum/components/renamediscussionmodal.js~renamediscussionmodal#classname",
+    "class/js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-className",
+    "js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#className",
     "method"
   ],
   [
-    "js/lib/translator.js~translator#constructor",
-    "class/js/lib/Translator.js~Translator.html#instance-constructor-constructor",
-    "js/lib/Translator.js~Translator#constructor",
+    "js/src/forum/components/renamediscussionmodal.js~renamediscussionmodal#content",
+    "class/js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-content",
+    "js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#content",
     "method"
   ],
   [
-    "js/lib/translator.js~translator#convertnumber",
-    "class/js/lib/Translator.js~Translator.html#instance-method-convertNumber",
-    "js/lib/Translator.js~Translator#convertNumber",
-    "method"
+    "js/src/forum/components/renamediscussionmodal.js~renamediscussionmodal#currenttitle",
+    "class/js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-member-currentTitle",
+    "js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#currentTitle",
+    "member"
   ],
   [
-    "js/lib/translator.js~translator#locale",
-    "class/js/lib/Translator.js~Translator.html#instance-member-locale",
-    "js/lib/Translator.js~Translator#locale",
+    "js/src/forum/components/renamediscussionmodal.js~renamediscussionmodal#discussion",
+    "class/js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-member-discussion",
+    "js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#discussion",
     "member"
   ],
   [
-    "js/lib/translator.js~translator#pluralposition",
-    "class/js/lib/Translator.js~Translator.html#instance-method-pluralPosition",
-    "js/lib/Translator.js~Translator#pluralPosition",
+    "js/src/forum/components/renamediscussionmodal.js~renamediscussionmodal#init",
+    "class/js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-init",
+    "js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#init",
     "method"
   ],
   [
-    "js/lib/translator.js~translator#pluralize",
-    "class/js/lib/Translator.js~Translator.html#instance-method-pluralize",
-    "js/lib/Translator.js~Translator#pluralize",
-    "method"
+    "js/src/forum/components/renamediscussionmodal.js~renamediscussionmodal#loading",
+    "class/js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-member-loading",
+    "js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#loading",
+    "member"
   ],
   [
-    "js/lib/translator.js~translator#trans",
-    "class/js/lib/Translator.js~Translator.html#instance-method-trans",
-    "js/lib/Translator.js~Translator#trans",
-    "method"
+    "js/src/forum/components/renamediscussionmodal.js~renamediscussionmodal#newtitle",
+    "class/js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-member-newTitle",
+    "js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#newTitle",
+    "member"
   ],
   [
-    "js/lib/translator.js~translator#transchoice",
-    "class/js/lib/Translator.js~Translator.html#instance-method-transChoice",
-    "js/lib/Translator.js~Translator#transChoice",
+    "js/src/forum/components/renamediscussionmodal.js~renamediscussionmodal#onsubmit",
+    "class/js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-onsubmit",
+    "js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#onsubmit",
     "method"
   ],
   [
-    "js/lib/translator.js~translator#translations",
-    "class/js/lib/Translator.js~Translator.html#instance-member-translations",
-    "js/lib/Translator.js~Translator#translations",
-    "member"
+    "js/src/forum/components/renamediscussionmodal.js~renamediscussionmodal#title",
+    "class/js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-title",
+    "js/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#title",
+    "method"
   ],
   [
-    "js/lib/components/alert.js",
-    "file/js/lib/components/Alert.js.html",
-    "js/lib/components/Alert.js",
+    "js/src/forum/components/replycomposer.js",
+    "file/js/src/forum/components/ReplyComposer.js.html",
+    "js/src/forum/components/ReplyComposer.js",
     "file"
   ],
   [
-    "js/lib/components/alert.js~alert#view",
-    "class/js/lib/components/Alert.js~Alert.html#instance-method-view",
-    "js/lib/components/Alert.js~Alert#view",
+    "js/src/forum/components/replycomposer.js~replycomposer#data",
+    "class/js/src/forum/components/ReplyComposer.js~ReplyComposer.html#instance-method-data",
+    "js/src/forum/components/ReplyComposer.js~ReplyComposer#data",
     "method"
   ],
   [
-    "js/lib/components/alertmanager.js",
-    "file/js/lib/components/AlertManager.js.html",
-    "js/lib/components/AlertManager.js",
-    "file"
+    "js/src/forum/components/replycomposer.js~replycomposer#headeritems",
+    "class/js/src/forum/components/ReplyComposer.js~ReplyComposer.html#instance-method-headerItems",
+    "js/src/forum/components/ReplyComposer.js~ReplyComposer#headerItems",
+    "method"
   ],
   [
-    "js/lib/components/alertmanager.js~alertmanager#clear",
-    "class/js/lib/components/AlertManager.js~AlertManager.html#instance-method-clear",
-    "js/lib/components/AlertManager.js~AlertManager#clear",
+    "js/src/forum/components/replycomposer.js~replycomposer#init",
+    "class/js/src/forum/components/ReplyComposer.js~ReplyComposer.html#instance-method-init",
+    "js/src/forum/components/ReplyComposer.js~ReplyComposer#init",
     "method"
   ],
   [
-    "js/lib/components/alertmanager.js~alertmanager#components",
-    "class/js/lib/components/AlertManager.js~AlertManager.html#instance-member-components",
-    "js/lib/components/AlertManager.js~AlertManager#components",
+    "js/src/forum/components/replycomposer.js~replycomposer#loading",
+    "class/js/src/forum/components/ReplyComposer.js~ReplyComposer.html#instance-member-loading",
+    "js/src/forum/components/ReplyComposer.js~ReplyComposer#loading",
     "member"
   ],
   [
-    "js/lib/components/alertmanager.js~alertmanager#config",
-    "class/js/lib/components/AlertManager.js~AlertManager.html#instance-method-config",
-    "js/lib/components/AlertManager.js~AlertManager#config",
+    "js/src/forum/components/replycomposer.js~replycomposer#onsubmit",
+    "class/js/src/forum/components/ReplyComposer.js~ReplyComposer.html#instance-method-onsubmit",
+    "js/src/forum/components/ReplyComposer.js~ReplyComposer#onsubmit",
     "method"
   ],
   [
-    "js/lib/components/alertmanager.js~alertmanager#dismiss",
-    "class/js/lib/components/AlertManager.js~AlertManager.html#instance-method-dismiss",
-    "js/lib/components/AlertManager.js~AlertManager#dismiss",
+    "js/src/forum/components/replycomposer.js~replycomposer.initprops",
+    "class/js/src/forum/components/ReplyComposer.js~ReplyComposer.html#static-method-initProps",
+    "js/src/forum/components/ReplyComposer.js~ReplyComposer.initProps",
     "method"
   ],
   [
-    "js/lib/components/alertmanager.js~alertmanager#init",
-    "class/js/lib/components/AlertManager.js~AlertManager.html#instance-method-init",
-    "js/lib/components/AlertManager.js~AlertManager#init",
-    "method"
+    "js/src/forum/components/replyplaceholder.js",
+    "file/js/src/forum/components/ReplyPlaceholder.js.html",
+    "js/src/forum/components/ReplyPlaceholder.js",
+    "file"
   ],
   [
-    "js/lib/components/alertmanager.js~alertmanager#show",
-    "class/js/lib/components/AlertManager.js~AlertManager.html#instance-method-show",
-    "js/lib/components/AlertManager.js~AlertManager#show",
+    "js/src/forum/components/replyplaceholder.js~replyplaceholder#configpreview",
+    "class/js/src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder.html#instance-method-configPreview",
+    "js/src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder#configPreview",
     "method"
   ],
   [
-    "js/lib/components/alertmanager.js~alertmanager#view",
-    "class/js/lib/components/AlertManager.js~AlertManager.html#instance-method-view",
-    "js/lib/components/AlertManager.js~AlertManager#view",
+    "js/src/forum/components/replyplaceholder.js~replyplaceholder#view",
+    "class/js/src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder.html#instance-method-view",
+    "js/src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder#view",
     "method"
   ],
   [
-    "js/lib/components/badge.js",
-    "file/js/lib/components/Badge.js.html",
-    "js/lib/components/Badge.js",
+    "js/src/forum/components/search.js",
+    "file/js/src/forum/components/Search.js.html",
+    "js/src/forum/components/Search.js",
     "file"
   ],
   [
-    "js/lib/components/badge.js~badge#config",
-    "class/js/lib/components/Badge.js~Badge.html#instance-method-config",
-    "js/lib/components/Badge.js~Badge#config",
+    "js/src/forum/components/search.js~search#clear",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-clear",
+    "js/src/forum/components/Search.js~Search#clear",
     "method"
   ],
   [
-    "js/lib/components/badge.js~badge#view",
-    "class/js/lib/components/Badge.js~Badge.html#instance-method-view",
-    "js/lib/components/Badge.js~Badge#view",
+    "js/src/forum/components/search.js~search#config",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-config",
+    "js/src/forum/components/Search.js~Search#config",
     "method"
-  ],
-  [
-    "js/lib/components/button.js",
-    "file/js/lib/components/Button.js.html",
-    "js/lib/components/Button.js",
-    "file"
   ],
   [
-    "js/lib/components/button.js~button#getbuttoncontent",
-    "class/js/lib/components/Button.js~Button.html#instance-method-getButtonContent",
-    "js/lib/components/Button.js~Button#getButtonContent",
+    "js/src/forum/components/search.js~search#getcurrentnumericindex",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-getCurrentNumericIndex",
+    "js/src/forum/components/Search.js~Search#getCurrentNumericIndex",
     "method"
   ],
   [
-    "js/lib/components/button.js~button#view",
-    "class/js/lib/components/Button.js~Button.html#instance-method-view",
-    "js/lib/components/Button.js~Button#view",
+    "js/src/forum/components/search.js~search#getcurrentsearch",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-getCurrentSearch",
+    "js/src/forum/components/Search.js~Search#getCurrentSearch",
     "method"
   ],
   [
-    "js/lib/components/checkbox.js",
-    "file/js/lib/components/Checkbox.js.html",
-    "js/lib/components/Checkbox.js",
-    "file"
-  ],
-  [
-    "js/lib/components/checkbox.js~checkbox#getdisplay",
-    "class/js/lib/components/Checkbox.js~Checkbox.html#instance-method-getDisplay",
-    "js/lib/components/Checkbox.js~Checkbox#getDisplay",
+    "js/src/forum/components/search.js~search#getitem",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-getItem",
+    "js/src/forum/components/Search.js~Search#getItem",
     "method"
   ],
   [
-    "js/lib/components/checkbox.js~checkbox#init",
-    "class/js/lib/components/Checkbox.js~Checkbox.html#instance-method-init",
-    "js/lib/components/Checkbox.js~Checkbox#init",
-    "method"
+    "js/src/forum/components/search.js~search#hasfocus",
+    "class/js/src/forum/components/Search.js~Search.html#instance-member-hasFocus",
+    "js/src/forum/components/Search.js~Search#hasFocus",
+    "member"
   ],
   [
-    "js/lib/components/checkbox.js~checkbox#loading",
-    "class/js/lib/components/Checkbox.js~Checkbox.html#instance-member-loading",
-    "js/lib/components/Checkbox.js~Checkbox#loading",
+    "js/src/forum/components/search.js~search#index",
+    "class/js/src/forum/components/Search.js~Search.html#instance-member-index",
+    "js/src/forum/components/Search.js~Search#index",
     "member"
   ],
   [
-    "js/lib/components/checkbox.js~checkbox#onchange",
-    "class/js/lib/components/Checkbox.js~Checkbox.html#instance-method-onchange",
-    "js/lib/components/Checkbox.js~Checkbox#onchange",
+    "js/src/forum/components/search.js~search#init",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-init",
+    "js/src/forum/components/Search.js~Search#init",
     "method"
   ],
   [
-    "js/lib/components/checkbox.js~checkbox#view",
-    "class/js/lib/components/Checkbox.js~Checkbox.html#instance-method-view",
-    "js/lib/components/Checkbox.js~Checkbox#view",
-    "method"
+    "js/src/forum/components/search.js~search#loadingsources",
+    "class/js/src/forum/components/Search.js~Search.html#instance-member-loadingSources",
+    "js/src/forum/components/Search.js~Search#loadingSources",
+    "member"
   ],
   [
-    "js/lib/components/dropdown.js",
-    "file/js/lib/components/Dropdown.js.html",
-    "js/lib/components/Dropdown.js",
-    "file"
+    "js/src/forum/components/search.js~search#navigator",
+    "class/js/src/forum/components/Search.js~Search.html#instance-member-navigator",
+    "js/src/forum/components/Search.js~Search#navigator",
+    "member"
   ],
   [
-    "js/lib/components/dropdown.js~dropdown#config",
-    "class/js/lib/components/Dropdown.js~Dropdown.html#instance-method-config",
-    "js/lib/components/Dropdown.js~Dropdown#config",
-    "method"
+    "js/src/forum/components/search.js~search#searched",
+    "class/js/src/forum/components/Search.js~Search.html#instance-member-searched",
+    "js/src/forum/components/Search.js~Search#searched",
+    "member"
   ],
   [
-    "js/lib/components/dropdown.js~dropdown#getbutton",
-    "class/js/lib/components/Dropdown.js~Dropdown.html#instance-method-getButton",
-    "js/lib/components/Dropdown.js~Dropdown#getButton",
+    "js/src/forum/components/search.js~search#selectresult",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-selectResult",
+    "js/src/forum/components/Search.js~Search#selectResult",
     "method"
   ],
   [
-    "js/lib/components/dropdown.js~dropdown#getbuttoncontent",
-    "class/js/lib/components/Dropdown.js~Dropdown.html#instance-method-getButtonContent",
-    "js/lib/components/Dropdown.js~Dropdown#getButtonContent",
+    "js/src/forum/components/search.js~search#selectableitems",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-selectableItems",
+    "js/src/forum/components/Search.js~Search#selectableItems",
     "method"
   ],
   [
-    "js/lib/components/dropdown.js~dropdown#getmenu",
-    "class/js/lib/components/Dropdown.js~Dropdown.html#instance-method-getMenu",
-    "js/lib/components/Dropdown.js~Dropdown#getMenu",
+    "js/src/forum/components/search.js~search#setindex",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-setIndex",
+    "js/src/forum/components/Search.js~Search#setIndex",
     "method"
   ],
   [
-    "js/lib/components/dropdown.js~dropdown#init",
-    "class/js/lib/components/Dropdown.js~Dropdown.html#instance-method-init",
-    "js/lib/components/Dropdown.js~Dropdown#init",
+    "js/src/forum/components/search.js~search#sourceitems",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-sourceItems",
+    "js/src/forum/components/Search.js~Search#sourceItems",
     "method"
   ],
   [
-    "js/lib/components/dropdown.js~dropdown#showing",
-    "class/js/lib/components/Dropdown.js~Dropdown.html#instance-member-showing",
-    "js/lib/components/Dropdown.js~Dropdown#showing",
+    "js/src/forum/components/search.js~search#sources",
+    "class/js/src/forum/components/Search.js~Search.html#instance-member-sources",
+    "js/src/forum/components/Search.js~Search#sources",
     "member"
   ],
   [
-    "js/lib/components/dropdown.js~dropdown#view",
-    "class/js/lib/components/Dropdown.js~Dropdown.html#instance-method-view",
-    "js/lib/components/Dropdown.js~Dropdown#view",
-    "method"
+    "js/src/forum/components/search.js~search#value",
+    "class/js/src/forum/components/Search.js~Search.html#instance-member-value",
+    "js/src/forum/components/Search.js~Search#value",
+    "member"
   ],
   [
-    "js/lib/components/dropdown.js~dropdown.initprops",
-    "class/js/lib/components/Dropdown.js~Dropdown.html#static-method-initProps",
-    "js/lib/components/Dropdown.js~Dropdown.initProps",
+    "js/src/forum/components/search.js~search#view",
+    "class/js/src/forum/components/Search.js~Search.html#instance-method-view",
+    "js/src/forum/components/Search.js~Search#view",
     "method"
   ],
   [
-    "js/lib/components/fieldset.js",
-    "file/js/lib/components/FieldSet.js.html",
-    "js/lib/components/FieldSet.js",
+    "js/src/forum/components/searchsource.js",
+    "file/js/src/forum/components/SearchSource.js.html",
+    "js/src/forum/components/SearchSource.js",
     "file"
   ],
   [
-    "js/lib/components/fieldset.js~fieldset#view",
-    "class/js/lib/components/FieldSet.js~FieldSet.html#instance-method-view",
-    "js/lib/components/FieldSet.js~FieldSet#view",
+    "js/src/forum/components/searchsource.js~searchsource#search",
+    "class/js/src/forum/components/SearchSource.js~SearchSource.html#instance-method-search",
+    "js/src/forum/components/SearchSource.js~SearchSource#search",
     "method"
   ],
   [
-    "js/lib/components/groupbadge.js",
-    "file/js/lib/components/GroupBadge.js.html",
-    "js/lib/components/GroupBadge.js",
-    "file"
-  ],
-  [
-    "js/lib/components/groupbadge.js~groupbadge.initprops",
-    "class/js/lib/components/GroupBadge.js~GroupBadge.html#static-method-initProps",
-    "js/lib/components/GroupBadge.js~GroupBadge.initProps",
+    "js/src/forum/components/searchsource.js~searchsource#view",
+    "class/js/src/forum/components/SearchSource.js~SearchSource.html#instance-method-view",
+    "js/src/forum/components/SearchSource.js~SearchSource#view",
     "method"
   ],
   [
-    "js/lib/components/linkbutton.js",
-    "file/js/lib/components/LinkButton.js.html",
-    "js/lib/components/LinkButton.js",
+    "js/src/forum/components/sessiondropdown.js",
+    "file/js/src/forum/components/SessionDropdown.js.html",
+    "js/src/forum/components/SessionDropdown.js",
     "file"
   ],
   [
-    "js/lib/components/linkbutton.js~linkbutton#view",
-    "class/js/lib/components/LinkButton.js~LinkButton.html#instance-method-view",
-    "js/lib/components/LinkButton.js~LinkButton#view",
+    "js/src/forum/components/sessiondropdown.js~sessiondropdown#getbuttoncontent",
+    "class/js/src/forum/components/SessionDropdown.js~SessionDropdown.html#instance-method-getButtonContent",
+    "js/src/forum/components/SessionDropdown.js~SessionDropdown#getButtonContent",
     "method"
   ],
   [
-    "js/lib/components/linkbutton.js~linkbutton.initprops",
-    "class/js/lib/components/LinkButton.js~LinkButton.html#static-method-initProps",
-    "js/lib/components/LinkButton.js~LinkButton.initProps",
+    "js/src/forum/components/sessiondropdown.js~sessiondropdown#items",
+    "class/js/src/forum/components/SessionDropdown.js~SessionDropdown.html#instance-method-items",
+    "js/src/forum/components/SessionDropdown.js~SessionDropdown#items",
     "method"
-  ],
-  [
-    "js/lib/components/linkbutton.js~linkbutton.isactive",
-    "class/js/lib/components/LinkButton.js~LinkButton.html#static-method-isActive",
-    "js/lib/components/LinkButton.js~LinkButton.isActive",
-    "method"
-  ],
-  [
-    "js/lib/components/loadingindicator.js",
-    "file/js/lib/components/LoadingIndicator.js.html",
-    "js/lib/components/LoadingIndicator.js",
-    "file"
   ],
   [
-    "js/lib/components/loadingindicator.js~loadingindicator#config",
-    "class/js/lib/components/LoadingIndicator.js~LoadingIndicator.html#instance-method-config",
-    "js/lib/components/LoadingIndicator.js~LoadingIndicator#config",
+    "js/src/forum/components/sessiondropdown.js~sessiondropdown#view",
+    "class/js/src/forum/components/SessionDropdown.js~SessionDropdown.html#instance-method-view",
+    "js/src/forum/components/SessionDropdown.js~SessionDropdown#view",
     "method"
   ],
   [
-    "js/lib/components/loadingindicator.js~loadingindicator#view",
-    "class/js/lib/components/LoadingIndicator.js~LoadingIndicator.html#instance-method-view",
-    "js/lib/components/LoadingIndicator.js~LoadingIndicator#view",
+    "js/src/forum/components/sessiondropdown.js~sessiondropdown.initprops",
+    "class/js/src/forum/components/SessionDropdown.js~SessionDropdown.html#static-method-initProps",
+    "js/src/forum/components/SessionDropdown.js~SessionDropdown.initProps",
     "method"
   ],
   [
-    "js/lib/components/modal.js",
-    "file/js/lib/components/Modal.js.html",
-    "js/lib/components/Modal.js",
+    "js/src/forum/components/settingspage.js",
+    "file/js/src/forum/components/SettingsPage.js.html",
+    "js/src/forum/components/SettingsPage.js",
     "file"
   ],
   [
-    "js/lib/components/modal.js~modal#alert",
-    "class/js/lib/components/Modal.js~Modal.html#instance-member-alert",
-    "js/lib/components/Modal.js~Modal#alert",
-    "member"
+    "js/src/forum/components/settingspage.js~settingspage#accountitems",
+    "class/js/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-accountItems",
+    "js/src/forum/components/SettingsPage.js~SettingsPage#accountItems",
+    "method"
   ],
   [
-    "js/lib/components/modal.js~modal#classname",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-className",
-    "js/lib/components/Modal.js~Modal#className",
+    "js/src/forum/components/settingspage.js~settingspage#content",
+    "class/js/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-content",
+    "js/src/forum/components/SettingsPage.js~SettingsPage#content",
     "method"
   ],
   [
-    "js/lib/components/modal.js~modal#content",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-content",
-    "js/lib/components/Modal.js~Modal#content",
+    "js/src/forum/components/settingspage.js~settingspage#init",
+    "class/js/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-init",
+    "js/src/forum/components/SettingsPage.js~SettingsPage#init",
     "method"
   ],
   [
-    "js/lib/components/modal.js~modal#hide",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-hide",
-    "js/lib/components/Modal.js~Modal#hide",
+    "js/src/forum/components/settingspage.js~settingspage#notificationsitems",
+    "class/js/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-notificationsItems",
+    "js/src/forum/components/SettingsPage.js~SettingsPage#notificationsItems",
     "method"
   ],
   [
-    "js/lib/components/modal.js~modal#init",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-init",
-    "js/lib/components/Modal.js~Modal#init",
+    "js/src/forum/components/settingspage.js~settingspage#preferencesaver",
+    "class/js/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-preferenceSaver",
+    "js/src/forum/components/SettingsPage.js~SettingsPage#preferenceSaver",
     "method"
   ],
   [
-    "js/lib/components/modal.js~modal#isdismissible",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-isDismissible",
-    "js/lib/components/Modal.js~Modal#isDismissible",
+    "js/src/forum/components/settingspage.js~settingspage#privacyitems",
+    "class/js/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-privacyItems",
+    "js/src/forum/components/SettingsPage.js~SettingsPage#privacyItems",
     "method"
   ],
   [
-    "js/lib/components/modal.js~modal#loaded",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-loaded",
-    "js/lib/components/Modal.js~Modal#loaded",
+    "js/src/forum/components/settingspage.js~settingspage#settingsitems",
+    "class/js/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-settingsItems",
+    "js/src/forum/components/SettingsPage.js~SettingsPage#settingsItems",
     "method"
   ],
   [
-    "js/lib/components/modal.js~modal#loading",
-    "class/js/lib/components/Modal.js~Modal.html#instance-member-loading",
-    "js/lib/components/Modal.js~Modal#loading",
-    "member"
+    "js/src/forum/components/signupmodal.js",
+    "file/js/src/forum/components/SignUpModal.js.html",
+    "js/src/forum/components/SignUpModal.js",
+    "file"
   ],
   [
-    "js/lib/components/modal.js~modal#onerror",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-onerror",
-    "js/lib/components/Modal.js~Modal#onerror",
+    "js/src/forum/components/signupmodal.js~signupmodal#body",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-body",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#body",
     "method"
   ],
   [
-    "js/lib/components/modal.js~modal#onhide",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-onhide",
-    "js/lib/components/Modal.js~Modal#onhide",
+    "js/src/forum/components/signupmodal.js~signupmodal#classname",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-className",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#className",
     "method"
   ],
   [
-    "js/lib/components/modal.js~modal#onready",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-onready",
-    "js/lib/components/Modal.js~Modal#onready",
+    "js/src/forum/components/signupmodal.js~signupmodal#content",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-content",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#content",
     "method"
   ],
   [
-    "js/lib/components/modal.js~modal#onsubmit",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-onsubmit",
-    "js/lib/components/Modal.js~Modal#onsubmit",
-    "method"
+    "js/src/forum/components/signupmodal.js~signupmodal#email",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-member-email",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#email",
+    "member"
   ],
   [
-    "js/lib/components/modal.js~modal#title",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-title",
-    "js/lib/components/Modal.js~Modal#title",
+    "js/src/forum/components/signupmodal.js~signupmodal#fields",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-fields",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#fields",
     "method"
   ],
   [
-    "js/lib/components/modal.js~modal#view",
-    "class/js/lib/components/Modal.js~Modal.html#instance-method-view",
-    "js/lib/components/Modal.js~Modal#view",
+    "js/src/forum/components/signupmodal.js~signupmodal#footer",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-footer",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#footer",
     "method"
-  ],
-  [
-    "js/lib/components/modalmanager.js",
-    "file/js/lib/components/ModalManager.js.html",
-    "js/lib/components/ModalManager.js",
-    "file"
   ],
   [
-    "js/lib/components/modalmanager.js~modalmanager#clear",
-    "class/js/lib/components/ModalManager.js~ModalManager.html#instance-method-clear",
-    "js/lib/components/ModalManager.js~ModalManager#clear",
+    "js/src/forum/components/signupmodal.js~signupmodal#init",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-init",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#init",
     "method"
   ],
   [
-    "js/lib/components/modalmanager.js~modalmanager#close",
-    "class/js/lib/components/ModalManager.js~ModalManager.html#instance-method-close",
-    "js/lib/components/ModalManager.js~ModalManager#close",
+    "js/src/forum/components/signupmodal.js~signupmodal#isprovided",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-isProvided",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#isProvided",
     "method"
   ],
   [
-    "js/lib/components/modalmanager.js~modalmanager#component",
-    "class/js/lib/components/ModalManager.js~ModalManager.html#instance-member-component",
-    "js/lib/components/ModalManager.js~ModalManager#component",
+    "js/src/forum/components/signupmodal.js~signupmodal#loading",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-member-loading",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#loading",
     "member"
   ],
   [
-    "js/lib/components/modalmanager.js~modalmanager#config",
-    "class/js/lib/components/ModalManager.js~ModalManager.html#instance-method-config",
-    "js/lib/components/ModalManager.js~ModalManager#config",
+    "js/src/forum/components/signupmodal.js~signupmodal#login",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-logIn",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#logIn",
     "method"
   ],
   [
-    "js/lib/components/modalmanager.js~modalmanager#hidetimeout",
-    "class/js/lib/components/ModalManager.js~ModalManager.html#instance-member-hideTimeout",
-    "js/lib/components/ModalManager.js~ModalManager#hideTimeout",
-    "member"
+    "js/src/forum/components/signupmodal.js~signupmodal#onready",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-onready",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#onready",
+    "method"
   ],
   [
-    "js/lib/components/modalmanager.js~modalmanager#init",
-    "class/js/lib/components/ModalManager.js~ModalManager.html#instance-method-init",
-    "js/lib/components/ModalManager.js~ModalManager#init",
+    "js/src/forum/components/signupmodal.js~signupmodal#onsubmit",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-onsubmit",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#onsubmit",
     "method"
   ],
   [
-    "js/lib/components/modalmanager.js~modalmanager#onready",
-    "class/js/lib/components/ModalManager.js~ModalManager.html#instance-method-onready",
-    "js/lib/components/ModalManager.js~ModalManager#onready",
-    "method"
+    "js/src/forum/components/signupmodal.js~signupmodal#password",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-member-password",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#password",
+    "member"
   ],
   [
-    "js/lib/components/modalmanager.js~modalmanager#show",
-    "class/js/lib/components/ModalManager.js~ModalManager.html#instance-method-show",
-    "js/lib/components/ModalManager.js~ModalManager#show",
+    "js/src/forum/components/signupmodal.js~signupmodal#submitdata",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-submitData",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#submitData",
     "method"
   ],
   [
-    "js/lib/components/modalmanager.js~modalmanager#showing",
-    "class/js/lib/components/ModalManager.js~ModalManager.html#instance-member-showing",
-    "js/lib/components/ModalManager.js~ModalManager#showing",
-    "member"
+    "js/src/forum/components/signupmodal.js~signupmodal#title",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-title",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#title",
+    "method"
   ],
   [
-    "js/lib/components/modalmanager.js~modalmanager#view",
-    "class/js/lib/components/ModalManager.js~ModalManager.html#instance-method-view",
-    "js/lib/components/ModalManager.js~ModalManager#view",
-    "method"
+    "js/src/forum/components/signupmodal.js~signupmodal#username",
+    "class/js/src/forum/components/SignUpModal.js~SignUpModal.html#instance-member-username",
+    "js/src/forum/components/SignUpModal.js~SignUpModal#username",
+    "member"
   ],
   [
-    "js/lib/components/navigation.js",
-    "file/js/lib/components/Navigation.js.html",
-    "js/lib/components/Navigation.js",
+    "js/src/forum/components/terminalpost.js",
+    "file/js/src/forum/components/TerminalPost.js.html",
+    "js/src/forum/components/TerminalPost.js",
     "file"
   ],
   [
-    "js/lib/components/navigation.js~navigation#config",
-    "class/js/lib/components/Navigation.js~Navigation.html#instance-method-config",
-    "js/lib/components/Navigation.js~Navigation#config",
+    "js/src/forum/components/terminalpost.js~terminalpost#view",
+    "class/js/src/forum/components/TerminalPost.js~TerminalPost.html#instance-method-view",
+    "js/src/forum/components/TerminalPost.js~TerminalPost#view",
     "method"
   ],
   [
-    "js/lib/components/navigation.js~navigation#getbackbutton",
-    "class/js/lib/components/Navigation.js~Navigation.html#instance-method-getBackButton",
-    "js/lib/components/Navigation.js~Navigation#getBackButton",
-    "method"
+    "js/src/forum/components/texteditor.js",
+    "file/js/src/forum/components/TextEditor.js.html",
+    "js/src/forum/components/TextEditor.js",
+    "file"
   ],
   [
-    "js/lib/components/navigation.js~navigation#getdrawerbutton",
-    "class/js/lib/components/Navigation.js~Navigation.html#instance-method-getDrawerButton",
-    "js/lib/components/Navigation.js~Navigation#getDrawerButton",
+    "js/src/forum/components/texteditor.js~texteditor#configtextarea",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-method-configTextarea",
+    "js/src/forum/components/TextEditor.js~TextEditor#configTextarea",
     "method"
   ],
   [
-    "js/lib/components/navigation.js~navigation#getpanebutton",
-    "class/js/lib/components/Navigation.js~Navigation.html#instance-method-getPaneButton",
-    "js/lib/components/Navigation.js~Navigation#getPaneButton",
+    "js/src/forum/components/texteditor.js~texteditor#controlitems",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-method-controlItems",
+    "js/src/forum/components/TextEditor.js~TextEditor#controlItems",
     "method"
   ],
   [
-    "js/lib/components/navigation.js~navigation#view",
-    "class/js/lib/components/Navigation.js~Navigation.html#instance-method-view",
-    "js/lib/components/Navigation.js~Navigation#view",
+    "js/src/forum/components/texteditor.js~texteditor#getselectionrange",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-method-getSelectionRange",
+    "js/src/forum/components/TextEditor.js~TextEditor#getSelectionRange",
     "method"
   ],
   [
-    "js/lib/components/placeholder.js",
-    "file/js/lib/components/Placeholder.js.html",
-    "js/lib/components/Placeholder.js",
-    "file"
+    "js/src/forum/components/texteditor.js~texteditor#init",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-method-init",
+    "js/src/forum/components/TextEditor.js~TextEditor#init",
+    "method"
   ],
   [
-    "js/lib/components/placeholder.js~placeholder#view",
-    "class/js/lib/components/Placeholder.js~Placeholder.html#instance-method-view",
-    "js/lib/components/Placeholder.js~Placeholder#view",
+    "js/src/forum/components/texteditor.js~texteditor#insertatcursor",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-method-insertAtCursor",
+    "js/src/forum/components/TextEditor.js~TextEditor#insertAtCursor",
     "method"
   ],
   [
-    "js/lib/components/requesterrormodal.js",
-    "file/js/lib/components/RequestErrorModal.js.html",
-    "js/lib/components/RequestErrorModal.js",
-    "file"
+    "js/src/forum/components/texteditor.js~texteditor#oninput",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-method-oninput",
+    "js/src/forum/components/TextEditor.js~TextEditor#oninput",
+    "method"
   ],
   [
-    "js/lib/components/requesterrormodal.js~requesterrormodal#classname",
-    "class/js/lib/components/RequestErrorModal.js~RequestErrorModal.html#instance-method-className",
-    "js/lib/components/RequestErrorModal.js~RequestErrorModal#className",
+    "js/src/forum/components/texteditor.js~texteditor#onsubmit",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-method-onsubmit",
+    "js/src/forum/components/TextEditor.js~TextEditor#onsubmit",
     "method"
   ],
   [
-    "js/lib/components/requesterrormodal.js~requesterrormodal#content",
-    "class/js/lib/components/RequestErrorModal.js~RequestErrorModal.html#instance-method-content",
-    "js/lib/components/RequestErrorModal.js~RequestErrorModal#content",
+    "js/src/forum/components/texteditor.js~texteditor#setselectionrange",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-method-setSelectionRange",
+    "js/src/forum/components/TextEditor.js~TextEditor#setSelectionRange",
     "method"
   ],
   [
-    "js/lib/components/requesterrormodal.js~requesterrormodal#title",
-    "class/js/lib/components/RequestErrorModal.js~RequestErrorModal.html#instance-method-title",
-    "js/lib/components/RequestErrorModal.js~RequestErrorModal#title",
+    "js/src/forum/components/texteditor.js~texteditor#setvalue",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-method-setValue",
+    "js/src/forum/components/TextEditor.js~TextEditor#setValue",
     "method"
   ],
   [
-    "js/lib/components/select.js",
-    "file/js/lib/components/Select.js.html",
-    "js/lib/components/Select.js",
-    "file"
+    "js/src/forum/components/texteditor.js~texteditor#value",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-member-value",
+    "js/src/forum/components/TextEditor.js~TextEditor#value",
+    "member"
   ],
   [
-    "js/lib/components/select.js~select#view",
-    "class/js/lib/components/Select.js~Select.html#instance-method-view",
-    "js/lib/components/Select.js~Select#view",
+    "js/src/forum/components/texteditor.js~texteditor#view",
+    "class/js/src/forum/components/TextEditor.js~TextEditor.html#instance-method-view",
+    "js/src/forum/components/TextEditor.js~TextEditor#view",
     "method"
   ],
   [
-    "js/lib/components/selectdropdown.js",
-    "file/js/lib/components/SelectDropdown.js.html",
-    "js/lib/components/SelectDropdown.js",
+    "js/src/forum/components/usercard.js",
+    "file/js/src/forum/components/UserCard.js.html",
+    "js/src/forum/components/UserCard.js",
     "file"
   ],
   [
-    "js/lib/components/selectdropdown.js~selectdropdown#getbuttoncontent",
-    "class/js/lib/components/SelectDropdown.js~SelectDropdown.html#instance-method-getButtonContent",
-    "js/lib/components/SelectDropdown.js~SelectDropdown#getButtonContent",
+    "js/src/forum/components/usercard.js~usercard#infoitems",
+    "class/js/src/forum/components/UserCard.js~UserCard.html#instance-method-infoItems",
+    "js/src/forum/components/UserCard.js~UserCard#infoItems",
     "method"
   ],
   [
-    "js/lib/components/selectdropdown.js~selectdropdown.initprops",
-    "class/js/lib/components/SelectDropdown.js~SelectDropdown.html#static-method-initProps",
-    "js/lib/components/SelectDropdown.js~SelectDropdown.initProps",
+    "js/src/forum/components/usercard.js~usercard#view",
+    "class/js/src/forum/components/UserCard.js~UserCard.html#instance-method-view",
+    "js/src/forum/components/UserCard.js~UserCard#view",
     "method"
   ],
   [
-    "js/lib/components/separator.js",
-    "file/js/lib/components/Separator.js.html",
-    "js/lib/components/Separator.js",
+    "js/src/forum/components/userpage.js",
+    "file/js/src/forum/components/UserPage.js.html",
+    "js/src/forum/components/UserPage.js",
     "file"
   ],
   [
-    "js/lib/components/separator.js~separator#view",
-    "class/js/lib/components/Separator.js~Separator.html#instance-method-view",
-    "js/lib/components/Separator.js~Separator#view",
-    "method"
-  ],
-  [
-    "js/lib/components/splitdropdown.js",
-    "file/js/lib/components/SplitDropdown.js.html",
-    "js/lib/components/SplitDropdown.js",
-    "file"
+    "js/src/forum/components/userpage.js~userpage#bodyclass",
+    "class/js/src/forum/components/UserPage.js~UserPage.html#instance-member-bodyClass",
+    "js/src/forum/components/UserPage.js~UserPage#bodyClass",
+    "member"
   ],
   [
-    "js/lib/components/splitdropdown.js~splitdropdown#getbutton",
-    "class/js/lib/components/SplitDropdown.js~SplitDropdown.html#instance-method-getButton",
-    "js/lib/components/SplitDropdown.js~SplitDropdown#getButton",
+    "js/src/forum/components/userpage.js~userpage#content",
+    "class/js/src/forum/components/UserPage.js~UserPage.html#instance-method-content",
+    "js/src/forum/components/UserPage.js~UserPage#content",
     "method"
   ],
   [
-    "js/lib/components/splitdropdown.js~splitdropdown#getfirstchild",
-    "class/js/lib/components/SplitDropdown.js~SplitDropdown.html#instance-method-getFirstChild",
-    "js/lib/components/SplitDropdown.js~SplitDropdown#getFirstChild",
+    "js/src/forum/components/userpage.js~userpage#init",
+    "class/js/src/forum/components/UserPage.js~UserPage.html#instance-method-init",
+    "js/src/forum/components/UserPage.js~UserPage#init",
     "method"
   ],
   [
-    "js/lib/components/splitdropdown.js~splitdropdown.initprops",
-    "class/js/lib/components/SplitDropdown.js~SplitDropdown.html#static-method-initProps",
-    "js/lib/components/SplitDropdown.js~SplitDropdown.initProps",
+    "js/src/forum/components/userpage.js~userpage#loaduser",
+    "class/js/src/forum/components/UserPage.js~UserPage.html#instance-method-loadUser",
+    "js/src/forum/components/UserPage.js~UserPage#loadUser",
     "method"
-  ],
-  [
-    "js/lib/components/switch.js",
-    "file/js/lib/components/Switch.js.html",
-    "js/lib/components/Switch.js",
-    "file"
   ],
   [
-    "js/lib/components/switch.js~switch#getdisplay",
-    "class/js/lib/components/Switch.js~Switch.html#instance-method-getDisplay",
-    "js/lib/components/Switch.js~Switch#getDisplay",
+    "js/src/forum/components/userpage.js~userpage#navitems",
+    "class/js/src/forum/components/UserPage.js~UserPage.html#instance-method-navItems",
+    "js/src/forum/components/UserPage.js~UserPage#navItems",
     "method"
   ],
   [
-    "js/lib/components/switch.js~switch.initprops",
-    "class/js/lib/components/Switch.js~Switch.html#static-method-initProps",
-    "js/lib/components/Switch.js~Switch.initProps",
+    "js/src/forum/components/userpage.js~userpage#show",
+    "class/js/src/forum/components/UserPage.js~UserPage.html#instance-method-show",
+    "js/src/forum/components/UserPage.js~UserPage#show",
     "method"
-  ],
-  [
-    "js/lib/extend.js",
-    "file/js/lib/extend.js.html",
-    "js/lib/extend.js",
-    "file"
-  ],
-  [
-    "js/lib/helpers/avatar.js",
-    "file/js/lib/helpers/avatar.js.html",
-    "js/lib/helpers/avatar.js",
-    "file"
   ],
   [
-    "js/lib/helpers/fulltime.js",
-    "file/js/lib/helpers/fullTime.js.html",
-    "js/lib/helpers/fullTime.js",
-    "file"
-  ],
-  [
-    "js/lib/helpers/highlight.js",
-    "file/js/lib/helpers/highlight.js.html",
-    "js/lib/helpers/highlight.js",
-    "file"
-  ],
-  [
-    "js/lib/helpers/humantime.js",
-    "file/js/lib/helpers/humanTime.js.html",
-    "js/lib/helpers/humanTime.js",
-    "file"
+    "js/src/forum/components/userpage.js~userpage#sidebaritems",
+    "class/js/src/forum/components/UserPage.js~UserPage.html#instance-method-sidebarItems",
+    "js/src/forum/components/UserPage.js~UserPage#sidebarItems",
+    "method"
   ],
   [
-    "js/lib/helpers/icon.js",
-    "file/js/lib/helpers/icon.js.html",
-    "js/lib/helpers/icon.js",
-    "file"
+    "js/src/forum/components/userpage.js~userpage#user",
+    "class/js/src/forum/components/UserPage.js~UserPage.html#instance-member-user",
+    "js/src/forum/components/UserPage.js~UserPage#user",
+    "member"
   ],
   [
-    "js/lib/helpers/listitems.js",
-    "file/js/lib/helpers/listItems.js.html",
-    "js/lib/helpers/listItems.js",
-    "file"
+    "js/src/forum/components/userpage.js~userpage#view",
+    "class/js/src/forum/components/UserPage.js~UserPage.html#instance-method-view",
+    "js/src/forum/components/UserPage.js~UserPage#view",
+    "method"
   ],
   [
-    "js/lib/helpers/punctuateseries.js",
-    "file/js/lib/helpers/punctuateSeries.js.html",
-    "js/lib/helpers/punctuateSeries.js",
+    "js/src/forum/components/userssearchsource.js",
+    "file/js/src/forum/components/UsersSearchSource.js.html",
+    "js/src/forum/components/UsersSearchSource.js",
     "file"
   ],
   [
-    "js/lib/helpers/useronline.js",
-    "file/js/lib/helpers/userOnline.js.html",
-    "js/lib/helpers/userOnline.js",
-    "file"
+    "js/src/forum/components/userssearchsource.js~userssearchresults#constructor",
+    "class/js/src/forum/components/UsersSearchSource.js~UsersSearchResults.html#instance-constructor-constructor",
+    "js/src/forum/components/UsersSearchSource.js~UsersSearchResults#constructor",
+    "method"
   ],
   [
-    "js/lib/helpers/username.js",
-    "file/js/lib/helpers/username.js.html",
-    "js/lib/helpers/username.js",
-    "file"
+    "js/src/forum/components/userssearchsource.js~userssearchresults#results",
+    "class/js/src/forum/components/UsersSearchSource.js~UsersSearchResults.html#instance-member-results",
+    "js/src/forum/components/UsersSearchSource.js~UsersSearchResults#results",
+    "member"
   ],
   [
-    "js/lib/initializers/humantime.js",
-    "file/js/lib/initializers/humanTime.js.html",
-    "js/lib/initializers/humanTime.js",
-    "file"
+    "js/src/forum/components/userssearchsource.js~userssearchresults#search",
+    "class/js/src/forum/components/UsersSearchSource.js~UsersSearchResults.html#instance-method-search",
+    "js/src/forum/components/UsersSearchSource.js~UsersSearchResults#search",
+    "method"
   ],
   [
-    "js/lib/initializers/preload.js",
-    "file/js/lib/initializers/preload.js.html",
-    "js/lib/initializers/preload.js",
-    "file"
+    "js/src/forum/components/userssearchsource.js~userssearchresults#view",
+    "class/js/src/forum/components/UsersSearchSource.js~UsersSearchResults.html#instance-method-view",
+    "js/src/forum/components/UsersSearchSource.js~UsersSearchResults#view",
+    "method"
   ],
   [
-    "js/lib/initializers/store.js",
-    "file/js/lib/initializers/store.js.html",
-    "js/lib/initializers/store.js",
+    "js/src/forum/components/welcomehero.js",
+    "file/js/src/forum/components/WelcomeHero.js.html",
+    "js/src/forum/components/WelcomeHero.js",
     "file"
   ],
   [
-    "js/lib/models/discussion.js",
-    "file/js/lib/models/Discussion.js.html",
-    "js/lib/models/Discussion.js",
-    "file"
+    "js/src/forum/components/welcomehero.js~welcomehero#hidden",
+    "class/js/src/forum/components/WelcomeHero.js~WelcomeHero.html#instance-member-hidden",
+    "js/src/forum/components/WelcomeHero.js~WelcomeHero#hidden",
+    "member"
   ],
   [
-    "js/lib/models/forum.js",
-    "file/js/lib/models/Forum.js.html",
-    "js/lib/models/Forum.js",
-    "file"
+    "js/src/forum/components/welcomehero.js~welcomehero#hide",
+    "class/js/src/forum/components/WelcomeHero.js~WelcomeHero.html#instance-method-hide",
+    "js/src/forum/components/WelcomeHero.js~WelcomeHero#hide",
+    "method"
   ],
   [
-    "js/lib/models/forum.js~forum#apiendpoint",
-    "class/js/lib/models/Forum.js~Forum.html#instance-method-apiEndpoint",
-    "js/lib/models/Forum.js~Forum#apiEndpoint",
+    "js/src/forum/components/welcomehero.js~welcomehero#init",
+    "class/js/src/forum/components/WelcomeHero.js~WelcomeHero.html#instance-method-init",
+    "js/src/forum/components/WelcomeHero.js~WelcomeHero#init",
     "method"
   ],
   [
-    "js/lib/models/group.js",
-    "file/js/lib/models/Group.js.html",
-    "js/lib/models/Group.js",
-    "file"
+    "js/src/forum/components/welcomehero.js~welcomehero#view",
+    "class/js/src/forum/components/WelcomeHero.js~WelcomeHero.html#instance-method-view",
+    "js/src/forum/components/WelcomeHero.js~WelcomeHero#view",
+    "method"
   ],
   [
-    "js/lib/models/notification.js",
-    "file/js/lib/models/Notification.js.html",
-    "js/lib/models/Notification.js",
+    "js/src/forum/index.js",
+    "file/js/src/forum/index.js.html",
+    "js/src/forum/index.js",
     "file"
   ],
   [
-    "js/lib/models/post.js",
-    "file/js/lib/models/Post.js.html",
-    "js/lib/models/Post.js",
+    "js/src/forum/routes.js",
+    "file/js/src/forum/routes.js.html",
+    "js/src/forum/routes.js",
     "file"
   ],
   [
-    "js/lib/models/user.js",
-    "file/js/lib/models/User.js.html",
-    "js/lib/models/User.js",
+    "js/src/forum/utils/discussioncontrols.js",
+    "file/js/src/forum/utils/DiscussionControls.js.html",
+    "js/src/forum/utils/DiscussionControls.js",
     "file"
   ],
   [
-    "js/lib/utils/drawer.js",
-    "file/js/lib/utils/Drawer.js.html",
-    "js/lib/utils/Drawer.js",
+    "js/src/forum/utils/history.js",
+    "file/js/src/forum/utils/History.js.html",
+    "js/src/forum/utils/History.js",
     "file"
   ],
   [
-    "js/lib/utils/drawer.js~drawer#$backdrop",
-    "class/js/lib/utils/Drawer.js~Drawer.html#instance-member-$backdrop",
-    "js/lib/utils/Drawer.js~Drawer#$backdrop",
-    "member"
+    "js/src/forum/utils/history.js~history#back",
+    "class/js/src/forum/utils/History.js~History.html#instance-method-back",
+    "js/src/forum/utils/History.js~History#back",
+    "method"
   ],
   [
-    "js/lib/utils/drawer.js~drawer#constructor",
-    "class/js/lib/utils/Drawer.js~Drawer.html#instance-constructor-constructor",
-    "js/lib/utils/Drawer.js~Drawer#constructor",
+    "js/src/forum/utils/history.js~history#backurl",
+    "class/js/src/forum/utils/History.js~History.html#instance-method-backUrl",
+    "js/src/forum/utils/History.js~History#backUrl",
     "method"
   ],
   [
-    "js/lib/utils/drawer.js~drawer#hide",
-    "class/js/lib/utils/Drawer.js~Drawer.html#instance-method-hide",
-    "js/lib/utils/Drawer.js~Drawer#hide",
+    "js/src/forum/utils/history.js~history#cangoback",
+    "class/js/src/forum/utils/History.js~History.html#instance-method-canGoBack",
+    "js/src/forum/utils/History.js~History#canGoBack",
     "method"
   ],
   [
-    "js/lib/utils/drawer.js~drawer#isopen",
-    "class/js/lib/utils/Drawer.js~Drawer.html#instance-method-isOpen",
-    "js/lib/utils/Drawer.js~Drawer#isOpen",
+    "js/src/forum/utils/history.js~history#constructor",
+    "class/js/src/forum/utils/History.js~History.html#instance-constructor-constructor",
+    "js/src/forum/utils/History.js~History#constructor",
     "method"
   ],
   [
-    "js/lib/utils/drawer.js~drawer#show",
-    "class/js/lib/utils/Drawer.js~Drawer.html#instance-method-show",
-    "js/lib/utils/Drawer.js~Drawer#show",
+    "js/src/forum/utils/history.js~history#getcurrent",
+    "class/js/src/forum/utils/History.js~History.html#instance-method-getCurrent",
+    "js/src/forum/utils/History.js~History#getCurrent",
     "method"
   ],
   [
-    "js/lib/utils/itemlist.js",
-    "file/js/lib/utils/ItemList.js.html",
-    "js/lib/utils/ItemList.js",
-    "file"
+    "js/src/forum/utils/history.js~history#getprevious",
+    "class/js/src/forum/utils/History.js~History.html#instance-method-getPrevious",
+    "js/src/forum/utils/History.js~History#getPrevious",
+    "method"
   ],
   [
-    "js/lib/utils/itemlist.js~itemlist#add",
-    "class/js/lib/utils/ItemList.js~ItemList.html#instance-method-add",
-    "js/lib/utils/ItemList.js~ItemList#add",
+    "js/src/forum/utils/history.js~history#home",
+    "class/js/src/forum/utils/History.js~History.html#instance-method-home",
+    "js/src/forum/utils/History.js~History#home",
     "method"
   ],
   [
-    "js/lib/utils/itemlist.js~itemlist#constructor",
-    "class/js/lib/utils/ItemList.js~ItemList.html#instance-constructor-constructor",
-    "js/lib/utils/ItemList.js~ItemList#constructor",
+    "js/src/forum/utils/history.js~history#push",
+    "class/js/src/forum/utils/History.js~History.html#instance-method-push",
+    "js/src/forum/utils/History.js~History#push",
     "method"
   ],
   [
-    "js/lib/utils/itemlist.js~itemlist#get",
-    "class/js/lib/utils/ItemList.js~ItemList.html#instance-method-get",
-    "js/lib/utils/ItemList.js~ItemList#get",
-    "method"
+    "js/src/forum/utils/history.js~history#stack",
+    "class/js/src/forum/utils/History.js~History.html#instance-member-stack",
+    "js/src/forum/utils/History.js~History#stack",
+    "member"
   ],
   [
-    "js/lib/utils/itemlist.js~itemlist#has",
-    "class/js/lib/utils/ItemList.js~ItemList.html#instance-method-has",
-    "js/lib/utils/ItemList.js~ItemList#has",
-    "method"
+    "js/src/forum/utils/keyboardnavigatable.js",
+    "file/js/src/forum/utils/KeyboardNavigatable.js.html",
+    "js/src/forum/utils/KeyboardNavigatable.js",
+    "file"
   ],
   [
-    "js/lib/utils/itemlist.js~itemlist#isempty",
-    "class/js/lib/utils/ItemList.js~ItemList.html#instance-method-isEmpty",
-    "js/lib/utils/ItemList.js~ItemList#isEmpty",
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#bindto",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-bindTo",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#bindTo",
     "method"
   ],
   [
-    "js/lib/utils/itemlist.js~itemlist#items",
-    "class/js/lib/utils/ItemList.js~ItemList.html#instance-member-items",
-    "js/lib/utils/ItemList.js~ItemList#items",
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#callbacks",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-member-callbacks",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#callbacks",
     "member"
   ],
   [
-    "js/lib/utils/itemlist.js~itemlist#merge",
-    "class/js/lib/utils/ItemList.js~ItemList.html#instance-method-merge",
-    "js/lib/utils/ItemList.js~ItemList#merge",
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#constructor",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-constructor-constructor",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#constructor",
     "method"
   ],
   [
-    "js/lib/utils/itemlist.js~itemlist#remove",
-    "class/js/lib/utils/ItemList.js~ItemList.html#instance-method-remove",
-    "js/lib/utils/ItemList.js~ItemList#remove",
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#navigate",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-navigate",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#navigate",
     "method"
   ],
   [
-    "js/lib/utils/itemlist.js~itemlist#replace",
-    "class/js/lib/utils/ItemList.js~ItemList.html#instance-method-replace",
-    "js/lib/utils/ItemList.js~ItemList#replace",
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#oncancel",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onCancel",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#onCancel",
     "method"
   ],
   [
-    "js/lib/utils/itemlist.js~itemlist#toarray",
-    "class/js/lib/utils/ItemList.js~ItemList.html#instance-method-toArray",
-    "js/lib/utils/ItemList.js~ItemList#toArray",
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#ondown",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onDown",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#onDown",
     "method"
-  ],
-  [
-    "js/lib/utils/requesterror.js",
-    "file/js/lib/utils/RequestError.js.html",
-    "js/lib/utils/RequestError.js",
-    "file"
-  ],
-  [
-    "js/lib/utils/requesterror.js~requesterror#alert",
-    "class/js/lib/utils/RequestError.js~RequestError.html#instance-member-alert",
-    "js/lib/utils/RequestError.js~RequestError#alert",
-    "member"
   ],
   [
-    "js/lib/utils/requesterror.js~requesterror#constructor",
-    "class/js/lib/utils/RequestError.js~RequestError.html#instance-constructor-constructor",
-    "js/lib/utils/RequestError.js~RequestError#constructor",
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#onremove",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onRemove",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#onRemove",
     "method"
   ],
   [
-    "js/lib/utils/requesterror.js~requesterror#options",
-    "class/js/lib/utils/RequestError.js~RequestError.html#instance-member-options",
-    "js/lib/utils/RequestError.js~RequestError#options",
-    "member"
-  ],
-  [
-    "js/lib/utils/requesterror.js~requesterror#response",
-    "class/js/lib/utils/RequestError.js~RequestError.html#instance-member-response",
-    "js/lib/utils/RequestError.js~RequestError#response",
-    "member"
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#onselect",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onSelect",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#onSelect",
+    "method"
   ],
   [
-    "js/lib/utils/requesterror.js~requesterror#responsetext",
-    "class/js/lib/utils/RequestError.js~RequestError.html#instance-member-responseText",
-    "js/lib/utils/RequestError.js~RequestError#responseText",
-    "member"
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#onup",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onUp",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#onUp",
+    "method"
   ],
   [
-    "js/lib/utils/requesterror.js~requesterror#status",
-    "class/js/lib/utils/RequestError.js~RequestError.html#instance-member-status",
-    "js/lib/utils/RequestError.js~RequestError#status",
-    "member"
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#when",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-when",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#when",
+    "method"
   ],
   [
-    "js/lib/utils/requesterror.js~requesterror#xhr",
-    "class/js/lib/utils/RequestError.js~RequestError.html#instance-member-xhr",
-    "js/lib/utils/RequestError.js~RequestError#xhr",
+    "js/src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#whencallback",
+    "class/js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-member-whenCallback",
+    "js/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#whenCallback",
     "member"
   ],
   [
-    "js/lib/utils/scrolllistener.js",
-    "file/js/lib/utils/ScrollListener.js.html",
-    "js/lib/utils/ScrollListener.js",
+    "js/src/forum/utils/pane.js",
+    "file/js/src/forum/utils/Pane.js.html",
+    "js/src/forum/utils/Pane.js",
     "file"
-  ],
-  [
-    "js/lib/utils/scrolllistener.js~scrolllistener#active",
-    "class/js/lib/utils/ScrollListener.js~ScrollListener.html#instance-member-active",
-    "js/lib/utils/ScrollListener.js~ScrollListener#active",
-    "member"
   ],
   [
-    "js/lib/utils/scrolllistener.js~scrolllistener#callback",
-    "class/js/lib/utils/ScrollListener.js~ScrollListener.html#instance-member-callback",
-    "js/lib/utils/ScrollListener.js~ScrollListener#callback",
+    "js/src/forum/utils/pane.js~pane#$element",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-member-$element",
+    "js/src/forum/utils/Pane.js~Pane#$element",
     "member"
-  ],
-  [
-    "js/lib/utils/scrolllistener.js~scrolllistener#constructor",
-    "class/js/lib/utils/ScrollListener.js~ScrollListener.html#instance-constructor-constructor",
-    "js/lib/utils/ScrollListener.js~ScrollListener#constructor",
-    "method"
   ],
   [
-    "js/lib/utils/scrolllistener.js~scrolllistener#lasttop",
-    "class/js/lib/utils/ScrollListener.js~ScrollListener.html#instance-member-lastTop",
-    "js/lib/utils/ScrollListener.js~ScrollListener#lastTop",
+    "js/src/forum/utils/pane.js~pane#active",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-member-active",
+    "js/src/forum/utils/Pane.js~Pane#active",
     "member"
   ],
   [
-    "js/lib/utils/scrolllistener.js~scrolllistener#loop",
-    "class/js/lib/utils/ScrollListener.js~ScrollListener.html#instance-method-loop",
-    "js/lib/utils/ScrollListener.js~ScrollListener#loop",
+    "js/src/forum/utils/pane.js~pane#constructor",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-constructor-constructor",
+    "js/src/forum/utils/Pane.js~Pane#constructor",
     "method"
   ],
   [
-    "js/lib/utils/scrolllistener.js~scrolllistener#start",
-    "class/js/lib/utils/ScrollListener.js~ScrollListener.html#instance-method-start",
-    "js/lib/utils/ScrollListener.js~ScrollListener#start",
+    "js/src/forum/utils/pane.js~pane#disable",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-method-disable",
+    "js/src/forum/utils/Pane.js~Pane#disable",
     "method"
   ],
   [
-    "js/lib/utils/scrolllistener.js~scrolllistener#stop",
-    "class/js/lib/utils/ScrollListener.js~ScrollListener.html#instance-method-stop",
-    "js/lib/utils/ScrollListener.js~ScrollListener#stop",
+    "js/src/forum/utils/pane.js~pane#enable",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-method-enable",
+    "js/src/forum/utils/Pane.js~Pane#enable",
     "method"
   ],
   [
-    "js/lib/utils/scrolllistener.js~scrolllistener#update",
-    "class/js/lib/utils/ScrollListener.js~ScrollListener.html#instance-method-update",
-    "js/lib/utils/ScrollListener.js~ScrollListener#update",
+    "js/src/forum/utils/pane.js~pane#hide",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-method-hide",
+    "js/src/forum/utils/Pane.js~Pane#hide",
     "method"
-  ],
-  [
-    "js/lib/utils/subtreeretainer.js",
-    "file/js/lib/utils/SubtreeRetainer.js.html",
-    "js/lib/utils/SubtreeRetainer.js",
-    "file"
   ],
   [
-    "js/lib/utils/subtreeretainer.js~subtreeretainer#callbacks",
-    "class/js/lib/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-member-callbacks",
-    "js/lib/utils/SubtreeRetainer.js~SubtreeRetainer#callbacks",
+    "js/src/forum/utils/pane.js~pane#hidetimeout",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-member-hideTimeout",
+    "js/src/forum/utils/Pane.js~Pane#hideTimeout",
     "member"
   ],
   [
-    "js/lib/utils/subtreeretainer.js~subtreeretainer#check",
-    "class/js/lib/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-method-check",
-    "js/lib/utils/SubtreeRetainer.js~SubtreeRetainer#check",
+    "js/src/forum/utils/pane.js~pane#onmouseleave",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-method-onmouseleave",
+    "js/src/forum/utils/Pane.js~Pane#onmouseleave",
     "method"
   ],
   [
-    "js/lib/utils/subtreeretainer.js~subtreeretainer#constructor",
-    "class/js/lib/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-constructor-constructor",
-    "js/lib/utils/SubtreeRetainer.js~SubtreeRetainer#constructor",
-    "method"
+    "js/src/forum/utils/pane.js~pane#pinned",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-member-pinned",
+    "js/src/forum/utils/Pane.js~Pane#pinned",
+    "member"
   ],
   [
-    "js/lib/utils/subtreeretainer.js~subtreeretainer#data",
-    "class/js/lib/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-member-data",
-    "js/lib/utils/SubtreeRetainer.js~SubtreeRetainer#data",
+    "js/src/forum/utils/pane.js~pane#pinnedkey",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-member-pinnedKey",
+    "js/src/forum/utils/Pane.js~Pane#pinnedKey",
     "member"
   ],
   [
-    "js/lib/utils/subtreeretainer.js~subtreeretainer#invalidate",
-    "class/js/lib/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-method-invalidate",
-    "js/lib/utils/SubtreeRetainer.js~SubtreeRetainer#invalidate",
+    "js/src/forum/utils/pane.js~pane#render",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-method-render",
+    "js/src/forum/utils/Pane.js~Pane#render",
     "method"
   ],
   [
-    "js/lib/utils/subtreeretainer.js~subtreeretainer#retain",
-    "class/js/lib/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-method-retain",
-    "js/lib/utils/SubtreeRetainer.js~SubtreeRetainer#retain",
+    "js/src/forum/utils/pane.js~pane#show",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-method-show",
+    "js/src/forum/utils/Pane.js~Pane#show",
     "method"
-  ],
-  [
-    "js/lib/utils/abbreviatenumber.js",
-    "file/js/lib/utils/abbreviateNumber.js.html",
-    "js/lib/utils/abbreviateNumber.js",
-    "file"
-  ],
-  [
-    "js/lib/utils/anchorscroll.js",
-    "file/js/lib/utils/anchorScroll.js.html",
-    "js/lib/utils/anchorScroll.js",
-    "file"
-  ],
-  [
-    "js/lib/utils/classlist.js",
-    "file/js/lib/utils/classList.js.html",
-    "js/lib/utils/classList.js",
-    "file"
-  ],
-  [
-    "js/lib/utils/computed.js",
-    "file/js/lib/utils/computed.js.html",
-    "js/lib/utils/computed.js",
-    "file"
-  ],
-  [
-    "js/lib/utils/evented.js",
-    "file/js/lib/utils/evented.js.html",
-    "js/lib/utils/evented.js",
-    "file"
   ],
   [
-    "js/lib/utils/extract.js",
-    "file/js/lib/utils/extract.js.html",
-    "js/lib/utils/extract.js",
-    "file"
-  ],
-  [
-    "js/lib/utils/extracttext.js",
-    "file/js/lib/utils/extractText.js.html",
-    "js/lib/utils/extractText.js",
-    "file"
+    "js/src/forum/utils/pane.js~pane#showing",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-member-showing",
+    "js/src/forum/utils/Pane.js~Pane#showing",
+    "member"
   ],
   [
-    "js/lib/utils/formatnumber.js",
-    "file/js/lib/utils/formatNumber.js.html",
-    "js/lib/utils/formatNumber.js",
-    "file"
+    "js/src/forum/utils/pane.js~pane#togglepinned",
+    "class/js/src/forum/utils/Pane.js~Pane.html#instance-method-togglePinned",
+    "js/src/forum/utils/Pane.js~Pane#togglePinned",
+    "method"
   ],
   [
-    "js/lib/utils/humantime.js",
-    "file/js/lib/utils/humanTime.js.html",
-    "js/lib/utils/humanTime.js",
+    "js/src/forum/utils/postcontrols.js",
+    "file/js/src/forum/utils/PostControls.js.html",
+    "js/src/forum/utils/PostControls.js",
     "file"
   ],
   [
-    "js/lib/utils/maproutes.js",
-    "file/js/lib/utils/mapRoutes.js.html",
-    "js/lib/utils/mapRoutes.js",
+    "js/src/forum/utils/usercontrols.js",
+    "file/js/src/forum/utils/UserControls.js.html",
+    "js/src/forum/utils/UserControls.js",
     "file"
   ],
   [
-    "js/lib/utils/mixin.js",
-    "file/js/lib/utils/mixin.js.html",
-    "js/lib/utils/mixin.js",
+    "js/src/forum/utils/affixsidebar.js",
+    "file/js/src/forum/utils/affixSidebar.js.html",
+    "js/src/forum/utils/affixSidebar.js",
     "file"
   ],
   [
-    "js/lib/utils/patchmithril.js",
-    "file/js/lib/utils/patchMithril.js.html",
-    "js/lib/utils/patchMithril.js",
+    "js/src/forum/utils/alertemailconfirmation.js",
+    "file/js/src/forum/utils/alertEmailConfirmation.js.html",
+    "js/src/forum/utils/alertEmailConfirmation.js",
     "file"
   ],
   [
-    "js/lib/utils/string.js",
-    "file/js/lib/utils/string.js.html",
-    "js/lib/utils/string.js",
+    "js/src/forum/utils/slidable.js",
+    "file/js/src/forum/utils/slidable.js.html",
+    "js/src/forum/utils/slidable.js",
     "file"
   ],
   [
-    "js/lib/utils/stringtocolor.js",
-    "file/js/lib/utils/stringToColor.js.html",
-    "js/lib/utils/stringToColor.js",
+    "js/webpack.config.js",
+    "file/js/webpack.config.js.html",
+    "js/webpack.config.js",
     "file"
   ]
 ]

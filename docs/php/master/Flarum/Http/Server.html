@@ -90,7 +90,8 @@
     </div>
 
     <p>class
-    <strong>Server</strong></p>
+    <strong>Server</strong>        implements
+        <abbr title="Psr\Http\Server\MiddlewareInterface">MiddlewareInterface</abbr>, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></p>
 
     
     
@@ -109,7 +110,7 @@
                                     </div>
                 <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L36">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L37">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -125,7 +126,7 @@
                                     </div>
                 <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L41">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L42">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -141,7 +142,7 @@
                                     </div>
                 <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L46">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L47">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -149,14 +150,29 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type method-hint">
-                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                    
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___invoke">__invoke</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable $out)
-                                            <p class="method-description">Use as PSR-7 middleware.</p>                </div>
+                    <a class="signature" href="#method_process">process</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
+                                            <p class="method-description">Use as PSR-15 middleware.</p>                </div>
                 <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L66">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L62">
+        <img src="../../img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type method-hint">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a class="signature" href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+                                            <p class="method-description">Use as PSR-15 request handler.</p>                </div>
+                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L72">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -171,8 +187,8 @@
                     <div class="method-item">
                     <h3 id="method_fromSite">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L36">
-                at line 36
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L37">
+                at line 37
             </a>
         </div>
         <code>        static            <a href="../../Flarum/Http/Server.html"><abbr title="Flarum\Http\Server">Server</abbr></a>
@@ -209,8 +225,8 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L41">
-                at line 41
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L42">
+                at line 42
             </a>
         </div>
         <code>                    
@@ -238,8 +254,8 @@
                     <div class="method-item">
                     <h3 id="method_listen">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L46">
-                at line 46
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L47">
+                at line 47
             </a>
         </div>
         <code>                    
@@ -255,18 +271,18 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___invoke">
+                    <h3 id="method_process">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L66">
-                at line 66
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L62">
+                at line 62
             </a>
         </div>
-        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>__invoke</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable $out)</code>
+        <code>                    
+    <strong>process</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Use as PSR-7 middleware.</p>                                </div>
+                                    <p>Use as PSR-15 middleware.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -277,27 +293,44 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-                <td>$response</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>callable</td>
-                <td>$out</td>
+                <td><abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></td>
+                <td>$handler</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Server.php#L72">
+                at line 72
+            </a>
+        </div>
+        <code>                    
+    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Use as PSR-15 request handler.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
 
                     <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-            <td></td>
-        </tr>
-    </table>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
 
+            
             
             
                     </div>

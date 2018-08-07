@@ -66,11 +66,17 @@ const phpDocumentation = async () => {
   await createPHPDoc('master');
 }
 
+const args = process.argv.slice(2);
+
 const main = async () => {
-  cli.info('=> Creating Documentation: JavaScript');
-  await jsDocumentation();
-  cli.info('=> Creating Documentation: PHP');
-  await phpDocumentation();
+  if (args.includes('--javascript') || args.includes('--js')) {
+    cli.info('=> Creating Documentation: JavaScript');
+    await jsDocumentation();
+  }
+  if (args.includes('--php')) {
+    cli.info('=> Creating Documentation: PHP');
+    await phpDocumentation();
+  }
 }
 
 main();

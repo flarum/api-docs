@@ -167,7 +167,7 @@
                     {{ hint_link(property.hint) }}
                 </td>
                 <td>${{ property.name }}</td>
-                <td class="last">{{ property.shortdesc|desc(class) }}</td>
+                <td class="last">{{ property.shortdesc|desc(class)|e }}</td>
                 <td>
                     {%- if property.class is not sameas(class) -%}
                         <small>from&nbsp;{{ property_link(property, false, true) }}</small>

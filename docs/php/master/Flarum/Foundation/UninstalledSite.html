@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Forum\ForumServiceProvider | Flarum API</title>
+    <title>Flarum\Foundation\UninstalledSite | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -16,7 +16,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Forum_ForumServiceProvider" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Foundation_UninstalledSite" data-root-path="../../">
         <div id="content">
   <nav id="flarum-header">
   <h1 class="flarum-title">Flarum API</h1>
@@ -80,9 +80,9 @@
       
     <div class="page-header">
         <h1>
-            ForumServiceProvider
+            UninstalledSite
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php">
+                <a href="https://github.com/flarum/core/blob/master/src/Foundation/UninstalledSite.php">
         <img src="../../img/code.svg" height="30" />
     </a>
 
@@ -90,7 +90,8 @@
     </div>
 
     <p>class
-    <strong>ForumServiceProvider</strong>        extends <a href="../../Flarum/Foundation/AbstractServiceProvider.html"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></p>
+    <strong>UninstalledSite</strong>        implements
+        <a href="../../Flarum/Foundation/SiteInterface.html"><abbr title="Flarum\Foundation\SiteInterface">SiteInterface</abbr></a></p>
 
     
     
@@ -104,12 +105,12 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>(<a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a> $app)
+                    <a class="signature" href="#method___construct">__construct</a>($basePath, $publicPath)
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></div>
+                <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php#L26">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/UninstalledSite.php#L49">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -117,29 +118,14 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type method-hint">
-                    
+                    <a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_register">register</a>()
-                                            <p class="method-description">{@inheritdoc}</p>                </div>
+                    <a class="signature" href="#method_bootApp">bootApp</a>()
+                                            <p class="method-description">Create and boot a Flarum application instance.</p>                </div>
                 <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php#L39">
-        <img src="../../img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type method-hint">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a class="signature" href="#method_boot">boot</a>()
-                                            <p class="method-description">{@inheritdoc}</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php#L99">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/UninstalledSite.php#L60">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -154,13 +140,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                            in <a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/AbstractServiceProvider.php#L26">
-                at line 26
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/UninstalledSite.php#L49">
+                at line 49
             </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a> $app)</code>
+    <strong>__construct</strong>($basePath, $publicPath)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -168,8 +153,13 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a></td>
-                <td>$app</td>
+                <td></td>
+                <td>$basePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$publicPath</td>
                 <td></td>
             </tr>
             </table>
@@ -182,41 +172,29 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_register">
+                    <h3 id="method_bootApp">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php#L39">
-                at line 39
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/UninstalledSite.php#L60">
+                at line 60
             </a>
         </div>
-        <code>                    
-    <strong>register</strong>()</code>
+        <code>                    <a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a>
+    <strong>bootApp</strong>()</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                </div>
+                                    <p>Create and boot a Flarum application instance.</p>                                </div>
                 <div class="tags">
             
-            
-            
-                    </div>
-    </div>
+                            <h4>Return Value</h4>
 
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_boot">
-        <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php#L99">
-                at line 99
-            </a>
-        </div>
-        <code>                    
-    <strong>boot</strong>()</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                </div>
-                <div class="tags">
-            
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

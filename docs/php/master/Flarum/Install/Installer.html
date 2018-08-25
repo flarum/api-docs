@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Forum\ForumServiceProvider | Flarum API</title>
+    <title>Flarum\Install\Installer | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -16,7 +16,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Forum_ForumServiceProvider" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Install_Installer" data-root-path="../../">
         <div id="content">
   <nav id="flarum-header">
   <h1 class="flarum-title">Flarum API</h1>
@@ -80,9 +80,9 @@
       
     <div class="page-header">
         <h1>
-            ForumServiceProvider
+            Installer
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php">
+                <a href="https://github.com/flarum/core/blob/master/src/Install/Installer.php">
         <img src="../../img/code.svg" height="30" />
     </a>
 
@@ -90,7 +90,8 @@
     </div>
 
     <p>class
-    <strong>ForumServiceProvider</strong>        extends <a href="../../Flarum/Foundation/AbstractServiceProvider.html"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></p>
+    <strong>Installer</strong>        implements
+        <a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a></p>
 
     
     
@@ -104,12 +105,12 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>(<a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a> $app)
+                    <a class="signature" href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></div>
+                <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php#L26">
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Installer.php#L29">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -117,14 +118,15 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type method-hint">
-                    
+                    <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_register">register</a>()
-                                            <p class="method-description">{@inheritdoc}</p>                </div>
+                    <a class="signature" href="#method_getRequestHandler">getRequestHandler</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php#L39">
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Installer.php#L37">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -132,14 +134,15 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type method-hint">
-                    
+                    <abbr title="Symfony\Component\Console\Command\Command">Command</abbr>[]
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_boot">boot</a>()
-                                            <p class="method-description">{@inheritdoc}</p>                </div>
+                    <a class="signature" href="#method_getConsoleCommands">getConsoleCommands</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php#L99">
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Installer.php#L52">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -154,13 +157,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                            in <a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/AbstractServiceProvider.php#L26">
-                at line 26
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Installer.php#L29">
+                at line 29
             </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a> $app)</code>
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -168,8 +170,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a></td>
-                <td>$app</td>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
                 <td></td>
             </tr>
             </table>
@@ -182,20 +184,27 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_register">
+                    <h3 id="method_getRequestHandler">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php#L39">
-                at line 39
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Installer.php#L37">
+                at line 37
             </a>
         </div>
-        <code>                    
-    <strong>register</strong>()</code>
+        <code>                    <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr>
+    <strong>getRequestHandler</strong>()</code>
     </h3>
     <div class="details">
-                    <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -203,20 +212,27 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_boot">
+                    <h3 id="method_getConsoleCommands">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/ForumServiceProvider.php#L99">
-                at line 99
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Installer.php#L52">
+                at line 52
             </a>
         </div>
-        <code>                    
-    <strong>boot</strong>()</code>
+        <code>                    <abbr title="Symfony\Component\Console\Command\Command">Command</abbr>[]
+    <strong>getConsoleCommands</strong>()</code>
     </h3>
     <div class="details">
-                    <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\Command">Command</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

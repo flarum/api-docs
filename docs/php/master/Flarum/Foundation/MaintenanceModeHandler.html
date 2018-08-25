@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Extend\LanguagePack | Flarum API</title>
+    <title>Flarum\Foundation\MaintenanceModeHandler | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -16,7 +16,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Extend_LanguagePack" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Foundation_MaintenanceModeHandler" data-root-path="../../">
         <div id="content">
   <nav id="flarum-header">
   <h1 class="flarum-title">Flarum API</h1>
@@ -80,9 +80,9 @@
       
     <div class="page-header">
         <h1>
-            LanguagePack
+            MaintenanceModeHandler
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Extend/LanguagePack.php">
+                <a href="https://github.com/flarum/core/blob/master/src/Foundation/MaintenanceModeHandler.php">
         <img src="../../img/code.svg" height="30" />
     </a>
 
@@ -90,11 +90,23 @@
     </div>
 
     <p>class
-    <strong>LanguagePack</strong>        implements
-        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
+    <strong>MaintenanceModeHandler</strong>        implements
+        <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></p>
 
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>MESSAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
     
             <h2>Methods</h2>
@@ -105,12 +117,11 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___invoke">__invoke</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extension\Extension">Extension</abbr> $extension = null)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                    <a class="signature" href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+                                            <p class="method-description">Handle the request and return a response.</p>                </div>
                 <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/LanguagePack.php#L23">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/MaintenanceModeHandler.php#L28">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -123,28 +134,25 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___invoke">
+                    <h3 id="method_handle">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/LanguagePack.php#L23">
-                at line 23
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/MaintenanceModeHandler.php#L28">
+                at line 28
             </a>
         </div>
         <code>                    
-    <strong>__invoke</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extension\Extension">Extension</abbr> $extension = null)</code>
+    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Handle the request and return a response.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
-                <td>$container</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Flarum\Extension\Extension">Extension</abbr></td>
-                <td>$extension</td>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
                 <td></td>
             </tr>
             </table>

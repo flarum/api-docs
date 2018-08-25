@@ -271,25 +271,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/js/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/js/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/js/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/js/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/js/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/js/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -427,13 +427,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/page~page",
-    "class/js/src/forum/components/Page.js~Page.html",
+    "class/js/src/admin/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
   [
     "flarum/components/page~page",
-    "class/js/src/admin/components/Page.js~Page.html",
+    "class/js/src/forum/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
@@ -595,13 +595,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/js/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/js/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/js/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/js/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -4336,6 +4336,12 @@ window.esdocSearchIndex = [
     "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-bodyClass",
     "js/src/forum/components/DiscussionPage.js~DiscussionPage#bodyClass",
     "member"
+  ],
+  [
+    "js/src/forum/components/discussionpage.js~discussionpage#config",
+    "class/js/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-config",
+    "js/src/forum/components/DiscussionPage.js~DiscussionPage#config",
+    "method"
   ],
   [
     "js/src/forum/components/discussionpage.js~discussionpage#configpane",

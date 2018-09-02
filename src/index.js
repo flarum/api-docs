@@ -4,11 +4,18 @@ const cli = require('cli');
 const progressbar = require('progressbar');
 const progress = progressbar.create();
 
+const argv = require('minimist')(process.argv.slice(2));
+const branches = (argv._.length ? argv._ : ['master']);
+
 const exec = (cmd) => {
   return new Promise((resolve, reject) => {
     childProcess.exec(cmd, {
       cwd: path.resolve(__dirname, '../../'),
     }, (err, stdout, stderr) => {
+      if (argv.log) {
+        console.log(stdout);
+        console.error(stderr);
+      }
       if (err) return reject({ stdout, stderr });
       resolve(stdout);
     });
@@ -21,6 +28,7 @@ const handleError = (error) => {
   progress.finish();
   process.exit(1);
 }
+
 const createJSDoc = async (BRANCH) => {
   try {
     cli.info(`- ${BRANCH}`);
@@ -59,24 +67,24 @@ const createPHPDoc = async (BRANCH) => {
 }
 
 const jsDocumentation = async () => {
-  await createJSDoc('master');
-}
+  for (const branch of branches) {
+    await createJSDoc(branch);
+  }
+};
 
 const phpDocumentation = async () => {
-  await createPHPDoc('master');
-}
+  for (const branch of branches) {
+    await createPHPDoc(branch);
+  }
+};
 
-const args = process.argv.slice(2);
-
-const main = async () => {
-  if (args.includes('--javascript') || args.includes('--js')) {
+(async () => {
+  if (argv.javascript || argv.js) {
     cli.info('=> Creating Documentation: JavaScript');
     await jsDocumentation();
   }
-  if (args.includes('--php')) {
+  if (argv.php) {
     cli.info('=> Creating Documentation: PHP');
     await phpDocumentation();
   }
-}
-
-main();
+})();

@@ -301,13 +301,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -445,13 +445,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/page~page",
-    "class/src/admin/components/Page.js~Page.html",
+    "class/src/forum/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
   [
     "flarum/components/page~page",
-    "class/src/forum/components/Page.js~Page.html",
+    "class/src/admin/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
@@ -4716,15 +4716,15 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/discussionlistitem.js~discussionlistitem#showrepliescount",
-    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-showRepliesCount",
-    "src/forum/components/DiscussionListItem.js~DiscussionListItem#showRepliesCount",
+    "src/forum/components/discussionlistitem.js~discussionlistitem#showfirstpost",
+    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-showFirstPost",
+    "src/forum/components/DiscussionListItem.js~DiscussionListItem#showFirstPost",
     "method"
   ],
   [
-    "src/forum/components/discussionlistitem.js~discussionlistitem#showstartpost",
-    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-showStartPost",
-    "src/forum/components/DiscussionListItem.js~DiscussionListItem#showStartPost",
+    "src/forum/components/discussionlistitem.js~discussionlistitem#showrepliescount",
+    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-showRepliesCount",
+    "src/forum/components/DiscussionListItem.js~DiscussionListItem#showRepliesCount",
     "method"
   ],
   [
@@ -5016,9 +5016,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/editusermodal.js~editusermodal#isactivated",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-isActivated",
-    "src/forum/components/EditUserModal.js~EditUserModal#isActivated",
+    "src/forum/components/editusermodal.js~editusermodal#isemailconfirmed",
+    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-isEmailConfirmed",
+    "src/forum/components/EditUserModal.js~EditUserModal#isEmailConfirmed",
     "member"
   ],
   [

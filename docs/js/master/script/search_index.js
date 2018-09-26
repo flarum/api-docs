@@ -289,13 +289,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -570,12 +570,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/requesterrormodal~requesterrormodal",
-    "class/src/common/components/RequestErrorModal.js~RequestErrorModal.html",
-    "<span>RequestErrorModal</span> <span class=\"search-result-import-path\">flarum/components/RequestErrorModal</span>",
-    "class"
-  ],
-  [
     "flarum/extend/model~routes",
     "class/src/common/extend/Model.js~Routes.html",
     "<span>Routes</span> <span class=\"search-result-import-path\">flarum/extend/Model</span>",
@@ -631,13 +625,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -2334,12 +2328,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/application.js~application#showdebug",
-    "class/src/common/Application.js~Application.html#instance-method-showDebug",
-    "src/common/Application.js~Application#showDebug",
-    "method"
-  ],
-  [
     "src/common/application.js~application#store",
     "class/src/common/Application.js~Application.html#instance-member-store",
     "src/common/Application.js~Application#store",
@@ -3195,30 +3183,6 @@ window.esdocSearchIndex = [
     "src/common/components/placeholder.js~placeholder#view",
     "class/src/common/components/Placeholder.js~Placeholder.html#instance-method-view",
     "src/common/components/Placeholder.js~Placeholder#view",
-    "method"
-  ],
-  [
-    "src/common/components/requesterrormodal.js",
-    "file/src/common/components/RequestErrorModal.js.html",
-    "src/common/components/RequestErrorModal.js",
-    "file"
-  ],
-  [
-    "src/common/components/requesterrormodal.js~requesterrormodal#classname",
-    "class/src/common/components/RequestErrorModal.js~RequestErrorModal.html#instance-method-className",
-    "src/common/components/RequestErrorModal.js~RequestErrorModal#className",
-    "method"
-  ],
-  [
-    "src/common/components/requesterrormodal.js~requesterrormodal#content",
-    "class/src/common/components/RequestErrorModal.js~RequestErrorModal.html#instance-method-content",
-    "src/common/components/RequestErrorModal.js~RequestErrorModal#content",
-    "method"
-  ],
-  [
-    "src/common/components/requesterrormodal.js~requesterrormodal#title",
-    "class/src/common/components/RequestErrorModal.js~RequestErrorModal.html#instance-method-title",
-    "src/common/components/RequestErrorModal.js~RequestErrorModal#title",
     "method"
   ],
   [
@@ -5244,12 +5208,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/indexpage.js~indexpage#composenewdiscussion",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-composeNewDiscussion",
-    "src/forum/components/IndexPage.js~IndexPage#composeNewDiscussion",
-    "method"
-  ],
-  [
     "src/forum/components/indexpage.js~indexpage#config",
     "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-config",
     "src/forum/components/IndexPage.js~IndexPage#config",
@@ -5286,9 +5244,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/indexpage.js~indexpage#newdiscussion",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-newDiscussion",
-    "src/forum/components/IndexPage.js~IndexPage#newDiscussion",
+    "src/forum/components/indexpage.js~indexpage#newdiscussionaction",
+    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-newDiscussionAction",
+    "src/forum/components/IndexPage.js~IndexPage#newDiscussionAction",
     "method"
   ],
   [

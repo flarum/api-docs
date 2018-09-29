@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Extend\Compat | Flarum API</title>
+    <title>Flarum\Extend\LifecycleInterface | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -16,7 +16,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Extend_Compat" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extend_LifecycleInterface" data-root-path="../../">
         <div id="content">
   <nav id="flarum-header">
   <h1 class="flarum-title">Flarum API</h1>
@@ -80,23 +80,18 @@
       
     <div class="page-header">
         <h1>
-            Compat
+            LifecycleInterface
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Extend/Compat.php">
+                <a href="https://github.com/flarum/core/blob/master/src/Extend/LifecycleInterface.php">
         <img src="../../img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
-    <strong>Compat</strong>        implements
-        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
+    <p>interface
+    <strong>LifecycleInterface</strong></p>
 
-            <div class="description">
-            <p>This class is used to wrap old bootstrap.php closures (as used in versions up
-to 0.1.0-beta7) in the new Extender format.</p>            <p>This gives extensions the chance to work with the new API without making any
-changes, and have some time to convert to the pure usage of extenders.</p>        </div>
     
     
     
@@ -109,12 +104,12 @@ changes, and have some time to convert to the pure usage of extenders.</p>      
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>($callback)
+                    <a class="signature" href="#method_onEnable">onEnable</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extension\Extension">Extension</abbr> $extension)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Compat.php#L30">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/LifecycleInterface.php#L19">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -125,12 +120,12 @@ changes, and have some time to convert to the pure usage of extenders.</p>      
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extension\Extension">Extension</abbr> $extension = null)
+                    <a class="signature" href="#method_onDisable">onDisable</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extension\Extension">Extension</abbr> $extension)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2 method-inheritance"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Compat.php#L35">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/LifecycleInterface.php#L21">
         <img src="../../img/code.svg" height="18" />
     </a>
 
@@ -143,14 +138,14 @@ changes, and have some time to convert to the pure usage of extenders.</p>      
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_onEnable">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Compat.php#L30">
-                at line 30
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/LifecycleInterface.php#L19">
+                at line 19
             </a>
         </div>
         <code>                    
-    <strong>__construct</strong>($callback)</code>
+    <strong>onEnable</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extension\Extension">Extension</abbr> $extension)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -158,8 +153,13 @@ changes, and have some time to convert to the pure usage of extenders.</p>      
 
                     <table class="table table-condensed">
                     <tr>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
                 <td></td>
-                <td>$callback</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Extension\Extension">Extension</abbr></td>
+                <td>$extension</td>
                 <td></td>
             </tr>
             </table>
@@ -172,14 +172,14 @@ changes, and have some time to convert to the pure usage of extenders.</p>      
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_extend">
+                    <h3 id="method_onDisable">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Compat.php#L35">
-                at line 35
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/LifecycleInterface.php#L21">
+                at line 21
             </a>
         </div>
         <code>                    
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extension\Extension">Extension</abbr> $extension = null)</code>
+    <strong>onDisable</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extension\Extension">Extension</abbr> $extension)</code>
     </h3>
     <div class="details">
                 <div class="tags">

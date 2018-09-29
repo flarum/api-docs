@@ -30,7 +30,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|jpg|gif)$/i,
+                test: /\.(png|jpg|gif|svg)$/i,
                 use: [
                     {
                         loader: 'url-loader',
@@ -44,12 +44,24 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(|woff|woff2|eot|ttf|svg)$/i,
+                test: /\.(|woff|woff2|eot|ttf)$/i,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[path][name].[ext]',
+                            name: 'fonts/[name].[ext]',
+                            context: 'src',
+                        }
+                    }
+                ]
+            },
+            {
+                test: /webfonts\/(.+?)\.svg$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'fonts/[name].[ext]',
                             context: 'src',
                         }
                     }

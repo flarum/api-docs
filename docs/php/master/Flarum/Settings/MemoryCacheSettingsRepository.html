@@ -5,177 +5,221 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Settings\MemoryCacheSettingsRepository | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Settings_MemoryCacheSettingsRepository" data-root-path="../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../classes.html">Classes</a></li>
 
-                <li><a href="../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../traits.html">Traits</a></li>
-        <li><a href="../../doc-index.html">Index</a></li>
-        <li><a href="../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             MemoryCacheSettingsRepository
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php">
-        <img src="../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class
     <strong>MemoryCacheSettingsRepository</strong>        implements
         <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></p>
 
+        
+    
+
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_inner">
+                                        protected                                        
+                </td>
+                <td>$inner</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L16" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isCached">
+                                        protected                                        
+                </td>
+                <td>$isCached</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L18" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cache">
+                                        protected                                        
+                </td>
+                <td>$cache</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L20" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $inner)
+                    <a href="#method___construct">__construct</a>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $inner)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L22">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L22" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_all">all</a>()
+                    <a href="#method_all">all</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L27">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_get">get</a>($key, $default = null)
+                    <a href="#method_get">get</a>($key, $default = null)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L37">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L37" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_set">set</a>($key, $value)
+                    <a href="#method_set">set</a>($key, $value)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L48">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L48" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_delete">delete</a>($key)
+                    <a href="#method_delete">delete</a>($key)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L55">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L55" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -189,14 +233,18 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L22">
-                at line 22
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L22" target="_blank">
+            line 22
+        </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $inner)</code>
+    <strong>__construct</strong>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $inner)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -218,14 +266,18 @@
                     <div class="method-item">
                     <h3 id="method_all">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L27">
-                at line 27
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L27" target="_blank">
+            line 27
+        </a>
         </div>
         <code>                    
-    <strong>all</strong>()</code>
+    <strong>all</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
             
@@ -237,14 +289,18 @@
                     <div class="method-item">
                     <h3 id="method_get">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L37">
-                at line 37
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L37" target="_blank">
+            line 37
+        </a>
         </div>
         <code>                    
-    <strong>get</strong>($key, $default = null)</code>
+    <strong>get</strong>($key, $default = null)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -271,14 +327,18 @@
                     <div class="method-item">
                     <h3 id="method_set">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L48">
-                at line 48
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L48" target="_blank">
+            line 48
+        </a>
         </div>
         <code>                    
-    <strong>set</strong>($key, $value)</code>
+    <strong>set</strong>($key, $value)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -305,14 +365,18 @@
                     <div class="method-item">
                     <h3 id="method_delete">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L55">
-                at line 55
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Settings/MemoryCacheSettingsRepository.php#L55" target="_blank">
+            line 55
+        </a>
         </div>
         <code>                    
-    <strong>delete</strong>($key)</code>
+    <strong>delete</strong>($key)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -334,13 +398,14 @@
             </div>
 
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

@@ -5,85 +5,79 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\User | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/sami.css">
-        <script src="../js/jquery-1.11.1.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-        <script src="../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../assets/app.min.css">
+        <script src="../assets/app.min.js"></script>
         <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="namespace" data-name="namespace:Flarum_User" data-root-path="../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../classes.html">Classes</a></li>
 
-                <li><a href="../namespaces.html">Namespaces</a></li>
-                <li><a href="../interfaces.html">Interfaces</a></li>
-        <li><a href="../traits.html">Traits</a></li>
-        <li><a href="../doc-index.html">Index</a></li>
-        <li><a href="../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             Flarum\User
             &nbsp;
-                <a href="https://github.com/flarum/core/tree/master/src/User">
-        <img src="../img/code.svg"  />
+                <a href="https://github.com/flarum/core/tree/master/src/User" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
         </h1>
@@ -94,255 +88,289 @@
             <a href="../Flarum/User/Command.html">Flarum\User\Command</a><a href="../Flarum/User/Event.html">Flarum\User\Event</a><a href="../Flarum/User/Exception.html">Flarum\User\Exception</a><a href="../Flarum/User/Search.html">Flarum\User\Search</a>        </div>
     
             <h2>Classes</h2>
-        <div class="container-fluid underlined">
+        
+    <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/AbstractPolicy.html"><abbr title="Flarum\User\AbstractPolicy">Flarum\User\AbstractPolicy</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/AbstractPolicy.html"><abbr title="Flarum\User\AbstractPolicy">AbstractPolicy</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/AbstractPolicy.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/AbstractPolicy.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/AssertPermissionTrait.html"><abbr title="Flarum\User\AssertPermissionTrait">Flarum\User\AssertPermissionTrait</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/AssertPermissionTrait.html"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/AssertPermissionTrait.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/AssertPermissionTrait.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/AvatarUploader.html"><abbr title="Flarum\User\AvatarUploader">Flarum\User\AvatarUploader</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/AvatarUploader.html"><abbr title="Flarum\User\AvatarUploader">AvatarUploader</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/AvatarUploader.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/AvatarUploader.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/AvatarValidator.html"><abbr title="Flarum\User\AvatarValidator">Flarum\User\AvatarValidator</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/AvatarValidator.html"><abbr title="Flarum\User\AvatarValidator">AvatarValidator</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/AvatarValidator.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/AvatarValidator.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/EmailConfirmationMailer.html"><abbr title="Flarum\User\EmailConfirmationMailer">Flarum\User\EmailConfirmationMailer</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/EmailConfirmationMailer.html"><abbr title="Flarum\User\EmailConfirmationMailer">EmailConfirmationMailer</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/EmailConfirmationMailer.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/EmailConfirmationMailer.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/EmailToken.html"><abbr title="Flarum\User\EmailToken">Flarum\User\EmailToken</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/EmailToken.html"><abbr title="Flarum\User\EmailToken">EmailToken</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/EmailToken.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/EmailToken.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/Gate.html"><abbr title="Flarum\User\Gate">Flarum\User\Gate</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/Gate.html"><abbr title="Flarum\User\Gate">Gate</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/Gate.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/Gate.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/Guest.html"><abbr title="Flarum\User\Guest">Flarum\User\Guest</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/Guest.html"><abbr title="Flarum\User\Guest">Guest</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/Guest.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/Guest.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/PasswordToken.html"><abbr title="Flarum\User\PasswordToken">Flarum\User\PasswordToken</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/LoginProvider.html"><abbr title="Flarum\User\LoginProvider">LoginProvider</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/PasswordToken.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/LoginProvider.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/RegistrationToken.html"><abbr title="Flarum\User\RegistrationToken">Flarum\User\RegistrationToken</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/PasswordToken.html"><abbr title="Flarum\User\PasswordToken">PasswordToken</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/RegistrationToken.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/PasswordToken.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/SelfDemotionGuard.html"><abbr title="Flarum\User\SelfDemotionGuard">Flarum\User\SelfDemotionGuard</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/RegistrationToken.html"><abbr title="Flarum\User\RegistrationToken">RegistrationToken</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/SelfDemotionGuard.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/RegistrationToken.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/SessionServiceProvider.html"><abbr title="Flarum\User\SessionServiceProvider">Flarum\User\SessionServiceProvider</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/SelfDemotionGuard.html"><abbr title="Flarum\User\SelfDemotionGuard">SelfDemotionGuard</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/SessionServiceProvider.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/SelfDemotionGuard.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/User.html"><abbr title="Flarum\User\User">Flarum\User\User</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/SessionServiceProvider.html"><abbr title="Flarum\User\SessionServiceProvider">SessionServiceProvider</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/User.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/SessionServiceProvider.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/UserMetadataUpdater.html"><abbr title="Flarum\User\UserMetadataUpdater">Flarum\User\UserMetadataUpdater</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/UserMetadataUpdater.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/User.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/UserPolicy.html"><abbr title="Flarum\User\UserPolicy">Flarum\User\UserPolicy</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/UserMetadataUpdater.html"><abbr title="Flarum\User\UserMetadataUpdater">UserMetadataUpdater</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/UserPolicy.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/UserMetadataUpdater.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/UserRepository.html"><abbr title="Flarum\User\UserRepository">Flarum\User\UserRepository</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/UserPolicy.html"><abbr title="Flarum\User\UserPolicy">UserPolicy</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/UserRepository.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/UserPolicy.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/UserServiceProvider.html"><abbr title="Flarum\User\UserServiceProvider">Flarum\User\UserServiceProvider</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/UserRepository.html"><abbr title="Flarum\User\UserRepository">UserRepository</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/UserServiceProvider.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/UserRepository.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/User/UserValidator.html"><abbr title="Flarum\User\UserValidator">Flarum\User\UserValidator</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/User/UserServiceProvider.html"><abbr title="Flarum\User\UserServiceProvider">UserServiceProvider</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/UserValidator.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/UserServiceProvider.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Flarum/User/UserValidator.html"><abbr title="Flarum\User\UserValidator">UserValidator</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/core/blob/master/src/User/UserValidator.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
@@ -351,13 +379,14 @@
     
     
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

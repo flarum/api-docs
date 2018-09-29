@@ -1,40 +1,58 @@
 {% macro namespace_link(namespace) -%}
-    <a href="{{ namespace_path(namespace) }}">{{ namespace }}</a>
+    <a href="{{ namespace_path(namespace) }}">{{ namespace|raw }}</a>
 {%- endmacro %}
 
 {% macro class_link(class, absolute) -%}
     {%- if class.projectclass -%}
         <a href="{{ class_path(class) }}">
     {%- elseif class.phpclass -%}
-        <a href="http://php.net/{{ class }}">
+        <a target="_blank" href="http://php.net/{{ class|raw }}">
     {%- endif %}
-    {{- _self.abbr_class(class, absolute|default(false)) }}
+    {{- abbr_class(class, absolute|default(false)) }}
     {%- if class.projectclass or class.phpclass %}</a>{% endif %}
 {%- endmacro %}
 
 {% macro method_link(method, absolute, classonly) -%}
     <a href="{{ method_path(method) }}">
-        {{- _self.abbr_class(method.class) }}{% if not classonly|default(false) %}::{{ method.name }}{% endif -%}
+        {{- abbr_class(method.class) }}{% if not classonly|default(false) %}::{{ method.name|raw }}{% endif -%}
     </a>
 {%- endmacro %}
 
 {% macro property_link(property, absolute, classonly) -%}
     <a href="{{ property_path(property) }}">
-        {{- _self.abbr_class(property.class) }}{% if not classonly|default(true) %}#{{ property.name }}{% endif -%}
+        {{- abbr_class(property.class) }}{% if not classonly|default(false) %}#{{ property.name|raw }}{% endif -%}
     </a>
 {%- endmacro %}
 
 {% macro hint_link(hints) -%}
-    {% if hints %}
+    {%- from _self import class_link %}
+
+    {%- if hints %}
         {%- for hint in hints %}
             {%- if hint.class %}
-                {{- _self.class_link(hint.name) }}
+                {{- class_link(hint.name) }}
             {%- elseif hint.name %}
                 {{- abbr_class(hint.name) }}
             {%- endif %}
             {%- if hint.array %}[]{% endif %}
             {%- if not loop.last %}|{% endif %}
         {%- endfor %}
+    {%- endif %}
+{%- endmacro %}
+
+{% macro source_link(project, class) -%}
+    {% if class.sourcepath %}
+        (<a href="{{ class.sourcepath }}">View source</a>)
+    {%- endif %}
+{%- endmacro %}
+
+{% macro method_source_link(method) -%}
+    {% if method.sourcepath %}
+        <a href="https://github.com/flarum/core/blob/{{ project.version }}/src/{{ method.class.name|split('\\')|slice(1)|join('/') }}.php#L{{ method.line }}" target="_blank">
+            line {{ method.line|raw }}
+        </a>
+    {%- else %}
+        line {{ method.line|raw }}
     {%- endif %}
 {%- endmacro %}
 
@@ -47,29 +65,32 @@
     (
         {%- for parameter in method.parameters %}
             {%- if parameter.hashint %}{{ hint_link(parameter.hint) }} {% endif -%}
-            ${{ parameter.name }}
-            {%- if parameter.default %} = {{ parameter.default }}{% endif %}
+            {%- if parameter.variadic %}...{% endif %}${{ parameter.name|raw }}
+            {%- if parameter.default is not null %} = {{ parameter.default }}{% endif %}
             {%- if not loop.last %}, {% endif %}
         {%- endfor -%}
     )
 {%- endmacro %}
 
 {% macro render_classes(classes) -%}
+    {% from _self import class_link, deprecated, github_link %}
+
     <div class="container-fluid underlined">
         {% for class in classes %}
             <div class="row">
                 <div class="col-md-6">
                     {% if class.isInterface %}
-                        <em>{{ _self.class_link(class, true) }}</em>
+                        <em>{{ class_link(class, true) }}</em>
                     {% else %}
-                        {{ _self.class_link(class, true) }}
+                        {{ class_link(class, true) }}
                     {% endif %}
+                    {{ deprecated(class) }}
                 </div>
                 <div class="col-md-5">
                     {{ class.shortdesc|desc(class) }}
                 </div>
                 <div class="col-md-1 text-right">
-                    {{ _self.github_link(class.name) }}
+                    {{ github_link(class.name) }}
                 </div>
             </div>
         {% endfor %}
@@ -79,17 +100,58 @@
 {% macro breadcrumbs(namespace) %}
     {% set current_ns = '' %}
     {% for ns in namespace|split('\\') %}
-        {% if current_ns %}
+        {%- if current_ns -%}
             {% set current_ns = current_ns ~ '\\' ~ ns %}
-        {% else %}
+        {%- else -%}
             {% set current_ns = ns %}
-        {% endif %}
-        <li><a href="{{ namespace_path(current_ns) }}">{{ ns }}</a></li>
-    {% endfor %}
+        {%- endif -%}
+        <li><a href="{{ namespace_path(current_ns) }}">{{ ns|raw }}</a></li><li class="backslash">\</li>
+    {%- endfor %}
 {% endmacro %}
 
+{% macro deprecated(reflection) %}
+    {% if reflection.deprecated %}<small><sup><span class="label label-danger">deprecated</span></sup></small>{% endif %}
+{% endmacro %}
+
+{% macro deprecations(reflection) %}
+    {% from _self import deprecated %}
+
+    {% if reflection.deprecated %}
+        <p>
+            {{ deprecated(reflection )}}
+            {% for tag in reflection.deprecated %}
+                <tr>
+                    <td>{{ tag[0]|raw }}</td>
+                    <td>{{ tag[1:]|join(' ')|raw }}</td>
+                </tr>
+            {% endfor %}
+        </p>
+    {% endif %}
+{% endmacro %}
+
+{% macro todo(reflection) %}
+        {% if reflection.todo %}<small><sup><span class="label label-info">todo</span></sup></small>{% endif %}
+{% endmacro %}
+
+{% macro todos(reflection) %}
+        {% from _self import todo %}
+
+        {% if reflection.todo %}
+            <p>
+                {{ todo(reflection )}}
+                {% for tag in reflection.todo %}
+                    <tr>
+                        <td>{{ tag[0]|raw }}</td>
+                        <td>{{ tag[1:]|join(' ')|raw }}</td>
+                        </tr>
+                {% endfor %}
+            </p>
+        {% endif %}
+{% endmacro %}
+
+
 {% macro github_link(name, line, height, tree) %}
-    <a href="https://github.com/flarum/core/{% if tree %}tree{% else %}blob{% endif %}/{{ project.version }}/src/{{ name|split('\\')|slice(1)|join('/') }}{% if tree != true %}.php{% if line %}#L{{ line }}{% endif %}{% endif %}">
-        <img src="{{ path('img/code.svg') }}" {% if height %}height="{{ height }}"{% endif %} />
+    <a href="https://github.com/flarum/core/{% if tree %}tree{% else %}blob{% endif %}/{{ project.version }}/src/{{ name|split('\\')|slice(1)|join('/') }}{% if tree != true %}.php{% if line %}#L{{ line }}{% endif %}{% endif %}" target="_blank">
+        <img src="{{ path('assets/img/code.svg') }}" {% if height %}height="{{ height }}"{% endif %} />
     </a>
 {% endmacro %}

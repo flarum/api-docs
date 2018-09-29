@@ -5,193 +5,284 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Install\Console\UserDataProvider | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Install_Console_UserDataProvider" data-root-path="../../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../../../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../../classes.html">Classes</a></li>
 
-                <li><a href="../../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../../traits.html">Traits</a></li>
-        <li><a href="../../../doc-index.html">Index</a></li>
-        <li><a href="../../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             UserDataProvider
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php">
-        <img src="../../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class
     <strong>UserDataProvider</strong>        implements
         <a href="../../../Flarum/Install/Console/DataProviderInterface.html"><abbr title="Flarum\Install\Console\DataProviderInterface">DataProviderInterface</abbr></a></p>
 
+        
+    
+
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_input">
+                                        protected                                        
+                </td>
+                <td>$input</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L21" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_output">
+                                        protected                                        
+                </td>
+                <td>$output</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L23" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_questionHelper">
+                                        protected                                        
+                </td>
+                <td>$questionHelper</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L25" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_baseUrl">
+                                        protected                                        
+                </td>
+                <td>$baseUrl</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L27" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, <abbr title="Symfony\Component\Console\Helper\QuestionHelper">QuestionHelper</abbr> $questionHelper)
+                    <a href="#method___construct">__construct</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, <abbr title="Symfony\Component\Console\Helper\QuestionHelper">QuestionHelper</abbr> $questionHelper)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L29">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L29" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getDatabaseConfiguration">getDatabaseConfiguration</a>()
+                    <a href="#method_getDatabaseConfiguration">getDatabaseConfiguration</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L36">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L36" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getBaseUrl">getBaseUrl</a>()
+                    <a href="#method_getBaseUrl">getBaseUrl</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L56">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L56" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getAdminUser">getAdminUser</a>()
+                    <a href="#method_getAdminUser">getAdminUser</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L61">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L61" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getSettings">getSettings</a>()
+                    <a href="#method_getSettings">getSettings</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L71">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L71" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_isDebugMode">isDebugMode</a>()
+                    <a href="#method_ask">ask</a>($question, $default = null)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L113">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L97" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_secret">secret</a>($question)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L104" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_isDebugMode">isDebugMode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L113" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -205,14 +296,18 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L29">
-                at line 29
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L29" target="_blank">
+            line 29
+        </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, <abbr title="Symfony\Component\Console\Helper\QuestionHelper">QuestionHelper</abbr> $questionHelper)</code>
+    <strong>__construct</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, <abbr title="Symfony\Component\Console\Helper\QuestionHelper">QuestionHelper</abbr> $questionHelper)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -244,14 +339,18 @@
                     <div class="method-item">
                     <h3 id="method_getDatabaseConfiguration">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L36">
-                at line 36
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L36" target="_blank">
+            line 36
+        </a>
         </div>
         <code>                    
-    <strong>getDatabaseConfiguration</strong>()</code>
+    <strong>getDatabaseConfiguration</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
             
@@ -263,14 +362,18 @@
                     <div class="method-item">
                     <h3 id="method_getBaseUrl">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L56">
-                at line 56
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L56" target="_blank">
+            line 56
+        </a>
         </div>
         <code>                    
-    <strong>getBaseUrl</strong>()</code>
+    <strong>getBaseUrl</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
             
@@ -282,14 +385,18 @@
                     <div class="method-item">
                     <h3 id="method_getAdminUser">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L61">
-                at line 61
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L61" target="_blank">
+            line 61
+        </a>
         </div>
         <code>                    
-    <strong>getAdminUser</strong>()</code>
+    <strong>getAdminUser</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
             
@@ -301,15 +408,90 @@
                     <div class="method-item">
                     <h3 id="method_getSettings">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L71">
-                at line 71
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L71" target="_blank">
+            line 71
+        </a>
         </div>
         <code>                    
-    <strong>getSettings</strong>()</code>
+    <strong>getSettings</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ask">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L97" target="_blank">
+            line 97
+        </a>
+        </div>
+        <code>            protected        
+    <strong>ask</strong>($question, $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$question</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_secret">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L104" target="_blank">
+            line 104
+        </a>
+        </div>
+        <code>            protected        
+    <strong>secret</strong>($question)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$question</td>
+                <td></td>
+            </tr>
+            </table>
+
             
             
             
@@ -320,16 +502,29 @@
                     <div class="method-item">
                     <h3 id="method_isDebugMode">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L113">
-                at line 113
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Install/Console/UserDataProvider.php#L113" target="_blank">
+            line 113
+        </a>
         </div>
-        <code>                    
-    <strong>isDebugMode</strong>()</code>
+        <code>                    bool
+    <strong>isDebugMode</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -339,13 +534,14 @@
             </div>
 
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

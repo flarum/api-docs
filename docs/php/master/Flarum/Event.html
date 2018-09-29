@@ -5,85 +5,79 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Event | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/sami.css">
-        <script src="../js/jquery-1.11.1.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-        <script src="../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../assets/app.min.css">
+        <script src="../assets/app.min.js"></script>
         <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="namespace" data-name="namespace:Flarum_Event" data-root-path="../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../classes.html">Classes</a></li>
 
-                <li><a href="../namespaces.html">Namespaces</a></li>
-                <li><a href="../interfaces.html">Interfaces</a></li>
-        <li><a href="../traits.html">Traits</a></li>
-        <li><a href="../doc-index.html">Index</a></li>
-        <li><a href="../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             Flarum\Event
             &nbsp;
-                <a href="https://github.com/flarum/core/tree/master/src/Event">
-        <img src="../img/code.svg"  />
+                <a href="https://github.com/flarum/core/tree/master/src/Event" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
         </h1>
@@ -91,300 +85,322 @@
 
     
             <h2>Classes</h2>
-        <div class="container-fluid underlined">
+        
+    <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/AbstractConfigureGambits.html"><abbr title="Flarum\Event\AbstractConfigureGambits">Flarum\Event\AbstractConfigureGambits</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/AbstractConfigureGambits.html"><abbr title="Flarum\Event\AbstractConfigureGambits">AbstractConfigureGambits</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/AbstractConfigureGambits.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/AbstractConfigureGambits.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/AbstractConfigureRoutes.html"><abbr title="Flarum\Event\AbstractConfigureRoutes">Flarum\Event\AbstractConfigureRoutes</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/AbstractConfigureRoutes.html"><abbr title="Flarum\Event\AbstractConfigureRoutes">AbstractConfigureRoutes</abbr></a>
+                                            <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/AbstractConfigureRoutes.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/AbstractConfigureRoutes.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigureApiRoutes.html"><abbr title="Flarum\Event\ConfigureApiRoutes">Flarum\Event\ConfigureApiRoutes</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigureApiRoutes.html"><abbr title="Flarum\Event\ConfigureApiRoutes">ConfigureApiRoutes</abbr></a>
+                                            <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureApiRoutes.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureApiRoutes.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigureDiscussionGambits.html"><abbr title="Flarum\Event\ConfigureDiscussionGambits">Flarum\Event\ConfigureDiscussionGambits</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigureDiscussionGambits.html"><abbr title="Flarum\Event\ConfigureDiscussionGambits">ConfigureDiscussionGambits</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureDiscussionGambits.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureDiscussionGambits.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigureForumRoutes.html"><abbr title="Flarum\Event\ConfigureForumRoutes">Flarum\Event\ConfigureForumRoutes</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigureForumRoutes.html"><abbr title="Flarum\Event\ConfigureForumRoutes">ConfigureForumRoutes</abbr></a>
+                                            <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureForumRoutes.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureForumRoutes.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigureLocales.html"><abbr title="Flarum\Event\ConfigureLocales">Flarum\Event\ConfigureLocales</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigureLocales.html"><abbr title="Flarum\Event\ConfigureLocales">ConfigureLocales</abbr></a>
+                                            <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureLocales.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureLocales.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigureMiddleware.html"><abbr title="Flarum\Event\ConfigureMiddleware">Flarum\Event\ConfigureMiddleware</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigureMiddleware.html"><abbr title="Flarum\Event\ConfigureMiddleware">ConfigureMiddleware</abbr></a>
+                                            <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureMiddleware.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureMiddleware.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigureModelDates.html"><abbr title="Flarum\Event\ConfigureModelDates">Flarum\Event\ConfigureModelDates</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigureModelDates.html"><abbr title="Flarum\Event\ConfigureModelDates">ConfigureModelDates</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     The <code>ConfigureModelDates</code> event is called to retrieve a list of fields for a model
 that should be converted into date objects.
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureModelDates.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureModelDates.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigureModelDefaultAttributes.html"><abbr title="Flarum\Event\ConfigureModelDefaultAttributes">Flarum\Event\ConfigureModelDefaultAttributes</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigureModelDefaultAttributes.html"><abbr title="Flarum\Event\ConfigureModelDefaultAttributes">ConfigureModelDefaultAttributes</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureModelDefaultAttributes.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureModelDefaultAttributes.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigureNotificationTypes.html"><abbr title="Flarum\Event\ConfigureNotificationTypes">Flarum\Event\ConfigureNotificationTypes</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigureNotificationTypes.html"><abbr title="Flarum\Event\ConfigureNotificationTypes">ConfigureNotificationTypes</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureNotificationTypes.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureNotificationTypes.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigurePostTypes.html"><abbr title="Flarum\Event\ConfigurePostTypes">Flarum\Event\ConfigurePostTypes</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigurePostTypes.html"><abbr title="Flarum\Event\ConfigurePostTypes">ConfigurePostTypes</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigurePostTypes.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigurePostTypes.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigurePostsQuery.html"><abbr title="Flarum\Event\ConfigurePostsQuery">Flarum\Event\ConfigurePostsQuery</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigurePostsQuery.html"><abbr title="Flarum\Event\ConfigurePostsQuery">ConfigurePostsQuery</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigurePostsQuery.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigurePostsQuery.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigureUserGambits.html"><abbr title="Flarum\Event\ConfigureUserGambits">Flarum\Event\ConfigureUserGambits</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigureUserGambits.html"><abbr title="Flarum\Event\ConfigureUserGambits">ConfigureUserGambits</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureUserGambits.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureUserGambits.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ConfigureUserPreferences.html"><abbr title="Flarum\Event\ConfigureUserPreferences">Flarum\Event\ConfigureUserPreferences</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ConfigureUserPreferences.html"><abbr title="Flarum\Event\ConfigureUserPreferences">ConfigureUserPreferences</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureUserPreferences.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ConfigureUserPreferences.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/GetApiRelationship.html"><abbr title="Flarum\Event\GetApiRelationship">Flarum\Event\GetApiRelationship</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/GetApiRelationship.html"><abbr title="Flarum\Event\GetApiRelationship">GetApiRelationship</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     Get an API serializer relationship.
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/GetApiRelationship.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/GetApiRelationship.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/GetDisplayName.html"><abbr title="Flarum\Event\GetDisplayName">Flarum\Event\GetDisplayName</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/GetDisplayName.html"><abbr title="Flarum\Event\GetDisplayName">GetDisplayName</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/GetDisplayName.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/GetDisplayName.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/GetModelIsPrivate.html"><abbr title="Flarum\Event\GetModelIsPrivate">Flarum\Event\GetModelIsPrivate</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/GetModelIsPrivate.html"><abbr title="Flarum\Event\GetModelIsPrivate">GetModelIsPrivate</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     Determine whether or not a model should be marked as <code>is_private</code>.
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/GetModelIsPrivate.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/GetModelIsPrivate.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/GetModelRelationship.html"><abbr title="Flarum\Event\GetModelRelationship">Flarum\Event\GetModelRelationship</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/GetModelRelationship.html"><abbr title="Flarum\Event\GetModelRelationship">GetModelRelationship</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     The <code>GetModelRelationship</code> event is called to retrieve Relation object for a
 model. Listeners should return an Eloquent Relation object.
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/GetModelRelationship.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/GetModelRelationship.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/GetPermission.html"><abbr title="Flarum\Event\GetPermission">Flarum\Event\GetPermission</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/GetPermission.html"><abbr title="Flarum\Event\GetPermission">GetPermission</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/GetPermission.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/GetPermission.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/PrepareUserGroups.html"><abbr title="Flarum\Event\PrepareUserGroups">Flarum\Event\PrepareUserGroups</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/PrepareUserGroups.html"><abbr title="Flarum\Event\PrepareUserGroups">PrepareUserGroups</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     The <code>PrepareUserGroups</code> event.
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/PrepareUserGroups.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/PrepareUserGroups.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Event/ScopeModelVisibility.html"><abbr title="Flarum\Event\ScopeModelVisibility">Flarum\Event\ScopeModelVisibility</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Event/ScopeModelVisibility.html"><abbr title="Flarum\Event\ScopeModelVisibility">ScopeModelVisibility</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     The <code>ScopeModelVisibility</code> event allows constraints to be applied in a query
 to fetch a model, effectively scoping that model's visibility to the user.
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Event/ScopeModelVisibility.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Event/ScopeModelVisibility.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
@@ -393,13 +409,14 @@ to fetch a model, effectively scoping that model's visibility to the user.
     
     
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

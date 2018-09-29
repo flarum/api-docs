@@ -5,92 +5,90 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Notification\NotificationRepository | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Notification_NotificationRepository" data-root-path="../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../classes.html">Classes</a></li>
 
-                <li><a href="../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../traits.html">Traits</a></li>
-        <li><a href="../../doc-index.html">Index</a></li>
-        <li><a href="../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             NotificationRepository
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Notification/NotificationRepository.php">
-        <img src="../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/master/src/Notification/NotificationRepository.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class
     <strong>NotificationRepository</strong></p>
+
+        
+    
 
     
     
@@ -98,33 +96,35 @@
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_findByUser">findByUser</a>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user, int|null $limit = null, int $offset)
-                                            <p class="method-description">Find a user's notifications.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_findByUser">findByUser</a>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user, int|null $limit = null, int $offset = 0)
+        
+                                            <p>Find a user&#039;s notifications.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/NotificationRepository.php#L27">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Notification/NotificationRepository.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_markAllAsRead">markAllAsRead</a>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
-                                            <p class="method-description">Mark all of a user's notifications as read.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_markAllAsRead">markAllAsRead</a>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
+        
+                                            <p>Mark all of a user&#039;s notifications as read.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/NotificationRepository.php#L55">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Notification/NotificationRepository.php#L55" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -138,16 +138,20 @@
                     <div class="method-item">
                     <h3 id="method_findByUser">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/NotificationRepository.php#L27">
-                at line 27
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Notification/NotificationRepository.php#L27" target="_blank">
+            line 27
+        </a>
         </div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
-    <strong>findByUser</strong>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user, int|null $limit = null, int $offset)</code>
+    <strong>findByUser</strong>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user, int|null $limit = null, int $offset = 0)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Find a user's notifications.</p>                                </div>
+                                    <p>Find a user&#039;s notifications.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -188,16 +192,20 @@
                     <div class="method-item">
                     <h3 id="method_markAllAsRead">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/NotificationRepository.php#L55">
-                at line 55
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Notification/NotificationRepository.php#L55" target="_blank">
+            line 55
+        </a>
         </div>
         <code>                    void
-    <strong>markAllAsRead</strong>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)</code>
+    <strong>markAllAsRead</strong>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Mark all of a user's notifications as read.</p>                                </div>
+                                    <p>Mark all of a user&#039;s notifications as read.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -228,13 +236,14 @@
             </div>
 
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

@@ -5,107 +5,107 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Api\Controller\UninstallExtensionController | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Api_Controller_UninstallExtensionController" data-root-path="../../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../../../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../../classes.html">Classes</a></li>
 
-                <li><a href="../../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../../traits.html">Traits</a></li>
-        <li><a href="../../../doc-index.html">Index</a></li>
-        <li><a href="../../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             UninstallExtensionController
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php">
-        <img src="../../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class
     <strong>UninstallExtensionController</strong>        extends <a href="../../../Flarum/Api/Controller/AbstractDeleteController.html"><abbr title="Flarum\Api\Controller\AbstractDeleteController">AbstractDeleteController</abbr></a></p>
+
+        
+    
 
     
             <h2>Traits</h2>
 
-        <div class="container-fluid underlined">
+        
+    <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../../Flarum/User/AssertPermissionTrait.html"><abbr title="Flarum\User\AssertPermissionTrait">Flarum\User\AssertPermissionTrait</abbr></a>
-                                    </div>
+                                            <a href="../../../Flarum/User/AssertPermissionTrait.html"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/User/AssertPermissionTrait.php">
-        <img src="../../../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/User/AssertPermissionTrait.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
     </a>
 
                 </div>
@@ -113,37 +113,157 @@
             </div>
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_extensions">
+                                        protected                                        <a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a>
+                </td>
+                <td>$extensions</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L25" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
-                                            <p class="method-description">{@inheritdoc}</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractDeleteController.html#method_handle"><abbr title="Flarum\Api\Controller\AbstractDeleteController">AbstractDeleteController</abbr></a></small></div>
+                    <a href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p>{@inheritdoc}</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractDeleteController.html#method_handle"><abbr title="Flarum\Api\Controller\AbstractDeleteController">AbstractDeleteController</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L24">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L24" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>(<a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions)
+                    <a href="#method_delete">delete</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p>Delete the resource.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L35" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_assertPermission">assertPermission</a>($condition)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/User/AssertPermissionTrait.html#method_assertPermission"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L30">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L22" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_assertCan">assertCan</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, string $ability, mixed $arguments = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/User/AssertPermissionTrait.html#method_assertCan"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L35" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_assertGuest">assertGuest</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/User/AssertPermissionTrait.html#method_assertGuest"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L44" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_assertRegistered">assertRegistered</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/User/AssertPermissionTrait.html#method_assertRegistered"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L53" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_assertAdmin">assertAdmin</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/User/AssertPermissionTrait.html#method_assertAdmin"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L62" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L30" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -158,16 +278,64 @@
                     <h3 id="method_handle">
         <div class="location">
                             in <a href="../../../Flarum/Api/Controller/AbstractDeleteController.html#method_handle"><abbr title="Flarum\Api\Controller\AbstractDeleteController">AbstractDeleteController</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/AbstractDeleteController.php#L24">
-                at line 24
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/AbstractDeleteController.php#L24" target="_blank">
+            line 24
+        </a>
         </div>
-        <code>                    
-    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)</code>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                </div>
+                                    <p>{@inheritdoc}</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L35" target="_blank">
+            line 35
+        </a>
+        </div>
+        <code>            protected        
+    <strong>delete</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete the resource.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -187,16 +355,245 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_assertPermission">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L30">
-                at line 30
-            </a>
+                            in <a href="../../../Flarum/User/AssertPermissionTrait.html#method_assertPermission"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/User/AssertPermissionTrait.php#L22" target="_blank">
+            line 22
+        </a>
         </div>
-        <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions)</code>
+        <code>            protected        
+    <strong>assertPermission</strong>($condition)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$condition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/Exception/PermissionDeniedException.html"><abbr title="Flarum\User\Exception\PermissionDeniedException">PermissionDeniedException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertCan">
+        <div class="location">
+                            in <a href="../../../Flarum/User/AssertPermissionTrait.html#method_assertCan"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/User/AssertPermissionTrait.php#L35" target="_blank">
+            line 35
+        </a>
+        </div>
+        <code>            protected        
+    <strong>assertCan</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, string $ability, mixed $arguments = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
+                <td>$actor</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$ability</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/Exception/PermissionDeniedException.html"><abbr title="Flarum\User\Exception\PermissionDeniedException">PermissionDeniedException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertGuest">
+        <div class="location">
+                            in <a href="../../../Flarum/User/AssertPermissionTrait.html#method_assertGuest"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/User/AssertPermissionTrait.php#L44" target="_blank">
+            line 44
+        </a>
+        </div>
+        <code>            protected        
+    <strong>assertGuest</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
+                <td>$actor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/Exception/PermissionDeniedException.html"><abbr title="Flarum\User\Exception\PermissionDeniedException">PermissionDeniedException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertRegistered">
+        <div class="location">
+                            in <a href="../../../Flarum/User/AssertPermissionTrait.html#method_assertRegistered"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/User/AssertPermissionTrait.php#L53" target="_blank">
+            line 53
+        </a>
+        </div>
+        <code>            protected        
+    <strong>assertRegistered</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
+                <td>$actor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/Exception/PermissionDeniedException.html"><abbr title="Flarum\User\Exception\PermissionDeniedException">PermissionDeniedException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertAdmin">
+        <div class="location">
+                            in <a href="../../../Flarum/User/AssertPermissionTrait.html#method_assertAdmin"><abbr title="Flarum\User\AssertPermissionTrait">AssertPermissionTrait</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/User/AssertPermissionTrait.php#L62" target="_blank">
+            line 62
+        </a>
+        </div>
+        <code>            protected        
+    <strong>assertAdmin</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
+                <td>$actor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/Exception/PermissionDeniedException.html"><abbr title="Flarum\User\Exception\PermissionDeniedException">PermissionDeniedException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Controller/UninstallExtensionController.php#L30" target="_blank">
+            line 30
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -218,13 +615,14 @@
             </div>
 
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

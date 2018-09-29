@@ -5,85 +5,79 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Install | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/sami.css">
-        <script src="../js/jquery-1.11.1.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-        <script src="../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../assets/app.min.css">
+        <script src="../assets/app.min.js"></script>
         <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="namespace" data-name="namespace:Flarum_Install" data-root-path="../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../classes.html">Classes</a></li>
 
-                <li><a href="../namespaces.html">Namespaces</a></li>
-                <li><a href="../interfaces.html">Interfaces</a></li>
-        <li><a href="../traits.html">Traits</a></li>
-        <li><a href="../doc-index.html">Index</a></li>
-        <li><a href="../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             Flarum\Install
             &nbsp;
-                <a href="https://github.com/flarum/core/tree/master/src/Install">
-        <img src="../img/code.svg"  />
+                <a href="https://github.com/flarum/core/tree/master/src/Install" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
         </h1>
@@ -94,31 +88,34 @@
             <a href="../Flarum/Install/Console.html">Flarum\Install\Console</a><a href="../Flarum/Install/Controller.html">Flarum\Install\Controller</a><a href="../Flarum/Install/Prerequisite.html">Flarum\Install\Prerequisite</a>        </div>
     
             <h2>Classes</h2>
-        <div class="container-fluid underlined">
+        
+    <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Install/InstallServiceProvider.html"><abbr title="Flarum\Install\InstallServiceProvider">Flarum\Install\InstallServiceProvider</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Install/InstallServiceProvider.html"><abbr title="Flarum\Install\InstallServiceProvider">InstallServiceProvider</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/InstallServiceProvider.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/InstallServiceProvider.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../Flarum/Install/Installer.html"><abbr title="Flarum\Install\Installer">Flarum\Install\Installer</abbr></a>
-                                    </div>
+                                            <a href="../Flarum/Install/Installer.html"><abbr title="Flarum\Install\Installer">Installer</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/master/src/Install/Installer.php">
-        <img src="../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/master/src/Install/Installer.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
     </a>
 
                 </div>
@@ -127,13 +124,14 @@
     
     
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

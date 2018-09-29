@@ -1,0 +1,100 @@
+#flarum-header {
+  position: fixed;
+  background: @flarum-header-color;
+  z-index: 9999;
+  width: 100%;
+  height: @flarum-header-height;
+
+  color: @main-contrast-color;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  padding: 0px;
+
+  .flarum-title {
+    display: inline-block;
+    font-size: 18px;
+    padding: 14px 10px;
+    height: @flarum-header-height;
+    width: 300px;
+    box-sizing: border-box;
+    background-color: @flarum-header-color;
+    color: @flarum-header-color;
+    margin: 0;
+
+    background-image: url(../img/flarum_logo.svg);
+    background-size: 150px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-indent: -9999px;
+  }
+
+  ul {
+    display: inline-block;
+    margin: 0 30px 0 0;
+    vertical-align: top;
+    padding: 0px;
+  }
+  li {
+    display: inline-block;
+    position: relative;
+    height: 45.5px;
+    width: 110px;
+    transition: 0.4s color ease-out, 0.4s background ease-out;
+    box-sizing: border-box;
+
+    &.active {
+      background: #fff;
+    }
+
+    &.hover {
+      background: #f3f3f3;
+      color: #c8c8c8;
+    }
+
+    &:first-child {
+      &:before {
+        background-color: transparent;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+  a {
+    display: block;
+    color: #545454;
+    padding: 19px 20px;
+    font-size: 11px;
+    height: @flarum-header-height;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .socials{
+    a {
+      padding: 20px 10px 10px;
+    }
+  }
+  .fa-github:before {
+    font-size: 25px;
+    line-height: 12px;
+  }
+
+  .version {
+    font-size: 10px;
+    text-transform: none;
+  }
+
+  .navbar-right {
+    float: right;
+  }
+}

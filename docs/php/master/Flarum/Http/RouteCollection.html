@@ -5,240 +5,305 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Http\RouteCollection | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Http_RouteCollection" data-root-path="../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../classes.html">Classes</a></li>
 
-                <li><a href="../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../traits.html">Traits</a></li>
-        <li><a href="../../doc-index.html">Index</a></li>
-        <li><a href="../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             RouteCollection
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php">
-        <img src="../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class
     <strong>RouteCollection</strong></p>
+
+        
+    
 
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_reverse">
+                                        protected                                        array
+                </td>
+                <td>$reverse</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L22" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dataGenerator">
+                                        protected                                        <abbr title="FastRoute\DataGenerator">DataGenerator</abbr>
+                </td>
+                <td>$dataGenerator</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_routeParser">
+                                        protected                                        <abbr title="FastRoute\RouteParser">RouteParser</abbr>
+                </td>
+                <td>$routeParser</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L32" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>()
+                    <a href="#method___construct">__construct</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L34">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L34" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_get">get</a>($path, $name, $handler)
+                    <a href="#method_get">get</a>($path, $name, $handler)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L40">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L40" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_post">post</a>($path, $name, $handler)
+                    <a href="#method_post">post</a>($path, $name, $handler)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L45">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L45" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_put">put</a>($path, $name, $handler)
+                    <a href="#method_put">put</a>($path, $name, $handler)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L50">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L50" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_patch">patch</a>($path, $name, $handler)
+                    <a href="#method_patch">patch</a>($path, $name, $handler)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L55">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L55" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_delete">delete</a>($path, $name, $handler)
+                    <a href="#method_delete">delete</a>($path, $name, $handler)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L60">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L60" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_addRoute">addRoute</a>($method, $path, $name, $handler)
+                    <a href="#method_addRoute">addRoute</a>($method, $path, $name, $handler)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L65">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L65" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getRouteData">getRouteData</a>()
+                    <a href="#method_getRouteData">getRouteData</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L78">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L78" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getPath">getPath</a>($name, array $parameters = array())
+                    <a href="#method_fixPathPart">fixPathPart</a>($part, $key, array $parameters)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L90">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L83" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getPath">getPath</a>($name, array $parameters = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L90" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -252,14 +317,18 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L34">
-                at line 34
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L34" target="_blank">
+            line 34
+        </a>
         </div>
         <code>                    
-    <strong>__construct</strong>()</code>
+    <strong>__construct</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
             
@@ -271,14 +340,18 @@
                     <div class="method-item">
                     <h3 id="method_get">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L40">
-                at line 40
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L40" target="_blank">
+            line 40
+        </a>
         </div>
         <code>                    
-    <strong>get</strong>($path, $name, $handler)</code>
+    <strong>get</strong>($path, $name, $handler)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -310,14 +383,18 @@
                     <div class="method-item">
                     <h3 id="method_post">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L45">
-                at line 45
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L45" target="_blank">
+            line 45
+        </a>
         </div>
         <code>                    
-    <strong>post</strong>($path, $name, $handler)</code>
+    <strong>post</strong>($path, $name, $handler)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -349,14 +426,18 @@
                     <div class="method-item">
                     <h3 id="method_put">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L50">
-                at line 50
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L50" target="_blank">
+            line 50
+        </a>
         </div>
         <code>                    
-    <strong>put</strong>($path, $name, $handler)</code>
+    <strong>put</strong>($path, $name, $handler)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -388,14 +469,18 @@
                     <div class="method-item">
                     <h3 id="method_patch">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L55">
-                at line 55
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L55" target="_blank">
+            line 55
+        </a>
         </div>
         <code>                    
-    <strong>patch</strong>($path, $name, $handler)</code>
+    <strong>patch</strong>($path, $name, $handler)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -427,14 +512,18 @@
                     <div class="method-item">
                     <h3 id="method_delete">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L60">
-                at line 60
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L60" target="_blank">
+            line 60
+        </a>
         </div>
         <code>                    
-    <strong>delete</strong>($path, $name, $handler)</code>
+    <strong>delete</strong>($path, $name, $handler)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -466,14 +555,18 @@
                     <div class="method-item">
                     <h3 id="method_addRoute">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L65">
-                at line 65
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L65" target="_blank">
+            line 65
+        </a>
         </div>
         <code>                    
-    <strong>addRoute</strong>($method, $path, $name, $handler)</code>
+    <strong>addRoute</strong>($method, $path, $name, $handler)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -510,15 +603,62 @@
                     <div class="method-item">
                     <h3 id="method_getRouteData">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L78">
-                at line 78
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L78" target="_blank">
+            line 78
+        </a>
         </div>
         <code>                    
-    <strong>getRouteData</strong>()</code>
+    <strong>getRouteData</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fixPathPart">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L83" target="_blank">
+            line 83
+        </a>
+        </div>
+        <code>            protected        
+    <strong>fixPathPart</strong>($part, $key, array $parameters)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$part</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
             
             
             
@@ -529,14 +669,18 @@
                     <div class="method-item">
                     <h3 id="method_getPath">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L90">
-                at line 90
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RouteCollection.php#L90" target="_blank">
+            line 90
+        </a>
         </div>
         <code>                    
-    <strong>getPath</strong>($name, array $parameters = array())</code>
+    <strong>getPath</strong>($name, array $parameters = [])
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -563,13 +707,14 @@
             </div>
 
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

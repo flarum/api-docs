@@ -1,6 +1,6 @@
 {% extends "layout/layout.twig" %}
-{% from "macros.twig" import render_classes, breadcrumbs, namespace_link, class_link, property_link, method_link, hint_link, github_link %}
-{% block title %}{{ class.name }} | {{ parent() }}{% endblock %}
+{% from "macros.twig" import render_classes, breadcrumbs, namespace_link, class_link, property_link, method_link, hint_link, source_link, method_source_link, deprecated, deprecations, todo, todos, github_link %}
+{% block title %}{{ class|raw }} | {{ parent() }}{% endblock %}
 {% block body_class 'class' %}
 {% block page_id 'class:' ~ (class.name|replace({'\\': '_'})) %}
 
@@ -8,9 +8,9 @@
     {% if class.namespace %}
         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">{{ class.categoryName }}</span></li>
-                {{ breadcrumbs(class.namespace) }}
-                <li>{{ class.shortname }}</li>
+                <li><span class="label label-default">{{ class.categoryName|raw }}</span></li>
+                {{ breadcrumbs(class.namespace) -}}
+                <li>{{ class.shortname|raw }}</li>
             </ol>
         </div>
     {% endif %}
@@ -20,7 +20,8 @@
 
     <div class="page-header">
         <h1>
-            {{ class.name|split('\\')|last }}
+            {{ class.name|split('\\')|last|raw }}
+            {{ deprecated(class) }}
             &nbsp;
             {{ github_link(class.name, null, 30) }}
         </h1>
@@ -28,14 +29,19 @@
 
     <p>{{ block('class_signature') }}</p>
 
+    {{ deprecations(class) }}
+
     {% if class.shortdesc or class.longdesc %}
         <div class="description">
             {% if class.shortdesc -%}
-                <p>{{ class.shortdesc|desc(class) }}</p>
+                <p>{{ class.shortdesc|desc(class)|e }}</p>
             {%- endif %}
             {% if class.longdesc -%}
-                <p>{{ class.longdesc|desc(class) }}</p>
+                <p>{{ class.longdesc|desc(class)|e }}</p>
             {%- endif %}
+            {% if project.config('insert_todos') == true %}
+                {{ todos(class) }}
+            {% endif %}
         </div>
     {% endif %}
 
@@ -70,8 +76,9 @@
 {% endblock %}
 
 {% block class_signature -%}
-    {{ class.categoryName }}
-    <strong>{{ class.shortname }}</strong>
+    {% if not class.interface and class.abstract %}abstract {% endif %}
+    {{ class.categoryName|raw }}
+    <strong>{{ class.shortname|raw }}</strong>
     {%- if class.parent %}
         extends {{ class_link(class.parent) }}
     {%- endif %}
@@ -91,12 +98,13 @@
     {% if method.protected %}protected{% endif %}
     {% if method.private %}private{% endif %}
     {{ hint_link(method.hint) }}
-    <strong>{{ method.name }}</strong>{{ block('method_parameters_signature') }}
+    <strong>{{ method.name|raw }}</strong>{{ block('method_parameters_signature') }}
 {%- endblock %}
 
 {% block method_parameters_signature -%}
     {%- from "macros.twig" import method_parameters_signature -%}
     {{ method_parameters_signature(method) }}
+    {{ deprecated(method) }}
 {%- endblock %}
 
 {% block parameters %}
@@ -104,8 +112,8 @@
         {% for parameter in method.parameters %}
             <tr>
                 <td>{% if parameter.hint %}{{ hint_link(parameter.hint) }}{% endif %}</td>
-                <td>${{ parameter.name }}</td>
-                <td>{{ parameter.shortdesc|desc(class) }}</td>
+                <td>{%- if parameter.variadic %}...{% endif %}${{ parameter.name|raw }}</td>
+                <td>{{ parameter.shortdesc|desc(class)|e }}</td>
             </tr>
         {% endfor %}
     </table>
@@ -115,7 +123,7 @@
     <table class="table table-condensed">
         <tr>
             <td>{{ hint_link(method.hint) }}</td>
-            <td>{{ method.hintDesc|desc(class) }}</td>
+            <td>{{ method.hintDesc|desc(class)|e }}</td>
         </tr>
     </table>
 {% endblock %}
@@ -133,10 +141,20 @@
 
 {% block see %}
     <table class="table table-condensed">
-        {% for tag in method.tags('see') %}
+        {% for see in method.see %}
             <tr>
-                <td>{{ tag[0] }}</td>
-                <td>{{ tag[1:]|join(' ') }}</td>
+                <td>
+                    {% if see[4] %}
+                        <a href="{{see[4]}}">{{see[4]}}</a>
+                    {% elseif see[3] %}
+                        {{ method_link(see[3], false, false) }}
+                    {% elseif see[2] %}
+                        {{ class_link(see[2]) }}
+                    {% else %}
+                        {{ see[0]|raw }}
+                    {% endif %}
+                </td>
+                <td>{{ see[1]|raw }}</td>
             </tr>
         {% endfor %}
     </table>
@@ -146,10 +164,10 @@
     <table class="table table-condensed">
         {% for constant in constants %}
             <tr>
-                <td>{{ constant.name }}</td>
+                <td>{{ constant.name|raw }}</td>
                 <td class="last">
-                    <p><em>{{ constant.shortdesc|desc(class) }}</em></p>
-                    <p>{{ constant.longdesc|desc(class) }}</p>
+                    <p><em>{{ constant.shortdesc|desc(class)|e }}</em></p>
+                    <p>{{ constant.longdesc|desc(class)|e }}</p>
                 </td>
             </tr>
         {% endfor %}
@@ -160,16 +178,16 @@
     <table class="table table-condensed">
         {% for property in properties %}
             <tr>
-                <td class="type" id="property_{{ property.name }}">
+                <td class="type" id="property_{{ property.name|raw }}">
                     {% if property.static %}static{% endif %}
                     {% if property.protected %}protected{% endif %}
                     {% if property.private %}private{% endif %}
                     {{ hint_link(property.hint) }}
                 </td>
-                <td>${{ property.name }}</td>
+                <td>${{ property.name|raw }}</td>
                 <td class="last">{{ property.shortdesc|desc(class)|e }}</td>
                 <td>
-                    {%- if property.class is not sameas(class) -%}
+                    {%- if property.class is not same as(class) -%}
                         <small>from&nbsp;{{ property_link(property, false, true) }}</small>
                     {%- endif -%}
                 </td>
@@ -180,22 +198,22 @@
 {% endblock %}
 
 {% block methods %}
-    <div id="methods-summary" class="container-fluid underlined">
+    <div class="container-fluid underlined">
         {% for method in methods %}
             <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     {% if method.static %}static&nbsp;{% endif %}{{ hint_link(method.hint) }}
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_{{ method.name }}">{{ method.name }}</a>{{ block('method_parameters_signature') }}
+                    <a href="#method_{{ method.name|raw }}">{{ method.name|raw }}</a>{{ block('method_parameters_signature') }}
                     {% if not method.shortdesc %}
                         <p class="no-description">No description</p>
                     {% else %}
-                        <p class="method-description">{{ method.shortdesc|desc(class) }}</p>
+                        <p>{{ method.shortdesc|desc(class)|e }}</p>
                     {%- endif %}
                 </div>
-                <div class="col-md-2 method-inheritance">
-                    {%- if method.class is not sameas(class) -%}
+                <div class="col-md-2">
+                    {%- if method.class is not same as(class) -%}
                         <small>from&nbsp;{{ method_link(method, false, true) }}</small>
                     {%- endif -%}
                 </div>
@@ -218,30 +236,33 @@
 {% endblock %}
 
 {% block method %}
-    <h3 id="method_{{ method.name }}">
+    <h3 id="method_{{ method.name|raw }}">
         <div class="location">
-            {% if method.class is not sameas(class) %}
+            {% if method.class is not same as(class) %}
                 in {{ method_link(method, false, true) }}
             {% endif %}
-            <a href="https://github.com/flarum/core/blob/{{ project.version }}/src/{{ method.class.name|split('\\')|slice(1)|join('/') }}.php#L{{ method.line }}">
-                at line {{ method.line }}
-            </a>
+            at {{ method_source_link(method) }}
         </div>
         <code>{{ block('method_signature') }}</code>
     </h3>
     <div class="details">
+        {{ deprecations(method) }}
+
         {% if method.shortdesc or method.longdesc %}
             <div class="method-description">
                 {% if not method.shortdesc and not method.longdesc %}
                     <p class="no-description">No description</p>
                 {% else %}
                     {% if method.shortdesc -%}
-                    <p>{{ method.shortdesc|desc(class) }}</p>
+                    <p>{{ method.shortdesc|desc(class)|e }}</p>
                     {%- endif %}
                     {% if method.longdesc -%}
-                    <p>{{ method.longdesc|desc(class) }}</p>
+                    <p>{{ method.longdesc|desc(class)|e }}</p>
                     {%- endif %}
                 {%- endif %}
+                {% if project.config('insert_todos') == true %}
+                    {{ todos(method) }}
+                {% endif %}
             </div>
         {% endif %}
         <div class="tags">

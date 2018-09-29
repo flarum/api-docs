@@ -5,175 +5,178 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Notification\Blueprint\BlueprintInterface | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Notification_Blueprint_BlueprintInterface" data-root-path="../../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../../../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../../classes.html">Classes</a></li>
 
-                <li><a href="../../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../../traits.html">Traits</a></li>
-        <li><a href="../../../doc-index.html">Index</a></li>
-        <li><a href="../../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             BlueprintInterface
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php">
-        <img src="../../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>interface
+    <p>    interface
     <strong>BlueprintInterface</strong></p>
+
+        
+    
 
             <div class="description">
             <p>A notification BlueprintInterface, when instantiated, represents a notification about
 something. The blueprint is used by the NotificationSyncer to commit the
-notification to the database.</p>                    </div>
+notification to the database.</p>                                </div>
     
     
     
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>|null
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getFromUser">getFromUser</a>()
-                                            <p class="method-description">Get the user that sent the notification.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getFromUser">getFromUser</a>()
+        
+                                            <p>Get the user that sent the notification.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L26">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L26" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <a href="../../../Flarum/Database/AbstractModel.html"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>|null
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getSubject">getSubject</a>()
-                                            <p class="method-description">Get the model that is the subject of this activity.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getSubject">getSubject</a>()
+        
+                                            <p>Get the model that is the subject of this activity.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L33">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L33" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     array|null
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getData">getData</a>()
-                                            <p class="method-description">Get the data to be stored in the notification.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getData">getData</a>()
+        
+                                            <p>Get the data to be stored in the notification.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L40">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L40" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;string
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getType">getType</a>()
-                                            <p class="method-description">Get the serialized type of this activity.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getType">getType</a>()
+        
+                                            <p>Get the serialized type of this activity.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L47">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L47" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;string
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getSubjectModel">getSubjectModel</a>()
-                                            <p class="method-description">Get the name of the model class for the subject of this activity.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getSubjectModel">getSubjectModel</a>()
+        
+                                            <p>Get the name of the model class for the subject of this activity.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L54">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L54" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -187,16 +190,20 @@ notification to the database.</p>                    </div>
                     <div class="method-item">
                     <h3 id="method_getFromUser">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L26">
-                at line 26
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L26" target="_blank">
+            line 26
+        </a>
         </div>
         <code>                    <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>|null
-    <strong>getFromUser</strong>()</code>
+    <strong>getFromUser</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the user that sent the notification.</p>                                </div>
+                                    <p>Get the user that sent the notification.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -217,16 +224,20 @@ notification to the database.</p>                    </div>
                     <div class="method-item">
                     <h3 id="method_getSubject">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L33">
-                at line 33
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L33" target="_blank">
+            line 33
+        </a>
         </div>
         <code>                    <a href="../../../Flarum/Database/AbstractModel.html"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>|null
-    <strong>getSubject</strong>()</code>
+    <strong>getSubject</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the model that is the subject of this activity.</p>                                </div>
+                                    <p>Get the model that is the subject of this activity.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -247,16 +258,20 @@ notification to the database.</p>                    </div>
                     <div class="method-item">
                     <h3 id="method_getData">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L40">
-                at line 40
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L40" target="_blank">
+            line 40
+        </a>
         </div>
         <code>                    array|null
-    <strong>getData</strong>()</code>
+    <strong>getData</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the data to be stored in the notification.</p>                                </div>
+                                    <p>Get the data to be stored in the notification.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -277,16 +292,20 @@ notification to the database.</p>                    </div>
                     <div class="method-item">
                     <h3 id="method_getType">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L47">
-                at line 47
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L47" target="_blank">
+            line 47
+        </a>
         </div>
         <code>        static            string
-    <strong>getType</strong>()</code>
+    <strong>getType</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the serialized type of this activity.</p>                                </div>
+                                    <p>Get the serialized type of this activity.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -307,16 +326,20 @@ notification to the database.</p>                    </div>
                     <div class="method-item">
                     <h3 id="method_getSubjectModel">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L54">
-                at line 54
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Notification/Blueprint/BlueprintInterface.php#L54" target="_blank">
+            line 54
+        </a>
         </div>
         <code>        static            string
-    <strong>getSubjectModel</strong>()</code>
+    <strong>getSubjectModel</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the name of the model class for the subject of this activity.</p>                                </div>
+                                    <p>Get the name of the model class for the subject of this activity.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -337,13 +360,14 @@ notification to the database.</p>                    </div>
             </div>
 
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

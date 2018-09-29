@@ -5,268 +5,477 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Api\Serializer\UserSerializer | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Api_Serializer_UserSerializer" data-root-path="../../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../../../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../../classes.html">Classes</a></li>
 
-                <li><a href="../../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../../traits.html">Traits</a></li>
-        <li><a href="../../../doc-index.html">Index</a></li>
-        <li><a href="../../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             UserSerializer
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php">
-        <img src="../../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class
     <strong>UserSerializer</strong>        extends <a href="../../../Flarum/Api/Serializer/BasicUserSerializer.html"><abbr title="Flarum\Api\Serializer\BasicUserSerializer">BasicUserSerializer</abbr></a></p>
+
+        
+    
 
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_actor">
+                                        protected                                        <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>
+                </td>
+                <td>$actor</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#property_actor"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L34" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dispatcher">
+                    static                    protected                                        <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>
+                </td>
+                <td>$dispatcher</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#property_dispatcher"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L39" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_container">
+                    static                    protected                                        <abbr title="Illuminate\Contracts\Container\Container">Container</abbr>
+                </td>
+                <td>$container</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#property_container"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L44" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_type">
+                                        protected                                        
+                </td>
+                <td>$type</td>
+                <td class="last">{@inheritdoc}</td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/BasicUserSerializer.html#property_type"><abbr title="Flarum\Api\Serializer\BasicUserSerializer">BasicUserSerializer</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L22" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_gate">
+                                        protected                                        <a href="../../../Flarum/User/Gate.html"><abbr title="Flarum\User\Gate">Gate</abbr></a>
+                </td>
+                <td>$gate</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L21" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getActor">getActor</a>()
+                    <a href="#method_getActor">getActor</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getActor"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getActor"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L49">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L49" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setActor">setActor</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+                    <a href="#method_setActor">setActor</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_setActor"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_setActor"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L57">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L57" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getAttributes">getAttributes</a>($model, array $fields = null)
-                                            <p class="method-description">{@inheritdoc}</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getAttributes"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                    <a href="#method_getAttributes">getAttributes</a>($model, array $fields = null)
+        
+                                            <p>{@inheritdoc}</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getAttributes"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L65">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L65" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getDefaultAttributes">getDefaultAttributes</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L35" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_formatDate">formatDate</a>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $date = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_formatDate"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L92" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getRelationship">getRelationship</a>($model, $name)
-                                            <p class="method-description">{@inheritdoc}</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getRelationship"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                    <a href="#method_getRelationship">getRelationship</a>($model, $name)
+        
+                                            <p>{@inheritdoc}</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getRelationship"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L102">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L102" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
+                    <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getCustomRelationship">getCustomRelationship</a>(mixed $model, string $name)
+        
+                                            <p>Get a custom relationship.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getCustomRelationship"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L118" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_hasOne">hasOne</a>(mixed $model, string|<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer, string|<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|null $relation = null)
-                                            <p class="method-description">Get a relationship builder for a has-one relationship.</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_hasOne"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                    <a href="#method_hasOne">hasOne</a>(mixed $model, string|<a target="_blank" href="http://php.net/Closure">Closure</a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer, string|<a target="_blank" href="http://php.net/Closure">Closure</a>|null $relation = null)
+        
+                                            <p>Get a relationship builder for a has-one relationship.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_hasOne"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L141">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L141" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_hasMany">hasMany</a>(mixed $model, string|<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer, string|null $relation = null)
-                                            <p class="method-description">Get a relationship builder for a has-many relationship.</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_hasMany"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                    <a href="#method_hasMany">hasMany</a>(mixed $model, string|<a target="_blank" href="http://php.net/Closure">Closure</a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer, string|null $relation = null)
+        
+                                            <p>Get a relationship builder for a has-many relationship.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_hasMany"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L154">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L154" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
+                    <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_buildRelationship">buildRelationship</a>(mixed $model, string|<a target="_blank" href="http://php.net/Closure">Closure</a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer, string|null $relation = null, bool $many = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_buildRelationship"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L166" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getRelationshipData">getRelationshipData</a>(mixed $model, string $relation)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getRelationshipData"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L192" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_resolveSerializer">resolveSerializer</a>(mixed $serializer, mixed $model, mixed $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_resolveSerializer"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L208" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_resolveSerializerClass">resolveSerializerClass</a>(string $class)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_resolveSerializerClass"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L230" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getEventDispatcher">getEventDispatcher</a>()
+                    <a href="#method_getEventDispatcher">getEventDispatcher</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getEventDispatcher"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getEventDispatcher"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L242">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L242" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setEventDispatcher">setEventDispatcher</a>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $dispatcher)
+                    <a href="#method_setEventDispatcher">setEventDispatcher</a>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $dispatcher)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_setEventDispatcher"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_setEventDispatcher"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L250">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L250" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;<abbr title="Illuminate\Contracts\Container\Container">Container</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getContainer">getContainer</a>()
+                    <a href="#method_getContainer">getContainer</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getContainer"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getContainer"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L258">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L258" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setContainer">setContainer</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+                    <a href="#method_setContainer">setContainer</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_setContainer"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_setContainer"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L266">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L266" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
+                    <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_groups">groups</a>($user)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Serializer/BasicUserSerializer.html#method_groups"><abbr title="Flarum\Api\Serializer\BasicUserSerializer">BasicUserSerializer</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L48" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>(<a href="../../../Flarum/User/Gate.html"><abbr title="Flarum\User\Gate">Gate</abbr></a> $gate)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/User/Gate.html"><abbr title="Flarum\User\Gate">Gate</abbr></a> $gate)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L26">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L26" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -281,14 +490,18 @@
                     <h3 id="method_getActor">
         <div class="location">
                             in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getActor"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L49">
-                at line 49
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L49" target="_blank">
+            line 49
+        </a>
         </div>
         <code>                    <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>
-    <strong>getActor</strong>()</code>
+    <strong>getActor</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -310,14 +523,18 @@
                     <h3 id="method_setActor">
         <div class="location">
                             in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_setActor"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L57">
-                at line 57
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L57" target="_blank">
+            line 57
+        </a>
         </div>
         <code>                    
-    <strong>setActor</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)</code>
+    <strong>setActor</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -340,16 +557,20 @@
                     <h3 id="method_getAttributes">
         <div class="location">
                             in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getAttributes"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L65">
-                at line 65
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L65" target="_blank">
+            line 65
+        </a>
         </div>
         <code>                    
-    <strong>getAttributes</strong>($model, array $fields = null)</code>
+    <strong>getAttributes</strong>($model, array $fields = null)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                </div>
+                                    <p>{@inheritdoc}</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -374,19 +595,108 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getDefaultAttributes">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L35" target="_blank">
+            line 35
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>getDefaultAttributes</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatDate">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_formatDate"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L92" target="_blank">
+            line 92
+        </a>
+        </div>
+        <code>            protected        string|null
+    <strong>formatDate</strong>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $date = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+                <td>$date</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getRelationship">
         <div class="location">
                             in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getRelationship"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L102">
-                at line 102
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L102" target="_blank">
+            line 102
+        </a>
         </div>
         <code>                    
-    <strong>getRelationship</strong>($model, $name)</code>
+    <strong>getRelationship</strong>($model, $name)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                </div>
+                                    <p>{@inheritdoc}</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -411,19 +721,23 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_hasOne">
+                    <h3 id="method_getCustomRelationship">
         <div class="location">
-                            in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_hasOne"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L141">
-                at line 141
-            </a>
+                            in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getCustomRelationship"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L118" target="_blank">
+            line 118
+        </a>
         </div>
-        <code>                    <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>
-    <strong>hasOne</strong>(mixed $model, string|<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer, string|<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|null $relation = null)</code>
+        <code>            protected        <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>|null
+    <strong>getCustomRelationship</strong>(mixed $model, string $name)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get a relationship builder for a has-one relationship.</p>                                </div>
+                                    <p>Get a custom relationship.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -434,12 +748,62 @@
                 <td></td>
             </tr>
                     <tr>
-                <td>string|<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr></td>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasOne">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_hasOne"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L141" target="_blank">
+            line 141
+        </a>
+        </div>
+        <code>                    <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>
+    <strong>hasOne</strong>(mixed $model, string|<a target="_blank" href="http://php.net/Closure">Closure</a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer, string|<a target="_blank" href="http://php.net/Closure">Closure</a>|null $relation = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a relationship builder for a has-one relationship.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|<a target="_blank" href="http://php.net/Closure">Closure</a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr></td>
                 <td>$serializer</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>string|<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|null</td>
+                <td>string|<a target="_blank" href="http://php.net/Closure">Closure</a>|null</td>
                 <td>$relation</td>
                 <td></td>
             </tr>
@@ -465,16 +829,20 @@
                     <h3 id="method_hasMany">
         <div class="location">
                             in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_hasMany"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L154">
-                at line 154
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L154" target="_blank">
+            line 154
+        </a>
         </div>
         <code>                    <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>
-    <strong>hasMany</strong>(mixed $model, string|<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer, string|null $relation = null)</code>
+    <strong>hasMany</strong>(mixed $model, string|<a target="_blank" href="http://php.net/Closure">Closure</a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer, string|null $relation = null)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get a relationship builder for a has-many relationship.</p>                                </div>
+                                    <p>Get a relationship builder for a has-many relationship.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -485,7 +853,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td>string|<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr></td>
+                <td>string|<a target="_blank" href="http://php.net/Closure">Closure</a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr></td>
                 <td>$serializer</td>
                 <td></td>
             </tr>
@@ -513,17 +881,232 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_buildRelationship">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_buildRelationship"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L166" target="_blank">
+            line 166
+        </a>
+        </div>
+        <code>            protected        <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>
+    <strong>buildRelationship</strong>(mixed $model, string|<a target="_blank" href="http://php.net/Closure">Closure</a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer, string|null $relation = null, bool $many = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|<a target="_blank" href="http://php.net/Closure">Closure</a>|<abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr></td>
+                <td>$serializer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$many</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelationshipData">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getRelationshipData"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L192" target="_blank">
+            line 192
+        </a>
+        </div>
+        <code>            protected        mixed
+    <strong>getRelationshipData</strong>(mixed $model, string $relation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveSerializer">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_resolveSerializer"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L208" target="_blank">
+            line 208
+        </a>
+        </div>
+        <code>            protected        <abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr>
+    <strong>resolveSerializer</strong>(mixed $serializer, mixed $model, mixed $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$serializer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveSerializerClass">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_resolveSerializerClass"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L230" target="_blank">
+            line 230
+        </a>
+        </div>
+        <code>            protected        object
+    <strong>resolveSerializerClass</strong>(string $class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getEventDispatcher">
         <div class="location">
                             in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getEventDispatcher"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L242">
-                at line 242
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L242" target="_blank">
+            line 242
+        </a>
         </div>
         <code>        static            <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>
-    <strong>getEventDispatcher</strong>()</code>
+    <strong>getEventDispatcher</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -545,14 +1128,18 @@
                     <h3 id="method_setEventDispatcher">
         <div class="location">
                             in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_setEventDispatcher"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L250">
-                at line 250
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L250" target="_blank">
+            line 250
+        </a>
         </div>
         <code>        static            
-    <strong>setEventDispatcher</strong>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $dispatcher)</code>
+    <strong>setEventDispatcher</strong>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $dispatcher)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -575,14 +1162,18 @@
                     <h3 id="method_getContainer">
         <div class="location">
                             in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_getContainer"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L258">
-                at line 258
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L258" target="_blank">
+            line 258
+        </a>
         </div>
         <code>        static            <abbr title="Illuminate\Contracts\Container\Container">Container</abbr>
-    <strong>getContainer</strong>()</code>
+    <strong>getContainer</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -604,14 +1195,18 @@
                     <h3 id="method_setContainer">
         <div class="location">
                             in <a href="../../../Flarum/Api/Serializer/AbstractSerializer.html#method_setContainer"><abbr title="Flarum\Api\Serializer\AbstractSerializer">AbstractSerializer</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L266">
-                at line 266
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/AbstractSerializer.php#L266" target="_blank">
+            line 266
+        </a>
         </div>
         <code>        static            
-    <strong>setContainer</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)</code>
+    <strong>setContainer</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -631,16 +1226,63 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_groups">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L26">
-                at line 26
-            </a>
+                            in <a href="../../../Flarum/Api/Serializer/BasicUserSerializer.html#method_groups"><abbr title="Flarum\Api\Serializer\BasicUserSerializer">BasicUserSerializer</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/BasicUserSerializer.php#L48" target="_blank">
+            line 48
+        </a>
         </div>
-        <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/User/Gate.html"><abbr title="Flarum\User\Gate">Gate</abbr></a> $gate)</code>
+        <code>            protected        <abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr>
+    <strong>groups</strong>($user)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tobscure\JsonApi\Relationship">Relationship</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Serializer/UserSerializer.php#L26" target="_blank">
+            line 26
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Flarum/User/Gate.html"><abbr title="Flarum\User\Gate">Gate</abbr></a> $gate)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -662,13 +1304,14 @@
             </div>
 
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

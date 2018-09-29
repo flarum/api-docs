@@ -5,92 +5,90 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Post\PostRepository | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Post_PostRepository" data-root-path="../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header">
+        <h1 class="flarum-title">Flarum API</h1>
+        <ul>
+            <li><a href="https://flarum.org">Flarum</a></li>
+            <li><a href="https://discuss.flarum.org">Forum</a></li>
+            <li class="active"><a href="../../index.html">PHP</a></li>
+            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
+        </ul>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../index.html">master</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="socials">
+            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="version">
+            <a href="../../../">master</a>
+            </li>
+        </ul>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="fas fa-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../classes.html">Classes</a></li>
 
-                <li><a href="../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../traits.html">Traits</a></li>
-        <li><a href="../../doc-index.html">Index</a></li>
-        <li><a href="../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+            <div id="page-content">
+                
     <div class="page-header">
         <h1>
             PostRepository
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php">
-        <img src="../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class
     <strong>PostRepository</strong></p>
+
+        
+    
 
     
     
@@ -98,99 +96,139 @@
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_query">query</a>()
-                                            <p class="method-description">Get a new query builder for the posts table.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_query">query</a>()
+        
+                                            <p>Get a new query builder for the posts table.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L25">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L25" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_queryVisibleTo">queryVisibleTo</a>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L34" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../Flarum/Post/Post.html"><abbr title="Flarum\Post\Post">Post</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_findOrFail">findOrFail</a>(int $id, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
-                                            <p class="method-description">Find a post by ID, optionally making sure it is visible to a certain
+                    <a href="#method_findOrFail">findOrFail</a>(int $id, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
+        
+                                            <p>Find a post by ID, optionally making sure it is visible to a certain
 user, or throw an exception.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L55">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L55" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_findWhere">findWhere</a>(array $where = array(), <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null, array $sort = array(), int $count = null, int $start)
-                                            <p class="method-description">Find posts that match certain conditions, optionally making sure they
+                    <a href="#method_findWhere">findWhere</a>(array $where = [], <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null, array $sort = [], int $count = null, int $start = 0)
+        
+                                            <p>Find posts that match certain conditions, optionally making sure they
 are visible to a certain user, and/or using other criteria.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L71">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L71" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_findByIds">findByIds</a>(array $ids, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
-                                            <p class="method-description">Find posts by their IDs, optionally making sure they are visible to a
+                    <a href="#method_findByIds">findByIds</a>(array $ids, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
+        
+                                            <p>Find posts by their IDs, optionally making sure they are visible to a
 certain user.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L93">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L93" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_filterVisibleIds">filterVisibleIds</a>(array $ids, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
-                                            <p class="method-description">Filter a list of post IDs to only include posts that are visible to a
+                    <a href="#method_filterVisibleIds">filterVisibleIds</a>(array $ids, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        
+                                            <p>Filter a list of post IDs to only include posts that are visible to a
 certain user.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L119">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L119" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     int
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getIndexForNumber">getIndexForNumber</a>(int $discussionId, int $number, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
-                                            <p class="method-description">Get the position within a discussion where a post with a certain number
+                    <a href="#method_getIndexForNumber">getIndexForNumber</a>(int $discussionId, int $number, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
+        
+                                            <p>Get the position within a discussion where a post with a certain number
 is. If the post with that number does not exist, the index of the
 closest post to it will be returned.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L134">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L134" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_queryIds">queryIds</a>(array $ids, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L159" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -204,17 +242,63 @@ closest post to it will be returned.</p>                </div>
                     <div class="method-item">
                     <h3 id="method_query">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L25">
-                at line 25
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L25" target="_blank">
+            line 25
+        </a>
         </div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
-    <strong>query</strong>()</code>
+    <strong>query</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get a new query builder for the posts table.</p>                                </div>
+                                    <p>Get a new query builder for the posts table.</p>                                                </div>
                 <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_queryVisibleTo">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L34" target="_blank">
+            line 34
+        </a>
+        </div>
+        <code>            protected        <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+    <strong>queryVisibleTo</strong>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
@@ -234,17 +318,21 @@ closest post to it will be returned.</p>                </div>
                     <div class="method-item">
                     <h3 id="method_findOrFail">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L55">
-                at line 55
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L55" target="_blank">
+            line 55
+        </a>
         </div>
         <code>                    <a href="../../Flarum/Post/Post.html"><abbr title="Flarum\Post\Post">Post</abbr></a>
-    <strong>findOrFail</strong>(int $id, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)</code>
+    <strong>findOrFail</strong>(int $id, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Find a post by ID, optionally making sure it is visible to a certain
-user, or throw an exception.</p>                                </div>
+user, or throw an exception.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -289,17 +377,21 @@ user, or throw an exception.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_findWhere">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L71">
-                at line 71
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L71" target="_blank">
+            line 71
+        </a>
         </div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
-    <strong>findWhere</strong>(array $where = array(), <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null, array $sort = array(), int $count = null, int $start)</code>
+    <strong>findWhere</strong>(array $where = [], <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null, array $sort = [], int $count = null, int $start = 0)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Find posts that match certain conditions, optionally making sure they
-are visible to a certain user, and/or using other criteria.</p>                                </div>
+are visible to a certain user, and/or using other criteria.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -350,17 +442,21 @@ are visible to a certain user, and/or using other criteria.</p>                 
                     <div class="method-item">
                     <h3 id="method_findByIds">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L93">
-                at line 93
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L93" target="_blank">
+            line 93
+        </a>
         </div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
-    <strong>findByIds</strong>(array $ids, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)</code>
+    <strong>findByIds</strong>(array $ids, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Find posts by their IDs, optionally making sure they are visible to a
-certain user.</p>                                </div>
+certain user.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -396,17 +492,21 @@ certain user.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_filterVisibleIds">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L119">
-                at line 119
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L119" target="_blank">
+            line 119
+        </a>
         </div>
         <code>                    array
-    <strong>filterVisibleIds</strong>(array $ids, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)</code>
+    <strong>filterVisibleIds</strong>(array $ids, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Filter a list of post IDs to only include posts that are visible to a
-certain user.</p>                                </div>
+certain user.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -442,18 +542,22 @@ certain user.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_getIndexForNumber">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L134">
-                at line 134
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L134" target="_blank">
+            line 134
+        </a>
         </div>
         <code>                    int
-    <strong>getIndexForNumber</strong>(int $discussionId, int $number, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)</code>
+    <strong>getIndexForNumber</strong>(int $discussionId, int $number, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Get the position within a discussion where a post with a certain number
 is. If the post with that number does not exist, the index of the
-closest post to it will be returned.</p>                                </div>
+closest post to it will be returned.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -491,16 +595,64 @@ closest post to it will be returned.</p>                                </div>
     </div>
 
             </div>
+                    <div class="method-item">
+                    <h3 id="method_queryIds">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Post/PostRepository.php#L159" target="_blank">
+            line 159
+        </a>
+        </div>
+        <code>            protected        <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+    <strong>queryIds</strong>(array $ids, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$ids</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
+                <td>$actor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
             </div>
 
     
+            </div>
+                <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+        </div>
+    </div>
     </body>
 
 </html>

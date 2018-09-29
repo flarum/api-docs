@@ -34,10 +34,10 @@
     {% if class.shortdesc or class.longdesc %}
         <div class="description">
             {% if class.shortdesc -%}
-                <p>{{ class.shortdesc|desc(class)|e }}</p>
+                <p>{{ class.shortdesc|desc(class) }}</p>
             {%- endif %}
             {% if class.longdesc -%}
-                <p>{{ class.longdesc|desc(class)|e }}</p>
+                <p>{{ class.longdesc|desc(class) }}</p>
             {%- endif %}
             {% if project.config('insert_todos') == true %}
                 {{ todos(class) }}

@@ -1,5 +1,4 @@
 #flarum-header {
-  position: fixed;
   background: @flarum-header-color;
   z-index: 9999;
   width: 100%;
@@ -7,9 +6,8 @@
 
   color: @main-contrast-color;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
 
+  overflow: hidden;
   padding: 0px;
 
   .flarum-title {
@@ -32,11 +30,17 @@
   }
 
   ul {
-    display: inline-block;
-    margin: 0 30px 0 0;
     vertical-align: top;
     padding: 0px;
+    background-color: @flarum-header-color;
   }
+
+  .navbar-collapse.show, .navbar-collapse.collapsing {
+    .mt-2, .my-2 {
+      margin-top: 0 !important;
+    }
+  }
+
   li {
     display: inline-block;
     position: relative;
@@ -79,12 +83,7 @@
     }
   }
 
-  .socials{
-    a {
-      padding: 20px 10px 10px;
-    }
-  }
-  .fa-github:before {
+  .icon-github-circled:before {
     font-size: 25px;
     line-height: 12px;
   }
@@ -92,9 +91,5 @@
   .version {
     font-size: 10px;
     text-transform: none;
-  }
-
-  .navbar-right {
-    float: right;
   }
 }

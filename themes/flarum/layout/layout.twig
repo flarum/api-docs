@@ -3,61 +3,61 @@
 {% block content %}
     <div id="content">
         {{ block('flarum_header') }}
-        <div id="left-column">
-            {{ block('control_panel') }}
-            {{ block('leftnav') }}
-        </div>
-        <div id="right-column">
-            {{ block('menu') }}
-            <div id="page-content">
-                {% block page_content '' %}
+        <div>
+            <div id="left-column">
+                {{ block('control_panel') }}
+                {{ block('leftnav') }}
             </div>
-            {{ block('footer') }}
+            <div id="right-column">
+                {{ block('menu') }}
+                <div id="page-content">
+                    {% block page_content '' %}
+                </div>
+                {{ block('footer') }}
+            </div>
         </div>
     </div>
 {% endblock %}
 
 {% block flarum_header %}
-    <nav id="flarum-header">
-        <h1 class="flarum-title">{{ project.config('title') }}</h1>
-        <ul>
-            <li><a href="https://flarum.org">Flarum</a></li>
-            <li><a href="https://discuss.flarum.org">Forum</a></li>
-            <li class="active"><a href="{{ path('index.html') }}">PHP</a></li>
-            <li><a href="https://api.flarum.redevs.org/js">JS</a></li>
-        </ul>
+    <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
 
-        <ul class="socials">
-            <li><a class="fab fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-        </ul>
-        <ul class="navbar-right">
-            <li class="version">
-            <a href="{{ path('../') }}">{{ project.version }}</a>
+        {# <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#flarum-header-collapse" aria-controls="flarum-header-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> #}
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="{{ path('') }}">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://api.flarum.redevs.org/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/core"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="{{ path('../') }}">{{ project.version }}</a>
             </li>
         </ul>
     </nav>
 {% endblock %}
 
 {% block menu %}
-    <nav id="site-nav" class="navbar navbar-expand-lg" role="navigation">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="{{ path('classes.html') }}">Classes</a></li>
+    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="{{ path('classes.html') }}">Classes</a></li>
 
-                    {% if has_namespaces %}
-                    <li class="nav-item"><a class="nav-link" href="{{ path('namespaces.html') }}">Namespaces</a></li>
-                    {% endif %}
-                    <li class="nav-item"><a class="nav-link" href="{{ path('interfaces.html') }}">Interfaces</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ path('traits.html') }}">Traits</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ path('doc-index.html') }}">Index</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ path('search.html') }}">Search</a></li>
-                </ul>
-            </div>
-        </div>
+            {% if has_namespaces %}
+            <li class="nav-item"><a class="nav-link" href="{{ path('namespaces.html') }}">Namespaces</a></li>
+            {% endif %}
+            <li class="nav-item"><a class="nav-link" href="{{ path('interfaces.html') }}">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('traits.html') }}">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('doc-index.html') }}">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('search.html') }}">Search</a></li>
+        </ul>
     </nav>
 {% endblock %}
 
@@ -80,7 +80,7 @@
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
         <form id="search-form" action="{{ path('search.html') }}" method="GET">
-            <span class="fas fa-search"></span>
+            <span class="icon icon-search"></span>
             <input name="search" class="typeahead form-control" type="search" placeholder="Search">
         </form>
     </div>

@@ -45,11 +45,17 @@ h4, .h4 {
 
 #right-column {
   margin-left:300px;
-  padding-top: @header-height + @flarum-header-height + 10px;
+  overflow: auto;
+  max-height: calc(100vh - 45px);
+
+  &::-webkit-scrollback {
+    margin-top: @header-height + 30px;
+  }
 }
 
 #page-content {
   padding: 0 30px;
+  margin-top: @header-height + 30px;
 }
 
 #left-column {
@@ -70,10 +76,12 @@ h4, .h4 {
   #right-column {
     width: 100%;
     margin-left: 0;
-    padding-top: @header-height + @flarum-header-height;
   }
-  #site-nav.navbar-default {
+  #site-nav {
+    top: @flarum-header-height;
     left: 0;
+    width: 100%;
+
   }
 
   .flarum-title {
@@ -103,7 +111,7 @@ h4, .h4 {
 }
 
 /* Prevents the menu from jittering on lad */
-#api-tree .fa-play {
+#api-tree .icon-play {
   width: 26px;
 }
 
@@ -185,7 +193,7 @@ h4, .h4 {
   border: 0 none;
 }
 
-#search-form span.fa-search {
+#search-form span.icon-search {
   position: absolute;
   left: 9px;
   top: 9px;

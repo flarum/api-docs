@@ -2,6 +2,7 @@ const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OptimizeJsPlugin = require('optimize-js-plugin');
 const path = require('path');
 
 module.exports = {
@@ -56,7 +57,7 @@ module.exports = {
                 ]
             },
             {
-                test: /webfonts\/(.+?)\.svg$/i,
+                test: /fonts\/(.+?)\.svg$/i,
                 use: [
                     {
                         loader: 'file-loader',
@@ -81,7 +82,19 @@ module.exports = {
     optimization: {
         minimizer: [
             new OptimizeCSSAssetsPlugin(),
-            new UglifyJsPlugin()
+            new UglifyJsPlugin({
+                cache: true,
+                parallel: true,
+                uglifyOptions: {
+                    compress: false,
+                    ecma: 6,
+                    mangle: true
+                },
+            }),
+            new OptimizeJsPlugin(),
         ],
     },
+    performance: {
+        hints: false
+    }
 }

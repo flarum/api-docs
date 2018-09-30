@@ -2280,9 +2280,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/application.js~application#preloadeddocument",
-    "class/src/common/Application.js~Application.html#instance-method-preloadedDocument",
-    "src/common/Application.js~Application#preloadedDocument",
+    "src/common/application.js~application#preloadedapidocument",
+    "class/src/common/Application.js~Application.html#instance-method-preloadedApiDocument",
+    "src/common/Application.js~Application#preloadedApiDocument",
     "method"
   ],
   [

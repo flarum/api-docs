@@ -301,13 +301,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -625,13 +625,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -1617,6 +1617,12 @@ window.esdocSearchIndex = [
     "src/admin/components/editgroupmodal.js~editgroupmodal#deletegroup",
     "class/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-deleteGroup",
     "src/admin/components/EditGroupModal.js~EditGroupModal#deleteGroup",
+    "method"
+  ],
+  [
+    "src/admin/components/editgroupmodal.js~editgroupmodal#fields",
+    "class/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-fields",
+    "src/admin/components/EditGroupModal.js~EditGroupModal#fields",
     "method"
   ],
   [

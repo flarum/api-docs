@@ -110,6 +110,8 @@ window.projectVersion = 'master';
             
             {"type": "Class", "fromName": "Flarum\\Api", "fromLink": "Flarum/Api.html", "link": "Flarum/Api/ApiKey.html", "name": "Flarum\\Api\\ApiKey", "doc": "&quot;&quot;"},
                                                         {"type": "Method", "fromName": "Flarum\\Api\\ApiKey", "fromLink": "Flarum/Api/ApiKey.html", "link": "Flarum/Api/ApiKey.html#method_generate", "name": "Flarum\\Api\\ApiKey::generate", "doc": "&quot;Generate an API key.&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\Api\\ApiKey", "fromLink": "Flarum/Api/ApiKey.html", "link": "Flarum/Api/ApiKey.html#method_touch", "name": "Flarum\\Api\\ApiKey::touch", "doc": "&quot;&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\Api\\ApiKey", "fromLink": "Flarum/Api/ApiKey.html", "link": "Flarum/Api/ApiKey.html#method_user", "name": "Flarum\\Api\\ApiKey::user", "doc": "&quot;&quot;"},
             
             {"type": "Class", "fromName": "Flarum\\Api", "fromLink": "Flarum/Api.html", "link": "Flarum/Api/ApiServiceProvider.html", "name": "Flarum\\Api\\ApiServiceProvider", "doc": "&quot;&quot;"},
                                                         {"type": "Method", "fromName": "Flarum\\Api\\ApiServiceProvider", "fromLink": "Flarum/Api/ApiServiceProvider.html", "link": "Flarum/Api/ApiServiceProvider.html#method_register", "name": "Flarum\\Api\\ApiServiceProvider::register", "doc": "&quot;{@inheritdoc}&quot;"},

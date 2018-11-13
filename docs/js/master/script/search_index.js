@@ -301,13 +301,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -625,13 +625,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -699,6 +699,12 @@ window.esdocSearchIndex = [
     "flarum/components/texteditor~texteditor",
     "class/src/forum/components/TextEditor.js~TextEditor.html",
     "<span>TextEditor</span> <span class=\"search-result-import-path\">flarum/components/TextEditor</span>",
+    "class"
+  ],
+  [
+    "flarum/components/texteditorbutton~texteditorbutton",
+    "class/src/forum/components/TextEditorButton.js~TextEditorButton.html",
+    "<span>TextEditorButton</span> <span class=\"search-result-import-path\">flarum/components/TextEditorButton</span>",
     "class"
   ],
   [
@@ -4974,6 +4980,12 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/forum/components/editusermodal.js~editusermodal#fields",
+    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-fields",
+    "src/forum/components/EditUserModal.js~EditUserModal#fields",
+    "method"
+  ],
+  [
     "src/forum/components/editusermodal.js~editusermodal#groups",
     "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-groups",
     "src/forum/components/EditUserModal.js~EditUserModal#groups",
@@ -6882,6 +6894,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/texteditor.js~texteditor#toolbaritems",
+    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-toolbarItems",
+    "src/forum/components/TextEditor.js~TextEditor#toolbarItems",
+    "method"
+  ],
+  [
     "src/forum/components/texteditor.js~texteditor#value",
     "class/src/forum/components/TextEditor.js~TextEditor.html#instance-member-value",
     "src/forum/components/TextEditor.js~TextEditor#value",
@@ -6891,6 +6909,24 @@ window.esdocSearchIndex = [
     "src/forum/components/texteditor.js~texteditor#view",
     "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-view",
     "src/forum/components/TextEditor.js~TextEditor#view",
+    "method"
+  ],
+  [
+    "src/forum/components/texteditorbutton.js",
+    "file/src/forum/components/TextEditorButton.js.html",
+    "src/forum/components/TextEditorButton.js",
+    "file"
+  ],
+  [
+    "src/forum/components/texteditorbutton.js~texteditorbutton#config",
+    "class/src/forum/components/TextEditorButton.js~TextEditorButton.html#instance-method-config",
+    "src/forum/components/TextEditorButton.js~TextEditorButton#config",
+    "method"
+  ],
+  [
+    "src/forum/components/texteditorbutton.js~texteditorbutton.initprops",
+    "class/src/forum/components/TextEditorButton.js~TextEditorButton.html#static-method-initProps",
+    "src/forum/components/TextEditorButton.js~TextEditorButton.initProps",
     "method"
   ],
   [

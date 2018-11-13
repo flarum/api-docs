@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Http\Middleware\HandleErrorsWithView | Flarum API</title>
+    <title>Flarum\Api\ExceptionHandler\FallbackExceptionHandler | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Http_Middleware_HandleErrorsWithView" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Api_ExceptionHandler_FallbackExceptionHandler" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,10 +70,10 @@
                     
     <div class="page-header">
         <h1>
-            HandleErrorsWithView
+            FallbackExceptionHandler
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Api/ExceptionHandler/FallbackExceptionHandler.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -81,8 +81,8 @@
     </div>
 
     <p>    class
-    <strong>HandleErrorsWithView</strong>        implements
-        <abbr title="Psr\Http\Server\MiddlewareInterface">MiddlewareInterface</abbr></p>
+    <strong>FallbackExceptionHandler</strong>        implements
+        <abbr title="Tobscure\JsonApi\Exception\Handler\ExceptionHandlerInterface">ExceptionHandlerInterface</abbr></p>
 
         
     
@@ -94,13 +94,13 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_view">
-                                        protected                                        <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr>
+                <td class="type" id="property_debug">
+                                        protected                                        bool
                 </td>
-                <td>$view</td>
+                <td>$debug</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L30" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Api/ExceptionHandler/FallbackExceptionHandler.php#L24" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -112,31 +112,7 @@
                 <td>$logger</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L35" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_translator">
-                                        protected                                        <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
-                </td>
-                <td>$translator</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L40" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_settings">
-                                        protected                                        <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a>
-                </td>
-                <td>$settings</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Api/ExceptionHandler/FallbackExceptionHandler.php#L29" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -152,29 +128,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+                    <a href="#method___construct">__construct</a>(bool $debug, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L53" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_process">process</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
-        
-                                            <p>Catch all errors that happen during further middleware execution.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L64" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/ExceptionHandler/FallbackExceptionHandler.php#L35" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -185,13 +145,28 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_formatException">formatException</a>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $error)
+                    <a href="#method_manages">manages</a>(<a target="_blank" href="http://php.net/Exception">Exception</a> $e)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>{@inheritdoc}</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L73" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/ExceptionHandler/FallbackExceptionHandler.php#L44" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_handle">handle</a>(<a target="_blank" href="http://php.net/Exception">Exception</a> $e)
+        
+                                            <p>{@inheritdoc}</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Api/ExceptionHandler/FallbackExceptionHandler.php#L52" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -206,12 +181,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L53" target="_blank">
-            line 53
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/ExceptionHandler/FallbackExceptionHandler.php#L35" target="_blank">
+            line 35
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+    <strong>__construct</strong>(bool $debug, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
         </code>
     </h3>
     <div class="details">
@@ -223,8 +198,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></td>
-                <td>$view</td>
+                <td>bool</td>
+                <td>$debug</td>
                 <td></td>
             </tr>
                     <tr>
@@ -232,16 +207,6 @@
                 <td>$logger</td>
                 <td></td>
             </tr>
-                    <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
-                <td>$translator</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
-                <td>$settings</td>
-                <td></td>
-            </tr>
             </table>
 
             
@@ -252,14 +217,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_process">
+                    <h3 id="method_manages">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L64" target="_blank">
-            line 64
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/ExceptionHandler/FallbackExceptionHandler.php#L44" target="_blank">
+            line 44
         </a>
         </div>
-        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>process</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
+        <code>                    
+    <strong>manages</strong>(<a target="_blank" href="http://php.net/Exception">Exception</a> $e)
         </code>
     </h3>
     <div class="details">
@@ -267,33 +232,19 @@
     
 
                     <div class="method-description">
-                                    <p>Catch all errors that happen during further middleware execution.</p>                                                </div>
+                                    <p>{@inheritdoc}</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></td>
-                <td>$handler</td>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -301,27 +252,29 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_formatException">
+                    <h3 id="method_handle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L73" target="_blank">
-            line 73
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/ExceptionHandler/FallbackExceptionHandler.php#L52" target="_blank">
+            line 52
         </a>
         </div>
-        <code>            protected        
-    <strong>formatException</strong>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $error)
+        <code>                    
+    <strong>handle</strong>(<a target="_blank" href="http://php.net/Exception">Exception</a> $e)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>{@inheritdoc}</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a target="_blank" href="http://php.net/Throwable">Throwable</a></td>
-                <td>$error</td>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
                 <td></td>
             </tr>
             </table>

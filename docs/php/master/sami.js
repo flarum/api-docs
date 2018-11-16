@@ -1755,6 +1755,7 @@ window.projectVersion = 'master';
                     {"type": "Method", "fromName": "Flarum\\Post\\PostPolicy", "fromLink": "Flarum/Post/PostPolicy.html", "link": "Flarum/Post/PostPolicy.html#method_can", "name": "Flarum\\Post\\PostPolicy::can", "doc": "&quot;&quot;"},
                     {"type": "Method", "fromName": "Flarum\\Post\\PostPolicy", "fromLink": "Flarum/Post/PostPolicy.html", "link": "Flarum/Post/PostPolicy.html#method_find", "name": "Flarum\\Post\\PostPolicy::find", "doc": "&quot;&quot;"},
                     {"type": "Method", "fromName": "Flarum\\Post\\PostPolicy", "fromLink": "Flarum/Post/PostPolicy.html", "link": "Flarum/Post/PostPolicy.html#method_edit", "name": "Flarum\\Post\\PostPolicy::edit", "doc": "&quot;&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\Post\\PostPolicy", "fromLink": "Flarum/Post/PostPolicy.html", "link": "Flarum/Post/PostPolicy.html#method_hide", "name": "Flarum\\Post\\PostPolicy::hide", "doc": "&quot;&quot;"},
             
             {"type": "Class", "fromName": "Flarum\\Post", "fromLink": "Flarum/Post.html", "link": "Flarum/Post/PostRepository.html", "name": "Flarum\\Post\\PostRepository", "doc": "&quot;&quot;"},
                                                         {"type": "Method", "fromName": "Flarum\\Post\\PostRepository", "fromLink": "Flarum/Post/PostRepository.html", "link": "Flarum/Post/PostRepository.html#method_query", "name": "Flarum\\Post\\PostRepository::query", "doc": "&quot;Get a new query builder for the posts table.&quot;"},

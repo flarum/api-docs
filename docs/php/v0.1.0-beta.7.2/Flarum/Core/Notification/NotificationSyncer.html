@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Core\Notification\NotificationSyncer | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Core_Notification_NotificationSyncer" data-root-path="../../../">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://api.flarum.redevs.org/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/core"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../../">v0.1.0-beta.7.2</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            NotificationSyncer
+                
+            &nbsp;
+                <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>NotificationSyncer</strong></p>
+
+        
+    
+
+            <div class="description">
+            <p>The Notification Syncer commits notification blueprints to the database, and
+sends them via email depending on user preference. Where a blueprint
+represents a single notification, the syncer associates it with a particular
+user(s) and makes it available in their inbox.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_onePerUser">
+                    static                    protected                                        bool
+                </td>
+                <td>$onePerUser</td>
+                <td class="last">Whether or not notifications are being limited to one per user.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L33" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sentTo">
+                    static                    protected                                        int[]
+                </td>
+                <td>$sentTo</td>
+                <td class="last">An internal list of user IDs that notifications have been sent to.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L40" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_notifications">
+                                        protected                                        <a href="../../../Flarum/Core/Repository/NotificationRepository.html"><abbr title="Flarum\Core\Repository\NotificationRepository">NotificationRepository</abbr></a>
+                </td>
+                <td>$notifications</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L45" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mailer">
+                                        protected                                        <a href="../../../Flarum/Core/Notification/NotificationMailer.html"><abbr title="Flarum\Core\Notification\NotificationMailer">NotificationMailer</abbr></a>
+                </td>
+                <td>$mailer</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L50" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Core/Repository/NotificationRepository.html"><abbr title="Flarum\Core\Repository\NotificationRepository">NotificationRepository</abbr></a> $notifications, <a href="../../../Flarum/Core/Notification/NotificationMailer.html"><abbr title="Flarum\Core\Notification\NotificationMailer">NotificationMailer</abbr></a> $mailer)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L56" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_sync">sync</a>(<a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint, array $users)
+        
+                                            <p>Sync a notification so that it is visible to the specified users, and not
+visible to anyone else. If it is being made visible for the first time,
+attempt to send the user an email.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L73" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_delete">delete</a>(<a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint)
+        
+                                            <p>Delete a notification for all users.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L131" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_restore">restore</a>(<a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint)
+        
+                                            <p>Restore a notification for all users.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L142" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_onePerUser">onePerUser</a>(callable $callback)
+        
+                                            <p>Limit notifications to one per user for the entire duration of the given
+callback.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L154" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_sendNotifications">sendNotifications</a>(<a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint, array $recipients)
+        
+                                            <p>Create a notification record and send an email (depending on user
+preference) from a blueprint to a list of recipients.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L171" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_mailNotifications">mailNotifications</a>(<a href="../../../Flarum/Core/Notification/MailableInterface.html"><abbr title="Flarum\Core\Notification\MailableInterface">MailableInterface</abbr></a> $blueprint, array $recipients)
+        
+                                            <p>Mail a notification to a list of users.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L199" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setDeleted">setDeleted</a>(array $ids, bool $isDeleted)
+        
+                                            <p>Set the deleted status of a list of notification records.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L214" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getAttributes">getAttributes</a>(<a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint)
+        
+                                            <p>Construct an array of attributes to be stored in a notification record in
+the database, given a notification blueprint.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L226" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L56" target="_blank">
+            line 56
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Flarum/Core/Repository/NotificationRepository.html"><abbr title="Flarum\Core\Repository\NotificationRepository">NotificationRepository</abbr></a> $notifications, <a href="../../../Flarum/Core/Notification/NotificationMailer.html"><abbr title="Flarum\Core\Notification\NotificationMailer">NotificationMailer</abbr></a> $mailer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Core/Repository/NotificationRepository.html"><abbr title="Flarum\Core\Repository\NotificationRepository">NotificationRepository</abbr></a></td>
+                <td>$notifications</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Flarum/Core/Notification/NotificationMailer.html"><abbr title="Flarum\Core\Notification\NotificationMailer">NotificationMailer</abbr></a></td>
+                <td>$mailer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sync">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L73" target="_blank">
+            line 73
+        </a>
+        </div>
+        <code>                    void
+    <strong>sync</strong>(<a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint, array $users)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sync a notification so that it is visible to the specified users, and not
+visible to anyone else. If it is being made visible for the first time,
+attempt to send the user an email.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a></td>
+                <td>$blueprint</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$users</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L131" target="_blank">
+            line 131
+        </a>
+        </div>
+        <code>                    void
+    <strong>delete</strong>(<a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete a notification for all users.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a></td>
+                <td>$blueprint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L142" target="_blank">
+            line 142
+        </a>
+        </div>
+        <code>                    void
+    <strong>restore</strong>(<a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Restore a notification for all users.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a></td>
+                <td>$blueprint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onePerUser">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L154" target="_blank">
+            line 154
+        </a>
+        </div>
+        <code>                    void
+    <strong>onePerUser</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Limit notifications to one per user for the entire duration of the given
+callback.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendNotifications">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L171" target="_blank">
+            line 171
+        </a>
+        </div>
+        <code>            protected        
+    <strong>sendNotifications</strong>(<a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint, array $recipients)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a notification record and send an email (depending on user
+preference) from a blueprint to a list of recipients.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a></td>
+                <td>$blueprint</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$recipients</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mailNotifications">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L199" target="_blank">
+            line 199
+        </a>
+        </div>
+        <code>            protected        
+    <strong>mailNotifications</strong>(<a href="../../../Flarum/Core/Notification/MailableInterface.html"><abbr title="Flarum\Core\Notification\MailableInterface">MailableInterface</abbr></a> $blueprint, array $recipients)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Mail a notification to a list of users.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Core/Notification/MailableInterface.html"><abbr title="Flarum\Core\Notification\MailableInterface">MailableInterface</abbr></a></td>
+                <td>$blueprint</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$recipients</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDeleted">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L214" target="_blank">
+            line 214
+        </a>
+        </div>
+        <code>            protected        
+    <strong>setDeleted</strong>(array $ids, bool $isDeleted)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the deleted status of a list of notification records.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$ids</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isDeleted</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttributes">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.7.2/src/Core/Notification/NotificationSyncer.php#L226" target="_blank">
+            line 226
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>getAttributes</strong>(<a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Construct an array of attributes to be stored in a notification record in
+the database, given a notification blueprint.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Core/Notification/BlueprintInterface.html"><abbr title="Flarum\Core\Notification\BlueprintInterface">BlueprintInterface</abbr></a></td>
+                <td>$blueprint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

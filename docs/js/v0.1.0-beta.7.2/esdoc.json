@@ -1,0 +1,44 @@
+{
+  "source": "../../../../flarum/js/src",
+  "destination": "./",
+  "package": "../../../package.json",
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "brand": {
+          "logo": "../../../src/flarum.png",
+          "title": "Flarum API",
+          "description": "Unofficial Flarum API documentation",
+          "repository": "https://github.com/flarum/core",
+          "site": "https://api.flarum.redevs.org/js",
+          "author": "https://github.com/datitisev"
+        },
+        "lint": { "enable": false }
+      }
+    },
+    {
+      "name": "esdoc-jsx-plugin"
+    },
+    {
+      "name": "esdoc-exclude-source-plugin"
+    },
+    {
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": {
+        "all": true
+      }
+    },
+    {
+      "name": "esdoc-importpath-plugin",
+      "option": {
+        "replaces": [
+          {"from": "src/forum/", "to": ""},
+          {"from": "src/admin/", "to": ""},
+          {"from": "src/common/", "to": ""},
+          {"from": ".js", "to": ""}
+        ]
+      }
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Frontend\CompilerFactory | Flarum API</title>
+    <title>Flarum\Frontend\Assets | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Frontend_CompilerFactory" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Frontend_Assets" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,10 +70,10 @@
                     
     <div class="page-header">
         <h1>
-            CompilerFactory
+            Assets
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -81,7 +81,7 @@
     </div>
 
     <p>    class
-    <strong>CompilerFactory</strong></p>
+    <strong>Assets</strong></p>
 
         
     
@@ -95,25 +95,37 @@
 
             <table class="table table-condensed">
                     <tr>
+                <td class="type" id="property_sources">
+                                                                                array
+                </td>
+                <td>$sources</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L28" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_name">
                                         protected                                        string
                 </td>
                 <td>$name</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L29" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L38" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
                 <td class="type" id="property_assetsDir">
-                                        protected                                        <abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr>
+                                        protected                                        <abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr>
                 </td>
                 <td>$assetsDir</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L34" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L43" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -125,7 +137,7 @@
                 <td>$cacheDir</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L39" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L48" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -137,31 +149,7 @@
                 <td>$lessImportDirs</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L44" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_assets">
-                                        protected                                        <a href="../../Flarum/Frontend/Asset/AssetInterface.html"><abbr title="Flarum\Frontend\Asset\AssetInterface">AssetInterface</abbr></a>[]
-                </td>
-                <td>$assets</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L49" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_addCallbacks">
-                                        protected                                        callable[]
-                </td>
-                <td>$addCallbacks</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L54" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L53" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -177,13 +165,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(string $name, <abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr> $assetsDir, string $cacheDir = null, array $lessImportDirs = null)
+                    <a href="#method___construct">__construct</a>(string $name, <abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr> $assetsDir, string $cacheDir = null, array $lessImportDirs = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L62" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L55" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -194,13 +182,64 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_add">add</a>(callable $callback)
+                    <a href="#method_js">js</a>($sources)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L73" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L63" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_css">css</a>($callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L70" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_localeJs">localeJs</a>($callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L77" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_localeCss">localeCss</a>($callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L84" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -217,7 +256,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L81" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L105" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -234,7 +273,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L95" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L114" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -251,7 +290,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L110" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L123" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -268,7 +307,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L125" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L132" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -285,24 +324,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L140" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_fireAddCallbacks">fireAddCallbacks</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L155" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L141" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -319,7 +341,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L179" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L156" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -336,7 +358,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L187" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L161" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -344,7 +366,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr>
+                    <abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr>
                 </div>
                 <div class="col-md-6 type">
                     <a href="#method_getAssetsDir">getAssetsDir</a>()
@@ -353,7 +375,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L195" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L166" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -364,13 +386,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_setAssetsDir">setAssetsDir</a>(<abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr> $assetsDir)
+                    <a href="#method_setAssetsDir">setAssetsDir</a>(<abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr> $assetsDir)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L203" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L171" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -387,7 +409,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L211" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L176" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -404,7 +426,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L219" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L181" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -421,7 +443,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L227" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L186" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -438,7 +460,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L235" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L191" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -453,12 +475,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L62" target="_blank">
-            line 62
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L55" target="_blank">
+            line 55
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(string $name, <abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr> $assetsDir, string $cacheDir = null, array $lessImportDirs = null)
+    <strong>__construct</strong>(string $name, <abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr> $assetsDir, string $cacheDir = null, array $lessImportDirs = null)
         </code>
     </h3>
     <div class="details">
@@ -475,7 +497,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr></td>
+                <td><abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr></td>
                 <td>$assetsDir</td>
                 <td></td>
             </tr>
@@ -499,14 +521,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_add">
+                    <h3 id="method_js">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L73" target="_blank">
-            line 73
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L63" target="_blank">
+            line 63
         </a>
         </div>
         <code>                    
-    <strong>add</strong>(callable $callback)
+    <strong>js</strong>($sources)
         </code>
     </h3>
     <div class="details">
@@ -518,7 +540,106 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>callable</td>
+                <td></td>
+                <td>$sources</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_css">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L70" target="_blank">
+            line 70
+        </a>
+        </div>
+        <code>                    
+    <strong>css</strong>($callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_localeJs">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L77" target="_blank">
+            line 77
+        </a>
+        </div>
+        <code>                    
+    <strong>localeJs</strong>($callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_localeCss">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L84" target="_blank">
+            line 84
+        </a>
+        </div>
+        <code>                    
+    <strong>localeCss</strong>($callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
                 <td>$callback</td>
                 <td></td>
             </tr>
@@ -534,8 +655,8 @@
                     <div class="method-item">
                     <h3 id="method_makeJs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L81" target="_blank">
-            line 81
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L105" target="_blank">
+            line 105
         </a>
         </div>
         <code>                    <a href="../../Flarum/Frontend/Compiler/JsCompiler.html"><abbr title="Flarum\Frontend\Compiler\JsCompiler">JsCompiler</abbr></a>
@@ -566,8 +687,8 @@
                     <div class="method-item">
                     <h3 id="method_makeCss">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L95" target="_blank">
-            line 95
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L114" target="_blank">
+            line 114
         </a>
         </div>
         <code>                    <a href="../../Flarum/Frontend/Compiler/LessCompiler.html"><abbr title="Flarum\Frontend\Compiler\LessCompiler">LessCompiler</abbr></a>
@@ -598,8 +719,8 @@
                     <div class="method-item">
                     <h3 id="method_makeLocaleJs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L110" target="_blank">
-            line 110
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L123" target="_blank">
+            line 123
         </a>
         </div>
         <code>                    <a href="../../Flarum/Frontend/Compiler/JsCompiler.html"><abbr title="Flarum\Frontend\Compiler\JsCompiler">JsCompiler</abbr></a>
@@ -640,8 +761,8 @@
                     <div class="method-item">
                     <h3 id="method_makeLocaleCss">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L125" target="_blank">
-            line 125
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L132" target="_blank">
+            line 132
         </a>
         </div>
         <code>                    <a href="../../Flarum/Frontend/Compiler/LessCompiler.html"><abbr title="Flarum\Frontend\Compiler\LessCompiler">LessCompiler</abbr></a>
@@ -682,8 +803,8 @@
                     <div class="method-item">
                     <h3 id="method_makeLessCompiler">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L140" target="_blank">
-            line 140
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L141" target="_blank">
+            line 141
         </a>
         </div>
         <code>            protected        <a href="../../Flarum/Frontend/Compiler/LessCompiler.html"><abbr title="Flarum\Frontend\Compiler\LessCompiler">LessCompiler</abbr></a>
@@ -722,33 +843,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_fireAddCallbacks">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L155" target="_blank">
-            line 155
-        </a>
-        </div>
-        <code>            protected        
-    <strong>fireAddCallbacks</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_getName">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L179" target="_blank">
-            line 179
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L156" target="_blank">
+            line 156
         </a>
         </div>
         <code>                    string
@@ -779,8 +877,8 @@
                     <div class="method-item">
                     <h3 id="method_setName">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L187" target="_blank">
-            line 187
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L161" target="_blank">
+            line 161
         </a>
         </div>
         <code>                    
@@ -812,11 +910,11 @@
                     <div class="method-item">
                     <h3 id="method_getAssetsDir">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L195" target="_blank">
-            line 195
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L166" target="_blank">
+            line 166
         </a>
         </div>
-        <code>                    <abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr>
+        <code>                    <abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr>
     <strong>getAssetsDir</strong>()
         </code>
     </h3>
@@ -830,7 +928,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr></td>
+            <td><abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -844,12 +942,12 @@
                     <div class="method-item">
                     <h3 id="method_setAssetsDir">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L203" target="_blank">
-            line 203
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L171" target="_blank">
+            line 171
         </a>
         </div>
         <code>                    
-    <strong>setAssetsDir</strong>(<abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr> $assetsDir)
+    <strong>setAssetsDir</strong>(<abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr> $assetsDir)
         </code>
     </h3>
     <div class="details">
@@ -861,7 +959,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr></td>
+                <td><abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr></td>
                 <td>$assetsDir</td>
                 <td></td>
             </tr>
@@ -877,8 +975,8 @@
                     <div class="method-item">
                     <h3 id="method_getCacheDir">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L211" target="_blank">
-            line 211
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L176" target="_blank">
+            line 176
         </a>
         </div>
         <code>                    string|null
@@ -909,8 +1007,8 @@
                     <div class="method-item">
                     <h3 id="method_setCacheDir">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L219" target="_blank">
-            line 219
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L181" target="_blank">
+            line 181
         </a>
         </div>
         <code>                    
@@ -942,8 +1040,8 @@
                     <div class="method-item">
                     <h3 id="method_getLessImportDirs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L227" target="_blank">
-            line 227
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L186" target="_blank">
+            line 186
         </a>
         </div>
         <code>                    array
@@ -974,8 +1072,8 @@
                     <div class="method-item">
                     <h3 id="method_setLessImportDirs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/CompilerFactory.php#L235" target="_blank">
-            line 235
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Frontend/Assets.php#L191" target="_blank">
+            line 191
         </a>
         </div>
         <code>                    

@@ -289,13 +289,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -2109,6 +2109,12 @@ window.esdocSearchIndex = [
     "src/admin/components/statuswidget.js~statuswidget#content",
     "class/src/admin/components/StatusWidget.js~StatusWidget.html#instance-method-content",
     "src/admin/components/StatusWidget.js~StatusWidget#content",
+    "method"
+  ],
+  [
+    "src/admin/components/statuswidget.js~statuswidget#handleclearcache",
+    "class/src/admin/components/StatusWidget.js~StatusWidget.html#instance-method-handleClearCache",
+    "src/admin/components/StatusWidget.js~StatusWidget#handleClearCache",
     "method"
   ],
   [

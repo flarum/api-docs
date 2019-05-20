@@ -289,25 +289,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -625,13 +625,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -1674,6 +1674,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/editgroupmodal.js~editgroupmodal#submitdata",
+    "class/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-submitData",
+    "src/admin/components/EditGroupModal.js~EditGroupModal#submitData",
+    "method"
+  ],
+  [
     "src/admin/components/editgroupmodal.js~editgroupmodal#title",
     "class/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-title",
     "src/admin/components/EditGroupModal.js~EditGroupModal#title",
@@ -1800,6 +1806,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/mailpage.js~mailpage#driverfields",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-driverFields",
+    "src/admin/components/MailPage.js~MailPage#driverFields",
+    "member"
+  ],
+  [
     "src/admin/components/mailpage.js~mailpage#fields",
     "class/src/admin/components/MailPage.js~MailPage.html#instance-member-fields",
     "src/admin/components/MailPage.js~MailPage#fields",
@@ -1818,16 +1830,16 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/admin/components/mailpage.js~mailpage#localeoptions",
-    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-localeOptions",
-    "src/admin/components/MailPage.js~MailPage#localeOptions",
-    "member"
-  ],
-  [
     "src/admin/components/mailpage.js~mailpage#onsubmit",
     "class/src/admin/components/MailPage.js~MailPage.html#instance-method-onsubmit",
     "src/admin/components/MailPage.js~MailPage#onsubmit",
     "method"
+  ],
+  [
+    "src/admin/components/mailpage.js~mailpage#saving",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-saving",
+    "src/admin/components/MailPage.js~MailPage#saving",
+    "member"
   ],
   [
     "src/admin/components/mailpage.js~mailpage#values",

@@ -47,18 +47,18 @@ git config user.email "circleci@483ce7e429cf"
 
 echo -e "\e[36m\e[1mCommitting changes"
 
-MESSAGE="update master ($SHA)"
+message="update master (flarum/core@$SHA)"
 
-if [[ "$(git diff-index --name-only HEAD docs/js | wc -l | bc)" -gt "1" ]]; then
+if [[ "$(git diff --name-only docs/js | wc -l | bc)" -gt "1" ]]; then
   echo -e "\e[36m\e[1m- JS"
   git add docs/js
-  git commit -m "[skip ci] js: $MESSAGE" &> /dev/null
+  git commit -m "[skip ci] js: $message" &> /dev/null
 fi
 
 if [[ ! -z "$(git diff-index --name-only HEAD docs/php)" ]]; then
   echo -e "\e[36m\e[1m- PHP"
   git add docs/php
-  git commit -m "[skip ci] php: $MESSAGE" &> /dev/null
+  git commit -m "[skip ci] php: $message" &> /dev/null
 fi
 
 echo -e "\e[36m\e[1mPushing changes"

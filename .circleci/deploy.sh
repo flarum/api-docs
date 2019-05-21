@@ -18,6 +18,8 @@ if [[ -z "$SHA" ]]; then
 
   SHA=$(cd $FLARUM_FOLDER && git rev-parse --verify HEAD --short)
 else
+  SHA="${SHA:0:8}"
+
   echo -e "\e[36m\e[1m-> Checking out $SHA"
 
   (cd $FLARUM_FOLDER && git checkout $SHA &> /dev/null)
@@ -32,8 +34,6 @@ else
   }
 fi
 
-MESSAGE="update master ($SHA)"
-
 echo -e "\e[36m\e[1mBuilding for commit $SHA\n\n"
 
 # Build node src --php --js
@@ -47,7 +47,9 @@ git config user.email "circleci@483ce7e429cf"
 
 echo -e "\e[36m\e[1mCommitting changes"
 
-if [[ ! -z "$(git diff-index --name-only HEAD docs/js)" ]]; then
+MESSAGE="update master ($SHA)"
+
+if [[ "$(git diff-index --name-only HEAD docs/js | wc -l | bc)" -gt "1" ]]; then
   echo -e "\e[36m\e[1m- JS"
   git add docs/js
   git commit -m "[skip ci] js: $MESSAGE" &> /dev/null

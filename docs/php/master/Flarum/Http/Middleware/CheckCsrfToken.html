@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Http\Exception\TokenMismatchException | Flarum API</title>
+    <title>Flarum\Http\Middleware\CheckCsrfToken | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Http_Exception_TokenMismatchException" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Http_Middleware_CheckCsrfToken" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,10 +70,10 @@
                     
     <div class="page-header">
         <h1>
-            TokenMismatchException
+            CheckCsrfToken
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Http/Exception/TokenMismatchException.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/CheckCsrfToken.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -81,7 +81,8 @@
     </div>
 
     <p>    class
-    <strong>TokenMismatchException</strong>        extends <a target="_blank" href="http://php.net/Exception">Exception</a></p>
+    <strong>CheckCsrfToken</strong>        implements
+        <abbr title="Psr\Http\Server\MiddlewareInterface">MiddlewareInterface</abbr></p>
 
         
     
@@ -95,16 +96,16 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>($message = null, $code = 419, <a target="_blank" href="http://php.net/Exception">Exception</a> $previous = null)
+                    <a href="#method_process">process</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Exception/TokenMismatchException.php#L18" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/CheckCsrfToken.php#L22" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -117,14 +118,14 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_process">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Exception/TokenMismatchException.php#L18" target="_blank">
-            line 18
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/CheckCsrfToken.php#L22" target="_blank">
+            line 22
         </a>
         </div>
-        <code>                    
-    <strong>__construct</strong>($message = null, $code = 419, <a target="_blank" href="http://php.net/Exception">Exception</a> $previous = null)
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>process</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
         </code>
     </h3>
     <div class="details">
@@ -136,23 +137,27 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$message</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$code</td>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td>$previous</td>
+                <td><abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></td>
+                <td>$handler</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

@@ -818,7 +818,8 @@ window.projectVersion = 'master';
                     {"type": "Method", "fromName": "Flarum\\Extend\\Frontend", "fromLink": "Flarum/Extend/Frontend.html", "link": "Flarum/Extend/Frontend.html#method_extend", "name": "Flarum\\Extend\\Frontend::extend", "doc": "&quot;&quot;"},
             
             {"type": "Class", "fromName": "Flarum\\Extend", "fromLink": "Flarum/Extend.html", "link": "Flarum/Extend/LanguagePack.html", "name": "Flarum\\Extend\\LanguagePack", "doc": "&quot;&quot;"},
-                                                        {"type": "Method", "fromName": "Flarum\\Extend\\LanguagePack", "fromLink": "Flarum/Extend/LanguagePack.html", "link": "Flarum/Extend/LanguagePack.html#method_extend", "name": "Flarum\\Extend\\LanguagePack::extend", "doc": "&quot;&quot;"},
+                                                        {"type": "Method", "fromName": "Flarum\\Extend\\LanguagePack", "fromLink": "Flarum/Extend/LanguagePack.html", "link": "Flarum/Extend/LanguagePack.html#method___construct", "name": "Flarum\\Extend\\LanguagePack::__construct", "doc": "&quot;LanguagePack constructor.&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\Extend\\LanguagePack", "fromLink": "Flarum/Extend/LanguagePack.html", "link": "Flarum/Extend/LanguagePack.html#method_extend", "name": "Flarum\\Extend\\LanguagePack::extend", "doc": "&quot;&quot;"},
                     {"type": "Method", "fromName": "Flarum\\Extend\\LanguagePack", "fromLink": "Flarum/Extend/LanguagePack.html", "link": "Flarum/Extend/LanguagePack.html#method_onEnable", "name": "Flarum\\Extend\\LanguagePack::onEnable", "doc": "&quot;&quot;"},
                     {"type": "Method", "fromName": "Flarum\\Extend\\LanguagePack", "fromLink": "Flarum/Extend/LanguagePack.html", "link": "Flarum/Extend/LanguagePack.html#method_onDisable", "name": "Flarum\\Extend\\LanguagePack::onDisable", "doc": "&quot;&quot;"},
             

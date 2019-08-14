@@ -17,10 +17,7 @@ jobs:
     - name: Install dependencies
       run: npm install
       
-    - name: Build
-      run: . scripts/build.sh
-    
-    - name: Deploy
-      run: . scripts/deploy.sh
+    - name: Update API Documentation
+      run: scripts/deploy.sh
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

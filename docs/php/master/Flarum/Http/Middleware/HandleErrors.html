@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Http\Middleware\HandleErrorsWithWhoops | Flarum API</title>
+    <title>Flarum\Http\Middleware\HandleErrors | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Http_Middleware_HandleErrorsWithWhoops" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Http_Middleware_HandleErrors" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,10 +70,10 @@
                     
     <div class="page-header">
         <h1>
-            HandleErrorsWithWhoops
+            HandleErrors
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithWhoops.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -81,7 +81,7 @@
     </div>
 
     <p>    class
-    <strong>HandleErrorsWithWhoops</strong>        implements
+    <strong>HandleErrors</strong>        implements
         <abbr title="Psr\Http\Server\MiddlewareInterface">MiddlewareInterface</abbr></p>
 
         
@@ -94,13 +94,37 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_logger">
-                                        protected                                        <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+                <td class="type" id="property_registry">
+                                        protected                                        <a href="../../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a>
                 </td>
-                <td>$logger</td>
+                <td>$registry</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithWhoops.php#L27" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L27" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_formatter">
+                                        protected                                        <a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a>
+                </td>
+                <td>$formatter</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L32" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reporters">
+                                        protected                                        <a href="../../../Flarum/Foundation/ErrorHandling/Reporter.html"><abbr title="Flarum\Foundation\ErrorHandling\Reporter">Reporter</abbr></a>[]
+                </td>
+                <td>$reporters</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L37" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -116,13 +140,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a> $registry, <a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a> $formatter, array $reporters)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithWhoops.php#L32" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L39" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -138,7 +162,7 @@
                                             <p>Catch all errors that happen during further middleware execution.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithWhoops.php#L40" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L49" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -153,12 +177,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithWhoops.php#L32" target="_blank">
-            line 32
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L39" target="_blank">
+            line 39
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
+    <strong>__construct</strong>(<a href="../../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a> $registry, <a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a> $formatter, array $reporters)
         </code>
     </h3>
     <div class="details">
@@ -170,8 +194,18 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
-                <td>$logger</td>
+                <td><a href="../../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a></td>
+                <td>$registry</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a></td>
+                <td>$formatter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$reporters</td>
                 <td></td>
             </tr>
             </table>
@@ -186,8 +220,8 @@
                     <div class="method-item">
                     <h3 id="method_process">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithWhoops.php#L40" target="_blank">
-            line 40
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L49" target="_blank">
+            line 49
         </a>
         </div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>

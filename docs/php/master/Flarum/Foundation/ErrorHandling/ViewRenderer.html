@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Http\Middleware\HandleErrorsWithView | Flarum API</title>
+    <title>Flarum\Foundation\ErrorHandling\ViewRenderer | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Http_Middleware_HandleErrorsWithView" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Foundation_ErrorHandling_ViewRenderer" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,10 +70,10 @@
                     
     <div class="page-header">
         <h1>
-            HandleErrorsWithView
+            ViewRenderer
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/ViewRenderer.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -81,8 +81,8 @@
     </div>
 
     <p>    class
-    <strong>HandleErrorsWithView</strong>        implements
-        <abbr title="Psr\Http\Server\MiddlewareInterface">MiddlewareInterface</abbr></p>
+    <strong>ViewRenderer</strong>        implements
+        <a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a></p>
 
         
     
@@ -100,19 +100,7 @@
                 <td>$view</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L30" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_logger">
-                                        protected                                        <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
-                </td>
-                <td>$logger</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L35" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/ViewRenderer.php#L26" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -124,7 +112,7 @@
                 <td>$translator</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L40" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/ViewRenderer.php#L31" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -136,7 +124,7 @@
                 <td>$settings</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/ViewRenderer.php#L36" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -152,13 +140,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L53" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/ViewRenderer.php#L38" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -169,29 +157,13 @@
                     <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_process">process</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
-        
-                                            <p>Catch all errors that happen during further middleware execution.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L64" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_formatException">formatException</a>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $error)
+                    <a href="#method_format">format</a>(<a href="../../../Flarum/Foundation/ErrorHandling/HandledError.html"><abbr title="Flarum\Foundation\ErrorHandling\HandledError">HandledError</abbr></a> $error, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L73" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/ViewRenderer.php#L45" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -206,12 +178,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L53" target="_blank">
-            line 53
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/ViewRenderer.php#L38" target="_blank">
+            line 38
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
         </code>
     </h3>
     <div class="details">
@@ -225,11 +197,6 @@
                     <tr>
                 <td><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></td>
                 <td>$view</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
-                <td>$logger</td>
                 <td></td>
             </tr>
                     <tr>
@@ -252,34 +219,32 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_process">
+                    <h3 id="method_format">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L64" target="_blank">
-            line 64
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/ViewRenderer.php#L45" target="_blank">
+            line 45
         </a>
         </div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>process</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
+    <strong>format</strong>(<a href="../../../Flarum/Foundation/ErrorHandling/HandledError.html"><abbr title="Flarum\Foundation\ErrorHandling\HandledError">HandledError</abbr></a> $error, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Catch all errors that happen during further middleware execution.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
+                <td><a href="../../../Flarum/Foundation/ErrorHandling/HandledError.html"><abbr title="Flarum\Foundation\ErrorHandling\HandledError">HandledError</abbr></a></td>
+                <td>$error</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></td>
-                <td>$handler</td>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
                 <td></td>
             </tr>
             </table>
@@ -294,39 +259,6 @@
         </tr>
     </table>
 
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_formatException">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrorsWithView.php#L73" target="_blank">
-            line 73
-        </a>
-        </div>
-        <code>            protected        
-    <strong>formatException</strong>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $error)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Throwable">Throwable</a></td>
-                <td>$error</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
             
             
                     </div>

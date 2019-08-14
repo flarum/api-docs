@@ -1,0 +1,26 @@
+name: Build API docs
+
+on:
+  schedule:
+  - cron: "0 * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@master
+    - name: Use Node.js 10.x
+      uses: actions/setup-node@v1
+      with:
+        version: 10.x
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Build
+      run: bash scripts/build.sh
+    
+    - name: Deploy
+      run: bash scripts/deploy.sh
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

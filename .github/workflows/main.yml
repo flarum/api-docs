@@ -18,9 +18,9 @@ jobs:
       run: npm install
       
     - name: Build
-      run: bash scripts/build.sh
+      run: . scripts/build.sh
     
     - name: Deploy
-      run: bash scripts/deploy.sh
+      run: . scripts/deploy.sh
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

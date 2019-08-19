@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Foundation\InstalledSite | Flarum API</title>
+    <title>Flarum\Queue\QueueFactory | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Foundation_InstalledSite" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Queue_QueueFactory" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,10 +70,10 @@
                     
     <div class="page-header">
         <h1>
-            InstalledSite
+            QueueFactory
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueFactory.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -81,8 +81,8 @@
     </div>
 
     <p>    class
-    <strong>InstalledSite</strong>        implements
-        <a href="../../Flarum/Foundation/SiteInterface.html"><abbr title="Flarum\Foundation\SiteInterface">SiteInterface</abbr></a></p>
+    <strong>QueueFactory</strong>        implements
+        <abbr title="Illuminate\Contracts\Queue\Factory">Factory</abbr></p>
 
         
     
@@ -99,13 +99,12 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(array $paths, array $config)
+                    <a href="#method___construct">__construct</a>(callable $factory)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>QueueFactory constructor.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L68" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueFactory.php#L38" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -113,32 +112,15 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a>
+                    <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_bootApp">bootApp</a>()
+                    <a href="#method_connection">connection</a>(string $name = null)
         
-                                            <p>Create and boot a Flarum application instance.</p>                </div>
+                                            <p>Resolve a queue connection instance.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L79" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../Flarum/Foundation/InstalledSite.html"><abbr title="Flarum\Foundation\InstalledSite">InstalledSite</abbr></a>
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_extendWith">extendWith</a>(array $extenders)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L91" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueFactory.php#L49" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -153,50 +135,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L68" target="_blank">
-            line 68
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueFactory.php#L38" target="_blank">
+            line 38
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(array $paths, array $config)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$paths</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$config</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_bootApp">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L79" target="_blank">
-            line 79
-        </a>
-        </div>
-        <code>                    <a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a>
-    <strong>bootApp</strong>()
+    <strong>__construct</strong>(callable $factory)
         </code>
     </h3>
     <div class="details">
@@ -204,18 +148,20 @@
     
 
                     <div class="method-description">
-                                    <p>Create and boot a Flarum application instance.</p>                                                </div>
+                                    <p>QueueFactory constructor.</p>                    <p>Expects a callback that will be called to instantiate the queue adapter,
+once requested by the application.</p>                            </div>
                 <div class="tags">
-            
-                            <h4>Return Value</h4>
+                            <h4>Parameters</h4>
 
                     <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
+                    <tr>
+                <td>callable</td>
+                <td>$factory</td>
+                <td></td>
+            </tr>
+            </table>
 
+            
             
             
                     </div>
@@ -223,27 +169,29 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_extendWith">
+                    <h3 id="method_connection">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L91" target="_blank">
-            line 91
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueFactory.php#L49" target="_blank">
+            line 49
         </a>
         </div>
-        <code>                    <a href="../../Flarum/Foundation/InstalledSite.html"><abbr title="Flarum\Foundation\InstalledSite">InstalledSite</abbr></a>
-    <strong>extendWith</strong>(array $extenders)
+        <code>                    <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr>
+    <strong>connection</strong>(string $name = null)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Resolve a queue connection instance.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
-                <td>$extenders</td>
+                <td>string</td>
+                <td>$name</td>
                 <td></td>
             </tr>
             </table>
@@ -253,7 +201,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Flarum/Foundation/InstalledSite.html"><abbr title="Flarum\Foundation\InstalledSite">InstalledSite</abbr></a></td>
+            <td><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></td>
             <td></td>
         </tr>
     </table>

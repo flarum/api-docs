@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Foundation\InstalledSite | Flarum API</title>
+    <title>Flarum\Queue\QueueServiceProvider | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Foundation_InstalledSite" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Queue_QueueServiceProvider" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,10 +70,10 @@
                     
     <div class="page-header">
         <h1>
-            InstalledSite
+            QueueServiceProvider
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueServiceProvider.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -81,8 +81,7 @@
     </div>
 
     <p>    class
-    <strong>InstalledSite</strong>        implements
-        <a href="../../Flarum/Foundation/SiteInterface.html"><abbr title="Flarum\Foundation\SiteInterface">SiteInterface</abbr></a></p>
+    <strong>QueueServiceProvider</strong>        extends <a href="../../Flarum/Foundation/AbstractServiceProvider.html"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></p>
 
         
     
@@ -90,6 +89,35 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_app">
+                                        protected                                        <a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a>
+                </td>
+                <td>$app</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#property_app"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueServiceProvider.php#L21" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_commands">
+                                        protected                                        
+                </td>
+                <td>$commands</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueServiceProvider.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -99,13 +127,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(array $paths, array $config)
+                    <a href="#method___construct">__construct</a>(<a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a> $app)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L68" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueServiceProvider.php#L74" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -113,15 +141,15 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a>
+                    
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_bootApp">bootApp</a>()
+                    <a href="#method_register">register</a>()
         
-                                            <p>Create and boot a Flarum application instance.</p>                </div>
+                                            <p>{@inheritdoc}</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L79" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueServiceProvider.php#L37" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -129,16 +157,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Flarum/Foundation/InstalledSite.html"><abbr title="Flarum\Foundation\InstalledSite">InstalledSite</abbr></a>
+                    
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extendWith">extendWith</a>(array $extenders)
+                    <a href="#method_driver">driver</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L91" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueServiceProvider.php#L79" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -153,12 +181,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L68" target="_blank">
-            line 68
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueServiceProvider.php#L74" target="_blank">
+            line 74
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(array $paths, array $config)
+    <strong>__construct</strong>(<a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a> $app)
         </code>
     </h3>
     <div class="details">
@@ -170,13 +198,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
-                <td>$paths</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$config</td>
+                <td><a href="../../Flarum/Foundation/Application.html"><abbr title="Flarum\Foundation\Application">Application</abbr></a></td>
+                <td>$app</td>
                 <td></td>
             </tr>
             </table>
@@ -189,14 +212,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_bootApp">
+                    <h3 id="method_register">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L79" target="_blank">
-            line 79
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueServiceProvider.php#L37" target="_blank">
+            line 37
         </a>
         </div>
-        <code>                    <a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a>
-    <strong>bootApp</strong>()
+        <code>                    
+    <strong>register</strong>()
         </code>
     </h3>
     <div class="details">
@@ -204,18 +227,9 @@
     
 
                     <div class="method-description">
-                                    <p>Create and boot a Flarum application instance.</p>                                                </div>
+                                    <p>{@inheritdoc}</p>                                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -223,14 +237,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_extendWith">
+                    <h3 id="method_driver">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L91" target="_blank">
-            line 91
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Queue/QueueServiceProvider.php#L79" target="_blank">
+            line 79
         </a>
         </div>
-        <code>                    <a href="../../Flarum/Foundation/InstalledSite.html"><abbr title="Flarum\Foundation\InstalledSite">InstalledSite</abbr></a>
-    <strong>extendWith</strong>(array $extenders)
+        <code>                    
+    <strong>driver</strong>()
         </code>
     </h3>
     <div class="details">
@@ -238,26 +252,7 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$extenders</td>
-                <td></td>
-            </tr>
-            </table>
-
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Flarum/Foundation/InstalledSite.html"><abbr title="Flarum\Foundation\InstalledSite">InstalledSite</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>

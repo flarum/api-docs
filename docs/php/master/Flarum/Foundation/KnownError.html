@@ -86,6 +86,13 @@
         
     
 
+            <div class="description">
+            <p>An exception that has a well-known meaning in a Flarum application.</p>            <p>We use these exceptions as a mechanism to quickly bubble up errors from the
+domain layer. Using the {see \Flarum\Foundation\ErrorHandling\Registry},
+these will then be mapped to error "types" and, if relevant, HTTP statuses.</p>
+
+<p>Exceptions implementing this interface can implement their own logic to
+determine their own type (usually a hardcoded value).</p>                    </div>
     
     
     
@@ -100,11 +107,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getType">getType</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Determine the exception&#039;s type.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/KnownError.php#L16" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/KnownError.php#L40" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -119,8 +125,8 @@
                     <div class="method-item">
                     <h3 id="method_getType">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/KnownError.php#L16" target="_blank">
-            line 16
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/KnownError.php#L40" target="_blank">
+            line 40
         </a>
         </div>
         <code>                    string
@@ -131,6 +137,15 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Determine the exception&#039;s type.</p>                    <p>This should be a short, precise identifier for the error that can be
+exposed to users as an error code. Furthermore, it can be used to find
+appropriate error messages in translations or views to render pretty
+error pages.&lt;/p&gt;
+
+&lt;p&gt;Different exception classes are allowed to return the same status code,
+e.g. when they have similar semantic meaning to the end user, but are
+thrown by different subsystems.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

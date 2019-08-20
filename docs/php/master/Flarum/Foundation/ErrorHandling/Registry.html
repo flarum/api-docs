@@ -86,6 +86,10 @@
         
     
 
+            <div class="description">
+            <p>Flarum's central registry of known error types.</p>            <p>It knows how to deal with errors raised both within Flarum's core and outside
+of it, map them to error "types" and how to determine appropriate HTTP status
+codes for them.</p>                    </div>
     
     
     
@@ -104,7 +108,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/Registry.php#L23" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/Registry.php#L30" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -117,11 +121,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_handle">handle</a>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $error)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Map exceptions to handled errors.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/Registry.php#L30" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/Registry.php#L49" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -136,8 +139,8 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/Registry.php#L23" target="_blank">
-            line 23
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/Registry.php#L30" target="_blank">
+            line 30
         </a>
         </div>
         <code>                    
@@ -179,8 +182,8 @@
                     <div class="method-item">
                     <h3 id="method_handle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/Registry.php#L30" target="_blank">
-            line 30
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/Registry.php#L49" target="_blank">
+            line 49
         </a>
         </div>
         <code>                    <a href="../../../Flarum/Foundation/ErrorHandling/HandledError.html"><abbr title="Flarum\Foundation\ErrorHandling\HandledError">HandledError</abbr></a>
@@ -191,6 +194,12 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Map exceptions to handled errors.</p>                    <p>This can map internal ({see \Flarum\Foundation\KnownError}) as well as
+external exceptions (any classes inheriting from \Throwable) to instances
+of {see \Flarum\Foundation\ErrorHandling\HandledError}.&lt;/p&gt;
+
+&lt;p&gt;Even for unknown exceptions, a generic fallback will always be returned.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

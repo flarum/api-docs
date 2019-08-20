@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Foundation\ErrorHandling\WhoopsRenderer | Flarum API</title>
+    <title>Flarum\Foundation\ErrorHandling\HttpFormatter | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Foundation_ErrorHandling_WhoopsRenderer" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Foundation_ErrorHandling_HttpFormatter" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,19 +70,18 @@
                     
     <div class="page-header">
         <h1>
-            WhoopsRenderer
+            HttpFormatter
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/WhoopsRenderer.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/HttpFormatter.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>    class
-    <strong>WhoopsRenderer</strong>        implements
-        <a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a></p>
+    <p>    interface
+    <strong>HttpFormatter</strong></p>
 
         
     
@@ -101,11 +100,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_format">format</a>(<a href="../../../Flarum/Foundation/ErrorHandling/HandledError.html"><abbr title="Flarum\Foundation\ErrorHandling\HandledError">HandledError</abbr></a> $error, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Create an HTTP Response to represent the error we are handling.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/WhoopsRenderer.php#L20" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/HttpFormatter.php#L30" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -120,8 +118,8 @@
                     <div class="method-item">
                     <h3 id="method_format">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/WhoopsRenderer.php#L20" target="_blank">
-            line 20
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/HttpFormatter.php#L30" target="_blank">
+            line 30
         </a>
         </div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
@@ -132,6 +130,10 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Create an HTTP Response to represent the error we are handling.</p>                    <p>This method receives the error that was caught by Flarum&#039;s error handling
+stack, along with the current HTTP request instance. It should return an
+HTTP response that explains or represents what went wrong.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

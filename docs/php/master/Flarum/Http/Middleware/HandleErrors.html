@@ -87,6 +87,10 @@
         
     
 
+            <div class="description">
+            <p>Catch exceptions thrown in a PSR-15 middleware stack and handle them safely.</p>            <p>All errors will be rendered using the provided formatter. In addition,
+unknown errors will be passed on to one or multiple
+{see \Flarum\Foundation\ErrorHandling\Reporter} instances.</p>                    </div>
     
     
     
@@ -100,19 +104,19 @@
                 <td>$registry</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L27" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L34" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
                 <td class="type" id="property_formatter">
-                                        protected                                        <a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a>
+                                        protected                                        <a href="../../../Flarum/Foundation/ErrorHandling/HttpFormatter.html"><abbr title="Flarum\Foundation\ErrorHandling\HttpFormatter">HttpFormatter</abbr></a>
                 </td>
                 <td>$formatter</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L32" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L39" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -124,7 +128,7 @@
                 <td>$reporters</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L37" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L44" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -140,13 +144,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a> $registry, <a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a> $formatter, array $reporters)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a> $registry, <a href="../../../Flarum/Foundation/ErrorHandling/HttpFormatter.html"><abbr title="Flarum\Foundation\ErrorHandling\HttpFormatter">HttpFormatter</abbr></a> $formatter, array $reporters)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L39" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L46" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -162,7 +166,7 @@
                                             <p>Catch all errors that happen during further middleware execution.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L49" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L56" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -177,12 +181,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L39" target="_blank">
-            line 39
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L46" target="_blank">
+            line 46
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a> $registry, <a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a> $formatter, array $reporters)
+    <strong>__construct</strong>(<a href="../../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a> $registry, <a href="../../../Flarum/Foundation/ErrorHandling/HttpFormatter.html"><abbr title="Flarum\Foundation\ErrorHandling\HttpFormatter">HttpFormatter</abbr></a> $formatter, array $reporters)
         </code>
     </h3>
     <div class="details">
@@ -199,7 +203,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a></td>
+                <td><a href="../../../Flarum/Foundation/ErrorHandling/HttpFormatter.html"><abbr title="Flarum\Foundation\ErrorHandling\HttpFormatter">HttpFormatter</abbr></a></td>
                 <td>$formatter</td>
                 <td></td>
             </tr>
@@ -220,8 +224,8 @@
                     <div class="method-item">
                     <h3 id="method_process">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L49" target="_blank">
-            line 49
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/HandleErrors.php#L56" target="_blank">
+            line 56
         </a>
         </div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>

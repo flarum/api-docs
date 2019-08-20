@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Foundation\ErrorHandling\JsonApiRenderer | Flarum API</title>
+    <title>Flarum\Foundation\ErrorHandling\JsonApiFormatter | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Foundation_ErrorHandling_JsonApiRenderer" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Foundation_ErrorHandling_JsonApiFormatter" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,10 +70,10 @@
                     
     <div class="page-header">
         <h1>
-            JsonApiRenderer
+            JsonApiFormatter
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/JsonApiRenderer.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/JsonApiFormatter.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -81,12 +81,14 @@
     </div>
 
     <p>    class
-    <strong>JsonApiRenderer</strong>        implements
-        <a href="../../../Flarum/Foundation/ErrorHandling/Formatter.html"><abbr title="Flarum\Foundation\ErrorHandling\Formatter">Formatter</abbr></a></p>
+    <strong>JsonApiFormatter</strong>        implements
+        <a href="../../../Flarum/Foundation/ErrorHandling/HttpFormatter.html"><abbr title="Flarum\Foundation\ErrorHandling\HttpFormatter">HttpFormatter</abbr></a></p>
 
         
     
 
+            <div class="description">
+            <p>A formatter to render exceptions as valid {JSON:API} error object.</p>            <p>See https://jsonapi.org/format/1.0/#errors.</p>                    </div>
     
     
     
@@ -101,11 +103,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_format">format</a>(<a href="../../../Flarum/Foundation/ErrorHandling/HandledError.html"><abbr title="Flarum\Foundation\ErrorHandling\HandledError">HandledError</abbr></a> $error, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Create an HTTP Response to represent the error we are handling.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/JsonApiRenderer.php#L21" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/JsonApiFormatter.php#L26" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -120,8 +121,8 @@
                     <div class="method-item">
                     <h3 id="method_format">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/JsonApiRenderer.php#L21" target="_blank">
-            line 21
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ErrorHandling/JsonApiFormatter.php#L26" target="_blank">
+            line 26
         </a>
         </div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
@@ -132,6 +133,10 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Create an HTTP Response to represent the error we are handling.</p>                    <p>This method receives the error that was caught by Flarum&#039;s error handling
+stack, along with the current HTTP request instance. It should return an
+HTTP response that explains or represents what went wrong.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

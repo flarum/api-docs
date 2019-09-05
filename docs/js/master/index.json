@@ -10651,10 +10651,10 @@
   {
     "__docId__": 569,
     "kind": "variable",
-    "name": "scroll",
+    "name": "later",
     "memberof": "src/common/utils/ScrollListener.js",
     "static": true,
-    "longname": "src/common/utils/ScrollListener.js~scroll",
+    "longname": "src/common/utils/ScrollListener.js~later",
     "access": "public",
     "export": false,
     "importPath": "flarum/utils/ScrollListener",
@@ -10729,17 +10729,17 @@
   {
     "__docId__": 573,
     "kind": "member",
-    "name": "lastTop",
+    "name": "ticking",
     "memberof": "src/common/utils/ScrollListener.js~ScrollListener",
     "static": false,
-    "longname": "src/common/utils/ScrollListener.js~ScrollListener#lastTop",
+    "longname": "src/common/utils/ScrollListener.js~ScrollListener#ticking",
     "access": "public",
     "description": null,
     "lineNumber": 20,
     "undocument": true,
     "type": {
       "types": [
-        "*"
+        "boolean"
       ]
     }
   },
@@ -10759,7 +10759,7 @@
     "return": null
   },
   {
-    "__docId__": 575,
+    "__docId__": 577,
     "kind": "method",
     "name": "update",
     "memberof": "src/common/utils/ScrollListener.js~ScrollListener",
@@ -10768,26 +10768,13 @@
     "static": false,
     "longname": "src/common/utils/ScrollListener.js~ScrollListener#update",
     "access": "public",
-    "description": "Check if the scroll position has changed; if it has, run the handler.",
-    "lineNumber": 44,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "Boolean"
-        ],
-        "spread": false,
-        "optional": true,
-        "defaultValue": "false",
-        "defaultRaw": false,
-        "name": "force",
-        "description": "Whether or not to force the handler to be\n    run, even if the scroll position hasn't changed."
-      }
-    ],
+    "description": "Run the callback, whether there was a scroll event or not.",
+    "lineNumber": 49,
+    "params": [],
     "return": null
   },
   {
-    "__docId__": 577,
+    "__docId__": 578,
     "kind": "method",
     "name": "start",
     "memberof": "src/common/utils/ScrollListener.js~ScrollListener",
@@ -10802,23 +10789,6 @@
     "return": null
   },
   {
-    "__docId__": 578,
-    "kind": "member",
-    "name": "active",
-    "memberof": "src/common/utils/ScrollListener.js~ScrollListener",
-    "static": false,
-    "longname": "src/common/utils/ScrollListener.js~ScrollListener#active",
-    "access": "public",
-    "description": null,
-    "lineNumber": 60,
-    "undocument": true,
-    "type": {
-      "types": [
-        "boolean"
-      ]
-    }
-  },
-  {
     "__docId__": 579,
     "kind": "method",
     "name": "stop",
@@ -10829,9 +10799,26 @@
     "longname": "src/common/utils/ScrollListener.js~ScrollListener#stop",
     "access": "public",
     "description": "Stop listening to and handling the window's scroll position.",
-    "lineNumber": 70,
+    "lineNumber": 72,
     "params": [],
     "return": null
+  },
+  {
+    "__docId__": 580,
+    "kind": "member",
+    "name": "active",
+    "memberof": "src/common/utils/ScrollListener.js~ScrollListener",
+    "static": false,
+    "longname": "src/common/utils/ScrollListener.js~ScrollListener#active",
+    "access": "public",
+    "description": null,
+    "lineNumber": 75,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
   },
   {
     "__docId__": 581,
@@ -19281,7 +19268,7 @@
     "importPath": "flarum/components/PostStream",
     "importStyle": "PostStream",
     "description": "The `PostStream` component displays an infinitely-scrollable wall of posts in\na discussion. Posts that have not loaded will be displayed as placeholders.\n\n### Props\n\n- `discussion`\n- `includedPosts`",
-    "lineNumber": 19,
+    "lineNumber": 18,
     "interface": false,
     "extends": [
       "src/common/Component.js~Component"
@@ -19298,7 +19285,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#init",
     "access": "public",
     "description": null,
-    "lineNumber": 20,
+    "lineNumber": 19,
     "undocument": true,
     "params": [],
     "return": null
@@ -19312,7 +19299,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#discussion",
     "access": "public",
     "description": "The discussion to display the post stream for.",
-    "lineNumber": 26,
+    "lineNumber": 25,
     "type": {
       "nullable": null,
       "types": [
@@ -19331,7 +19318,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#paused",
     "access": "public",
     "description": "Whether or not the infinite-scrolling auto-load functionality is\ndisabled.",
-    "lineNumber": 34,
+    "lineNumber": 33,
     "type": {
       "nullable": null,
       "types": [
@@ -19350,7 +19337,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#scrollListener",
     "access": "public",
     "description": null,
-    "lineNumber": 36,
+    "lineNumber": 35,
     "undocument": true,
     "type": {
       "types": [
@@ -19367,7 +19354,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#loadPageTimeouts",
     "access": "public",
     "description": null,
-    "lineNumber": 37,
+    "lineNumber": 36,
     "undocument": true,
     "type": {
       "types": [
@@ -19384,7 +19371,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#pagesLoading",
     "access": "public",
     "description": null,
-    "lineNumber": 38,
+    "lineNumber": 37,
     "undocument": true,
     "type": {
       "types": [
@@ -19403,7 +19390,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#goToNumber",
     "access": "public",
     "description": "Load and scroll to a post with a certain number.",
-    "lineNumber": 51,
+    "lineNumber": 50,
     "params": [
       {
         "nullable": null,
@@ -19447,7 +19434,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#goToIndex",
     "access": "public",
     "description": "Load and scroll to a certain index within the discussion.",
-    "lineNumber": 86,
+    "lineNumber": 85,
     "params": [
       {
         "nullable": null,
@@ -19500,7 +19487,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#goToFirst",
     "access": "public",
     "description": "Load and scroll up to the first post in the discussion.",
-    "lineNumber": 105,
+    "lineNumber": 104,
     "return": {
       "nullable": null,
       "types": [
@@ -19522,7 +19509,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#goToLast",
     "access": "public",
     "description": "Load and scroll down to the last post in the discussion.",
-    "lineNumber": 114,
+    "lineNumber": 113,
     "return": {
       "nullable": null,
       "types": [
@@ -19544,7 +19531,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#update",
     "access": "public",
     "description": "Update the stream so that it loads and includes the latest posts in the\ndiscussion, if the end is being viewed.",
-    "lineNumber": 124,
+    "lineNumber": 123,
     "params": [],
     "return": {
       "types": [
@@ -19561,7 +19548,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#visibleEnd",
     "access": "public",
     "description": null,
-    "lineNumber": 127,
+    "lineNumber": 126,
     "undocument": true,
     "type": {
       "types": [
@@ -19580,7 +19567,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#count",
     "access": "public",
     "description": "Get the total number of posts in the discussion.",
-    "lineNumber": 137,
+    "lineNumber": 136,
     "return": {
       "nullable": null,
       "types": [
@@ -19602,7 +19589,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#sanitizeIndex",
     "access": "protected",
     "description": "Make sure that the given index is not outside of the possible range of\nindexes in the discussion.",
-    "lineNumber": 148,
+    "lineNumber": 147,
     "params": [
       {
         "nullable": null,
@@ -19632,7 +19619,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#show",
     "access": "public",
     "description": "Set up the stream with the given array of posts.",
-    "lineNumber": 157,
+    "lineNumber": 156,
     "params": [
       {
         "nullable": null,
@@ -19656,7 +19643,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#visibleStart",
     "access": "public",
     "description": null,
-    "lineNumber": 158,
+    "lineNumber": 157,
     "undocument": true,
     "type": {
       "types": [
@@ -19675,7 +19662,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#reset",
     "access": "public",
     "description": "Reset the stream so that a specific range of posts is displayed. If a range\nis not specified, the first page of posts will be displayed.",
-    "lineNumber": 169,
+    "lineNumber": 168,
     "params": [
       {
         "nullable": null,
@@ -19711,7 +19698,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#posts",
     "access": "public",
     "description": "Get the visible page of posts.",
-    "lineNumber": 179,
+    "lineNumber": 178,
     "return": {
       "nullable": null,
       "types": [
@@ -19733,7 +19720,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#view",
     "access": "public",
     "description": null,
-    "lineNumber": 189,
+    "lineNumber": 188,
     "undocument": true,
     "params": [],
     "return": {
@@ -19751,7 +19738,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#viewingEnd",
     "access": "public",
     "description": null,
-    "lineNumber": 198,
+    "lineNumber": 197,
     "undocument": true,
     "type": {
       "types": [
@@ -19770,7 +19757,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#config",
     "access": "public",
     "description": null,
-    "lineNumber": 270,
+    "lineNumber": 269,
     "undocument": true,
     "params": [
       {
@@ -19799,7 +19786,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#onscroll",
     "access": "public",
     "description": "When the window is scrolled, check if either extreme of the post stream is\nin the viewport, and if so, trigger loading the next/previous page.",
-    "lineNumber": 289,
+    "lineNumber": 288,
     "params": [
       {
         "nullable": null,
@@ -19823,7 +19810,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#calculatePositionTimeout",
     "access": "public",
     "description": null,
-    "lineNumber": 316,
+    "lineNumber": 315,
     "undocument": true,
     "type": {
       "types": [
@@ -19842,7 +19829,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#loadNext",
     "access": "public",
     "description": "Load the next page of posts.",
-    "lineNumber": 322,
+    "lineNumber": 321,
     "params": [],
     "return": null
   },
@@ -19857,7 +19844,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#loadPrevious",
     "access": "public",
     "description": "Load the previous page of posts.",
-    "lineNumber": 345,
+    "lineNumber": 344,
     "params": [],
     "return": null
   },
@@ -19872,7 +19859,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#loadPage",
     "access": "public",
     "description": "Load a page of posts into the stream and redraw.",
-    "lineNumber": 372,
+    "lineNumber": 371,
     "params": [
       {
         "nullable": null,
@@ -19918,7 +19905,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#loadRange",
     "access": "public",
     "description": "Load and inject the specified range of posts into the stream, without\nclearing it.",
-    "lineNumber": 402,
+    "lineNumber": 401,
     "params": [
       {
         "nullable": null,
@@ -19961,7 +19948,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#loadNearNumber",
     "access": "public",
     "description": "Clear the stream and load posts near a certain number. Returns a promise.\nIf the post with the given number is already loaded, the promise will be\nresolved immediately.",
-    "lineNumber": 429,
+    "lineNumber": 428,
     "params": [
       {
         "nullable": null,
@@ -19994,7 +19981,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#loadNearIndex",
     "access": "public",
     "description": "Clear the stream and load posts near a certain index. A page of posts\nsurrounding the given index will be loaded. Returns a promise. If the given\nindex is already loaded, the promise will be resolved immediately.",
-    "lineNumber": 450,
+    "lineNumber": 449,
     "params": [
       {
         "nullable": null,
@@ -20027,7 +20014,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#calculatePosition",
     "access": "public",
     "description": "Work out which posts (by number) are currently visible in the viewport, and\nfire an event with the information.",
-    "lineNumber": 467,
+    "lineNumber": 466,
     "params": [],
     "return": null
   },
@@ -20042,7 +20029,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#getMarginTop",
     "access": "public",
     "description": "Get the distance from the top of the viewport to the point at which we\nwould consider a post to be the first one visible.",
-    "lineNumber": 504,
+    "lineNumber": 503,
     "return": {
       "nullable": null,
       "types": [
@@ -20064,7 +20051,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#scrollToNumber",
     "access": "public",
     "description": "Scroll down to a certain post by number and 'flash' it.",
-    "lineNumber": 515,
+    "lineNumber": 514,
     "params": [
       {
         "nullable": null,
@@ -20107,7 +20094,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#scrollToIndex",
     "access": "public",
     "description": "Scroll down to a certain post by index.",
-    "lineNumber": 530,
+    "lineNumber": 529,
     "params": [
       {
         "nullable": null,
@@ -20160,7 +20147,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#scrollToItem",
     "access": "public",
     "description": "Scroll down to the given post.",
-    "lineNumber": 547,
+    "lineNumber": 546,
     "params": [
       {
         "nullable": null,
@@ -20223,7 +20210,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#flashItem",
     "access": "public",
     "description": "'Flash' the given post, drawing the user's attention to it.",
-    "lineNumber": 580,
+    "lineNumber": 579,
     "params": [
       {
         "nullable": null,
@@ -20249,7 +20236,7 @@
     "longname": "src/forum/components/PostStream.js~PostStream#unpause",
     "access": "public",
     "description": "Resume the stream's ability to auto-load posts on scroll.",
-    "lineNumber": 587,
+    "lineNumber": 586,
     "params": [],
     "return": null
   },
@@ -20276,7 +20263,7 @@
     "importPath": "flarum/components/PostStreamScrubber",
     "importStyle": "PostStreamScrubber",
     "description": "The `PostStreamScrubber` component displays a scrubber which can be used to\nnavigate/scrub through a post stream.\n\n### Props\n\n- `stream`\n- `className`",
-    "lineNumber": 17,
+    "lineNumber": 16,
     "interface": false,
     "extends": [
       "src/common/Component.js~Component"
@@ -20293,7 +20280,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#init",
     "access": "public",
     "description": null,
-    "lineNumber": 18,
+    "lineNumber": 17,
     "undocument": true,
     "params": [],
     "return": null
@@ -20307,7 +20294,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#handlers",
     "access": "public",
     "description": null,
-    "lineNumber": 19,
+    "lineNumber": 18,
     "undocument": true,
     "type": {
       "types": [
@@ -20324,7 +20311,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#index",
     "access": "public",
     "description": "The index of the post that is currently at the top of the viewport.",
-    "lineNumber": 26,
+    "lineNumber": 25,
     "type": {
       "nullable": null,
       "types": [
@@ -20343,7 +20330,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#visible",
     "access": "public",
     "description": "The number of posts that are currently visible in the viewport.",
-    "lineNumber": 33,
+    "lineNumber": 32,
     "type": {
       "nullable": null,
       "types": [
@@ -20362,7 +20349,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#description",
     "access": "public",
     "description": "The description to render on the scrubber.",
-    "lineNumber": 40,
+    "lineNumber": 39,
     "type": {
       "nullable": null,
       "types": [
@@ -20381,7 +20368,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#scrollListener",
     "access": "public",
     "description": null,
-    "lineNumber": 48,
+    "lineNumber": 47,
     "undocument": true,
     "type": {
       "types": [
@@ -20398,7 +20385,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#subtree",
     "access": "public",
     "description": null,
-    "lineNumber": 54,
+    "lineNumber": 53,
     "undocument": true,
     "type": {
       "types": [
@@ -20417,7 +20404,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#view",
     "access": "public",
     "description": null,
-    "lineNumber": 57,
+    "lineNumber": 56,
     "undocument": true,
     "params": [],
     "return": {
@@ -20437,7 +20424,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#goToFirst",
     "access": "public",
     "description": "Go to the first post in the discussion.",
-    "lineNumber": 124,
+    "lineNumber": 123,
     "params": [],
     "return": null
   },
@@ -20452,7 +20439,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#goToLast",
     "access": "public",
     "description": "Go to the last post in the discussion.",
-    "lineNumber": 133,
+    "lineNumber": 132,
     "params": [],
     "return": null
   },
@@ -20467,7 +20454,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#count",
     "access": "public",
     "description": "Get the number of posts in the discussion.",
-    "lineNumber": 144,
+    "lineNumber": 143,
     "return": {
       "nullable": null,
       "types": [
@@ -20489,7 +20476,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#streamWasUnpaused",
     "access": "public",
     "description": "When the stream is unpaused, update the scrubber to reflect its position.",
-    "lineNumber": 151,
+    "lineNumber": 150,
     "params": [],
     "return": null
   },
@@ -20504,7 +20491,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#disabled",
     "access": "public",
     "description": "Check whether or not the scrubber should be disabled, i.e. if all of the\nposts are visible in the viewport.",
-    "lineNumber": 162,
+    "lineNumber": 161,
     "return": {
       "nullable": null,
       "types": [
@@ -20526,7 +20513,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onscroll",
     "access": "public",
     "description": "When the page is scrolled, update the scrollbar to reflect the visible\nposts.",
-    "lineNumber": 172,
+    "lineNumber": 171,
     "params": [
       {
         "nullable": null,
@@ -20552,7 +20539,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#update",
     "access": "public",
     "description": "Update the index/visible/description properties according to the window's\ncurrent scroll position.",
-    "lineNumber": 187,
+    "lineNumber": 186,
     "params": [
       {
         "nullable": null,
@@ -20578,7 +20565,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#config",
     "access": "public",
     "description": null,
-    "lineNumber": 246,
+    "lineNumber": 245,
     "undocument": true,
     "params": [
       {
@@ -20605,7 +20592,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#dragging",
     "access": "public",
     "description": null,
-    "lineNumber": 271,
+    "lineNumber": 270,
     "undocument": true,
     "type": {
       "types": [
@@ -20622,7 +20609,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#mouseStart",
     "access": "public",
     "description": null,
-    "lineNumber": 272,
+    "lineNumber": 271,
     "undocument": true,
     "type": {
       "types": [
@@ -20639,7 +20626,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#indexStart",
     "access": "public",
     "description": null,
-    "lineNumber": 273,
+    "lineNumber": 272,
     "undocument": true,
     "type": {
       "types": [
@@ -20658,7 +20645,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#ondestroy",
     "access": "public",
     "description": null,
-    "lineNumber": 291,
+    "lineNumber": 290,
     "undocument": true,
     "params": [],
     "return": null
@@ -20674,7 +20661,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#renderScrollbar",
     "access": "public",
     "description": "Update the scrollbar's position to reflect the current values of the\nindex/visible properties.",
-    "lineNumber": 310,
+    "lineNumber": 309,
     "params": [
       {
         "nullable": null,
@@ -20700,7 +20687,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#percentPerPost",
     "access": "public",
     "description": "Get the percentage of the height of the scrubber that should be allocated\nto each post.",
-    "lineNumber": 347,
+    "lineNumber": 346,
     "properties": [
       {
         "nullable": null,
@@ -20744,7 +20731,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onresize",
     "access": "public",
     "description": null,
-    "lineNumber": 367,
+    "lineNumber": 366,
     "undocument": true,
     "params": [],
     "return": null
@@ -20760,7 +20747,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onmousedown",
     "access": "public",
     "description": null,
-    "lineNumber": 381,
+    "lineNumber": 380,
     "undocument": true,
     "params": [
       {
@@ -20783,7 +20770,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onmousemove",
     "access": "public",
     "description": null,
-    "lineNumber": 389,
+    "lineNumber": 388,
     "undocument": true,
     "params": [
       {
@@ -20806,7 +20793,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onmouseup",
     "access": "public",
     "description": null,
-    "lineNumber": 405,
+    "lineNumber": 404,
     "undocument": true,
     "params": [],
     "return": null
@@ -20822,7 +20809,7 @@
     "longname": "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onclick",
     "access": "public",
     "description": null,
-    "lineNumber": 422,
+    "lineNumber": 421,
     "undocument": true,
     "params": [
       {

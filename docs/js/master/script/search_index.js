@@ -3702,12 +3702,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/utils/scrolllistener.js~scrolllistener#lasttop",
-    "class/src/common/utils/ScrollListener.js~ScrollListener.html#instance-member-lastTop",
-    "src/common/utils/ScrollListener.js~ScrollListener#lastTop",
-    "member"
-  ],
-  [
     "src/common/utils/scrolllistener.js~scrolllistener#loop",
     "class/src/common/utils/ScrollListener.js~ScrollListener.html#instance-method-loop",
     "src/common/utils/ScrollListener.js~ScrollListener#loop",
@@ -3724,6 +3718,12 @@ window.esdocSearchIndex = [
     "class/src/common/utils/ScrollListener.js~ScrollListener.html#instance-method-stop",
     "src/common/utils/ScrollListener.js~ScrollListener#stop",
     "method"
+  ],
+  [
+    "src/common/utils/scrolllistener.js~scrolllistener#ticking",
+    "class/src/common/utils/ScrollListener.js~ScrollListener.html#instance-member-ticking",
+    "src/common/utils/ScrollListener.js~ScrollListener#ticking",
+    "member"
   ],
   [
     "src/common/utils/scrolllistener.js~scrolllistener#update",

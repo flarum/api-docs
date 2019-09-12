@@ -1815,6 +1815,7 @@ window.projectVersion = 'master';
             
             {"type": "Class", "fromName": "Flarum\\Queue", "fromLink": "Flarum/Queue.html", "link": "Flarum/Queue/Listener.html", "name": "Flarum\\Queue\\Listener", "doc": "&quot;&quot;"},
                                                         {"type": "Method", "fromName": "Flarum\\Queue\\Listener", "fromLink": "Flarum/Queue/Listener.html", "link": "Flarum/Queue/Listener.html#method_addEnvironment", "name": "Flarum\\Queue\\Listener::addEnvironment", "doc": "&quot;&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\Queue\\Listener", "fromLink": "Flarum/Queue/Listener.html", "link": "Flarum/Queue/Listener.html#method_artisanBinary", "name": "Flarum\\Queue\\Listener::artisanBinary", "doc": "&quot;&quot;"},
             
             {"type": "Class", "fromName": "Flarum\\Queue", "fromLink": "Flarum/Queue.html", "link": "Flarum/Queue/QueueFactory.html", "name": "Flarum\\Queue\\QueueFactory", "doc": "&quot;&quot;"},
                                                         {"type": "Method", "fromName": "Flarum\\Queue\\QueueFactory", "fromLink": "Flarum/Queue/QueueFactory.html", "link": "Flarum/Queue/QueueFactory.html#method___construct", "name": "Flarum\\Queue\\QueueFactory::__construct", "doc": "&quot;QueueFactory constructor.&quot;"},

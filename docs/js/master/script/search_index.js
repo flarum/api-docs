@@ -301,13 +301,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -445,13 +445,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/page~page",
-    "class/src/admin/components/Page.js~Page.html",
+    "class/src/forum/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
   [
     "flarum/components/page~page",
-    "class/src/forum/components/Page.js~Page.html",
+    "class/src/admin/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
@@ -5829,6 +5829,12 @@ window.esdocSearchIndex = [
     "src/forum/components/post.js~post#attrs",
     "class/src/forum/components/Post.js~Post.html#instance-method-attrs",
     "src/forum/components/Post.js~Post#attrs",
+    "method"
+  ],
+  [
+    "src/forum/components/post.js~post#classes",
+    "class/src/forum/components/Post.js~Post.html#instance-method-classes",
+    "src/forum/components/Post.js~Post#classes",
     "method"
   ],
   [

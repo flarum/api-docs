@@ -3,7 +3,9 @@ name: Build API docs
 on:
   schedule:
   - cron: "0 * * * *"
-  push
+  push:
+    paths-ignore:
+    - 'docs/**'
 
 jobs:
   build:

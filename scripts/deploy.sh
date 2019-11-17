@@ -7,7 +7,7 @@ echo -e "\e[36m\e[1mTriggered new API documentation build"
 echo -e "\e[36m\e[1mChecking out 'master'"
 git checkout -qf master
 
-export ROOT_PATH=$(cd $GITHUB_WORKSPACE/.. && pwd)
+export ROOT_PATH=$(cd $GITHUB_WORKSPACE/../.. && pwd)
 export REPO_FOLDER=${PWD##*/}
 FLARUM_FOLDER="$ROOT_PATH/flarum"
 

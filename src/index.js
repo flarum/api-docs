@@ -44,7 +44,7 @@ const createJSDoc = async (BRANCH) => {
     progress.step(`Documentation JS (${BRANCH})`).setTotal(4);
     await exec(`cd flarum && git checkout ${BRANCH} && git pull origin ${BRANCH}`);
     progress.addTick()
-    await exec(`cd ${jsFolder} && mkdir -p ${BRANCH} && cat ../../esdoc.json > ${BRANCH}/esdoc.json && cp ../../src/readme-js.md ${BRANCH}/README.md`);
+    await exec(`cd ${jsFolder} && mkdir -p ${branchFolder} && cat ../../esdoc.json > ${branchFolder}/esdoc.json && cp ../../src/readme-js.md ${branchFolder}/README.md`);
     progress.addTick();
     await exec(`cd ${branchFolder} && npx esdoc -c esdoc.json`);
     progress.addTick();

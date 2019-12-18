@@ -69,7 +69,7 @@ const createPHPDoc = async (BRANCH) => {
     
     await exec(`cd ${phpFolder} && mkdir -p ${BRANCH}`);
     progress.addTick();
-    await exec(`cd ${phpFolder} && export && php ${executablePath} parse ${configPath} --only-version=${BRANCH} --force -n`).catch(e => {
+    await exec(`cd ${phpFolder} && php ${executablePath} parse ${configPath} --only-version=${BRANCH} --force -n`).catch(e => {
       if (e.stdout && !e.stdout.includes(`[`)) return;
       handleError(e);
     });

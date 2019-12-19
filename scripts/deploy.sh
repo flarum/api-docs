@@ -1,4 +1,22 @@
+#!/bin/bash -l
+
 set -e
+
+# log commands run, useful when debugging
+trap 'log "$BASH_COMMAND"' DEBUG
+
+log() {
+    echo -ne '\e[0;10m'
+
+    # ignore echo commands
+    if [[ $1 != echo* ]]; then
+        echo "##[command]$1"
+    fi
+}
+
+getSHA() {
+  echo $(cd $FLARUM_FOLDER && git rev-parse --verify HEAD --short)
+}
 
 echo -e "\e[36m\e[1mTriggered new API documentation build"
 
@@ -17,12 +35,19 @@ git clone https://github.com/flarum/core $FLARUM_FOLDER &> /dev/null
 
 echo -e "\e[36m\e[1m-> Using latest commit"
 
-SHA=$(cd $FLARUM_FOLDER && git rev-parse --verify HEAD --short)
+SHA=$(getSHA)
 
-echo -e "\e[36m\e[1mBuilding for commit $SHA\n\n"
+echo -e "\e[36m\e[1mBuilding for commit $SHA"
 
 # Build node src --php --js
 node src --php --js
+
+# rewrite js
+echo -e "\e[36m\e[1mBuilding ds/frontend-framework-rewrite-mithril"
+
+(cd $FLARUM_FOLDER && git fetch origin && git checkout ds/frontend-framework-rewrite-mithril)
+SHA_REWRITE=$(getSHA)
+npx typedoc "$FLARUM_FOLDER/js/src" --includeDeclarations --ignoreCompilerErrors --jsx true --out docs/js/ds~frontend-framework-rewrite-mithril --excludeExternals --name 'Flarum API' --plugin typedoc-plugin-external-module-map --external-modulemap ".*js\/src\/([\\w\\-_]+(\/[\\w\\-_]+)?)\/"  --listInvalidSymbolLinks --hideGenerator
 
 # -> DEPLOY
 
@@ -35,17 +60,24 @@ git config user.email "github-bot@users.noreply.github.com"
 echo -e "\e[36m\e[1mCommitting changes"
 
 message="update master (flarum/core@$SHA)"
+messageRewrite="update ds/frontend-framework-rewrite-mithril (flarum/core@$SHA_REWRITE)"
 
-if [[ "$(git diff --name-only docs/js | wc -l | bc)" -gt "1" ]]; then
+if [[ "$(git diff --name-only docs/js/master | wc -l | bc)" -gt "1" ]]; then
   echo -e "\e[36m\e[1m- JS"
   git add docs/js
   git commit -m "js: $message"
 fi
 
-if [[ ! -z "$(git diff-index --name-only HEAD docs/php)" ]]; then
+if [[ ! -z "$(git diff-index --name-only HEAD docs/php/master)" ]]; then
   echo -e "\e[36m\e[1m- PHP"
   git add docs/php
   git commit -m "php: $message"
+fi
+
+if [[ "$(git diff --name-only docs/js/ds~frontend-framework-rewrite-mithril | wc -l | bc)" -gt "1" ]]; then
+  echo -e "\e[36m\e[1m- JS [ds/frontend-framework-rewrite-mithril]"
+  git add docs/js
+  git commit -m "js: $messageRewrite"
 fi
 
 echo -e "\e[36m\e[1mPushing changes"

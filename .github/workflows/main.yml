@@ -12,15 +12,22 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js 10.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10.x
-    - name: Install dependencies
-      run: npm install
+      - uses: actions/checkout@v1
+
+      - name: Use PHP 7.2
+        uses: shivammathur/setup-php@v1
+        with:
+          php-version: '7.2'
       
-    - name: Update API Documentation
-      run: . scripts/deploy.sh
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Update API Documentation
+        run: . scripts/deploy.sh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

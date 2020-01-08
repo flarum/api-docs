@@ -146,10 +146,10 @@
 								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> children<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Mithril.Children</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Mithril.Children</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> class<wbr>Name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> class<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
 					</div>
@@ -188,43 +188,16 @@
 									<li>Defined in <a href="https://github.com/flarum/core/blob/abdaf633/js/src/common/extend.ts#L21">home/runner/work/FlarumAPIDocs/flarum/js/src/common/extend.ts:21</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Extend an object&#39;s method by running its output through a mutating callback
-									every time it is called.</p>
-								</div>
-								<p>The callback accepts the method&#39;s return value and should perform any
-									mutations directly on this value. For this reason, this function will not be
-								effective on methods which return scalar values (numbers, strings, booleans).</p>
-								<p>Care should be taken to extend the correct object – in most cases, a class&#39;
-								prototype will be the desired target of extension, not the class itself.</p>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p>extend(Discussion.prototype, &#39;badges&#39;, function(badges) {
-											// do something with <code>badges</code>
-										});</p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>object: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The object that owns the method</p>
-									</div>
 								</li>
 								<li>
 									<h5>method: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The name of the method to extend</p>
-									</div>
 								</li>
 								<li>
 									<h5>callback: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A callback which mutates the method&#39;s output</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -244,45 +217,16 @@
 									<li>Defined in <a href="https://github.com/flarum/core/blob/abdaf633/js/src/common/extend.ts#L59">home/runner/work/FlarumAPIDocs/flarum/js/src/common/extend.ts:59</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Override an object&#39;s method by replacing it with a new function, so that the
-									new function will be run every time the object&#39;s method is called.</p>
-								</div>
-								<p>The replacement function accepts the original method as its first argument,
-									which is like a call to &#39;super&#39;. Any arguments passed to the original method
-								are also passed to the replacement.</p>
-								<p>Care should be taken to extend the correct object – in most cases, a class&#39;
-								prototype will be the desired target of extension, not the class itself.</p>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p>override(Discussion.prototype, &#39;badges&#39;, function(original) {
-											const badges = original();
-											// do something with badges
-											return badges;
-										});</p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>object: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The object that owns the method</p>
-									</div>
 								</li>
 								<li>
 									<h5>method: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The name of the method to override</p>
-									</div>
 								</li>
 								<li>
 									<h5>newMethod: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The method to replace it with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>

@@ -67,6 +67,25 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The <code>Button</code> component defines an element which, when clicked, performs an
+						action. The button may have the following special props:</p>
+					</div>
+					<ul>
+						<li><code>icon</code> The name of the icon class. If specified, the button will be given a
+						&#39;has-icon&#39; class name.</li>
+						<li><code>disabled</code> Whether or not the button is disabled. If truthy, the button
+							will be given a &#39;disabled&#39; class name, and any <code>onclick</code> handler will be
+						removed.</li>
+						<li><code>loading</code> Whether or not the button should be in a disabled loading state.</li>
+					</ul>
+					<p>All other props will be assigned as attributes on the button element.</p>
+					<p>Note that a Button has no default class names. This is because a Button can
+					be used to represent any generic clickable control, like a menu item.</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-type-parameters">
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
@@ -154,7 +173,7 @@
 					<a name="_" class="tsd-anchor"></a>
 					<h3>$</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">$<span class="tsd-signature-symbol">(</span>selector<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ZeptoCollection</span></li>
+						<li class="tsd-signature tsd-kind-icon">$<span class="tsd-signature-symbol">(</span>selector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ZeptoCollection</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -164,6 +183,20 @@
 									<li>Defined in <a href="https://github.com/flarum/core/blob/abdaf633/js/src/common/Component.ts#L58">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Component.ts:58</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a jQuery object for this component&#39;s element. If you pass in a
+										selector string, this method will return a jQuery object, using the current
+									element as its buffer.</p>
+								</div>
+								<p>For example, calling <code>component.$(&#39;li&#39;)</code> will return a jQuery object
+									containing all of the <code>li</code> elements inside the DOM element of this
+								component.</p>
+								<dl class="tsd-comment-tags">
+									<dt>final</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -179,7 +212,7 @@
 					<a name="getbuttoncontent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Button<wbr>Content</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Button<wbr>Content<span class="tsd-signature-symbol">(</span>iconName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span>, loading<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Button<wbr>Content<span class="tsd-signature-symbol">(</span>iconName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span>, loading<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, children<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -188,6 +221,11 @@
 									<li>Defined in <a href="https://github.com/flarum/core/blob/abdaf633/js/src/common/components/Button.tsx#L63">home/runner/work/FlarumAPIDocs/flarum/js/src/common/components/Button.tsx:63</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the template for the button&#39;s content.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -376,7 +414,7 @@
 					<a name="component" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> component</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">component<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">?: </span><a href="../modules/common.html#componentprops" class="tsd-signature-type">ComponentProps</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span>, children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Mithril.Children</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">component<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">?: </span><a href="../modules/common.html#componentprops" class="tsd-signature-type">ComponentProps</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span>, children<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Mithril.Children</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">

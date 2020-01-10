@@ -289,25 +289,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -445,13 +445,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/page~page",
-    "class/src/forum/components/Page.js~Page.html",
+    "class/src/admin/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
   [
     "flarum/components/page~page",
-    "class/src/admin/components/Page.js~Page.html",
+    "class/src/forum/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
@@ -1839,6 +1839,12 @@ window.esdocSearchIndex = [
     "src/admin/components/mailpage.js~mailpage#onsubmit",
     "class/src/admin/components/MailPage.js~MailPage.html#instance-method-onsubmit",
     "src/admin/components/MailPage.js~MailPage#onsubmit",
+    "method"
+  ],
+  [
+    "src/admin/components/mailpage.js~mailpage#renderfield",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-renderField",
+    "src/admin/components/MailPage.js~MailPage#renderField",
     "method"
   ],
   [

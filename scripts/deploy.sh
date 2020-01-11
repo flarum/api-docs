@@ -64,7 +64,7 @@ messageRewrite="update ds/frontend-framework-rewrite-mithril (flarum/core@$SHA_R
 
 if [[ "$(git diff --name-only docs/js/master | wc -l | bc)" -gt "1" ]]; then
   echo -e "\e[36m\e[1m- JS"
-  git add docs/js
+  git add docs/js/master
   git commit -m "js: $message"
 fi
 
@@ -76,7 +76,7 @@ fi
 
 if [[ "$(git diff --name-only docs/js/ds~frontend-framework-rewrite-mithril | wc -l | bc)" -gt "1" ]]; then
   echo -e "\e[36m\e[1m- JS [ds/frontend-framework-rewrite-mithril]"
-  git add docs/js
+  git add docs/js/ds~frontend-framework-rewrite-mithril
   git commit -m "js: $messageRewrite"
 fi
 

@@ -289,13 +289,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -631,13 +631,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -1842,6 +1842,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/mailpage.js~mailpage#refresh",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-refresh",
+    "src/admin/components/MailPage.js~MailPage#refresh",
+    "method"
+  ],
+  [
     "src/admin/components/mailpage.js~mailpage#renderfield",
     "class/src/admin/components/MailPage.js~MailPage.html#instance-method-renderField",
     "src/admin/components/MailPage.js~MailPage#renderField",
@@ -1851,6 +1857,12 @@ window.esdocSearchIndex = [
     "src/admin/components/mailpage.js~mailpage#saving",
     "class/src/admin/components/MailPage.js~MailPage.html#instance-member-saving",
     "src/admin/components/MailPage.js~MailPage#saving",
+    "member"
+  ],
+  [
+    "src/admin/components/mailpage.js~mailpage#status",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-status",
+    "src/admin/components/MailPage.js~MailPage#status",
     "member"
   ],
   [

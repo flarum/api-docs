@@ -106,7 +106,39 @@ using one of Laravel's various email drivers throughout Flarum.</p>             
                                             <p>Provide a list of settings for this driver.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Mail/DriverInterface.php#L32" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Mail/DriverInterface.php#L34" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_validate">validate</a>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <abbr title="Illuminate\Contracts\Validation\Factory">Factory</abbr> $validator)
+        
+                                            <p>Ensure the given settings are enough to send emails.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Mail/DriverInterface.php#L49" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_canSend">canSend</a>()
+        
+                                            <p>Does this driver actually send out emails?</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Mail/DriverInterface.php#L54" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -137,8 +169,8 @@ using one of Laravel's various email drivers throughout Flarum.</p>             
                     <div class="method-item">
                     <h3 id="method_availableSettings">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Mail/DriverInterface.php#L32" target="_blank">
-            line 32
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Mail/DriverInterface.php#L34" target="_blank">
+            line 34
         </a>
         </div>
         <code>                    array
@@ -160,6 +192,97 @@ a dropdown field).</p>                            </div>
                     <table class="table table-condensed">
         <tr>
             <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validate">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Mail/DriverInterface.php#L49" target="_blank">
+            line 49
+        </a>
+        </div>
+        <code>                    <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>
+    <strong>validate</strong>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <abbr title="Illuminate\Contracts\Validation\Factory">Factory</abbr> $validator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Ensure the given settings are enough to send emails.</p>                    <p>This method is responsible for determining whether the user-provided
+values stored in Flarum&#039;s settings are &quot;valid&quot; as far as a simple
+inspection of these values can determine it. Of course, this does not
+mean that the mail server or API will actually accept e.g. credentials.&lt;/p&gt;
+
+&lt;p&gt;Any errors must be wrapped in a {see \Illuminate\Support\MessageBag}.
+If there are no errors, an empty instance can be returned. In the
+presence of validation problems with the configured mail driver, Flarum
+will fall back to its no-op {see \Flarum\Mail\NullDriver}.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Validation\Factory">Factory</abbr></td>
+                <td>$validator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canSend">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Mail/DriverInterface.php#L54" target="_blank">
+            line 54
+        </a>
+        </div>
+        <code>                    bool
+    <strong>canSend</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Does this driver actually send out emails?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
             <td></td>
         </tr>
     </table>

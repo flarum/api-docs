@@ -80,12 +80,6 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="common.translator.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="common.translator.html#locale" class="tsd-kind-icon">locale</a></li>
@@ -97,7 +91,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.translator.html#addtranslations" class="tsd-kind-icon">add<wbr>Translations</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.translator.html#apply" class="tsd-kind-icon">apply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.translator.html#convertnumber" class="tsd-kind-icon">convert<wbr>Number</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.translator.html#pluralposition" class="tsd-kind-icon">plural<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.translator.html#pluralize" class="tsd-kind-icon">pluralize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.translator.html#trans" class="tsd-kind-icon">trans</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.translator.html#transchoice" class="tsd-kind-icon">trans<wbr>Choice</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.translator.html#transtext" class="tsd-kind-icon">trans<wbr>Text</a></li>
 							</ul>
 						</section>
@@ -105,34 +103,14 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Translator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="common.translator.html" class="tsd-signature-type">Translator</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/d3ec99cb/js/src/common/Translator.ts#L9">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:9</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="common.translator.html" class="tsd-signature-type">Translator</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="locale" class="tsd-anchor"></a>
 					<h3>locale</h3>
-					<div class="tsd-signature tsd-kind-icon">locale<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">locale<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/d3ec99cb/js/src/common/Translator.ts#L9">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/e57ea9ab/js/src/common/Translator.ts#L12">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -142,9 +120,14 @@
 					<div class="tsd-signature tsd-kind-icon">translations<span class="tsd-signature-symbol">:</span> <a href="../modules/common.html#translations" class="tsd-signature-type">Translations</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/d3ec99cb/js/src/common/Translator.ts#L8">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/e57ea9ab/js/src/common/Translator.ts#L11">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:11</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A map of translation keys to their translated values.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -159,7 +142,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/d3ec99cb/js/src/common/Translator.ts#L23">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/e57ea9ab/js/src/common/Translator.ts#L14">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -182,7 +165,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/d3ec99cb/js/src/common/Translator.ts#L41">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/e57ea9ab/js/src/common/Translator.ts#L46">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -199,16 +182,102 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="trans" class="tsd-anchor"></a>
-					<h3>trans</h3>
+					<a name="convertnumber" class="tsd-anchor"></a>
+					<h3>convert<wbr>Number</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">trans<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, parameters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Number<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/d3ec99cb/js/src/common/Translator.ts#L27">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/e57ea9ab/js/src/common/Translator.ts#L130">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:130</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="pluralposition" class="tsd-anchor"></a>
+					<h3>plural<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">plural<wbr>Position<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, locale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">5</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/e57ea9ab/js/src/common/Translator.ts#L140">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:140</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>locale: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">0</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">1</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">2</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">4</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">3</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">5</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="pluralize" class="tsd-anchor"></a>
+					<h3>pluralize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">pluralize<span class="tsd-signature-symbol">(</span>translation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/e57ea9ab/js/src/common/Translator.ts#L80">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:80</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>translation: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="trans" class="tsd-anchor"></a>
+					<h3>trans</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">trans<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, parameters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/e57ea9ab/js/src/common/Translator.ts#L18">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -217,7 +286,39 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> parameters: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> parameters: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="transchoice" class="tsd-anchor"></a>
+					<h3>trans<wbr>Choice</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">trans<wbr>Choice<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/e57ea9ab/js/src/common/Translator.ts#L32">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:32</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>number: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>parameters: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
@@ -231,13 +332,13 @@
 					<a name="transtext" class="tsd-anchor"></a>
 					<h3>trans<wbr>Text</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">trans<wbr>Text<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, parameters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">trans<wbr>Text<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, parameters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/d3ec99cb/js/src/common/Translator.ts#L37">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/e57ea9ab/js/src/common/Translator.ts#L28">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Translator.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -246,7 +347,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> parameters: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> parameters: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -315,9 +416,6 @@
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="common.translator.html" class="tsd-kind-icon">Translator</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="common.translator.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="common.translator.html#locale" class="tsd-kind-icon">locale</a>
 							</li>
@@ -331,7 +429,19 @@
 								<a href="common.translator.html#apply" class="tsd-kind-icon">apply</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="common.translator.html#convertnumber" class="tsd-kind-icon">convert<wbr>Number</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="common.translator.html#pluralposition" class="tsd-kind-icon">plural<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="common.translator.html#pluralize" class="tsd-kind-icon">pluralize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="common.translator.html#trans" class="tsd-kind-icon">trans</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="common.translator.html#transchoice" class="tsd-kind-icon">trans<wbr>Choice</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="common.translator.html#transtext" class="tsd-kind-icon">trans<wbr>Text</a>

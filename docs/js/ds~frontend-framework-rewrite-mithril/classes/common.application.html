@@ -87,11 +87,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="common.application.html#bus" class="tsd-kind-icon">bus</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="common.application.html#booted" class="tsd-kind-icon">booted</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="common.application.html#cache" class="tsd-kind-icon">cache</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="common.application.html#data" class="tsd-kind-icon">data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="common.application.html#drawer" class="tsd-kind-icon">drawer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="common.application.html#forum" class="tsd-kind-icon">forum</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="common.application.html#initializers" class="tsd-kind-icon">initializers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="common.application.html#modal" class="tsd-kind-icon">modal</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="common.application.html#requesterror" class="tsd-kind-icon">request<wbr>Error</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="common.application.html#routes" class="tsd-kind-icon">routes</a></li>
@@ -106,15 +107,14 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#boot" class="tsd-kind-icon">boot</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#locale" class="tsd-kind-icon">locale</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#bootextensions" class="tsd-kind-icon">boot<wbr>Extensions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#load" class="tsd-kind-icon">load</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#mount" class="tsd-kind-icon">mount</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#plugins" class="tsd-kind-icon">plugins</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#preloadedapidocument" class="tsd-kind-icon">preloaded<wbr>Api<wbr>Document</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#request" class="tsd-kind-icon">request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#route" class="tsd-kind-icon">route</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#settitle" class="tsd-kind-icon">set<wbr>Title</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#settitlecount" class="tsd-kind-icon">set<wbr>Title<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#setuproutes" class="tsd-kind-icon">setup<wbr>Routes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="common.application.html#showdebug" class="tsd-kind-icon">show<wbr>Debug</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="common.application.html#updatetitle" class="tsd-kind-icon">update<wbr>Title</a></li>
 							</ul>
@@ -125,14 +125,19 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="bus" class="tsd-anchor"></a>
-					<h3>bus</h3>
-					<div class="tsd-signature tsd-kind-icon">bus<span class="tsd-signature-symbol">:</span> <a href="common.bus.html" class="tsd-signature-type">Bus</a><span class="tsd-signature-symbol"> =&nbsp;new Bus()</span></div>
+					<a name="booted" class="tsd-anchor"></a>
+					<h3>booted</h3>
+					<div class="tsd-signature tsd-kind-icon">booted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L43">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L91">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:91</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether or not the app has been booted.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="cache" class="tsd-anchor"></a>
@@ -140,7 +145,7 @@
 					<div class="tsd-signature tsd-kind-icon">cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L70">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L86">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:86</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -164,7 +169,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="../modules/common.html#applicationdata" class="tsd-signature-type">ApplicationData</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L40">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L99">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:99</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -174,7 +179,7 @@
 					<div class="tsd-signature tsd-kind-icon">drawer<span class="tsd-signature-symbol">:</span> <a href="common_utils.drawer.html" class="tsd-signature-type">Drawer</a><span class="tsd-signature-symbol"> =&nbsp;new Drawer()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L62">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L104">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:104</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">forum<span class="tsd-signature-symbol">:</span> <a href="common_models.forum.html" class="tsd-signature-type">Forum</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L38">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L41">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -194,22 +199,37 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="initializers" class="tsd-anchor"></a>
+					<h3>initializers</h3>
+					<div class="tsd-signature tsd-kind-icon">initializers<span class="tsd-signature-symbol">:</span> <a href="common_utils.itemlist.html" class="tsd-signature-type">ItemList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new ItemList()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L58">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:58</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An ordered list of initializers to bootstrap the application.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="modal" class="tsd-anchor"></a>
 					<h3>modal</h3>
 					<div class="tsd-signature tsd-kind-icon">modal<span class="tsd-signature-symbol">:</span> <a href="common_components.modalmanager.html" class="tsd-signature-type">ModalManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L64">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L105">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:105</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="requesterror" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> request<wbr>Error</h3>
-					<div class="tsd-signature tsd-kind-icon">request<wbr>Error<span class="tsd-signature-symbol">:</span> <a href="common_components.alert.html" class="tsd-signature-type">Alert</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">request<wbr>Error<span class="tsd-signature-symbol">:</span> <a href="common_components.alert.html" class="tsd-signature-type">Alert</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L81">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L97">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:97</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -225,12 +245,41 @@
 					<div class="tsd-signature tsd-kind-icon">routes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L72">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L53">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:53</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A map of routes, keyed by a unique route name. Each route is an object
+							containing the following properties:</p>
+						</div>
+						<ul>
+							<li><code>path</code> The path that the route is accessed at.</li>
+							<li><code>component</code> The Mithril component to render when this route is active.</li>
+						</ul>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><p>app.routes.discussion = {path: &#39;/d/:id&#39;, component: DiscussionPage.component()};</p>
+							</dd>
+						</dl>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-index-signature">
+										<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>component<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</section>
@@ -240,7 +289,7 @@
 					<div class="tsd-signature tsd-kind-icon">session<span class="tsd-signature-symbol">:</span> <a href="common.session.html" class="tsd-signature-type">Session</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L48">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L63">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -255,7 +304,7 @@
 					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <a href="common.store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol"> =&nbsp;new Store({forums: Forum,users: User,discussions: Discussion,posts: Post,groups: Group,notifications: Notification,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L53">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L73">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -270,7 +319,7 @@
 					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L74">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L101">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:101</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -280,7 +329,7 @@
 					<div class="tsd-signature tsd-kind-icon">title<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L75">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L102">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:102</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -290,9 +339,14 @@
 					<div class="tsd-signature tsd-kind-icon">translator<span class="tsd-signature-symbol">:</span> <a href="common.translator.html" class="tsd-signature-type">Translator</a><span class="tsd-signature-symbol"> =&nbsp;new Translator()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L42">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L68">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:68</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The app&#39;s translator.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -301,13 +355,53 @@
 					<a name="boot" class="tsd-anchor"></a>
 					<h3>boot</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">boot<span class="tsd-signature-symbol">(</span>payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">boot<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L91">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L112">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:112</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="bootextensions" class="tsd-anchor"></a>
+					<h3>boot<wbr>Extensions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">boot<wbr>Extensions<span class="tsd-signature-symbol">(</span>extensions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L126">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:126</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>extensions: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="load" class="tsd-anchor"></a>
+					<h3>load</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span>payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L107">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:107</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -316,23 +410,6 @@
 									<h5>payload: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="locale" class="tsd-anchor"></a>
-					<h3>locale</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">locale<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L108">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:108</a></li>
-								</ul>
-							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -347,7 +424,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L83">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L138">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:138</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -356,23 +433,6 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> basePath: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="plugins" class="tsd-anchor"></a>
-					<h3>plugins</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">plugins<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L114">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:114</a></li>
-								</ul>
-							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -387,7 +447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L125">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L162">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:162</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -414,7 +474,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L177">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L214">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:214</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -447,7 +507,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L160">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L197">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:197</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -478,7 +538,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L140">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L177">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -506,7 +566,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L148">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L185">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -524,23 +584,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="setuproutes" class="tsd-anchor"></a>
-					<h3>setup<wbr>Routes</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">setup<wbr>Routes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L118">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:118</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="showdebug" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> show<wbr>Debug</h3>
@@ -551,7 +594,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L303">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:303</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L340">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:340</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -574,7 +617,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/flarum/core/blob/f2bacd69/js/src/common/Application.ts#L153">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/flarum/core/blob/85aa50a8/js/src/common/Application.ts#L190">home/runner/work/FlarumAPIDocs/flarum/js/src/common/Application.ts:190</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -626,7 +669,7 @@
 						<a href="common.application.html" class="tsd-kind-icon">Application</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="common.application.html#bus" class="tsd-kind-icon">bus</a>
+								<a href="common.application.html#booted" class="tsd-kind-icon">booted</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="common.application.html#cache" class="tsd-kind-icon">cache</a>
@@ -639,6 +682,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="common.application.html#forum" class="tsd-kind-icon">forum</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="common.application.html#initializers" class="tsd-kind-icon">initializers</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="common.application.html#modal" class="tsd-kind-icon">modal</a>
@@ -668,13 +714,13 @@
 								<a href="common.application.html#boot" class="tsd-kind-icon">boot</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="common.application.html#locale" class="tsd-kind-icon">locale</a>
+								<a href="common.application.html#bootextensions" class="tsd-kind-icon">boot<wbr>Extensions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="common.application.html#load" class="tsd-kind-icon">load</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="common.application.html#mount" class="tsd-kind-icon">mount</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="common.application.html#plugins" class="tsd-kind-icon">plugins</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="common.application.html#preloadedapidocument" class="tsd-kind-icon">preloaded<wbr>Api<wbr>Document</a>
@@ -690,9 +736,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="common.application.html#settitlecount" class="tsd-kind-icon">set<wbr>Title<wbr>Count</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="common.application.html#setuproutes" class="tsd-kind-icon">setup<wbr>Routes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="common.application.html#showdebug" class="tsd-kind-icon">show<wbr>Debug</a>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Notification\Event\Sending | Flarum API</title>
+    <title>Flarum\Notification\Job\SendNotificationsJob | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Notification_Event_Sending" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Notification_Job_SendNotificationsJob" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,10 +70,10 @@
                     
     <div class="page-header">
         <h1>
-            Sending
+            SendNotificationsJob
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Notification/Event/Sending.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Notification/Job/SendNotificationsJob.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -81,43 +81,64 @@
     </div>
 
     <p>    class
-    <strong>Sending</strong></p>
+    <strong>SendNotificationsJob</strong>        extends <a href="../../../Flarum/Queue/AbstractJob.html"><abbr title="Flarum\Queue\AbstractJob">AbstractJob</abbr></a></p>
 
         
     
 
     
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Queue\InteractsWithQueue">InteractsWithQueue</abbr>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/core/blob/master/src/Queue/InteractsWithQueue.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Bus\Queueable">Queueable</abbr>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/core/blob/master/src/Bus/Queueable.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Queue\SerializesModels">SerializesModels</abbr>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/core/blob/master/src/Queue/SerializesModels.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+            </div>
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_blueprint">
-                                                                                <a href="../../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a>
-                </td>
-                <td>$blueprint</td>
-                <td class="last">The blueprint for the notification.</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Notification/Event/Sending.php#L21" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_users">
-                                                                                array|int[]
-                </td>
-                <td>$users</td>
-                <td class="last">The users that the notification will be sent to.</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Notification/Event/Sending.php#L28" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -127,13 +148,30 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint, array $users)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint, array $recipients = [])
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Event/Sending.php#L34" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Job/SendNotificationsJob.php#L32" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_handle">handle</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Notification/Job/SendNotificationsJob.php#L38" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -148,12 +186,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Notification/Event/Sending.php#L34" target="_blank">
-            line 34
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Notification/Job/SendNotificationsJob.php#L32" target="_blank">
+            line 32
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint, array $users)
+    <strong>__construct</strong>(<a href="../../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint, array $recipients = [])
         </code>
     </h3>
     <div class="details">
@@ -171,11 +209,34 @@
             </tr>
                     <tr>
                 <td>array</td>
-                <td>$users</td>
+                <td>$recipients</td>
                 <td></td>
             </tr>
             </table>
 
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Notification/Job/SendNotificationsJob.php#L38" target="_blank">
+            line 38
+        </a>
+        </div>
+        <code>                    
+    <strong>handle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
             
             
             

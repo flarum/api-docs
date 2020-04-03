@@ -51,7 +51,7 @@ SHA_REWRITE=$(getSHA)
 cd js
 npm i --prefer-offline --no-audit
 npm i -g typedoc typescript typedoc-plugin-external-module-map
-typedoc src --includeDeclarations --ignoreCompilerErrors --jsx true --out "$REPO_FOLDER/docs/js/ds~frontend-framework-rewrite-mithril" --excludeExternals --name 'Flarum API' --plugin typedoc-plugin-external-module-map --external-modulemap ".*js\/src\/([\\w\\-_]+(\/[\\w\\-_]+)?)\/"  --listInvalidSymbolLinks --hideGenerator
+typedoc src --includeDeclarations --ignoreCompilerErrors --jsx preserve --out "$REPO_FOLDER/docs/js/ds~frontend-framework-rewrite-mithril" --excludeExternals --name 'Flarum API' --plugin typedoc-plugin-external-module-map --external-modulemap ".*js\/src\/([\\w\\-_]+(\/[\\w\\-_]+)?)\/"  --listInvalidSymbolLinks --hideGenerator
 
 # -> DEPLOY
 

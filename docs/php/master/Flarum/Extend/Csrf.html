@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Foundation\InstalledSite | Flarum API</title>
+    <title>Flarum\Extend\Csrf | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Foundation_InstalledSite" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extend_Csrf" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -70,10 +70,10 @@
                     
     <div class="page-header">
         <h1>
-            InstalledSite
+            Csrf
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Extend/Csrf.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -81,8 +81,8 @@
     </div>
 
     <p>    class
-    <strong>InstalledSite</strong>        implements
-        <a href="../../Flarum/Foundation/SiteInterface.html"><abbr title="Flarum\Foundation\SiteInterface">SiteInterface</abbr></a></p>
+    <strong>Csrf</strong>        implements
+        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
 
         
     
@@ -90,6 +90,23 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_csrfExemptPaths">
+                                        protected                                        
+                </td>
+                <td>$csrfExemptPaths</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Extend/Csrf.php#L17" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -99,13 +116,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(array $paths, array $config)
+                    <a href="#method_exemptPath">exemptPath</a>(string $path)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L68" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Csrf.php#L19" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -113,32 +130,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a>
+                    
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_bootApp">bootApp</a>()
-        
-                                            <p>Create and boot a Flarum application instance.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L79" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../Flarum/Foundation/InstalledSite.html"><abbr title="Flarum\Foundation\InstalledSite">InstalledSite</abbr></a>
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_extendWith">extendWith</a>(array $extenders)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L91" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Csrf.php#L26" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -151,14 +152,14 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_exemptPath">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L68" target="_blank">
-            line 68
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Csrf.php#L19" target="_blank">
+            line 19
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(array $paths, array $config)
+    <strong>exemptPath</strong>(string $path)
         </code>
     </h3>
     <div class="details">
@@ -170,13 +171,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
-                <td>$paths</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$config</td>
+                <td>string</td>
+                <td>$path</td>
                 <td></td>
             </tr>
             </table>
@@ -189,48 +185,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_bootApp">
+                    <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L79" target="_blank">
-            line 79
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Csrf.php#L26" target="_blank">
+            line 26
         </a>
         </div>
-        <code>                    <a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a>
-    <strong>bootApp</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Create and boot a Flarum application instance.</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Flarum/Foundation/AppInterface.html"><abbr title="Flarum\Foundation\AppInterface">AppInterface</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_extendWith">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/InstalledSite.php#L91" target="_blank">
-            line 91
-        </a>
-        </div>
-        <code>                    <a href="../../Flarum/Foundation/InstalledSite.html"><abbr title="Flarum\Foundation\InstalledSite">InstalledSite</abbr></a>
-    <strong>extendWith</strong>(array $extenders)
+        <code>                    
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -242,22 +204,18 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
-                <td>$extenders</td>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a></td>
+                <td>$extension</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Flarum/Foundation/InstalledSite.html"><abbr title="Flarum\Foundation\InstalledSite">InstalledSite</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>

@@ -45,7 +45,7 @@ echo -e "\e[36m\e[1mBuilding ds/frontend-framework-rewrite-mithril"
 
 (cd $FLARUM_FOLDER && git fetch origin && git checkout ds/frontend-framework-rewrite-mithril)
 SHA_REWRITE=$(getSHA)
-npm i -g typedoc@0.15 typedoc-plugin-external-module-map
+npm i -g typedoc@0.17 typedoc-plugin-external-module-map
 (cd $FLARUM_FOLDER/js && npm i --prefer-offline --no-audit)
 (cd $FLARUM_FOLDER/js && typedoc src --includeDeclarations --ignoreCompilerErrors --jsx true --out "$REPO_FOLDER/docs/js/ds~frontend-framework-rewrite-mithril" --excludeExternals --name 'Flarum API' --plugin typedoc-plugin-external-module-map --external-modulemap ".*js\/src\/([\\w\\-_]+(\/[\\w\\-_]+)?)\/"  --listInvalidSymbolLinks --hideGenerator)
 

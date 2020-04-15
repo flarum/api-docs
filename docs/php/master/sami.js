@@ -2029,7 +2029,14 @@ window.projectVersion = 'master';
                     {"type": "Method", "fromName": "Flarum\\User\\AvatarUploader", "fromLink": "Flarum/User/AvatarUploader.html", "link": "Flarum/User/AvatarUploader.html#method_remove", "name": "Flarum\\User\\AvatarUploader::remove", "doc": "&quot;&quot;"},
             
             {"type": "Class", "fromName": "Flarum\\User", "fromLink": "Flarum/User.html", "link": "Flarum/User/AvatarValidator.html", "name": "Flarum\\User\\AvatarValidator", "doc": "&quot;&quot;"},
-                    
+                                                        {"type": "Method", "fromName": "Flarum\\User\\AvatarValidator", "fromLink": "Flarum/User/AvatarValidator.html", "link": "Flarum/User/AvatarValidator.html#method_assertValid", "name": "Flarum\\User\\AvatarValidator::assertValid", "doc": "&quot;Throw an exception if a model is not valid.&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\User\\AvatarValidator", "fromLink": "Flarum/User/AvatarValidator.html", "link": "Flarum/User/AvatarValidator.html#method_assertFileRequired", "name": "Flarum\\User\\AvatarValidator::assertFileRequired", "doc": "&quot;&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\User\\AvatarValidator", "fromLink": "Flarum/User/AvatarValidator.html", "link": "Flarum/User/AvatarValidator.html#method_assertFileMimes", "name": "Flarum\\User\\AvatarValidator::assertFileMimes", "doc": "&quot;&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\User\\AvatarValidator", "fromLink": "Flarum/User/AvatarValidator.html", "link": "Flarum/User/AvatarValidator.html#method_assertFileSize", "name": "Flarum\\User\\AvatarValidator::assertFileSize", "doc": "&quot;&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\User\\AvatarValidator", "fromLink": "Flarum/User/AvatarValidator.html", "link": "Flarum/User/AvatarValidator.html#method_raise", "name": "Flarum\\User\\AvatarValidator::raise", "doc": "&quot;&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\User\\AvatarValidator", "fromLink": "Flarum/User/AvatarValidator.html", "link": "Flarum/User/AvatarValidator.html#method_getMaxSize", "name": "Flarum\\User\\AvatarValidator::getMaxSize", "doc": "&quot;&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\User\\AvatarValidator", "fromLink": "Flarum/User/AvatarValidator.html", "link": "Flarum/User/AvatarValidator.html#method_getAllowedTypes", "name": "Flarum\\User\\AvatarValidator::getAllowedTypes", "doc": "&quot;&quot;"},
+            
             {"type": "Class", "fromName": "Flarum\\User\\Command", "fromLink": "Flarum/User/Command.html", "link": "Flarum/User/Command/ConfirmEmail.html", "name": "Flarum\\User\\Command\\ConfirmEmail", "doc": "&quot;&quot;"},
                                                         {"type": "Method", "fromName": "Flarum\\User\\Command\\ConfirmEmail", "fromLink": "Flarum/User/Command/ConfirmEmail.html", "link": "Flarum/User/Command/ConfirmEmail.html#method___construct", "name": "Flarum\\User\\Command\\ConfirmEmail::__construct", "doc": "&quot;&quot;"},
             

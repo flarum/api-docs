@@ -289,13 +289,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -1654,6 +1654,12 @@ window.esdocSearchIndex = [
     "class/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-init",
     "src/admin/components/EditGroupModal.js~EditGroupModal#init",
     "method"
+  ],
+  [
+    "src/admin/components/editgroupmodal.js~editgroupmodal#ishidden",
+    "class/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-member-isHidden",
+    "src/admin/components/EditGroupModal.js~EditGroupModal#isHidden",
+    "member"
   ],
   [
     "src/admin/components/editgroupmodal.js~editgroupmodal#loading",

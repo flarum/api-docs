@@ -126,9 +126,9 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/widget~dashboardwidget",
-    "class/src/admin/components/Widget.js~DashboardWidget.html",
-    "<span>DashboardWidget</span> <span class=\"search-result-import-path\">flarum/components/Widget</span>",
+    "flarum/components/dashboardwidget~dashboardwidget",
+    "class/src/admin/components/DashboardWidget.js~DashboardWidget.html",
+    "<span>DashboardWidget</span> <span class=\"search-result-import-path\">flarum/components/DashboardWidget</span>",
     "class"
   ],
   [
@@ -289,25 +289,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -631,13 +631,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -753,12 +753,6 @@ window.esdocSearchIndex = [
     "flarum/components/welcomehero~welcomehero",
     "class/src/forum/components/WelcomeHero.js~WelcomeHero.html",
     "<span>WelcomeHero</span> <span class=\"search-result-import-path\">flarum/components/WelcomeHero</span>",
-    "class"
-  ],
-  [
-    "flarum/components/dashboardwidget~widget",
-    "class/src/admin/components/DashboardWidget.js~Widget.html",
-    "<span>Widget</span> <span class=\"search-result-import-path\">flarum/components/DashboardWidget</span>",
     "class"
   ],
   [
@@ -1500,21 +1494,21 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/admin/components/dashboardwidget.js~widget#classname",
-    "class/src/admin/components/DashboardWidget.js~Widget.html#instance-method-className",
-    "src/admin/components/DashboardWidget.js~Widget#className",
+    "src/admin/components/dashboardwidget.js~dashboardwidget#classname",
+    "class/src/admin/components/DashboardWidget.js~DashboardWidget.html#instance-method-className",
+    "src/admin/components/DashboardWidget.js~DashboardWidget#className",
     "method"
   ],
   [
-    "src/admin/components/dashboardwidget.js~widget#content",
-    "class/src/admin/components/DashboardWidget.js~Widget.html#instance-method-content",
-    "src/admin/components/DashboardWidget.js~Widget#content",
+    "src/admin/components/dashboardwidget.js~dashboardwidget#content",
+    "class/src/admin/components/DashboardWidget.js~DashboardWidget.html#instance-method-content",
+    "src/admin/components/DashboardWidget.js~DashboardWidget#content",
     "method"
   ],
   [
-    "src/admin/components/dashboardwidget.js~widget#view",
-    "class/src/admin/components/DashboardWidget.js~Widget.html#instance-method-view",
-    "src/admin/components/DashboardWidget.js~Widget#view",
+    "src/admin/components/dashboardwidget.js~dashboardwidget#view",
+    "class/src/admin/components/DashboardWidget.js~DashboardWidget.html#instance-method-view",
+    "src/admin/components/DashboardWidget.js~DashboardWidget#view",
     "method"
   ],
   [
@@ -2223,30 +2217,6 @@ window.esdocSearchIndex = [
     "src/admin/components/uploadimagebutton.js~uploadimagebutton#view",
     "class/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-method-view",
     "src/admin/components/UploadImageButton.js~UploadImageButton#view",
-    "method"
-  ],
-  [
-    "src/admin/components/widget.js",
-    "file/src/admin/components/Widget.js.html",
-    "src/admin/components/Widget.js",
-    "file"
-  ],
-  [
-    "src/admin/components/widget.js~dashboardwidget#classname",
-    "class/src/admin/components/Widget.js~DashboardWidget.html#instance-method-className",
-    "src/admin/components/Widget.js~DashboardWidget#className",
-    "method"
-  ],
-  [
-    "src/admin/components/widget.js~dashboardwidget#content",
-    "class/src/admin/components/Widget.js~DashboardWidget.html#instance-method-content",
-    "src/admin/components/Widget.js~DashboardWidget#content",
-    "method"
-  ],
-  [
-    "src/admin/components/widget.js~dashboardwidget#view",
-    "class/src/admin/components/Widget.js~DashboardWidget.html#instance-method-view",
-    "src/admin/components/Widget.js~DashboardWidget#view",
     "method"
   ],
   [

@@ -445,13 +445,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/page~page",
-    "class/src/admin/components/Page.js~Page.html",
+    "class/src/forum/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
   [
     "flarum/components/page~page",
-    "class/src/forum/components/Page.js~Page.html",
+    "class/src/admin/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
@@ -1863,6 +1863,18 @@ window.esdocSearchIndex = [
     "src/admin/components/mailpage.js~mailpage#saving",
     "class/src/admin/components/MailPage.js~MailPage.html#instance-member-saving",
     "src/admin/components/MailPage.js~MailPage#saving",
+    "member"
+  ],
+  [
+    "src/admin/components/mailpage.js~mailpage#sendtestemail",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-sendTestEmail",
+    "src/admin/components/MailPage.js~MailPage#sendTestEmail",
+    "method"
+  ],
+  [
+    "src/admin/components/mailpage.js~mailpage#sendingtest",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-sendingTest",
+    "src/admin/components/MailPage.js~MailPage#sendingTest",
     "member"
   ],
   [

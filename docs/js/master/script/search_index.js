@@ -276,6 +276,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/states/globalsearchstate~globalsearchstate",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html",
+    "<span>GlobalSearchState</span> <span class=\"search-result-import-path\">flarum/states/GlobalSearchState</span>",
+    "class"
+  ],
+  [
     "flarum/models/group~group",
     "class/src/common/models/Group.js~Group.html",
     "<span>Group</span> <span class=\"search-result-import-path\">flarum/models/Group</span>",
@@ -301,13 +307,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -612,6 +618,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/states/searchstate~searchstate",
+    "class/src/forum/states/SearchState.js~SearchState.html",
+    "<span>SearchState</span> <span class=\"search-result-import-path\">flarum/states/SearchState</span>",
+    "class"
+  ],
+  [
     "flarum/components/select~select",
     "class/src/common/components/Select.js~Select.html",
     "<span>Select</span> <span class=\"search-result-import-path\">flarum/components/Select</span>",
@@ -637,13 +649,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -5280,18 +5292,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/indexpage.js~indexpage#changesort",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-changeSort",
-    "src/forum/components/IndexPage.js~IndexPage#changeSort",
-    "method"
-  ],
-  [
-    "src/forum/components/indexpage.js~indexpage#clearsearch",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-clearSearch",
-    "src/forum/components/IndexPage.js~IndexPage#clearSearch",
-    "method"
-  ],
-  [
     "src/forum/components/indexpage.js~indexpage#config",
     "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-config",
     "src/forum/components/IndexPage.js~IndexPage#config",
@@ -5340,27 +5340,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/indexpage.js~indexpage#params",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-params",
-    "src/forum/components/IndexPage.js~IndexPage#params",
-    "method"
-  ],
-  [
-    "src/forum/components/indexpage.js~indexpage#searching",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-searching",
-    "src/forum/components/IndexPage.js~IndexPage#searching",
-    "method"
-  ],
-  [
     "src/forum/components/indexpage.js~indexpage#sidebaritems",
     "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-sidebarItems",
     "src/forum/components/IndexPage.js~IndexPage#sidebarItems",
-    "method"
-  ],
-  [
-    "src/forum/components/indexpage.js~indexpage#stickyparams",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-stickyParams",
-    "src/forum/components/IndexPage.js~IndexPage#stickyParams",
     "method"
   ],
   [
@@ -5374,6 +5356,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-viewItems",
     "src/forum/components/IndexPage.js~IndexPage#viewItems",
     "method"
+  ],
+  [
+    "src/forum/components/indexpage.js~indexpage.providesinitialsearch",
+    "class/src/forum/components/IndexPage.js~IndexPage.html#static-member-providesInitialSearch",
+    "src/forum/components/IndexPage.js~IndexPage.providesInitialSearch",
+    "member"
   ],
   [
     "src/forum/components/loadingpost.js",
@@ -6564,12 +6552,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/search.js~search#getcurrentsearch",
-    "class/src/forum/components/Search.js~Search.html#instance-method-getCurrentSearch",
-    "src/forum/components/Search.js~Search#getCurrentSearch",
-    "method"
-  ],
-  [
     "src/forum/components/search.js~search#getitem",
     "class/src/forum/components/Search.js~Search.html#instance-method-getItem",
     "src/forum/components/Search.js~Search#getItem",
@@ -6606,12 +6588,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/search.js~search#searched",
-    "class/src/forum/components/Search.js~Search.html#instance-member-searched",
-    "src/forum/components/Search.js~Search#searched",
-    "member"
-  ],
-  [
     "src/forum/components/search.js~search#selectresult",
     "class/src/forum/components/Search.js~Search.html#instance-method-selectResult",
     "src/forum/components/Search.js~Search#selectResult",
@@ -6642,9 +6618,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/search.js~search#value",
-    "class/src/forum/components/Search.js~Search.html#instance-member-value",
-    "src/forum/components/Search.js~Search#value",
+    "src/forum/components/search.js~search#state",
+    "class/src/forum/components/Search.js~Search.html#instance-member-state",
+    "src/forum/components/Search.js~Search#state",
     "member"
   ],
   [
@@ -7116,6 +7092,72 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/forum/states/globalsearchstate.js",
+    "file/src/forum/states/GlobalSearchState.js.html",
+    "src/forum/states/GlobalSearchState.js",
+    "file"
+  ],
+  [
+    "src/forum/states/globalsearchstate.js~globalsearchstate#changesort",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-changeSort",
+    "src/forum/states/GlobalSearchState.js~GlobalSearchState#changeSort",
+    "method"
+  ],
+  [
+    "src/forum/states/globalsearchstate.js~globalsearchstate#clear",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-clear",
+    "src/forum/states/GlobalSearchState.js~GlobalSearchState#clear",
+    "method"
+  ],
+  [
+    "src/forum/states/globalsearchstate.js~globalsearchstate#clearinitialsearch",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-clearInitialSearch",
+    "src/forum/states/GlobalSearchState.js~GlobalSearchState#clearInitialSearch",
+    "method"
+  ],
+  [
+    "src/forum/states/globalsearchstate.js~globalsearchstate#constructor",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-constructor-constructor",
+    "src/forum/states/GlobalSearchState.js~GlobalSearchState#constructor",
+    "method"
+  ],
+  [
+    "src/forum/states/globalsearchstate.js~globalsearchstate#getinitialsearch",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-getInitialSearch",
+    "src/forum/states/GlobalSearchState.js~GlobalSearchState#getInitialSearch",
+    "method"
+  ],
+  [
+    "src/forum/states/globalsearchstate.js~globalsearchstate#getvalue",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-getValue",
+    "src/forum/states/GlobalSearchState.js~GlobalSearchState#getValue",
+    "method"
+  ],
+  [
+    "src/forum/states/globalsearchstate.js~globalsearchstate#params",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-params",
+    "src/forum/states/GlobalSearchState.js~GlobalSearchState#params",
+    "method"
+  ],
+  [
+    "src/forum/states/globalsearchstate.js~globalsearchstate#searchroute",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-member-searchRoute",
+    "src/forum/states/GlobalSearchState.js~GlobalSearchState#searchRoute",
+    "member"
+  ],
+  [
+    "src/forum/states/globalsearchstate.js~globalsearchstate#stickyparams",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-stickyParams",
+    "src/forum/states/GlobalSearchState.js~GlobalSearchState#stickyParams",
+    "method"
+  ],
+  [
+    "src/forum/states/globalsearchstate.js~globalsearchstate#value",
+    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-member-value",
+    "src/forum/states/GlobalSearchState.js~GlobalSearchState#value",
+    "member"
+  ],
+  [
     "src/forum/states/notificationliststate.js",
     "file/src/forum/states/NotificationListState.js.html",
     "src/forum/states/NotificationListState.js",
@@ -7192,6 +7234,60 @@ window.esdocSearchIndex = [
     "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-parseResults",
     "src/forum/states/NotificationListState.js~NotificationListState#parseResults",
     "method"
+  ],
+  [
+    "src/forum/states/searchstate.js",
+    "file/src/forum/states/SearchState.js.html",
+    "src/forum/states/SearchState.js",
+    "file"
+  ],
+  [
+    "src/forum/states/searchstate.js~searchstate#cache",
+    "class/src/forum/states/SearchState.js~SearchState.html#instance-method-cache",
+    "src/forum/states/SearchState.js~SearchState#cache",
+    "method"
+  ],
+  [
+    "src/forum/states/searchstate.js~searchstate#cachedsearches",
+    "class/src/forum/states/SearchState.js~SearchState.html#instance-member-cachedSearches",
+    "src/forum/states/SearchState.js~SearchState#cachedSearches",
+    "member"
+  ],
+  [
+    "src/forum/states/searchstate.js~searchstate#clear",
+    "class/src/forum/states/SearchState.js~SearchState.html#instance-method-clear",
+    "src/forum/states/SearchState.js~SearchState#clear",
+    "method"
+  ],
+  [
+    "src/forum/states/searchstate.js~searchstate#constructor",
+    "class/src/forum/states/SearchState.js~SearchState.html#instance-constructor-constructor",
+    "src/forum/states/SearchState.js~SearchState#constructor",
+    "method"
+  ],
+  [
+    "src/forum/states/searchstate.js~searchstate#getvalue",
+    "class/src/forum/states/SearchState.js~SearchState.html#instance-method-getValue",
+    "src/forum/states/SearchState.js~SearchState#getValue",
+    "method"
+  ],
+  [
+    "src/forum/states/searchstate.js~searchstate#iscached",
+    "class/src/forum/states/SearchState.js~SearchState.html#instance-method-isCached",
+    "src/forum/states/SearchState.js~SearchState#isCached",
+    "method"
+  ],
+  [
+    "src/forum/states/searchstate.js~searchstate#setvalue",
+    "class/src/forum/states/SearchState.js~SearchState.html#instance-method-setValue",
+    "src/forum/states/SearchState.js~SearchState#setValue",
+    "method"
+  ],
+  [
+    "src/forum/states/searchstate.js~searchstate#value",
+    "class/src/forum/states/SearchState.js~SearchState.html#instance-member-value",
+    "src/forum/states/SearchState.js~SearchState#value",
+    "member"
   ],
   [
     "src/forum/utils/discussioncontrols.js",

@@ -185,7 +185,9 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/components/UsersSearchSource.js~UsersSearchResults.html">UsersSearchResults</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/components/WelcomeHero.js~WelcomeHero.html">WelcomeHero</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/forum/components/SearchSource.js~SearchSource.html">SearchSource</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum-states">forum/states</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/NotificationListState.js~NotificationListState.html">NotificationListState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum-states">forum/states</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html">GlobalSearchState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/NotificationListState.js~NotificationListState.html">NotificationListState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/SearchState.js~SearchState.html">SearchState</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum-utils">forum/utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/utils/History.js~History.html">History</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html">KeyboardNavigatable</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/utils/Pane.js~Pane.html">Pane</a></span></span></li>
@@ -197,13 +199,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Search from &apos;<span><a href="file/src/forum/components/Search.js.html#lineNumber20">flarum/components/Search</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Search from &apos;<span><a href="file/src/forum/components/Search.js.html#lineNumber23">flarum/components/Search</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/forum/components/Search.js.html#lineNumber20">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/forum/components/Search.js.html#lineNumber23">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -225,10 +227,13 @@
   
   <div class="description" data-ice="description"><p>The <code>Search</code> component displays a menu of as-you-type results from a variety
 of sources.</p>
-<p>The search box will be &apos;activated&apos; if the app&apos;s current controller implements
-a <code>searching</code> method that returns a truthy value. If this is the case, an &apos;x&apos;
-button will be shown next to the search field, and clicking it will call the
-<code>clearSearch</code> method on the controller.</p>
+<p>The search box will be &apos;activated&apos; if the app&apos;s seach state&apos;s
+getInitialSearch() value is a truthy value. If this is the case, an &apos;x&apos;
+button will be shown next to the search field, and clicking it will clear the search.</p>
+<p>PROPS:</p>
+<ul>
+<li>state: AlertState instance.</li>
+</ul>
 </div>
   
 
@@ -377,35 +382,6 @@ button will be shown next to the search field, and clicking it will call the
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Search.js~Search.html#instance-member-searched">searched</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>A list of queries that have been searched for.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
           <span class="code" data-ice="name"><span><a href="class/src/forum/components/Search.js~Search.html#instance-member-sources">sources</a></span></span><span class="code" data-ice="signature">: <span><span><a href="class/src/forum/components/SearchSource.js~SearchSource.html">SearchSource</a></span><span>[]</span></span></span>
         </p>
       </div>
@@ -435,14 +411,13 @@ button will be shown next to the search field, and clicking it will call the
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Search.js~Search.html#instance-member-value">value</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Search.js~Search.html#instance-member-state">state</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>The value of the search input.</p>
-</div>
+        
       </div>
     </td>
     <td>
@@ -477,7 +452,7 @@ button will be shown next to the search field, and clicking it will call the
       <div>
         
         
-        <div data-ice="description"><p>Clear the search input and the current controller&apos;s active search.</p>
+        <div data-ice="description"><p>Clear the search</p>
 </div>
       </div>
     </td>
@@ -535,35 +510,6 @@ button will be shown next to the search field, and clicking it will call the
         
         
         <div data-ice="description"><p>Get the position of the currently selected search result item.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Search.js~Search.html#instance-method-getCurrentSearch">getCurrentSearch</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Get the active search in the app&apos;s current controller.</p>
 </div>
       </div>
     </td>
@@ -1131,7 +1077,7 @@ their virtual DOM should override Component#view instead.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber34">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber32">source</a></span></span>
     </span>
   </h3>
 
@@ -1175,7 +1121,7 @@ their virtual DOM should override Component#view instead.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber65">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber56">source</a></span></span>
     </span>
   </h3>
 
@@ -1222,7 +1168,7 @@ sequential position within the list).</li></p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber48">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber46">source</a></span></span>
     </span>
   </h3>
 
@@ -1266,7 +1212,7 @@ sequential position within the list).</li></p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber144">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber130">source</a></span></span>
     </span>
   </h3>
 
@@ -1274,50 +1220,6 @@ sequential position within the list).</li></p>
   
   
   
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-searched">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">searched</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber55">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>A list of queries that have been searched for.</p>
-</div>
 
   
 
@@ -1353,7 +1255,7 @@ sequential position within the list).</li></p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber41">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber39">source</a></span></span>
     </span>
   </h3>
 
@@ -1386,26 +1288,25 @@ sequential position within the list).</li></p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-value">
+  <h3 data-ice="anchor" id="instance-member-state">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">value</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span></span>
+    <span class="code" data-ice="name">state</span><span class="code" data-ice="signature">: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber27">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber25">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>The value of the search input.</p>
-</div>
+  
 
   
 
@@ -1444,14 +1345,14 @@ sequential position within the list).</li></p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber216">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber193">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Clear the search input and the current controller&apos;s active search.</p>
+  <div data-ice="description"><p>Clear the search</p>
 </div>
 
   
@@ -1488,7 +1389,7 @@ sequential position within the list).</li></p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber125">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber110">source</a></span></span>
     </span>
   </h3>
 
@@ -1550,7 +1451,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber254">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber225">source</a></span></span>
     </span>
   </h3>
 
@@ -1595,62 +1496,6 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-getCurrentSearch">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">getCurrentSearch</span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber193">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Get the active search in the app&apos;s current controller.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-getItem">
     <span class="access" data-ice="access">public</span>
     
@@ -1662,7 +1507,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber264">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber235">source</a></span></span>
     </span>
   </h3>
 
@@ -1734,7 +1579,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber21">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber24">source</a></span></span>
     </span>
   </h3>
 
@@ -1778,7 +1623,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber200">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber177">source</a></span></span>
     </span>
   </h3>
 
@@ -1822,7 +1667,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber245">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber216">source</a></span></span>
     </span>
   </h3>
 
@@ -1878,7 +1723,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber283">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber254">source</a></span></span>
     </span>
   </h3>
 
@@ -1947,7 +1792,7 @@ index.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber231">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber202">source</a></span></span>
     </span>
   </h3>
 
@@ -2003,7 +1848,7 @@ index.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber68">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/Search.js.html#lineNumber59">source</a></span></span>
     </span>
   </h3>
 

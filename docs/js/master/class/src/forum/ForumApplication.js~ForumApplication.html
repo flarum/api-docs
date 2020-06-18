@@ -185,7 +185,9 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/components/UsersSearchSource.js~UsersSearchResults.html">UsersSearchResults</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/components/WelcomeHero.js~WelcomeHero.html">WelcomeHero</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/forum/components/SearchSource.js~SearchSource.html">SearchSource</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum-states">forum/states</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/NotificationListState.js~NotificationListState.html">NotificationListState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum-states">forum/states</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html">GlobalSearchState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/NotificationListState.js~NotificationListState.html">NotificationListState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/SearchState.js~SearchState.html">SearchState</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum-utils">forum/utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/utils/History.js~History.html">History</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html">KeyboardNavigatable</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/utils/Pane.js~Pane.html">Pane</a></span></span></li>
@@ -497,14 +499,13 @@ so that they can easily navigate back to the previous route.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-search">search</a></span></span><span class="code" data-ice="signature">: <span><a href="class/src/forum/components/Search.js~Search.html">Search</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-search">search</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>The page&apos;s search component instance.</p>
-</div>
+        
       </div>
     </td>
     <td>
@@ -1407,7 +1408,7 @@ that is persists between different routes.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber74">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber75">source</a></span></span>
     </span>
   </h3>
 
@@ -1453,7 +1454,7 @@ that is persists between different routes.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber104">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber105">source</a></span></span>
     </span>
   </h3>
 
@@ -1496,7 +1497,7 @@ that is persists between different routes.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber57">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber50">source</a></span></span>
     </span>
   </h3>
 
@@ -1540,7 +1541,7 @@ that is persists between different routes.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber65">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber58">source</a></span></span>
     </span>
   </h3>
 
@@ -1629,7 +1630,7 @@ so that they can easily navigate back to the previous route.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber72">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber65">source</a></span></span>
     </span>
   </h3>
 
@@ -1673,7 +1674,7 @@ so that they can easily navigate back to the previous route.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber50">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber43">source</a></span></span>
     </span>
   </h3>
 
@@ -1757,19 +1758,18 @@ so that they can easily navigate back to the previous route.</p>
     
     
     
-    <span class="code" data-ice="name">search</span><span class="code" data-ice="signature">: <span><a href="class/src/forum/components/Search.js~Search.html">Search</a></span></span>
+    <span class="code" data-ice="name">search</span><span class="code" data-ice="signature">: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber43">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber73">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>The page&apos;s search component instance.</p>
-</div>
+  
 
   
 
@@ -1808,7 +1808,7 @@ so that they can easily navigate back to the previous route.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber164">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber165">source</a></span></span>
     </span>
   </h3>
 
@@ -1875,7 +1875,7 @@ with the provided details.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber133">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber134">source</a></span></span>
     </span>
   </h3>
 
@@ -1948,7 +1948,7 @@ discussion.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber83">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber84">source</a></span></span>
     </span>
   </h3>
 
@@ -1991,7 +1991,7 @@ discussion.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber147">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/ForumApplication.js.html#lineNumber148">source</a></span></span>
     </span>
   </h3>
 

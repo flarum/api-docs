@@ -301,13 +301,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -637,13 +637,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -2896,18 +2896,6 @@ window.esdocSearchIndex = [
     "class/src/common/components/Checkbox.js~Checkbox.html#instance-method-getDisplay",
     "src/common/components/Checkbox.js~Checkbox#getDisplay",
     "method"
-  ],
-  [
-    "src/common/components/checkbox.js~checkbox#init",
-    "class/src/common/components/Checkbox.js~Checkbox.html#instance-method-init",
-    "src/common/components/Checkbox.js~Checkbox#init",
-    "method"
-  ],
-  [
-    "src/common/components/checkbox.js~checkbox#loading",
-    "class/src/common/components/Checkbox.js~Checkbox.html#instance-member-loading",
-    "src/common/components/Checkbox.js~Checkbox#loading",
-    "member"
   ],
   [
     "src/common/components/checkbox.js~checkbox#onchange",
@@ -5592,9 +5580,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/notificationgrid.js~notificationgrid#inputs",
-    "class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-member-inputs",
-    "src/forum/components/NotificationGrid.js~NotificationGrid#inputs",
+    "src/forum/components/notificationgrid.js~notificationgrid#loading",
+    "class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-member-loading",
+    "src/forum/components/NotificationGrid.js~NotificationGrid#loading",
     "member"
   ],
   [
@@ -6730,6 +6718,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-content",
     "src/forum/components/SettingsPage.js~SettingsPage#content",
     "method"
+  ],
+  [
+    "src/forum/components/settingspage.js~settingspage#discloseonlineloading",
+    "class/src/forum/components/SettingsPage.js~SettingsPage.html#instance-member-discloseOnlineLoading",
+    "src/forum/components/SettingsPage.js~SettingsPage#discloseOnlineLoading",
+    "member"
   ],
   [
     "src/forum/components/settingspage.js~settingspage#init",

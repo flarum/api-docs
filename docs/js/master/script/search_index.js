@@ -432,6 +432,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/states/notificationliststate~notificationliststate",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html",
+    "<span>NotificationListState</span> <span class=\"search-result-import-path\">flarum/states/NotificationListState</span>",
+    "class"
+  ],
+  [
     "flarum/components/notificationsdropdown~notificationsdropdown",
     "class/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html",
     "<span>NotificationsDropdown</span> <span class=\"search-result-import-path\">flarum/components/NotificationsDropdown</span>",
@@ -3966,6 +3972,12 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/forum/forumapplication.js~forumapplication#notifications",
+    "class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-notifications",
+    "src/forum/ForumApplication.js~ForumApplication#notifications",
+    "member"
+  ],
+  [
     "src/forum/forumapplication.js~forumapplication#pane",
     "class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-pane",
     "src/forum/ForumApplication.js~ForumApplication#pane",
@@ -5658,40 +5670,10 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/notificationlist.js~notificationlist#load",
-    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-method-load",
-    "src/forum/components/NotificationList.js~NotificationList#load",
-    "method"
-  ],
-  [
-    "src/forum/components/notificationlist.js~notificationlist#loadmore",
-    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-method-loadMore",
-    "src/forum/components/NotificationList.js~NotificationList#loadMore",
-    "method"
-  ],
-  [
-    "src/forum/components/notificationlist.js~notificationlist#loading",
-    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-member-loading",
-    "src/forum/components/NotificationList.js~NotificationList#loading",
+    "src/forum/components/notificationlist.js~notificationlist#state",
+    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-member-state",
+    "src/forum/components/NotificationList.js~NotificationList#state",
     "member"
-  ],
-  [
-    "src/forum/components/notificationlist.js~notificationlist#markallasread",
-    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-method-markAllAsRead",
-    "src/forum/components/NotificationList.js~NotificationList#markAllAsRead",
-    "method"
-  ],
-  [
-    "src/forum/components/notificationlist.js~notificationlist#moreresults",
-    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-member-moreResults",
-    "src/forum/components/NotificationList.js~NotificationList#moreResults",
-    "member"
-  ],
-  [
-    "src/forum/components/notificationlist.js~notificationlist#parseresults",
-    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-method-parseResults",
-    "src/forum/components/NotificationList.js~NotificationList#parseResults",
-    "method"
   ],
   [
     "src/forum/components/notificationlist.js~notificationlist#view",
@@ -5748,12 +5730,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/notificationsdropdown.js~notificationsdropdown#list",
-    "class/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-member-list",
-    "src/forum/components/NotificationsDropdown.js~NotificationsDropdown#list",
-    "member"
-  ],
-  [
     "src/forum/components/notificationsdropdown.js~notificationsdropdown#menuclick",
     "class/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-menuClick",
     "src/forum/components/NotificationsDropdown.js~NotificationsDropdown#menuClick",
@@ -5788,12 +5764,6 @@ window.esdocSearchIndex = [
     "class/src/forum/components/NotificationsPage.js~NotificationsPage.html#instance-method-init",
     "src/forum/components/NotificationsPage.js~NotificationsPage#init",
     "method"
-  ],
-  [
-    "src/forum/components/notificationspage.js~notificationspage#list",
-    "class/src/forum/components/NotificationsPage.js~NotificationsPage.html#instance-member-list",
-    "src/forum/components/NotificationsPage.js~NotificationsPage#list",
-    "member"
   ],
   [
     "src/forum/components/notificationspage.js~notificationspage#view",
@@ -7150,6 +7120,84 @@ window.esdocSearchIndex = [
     "file/src/forum/routes.js.html",
     "src/forum/routes.js",
     "file"
+  ],
+  [
+    "src/forum/states/notificationliststate.js",
+    "file/src/forum/states/NotificationListState.js.html",
+    "src/forum/states/NotificationListState.js",
+    "file"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#app",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-member-app",
+    "src/forum/states/NotificationListState.js~NotificationListState#app",
+    "member"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#constructor",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-constructor-constructor",
+    "src/forum/states/NotificationListState.js~NotificationListState#constructor",
+    "method"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#getnotificationpages",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-getNotificationPages",
+    "src/forum/states/NotificationListState.js~NotificationListState#getNotificationPages",
+    "method"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#hasmoreresults",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-hasMoreResults",
+    "src/forum/states/NotificationListState.js~NotificationListState#hasMoreResults",
+    "method"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#isloading",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-isLoading",
+    "src/forum/states/NotificationListState.js~NotificationListState#isLoading",
+    "method"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#load",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-load",
+    "src/forum/states/NotificationListState.js~NotificationListState#load",
+    "method"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#loadmore",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-loadMore",
+    "src/forum/states/NotificationListState.js~NotificationListState#loadMore",
+    "method"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#loading",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-member-loading",
+    "src/forum/states/NotificationListState.js~NotificationListState#loading",
+    "member"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#markallasread",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-markAllAsRead",
+    "src/forum/states/NotificationListState.js~NotificationListState#markAllAsRead",
+    "method"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#moreresults",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-member-moreResults",
+    "src/forum/states/NotificationListState.js~NotificationListState#moreResults",
+    "member"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#notificationpages",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-member-notificationPages",
+    "src/forum/states/NotificationListState.js~NotificationListState#notificationPages",
+    "member"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#parseresults",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-parseResults",
+    "src/forum/states/NotificationListState.js~NotificationListState#parseResults",
+    "method"
   ],
   [
     "src/forum/utils/discussioncontrols.js",

@@ -463,13 +463,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/page~page",
-    "class/src/forum/components/Page.js~Page.html",
+    "class/src/admin/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
   [
     "flarum/components/page~page",
-    "class/src/admin/components/Page.js~Page.html",
+    "class/src/forum/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
@@ -655,13 +655,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -4767,12 +4767,6 @@ window.esdocSearchIndex = [
     "src/forum/components/discussionpage.js~discussionpage#discussion",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-discussion",
     "src/forum/components/DiscussionPage.js~DiscussionPage#discussion",
-    "member"
-  ],
-  [
-    "src/forum/components/discussionpage.js~discussionpage#discussionlistclass",
-    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-discussionListClass",
-    "src/forum/components/DiscussionPage.js~DiscussionPage#discussionListClass",
     "member"
   ],
   [

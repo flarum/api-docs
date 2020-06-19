@@ -301,25 +301,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -463,14 +463,14 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/page~page",
-    "class/src/admin/components/Page.js~Page.html",
+    "class/src/common/components/Page.js~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
     "class"
   ],
   [
-    "flarum/components/page~page",
-    "class/src/forum/components/Page.js~Page.html",
-    "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
+    "flarum/states/pagestate~pagestate",
+    "class/src/common/states/PageState.js~PageState.html",
+    "<span>PageState</span> <span class=\"search-result-import-path\">flarum/states/PageState</span>",
     "class"
   ],
   [
@@ -969,6 +969,12 @@ window.esdocSearchIndex = [
     "flarum/utils/stringtocolor~stringtocolor",
     "function/index.html#static-function-stringToColor",
     "<span>stringToColor</span> <span class=\"search-result-import-path\">flarum/utils/stringToColor</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/subclassof~subclassof",
+    "function/index.html#static-function-subclassOf",
+    "<span>subclassOf</span> <span class=\"search-result-import-path\">flarum/utils/subclassOf</span>",
     "function"
   ],
   [
@@ -1920,30 +1926,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/page.js",
-    "file/src/admin/components/Page.js.html",
-    "src/admin/components/Page.js",
-    "file"
-  ],
-  [
-    "src/admin/components/page.js~page#bodyclass",
-    "class/src/admin/components/Page.js~Page.html#instance-member-bodyClass",
-    "src/admin/components/Page.js~Page#bodyClass",
-    "member"
-  ],
-  [
-    "src/admin/components/page.js~page#config",
-    "class/src/admin/components/Page.js~Page.html#instance-method-config",
-    "src/admin/components/Page.js~Page#config",
-    "method"
-  ],
-  [
-    "src/admin/components/page.js~page#init",
-    "class/src/admin/components/Page.js~Page.html#instance-method-init",
-    "src/admin/components/Page.js~Page#init",
-    "method"
-  ],
-  [
     "src/admin/components/permissiondropdown.js",
     "file/src/admin/components/PermissionDropdown.js.html",
     "src/admin/components/PermissionDropdown.js",
@@ -2310,6 +2292,12 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/common/application.js~application#current",
+    "class/src/common/Application.js~Application.html#instance-member-current",
+    "src/common/Application.js~Application#current",
+    "member"
+  ],
+  [
     "src/common/application.js~application#data",
     "class/src/common/Application.js~Application.html#instance-member-data",
     "src/common/Application.js~Application#data",
@@ -2356,6 +2344,12 @@ window.esdocSearchIndex = [
     "class/src/common/Application.js~Application.html#instance-method-preloadedApiDocument",
     "src/common/Application.js~Application#preloadedApiDocument",
     "method"
+  ],
+  [
+    "src/common/application.js~application#previous",
+    "class/src/common/Application.js~Application.html#instance-member-previous",
+    "src/common/Application.js~Application#previous",
+    "member"
   ],
   [
     "src/common/application.js~application#request",
@@ -3240,6 +3234,30 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/components/page.js",
+    "file/src/common/components/Page.js.html",
+    "src/common/components/Page.js",
+    "file"
+  ],
+  [
+    "src/common/components/page.js~page#bodyclass",
+    "class/src/common/components/Page.js~Page.html#instance-member-bodyClass",
+    "src/common/components/Page.js~Page#bodyClass",
+    "member"
+  ],
+  [
+    "src/common/components/page.js~page#config",
+    "class/src/common/components/Page.js~Page.html#instance-method-config",
+    "src/common/components/Page.js~Page#config",
+    "method"
+  ],
+  [
+    "src/common/components/page.js~page#init",
+    "class/src/common/components/Page.js~Page.html#instance-method-init",
+    "src/common/components/Page.js~Page#init",
+    "method"
+  ],
+  [
     "src/common/components/placeholder.js",
     "file/src/common/components/Placeholder.js.html",
     "src/common/components/Placeholder.js",
@@ -3588,6 +3606,48 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/common/states/pagestate.js",
+    "file/src/common/states/PageState.js.html",
+    "src/common/states/PageState.js",
+    "file"
+  ],
+  [
+    "src/common/states/pagestate.js~pagestate#constructor",
+    "class/src/common/states/PageState.js~PageState.html#instance-constructor-constructor",
+    "src/common/states/PageState.js~PageState#constructor",
+    "method"
+  ],
+  [
+    "src/common/states/pagestate.js~pagestate#data",
+    "class/src/common/states/PageState.js~PageState.html#instance-member-data",
+    "src/common/states/PageState.js~PageState#data",
+    "member"
+  ],
+  [
+    "src/common/states/pagestate.js~pagestate#get",
+    "class/src/common/states/PageState.js~PageState.html#instance-method-get",
+    "src/common/states/PageState.js~PageState#get",
+    "method"
+  ],
+  [
+    "src/common/states/pagestate.js~pagestate#matches",
+    "class/src/common/states/PageState.js~PageState.html#instance-method-matches",
+    "src/common/states/PageState.js~PageState#matches",
+    "method"
+  ],
+  [
+    "src/common/states/pagestate.js~pagestate#set",
+    "class/src/common/states/PageState.js~PageState.html#instance-method-set",
+    "src/common/states/PageState.js~PageState#set",
+    "method"
+  ],
+  [
+    "src/common/states/pagestate.js~pagestate#type",
+    "class/src/common/states/PageState.js~PageState.html#instance-member-type",
+    "src/common/states/PageState.js~PageState#type",
+    "member"
+  ],
+  [
     "src/common/utils/drawer.js",
     "file/src/common/utils/Drawer.js.html",
     "src/common/utils/Drawer.js",
@@ -3921,6 +3981,12 @@ window.esdocSearchIndex = [
     "src/common/utils/stringtocolor.js",
     "file/src/common/utils/stringToColor.js.html",
     "src/common/utils/stringToColor.js",
+    "file"
+  ],
+  [
+    "src/common/utils/subclassof.js",
+    "file/src/common/utils/subclassOf.js.html",
+    "src/common/utils/subclassOf.js",
     "file"
   ],
   [
@@ -5691,30 +5757,6 @@ window.esdocSearchIndex = [
     "src/forum/components/notificationspage.js~notificationspage#view",
     "class/src/forum/components/NotificationsPage.js~NotificationsPage.html#instance-method-view",
     "src/forum/components/NotificationsPage.js~NotificationsPage#view",
-    "method"
-  ],
-  [
-    "src/forum/components/page.js",
-    "file/src/forum/components/Page.js.html",
-    "src/forum/components/Page.js",
-    "file"
-  ],
-  [
-    "src/forum/components/page.js~page#bodyclass",
-    "class/src/forum/components/Page.js~Page.html#instance-member-bodyClass",
-    "src/forum/components/Page.js~Page#bodyClass",
-    "member"
-  ],
-  [
-    "src/forum/components/page.js~page#config",
-    "class/src/forum/components/Page.js~Page.html#instance-method-config",
-    "src/forum/components/Page.js~Page#config",
-    "method"
-  ],
-  [
-    "src/forum/components/page.js~page#init",
-    "class/src/forum/components/Page.js~Page.html#instance-method-init",
-    "src/forum/components/Page.js~Page#init",
     "method"
   ],
   [

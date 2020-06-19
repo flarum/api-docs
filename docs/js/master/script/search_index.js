@@ -162,6 +162,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/state/discussionliststate~discussionliststate",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html",
+    "<span>DiscussionListState</span> <span class=\"search-result-import-path\">flarum/state/DiscussionListState</span>",
+    "class"
+  ],
+  [
     "flarum/components/discussionpage~discussionpage",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html",
     "<span>DiscussionPage</span> <span class=\"search-result-import-path\">flarum/components/DiscussionPage</span>",
@@ -295,13 +301,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -649,13 +655,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -3948,6 +3954,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/forumapplication.js~forumapplication#discussions",
+    "class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-discussions",
+    "src/forum/ForumApplication.js~ForumApplication#discussions",
+    "member"
+  ],
+  [
     "src/forum/forumapplication.js~forumapplication#drawer",
     "class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-drawer",
     "src/forum/ForumApplication.js~ForumApplication#drawer",
@@ -4252,12 +4264,6 @@ window.esdocSearchIndex = [
     "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-isEditing",
     "src/forum/components/CommentPost.js~CommentPost#isEditing",
     "method"
-  ],
-  [
-    "src/forum/components/commentpost.js~commentpost#postuser",
-    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-member-postUser",
-    "src/forum/components/CommentPost.js~CommentPost#postUser",
-    "member"
   ],
   [
     "src/forum/components/commentpost.js~commentpost#revealcontent",
@@ -4644,76 +4650,16 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/discussionlist.js~discussionlist#adddiscussion",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-addDiscussion",
-    "src/forum/components/DiscussionList.js~DiscussionList#addDiscussion",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionlist.js~discussionlist#discussions",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-member-discussions",
-    "src/forum/components/DiscussionList.js~DiscussionList#discussions",
-    "member"
-  ],
-  [
     "src/forum/components/discussionlist.js~discussionlist#init",
     "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-init",
     "src/forum/components/DiscussionList.js~DiscussionList#init",
     "method"
   ],
   [
-    "src/forum/components/discussionlist.js~discussionlist#loadmore",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-loadMore",
-    "src/forum/components/DiscussionList.js~DiscussionList#loadMore",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionlist.js~discussionlist#loadresults",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-loadResults",
-    "src/forum/components/DiscussionList.js~DiscussionList#loadResults",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionlist.js~discussionlist#loading",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-member-loading",
-    "src/forum/components/DiscussionList.js~DiscussionList#loading",
+    "src/forum/components/discussionlist.js~discussionlist#state",
+    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-member-state",
+    "src/forum/components/DiscussionList.js~DiscussionList#state",
     "member"
-  ],
-  [
-    "src/forum/components/discussionlist.js~discussionlist#moreresults",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-member-moreResults",
-    "src/forum/components/DiscussionList.js~DiscussionList#moreResults",
-    "member"
-  ],
-  [
-    "src/forum/components/discussionlist.js~discussionlist#parseresults",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-parseResults",
-    "src/forum/components/DiscussionList.js~DiscussionList#parseResults",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionlist.js~discussionlist#refresh",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-refresh",
-    "src/forum/components/DiscussionList.js~DiscussionList#refresh",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionlist.js~discussionlist#removediscussion",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-removeDiscussion",
-    "src/forum/components/DiscussionList.js~DiscussionList#removeDiscussion",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionlist.js~discussionlist#requestparams",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-requestParams",
-    "src/forum/components/DiscussionList.js~DiscussionList#requestParams",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionlist.js~discussionlist#sortmap",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-sortMap",
-    "src/forum/components/DiscussionList.js~DiscussionList#sortMap",
-    "method"
   ],
   [
     "src/forum/components/discussionlist.js~discussionlist#view",
@@ -4821,6 +4767,12 @@ window.esdocSearchIndex = [
     "src/forum/components/discussionpage.js~discussionpage#discussion",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-discussion",
     "src/forum/components/DiscussionPage.js~DiscussionPage#discussion",
+    "member"
+  ],
+  [
+    "src/forum/components/discussionpage.js~discussionpage#discussionlistclass",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-discussionListClass",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#discussionListClass",
     "member"
   ],
   [
@@ -6300,12 +6252,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/postuser.js~postuser#cardvisible",
-    "class/src/forum/components/PostUser.js~PostUser.html#instance-member-cardVisible",
-    "src/forum/components/PostUser.js~PostUser#cardVisible",
-    "member"
-  ],
-  [
     "src/forum/components/postuser.js~postuser#config",
     "class/src/forum/components/PostUser.js~PostUser.html#instance-method-config",
     "src/forum/components/PostUser.js~PostUser#config",
@@ -6315,12 +6261,6 @@ window.esdocSearchIndex = [
     "src/forum/components/postuser.js~postuser#hidecard",
     "class/src/forum/components/PostUser.js~PostUser.html#instance-method-hideCard",
     "src/forum/components/PostUser.js~PostUser#hideCard",
-    "method"
-  ],
-  [
-    "src/forum/components/postuser.js~postuser#init",
-    "class/src/forum/components/PostUser.js~PostUser.html#instance-method-init",
-    "src/forum/components/PostUser.js~PostUser#init",
     "method"
   ],
   [
@@ -7090,6 +7030,138 @@ window.esdocSearchIndex = [
     "file/src/forum/routes.js.html",
     "src/forum/routes.js",
     "file"
+  ],
+  [
+    "src/forum/state/discussionliststate.js",
+    "file/src/forum/state/DiscussionListState.js.html",
+    "src/forum/state/DiscussionListState.js",
+    "file"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#adddiscussion",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-addDiscussion",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#addDiscussion",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#app",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-member-app",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#app",
+    "member"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#clear",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-clear",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#clear",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#constructor",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-constructor-constructor",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#constructor",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#discussions",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-member-discussions",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#discussions",
+    "member"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#empty",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-empty",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#empty",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#getparams",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-getParams",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#getParams",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#hasdiscussions",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-hasDiscussions",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#hasDiscussions",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#isloading",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-isLoading",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#isLoading",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#issearchresults",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-isSearchResults",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#isSearchResults",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#loadmore",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-loadMore",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#loadMore",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#loadresults",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-loadResults",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#loadResults",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#loading",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-member-loading",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#loading",
+    "member"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#moreresults",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-member-moreResults",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#moreResults",
+    "member"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#params",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-member-params",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#params",
+    "member"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#parseresults",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-parseResults",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#parseResults",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#refresh",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-refresh",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#refresh",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#refreshparams",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-refreshParams",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#refreshParams",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#removediscussion",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-removeDiscussion",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#removeDiscussion",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#requestparams",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-requestParams",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#requestParams",
+    "method"
+  ],
+  [
+    "src/forum/state/discussionliststate.js~discussionliststate#sortmap",
+    "class/src/forum/state/DiscussionListState.js~DiscussionListState.html#instance-method-sortMap",
+    "src/forum/state/DiscussionListState.js~DiscussionListState#sortMap",
+    "method"
   ],
   [
     "src/forum/states/globalsearchstate.js",

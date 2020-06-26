@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../../">
-  <title data-ice="title">NotificationGrid | Flarum API</title>
+  <title data-ice="title">DiscussionListState | Flarum API</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -201,23 +201,23 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import NotificationGrid from &apos;<span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber14">flarum/components/NotificationGrid</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import DiscussionListState from &apos;<span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber1">flarum/states/DiscussionListState</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber14">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber1">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
-  <h1 data-ice="name">NotificationGrid</h1>
+  <h1 data-ice="name">DiscussionListState</h1>
 
   
 
   
   
-  <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span><a href="class/src/common/Component.js~Component.html">Component</a></span> &#x2192; NotificationGrid</div></div>
+  
   
   
   
@@ -227,12 +227,7 @@
 
   
   
-  <div class="description" data-ice="description"><p>The <code>NotificationGrid</code> component displays a table of notification types and
-methods, allowing the user to toggle each combination.</p>
-<h3 id="props">Props</h3><ul>
-<li><code>user</code></li>
-</ul>
-</div>
+  
   
 
   
@@ -246,7 +241,41 @@ methods, allowing the user to toggle each combination.</p>
 
 
 
-
+<div data-ice="constructorSummary"><h2>Constructor Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Constructor</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
 <div data-ice="memberSummary"><h2>Member Summary</h2><table class="summary" data-ice="summary">
   <thead><tr><td data-ice="title" colspan="3">Public Members</td></tr></thead>
   <tbody>
@@ -265,14 +294,13 @@ methods, allowing the user to toggle each combination.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-member-loading">loading</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-member-app">app</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>A map of which notification checkboxes are loading.</p>
-</div>
+        
       </div>
     </td>
     <td>
@@ -294,14 +322,13 @@ methods, allowing the user to toggle each combination.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-member-methods">methods</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-member-discussions">discussions</a></span></span><span class="code" data-ice="signature">: <span><span>*</span><span>[]</span></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Information about the available notification methods.</p>
-</div>
+        
       </div>
     </td>
     <td>
@@ -323,14 +350,69 @@ methods, allowing the user to toggle each combination.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-member-types">types</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-member-loading">loading</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Information about the available notification types.</p>
-</div>
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-member-moreResults">moreResults</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-member-params">params</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
       </div>
     </td>
     <td>
@@ -359,69 +441,13 @@ methods, allowing the user to toggle each combination.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-config">config</a></span></span><span class="code" data-ice="signature">(isInitialized: <span>*</span>)</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-addDiscussion">addDiscussion</a></span></span><span class="code" data-ice="signature">(discussion: <span>*</span>)</span>
         </p>
       </div>
       <div>
         
         
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-init">init</a></span></span><span class="code" data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-notificationMethods">notificationMethods</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/common/utils/ItemList.js~ItemList.html">ItemList</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Build an item list for the notification methods to display in the grid.</p>
+        <div data-ice="description"><p>Add a discussion to the top of the list.</p>
 </div>
       </div>
     </td>
@@ -444,13 +470,13 @@ methods, allowing the user to toggle each combination.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-notificationTypes">notificationTypes</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/common/utils/ItemList.js~ItemList.html">ItemList</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-clear">clear</a></span></span><span class="code" data-ice="signature">()</span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Build an item list for the notification types to display in the grid.</p>
+        <div data-ice="description"><p>Clear cached discussions.</p>
 </div>
       </div>
     </td>
@@ -473,14 +499,13 @@ methods, allowing the user to toggle each combination.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-preferenceKey">preferenceKey</a></span></span><span class="code" data-ice="signature">(type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>, method: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-empty">empty</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Get the name of the preference key for the given notification type-method
-combination.</p>
+        <div data-ice="description"><p>Have the search results come up empty?</p>
 </div>
       </div>
     </td>
@@ -503,14 +528,13 @@ combination.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-toggle">toggle</a></span></span><span class="code" data-ice="signature">(keys: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>)</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-getParams">getParams</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Toggle the state of the given preferences, based on the value of the first
-one.</p>
+        <div data-ice="description"><p>Get the search parameters.</p>
 </div>
       </div>
     </td>
@@ -533,13 +557,13 @@ one.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-toggleMethod">toggleMethod</a></span></span><span class="code" data-ice="signature">(method: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>)</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-hasDiscussions">hasDiscussions</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Toggle all notification types for the given method.</p>
+        <div data-ice="description"><p>Are there discussions stored in the discussion list state?</p>
 </div>
       </div>
     </td>
@@ -562,13 +586,13 @@ one.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-toggleType">toggleType</a></span></span><span class="code" data-ice="signature">(type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>)</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-isLoading">isLoading</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Toggle all notification methods for the given type.</p>
+        <div data-ice="description"><p>Are discussions currently being loaded?</p>
 </div>
       </div>
     </td>
@@ -591,13 +615,249 @@ one.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-view">view</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-isSearchResults">isSearchResults</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
         
         
+        <div data-ice="description"><p>In the last request, has the user searched for a discussion?</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-loadMore">loadMore</a></span></span><span class="code" data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
         
+        
+        <div data-ice="description"><p>Load the next page of discussion results.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-loadResults">loadResults</a></span></span><span class="code" data-ice="signature">(offset: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Load a new page of discussion results.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-parseResults">parseResults</a></span></span><span class="code" data-ice="signature">(results: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Parse results and append them to the discussion list.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-refresh">refresh</a></span></span><span class="code" data-ice="signature">(objectPattern: {&quot;clear&quot;: <span>*</span>}): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Clear and reload the discussion list.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-refreshParams">refreshParams</a></span></span><span class="code" data-ice="signature">(newParams: <span>*</span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>If there are no cached discussions or the new params differ from the
+old ones, update params and refresh the discussion list from the database.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-removeDiscussion">removeDiscussion</a></span></span><span class="code" data-ice="signature">(discussion: <span>*</span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Remove a discussion from the list if it is present.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-requestParams">requestParams</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get the parameters that should be passed in the API request to get
+discussion results.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-sortMap">sortMap</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get a map of sort keys (which appear in the URL, and are used for
+translation) to the API sort value that they represent.</p>
+</div>
       </div>
     </td>
     <td>
@@ -609,347 +869,144 @@ one.</p>
 </table>
 </div>
 
-<div class="inherited-summary" data-ice="inheritedSummary"><h2>Inherited Summary</h2><table class="summary" data-ice="summary">
-  <thead><tr><td data-ice="title" colspan="3"><span class="toggle closed"></span> From class <span><a href="class/src/common/Component.js~Component.html">Component</a></span></td></tr></thead>
-  <tbody>
+
+
+
+
+<div data-ice="constructorDetails"><h2 data-ice="title">Public Constructors</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-constructor-constructor">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber2">source</a></span></span>
+    </span>
+  </h3>
+
   
-  <tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      <span data-ice="static">static</span>
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#static-method-component">component</a></span></span><span class="code" data-ice="signature">(props: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, children: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Get a Mithril component object for this component, preloaded with props.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      <span data-ice="static">static</span>
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#static-method-initProps">initProps</a></span></span><span class="code" data-ice="signature">(props: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Initialize the component&apos;s props.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#instance-member-element">element</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>The root DOM element for the component.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#instance-member-props">props</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>The properties passed into the component.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#instance-member-retain">retain</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Whether or not to retain the component&apos;s subtree on redraw.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#instance-method-$">$</a></span></span><span class="code" data-ice="signature">(selector: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>): <span>jQuery</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Returns a jQuery object for this component&apos;s element. If you pass in a
-selector string, this method will return a jQuery object, using the current
-element as its buffer.</p>
-<p>For example, calling <code>component.$(&apos;li&apos;)</code> will return a jQuery object
-containing all of the <code>li</code> elements inside the DOM element of this
-component.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#instance-method-config">config</a></span></span><span class="code" data-ice="signature">(isInitialized: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, context: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, vdom: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Called after the component&apos;s root element is redrawn. This hook can be used
-to perform any actions on the DOM, both on the initial draw and any
-subsequent redraws. See Mithril&apos;s documentation for more information.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#instance-method-onunload">onunload</a></span></span><span class="code" data-ice="signature">(e: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Called when the component is destroyed, i.e.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#instance-method-render">render</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Get the renderable virtual DOM that represents the component&apos;s view.</p>
-<p>This should NOT be overridden by subclasses. Subclasses wishing to define
-their virtual DOM should override Component#view instead.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">protected</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#instance-method-init">init</a></span></span><span class="code" data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Called when the component is constructed.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">protected</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Component.js~Component.html#instance-method-view">view</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Get the virtual DOM that represents the component&apos;s view.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-</tbody>
-</table>
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
 </div>
 
+  
 
+  
 
+  
 
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
 <div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
 
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-app">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">app</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber5">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-discussions">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">discussions</span><span class="code" data-ice="signature">: <span><span>*</span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber7">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
 <div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-member-loading">
     <span class="access" data-ice="access">public</span>
@@ -958,19 +1015,18 @@ their virtual DOM should override Component#view instead.</p>
     
     
     
-    <span class="code" data-ice="name">loading</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+    <span class="code" data-ice="name">loading</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber28">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber11">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>A map of which notification checkboxes are loading.</p>
-</div>
+  
 
   
 
@@ -995,26 +1051,25 @@ their virtual DOM should override Component#view instead.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-methods">
+  <h3 data-ice="anchor" id="instance-member-moreResults">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">methods</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+    <span class="code" data-ice="name">moreResults</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber21">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber9">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Information about the available notification methods.</p>
-</div>
+  
 
   
 
@@ -1039,26 +1094,25 @@ their virtual DOM should override Component#view instead.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-types">
+  <h3 data-ice="anchor" id="instance-member-params">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">types</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+    <span class="code" data-ice="name">params</span><span class="code" data-ice="signature">: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber35">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber3">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Information about the available notification types.</p>
-</div>
+  
 
   
 
@@ -1086,30 +1140,28 @@ their virtual DOM should override Component#view instead.</p>
 <div data-ice="methodDetails"><h2 data-ice="title">Public Methods</h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-config">
+  <h3 data-ice="anchor" id="instance-method-addDiscussion">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">config</span><span class="code" data-ice="signature">(isInitialized: <span>*</span>)</span>
+    <span class="code" data-ice="name">addDiscussion</span><span class="code" data-ice="signature">(discussion: <span>*</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber81">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber158">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Called after the component&apos;s root element is redrawn. This hook can be used
-to perform any actions on the DOM, both on the initial draw and any
-subsequent redraws. See Mithril&apos;s documentation for more information.</p>
+  <div data-ice="description"><p>Add a discussion to the top of the list.</p>
 </div>
 
-  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/common/Component.js~Component.html#instance-method-config">Component#config</a></span></div>
+  
 
   <div data-ice="properties"><div data-ice="properties">
   <h4 data-ice="title">Params:</h4>
@@ -1120,7 +1172,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">isInitialized</td>
+      <td data-ice="name" class="code" data-depth="0">discussion</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -1148,28 +1200,28 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-init">
+  <h3 data-ice="anchor" id="instance-method-clear">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">init</span><span class="code" data-ice="signature">()</span>
+    <span class="code" data-ice="name">clear</span><span class="code" data-ice="signature">()</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber15">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber62">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Called when the component is constructed.</p>
+  <div data-ice="description"><p>Clear cached discussions.</p>
 </div>
 
-  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/common/Component.js~Component.html#instance-method-init">Component#init</a></span></div>
+  
 
   <div data-ice="properties">
 </div>
@@ -1192,31 +1244,25 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-notificationMethods">
+  <h3 data-ice="anchor" id="instance-method-empty">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">notificationMethods</span><span class="code" data-ice="signature">(): <span><a href="class/src/common/utils/ItemList.js~ItemList.html">ItemList</a></span></span>
+    <span class="code" data-ice="name">empty</span><span class="code" data-ice="signature">(): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber170">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber187">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Build an item list for the notification methods to display in the grid.</p>
-<p>Each notification method is an object which has the following properties:</p>
-<ul>
-<li><code>name</code> The name of the notification method.</li>
-<li><code>icon</code> The icon to display in the column header.</li>
-<li><code>label</code> The label to display in the column header.</li>
-</ul>
+  <div data-ice="description"><p>Have the search results come up empty?</p>
 </div>
 
   
@@ -1229,7 +1275,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/common/utils/ItemList.js~ItemList.html">ItemList</a></span></td>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
           
         </tr>
       </tbody>
@@ -1254,31 +1300,25 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-notificationTypes">
+  <h3 data-ice="anchor" id="instance-method-getParams">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">notificationTypes</span><span class="code" data-ice="signature">(): <span><a href="class/src/common/utils/ItemList.js~ItemList.html">ItemList</a></span></span>
+    <span class="code" data-ice="name">getParams</span><span class="code" data-ice="signature">(): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber199">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber55">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Build an item list for the notification types to display in the grid.</p>
-<p>Each notification type is an object which has the following properties:</p>
-<ul>
-<li><code>name</code> The name of the notification type.</li>
-<li><code>icon</code> The icon to display in the notification grid row.</li>
-<li><code>label</code> The label to display in the notification grid row.</li>
-</ul>
+  <div data-ice="description"><p>Get the search parameters.</p>
 </div>
 
   
@@ -1291,7 +1331,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/common/utils/ItemList.js~ItemList.html">ItemList</a></span></td>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
           
         </tr>
       </tbody>
@@ -1316,26 +1356,237 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-preferenceKey">
+  <h3 data-ice="anchor" id="instance-method-hasDiscussions">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">preferenceKey</span><span class="code" data-ice="signature">(type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>, method: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
+    <span class="code" data-ice="name">hasDiscussions</span><span class="code" data-ice="signature">(): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber155">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber166">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Get the name of the preference key for the given notification type-method
-combination.</p>
+  <div data-ice="description"><p>Are there discussions stored in the discussion list state?</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-isLoading">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">isLoading</span><span class="code" data-ice="signature">(): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber173">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Are discussions currently being loaded?</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-isSearchResults">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">isSearchResults</span><span class="code" data-ice="signature">(): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber180">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>In the last request, has the user searched for a discussion?</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-loadMore">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">loadMore</span><span class="code" data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber122">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Load the next page of discussion results.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-loadResults">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">loadResults</span><span class="code" data-ice="signature">(offset: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber105">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Load a new page of discussion results.</p>
 </div>
 
   
@@ -1349,14 +1600,81 @@ combination.</p>
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
+      <td data-ice="name" class="code" data-depth="0">offset</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The index to start the page at.</p>
+</td>
     </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">method</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-parseResults">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">parseResults</span><span class="code" data-ice="signature">(results: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber131">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Parse results and append them to the discussion list.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">results</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1370,7 +1688,7 @@ combination.</p>
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
           
         </tr>
       </tbody>
@@ -1395,26 +1713,25 @@ combination.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-toggle">
+  <h3 data-ice="anchor" id="instance-method-refresh">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">toggle</span><span class="code" data-ice="signature">(keys: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>)</span>
+    <span class="code" data-ice="name">refresh</span><span class="code" data-ice="signature">(objectPattern: {&quot;clear&quot;: <span>*</span>}): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber106">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber82">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Toggle the state of the given preferences, based on the value of the first
-one.</p>
+  <div data-ice="description"><p>Clear and reload the discussion list.</p>
 </div>
 
   
@@ -1428,8 +1745,82 @@ one.</p>
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">keys</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
+      <td data-ice="name" class="code" data-depth="0">objectPattern</td>
+      <td data-ice="type" class="code">{&quot;clear&quot;: <span>*</span>}</td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: {}</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-refreshParams">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">refreshParams</span><span class="code" data-ice="signature">(newParams: <span>*</span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber71">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>If there are no cached discussions or the new params differ from the
+old ones, update params and refresh the discussion list from the database.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">newParams</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1456,25 +1847,25 @@ one.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-toggleMethod">
+  <h3 data-ice="anchor" id="instance-method-removeDiscussion">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">toggleMethod</span><span class="code" data-ice="signature">(method: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>)</span>
+    <span class="code" data-ice="name">removeDiscussion</span><span class="code" data-ice="signature">(discussion: <span>*</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber130">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber145">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Toggle all notification types for the given method.</p>
+  <div data-ice="description"><p>Remove a discussion from the list if it is present.</p>
 </div>
 
   
@@ -1488,8 +1879,8 @@ one.</p>
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">method</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
+      <td data-ice="name" class="code" data-depth="0">discussion</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1516,49 +1907,46 @@ one.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-toggleType">
+  <h3 data-ice="anchor" id="instance-method-requestParams">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">toggleType</span><span class="code" data-ice="signature">(type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>)</span>
+    <span class="code" data-ice="name">requestParams</span><span class="code" data-ice="signature">(): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber141">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber20">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Toggle all notification methods for the given type.</p>
+  <div data-ice="description"><p>Get the parameters that should be passed in the API request to get
+discussion results.</p>
 </div>
 
   
 
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
+  <div data-ice="properties">
 </div>
 
-  
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
 
   
 
@@ -1576,28 +1964,29 @@ one.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-view">
+  <h3 data-ice="anchor" id="instance-method-sortMap">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">view</span><span class="code" data-ice="signature">(): <span>*</span></span>
+    <span class="code" data-ice="name">sortMap</span><span class="code" data-ice="signature">(): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/NotificationGrid.js.html#lineNumber38">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber38">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Get the virtual DOM that represents the component&apos;s view.</p>
+  <div data-ice="description"><p>Get a map of sort keys (which appear in the URL, and are used for
+translation) to the API sort value that they represent.</p>
 </div>
 
-  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/common/Component.js~Component.html#instance-method-view">Component#view</a></span></div>
+  
 
   <div data-ice="properties">
 </div>

@@ -313,13 +313,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -7276,6 +7276,12 @@ window.esdocSearchIndex = [
     "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-member-app",
     "src/forum/states/NotificationListState.js~NotificationListState#app",
     "member"
+  ],
+  [
+    "src/forum/states/notificationliststate.js~notificationliststate#clear",
+    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-clear",
+    "src/forum/states/NotificationListState.js~NotificationListState#clear",
+    "method"
   ],
   [
     "src/forum/states/notificationliststate.js~notificationliststate#constructor",

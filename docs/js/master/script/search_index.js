@@ -36,6 +36,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/states/alertmanagerstate~alertmanagerstate",
+    "class/src/common/states/AlertManagerState.js~AlertManagerState.html",
+    "<span>AlertManagerState</span> <span class=\"search-result-import-path\">flarum/states/AlertManagerState</span>",
+    "class"
+  ],
+  [
     "flarum/components/appearancepage~appearancepage",
     "class/src/admin/components/AppearancePage.js~AppearancePage.html",
     "<span>AppearancePage</span> <span class=\"search-result-import-path\">flarum/components/AppearancePage</span>",
@@ -301,25 +307,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -655,13 +661,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -1488,6 +1494,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/basicspage.js~basicspage#successalert",
+    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-successAlert",
+    "src/admin/components/BasicsPage.js~BasicsPage#successAlert",
+    "member"
+  ],
+  [
     "src/admin/components/basicspage.js~basicspage#values",
     "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-values",
     "src/admin/components/BasicsPage.js~BasicsPage#values",
@@ -1911,6 +1923,18 @@ window.esdocSearchIndex = [
     "src/admin/components/mailpage.js~mailpage#status",
     "class/src/admin/components/MailPage.js~MailPage.html#instance-member-status",
     "src/admin/components/MailPage.js~MailPage#status",
+    "member"
+  ],
+  [
+    "src/admin/components/mailpage.js~mailpage#successalert",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-successAlert",
+    "src/admin/components/MailPage.js~MailPage#successAlert",
+    "member"
+  ],
+  [
+    "src/admin/components/mailpage.js~mailpage#testemailsuccessalert",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-testEmailSuccessAlert",
+    "src/admin/components/MailPage.js~MailPage#testEmailSuccessAlert",
     "member"
   ],
   [
@@ -2358,9 +2382,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/application.js~application#requesterror",
-    "class/src/common/Application.js~Application.html#instance-member-requestError",
-    "src/common/Application.js~Application#requestError",
+    "src/common/application.js~application#requesterroralert",
+    "class/src/common/Application.js~Application.html#instance-member-requestErrorAlert",
+    "src/common/Application.js~Application#requestErrorAlert",
     "member"
   ],
   [
@@ -2820,27 +2844,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/alertmanager.js~alertmanager#clear",
-    "class/src/common/components/AlertManager.js~AlertManager.html#instance-method-clear",
-    "src/common/components/AlertManager.js~AlertManager#clear",
-    "method"
-  ],
-  [
-    "src/common/components/alertmanager.js~alertmanager#components",
-    "class/src/common/components/AlertManager.js~AlertManager.html#instance-member-components",
-    "src/common/components/AlertManager.js~AlertManager#components",
-    "member"
-  ],
-  [
     "src/common/components/alertmanager.js~alertmanager#config",
     "class/src/common/components/AlertManager.js~AlertManager.html#instance-method-config",
     "src/common/components/AlertManager.js~AlertManager#config",
-    "method"
-  ],
-  [
-    "src/common/components/alertmanager.js~alertmanager#dismiss",
-    "class/src/common/components/AlertManager.js~AlertManager.html#instance-method-dismiss",
-    "src/common/components/AlertManager.js~AlertManager#dismiss",
     "method"
   ],
   [
@@ -2850,10 +2856,10 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/alertmanager.js~alertmanager#show",
-    "class/src/common/components/AlertManager.js~AlertManager.html#instance-method-show",
-    "src/common/components/AlertManager.js~AlertManager#show",
-    "method"
+    "src/common/components/alertmanager.js~alertmanager#state",
+    "class/src/common/components/AlertManager.js~AlertManager.html#instance-member-state",
+    "src/common/components/AlertManager.js~AlertManager#state",
+    "member"
   ],
   [
     "src/common/components/alertmanager.js~alertmanager#view",
@@ -3048,9 +3054,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/modal.js~modal#alert",
-    "class/src/common/components/Modal.js~Modal.html#instance-member-alert",
-    "src/common/components/Modal.js~Modal#alert",
+    "src/common/components/modal.js~modal#alertattrs",
+    "class/src/common/components/Modal.js~Modal.html#instance-member-alertAttrs",
+    "src/common/components/Modal.js~Modal#alertAttrs",
     "member"
   ],
   [
@@ -3604,6 +3610,54 @@ window.esdocSearchIndex = [
     "file/src/common/models/User.js.html",
     "src/common/models/User.js",
     "file"
+  ],
+  [
+    "src/common/states/alertmanagerstate.js",
+    "file/src/common/states/AlertManagerState.js.html",
+    "src/common/states/AlertManagerState.js",
+    "file"
+  ],
+  [
+    "src/common/states/alertmanagerstate.js~alertmanagerstate#activealerts",
+    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-member-activeAlerts",
+    "src/common/states/AlertManagerState.js~AlertManagerState#activeAlerts",
+    "member"
+  ],
+  [
+    "src/common/states/alertmanagerstate.js~alertmanagerstate#alertid",
+    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-member-alertId",
+    "src/common/states/AlertManagerState.js~AlertManagerState#alertId",
+    "member"
+  ],
+  [
+    "src/common/states/alertmanagerstate.js~alertmanagerstate#clear",
+    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-method-clear",
+    "src/common/states/AlertManagerState.js~AlertManagerState#clear",
+    "method"
+  ],
+  [
+    "src/common/states/alertmanagerstate.js~alertmanagerstate#constructor",
+    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-constructor-constructor",
+    "src/common/states/AlertManagerState.js~AlertManagerState#constructor",
+    "method"
+  ],
+  [
+    "src/common/states/alertmanagerstate.js~alertmanagerstate#dismiss",
+    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-method-dismiss",
+    "src/common/states/AlertManagerState.js~AlertManagerState#dismiss",
+    "method"
+  ],
+  [
+    "src/common/states/alertmanagerstate.js~alertmanagerstate#getactivealerts",
+    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-method-getActiveAlerts",
+    "src/common/states/AlertManagerState.js~AlertManagerState#getActiveAlerts",
+    "method"
+  ],
+  [
+    "src/common/states/alertmanagerstate.js~alertmanagerstate#show",
+    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-method-show",
+    "src/common/states/AlertManagerState.js~AlertManagerState#show",
+    "method"
   ],
   [
     "src/common/states/pagestate.js",

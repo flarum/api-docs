@@ -414,6 +414,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/states/modalmanagerstate~modalmanagerstate",
+    "class/src/common/states/ModalManagerState.js~ModalManagerState.html",
+    "<span>ModalManagerState</span> <span class=\"search-result-import-path\">flarum/states/ModalManagerState</span>",
+    "class"
+  ],
+  [
     "flarum/model~model",
     "class/src/common/Model.js~Model.html",
     "<span>Model</span> <span class=\"search-result-import-path\">flarum/Model</span>",
@@ -661,13 +667,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -1836,16 +1842,16 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/loadingmodal.js~loadingmodal#isdismissible",
-    "class/src/admin/components/LoadingModal.js~LoadingModal.html#instance-method-isDismissible",
-    "src/admin/components/LoadingModal.js~LoadingModal#isDismissible",
-    "method"
-  ],
-  [
     "src/admin/components/loadingmodal.js~loadingmodal#title",
     "class/src/admin/components/LoadingModal.js~LoadingModal.html#instance-method-title",
     "src/admin/components/LoadingModal.js~LoadingModal#title",
     "method"
+  ],
+  [
+    "src/admin/components/loadingmodal.js~loadingmodal.isdismissible",
+    "class/src/admin/components/LoadingModal.js~LoadingModal.html#static-member-isDismissible",
+    "src/admin/components/LoadingModal.js~LoadingModal.isDismissible",
+    "member"
   ],
   [
     "src/admin/components/mailpage.js",
@@ -3066,6 +3072,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/components/modal.js~modal#config",
+    "class/src/common/components/Modal.js~Modal.html#instance-method-config",
+    "src/common/components/Modal.js~Modal#config",
+    "method"
+  ],
+  [
     "src/common/components/modal.js~modal#content",
     "class/src/common/components/Modal.js~Modal.html#instance-method-content",
     "src/common/components/Modal.js~Modal#content",
@@ -3081,12 +3093,6 @@ window.esdocSearchIndex = [
     "src/common/components/modal.js~modal#init",
     "class/src/common/components/Modal.js~Modal.html#instance-method-init",
     "src/common/components/Modal.js~Modal#init",
-    "method"
-  ],
-  [
-    "src/common/components/modal.js~modal#isdismissible",
-    "class/src/common/components/Modal.js~Modal.html#instance-method-isDismissible",
-    "src/common/components/Modal.js~Modal#isDismissible",
     "method"
   ],
   [
@@ -3138,28 +3144,28 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/components/modal.js~modal.isdismissible",
+    "class/src/common/components/Modal.js~Modal.html#static-member-isDismissible",
+    "src/common/components/Modal.js~Modal.isDismissible",
+    "member"
+  ],
+  [
     "src/common/components/modalmanager.js",
     "file/src/common/components/ModalManager.js.html",
     "src/common/components/ModalManager.js",
     "file"
   ],
   [
-    "src/common/components/modalmanager.js~modalmanager#clear",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-clear",
-    "src/common/components/ModalManager.js~ModalManager#clear",
+    "src/common/components/modalmanager.js~modalmanager#animatehide",
+    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-animateHide",
+    "src/common/components/ModalManager.js~ModalManager#animateHide",
     "method"
   ],
   [
-    "src/common/components/modalmanager.js~modalmanager#close",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-close",
-    "src/common/components/ModalManager.js~ModalManager#close",
+    "src/common/components/modalmanager.js~modalmanager#animateshow",
+    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-animateShow",
+    "src/common/components/ModalManager.js~ModalManager#animateShow",
     "method"
-  ],
-  [
-    "src/common/components/modalmanager.js~modalmanager#component",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-member-component",
-    "src/common/components/ModalManager.js~ModalManager#component",
-    "member"
   ],
   [
     "src/common/components/modalmanager.js~modalmanager#config",
@@ -3168,33 +3174,15 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/modalmanager.js~modalmanager#hidetimeout",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-member-hideTimeout",
-    "src/common/components/ModalManager.js~ModalManager#hideTimeout",
-    "member"
-  ],
-  [
     "src/common/components/modalmanager.js~modalmanager#init",
     "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-init",
     "src/common/components/ModalManager.js~ModalManager#init",
     "method"
   ],
   [
-    "src/common/components/modalmanager.js~modalmanager#onready",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-onready",
-    "src/common/components/ModalManager.js~ModalManager#onready",
-    "method"
-  ],
-  [
-    "src/common/components/modalmanager.js~modalmanager#show",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-show",
-    "src/common/components/ModalManager.js~ModalManager#show",
-    "method"
-  ],
-  [
-    "src/common/components/modalmanager.js~modalmanager#showing",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-member-showing",
-    "src/common/components/ModalManager.js~ModalManager#showing",
+    "src/common/components/modalmanager.js~modalmanager#state",
+    "class/src/common/components/ModalManager.js~ModalManager.html#instance-member-state",
+    "src/common/components/ModalManager.js~ModalManager#state",
     "member"
   ],
   [
@@ -3657,6 +3645,42 @@ window.esdocSearchIndex = [
     "src/common/states/alertmanagerstate.js~alertmanagerstate#show",
     "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-method-show",
     "src/common/states/AlertManagerState.js~AlertManagerState#show",
+    "method"
+  ],
+  [
+    "src/common/states/modalmanagerstate.js",
+    "file/src/common/states/ModalManagerState.js.html",
+    "src/common/states/ModalManagerState.js",
+    "file"
+  ],
+  [
+    "src/common/states/modalmanagerstate.js~modalmanagerstate#close",
+    "class/src/common/states/ModalManagerState.js~ModalManagerState.html#instance-method-close",
+    "src/common/states/ModalManagerState.js~ModalManagerState#close",
+    "method"
+  ],
+  [
+    "src/common/states/modalmanagerstate.js~modalmanagerstate#closetimeout",
+    "class/src/common/states/ModalManagerState.js~ModalManagerState.html#instance-member-closeTimeout",
+    "src/common/states/ModalManagerState.js~ModalManagerState#closeTimeout",
+    "member"
+  ],
+  [
+    "src/common/states/modalmanagerstate.js~modalmanagerstate#constructor",
+    "class/src/common/states/ModalManagerState.js~ModalManagerState.html#instance-constructor-constructor",
+    "src/common/states/ModalManagerState.js~ModalManagerState#constructor",
+    "method"
+  ],
+  [
+    "src/common/states/modalmanagerstate.js~modalmanagerstate#modal",
+    "class/src/common/states/ModalManagerState.js~ModalManagerState.html#instance-member-modal",
+    "src/common/states/ModalManagerState.js~ModalManagerState#modal",
+    "member"
+  ],
+  [
+    "src/common/states/modalmanagerstate.js~modalmanagerstate#show",
+    "class/src/common/states/ModalManagerState.js~ModalManagerState.html#instance-method-show",
+    "src/common/states/ModalManagerState.js~ModalManagerState#show",
     "method"
   ],
   [

@@ -667,13 +667,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -4372,6 +4372,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-attrs",
     "src/forum/components/CommentPost.js~CommentPost#attrs",
     "method"
+  ],
+  [
+    "src/forum/components/commentpost.js~commentpost#cardvisible",
+    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-member-cardVisible",
+    "src/forum/components/CommentPost.js~CommentPost#cardVisible",
+    "member"
   ],
   [
     "src/forum/components/commentpost.js~commentpost#config",

@@ -319,13 +319,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -667,13 +667,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -5074,6 +5074,18 @@ window.esdocSearchIndex = [
     "class/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html#instance-method-init",
     "src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage#init",
     "method"
+  ],
+  [
+    "src/forum/components/discussionsuserpage.js~discussionsuserpage#show",
+    "class/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html#instance-method-show",
+    "src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage#show",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionsuserpage.js~discussionsuserpage#state",
+    "class/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html#instance-member-state",
+    "src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage#state",
+    "member"
   ],
   [
     "src/forum/components/editpostcomposer.js",

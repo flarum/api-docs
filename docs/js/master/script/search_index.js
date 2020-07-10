@@ -342,12 +342,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/utils/itemlist~itemlist",
-    "class/src/common/utils/ItemList.js~ItemList.html",
-    "<span>ItemList</span> <span class=\"search-result-import-path\">flarum/utils/ItemList</span>",
-    "class"
-  ],
-  [
     "flarum/utils/keyboardnavigatable~keyboardnavigatable",
     "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html",
     "<span>KeyboardNavigatable</span> <span class=\"search-result-import-path\">flarum/utils/KeyboardNavigatable</span>",
@@ -594,12 +588,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/utils/requesterror~requesterror",
-    "class/src/common/utils/RequestError.js~RequestError.html",
-    "<span>RequestError</span> <span class=\"search-result-import-path\">flarum/utils/RequestError</span>",
-    "class"
-  ],
-  [
     "flarum/components/requesterrormodal~requesterrormodal",
     "class/src/common/components/RequestErrorModal.js~RequestErrorModal.html",
     "<span>RequestErrorModal</span> <span class=\"search-result-import-path\">flarum/components/RequestErrorModal</span>",
@@ -792,12 +780,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/utils/abbreviatenumber~abbreviatenumber",
-    "function/index.html#static-function-abbreviateNumber",
-    "<span>abbreviateNumber</span> <span class=\"search-result-import-path\">flarum/utils/abbreviateNumber</span>",
-    "function"
-  ],
-  [
     "flarum/utils/affixsidebar~affixsidebar",
     "function/index.html#static-function-affixSidebar",
     "<span>affixSidebar</span> <span class=\"search-result-import-path\">flarum/utils/affixSidebar</span>",
@@ -852,33 +834,15 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "flarum/utils/extract~extract",
-    "function/index.html#static-function-extract",
-    "<span>extract</span> <span class=\"search-result-import-path\">flarum/utils/extract</span>",
-    "function"
-  ],
-  [
     "flarum/utils/extracttext~extracttext",
     "function/index.html#static-function-extractText",
     "<span>extractText</span> <span class=\"search-result-import-path\">flarum/utils/extractText</span>",
     "function"
   ],
   [
-    "flarum/utils/formatnumber~formatnumber",
-    "function/index.html#static-function-formatNumber",
-    "<span>formatNumber</span> <span class=\"search-result-import-path\">flarum/utils/formatNumber</span>",
-    "function"
-  ],
-  [
     "flarum/helpers/fulltime~fulltime",
     "function/index.html#static-function-fullTime",
     "<span>fullTime</span> <span class=\"search-result-import-path\">flarum/helpers/fullTime</span>",
-    "function"
-  ],
-  [
-    "flarum/utils/string~getplaincontent",
-    "function/index.html#static-function-getPlainContent",
-    "<span>getPlainContent</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
     "function"
   ],
   [
@@ -891,18 +855,6 @@ window.esdocSearchIndex = [
     "flarum/helpers/humantime~humantime",
     "function/index.html#static-function-humanTime",
     "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/helpers/humanTime</span>",
-    "function"
-  ],
-  [
-    "flarum/utils/humantime~humantime",
-    "function/index.html#static-function-humanTime",
-    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/utils/humanTime</span>",
-    "function"
-  ],
-  [
-    "flarum/utils/livehumantimes~humantime",
-    "function/index.html#static-function-humanTime",
-    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/utils/liveHumanTimes</span>",
     "function"
   ],
   [
@@ -972,33 +924,9 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "flarum/utils/string~slug",
-    "function/index.html#static-function-slug",
-    "<span>slug</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
-    "function"
-  ],
-  [
-    "flarum/utils/stringtocolor~stringtocolor",
-    "function/index.html#static-function-stringToColor",
-    "<span>stringToColor</span> <span class=\"search-result-import-path\">flarum/utils/stringToColor</span>",
-    "function"
-  ],
-  [
     "flarum/utils/subclassof~subclassof",
     "function/index.html#static-function-subclassOf",
     "<span>subclassOf</span> <span class=\"search-result-import-path\">flarum/utils/subclassOf</span>",
-    "function"
-  ],
-  [
-    "flarum/utils/string~truncate",
-    "function/index.html#static-function-truncate",
-    "<span>truncate</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
-    "function"
-  ],
-  [
-    "flarum/utils/string~ucfirst",
-    "function/index.html#static-function-ucfirst",
-    "<span>ucfirst</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
     "function"
   ],
   [
@@ -3762,120 +3690,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/utils/itemlist.js",
-    "file/src/common/utils/ItemList.js.html",
-    "src/common/utils/ItemList.js",
-    "file"
-  ],
-  [
-    "src/common/utils/itemlist.js~itemlist#add",
-    "class/src/common/utils/ItemList.js~ItemList.html#instance-method-add",
-    "src/common/utils/ItemList.js~ItemList#add",
-    "method"
-  ],
-  [
-    "src/common/utils/itemlist.js~itemlist#constructor",
-    "class/src/common/utils/ItemList.js~ItemList.html#instance-constructor-constructor",
-    "src/common/utils/ItemList.js~ItemList#constructor",
-    "method"
-  ],
-  [
-    "src/common/utils/itemlist.js~itemlist#get",
-    "class/src/common/utils/ItemList.js~ItemList.html#instance-method-get",
-    "src/common/utils/ItemList.js~ItemList#get",
-    "method"
-  ],
-  [
-    "src/common/utils/itemlist.js~itemlist#has",
-    "class/src/common/utils/ItemList.js~ItemList.html#instance-method-has",
-    "src/common/utils/ItemList.js~ItemList#has",
-    "method"
-  ],
-  [
-    "src/common/utils/itemlist.js~itemlist#isempty",
-    "class/src/common/utils/ItemList.js~ItemList.html#instance-method-isEmpty",
-    "src/common/utils/ItemList.js~ItemList#isEmpty",
-    "method"
-  ],
-  [
-    "src/common/utils/itemlist.js~itemlist#items",
-    "class/src/common/utils/ItemList.js~ItemList.html#instance-member-items",
-    "src/common/utils/ItemList.js~ItemList#items",
-    "member"
-  ],
-  [
-    "src/common/utils/itemlist.js~itemlist#merge",
-    "class/src/common/utils/ItemList.js~ItemList.html#instance-method-merge",
-    "src/common/utils/ItemList.js~ItemList#merge",
-    "method"
-  ],
-  [
-    "src/common/utils/itemlist.js~itemlist#remove",
-    "class/src/common/utils/ItemList.js~ItemList.html#instance-method-remove",
-    "src/common/utils/ItemList.js~ItemList#remove",
-    "method"
-  ],
-  [
-    "src/common/utils/itemlist.js~itemlist#replace",
-    "class/src/common/utils/ItemList.js~ItemList.html#instance-method-replace",
-    "src/common/utils/ItemList.js~ItemList#replace",
-    "method"
-  ],
-  [
-    "src/common/utils/itemlist.js~itemlist#toarray",
-    "class/src/common/utils/ItemList.js~ItemList.html#instance-method-toArray",
-    "src/common/utils/ItemList.js~ItemList#toArray",
-    "method"
-  ],
-  [
-    "src/common/utils/requesterror.js",
-    "file/src/common/utils/RequestError.js.html",
-    "src/common/utils/RequestError.js",
-    "file"
-  ],
-  [
-    "src/common/utils/requesterror.js~requesterror#alert",
-    "class/src/common/utils/RequestError.js~RequestError.html#instance-member-alert",
-    "src/common/utils/RequestError.js~RequestError#alert",
-    "member"
-  ],
-  [
-    "src/common/utils/requesterror.js~requesterror#constructor",
-    "class/src/common/utils/RequestError.js~RequestError.html#instance-constructor-constructor",
-    "src/common/utils/RequestError.js~RequestError#constructor",
-    "method"
-  ],
-  [
-    "src/common/utils/requesterror.js~requesterror#options",
-    "class/src/common/utils/RequestError.js~RequestError.html#instance-member-options",
-    "src/common/utils/RequestError.js~RequestError#options",
-    "member"
-  ],
-  [
-    "src/common/utils/requesterror.js~requesterror#response",
-    "class/src/common/utils/RequestError.js~RequestError.html#instance-member-response",
-    "src/common/utils/RequestError.js~RequestError#response",
-    "member"
-  ],
-  [
-    "src/common/utils/requesterror.js~requesterror#responsetext",
-    "class/src/common/utils/RequestError.js~RequestError.html#instance-member-responseText",
-    "src/common/utils/RequestError.js~RequestError#responseText",
-    "member"
-  ],
-  [
-    "src/common/utils/requesterror.js~requesterror#status",
-    "class/src/common/utils/RequestError.js~RequestError.html#instance-member-status",
-    "src/common/utils/RequestError.js~RequestError#status",
-    "member"
-  ],
-  [
-    "src/common/utils/requesterror.js~requesterror#xhr",
-    "class/src/common/utils/RequestError.js~RequestError.html#instance-member-xhr",
-    "src/common/utils/RequestError.js~RequestError#xhr",
-    "member"
-  ],
-  [
     "src/common/utils/scrolllistener.js",
     "file/src/common/utils/ScrollListener.js.html",
     "src/common/utils/ScrollListener.js",
@@ -3972,12 +3786,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/utils/abbreviatenumber.js",
-    "file/src/common/utils/abbreviateNumber.js.html",
-    "src/common/utils/abbreviateNumber.js",
-    "file"
-  ],
-  [
     "src/common/utils/anchorscroll.js",
     "file/src/common/utils/anchorScroll.js.html",
     "src/common/utils/anchorScroll.js",
@@ -4002,33 +3810,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/utils/extract.js",
-    "file/src/common/utils/extract.js.html",
-    "src/common/utils/extract.js",
-    "file"
-  ],
-  [
     "src/common/utils/extracttext.js",
     "file/src/common/utils/extractText.js.html",
     "src/common/utils/extractText.js",
-    "file"
-  ],
-  [
-    "src/common/utils/formatnumber.js",
-    "file/src/common/utils/formatNumber.js.html",
-    "src/common/utils/formatNumber.js",
-    "file"
-  ],
-  [
-    "src/common/utils/humantime.js",
-    "file/src/common/utils/humanTime.js.html",
-    "src/common/utils/humanTime.js",
-    "file"
-  ],
-  [
-    "src/common/utils/livehumantimes.js",
-    "file/src/common/utils/liveHumanTimes.js.html",
-    "src/common/utils/liveHumanTimes.js",
     "file"
   ],
   [
@@ -4047,18 +3831,6 @@ window.esdocSearchIndex = [
     "src/common/utils/patchmithril.js",
     "file/src/common/utils/patchMithril.js.html",
     "src/common/utils/patchMithril.js",
-    "file"
-  ],
-  [
-    "src/common/utils/string.js",
-    "file/src/common/utils/string.js.html",
-    "src/common/utils/string.js",
-    "file"
-  ],
-  [
-    "src/common/utils/stringtocolor.js",
-    "file/src/common/utils/stringToColor.js.html",
-    "src/common/utils/stringToColor.js",
     "file"
   ],
   [

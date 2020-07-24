@@ -126,6 +126,18 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/states/composerstate~composerstate",
+    "class/src/forum/states/ComposerState.js~ComposerState.html",
+    "<span>ComposerState</span> <span class=\"search-result-import-path\">flarum/states/ComposerState</span>",
+    "class"
+  ],
+  [
+    "flarum/components/confirmdocumentunload~confirmdocumentunload",
+    "class/src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload.html",
+    "<span>ConfirmDocumentUnload</span> <span class=\"search-result-import-path\">flarum/components/ConfirmDocumentUnload</span>",
+    "class"
+  ],
+  [
     "flarum/components/dashboardpage~dashboardpage",
     "class/src/admin/components/DashboardPage.js~DashboardPage.html",
     "<span>DashboardPage</span> <span class=\"search-result-import-path\">flarum/components/DashboardPage</span>",
@@ -307,25 +319,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -711,6 +723,12 @@ window.esdocSearchIndex = [
     "flarum/utils/subtreeretainer~subtreeretainer",
     "class/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html",
     "<span>SubtreeRetainer</span> <span class=\"search-result-import-path\">flarum/utils/SubtreeRetainer</span>",
+    "class"
+  ],
+  [
+    "flarum/utils/supertextarea~supertextarea",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html",
+    "<span>SuperTextarea</span> <span class=\"search-result-import-path\">flarum/utils/SuperTextarea</span>",
     "class"
   ],
   [
@@ -2334,6 +2352,12 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/common/application.js~application#screen",
+    "class/src/common/Application.js~Application.html#instance-method-screen",
+    "src/common/Application.js~Application#screen",
+    "method"
+  ],
+  [
     "src/common/application.js~application#session",
     "class/src/common/Application.js~Application.html#instance-member-session",
     "src/common/Application.js~Application#session",
@@ -2859,6 +2883,24 @@ window.esdocSearchIndex = [
     "src/common/components/checkbox.js~checkbox#view",
     "class/src/common/components/Checkbox.js~Checkbox.html#instance-method-view",
     "src/common/components/Checkbox.js~Checkbox#view",
+    "method"
+  ],
+  [
+    "src/common/components/confirmdocumentunload.js",
+    "file/src/common/components/ConfirmDocumentUnload.js.html",
+    "src/common/components/ConfirmDocumentUnload.js",
+    "file"
+  ],
+  [
+    "src/common/components/confirmdocumentunload.js~confirmdocumentunload#config",
+    "class/src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload.html#instance-method-config",
+    "src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload#config",
+    "method"
+  ],
+  [
+    "src/common/components/confirmdocumentunload.js~confirmdocumentunload#view",
+    "class/src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload.html#instance-method-view",
+    "src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload#view",
     "method"
   ],
   [
@@ -3786,6 +3828,78 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/utils/supertextarea.js",
+    "file/src/common/utils/SuperTextarea.js.html",
+    "src/common/utils/SuperTextarea.js",
+    "file"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#$",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-member-$",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#$",
+    "member"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#constructor",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-constructor-constructor",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#constructor",
+    "method"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#el",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-member-el",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#el",
+    "member"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#getselectionrange",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-getSelectionRange",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#getSelectionRange",
+    "method"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#insertat",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-insertAt",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#insertAt",
+    "method"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#insertatcursor",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-insertAtCursor",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#insertAtCursor",
+    "method"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#insertbetween",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-insertBetween",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#insertBetween",
+    "method"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#movecursorto",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-moveCursorTo",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#moveCursorTo",
+    "method"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#replacebeforecursor",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-replaceBeforeCursor",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#replaceBeforeCursor",
+    "method"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#setselectionrange",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-setSelectionRange",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#setSelectionRange",
+    "method"
+  ],
+  [
+    "src/common/utils/supertextarea.js~supertextarea#setvalue",
+    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-setValue",
+    "src/common/utils/SuperTextarea.js~SuperTextarea#setValue",
+    "method"
+  ],
+  [
     "src/common/utils/anchorscroll.js",
     "file/src/common/utils/anchorScroll.js.html",
     "src/common/utils/anchorScroll.js",
@@ -3856,12 +3970,6 @@ window.esdocSearchIndex = [
     "class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-composer",
     "src/forum/ForumApplication.js~ForumApplication#composer",
     "member"
-  ],
-  [
-    "src/forum/forumapplication.js~forumapplication#composingreplyto",
-    "class/src/forum/ForumApplication.js~ForumApplication.html#instance-method-composingReplyTo",
-    "src/forum/ForumApplication.js~ForumApplication#composingReplyTo",
-    "method"
   ],
   [
     "src/forum/forumapplication.js~forumapplication#constructor",
@@ -4218,39 +4326,21 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/composer.js~composer#animatetoposition",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-animateToPosition",
-    "src/forum/components/Composer.js~Composer#animateToPosition",
+    "src/forum/components/composer.js~composer#animateheightchange",
+    "class/src/forum/components/Composer.js~Composer.html#instance-method-animateHeightChange",
+    "src/forum/components/Composer.js~Composer#animateHeightChange",
+    "method"
+  ],
+  [
+    "src/forum/components/composer.js~composer#animatepositionchange",
+    "class/src/forum/components/Composer.js~Composer.html#instance-method-animatePositionChange",
+    "src/forum/components/Composer.js~Composer#animatePositionChange",
     "method"
   ],
   [
     "src/forum/components/composer.js~composer#changeheight",
     "class/src/forum/components/Composer.js~Composer.html#instance-method-changeHeight",
     "src/forum/components/Composer.js~Composer#changeHeight",
-    "method"
-  ],
-  [
-    "src/forum/components/composer.js~composer#clear",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-clear",
-    "src/forum/components/Composer.js~Composer#clear",
-    "method"
-  ],
-  [
-    "src/forum/components/composer.js~composer#close",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-close",
-    "src/forum/components/Composer.js~Composer#close",
-    "method"
-  ],
-  [
-    "src/forum/components/composer.js~composer#component",
-    "class/src/forum/components/Composer.js~Composer.html#instance-member-component",
-    "src/forum/components/Composer.js~Composer#component",
-    "member"
-  ],
-  [
-    "src/forum/components/composer.js~composer#computedheight",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-computedHeight",
-    "src/forum/components/Composer.js~Composer#computedHeight",
     "method"
   ],
   [
@@ -4278,27 +4368,15 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/composer.js~composer#exitfullscreen",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-exitFullScreen",
-    "src/forum/components/Composer.js~Composer#exitFullScreen",
-    "method"
-  ],
-  [
-    "src/forum/components/composer.js~composer#fullscreen",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-fullScreen",
-    "src/forum/components/Composer.js~Composer#fullScreen",
+    "src/forum/components/composer.js~composer#focus",
+    "class/src/forum/components/Composer.js~Composer.html#instance-method-focus",
+    "src/forum/components/Composer.js~Composer#focus",
     "method"
   ],
   [
     "src/forum/components/composer.js~composer#handle",
     "class/src/forum/components/Composer.js~Composer.html#instance-member-handle",
     "src/forum/components/Composer.js~Composer#handle",
-    "member"
-  ],
-  [
-    "src/forum/components/composer.js~composer#height",
-    "class/src/forum/components/Composer.js~Composer.html#instance-member-height",
-    "src/forum/components/Composer.js~Composer#height",
     "member"
   ],
   [
@@ -4326,33 +4404,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/composer.js~composer#isfullscreen",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-isFullScreen",
-    "src/forum/components/Composer.js~Composer#isFullScreen",
-    "method"
-  ],
-  [
-    "src/forum/components/composer.js~composer#load",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-load",
-    "src/forum/components/Composer.js~Composer#load",
-    "method"
-  ],
-  [
-    "src/forum/components/composer.js~composer#maximumheight",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-maximumHeight",
-    "src/forum/components/Composer.js~Composer#maximumHeight",
-    "method"
-  ],
-  [
     "src/forum/components/composer.js~composer#minimize",
     "class/src/forum/components/Composer.js~Composer.html#instance-method-minimize",
     "src/forum/components/Composer.js~Composer#minimize",
-    "method"
-  ],
-  [
-    "src/forum/components/composer.js~composer#minimumheight",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-minimumHeight",
-    "src/forum/components/Composer.js~Composer#minimumHeight",
     "method"
   ],
   [
@@ -4368,16 +4422,10 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/composer.js~composer#position",
-    "class/src/forum/components/Composer.js~Composer.html#instance-member-position",
-    "src/forum/components/Composer.js~Composer#position",
+    "src/forum/components/composer.js~composer#prevposition",
+    "class/src/forum/components/Composer.js~Composer.html#instance-member-prevPosition",
+    "src/forum/components/Composer.js~Composer#prevPosition",
     "member"
-  ],
-  [
-    "src/forum/components/composer.js~composer#preventexit",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-preventExit",
-    "src/forum/components/Composer.js~Composer#preventExit",
-    "method"
   ],
   [
     "src/forum/components/composer.js~composer#show",
@@ -4390,6 +4438,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/Composer.js~Composer.html#instance-method-showBackdrop",
     "src/forum/components/Composer.js~Composer#showBackdrop",
     "method"
+  ],
+  [
+    "src/forum/components/composer.js~composer#state",
+    "class/src/forum/components/Composer.js~Composer.html#instance-member-state",
+    "src/forum/components/Composer.js~Composer#state",
+    "member"
   ],
   [
     "src/forum/components/composer.js~composer#updatebodypadding",
@@ -4416,6 +4470,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/forum/components/composerbody.js~composerbody#composer",
+    "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-member-composer",
+    "src/forum/components/ComposerBody.js~ComposerBody#composer",
+    "member"
+  ],
+  [
     "src/forum/components/composerbody.js~composerbody#content",
     "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-member-content",
     "src/forum/components/ComposerBody.js~ComposerBody#content",
@@ -4428,9 +4488,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/composerbody.js~composerbody#focus",
-    "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-focus",
-    "src/forum/components/ComposerBody.js~ComposerBody#focus",
+    "src/forum/components/composerbody.js~composerbody#haschanges",
+    "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-hasChanges",
+    "src/forum/components/ComposerBody.js~ComposerBody#hasChanges",
     "method"
   ],
   [
@@ -4464,12 +4524,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/composerbody.js~composerbody#preventexit",
-    "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-preventExit",
-    "src/forum/components/ComposerBody.js~ComposerBody#preventExit",
-    "method"
-  ],
-  [
     "src/forum/components/composerbody.js~composerbody#view",
     "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-view",
     "src/forum/components/ComposerBody.js~ComposerBody#view",
@@ -4500,6 +4554,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/discussioncomposer.js~discussioncomposer#haschanges",
+    "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-hasChanges",
+    "src/forum/components/DiscussionComposer.js~DiscussionComposer#hasChanges",
+    "method"
+  ],
+  [
     "src/forum/components/discussioncomposer.js~discussioncomposer#headeritems",
     "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-headerItems",
     "src/forum/components/DiscussionComposer.js~DiscussionComposer#headerItems",
@@ -4527,12 +4587,6 @@ window.esdocSearchIndex = [
     "src/forum/components/discussioncomposer.js~discussioncomposer#onsubmit",
     "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-onsubmit",
     "src/forum/components/DiscussionComposer.js~DiscussionComposer#onsubmit",
-    "method"
-  ],
-  [
-    "src/forum/components/discussioncomposer.js~discussioncomposer#preventexit",
-    "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-preventExit",
-    "src/forum/components/DiscussionComposer.js~DiscussionComposer#preventExit",
     "method"
   ],
   [
@@ -4878,9 +4932,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/editpostcomposer.js~editpostcomposer#init",
-    "class/src/forum/components/EditPostComposer.js~EditPostComposer.html#instance-method-init",
-    "src/forum/components/EditPostComposer.js~EditPostComposer#init",
+    "src/forum/components/editpostcomposer.js~editpostcomposer#jumptopreview",
+    "class/src/forum/components/EditPostComposer.js~EditPostComposer.html#instance-method-jumpToPreview",
+    "src/forum/components/EditPostComposer.js~EditPostComposer#jumpToPreview",
     "method"
   ],
   [
@@ -6324,9 +6378,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/replycomposer.js~replycomposer#init",
-    "class/src/forum/components/ReplyComposer.js~ReplyComposer.html#instance-method-init",
-    "src/forum/components/ReplyComposer.js~ReplyComposer#init",
+    "src/forum/components/replycomposer.js~replycomposer#jumptopreview",
+    "class/src/forum/components/ReplyComposer.js~ReplyComposer.html#instance-method-jumpToPreview",
+    "src/forum/components/ReplyComposer.js~ReplyComposer#jumpToPreview",
     "method"
   ],
   [
@@ -6702,21 +6756,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/texteditor.js~texteditor#getselectionrange",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-getSelectionRange",
-    "src/forum/components/TextEditor.js~TextEditor#getSelectionRange",
-    "method"
-  ],
-  [
     "src/forum/components/texteditor.js~texteditor#init",
     "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-init",
     "src/forum/components/TextEditor.js~TextEditor#init",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#insertatcursor",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-insertAtCursor",
-    "src/forum/components/TextEditor.js~TextEditor#insertAtCursor",
     "method"
   ],
   [
@@ -6729,18 +6771,6 @@ window.esdocSearchIndex = [
     "src/forum/components/texteditor.js~texteditor#onsubmit",
     "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-onsubmit",
     "src/forum/components/TextEditor.js~TextEditor#onsubmit",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#setselectionrange",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-setSelectionRange",
-    "src/forum/components/TextEditor.js~TextEditor#setSelectionRange",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#setvalue",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-setValue",
-    "src/forum/components/TextEditor.js~TextEditor#setValue",
     "method"
   ],
   [
@@ -6928,6 +6958,174 @@ window.esdocSearchIndex = [
     "file/src/forum/routes.js.html",
     "src/forum/routes.js",
     "file"
+  ],
+  [
+    "src/forum/states/composerstate.js",
+    "file/src/forum/states/ComposerState.js.html",
+    "src/forum/states/ComposerState.js",
+    "file"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#body",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-body",
+    "src/forum/states/ComposerState.js~ComposerState#body",
+    "member"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#bodymatches",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-bodyMatches",
+    "src/forum/states/ComposerState.js~ComposerState#bodyMatches",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#clear",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-clear",
+    "src/forum/states/ComposerState.js~ComposerState#clear",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#close",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-close",
+    "src/forum/states/ComposerState.js~ComposerState#close",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#component",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-component",
+    "src/forum/states/ComposerState.js~ComposerState#component",
+    "member"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#composingreplyto",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-composingReplyTo",
+    "src/forum/states/ComposerState.js~ComposerState#composingReplyTo",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#computedheight",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-computedHeight",
+    "src/forum/states/ComposerState.js~ComposerState#computedHeight",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#constructor",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-constructor-constructor",
+    "src/forum/states/ComposerState.js~ComposerState#constructor",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#content",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-content",
+    "src/forum/states/ComposerState.js~ComposerState#content",
+    "member"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#editor",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-editor",
+    "src/forum/states/ComposerState.js~ComposerState#editor",
+    "member"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#exitfullscreen",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-exitFullScreen",
+    "src/forum/states/ComposerState.js~ComposerState#exitFullScreen",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#fields",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-fields",
+    "src/forum/states/ComposerState.js~ComposerState#fields",
+    "member"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#fullscreen",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-fullScreen",
+    "src/forum/states/ComposerState.js~ComposerState#fullScreen",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#height",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-height",
+    "src/forum/states/ComposerState.js~ComposerState#height",
+    "member"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#hide",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-hide",
+    "src/forum/states/ComposerState.js~ComposerState#hide",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#isfullscreen",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-isFullScreen",
+    "src/forum/states/ComposerState.js~ComposerState#isFullScreen",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#isvisible",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-isVisible",
+    "src/forum/states/ComposerState.js~ComposerState#isVisible",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#load",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-load",
+    "src/forum/states/ComposerState.js~ComposerState#load",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#maximumheight",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-maximumHeight",
+    "src/forum/states/ComposerState.js~ComposerState#maximumHeight",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#minimize",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-minimize",
+    "src/forum/states/ComposerState.js~ComposerState#minimize",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#minimumheight",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-minimumHeight",
+    "src/forum/states/ComposerState.js~ComposerState#minimumHeight",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#onexit",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-onExit",
+    "src/forum/states/ComposerState.js~ComposerState#onExit",
+    "member"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#position",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-position",
+    "src/forum/states/ComposerState.js~ComposerState#position",
+    "member"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#preventclosingwhen",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-preventClosingWhen",
+    "src/forum/states/ComposerState.js~ComposerState#preventClosingWhen",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#preventexit",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-preventExit",
+    "src/forum/states/ComposerState.js~ComposerState#preventExit",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#show",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-show",
+    "src/forum/states/ComposerState.js~ComposerState#show",
+    "method"
+  ],
+  [
+    "src/forum/states/composerstate.js~composerstate#value",
+    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-value",
+    "src/forum/states/ComposerState.js~ComposerState#value",
+    "member"
   ],
   [
     "src/forum/states/discussionliststate.js",

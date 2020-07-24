@@ -307,13 +307,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -417,6 +417,12 @@ window.esdocSearchIndex = [
     "flarum/model~model",
     "class/src/common/Model.js~Model.html",
     "<span>Model</span> <span class=\"search-result-import-path\">flarum/Model</span>",
+    "class"
+  ],
+  [
+    "flarum/extend/model~model",
+    "class/src/common/extend/Model.js~Model.html",
+    "<span>Model</span> <span class=\"search-result-import-path\">flarum/extend/Model</span>",
     "class"
   ],
   [
@@ -594,12 +600,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/extend/model~routes",
-    "class/src/common/extend/Model.js~Routes.html",
-    "<span>Routes</span> <span class=\"search-result-import-path\">flarum/extend/Model</span>",
-    "class"
-  ],
-  [
     "flarum/extend/routes~routes",
     "class/src/common/extend/Routes.js~Routes.html",
     "<span>Routes</span> <span class=\"search-result-import-path\">flarum/extend/Routes</span>",
@@ -655,13 +655,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -3312,63 +3312,63 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/extend/model.js~routes#attribute",
-    "class/src/common/extend/Model.js~Routes.html#instance-method-attribute",
-    "src/common/extend/Model.js~Routes#attribute",
+    "src/common/extend/model.js~model#attribute",
+    "class/src/common/extend/Model.js~Model.html#instance-method-attribute",
+    "src/common/extend/Model.js~Model#attribute",
     "method"
   ],
   [
-    "src/common/extend/model.js~routes#attributes",
-    "class/src/common/extend/Model.js~Routes.html#instance-member-attributes",
-    "src/common/extend/Model.js~Routes#attributes",
+    "src/common/extend/model.js~model#attributes",
+    "class/src/common/extend/Model.js~Model.html#instance-member-attributes",
+    "src/common/extend/Model.js~Model#attributes",
     "member"
   ],
   [
-    "src/common/extend/model.js~routes#constructor",
-    "class/src/common/extend/Model.js~Routes.html#instance-constructor-constructor",
-    "src/common/extend/Model.js~Routes#constructor",
+    "src/common/extend/model.js~model#constructor",
+    "class/src/common/extend/Model.js~Model.html#instance-constructor-constructor",
+    "src/common/extend/Model.js~Model#constructor",
     "method"
   ],
   [
-    "src/common/extend/model.js~routes#extend",
-    "class/src/common/extend/Model.js~Routes.html#instance-method-extend",
-    "src/common/extend/Model.js~Routes#extend",
+    "src/common/extend/model.js~model#extend",
+    "class/src/common/extend/Model.js~Model.html#instance-method-extend",
+    "src/common/extend/Model.js~Model#extend",
     "method"
   ],
   [
-    "src/common/extend/model.js~routes#hasmany",
-    "class/src/common/extend/Model.js~Routes.html#instance-method-hasMany",
-    "src/common/extend/Model.js~Routes#hasMany",
+    "src/common/extend/model.js~model#hasmany",
+    "class/src/common/extend/Model.js~Model.html#instance-method-hasMany",
+    "src/common/extend/Model.js~Model#hasMany",
     "method"
   ],
   [
-    "src/common/extend/model.js~routes#hasmanys",
-    "class/src/common/extend/Model.js~Routes.html#instance-member-hasManys",
-    "src/common/extend/Model.js~Routes#hasManys",
+    "src/common/extend/model.js~model#hasmanys",
+    "class/src/common/extend/Model.js~Model.html#instance-member-hasManys",
+    "src/common/extend/Model.js~Model#hasManys",
     "member"
   ],
   [
-    "src/common/extend/model.js~routes#hasone",
-    "class/src/common/extend/Model.js~Routes.html#instance-method-hasOne",
-    "src/common/extend/Model.js~Routes#hasOne",
+    "src/common/extend/model.js~model#hasone",
+    "class/src/common/extend/Model.js~Model.html#instance-method-hasOne",
+    "src/common/extend/Model.js~Model#hasOne",
     "method"
   ],
   [
-    "src/common/extend/model.js~routes#hasones",
-    "class/src/common/extend/Model.js~Routes.html#instance-member-hasOnes",
-    "src/common/extend/Model.js~Routes#hasOnes",
+    "src/common/extend/model.js~model#hasones",
+    "class/src/common/extend/Model.js~Model.html#instance-member-hasOnes",
+    "src/common/extend/Model.js~Model#hasOnes",
     "member"
   ],
   [
-    "src/common/extend/model.js~routes#model",
-    "class/src/common/extend/Model.js~Routes.html#instance-member-model",
-    "src/common/extend/Model.js~Routes#model",
+    "src/common/extend/model.js~model#model",
+    "class/src/common/extend/Model.js~Model.html#instance-member-model",
+    "src/common/extend/Model.js~Model#model",
     "member"
   ],
   [
-    "src/common/extend/model.js~routes#type",
-    "class/src/common/extend/Model.js~Routes.html#instance-member-type",
-    "src/common/extend/Model.js~Routes#type",
+    "src/common/extend/model.js~model#type",
+    "class/src/common/extend/Model.js~Model.html#instance-member-type",
+    "src/common/extend/Model.js~Model#type",
     "member"
   ],
   [

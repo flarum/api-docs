@@ -655,13 +655,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -5577,12 +5577,6 @@ window.esdocSearchIndex = [
     "src/forum/components/notificationsdropdown.js~notificationsdropdown#gotoroute",
     "class/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-goToRoute",
     "src/forum/components/NotificationsDropdown.js~NotificationsDropdown#goToRoute",
-    "method"
-  ],
-  [
-    "src/forum/components/notificationsdropdown.js~notificationsdropdown#init",
-    "class/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#instance-method-init",
-    "src/forum/components/NotificationsDropdown.js~NotificationsDropdown#init",
     "method"
   ],
   [

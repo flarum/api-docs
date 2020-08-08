@@ -182,6 +182,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html">DiscussionListState</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html">GlobalSearchState</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/NotificationListState.js~NotificationListState.html">NotificationListState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/PostStreamState.js~PostStreamState.html">PostStreamState</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/states/SearchState.js~SearchState.html">SearchState</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum-utils">forum/utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/utils/History.js~History.html">History</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html">KeyboardNavigatable</a></span></span></li>
@@ -224,7 +225,9 @@
 a discussion. Posts that have not loaded will be displayed as placeholders.</p>
 <h3 id="props">Props</h3><ul>
 <li><code>discussion</code></li>
-<li><code>includedPosts</code></li>
+<li><code>stream</code></li>
+<li><code>targetPost</code></li>
+<li><code>onPositionChange</code></li>
 </ul>
 </div>
   
@@ -287,36 +290,7 @@ a discussion. Posts that have not loaded will be displayed as placeholders.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-member-discussion">discussion</a></span></span><span class="code" data-ice="signature">: <span><a href="class/src/common/models/Discussion.js~Discussion.html">Discussion</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>The discussion to display the post stream for.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-member-loadPageTimeouts">loadPageTimeouts</a></span></span><span class="code" data-ice="signature">: {}</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-member-discussion">discussion</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -344,43 +318,13 @@ a discussion. Posts that have not loaded will be displayed as placeholders.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-member-pagesLoading">pagesLoading</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-member-prevTarget">prevTarget</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
         
         
         
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-member-paused">paused</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Whether or not the infinite-scrolling auto-load functionality is
-disabled.</p>
-</div>
       </div>
     </td>
     <td>
@@ -430,63 +374,7 @@ disabled.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-member-viewingEnd">viewingEnd</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-member-visibleEnd">visibleEnd</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-member-visibleStart">visibleStart</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-member-stream">stream</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -521,7 +409,7 @@ disabled.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-calculatePosition">calculatePosition</a></span></span><span class="code" data-ice="signature">()</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-calculatePosition">calculatePosition</a></span></span><span class="code" data-ice="signature">(top: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -558,35 +446,6 @@ fire an event with the information.</p>
         
         
         
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-count">count</a></span></span><span class="code" data-ice="signature">(): <span>Integer</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Get the total number of posts in the discussion.</p>
-</div>
       </div>
     </td>
     <td>
@@ -667,122 +526,6 @@ would consider a post to be the first one visible.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToFirst">goToFirst</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Load and scroll up to the first post in the discussion.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToIndex">goToIndex</a></span></span><span class="code" data-ice="signature">(index: <span>Integer</span>, backwards: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, noAnimation: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Load and scroll to a certain index within the discussion.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToLast">goToLast</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Load and scroll down to the last post in the discussion.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToNumber">goToNumber</a></span></span><span class="code" data-ice="signature">(number: <span>Integer</span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>, noAnimation: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Load and scroll to a post with a certain number.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
           <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-init">init</a></span></span><span class="code" data-ice="signature">()</span>
         </p>
       </div>
@@ -790,181 +533,6 @@ would consider a post to be the first one visible.</p>
         
         
         
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNearIndex">loadNearIndex</a></span></span><span class="code" data-ice="signature">(index: <span>Integer</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Clear the stream and load posts near a certain index.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNearNumber">loadNearNumber</a></span></span><span class="code" data-ice="signature">(number: <span>Integer</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Clear the stream and load posts near a certain number.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNext">loadNext</a></span></span><span class="code" data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Load the next page of posts.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadPage">loadPage</a></span></span><span class="code" data-ice="signature">(start: <span>Integer</span>, end: <span>Integer</span>, backwards: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>)</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Load a page of posts into the stream and redraw.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadPrevious">loadPrevious</a></span></span><span class="code" data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Load the previous page of posts.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadRange">loadRange</a></span></span><span class="code" data-ice="signature">(start: <span>Integer</span>, end: <span>Integer</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Load and inject the specified range of posts into the stream, without
-clearing it.</p>
-</div>
       </div>
     </td>
     <td>
@@ -1016,65 +584,7 @@ in the viewport, and if so, trigger loading the next/previous page.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-posts">posts</a></span></span><span class="code" data-ice="signature">(): <span><span><a href="class/src/common/models/Post.js~Post.html">Post</a></span><span>[]</span></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Get the visible page of posts.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-reset">reset</a></span></span><span class="code" data-ice="signature">(start: <span>Integer</span>, end: <span>Integer</span>)</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Reset the stream so that a specific range of posts is displayed.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-scrollToIndex">scrollToIndex</a></span></span><span class="code" data-ice="signature">(index: <span>Integer</span>, noAnimation: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, bottom: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-scrollToIndex">scrollToIndex</a></span></span><span class="code" data-ice="signature">(index: <span>Integer</span>, animate: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, bottom: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
         </p>
       </div>
       <div>
@@ -1103,7 +613,7 @@ in the viewport, and if so, trigger loading the next/previous page.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-scrollToItem">scrollToItem</a></span></span><span class="code" data-ice="signature">($item: <span>jQuery</span>, noAnimation: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, force: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, bottom: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-scrollToItem">scrollToItem</a></span></span><span class="code" data-ice="signature">($item: <span>jQuery</span>, animate: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, force: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, bottom: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
         </p>
       </div>
       <div>
@@ -1132,7 +642,7 @@ in the viewport, and if so, trigger loading the next/previous page.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-scrollToNumber">scrollToNumber</a></span></span><span class="code" data-ice="signature">(number: <span>Integer</span>, noAnimation: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-scrollToNumber">scrollToNumber</a></span></span><span class="code" data-ice="signature">(number: <span>Integer</span>, animate: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
         </p>
       </div>
       <div>
@@ -1161,13 +671,13 @@ in the viewport, and if so, trigger loading the next/previous page.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-show">show</a></span></span><span class="code" data-ice="signature">(posts: <span><span><a href="class/src/common/models/Post.js~Post.html">Post</a></span><span>[]</span></span>)</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-triggerScroll">triggerScroll</a></span></span><span class="code" data-ice="signature">()</span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Set up the stream with the given array of posts.</p>
+        <div data-ice="description"><p>Start scrolling, if appropriate, to a newly-targeted post.</p>
 </div>
       </div>
     </td>
@@ -1190,44 +700,13 @@ in the viewport, and if so, trigger loading the next/previous page.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-unpause">unpause</a></span></span><span class="code" data-ice="signature">()</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-updateScrubber">updateScrubber</a></span></span><span class="code" data-ice="signature">(top: <span>*</span>)</span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Resume the stream&apos;s ability to auto-load posts on scroll.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-update">update</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
-        </p>
-      </div>
-      <div>
         
-        
-        <div data-ice="description"><p>Update the stream so that it loads and includes the latest posts in the
-discussion, if the end is being viewed.</p>
-</div>
       </div>
     </td>
     <td>
@@ -1256,42 +735,6 @@ discussion, if the end is being viewed.</p>
         
         
         
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-</tbody>
-</table>
-<table class="summary" data-ice="summary">
-  <thead><tr><td data-ice="title" colspan="3">Protected Methods</td></tr></thead>
-  <tbody>
-  
-  <tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">protected</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/forum/components/PostStream.js~PostStream.html#instance-method-sanitizeIndex">sanitizeIndex</a></span></span><span class="code" data-ice="signature">(index: <span>Integer</span>): <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Make sure that the given index is not outside of the possible range of
-indexes in the discussion.</p>
-</div>
       </div>
     </td>
     <td>
@@ -1656,7 +1099,7 @@ their virtual DOM should override Component#view instead.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber322">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber176">source</a></span></span>
     </span>
   </h3>
 
@@ -1695,55 +1138,11 @@ their virtual DOM should override Component#view instead.</p>
     
     
     
-    <span class="code" data-ice="name">discussion</span><span class="code" data-ice="signature">: <span><a href="class/src/common/models/Discussion.js~Discussion.html">Discussion</a></span></span>
+    <span class="code" data-ice="name">discussion</span><span class="code" data-ice="signature">: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber25">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>The discussion to display the post stream for.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-loadPageTimeouts">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">loadPageTimeouts</span><span class="code" data-ice="signature">: {}</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber36">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber20">source</a></span></span>
     </span>
   </h3>
 
@@ -1775,18 +1174,18 @@ their virtual DOM should override Component#view instead.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-pagesLoading">
+  <h3 data-ice="anchor" id="instance-member-prevTarget">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">pagesLoading</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="code" data-ice="name">prevTarget</span><span class="code" data-ice="signature">: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber37">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber141">source</a></span></span>
     </span>
   </h3>
 
@@ -1794,51 +1193,6 @@ their virtual DOM should override Component#view instead.</p>
   
   
   
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-paused">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">paused</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber33">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Whether or not the infinite-scrolling auto-load functionality is
-disabled.</p>
-</div>
 
   
 
@@ -1874,7 +1228,7 @@ disabled.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber35">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber23">source</a></span></span>
     </span>
   </h3>
 
@@ -1906,104 +1260,18 @@ disabled.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-viewingEnd">
+  <h3 data-ice="anchor" id="instance-member-stream">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">viewingEnd</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="code" data-ice="name">stream</span><span class="code" data-ice="signature">: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber204">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-visibleEnd">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">visibleEnd</span><span class="code" data-ice="signature">: <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber132">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-visibleStart">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">visibleStart</span><span class="code" data-ice="signature">: <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber163">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber21">source</a></span></span>
     </span>
   </h3>
 
@@ -2045,11 +1313,11 @@ disabled.</p>
     
     
     
-    <span class="code" data-ice="name">calculatePosition</span><span class="code" data-ice="signature">()</span>
+    <span class="code" data-ice="name">calculatePosition</span><span class="code" data-ice="signature">(top: <span>*</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber479">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber242">source</a></span></span>
     </span>
   </h3>
 
@@ -2062,7 +1330,23 @@ fire an event with the information.</p>
 
   
 
-  <div data-ice="properties">
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">top</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
 </div>
 
   
@@ -2094,7 +1378,7 @@ fire an event with the information.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber276">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber105">source</a></span></span>
     </span>
   </h3>
 
@@ -2151,62 +1435,6 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-count">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">count</span><span class="code" data-ice="signature">(): <span>Integer</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber142">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Get the total number of posts in the discussion.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span>Integer</span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-flashItem">
     <span class="access" data-ice="access">public</span>
     
@@ -2218,7 +1446,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber590">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber370">source</a></span></span>
     </span>
   </h3>
 
@@ -2278,7 +1506,7 @@ subsequent redraws. See Mithril&apos;s documentation for more information.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber516">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber284">source</a></span></span>
     </span>
   </h3>
 
@@ -2300,284 +1528,6 @@ would consider a post to be the first one visible.</p>
       <tbody>
         <tr>
           <td class="return-type code" data-ice="returnType"><span>Integer</span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-goToFirst">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">goToFirst</span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber110">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Load and scroll up to the first post in the discussion.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-goToIndex">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">goToIndex</span><span class="code" data-ice="signature">(index: <span>Integer</span>, backwards: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, noAnimation: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber91">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Load and scroll to a certain index within the discussion.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">index</td>
-      <td data-ice="type" class="code"><span>Integer</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">backwards</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"><p>Whether or not to load backwards from the given
-    index.</p>
-</td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">noAnimation</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-goToLast">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">goToLast</span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber119">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Load and scroll down to the last post in the discussion.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-goToNumber">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">goToNumber</span><span class="code" data-ice="signature">(number: <span>Integer</span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>, noAnimation: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber50">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Load and scroll to a post with a certain number.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">number</td>
-      <td data-ice="type" class="code"><span>Integer</span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The post number to go to. If &apos;reply&apos;, go to
-    the last post and scroll the reply preview into view.</p>
-</td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">noAnimation</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></td>
           
         </tr>
       </tbody>
@@ -2646,393 +1596,6 @@ would consider a post to be the first one visible.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-loadNearIndex">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">loadNearIndex</span><span class="code" data-ice="signature">(index: <span>Integer</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber462">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Clear the stream and load posts near a certain index. A page of posts
-surrounding the given index will be loaded. Returns a promise. If the given
-index is already loaded, the promise will be resolved immediately.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">index</td>
-      <td data-ice="type" class="code"><span>Integer</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-loadNearNumber">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">loadNearNumber</span><span class="code" data-ice="signature">(number: <span>Integer</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber439">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Clear the stream and load posts near a certain number. Returns a promise.
-If the post with the given number is already loaded, the promise will be
-resolved immediately.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">number</td>
-      <td data-ice="type" class="code"><span>Integer</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-loadNext">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">loadNext</span><span class="code" data-ice="signature">()</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber328">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Load the next page of posts.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-loadPage">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">loadPage</span><span class="code" data-ice="signature">(start: <span>Integer</span>, end: <span>Integer</span>, backwards: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>)</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber378">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Load a page of posts into the stream and redraw.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">start</td>
-      <td data-ice="type" class="code"><span>Integer</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">end</td>
-      <td data-ice="type" class="code"><span>Integer</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">backwards</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-loadPrevious">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">loadPrevious</span><span class="code" data-ice="signature">()</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber351">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Load the previous page of posts.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-loadRange">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">loadRange</span><span class="code" data-ice="signature">(start: <span>Integer</span>, end: <span>Integer</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber411">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Load and inject the specified range of posts into the stream, without
-clearing it.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">start</td>
-      <td data-ice="type" class="code"><span>Integer</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">end</td>
-      <td data-ice="type" class="code"><span>Integer</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-onscroll">
     <span class="access" data-ice="access">public</span>
     
@@ -3044,7 +1607,7 @@ clearing it.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber295">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber150">source</a></span></span>
     </span>
   </h3>
 
@@ -3094,129 +1657,6 @@ in the viewport, and if so, trigger loading the next/previous page.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-posts">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">posts</span><span class="code" data-ice="signature">(): <span><span><a href="class/src/common/models/Post.js~Post.html">Post</a></span><span>[]</span></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber184">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Get the visible page of posts.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><span><a href="class/src/common/models/Post.js~Post.html">Post</a></span><span>[]</span></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-reset">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">reset</span><span class="code" data-ice="signature">(start: <span>Integer</span>, end: <span>Integer</span>)</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber174">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Reset the stream so that a specific range of posts is displayed. If a range
-is not specified, the first page of posts will be displayed.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">start</td>
-      <td data-ice="type" class="code"><span>Integer</span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">end</td>
-      <td data-ice="type" class="code"><span>Integer</span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-scrollToIndex">
     <span class="access" data-ice="access">public</span>
     
@@ -3224,11 +1664,11 @@ is not specified, the first page of posts will be displayed.</p>
     
     
     
-    <span class="code" data-ice="name">scrollToIndex</span><span class="code" data-ice="signature">(index: <span>Integer</span>, noAnimation: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, bottom: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
+    <span class="code" data-ice="name">scrollToIndex</span><span class="code" data-ice="signature">(index: <span>Integer</span>, animate: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, bottom: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber542">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber310">source</a></span></span>
     </span>
   </h3>
 
@@ -3255,7 +1695,7 @@ is not specified, the first page of posts will be displayed.</p>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">noAnimation</td>
+      <td data-ice="name" class="code" data-depth="0">animate</td>
       <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -3310,11 +1750,11 @@ is not specified, the first page of posts will be displayed.</p>
     
     
     
-    <span class="code" data-ice="name">scrollToItem</span><span class="code" data-ice="signature">($item: <span>jQuery</span>, noAnimation: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, force: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, bottom: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
+    <span class="code" data-ice="name">scrollToItem</span><span class="code" data-ice="signature">($item: <span>jQuery</span>, animate: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, force: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>, bottom: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber559">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber331">source</a></span></span>
     </span>
   </h3>
 
@@ -3341,7 +1781,7 @@ is not specified, the first page of posts will be displayed.</p>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">noAnimation</td>
+      <td data-ice="name" class="code" data-depth="0">animate</td>
       <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -3404,11 +1844,11 @@ is not specified, the first page of posts will be displayed.</p>
     
     
     
-    <span class="code" data-ice="name">scrollToNumber</span><span class="code" data-ice="signature">(number: <span>Integer</span>, noAnimation: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
+    <span class="code" data-ice="name">scrollToNumber</span><span class="code" data-ice="signature">(number: <span>Integer</span>, animate: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>): <span>jQuery.Deferred</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber527">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber295">source</a></span></span>
     </span>
   </h3>
 
@@ -3435,7 +1875,7 @@ is not specified, the first page of posts will be displayed.</p>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">noAnimation</td>
+      <td data-ice="name" class="code" data-depth="0">animate</td>
       <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -3475,26 +1915,69 @@ is not specified, the first page of posts will be displayed.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-show">
+  <h3 data-ice="anchor" id="instance-method-triggerScroll">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">show</span><span class="code" data-ice="signature">(posts: <span><span><a href="class/src/common/models/Post.js~Post.html">Post</a></span><span>[]</span></span>)</span>
+    <span class="code" data-ice="name">triggerScroll</span><span class="code" data-ice="signature">()</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber162">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber123">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Set up the stream with the given array of posts.</p>
+  <div data-ice="description"><p>Start scrolling, if appropriate, to a newly-targeted post.</p>
 </div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-updateScrubber">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">updateScrubber</span><span class="code" data-ice="signature">(top: <span>*</span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber181">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
 
   
 
@@ -3507,9 +1990,9 @@ is not specified, the first page of posts will be displayed.</p>
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">posts</td>
-      <td data-ice="type" class="code"><span><span><a href="class/src/common/models/Post.js~Post.html">Post</a></span><span>[]</span></span></td>
-      <td data-ice="appendix"></td>
+      <td data-ice="name" class="code" data-depth="0">top</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
       <td data-ice="description"></td>
     </tr>
 </tbody>
@@ -3518,107 +2001,6 @@ is not specified, the first page of posts will be displayed.</p>
 </div>
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-unpause">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">unpause</span><span class="code" data-ice="signature">()</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber597">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Resume the stream&apos;s ability to auto-load posts on scroll.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-update">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">update</span><span class="code" data-ice="signature">(): <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber129">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Update the stream so that it loads and includes the latest posts in the
-discussion, if the end is being viewed.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
 
   
 
@@ -3647,7 +2029,7 @@ discussion, if the end is being viewed.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber195">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber26">source</a></span></span>
     </span>
   </h3>
 
@@ -3660,81 +2042,6 @@ discussion, if the end is being viewed.</p>
   <div data-ice="override"><h4>Override:</h4><span><a href="class/src/common/Component.js~Component.html#instance-method-view">Component#view</a></span></div>
 
   <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<h2 data-ice="title">Protected Methods</h2>
-
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-sanitizeIndex">
-    <span class="access" data-ice="access">protected</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">sanitizeIndex</span><span class="code" data-ice="signature">(index: <span>Integer</span>): <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/forum/components/PostStream.js.html#lineNumber153">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Make sure that the given index is not outside of the possible range of
-indexes in the discussion.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">index</td>
-      <td data-ice="type" class="code"><span>Integer</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
 </div>
 
   <div class="return-params" data-ice="returnParams">

@@ -319,25 +319,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -570,6 +570,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/states/poststreamstate~poststreamstate",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html",
+    "<span>PostStreamState</span> <span class=\"search-result-import-path\">flarum/states/PostStreamState</span>",
+    "class"
+  ],
+  [
     "flarum/extend/posttypes~posttypes",
     "class/src/common/extend/PostTypes.js~PostTypes.html",
     "<span>PostTypes</span> <span class=\"search-result-import-path\">flarum/extend/PostTypes</span>",
@@ -667,13 +673,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -4752,6 +4758,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/discussionpage.js~discussionpage#load",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-load",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#load",
+    "method"
+  ],
+  [
     "src/forum/components/discussionpage.js~discussionpage#near",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-near",
     "src/forum/components/DiscussionPage.js~DiscussionPage#near",
@@ -4767,12 +4779,6 @@ window.esdocSearchIndex = [
     "src/forum/components/discussionpage.js~discussionpage#positionchanged",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-positionChanged",
     "src/forum/components/DiscussionPage.js~DiscussionPage#positionChanged",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionpage.js~discussionpage#refresh",
-    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-refresh",
-    "src/forum/components/DiscussionPage.js~DiscussionPage#refresh",
     "method"
   ],
   [
@@ -5832,12 +5838,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#count",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-count",
-    "src/forum/components/PostStream.js~PostStream#count",
-    "method"
-  ],
-  [
     "src/forum/components/poststream.js~poststream#discussion",
     "class/src/forum/components/PostStream.js~PostStream.html#instance-member-discussion",
     "src/forum/components/PostStream.js~PostStream#discussion",
@@ -5856,75 +5856,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#gotofirst",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToFirst",
-    "src/forum/components/PostStream.js~PostStream#goToFirst",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#gotoindex",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToIndex",
-    "src/forum/components/PostStream.js~PostStream#goToIndex",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#gotolast",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToLast",
-    "src/forum/components/PostStream.js~PostStream#goToLast",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#gotonumber",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToNumber",
-    "src/forum/components/PostStream.js~PostStream#goToNumber",
-    "method"
-  ],
-  [
     "src/forum/components/poststream.js~poststream#init",
     "class/src/forum/components/PostStream.js~PostStream.html#instance-method-init",
     "src/forum/components/PostStream.js~PostStream#init",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#loadnearindex",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNearIndex",
-    "src/forum/components/PostStream.js~PostStream#loadNearIndex",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#loadnearnumber",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNearNumber",
-    "src/forum/components/PostStream.js~PostStream#loadNearNumber",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#loadnext",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNext",
-    "src/forum/components/PostStream.js~PostStream#loadNext",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#loadpage",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadPage",
-    "src/forum/components/PostStream.js~PostStream#loadPage",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#loadpagetimeouts",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-loadPageTimeouts",
-    "src/forum/components/PostStream.js~PostStream#loadPageTimeouts",
-    "member"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#loadprevious",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadPrevious",
-    "src/forum/components/PostStream.js~PostStream#loadPrevious",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#loadrange",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadRange",
-    "src/forum/components/PostStream.js~PostStream#loadRange",
     "method"
   ],
   [
@@ -5934,34 +5868,10 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#pagesloading",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-pagesLoading",
-    "src/forum/components/PostStream.js~PostStream#pagesLoading",
+    "src/forum/components/poststream.js~poststream#prevtarget",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-prevTarget",
+    "src/forum/components/PostStream.js~PostStream#prevTarget",
     "member"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#paused",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-paused",
-    "src/forum/components/PostStream.js~PostStream#paused",
-    "member"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#posts",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-posts",
-    "src/forum/components/PostStream.js~PostStream#posts",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#reset",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-reset",
-    "src/forum/components/PostStream.js~PostStream#reset",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#sanitizeindex",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-sanitizeIndex",
-    "src/forum/components/PostStream.js~PostStream#sanitizeIndex",
-    "method"
   ],
   [
     "src/forum/components/poststream.js~poststream#scrolllistener",
@@ -5988,21 +5898,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#show",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-show",
-    "src/forum/components/PostStream.js~PostStream#show",
+    "src/forum/components/poststream.js~poststream#stream",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-stream",
+    "src/forum/components/PostStream.js~PostStream#stream",
+    "member"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#triggerscroll",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-triggerScroll",
+    "src/forum/components/PostStream.js~PostStream#triggerScroll",
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#unpause",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-unpause",
-    "src/forum/components/PostStream.js~PostStream#unpause",
-    "method"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#update",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-update",
-    "src/forum/components/PostStream.js~PostStream#update",
+    "src/forum/components/poststream.js~poststream#updatescrubber",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-updateScrubber",
+    "src/forum/components/PostStream.js~PostStream#updateScrubber",
     "method"
   ],
   [
@@ -6012,51 +5922,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#viewingend",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-viewingEnd",
-    "src/forum/components/PostStream.js~PostStream#viewingEnd",
-    "member"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#visibleend",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-visibleEnd",
-    "src/forum/components/PostStream.js~PostStream#visibleEnd",
-    "member"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#visiblestart",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-visibleStart",
-    "src/forum/components/PostStream.js~PostStream#visibleStart",
-    "member"
-  ],
-  [
     "src/forum/components/poststreamscrubber.js",
     "file/src/forum/components/PostStreamScrubber.js.html",
     "src/forum/components/PostStreamScrubber.js",
     "file"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#config",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-config",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#config",
-    "method"
-  ],
-  [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#count",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-count",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#count",
-    "method"
-  ],
-  [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#description",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-description",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#description",
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#adjustingheight",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-adjustingHeight",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#adjustingHeight",
     "member"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#disabled",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-disabled",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#disabled",
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#config",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-config",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#config",
     "method"
   ],
   [
@@ -6081,12 +5961,6 @@ window.esdocSearchIndex = [
     "src/forum/components/poststreamscrubber.js~poststreamscrubber#handlers",
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-handlers",
     "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#handlers",
-    "member"
-  ],
-  [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#index",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-index",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#index",
     "member"
   ],
   [
@@ -6144,21 +6018,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#onscroll",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onscroll",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onscroll",
-    "method"
-  ],
-  [
     "src/forum/components/poststreamscrubber.js~poststreamscrubber#percentperpost",
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-percentPerPost",
     "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#percentPerPost",
-    "method"
-  ],
-  [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#renderscrollbar",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-renderScrollbar",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#renderScrollbar",
     "method"
   ],
   [
@@ -6168,21 +6030,15 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#streamwasunpaused",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-streamWasUnpaused",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#streamWasUnpaused",
-    "method"
-  ],
-  [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#subtree",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-subtree",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#subtree",
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#stream",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-stream",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#stream",
     "member"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#update",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-update",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#update",
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#updatescrubbervalues",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-updateScrubberValues",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#updateScrubberValues",
     "method"
   ],
   [
@@ -6190,12 +6046,6 @@ window.esdocSearchIndex = [
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-view",
     "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#view",
     "method"
-  ],
-  [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#visible",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-visible",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#visible",
-    "member"
   ],
   [
     "src/forum/components/postuser.js",
@@ -7408,6 +7258,204 @@ window.esdocSearchIndex = [
     "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-parseResults",
     "src/forum/states/NotificationListState.js~NotificationListState#parseResults",
     "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js",
+    "file/src/forum/states/PostStreamState.js.html",
+    "src/forum/states/PostStreamState.js",
+    "file"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#constructor",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-constructor-constructor",
+    "src/forum/states/PostStreamState.js~PostStreamState#constructor",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#count",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-count",
+    "src/forum/states/PostStreamState.js~PostStreamState#count",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#description",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-description",
+    "src/forum/states/PostStreamState.js~PostStreamState#description",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#disabled",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-disabled",
+    "src/forum/states/PostStreamState.js~PostStreamState#disabled",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#discussion",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-discussion",
+    "src/forum/states/PostStreamState.js~PostStreamState#discussion",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#gotofirst",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-goToFirst",
+    "src/forum/states/PostStreamState.js~PostStreamState#goToFirst",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#gotoindex",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-goToIndex",
+    "src/forum/states/PostStreamState.js~PostStreamState#goToIndex",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#gotolast",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-goToLast",
+    "src/forum/states/PostStreamState.js~PostStreamState#goToLast",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#gotonumber",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-goToNumber",
+    "src/forum/states/PostStreamState.js~PostStreamState#goToNumber",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#index",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-index",
+    "src/forum/states/PostStreamState.js~PostStreamState#index",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#loadnearindex",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadNearIndex",
+    "src/forum/states/PostStreamState.js~PostStreamState#loadNearIndex",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#loadnearnumber",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadNearNumber",
+    "src/forum/states/PostStreamState.js~PostStreamState#loadNearNumber",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#loadnext",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadNext",
+    "src/forum/states/PostStreamState.js~PostStreamState#loadNext",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#loadpage",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadPage",
+    "src/forum/states/PostStreamState.js~PostStreamState#loadPage",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#loadpagetimeouts",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-loadPageTimeouts",
+    "src/forum/states/PostStreamState.js~PostStreamState#loadPageTimeouts",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#loadprevious",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadPrevious",
+    "src/forum/states/PostStreamState.js~PostStreamState#loadPrevious",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#loadpromise",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-loadPromise",
+    "src/forum/states/PostStreamState.js~PostStreamState#loadPromise",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#loadrange",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadRange",
+    "src/forum/states/PostStreamState.js~PostStreamState#loadRange",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#noanimationscroll",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-noAnimationScroll",
+    "src/forum/states/PostStreamState.js~PostStreamState#noAnimationScroll",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#number",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-number",
+    "src/forum/states/PostStreamState.js~PostStreamState#number",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#pagesloading",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-pagesLoading",
+    "src/forum/states/PostStreamState.js~PostStreamState#pagesLoading",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#paused",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-paused",
+    "src/forum/states/PostStreamState.js~PostStreamState#paused",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#posts",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-posts",
+    "src/forum/states/PostStreamState.js~PostStreamState#posts",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#reset",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-reset",
+    "src/forum/states/PostStreamState.js~PostStreamState#reset",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#sanitizeindex",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-sanitizeIndex",
+    "src/forum/states/PostStreamState.js~PostStreamState#sanitizeIndex",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#show",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-show",
+    "src/forum/states/PostStreamState.js~PostStreamState#show",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#targetpost",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-targetPost",
+    "src/forum/states/PostStreamState.js~PostStreamState#targetPost",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#update",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-update",
+    "src/forum/states/PostStreamState.js~PostStreamState#update",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#viewingend",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-viewingEnd",
+    "src/forum/states/PostStreamState.js~PostStreamState#viewingEnd",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#visible",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-visible",
+    "src/forum/states/PostStreamState.js~PostStreamState#visible",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#visibleend",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-visibleEnd",
+    "src/forum/states/PostStreamState.js~PostStreamState#visibleEnd",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#visiblestart",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-visibleStart",
+    "src/forum/states/PostStreamState.js~PostStreamState#visibleStart",
+    "member"
   ],
   [
     "src/forum/states/searchstate.js",

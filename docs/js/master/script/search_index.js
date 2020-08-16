@@ -319,13 +319,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -3087,12 +3087,6 @@ window.esdocSearchIndex = [
     "src/common/components/modal.js~modal#onerror",
     "class/src/common/components/Modal.js~Modal.html#instance-method-onerror",
     "src/common/components/Modal.js~Modal#onerror",
-    "method"
-  ],
-  [
-    "src/common/components/modal.js~modal#onhide",
-    "class/src/common/components/Modal.js~Modal.html#instance-method-onhide",
-    "src/common/components/Modal.js~Modal#onhide",
     "method"
   ],
   [

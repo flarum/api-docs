@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Frontend\Compiler\JsCompiler | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Frontend_Compiler_JsCompiler" data-root-path="../../../">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://api.flarum.dev/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/core"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../../">v0.1.0-beta.8.2</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../v0.1.0-beta/index.html" data-version="v0.1.0-beta">v0.1.0-beta</option>
+                                            <option value="../../../../v0.1.0-beta.2/index.html" data-version="v0.1.0-beta.2">v0.1.0-beta.2</option>
+                                            <option value="../../../../v0.1.0-beta.3/index.html" data-version="v0.1.0-beta.3">v0.1.0-beta.3</option>
+                                            <option value="../../../../v0.1.0-beta.4/index.html" data-version="v0.1.0-beta.4">v0.1.0-beta.4</option>
+                                            <option value="../../../../v0.1.0-beta.5/index.html" data-version="v0.1.0-beta.5">v0.1.0-beta.5</option>
+                                            <option value="../../../../v0.1.0-beta.6/index.html" data-version="v0.1.0-beta.6">v0.1.0-beta.6</option>
+                                            <option value="../../../../v0.1.0-beta.7/index.html" data-version="v0.1.0-beta.7">v0.1.0-beta.7</option>
+                                            <option value="../../../../v0.1.0-beta.7.1/index.html" data-version="v0.1.0-beta.7.1">v0.1.0-beta.7.1</option>
+                                            <option value="../../../../v0.1.0-beta.7.2/index.html" data-version="v0.1.0-beta.7.2">v0.1.0-beta.7.2</option>
+                                            <option value="../../../../v0.1.0-beta.8/index.html" data-version="v0.1.0-beta.8">v0.1.0-beta.8</option>
+                                            <option value="../../../../v0.1.0-beta.8.1/index.html" data-version="v0.1.0-beta.8.1">v0.1.0-beta.8.1</option>
+                                            <option value="../../../../v0.1.0-beta.8.2/index.html" data-version="v0.1.0-beta.8.2">v0.1.0-beta.8.2</option>
+                                            <option value="../../../../v0.1.0-beta.9/index.html" data-version="v0.1.0-beta.9">v0.1.0-beta.9</option>
+                                            <option value="../../../../v0.1.0-beta.10/index.html" data-version="v0.1.0-beta.10">v0.1.0-beta.10</option>
+                                            <option value="../../../../v0.1.0-beta.11/index.html" data-version="v0.1.0-beta.11">v0.1.0-beta.11</option>
+                                            <option value="../../../../v0.1.0-beta.11.1/index.html" data-version="v0.1.0-beta.11.1">v0.1.0-beta.11.1</option>
+                                            <option value="../../../../v0.1.0-beta.12/index.html" data-version="v0.1.0-beta.12">v0.1.0-beta.12</option>
+                                            <option value="../../../../v0.1.0-beta.13/index.html" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            JsCompiler
+                
+            &nbsp;
+                <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>JsCompiler</strong>        extends <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>REV_MANIFEST</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EMPTY_REVISION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_assetsDir">
+                                        protected                                        Filesystem
+                </td>
+                <td>$assetsDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#property_assetsDir"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L27" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_filename">
+                                        protected                                        string
+                </td>
+                <td>$filename</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#property_filename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L32" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sourcesCallbacks">
+                                        protected                                        callable[]
+                </td>
+                <td>$sourcesCallbacks</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#property_sourcesCallbacks"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L37" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr> $assetsDir, string $filename)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method___construct"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L43" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getFilename">getFilename</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L52" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setFilename">setFilename</a>(string $filename)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_setFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L60" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_commit">commit</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_commit"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L68" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_addSources">addSources</a>(callable $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_addSources"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L99" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    SourceInterface[]
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getSources">getSources</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getSources"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L107" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getUrl">getUrl</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getUrl"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L121" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_save">save</a>(string $file, array $sources)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L22" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_compile">compile</a>(array $sources)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_compile"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L164" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_format">format</a>(string $string)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L72" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getFilenameForRevision">getFilenameForRevision</a>(string $revision)
+        
+                                            <p>Get the filename for the given revision.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getFilenameForRevision"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L190" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getRevision">getRevision</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getRevision"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L200" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_putRevision">putRevision</a>(string|null $revision)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_putRevision"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L214" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_calculateRevision">calculateRevision</a>(array $sources)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_calculateRevision"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L235" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getCacheDifferentiator">getCacheDifferentiator</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getCacheDifferentiator"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L249" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_flush">flush</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_flush"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L256" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_delete">delete</a>(string $file)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L80" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method___construct"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L43" target="_blank">
+            line 43
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr> $assetsDir, string $filename)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr></td>
+                <td>$assetsDir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFilename">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L52" target="_blank">
+            line 52
+        </a>
+        </div>
+        <code>                    string
+    <strong>getFilename</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFilename">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_setFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L60" target="_blank">
+            line 60
+        </a>
+        </div>
+        <code>                    
+    <strong>setFilename</strong>(string $filename)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commit">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_commit"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L68" target="_blank">
+            line 68
+        </a>
+        </div>
+        <code>                    
+    <strong>commit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSources">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_addSources"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L99" target="_blank">
+            line 99
+        </a>
+        </div>
+        <code>                    
+    <strong>addSources</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSources">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getSources"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L107" target="_blank">
+            line 107
+        </a>
+        </div>
+        <code>            protected        SourceInterface[]
+    <strong>getSources</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>SourceInterface[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUrl">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getUrl"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L121" target="_blank">
+            line 121
+        </a>
+        </div>
+        <code>                    string|null
+    <strong>getUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L22" target="_blank">
+            line 22
+        </a>
+        </div>
+        <code>            protected        bool
+    <strong>save</strong>(string $file, array $sources)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$sources</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the file was written, false if there was nothing to write</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compile">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_compile"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L164" target="_blank">
+            line 164
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>compile</strong>(array $sources)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$sources</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_format">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L72" target="_blank">
+            line 72
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>format</strong>(string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFilenameForRevision">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getFilenameForRevision"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L190" target="_blank">
+            line 190
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>getFilenameForRevision</strong>(string $revision)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the filename for the given revision.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$revision</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRevision">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getRevision"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L200" target="_blank">
+            line 200
+        </a>
+        </div>
+        <code>            protected        string|null
+    <strong>getRevision</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_putRevision">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_putRevision"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L214" target="_blank">
+            line 214
+        </a>
+        </div>
+        <code>            protected        
+    <strong>putRevision</strong>(string|null $revision)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$revision</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_calculateRevision">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_calculateRevision"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L235" target="_blank">
+            line 235
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>calculateRevision</strong>(array $sources)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$sources</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheDifferentiator">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getCacheDifferentiator"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L249" target="_blank">
+            line 249
+        </a>
+        </div>
+        <code>            protected        mixed
+    <strong>getCacheDifferentiator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flush">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_flush"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/RevisionCompiler.php#L256" target="_blank">
+            line 256
+        </a>
+        </div>
+        <code>                    
+    <strong>flush</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.8.2/src/Frontend/Compiler/JsCompiler.php#L80" target="_blank">
+            line 80
+        </a>
+        </div>
+        <code>            protected        
+    <strong>delete</strong>(string $file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

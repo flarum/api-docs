@@ -5,159 +5,284 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Core\Validator\UserValidator | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Core_Validator_UserValidator" data-root-path="../../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../../index.html">v0.1.0-beta.5</a>
-    </li>
-  </ul>
-</nav>
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://api.flarum.dev/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/core"></a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option value="../../../../v0.1.0-beta" data-version="v0.1.0-beta">v0.1.0-beta</option>
+                                            <option value="../../../../v0.1.0-beta.2" data-version="v0.1.0-beta.2">v0.1.0-beta.2</option>
+                                            <option value="../../../../v0.1.0-beta.3" data-version="v0.1.0-beta.3">v0.1.0-beta.3</option>
+                                            <option value="../../../../v0.1.0-beta.4" data-version="v0.1.0-beta.4">v0.1.0-beta.4</option>
+                                            <option value="../../../../v0.1.0-beta.5" data-version="v0.1.0-beta.5">v0.1.0-beta.5</option>
+                                            <option value="../../../../v0.1.0-beta.6" data-version="v0.1.0-beta.6">v0.1.0-beta.6</option>
+                                            <option value="../../../../v0.1.0-beta.7" data-version="v0.1.0-beta.7">v0.1.0-beta.7</option>
+                                            <option value="../../../../v0.1.0-beta.8" data-version="v0.1.0-beta.8">v0.1.0-beta.8</option>
+                                            <option value="../../../../v0.1.0-beta.9" data-version="v0.1.0-beta.9">v0.1.0-beta.9</option>
+                                            <option value="../../../../v0.1.0-beta.10" data-version="v0.1.0-beta.10">v0.1.0-beta.10</option>
+                                            <option value="../../../../v0.1.0-beta.11" data-version="v0.1.0-beta.11">v0.1.0-beta.11</option>
+                                            <option value="../../../../v0.1.0-beta.12" data-version="v0.1.0-beta.12">v0.1.0-beta.12</option>
+                                            <option value="../../../../v0.1.0-beta.13" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
+                                            <option value="../../../../master" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../../classes.html">Classes</a></li>
 
-                <li><a href="../../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../../traits.html">Traits</a></li>
-        <li><a href="../../../doc-index.html">Index</a></li>
-        <li><a href="../../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                    <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+                <div id="page-content">
+                    
     <div class="page-header">
         <h1>
             UserValidator
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php">
-        <img src="../../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class        
     <strong>UserValidator</strong>        extends <a href="../../../Flarum/Core/Validator/AbstractValidator.html"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></p>
+
+        
+    
 
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_rules">
+                                        protected                                        array
+                </td>
+                <td>$rules</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Core/Validator/AbstractValidator.html#property_rules"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L25" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_validator">
+                                        protected                                        Factory
+                </td>
+                <td>$validator</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Core/Validator/AbstractValidator.html#property_validator"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L30" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_events">
+                                        protected                                        Dispatcher
+                </td>
+                <td>$events</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Core/Validator/AbstractValidator.html#property_events"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L35" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_translator">
+                                        protected                                        TranslatorInterface
+                </td>
+                <td>$translator</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Core/Validator/AbstractValidator.html#property_translator"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L40" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_user">
+                                        protected                                        User
+                </td>
+                <td>$user</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L20" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>(<abbr title="Illuminate\Validation\Factory">Factory</abbr> $validator, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator)
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Validation\Factory">Factory</abbr> $validator, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Core/Validator/AbstractValidator.html#method___construct"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Core/Validator/AbstractValidator.html#method___construct"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L47">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L47" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_assertValid">assertValid</a>(array $attributes)
-                                            <p class="method-description">Throw an exception if a model is not valid.</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Core/Validator/AbstractValidator.html#method_assertValid"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></small></div>
+                    <a href="#method_assertValid">assertValid</a>(array $attributes)
+        
+                                            <p>Throw an exception if a model is not valid.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Core/Validator/AbstractValidator.html#method_assertValid"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L59">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L59" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <a href="../../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a>
+                <div class="col-md-2 type">
+                    array
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getUser">getUser</a>()
+                    <a href="#method_getRules">getRules</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L25">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L41" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getMessages">getMessages</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Core/Validator/AbstractValidator.html#method_getMessages"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L79" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Validation\Validator">Validator</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_makeValidator">makeValidator</a>(array $attributes)
+        
+                                            <p>Make a new validator instance for this model.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Core/Validator/AbstractValidator.html#method_makeValidator"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L90" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    User
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getUser">getUser</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L25" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setUser">setUser</a>(<a href="../../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)
+                    <a href="#method_setUser">setUser</a>(<a href="../../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L33">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L33" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -172,14 +297,18 @@
                     <h3 id="method___construct">
         <div class="location">
                             in <a href="../../../Flarum/Core/Validator/AbstractValidator.html#method___construct"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/AbstractValidator.php#L47">
-                at line 47
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/AbstractValidator.php#L47" target="_blank">
+            line 47
+        </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Validation\Factory">Factory</abbr> $validator, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator)</code>
+    <strong>__construct</strong>(<abbr title="Illuminate\Validation\Factory">Factory</abbr> $validator, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -212,16 +341,20 @@
                     <h3 id="method_assertValid">
         <div class="location">
                             in <a href="../../../Flarum/Core/Validator/AbstractValidator.html#method_assertValid"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/AbstractValidator.php#L59">
-                at line 59
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/AbstractValidator.php#L59" target="_blank">
+            line 59
+        </a>
         </div>
         <code>                    
-    <strong>assertValid</strong>(array $attributes)</code>
+    <strong>assertValid</strong>(array $attributes)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Throw an exception if a model is not valid.</p>                                </div>
+                                    <p>Throw an exception if a model is not valid.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -241,23 +374,137 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getUser">
+                    <h3 id="method_getRules">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L25">
-                at line 25
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L41" target="_blank">
+            line 41
+        </a>
         </div>
-        <code>                    <a href="../../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a>
-    <strong>getUser</strong>()</code>
+        <code>            protected        array
+    <strong>getRules</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a></td>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMessages">
+        <div class="location">
+                            in <a href="../../../Flarum/Core/Validator/AbstractValidator.html#method_getMessages"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/AbstractValidator.php#L79" target="_blank">
+            line 79
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>getMessages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeValidator">
+        <div class="location">
+                            in <a href="../../../Flarum/Core/Validator/AbstractValidator.html#method_makeValidator"><abbr title="Flarum\Core\Validator\AbstractValidator">AbstractValidator</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/AbstractValidator.php#L90" target="_blank">
+            line 90
+        </a>
+        </div>
+        <code>            protected        <abbr title="Illuminate\Validation\Validator">Validator</abbr>
+    <strong>makeValidator</strong>(array $attributes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Make a new validator instance for this model.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Validation\Validator">Validator</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUser">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L25" target="_blank">
+            line 25
+        </a>
+        </div>
+        <code>                    User
+    <strong>getUser</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>User</td>
             <td></td>
         </tr>
     </table>
@@ -271,14 +518,18 @@
                     <div class="method-item">
                     <h3 id="method_setUser">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L33">
-                at line 33
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Core/Validator/UserValidator.php#L33" target="_blank">
+            line 33
+        </a>
         </div>
         <code>                    
-    <strong>setUser</strong>(<a href="../../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)</code>
+    <strong>setUser</strong>(<a href="../../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $user)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -300,13 +551,15 @@
             </div>
 
     
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+            </div>
+        </div>
+    </div>
     </body>
 
 </html>

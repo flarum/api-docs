@@ -5,92 +5,98 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Api\Controller\ListNotificationsController | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Api_Controller_ListNotificationsController" data-root-path="../../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../../index.html">v0.1.0-beta.6</a>
-    </li>
-  </ul>
-</nav>
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://api.flarum.dev/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/core"></a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option value="../../../../v0.1.0-beta" data-version="v0.1.0-beta">v0.1.0-beta</option>
+                                            <option value="../../../../v0.1.0-beta.2" data-version="v0.1.0-beta.2">v0.1.0-beta.2</option>
+                                            <option value="../../../../v0.1.0-beta.3" data-version="v0.1.0-beta.3">v0.1.0-beta.3</option>
+                                            <option value="../../../../v0.1.0-beta.4" data-version="v0.1.0-beta.4">v0.1.0-beta.4</option>
+                                            <option value="../../../../v0.1.0-beta.5" data-version="v0.1.0-beta.5">v0.1.0-beta.5</option>
+                                            <option value="../../../../v0.1.0-beta.6" data-version="v0.1.0-beta.6">v0.1.0-beta.6</option>
+                                            <option value="../../../../v0.1.0-beta.7" data-version="v0.1.0-beta.7">v0.1.0-beta.7</option>
+                                            <option value="../../../../v0.1.0-beta.8" data-version="v0.1.0-beta.8">v0.1.0-beta.8</option>
+                                            <option value="../../../../v0.1.0-beta.9" data-version="v0.1.0-beta.9">v0.1.0-beta.9</option>
+                                            <option value="../../../../v0.1.0-beta.10" data-version="v0.1.0-beta.10">v0.1.0-beta.10</option>
+                                            <option value="../../../../v0.1.0-beta.11" data-version="v0.1.0-beta.11">v0.1.0-beta.11</option>
+                                            <option value="../../../../v0.1.0-beta.12" data-version="v0.1.0-beta.12">v0.1.0-beta.12</option>
+                                            <option value="../../../../v0.1.0-beta.13" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
+                                            <option value="../../../../master" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../../classes.html">Classes</a></li>
 
-                <li><a href="../../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../../traits.html">Traits</a></li>
-        <li><a href="../../../doc-index.html">Index</a></li>
-        <li><a href="../../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                    <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+                <div id="page-content">
+                    
     <div class="page-header">
         <h1>
             ListNotificationsController
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php">
-        <img src="../../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class        
     <strong>ListNotificationsController</strong>        extends <a href="../../../Flarum/Api/Controller/AbstractCollectionController.html"><abbr title="Flarum\Api\Controller\AbstractCollectionController">AbstractCollectionController</abbr></a></p>
+
+        
+    
 
     
     
@@ -105,8 +111,8 @@
                 <td>$serializer</td>
                 <td class="last">{@inheritdoc}</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L24">
-        <img src="../../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L24" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -117,8 +123,8 @@
                 <td>$include</td>
                 <td class="last">{@inheritdoc}</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L29">
-        <img src="../../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L29" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -129,8 +135,8 @@
                 <td>$optionalInclude</td>
                 <td class="last">The relationships that are available to be included.</td>
                 <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_optionalInclude"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L45">
-        <img src="../../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L45" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -141,8 +147,8 @@
                 <td>$maxLimit</td>
                 <td class="last">The maximum number of records that can be requested.</td>
                 <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_maxLimit"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L52">
-        <img src="../../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L52" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -153,8 +159,8 @@
                 <td>$limit</td>
                 <td class="last">{@inheritdoc}</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L38">
-        <img src="../../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L38" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -165,8 +171,8 @@
                 <td>$sortFields</td>
                 <td class="last">The fields that are available to be sorted by.</td>
                 <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_sortFields"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L66">
-        <img src="../../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L66" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -177,8 +183,44 @@
                 <td>$sort</td>
                 <td class="last">The default sort field and order to user.</td>
                 <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_sort"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L73">
-        <img src="../../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L73" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_container">
+                    static                    protected                                        Container
+                </td>
+                <td>$container</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_container"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L78" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_events">
+                    static                    protected                                        Dispatcher
+                </td>
+                <td>$events</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#property_events"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L83" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_notifications">
+                                        protected                                        <a href="../../../Flarum/Core/Repository/NotificationRepository.html"><abbr title="Flarum\Core\Repository\NotificationRepository">NotificationRepository</abbr></a>
+                </td>
+                <td>$notifications</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L43" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -187,99 +229,256 @@
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+                    <a href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_handle"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_handle"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L88">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L88" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    static&nbsp;<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>
+                <div class="col-md-2 type">
+                    mixed
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getEventDispatcher">getEventDispatcher</a>()
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_getEventDispatcher"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                    <a href="#method_data">data</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Tobscure\JsonApi\Document">Document</abbr> $document)
+        
+                                            <p>Get the data to be serialized and assigned to the response document.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L203">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L56" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
+                    <abbr title="Tobscure\JsonApi\ElementInterface">ElementInterface</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_createElement">createElement</a>(mixed $data, <abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer)
+        
+                                            <p>Create a PHP JSON-API Element for output in the document.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractCollectionController.html#method_createElement"><abbr title="Flarum\Api\Controller\AbstractCollectionController">AbstractCollectionController</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L21" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractInclude">extractInclude</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractInclude"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L137" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractFields">extractFields</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractFields"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L148" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractSort">extractSort</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractSort"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L158" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractOffset">extractOffset</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractOffset"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L168" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractLimit">extractLimit</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractLimit"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L177" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractFilter">extractFilter</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractFilter"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L186" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Parameters
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_buildParameters">buildParameters</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_buildParameters"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L195" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Dispatcher
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getEventDispatcher">getEventDispatcher</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_getEventDispatcher"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L203" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setEventDispatcher">setEventDispatcher</a>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
+                    <a href="#method_setEventDispatcher">setEventDispatcher</a>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_setEventDispatcher"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_setEventDispatcher"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L211">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L211" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    static&nbsp;<abbr title="Illuminate\Contracts\Container\Container">Container</abbr>
+                <div class="col-md-2 type">
+                    static&nbsp;Container
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getContainer">getContainer</a>()
+                    <a href="#method_getContainer">getContainer</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_getContainer"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_getContainer"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L219">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L219" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setContainer">setContainer</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+                    <a href="#method_setContainer">setContainer</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_setContainer"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_setContainer"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L227">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L227" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>(<a href="../../../Flarum/Core/Repository/NotificationRepository.html"><abbr title="Flarum\Core\Repository\NotificationRepository">NotificationRepository</abbr></a> $notifications)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Core/Repository/NotificationRepository.html"><abbr title="Flarum\Core\Repository\NotificationRepository">NotificationRepository</abbr></a> $notifications)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L48">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L48" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -294,14 +493,18 @@
                     <h3 id="method_handle">
         <div class="location">
                             in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_handle"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/AbstractSerializeController.php#L88">
-                at line 88
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L88" target="_blank">
+            line 88
+        </a>
         </div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)</code>
+    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -330,24 +533,455 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_data">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L56" target="_blank">
+            line 56
+        </a>
+        </div>
+        <code>            protected        mixed
+    <strong>data</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Tobscure\JsonApi\Document">Document</abbr> $document)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the data to be serialized and assigned to the response document.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobscure\JsonApi\Document">Document</abbr></td>
+                <td>$document</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createElement">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Controller/AbstractCollectionController.html#method_createElement"><abbr title="Flarum\Api\Controller\AbstractCollectionController">AbstractCollectionController</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractCollectionController.php#L21" target="_blank">
+            line 21
+        </a>
+        </div>
+        <code>            protected        <abbr title="Tobscure\JsonApi\ElementInterface">ElementInterface</abbr>
+    <strong>createElement</strong>(mixed $data, <abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr> $serializer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a PHP JSON-API Element for output in the document.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobscure\JsonApi\SerializerInterface">SerializerInterface</abbr></td>
+                <td>$serializer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tobscure\JsonApi\ElementInterface">ElementInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractInclude">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractInclude"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L137" target="_blank">
+            line 137
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>extractInclude</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobscure\JsonApi\Exception\InvalidParameterException">InvalidParameterException</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractFields">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractFields"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L148" target="_blank">
+            line 148
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>extractFields</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractSort">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractSort"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L158" target="_blank">
+            line 158
+        </a>
+        </div>
+        <code>            protected        array|null
+    <strong>extractSort</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobscure\JsonApi\Exception\InvalidParameterException">InvalidParameterException</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractOffset">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractOffset"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L168" target="_blank">
+            line 168
+        </a>
+        </div>
+        <code>            protected        int
+    <strong>extractOffset</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobscure\JsonApi\Exception\InvalidParameterException">InvalidParameterException</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractLimit">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractLimit"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L177" target="_blank">
+            line 177
+        </a>
+        </div>
+        <code>            protected        int
+    <strong>extractLimit</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractFilter">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_extractFilter"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L186" target="_blank">
+            line 186
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>extractFilter</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildParameters">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_buildParameters"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L195" target="_blank">
+            line 195
+        </a>
+        </div>
+        <code>            protected        Parameters
+    <strong>buildParameters</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Parameters</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getEventDispatcher">
         <div class="location">
                             in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_getEventDispatcher"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/AbstractSerializeController.php#L203">
-                at line 203
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L203" target="_blank">
+            line 203
+        </a>
         </div>
-        <code>        static            <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>
-    <strong>getEventDispatcher</strong>()</code>
+        <code>        static            Dispatcher
+    <strong>getEventDispatcher</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></td>
+            <td>Dispatcher</td>
             <td></td>
         </tr>
     </table>
@@ -362,14 +996,18 @@
                     <h3 id="method_setEventDispatcher">
         <div class="location">
                             in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_setEventDispatcher"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/AbstractSerializeController.php#L211">
-                at line 211
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L211" target="_blank">
+            line 211
+        </a>
         </div>
         <code>        static            
-    <strong>setEventDispatcher</strong>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)</code>
+    <strong>setEventDispatcher</strong>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -392,21 +1030,25 @@
                     <h3 id="method_getContainer">
         <div class="location">
                             in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_getContainer"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/AbstractSerializeController.php#L219">
-                at line 219
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L219" target="_blank">
+            line 219
+        </a>
         </div>
-        <code>        static            <abbr title="Illuminate\Contracts\Container\Container">Container</abbr>
-    <strong>getContainer</strong>()</code>
+        <code>        static            Container
+    <strong>getContainer</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+            <td>Container</td>
             <td></td>
         </tr>
     </table>
@@ -421,14 +1063,18 @@
                     <h3 id="method_setContainer">
         <div class="location">
                             in <a href="../../../Flarum/Api/Controller/AbstractSerializeController.html#method_setContainer"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/AbstractSerializeController.php#L227">
-                at line 227
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/AbstractSerializeController.php#L227" target="_blank">
+            line 227
+        </a>
         </div>
         <code>        static            
-    <strong>setContainer</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)</code>
+    <strong>setContainer</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -450,14 +1096,18 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Api/Controller/ListNotificationsController.php#L48">
-                at line 48
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Api/Controller/ListNotificationsController.php#L48" target="_blank">
+            line 48
+        </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Core/Repository/NotificationRepository.html"><abbr title="Flarum\Core\Repository\NotificationRepository">NotificationRepository</abbr></a> $notifications)</code>
+    <strong>__construct</strong>(<a href="../../../Flarum/Core/Repository/NotificationRepository.html"><abbr title="Flarum\Core\Repository\NotificationRepository">NotificationRepository</abbr></a> $notifications)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -479,13 +1129,15 @@
             </div>
 
     
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+            </div>
+        </div>
+    </div>
     </body>
 
 </html>

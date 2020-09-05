@@ -1,8 +1,8 @@
 window.esdocSearchIndex = [
   [
-    "flarum/components/addextensionmodal~addextensionmodal",
+    "flarum/compone/addextensionmodal~addextensionmodal",
     "class/src/admin/components/AddExtensionModal.js~AddExtensionModal.html",
-    "<span>AddExtensionModal</span> <span class=\"search-result-import-path\">flarum/components/AddExtensionModal</span>",
+    "<span>AddExtensionModal</span> <span class=\"search-result-import-path\">flarum/compone/AddExtensionModal</span>",
     "class"
   ],
   [
@@ -12,27 +12,27 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/adminlinkbutton~adminlinkbutton",
+    "flarum/compone/adminlinkbutton~adminlinkbutton",
     "class/src/admin/components/AdminLinkButton.js~AdminLinkButton.html",
-    "<span>AdminLinkButton</span> <span class=\"search-result-import-path\">flarum/components/AdminLinkButton</span>",
+    "<span>AdminLinkButton</span> <span class=\"search-result-import-path\">flarum/compone/AdminLinkButton</span>",
     "class"
   ],
   [
-    "flarum/components/adminnav~adminnav",
+    "flarum/compone/adminnav~adminnav",
     "class/src/admin/components/AdminNav.js~AdminNav.html",
-    "<span>AdminNav</span> <span class=\"search-result-import-path\">flarum/components/AdminNav</span>",
+    "<span>AdminNav</span> <span class=\"search-result-import-path\">flarum/compone/AdminNav</span>",
     "class"
   ],
   [
-    "flarum/components/alert~alert",
+    "flarum/compone/alert~alert",
     "class/src/common/components/Alert.js~Alert.html",
-    "<span>Alert</span> <span class=\"search-result-import-path\">flarum/components/Alert</span>",
+    "<span>Alert</span> <span class=\"search-result-import-path\">flarum/compone/Alert</span>",
     "class"
   ],
   [
-    "flarum/components/alertmanager~alertmanager",
+    "flarum/compone/alertmanager~alertmanager",
     "class/src/common/components/AlertManager.js~AlertManager.html",
-    "<span>AlertManager</span> <span class=\"search-result-import-path\">flarum/components/AlertManager</span>",
+    "<span>AlertManager</span> <span class=\"search-result-import-path\">flarum/compone/AlertManager</span>",
     "class"
   ],
   [
@@ -42,9 +42,9 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/appearancepage~appearancepage",
+    "flarum/compone/appearancepage~appearancepage",
     "class/src/admin/components/AppearancePage.js~AppearancePage.html",
-    "<span>AppearancePage</span> <span class=\"search-result-import-path\">flarum/components/AppearancePage</span>",
+    "<span>AppearancePage</span> <span class=\"search-result-import-path\">flarum/compone/AppearancePage</span>",
     "class"
   ],
   [
@@ -54,75 +54,75 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/avatareditor~avatareditor",
+    "flarum/compone/avatareditor~avatareditor",
     "class/src/forum/components/AvatarEditor.js~AvatarEditor.html",
-    "<span>AvatarEditor</span> <span class=\"search-result-import-path\">flarum/components/AvatarEditor</span>",
+    "<span>AvatarEditor</span> <span class=\"search-result-import-path\">flarum/compone/AvatarEditor</span>",
     "class"
   ],
   [
-    "flarum/components/badge~badge",
+    "flarum/compone/badge~badge",
     "class/src/common/components/Badge.js~Badge.html",
-    "<span>Badge</span> <span class=\"search-result-import-path\">flarum/components/Badge</span>",
+    "<span>Badge</span> <span class=\"search-result-import-path\">flarum/compone/Badge</span>",
     "class"
   ],
   [
-    "flarum/components/basicspage~basicspage",
+    "flarum/compone/basicspage~basicspage",
     "class/src/admin/components/BasicsPage.js~BasicsPage.html",
-    "<span>BasicsPage</span> <span class=\"search-result-import-path\">flarum/components/BasicsPage</span>",
+    "<span>BasicsPage</span> <span class=\"search-result-import-path\">flarum/compone/BasicsPage</span>",
     "class"
   ],
   [
-    "flarum/components/button~button",
+    "flarum/compone/button~button",
     "class/src/common/components/Button.js~Button.html",
-    "<span>Button</span> <span class=\"search-result-import-path\">flarum/components/Button</span>",
+    "<span>Button</span> <span class=\"search-result-import-path\">flarum/compone/Button</span>",
     "class"
   ],
   [
-    "flarum/components/changeemailmodal~changeemailmodal",
+    "flarum/compone/changeemailmodal~changeemailmodal",
     "class/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html",
-    "<span>ChangeEmailModal</span> <span class=\"search-result-import-path\">flarum/components/ChangeEmailModal</span>",
+    "<span>ChangeEmailModal</span> <span class=\"search-result-import-path\">flarum/compone/ChangeEmailModal</span>",
     "class"
   ],
   [
-    "flarum/components/changepasswordmodal~changepasswordmodal",
+    "flarum/compone/changepasswordmodal~changepasswordmodal",
     "class/src/forum/components/ChangePasswordModal.js~ChangePasswordModal.html",
-    "<span>ChangePasswordModal</span> <span class=\"search-result-import-path\">flarum/components/ChangePasswordModal</span>",
+    "<span>ChangePasswordModal</span> <span class=\"search-result-import-path\">flarum/compone/ChangePasswordModal</span>",
     "class"
   ],
   [
-    "flarum/components/checkbox~checkbox",
+    "flarum/compone/checkbox~checkbox",
     "class/src/common/components/Checkbox.js~Checkbox.html",
-    "<span>Checkbox</span> <span class=\"search-result-import-path\">flarum/components/Checkbox</span>",
+    "<span>Checkbox</span> <span class=\"search-result-import-path\">flarum/compone/Checkbox</span>",
     "class"
   ],
   [
-    "flarum/components/commentpost~commentpost",
+    "flarum/compone/commentpost~commentpost",
     "class/src/forum/components/CommentPost.js~CommentPost.html",
-    "<span>CommentPost</span> <span class=\"search-result-import-path\">flarum/components/CommentPost</span>",
+    "<span>CommentPost</span> <span class=\"search-result-import-path\">flarum/compone/CommentPost</span>",
     "class"
   ],
   [
     "flarum/component~component",
-    "class/src/common/Component.js~Component.html",
+    "class/src/common/Component.ts~Component.html",
     "<span>Component</span> <span class=\"search-result-import-path\">flarum/Component</span>",
     "class"
   ],
   [
-    "flarum/components/composer~composer",
+    "flarum/compone/composer~composer",
     "class/src/forum/components/Composer.js~Composer.html",
-    "<span>Composer</span> <span class=\"search-result-import-path\">flarum/components/Composer</span>",
+    "<span>Composer</span> <span class=\"search-result-import-path\">flarum/compone/Composer</span>",
     "class"
   ],
   [
-    "flarum/components/composerbody~composerbody",
+    "flarum/compone/composerbody~composerbody",
     "class/src/forum/components/ComposerBody.js~ComposerBody.html",
-    "<span>ComposerBody</span> <span class=\"search-result-import-path\">flarum/components/ComposerBody</span>",
+    "<span>ComposerBody</span> <span class=\"search-result-import-path\">flarum/compone/ComposerBody</span>",
     "class"
   ],
   [
-    "flarum/components/composerbutton~composerbutton",
+    "flarum/compone/composerbutton~composerbutton",
     "class/src/forum/components/ComposerButton.js~ComposerButton.html",
-    "<span>ComposerButton</span> <span class=\"search-result-import-path\">flarum/components/ComposerButton</span>",
+    "<span>ComposerButton</span> <span class=\"search-result-import-path\">flarum/compone/ComposerButton</span>",
     "class"
   ],
   [
@@ -132,21 +132,21 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/confirmdocumentunload~confirmdocumentunload",
+    "flarum/compone/confirmdocumentunload~confirmdocumentunload",
     "class/src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload.html",
-    "<span>ConfirmDocumentUnload</span> <span class=\"search-result-import-path\">flarum/components/ConfirmDocumentUnload</span>",
+    "<span>ConfirmDocumentUnload</span> <span class=\"search-result-import-path\">flarum/compone/ConfirmDocumentUnload</span>",
     "class"
   ],
   [
-    "flarum/components/dashboardpage~dashboardpage",
+    "flarum/compone/dashboardpage~dashboardpage",
     "class/src/admin/components/DashboardPage.js~DashboardPage.html",
-    "<span>DashboardPage</span> <span class=\"search-result-import-path\">flarum/components/DashboardPage</span>",
+    "<span>DashboardPage</span> <span class=\"search-result-import-path\">flarum/compone/DashboardPage</span>",
     "class"
   ],
   [
-    "flarum/components/dashboardwidget~dashboardwidget",
+    "flarum/compone/dashboardwidget~dashboardwidget",
     "class/src/admin/components/DashboardWidget.js~DashboardWidget.html",
-    "<span>DashboardWidget</span> <span class=\"search-result-import-path\">flarum/components/DashboardWidget</span>",
+    "<span>DashboardWidget</span> <span class=\"search-result-import-path\">flarum/compone/DashboardWidget</span>",
     "class"
   ],
   [
@@ -156,27 +156,27 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/discussioncomposer~discussioncomposer",
+    "flarum/compone/discussioncomposer~discussioncomposer",
     "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html",
-    "<span>DiscussionComposer</span> <span class=\"search-result-import-path\">flarum/components/DiscussionComposer</span>",
+    "<span>DiscussionComposer</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionComposer</span>",
     "class"
   ],
   [
-    "flarum/components/discussionhero~discussionhero",
+    "flarum/compone/discussionhero~discussionhero",
     "class/src/forum/components/DiscussionHero.js~DiscussionHero.html",
-    "<span>DiscussionHero</span> <span class=\"search-result-import-path\">flarum/components/DiscussionHero</span>",
+    "<span>DiscussionHero</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionHero</span>",
     "class"
   ],
   [
-    "flarum/components/discussionlist~discussionlist",
+    "flarum/compone/discussionlist~discussionlist",
     "class/src/forum/components/DiscussionList.js~DiscussionList.html",
-    "<span>DiscussionList</span> <span class=\"search-result-import-path\">flarum/components/DiscussionList</span>",
+    "<span>DiscussionList</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionList</span>",
     "class"
   ],
   [
-    "flarum/components/discussionlistitem~discussionlistitem",
+    "flarum/compone/discussionlistitem~discussionlistitem",
     "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html",
-    "<span>DiscussionListItem</span> <span class=\"search-result-import-path\">flarum/components/DiscussionListItem</span>",
+    "<span>DiscussionListItem</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionListItem</span>",
     "class"
   ],
   [
@@ -186,33 +186,33 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/discussionpage~discussionpage",
+    "flarum/compone/discussionpage~discussionpage",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html",
-    "<span>DiscussionPage</span> <span class=\"search-result-import-path\">flarum/components/DiscussionPage</span>",
+    "<span>DiscussionPage</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionPage</span>",
     "class"
   ],
   [
-    "flarum/components/discussionrenamednotification~discussionrenamednotification",
+    "flarum/compone/discussionrenamednotification~discussionrenamednotification",
     "class/src/forum/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html",
-    "<span>DiscussionRenamedNotification</span> <span class=\"search-result-import-path\">flarum/components/DiscussionRenamedNotification</span>",
+    "<span>DiscussionRenamedNotification</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionRenamedNotification</span>",
     "class"
   ],
   [
-    "flarum/components/discussionrenamedpost~discussionrenamedpost",
+    "flarum/compone/discussionrenamedpost~discussionrenamedpost",
     "class/src/forum/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html",
-    "<span>DiscussionRenamedPost</span> <span class=\"search-result-import-path\">flarum/components/DiscussionRenamedPost</span>",
+    "<span>DiscussionRenamedPost</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionRenamedPost</span>",
     "class"
   ],
   [
-    "flarum/components/discussionssearchsource~discussionssearchsource",
+    "flarum/compone/discussionssearchsource~discussionssearchsource",
     "class/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html",
-    "<span>DiscussionsSearchSource</span> <span class=\"search-result-import-path\">flarum/components/DiscussionsSearchSource</span>",
+    "<span>DiscussionsSearchSource</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionsSearchSource</span>",
     "class"
   ],
   [
-    "flarum/components/discussionsuserpage~discussionsuserpage",
+    "flarum/compone/discussionsuserpage~discussionsuserpage",
     "class/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html",
-    "<span>DiscussionsUserPage</span> <span class=\"search-result-import-path\">flarum/components/DiscussionsUserPage</span>",
+    "<span>DiscussionsUserPage</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionsUserPage</span>",
     "class"
   ],
   [
@@ -222,69 +222,69 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/dropdown~dropdown",
+    "flarum/compone/dropdown~dropdown",
     "class/src/common/components/Dropdown.js~Dropdown.html",
-    "<span>Dropdown</span> <span class=\"search-result-import-path\">flarum/components/Dropdown</span>",
+    "<span>Dropdown</span> <span class=\"search-result-import-path\">flarum/compone/Dropdown</span>",
     "class"
   ],
   [
-    "flarum/components/editcustomcssmodal~editcustomcssmodal",
+    "flarum/compone/editcustomcssmodal~editcustomcssmodal",
     "class/src/admin/components/EditCustomCssModal.js~EditCustomCssModal.html",
-    "<span>EditCustomCssModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomCssModal</span>",
+    "<span>EditCustomCssModal</span> <span class=\"search-result-import-path\">flarum/compone/EditCustomCssModal</span>",
     "class"
   ],
   [
-    "flarum/components/editcustomfootermodal~editcustomfootermodal",
+    "flarum/compone/editcustomfootermodal~editcustomfootermodal",
     "class/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal.html",
-    "<span>EditCustomFooterModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomFooterModal</span>",
+    "<span>EditCustomFooterModal</span> <span class=\"search-result-import-path\">flarum/compone/EditCustomFooterModal</span>",
     "class"
   ],
   [
-    "flarum/components/editcustomheadermodal~editcustomheadermodal",
+    "flarum/compone/editcustomheadermodal~editcustomheadermodal",
     "class/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html",
-    "<span>EditCustomHeaderModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomHeaderModal</span>",
+    "<span>EditCustomHeaderModal</span> <span class=\"search-result-import-path\">flarum/compone/EditCustomHeaderModal</span>",
     "class"
   ],
   [
-    "flarum/components/editgroupmodal~editgroupmodal",
+    "flarum/compone/editgroupmodal~editgroupmodal",
     "class/src/admin/components/EditGroupModal.js~EditGroupModal.html",
-    "<span>EditGroupModal</span> <span class=\"search-result-import-path\">flarum/components/EditGroupModal</span>",
+    "<span>EditGroupModal</span> <span class=\"search-result-import-path\">flarum/compone/EditGroupModal</span>",
     "class"
   ],
   [
-    "flarum/components/editpostcomposer~editpostcomposer",
+    "flarum/compone/editpostcomposer~editpostcomposer",
     "class/src/forum/components/EditPostComposer.js~EditPostComposer.html",
-    "<span>EditPostComposer</span> <span class=\"search-result-import-path\">flarum/components/EditPostComposer</span>",
+    "<span>EditPostComposer</span> <span class=\"search-result-import-path\">flarum/compone/EditPostComposer</span>",
     "class"
   ],
   [
-    "flarum/components/editusermodal~editusermodal",
+    "flarum/compone/editusermodal~editusermodal",
     "class/src/forum/components/EditUserModal.js~EditUserModal.html",
-    "<span>EditUserModal</span> <span class=\"search-result-import-path\">flarum/components/EditUserModal</span>",
+    "<span>EditUserModal</span> <span class=\"search-result-import-path\">flarum/compone/EditUserModal</span>",
     "class"
   ],
   [
-    "flarum/components/eventpost~eventpost",
+    "flarum/compone/eventpost~eventpost",
     "class/src/forum/components/EventPost.js~EventPost.html",
-    "<span>EventPost</span> <span class=\"search-result-import-path\">flarum/components/EventPost</span>",
+    "<span>EventPost</span> <span class=\"search-result-import-path\">flarum/compone/EventPost</span>",
     "class"
   ],
   [
-    "flarum/components/extensionspage~extensionspage",
+    "flarum/compone/extensionspage~extensionspage",
     "class/src/admin/components/ExtensionsPage.js~ExtensionsPage.html",
-    "<span>ExtensionsPage</span> <span class=\"search-result-import-path\">flarum/components/ExtensionsPage</span>",
+    "<span>ExtensionsPage</span> <span class=\"search-result-import-path\">flarum/compone/ExtensionsPage</span>",
     "class"
   ],
   [
-    "flarum/components/fieldset~fieldset",
+    "flarum/compone/fieldset~fieldset",
     "class/src/common/components/FieldSet.js~FieldSet.html",
-    "<span>FieldSet</span> <span class=\"search-result-import-path\">flarum/components/FieldSet</span>",
+    "<span>FieldSet</span> <span class=\"search-result-import-path\">flarum/compone/FieldSet</span>",
     "class"
   ],
   [
-    "flarum/components/forgotpasswordmodal~forgotpasswordmodal",
+    "flarum/compone/forgotpasswordmodal~forgotpasswordmodal",
     "class/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html",
-    "<span>ForgotPasswordModal</span> <span class=\"search-result-import-path\">flarum/components/ForgotPasswordModal</span>",
+    "<span>ForgotPasswordModal</span> <span class=\"search-result-import-path\">flarum/compone/ForgotPasswordModal</span>",
     "class"
   ],
   [
@@ -312,33 +312,33 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/groupbadge~groupbadge",
+    "flarum/compone/groupbadge~groupbadge",
     "class/src/common/components/GroupBadge.js~GroupBadge.html",
-    "<span>GroupBadge</span> <span class=\"search-result-import-path\">flarum/components/GroupBadge</span>",
+    "<span>GroupBadge</span> <span class=\"search-result-import-path\">flarum/compone/GroupBadge</span>",
     "class"
   ],
   [
-    "flarum/components/headerprimary~headerprimary",
+    "flarum/compone/headerprimary~headerprimary",
     "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headerprimary~headerprimary",
+    "flarum/compone/headerprimary~headerprimary",
     "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headersecondary~headersecondary",
+    "flarum/compone/headersecondary~headersecondary",
     "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/compone/headersecondary~headersecondary",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
   [
@@ -348,9 +348,15 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/indexpage~indexpage",
+    "flarum/compone/indexpage~indexpage",
     "class/src/forum/components/IndexPage.js~IndexPage.html",
-    "<span>IndexPage</span> <span class=\"search-result-import-path\">flarum/components/IndexPage</span>",
+    "<span>IndexPage</span> <span class=\"search-result-import-path\">flarum/compone/IndexPage</span>",
+    "class"
+  ],
+  [
+    "flarum/utils/itemlist~itemlist",
+    "class/src/common/utils/ItemList.ts~ItemList.html",
+    "<span>ItemList</span> <span class=\"search-result-import-path\">flarum/utils/ItemList</span>",
     "class"
   ],
   [
@@ -360,63 +366,63 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/linkbutton~linkbutton",
+    "flarum/compone/linkbutton~linkbutton",
     "class/src/common/components/LinkButton.js~LinkButton.html",
-    "<span>LinkButton</span> <span class=\"search-result-import-path\">flarum/components/LinkButton</span>",
+    "<span>LinkButton</span> <span class=\"search-result-import-path\">flarum/compone/LinkButton</span>",
     "class"
   ],
   [
-    "flarum/components/loadingindicator~loadingindicator",
+    "flarum/compone/loadingindicator~loadingindicator",
     "class/src/common/components/LoadingIndicator.js~LoadingIndicator.html",
-    "<span>LoadingIndicator</span> <span class=\"search-result-import-path\">flarum/components/LoadingIndicator</span>",
+    "<span>LoadingIndicator</span> <span class=\"search-result-import-path\">flarum/compone/LoadingIndicator</span>",
     "class"
   ],
   [
-    "flarum/components/loadingmodal~loadingmodal",
+    "flarum/compone/loadingmodal~loadingmodal",
     "class/src/admin/components/LoadingModal.js~LoadingModal.html",
-    "<span>LoadingModal</span> <span class=\"search-result-import-path\">flarum/components/LoadingModal</span>",
+    "<span>LoadingModal</span> <span class=\"search-result-import-path\">flarum/compone/LoadingModal</span>",
     "class"
   ],
   [
-    "flarum/components/loadingpost~loadingpost",
+    "flarum/compone/loadingpost~loadingpost",
     "class/src/forum/components/LoadingPost.js~LoadingPost.html",
-    "<span>LoadingPost</span> <span class=\"search-result-import-path\">flarum/components/LoadingPost</span>",
+    "<span>LoadingPost</span> <span class=\"search-result-import-path\">flarum/compone/LoadingPost</span>",
     "class"
   ],
   [
-    "flarum/components/loginbutton~loginbutton",
+    "flarum/compone/loginbutton~loginbutton",
     "class/src/forum/components/LogInButton.js~LogInButton.html",
-    "<span>LogInButton</span> <span class=\"search-result-import-path\">flarum/components/LogInButton</span>",
+    "<span>LogInButton</span> <span class=\"search-result-import-path\">flarum/compone/LogInButton</span>",
     "class"
   ],
   [
-    "flarum/components/loginbuttons~loginbuttons",
+    "flarum/compone/loginbuttons~loginbuttons",
     "class/src/forum/components/LogInButtons.js~LogInButtons.html",
-    "<span>LogInButtons</span> <span class=\"search-result-import-path\">flarum/components/LogInButtons</span>",
+    "<span>LogInButtons</span> <span class=\"search-result-import-path\">flarum/compone/LogInButtons</span>",
     "class"
   ],
   [
-    "flarum/components/loginmodal~loginmodal",
+    "flarum/compone/loginmodal~loginmodal",
     "class/src/forum/components/LogInModal.js~LogInModal.html",
-    "<span>LogInModal</span> <span class=\"search-result-import-path\">flarum/components/LogInModal</span>",
+    "<span>LogInModal</span> <span class=\"search-result-import-path\">flarum/compone/LogInModal</span>",
     "class"
   ],
   [
-    "flarum/components/mailpage~mailpage",
+    "flarum/compone/mailpage~mailpage",
     "class/src/admin/components/MailPage.js~MailPage.html",
-    "<span>MailPage</span> <span class=\"search-result-import-path\">flarum/components/MailPage</span>",
+    "<span>MailPage</span> <span class=\"search-result-import-path\">flarum/compone/MailPage</span>",
     "class"
   ],
   [
-    "flarum/components/modal~modal",
+    "flarum/compone/modal~modal",
     "class/src/common/components/Modal.js~Modal.html",
-    "<span>Modal</span> <span class=\"search-result-import-path\">flarum/components/Modal</span>",
+    "<span>Modal</span> <span class=\"search-result-import-path\">flarum/compone/Modal</span>",
     "class"
   ],
   [
-    "flarum/components/modalmanager~modalmanager",
+    "flarum/compone/modalmanager~modalmanager",
     "class/src/common/components/ModalManager.js~ModalManager.html",
-    "<span>ModalManager</span> <span class=\"search-result-import-path\">flarum/components/ModalManager</span>",
+    "<span>ModalManager</span> <span class=\"search-result-import-path\">flarum/compone/ModalManager</span>",
     "class"
   ],
   [
@@ -438,15 +444,15 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/navigation~navigation",
+    "flarum/compone/navigation~navigation",
     "class/src/common/components/Navigation.js~Navigation.html",
-    "<span>Navigation</span> <span class=\"search-result-import-path\">flarum/components/Navigation</span>",
+    "<span>Navigation</span> <span class=\"search-result-import-path\">flarum/compone/Navigation</span>",
     "class"
   ],
   [
-    "flarum/components/notification~notification",
+    "flarum/compone/notification~notification",
     "class/src/forum/components/Notification.js~Notification.html",
-    "<span>Notification</span> <span class=\"search-result-import-path\">flarum/components/Notification</span>",
+    "<span>Notification</span> <span class=\"search-result-import-path\">flarum/compone/Notification</span>",
     "class"
   ],
   [
@@ -456,15 +462,15 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/notificationgrid~notificationgrid",
+    "flarum/compone/notificationgrid~notificationgrid",
     "class/src/forum/components/NotificationGrid.js~NotificationGrid.html",
-    "<span>NotificationGrid</span> <span class=\"search-result-import-path\">flarum/components/NotificationGrid</span>",
+    "<span>NotificationGrid</span> <span class=\"search-result-import-path\">flarum/compone/NotificationGrid</span>",
     "class"
   ],
   [
-    "flarum/components/notificationlist~notificationlist",
+    "flarum/compone/notificationlist~notificationlist",
     "class/src/forum/components/NotificationList.js~NotificationList.html",
-    "<span>NotificationList</span> <span class=\"search-result-import-path\">flarum/components/NotificationList</span>",
+    "<span>NotificationList</span> <span class=\"search-result-import-path\">flarum/compone/NotificationList</span>",
     "class"
   ],
   [
@@ -474,21 +480,21 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/notificationsdropdown~notificationsdropdown",
+    "flarum/compone/notificationsdropdown~notificationsdropdown",
     "class/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html",
-    "<span>NotificationsDropdown</span> <span class=\"search-result-import-path\">flarum/components/NotificationsDropdown</span>",
+    "<span>NotificationsDropdown</span> <span class=\"search-result-import-path\">flarum/compone/NotificationsDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/notificationspage~notificationspage",
+    "flarum/compone/notificationspage~notificationspage",
     "class/src/forum/components/NotificationsPage.js~NotificationsPage.html",
-    "<span>NotificationsPage</span> <span class=\"search-result-import-path\">flarum/components/NotificationsPage</span>",
+    "<span>NotificationsPage</span> <span class=\"search-result-import-path\">flarum/compone/NotificationsPage</span>",
     "class"
   ],
   [
-    "flarum/components/page~page",
+    "flarum/compone/page~page",
     "class/src/common/components/Page.js~Page.html",
-    "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
+    "<span>Page</span> <span class=\"search-result-import-path\">flarum/compone/Page</span>",
     "class"
   ],
   [
@@ -504,33 +510,33 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/permissiondropdown~permissiondropdown",
+    "flarum/compone/permissiondropdown~permissiondropdown",
     "class/src/admin/components/PermissionDropdown.js~PermissionDropdown.html",
-    "<span>PermissionDropdown</span> <span class=\"search-result-import-path\">flarum/components/PermissionDropdown</span>",
+    "<span>PermissionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/PermissionDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/permissiongrid~permissiongrid",
+    "flarum/compone/permissiongrid~permissiongrid",
     "class/src/admin/components/PermissionGrid.js~PermissionGrid.html",
-    "<span>PermissionGrid</span> <span class=\"search-result-import-path\">flarum/components/PermissionGrid</span>",
+    "<span>PermissionGrid</span> <span class=\"search-result-import-path\">flarum/compone/PermissionGrid</span>",
     "class"
   ],
   [
-    "flarum/components/permissionspage~permissionspage",
+    "flarum/compone/permissionspage~permissionspage",
     "class/src/admin/components/PermissionsPage.js~PermissionsPage.html",
-    "<span>PermissionsPage</span> <span class=\"search-result-import-path\">flarum/components/PermissionsPage</span>",
+    "<span>PermissionsPage</span> <span class=\"search-result-import-path\">flarum/compone/PermissionsPage</span>",
     "class"
   ],
   [
-    "flarum/components/placeholder~placeholder",
+    "flarum/compone/placeholder~placeholder",
     "class/src/common/components/Placeholder.js~Placeholder.html",
-    "<span>Placeholder</span> <span class=\"search-result-import-path\">flarum/components/Placeholder</span>",
+    "<span>Placeholder</span> <span class=\"search-result-import-path\">flarum/compone/Placeholder</span>",
     "class"
   ],
   [
-    "flarum/components/post~post",
+    "flarum/compone/post~post",
     "class/src/forum/components/Post.js~Post.html",
-    "<span>Post</span> <span class=\"search-result-import-path\">flarum/components/Post</span>",
+    "<span>Post</span> <span class=\"search-result-import-path\">flarum/compone/Post</span>",
     "class"
   ],
   [
@@ -540,39 +546,33 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/postedited~postedited",
+    "flarum/compone/postedited~postedited",
     "class/src/forum/components/PostEdited.js~PostEdited.html",
-    "<span>PostEdited</span> <span class=\"search-result-import-path\">flarum/components/PostEdited</span>",
+    "<span>PostEdited</span> <span class=\"search-result-import-path\">flarum/compone/PostEdited</span>",
     "class"
   ],
   [
-    "flarum/components/postmeta~postmeta",
+    "flarum/compone/postmeta~postmeta",
     "class/src/forum/components/PostMeta.js~PostMeta.html",
-    "<span>PostMeta</span> <span class=\"search-result-import-path\">flarum/components/PostMeta</span>",
+    "<span>PostMeta</span> <span class=\"search-result-import-path\">flarum/compone/PostMeta</span>",
     "class"
   ],
   [
-    "flarum/components/postpreview~postpreview",
+    "flarum/compone/postpreview~postpreview",
     "class/src/forum/components/PostPreview.js~PostPreview.html",
-    "<span>PostPreview</span> <span class=\"search-result-import-path\">flarum/components/PostPreview</span>",
+    "<span>PostPreview</span> <span class=\"search-result-import-path\">flarum/compone/PostPreview</span>",
     "class"
   ],
   [
-    "flarum/components/poststream~poststream",
+    "flarum/compone/poststream~poststream",
     "class/src/forum/components/PostStream.js~PostStream.html",
-    "<span>PostStream</span> <span class=\"search-result-import-path\">flarum/components/PostStream</span>",
+    "<span>PostStream</span> <span class=\"search-result-import-path\">flarum/compone/PostStream</span>",
     "class"
   ],
   [
-    "flarum/components/poststreamscrubber~poststreamscrubber",
+    "flarum/compone/poststreamscrubber~poststreamscrubber",
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html",
-    "<span>PostStreamScrubber</span> <span class=\"search-result-import-path\">flarum/components/PostStreamScrubber</span>",
-    "class"
-  ],
-  [
-    "flarum/states/poststreamstate~poststreamstate",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html",
-    "<span>PostStreamState</span> <span class=\"search-result-import-path\">flarum/states/PostStreamState</span>",
+    "<span>PostStreamScrubber</span> <span class=\"search-result-import-path\">flarum/compone/PostStreamScrubber</span>",
     "class"
   ],
   [
@@ -582,39 +582,45 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/postuser~postuser",
+    "flarum/compone/postuser~postuser",
     "class/src/forum/components/PostUser.js~PostUser.html",
-    "<span>PostUser</span> <span class=\"search-result-import-path\">flarum/components/PostUser</span>",
+    "<span>PostUser</span> <span class=\"search-result-import-path\">flarum/compone/PostUser</span>",
     "class"
   ],
   [
-    "flarum/components/postsuserpage~postsuserpage",
+    "flarum/compone/postsuserpage~postsuserpage",
     "class/src/forum/components/PostsUserPage.js~PostsUserPage.html",
-    "<span>PostsUserPage</span> <span class=\"search-result-import-path\">flarum/components/PostsUserPage</span>",
+    "<span>PostsUserPage</span> <span class=\"search-result-import-path\">flarum/compone/PostsUserPage</span>",
     "class"
   ],
   [
-    "flarum/components/renamediscussionmodal~renamediscussionmodal",
+    "flarum/compone/renamediscussionmodal~renamediscussionmodal",
     "class/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html",
-    "<span>RenameDiscussionModal</span> <span class=\"search-result-import-path\">flarum/components/RenameDiscussionModal</span>",
+    "<span>RenameDiscussionModal</span> <span class=\"search-result-import-path\">flarum/compone/RenameDiscussionModal</span>",
     "class"
   ],
   [
-    "flarum/components/replycomposer~replycomposer",
+    "flarum/compone/replycomposer~replycomposer",
     "class/src/forum/components/ReplyComposer.js~ReplyComposer.html",
-    "<span>ReplyComposer</span> <span class=\"search-result-import-path\">flarum/components/ReplyComposer</span>",
+    "<span>ReplyComposer</span> <span class=\"search-result-import-path\">flarum/compone/ReplyComposer</span>",
     "class"
   ],
   [
-    "flarum/components/replyplaceholder~replyplaceholder",
+    "flarum/compone/replyplaceholder~replyplaceholder",
     "class/src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder.html",
-    "<span>ReplyPlaceholder</span> <span class=\"search-result-import-path\">flarum/components/ReplyPlaceholder</span>",
+    "<span>ReplyPlaceholder</span> <span class=\"search-result-import-path\">flarum/compone/ReplyPlaceholder</span>",
     "class"
   ],
   [
-    "flarum/components/requesterrormodal~requesterrormodal",
+    "flarum/utils/requesterror~requesterror",
+    "class/src/common/utils/RequestError.ts~RequestError.html",
+    "<span>RequestError</span> <span class=\"search-result-import-path\">flarum/utils/RequestError</span>",
+    "class"
+  ],
+  [
+    "flarum/compone/requesterrormodal~requesterrormodal",
     "class/src/common/components/RequestErrorModal.js~RequestErrorModal.html",
-    "<span>RequestErrorModal</span> <span class=\"search-result-import-path\">flarum/components/RequestErrorModal</span>",
+    "<span>RequestErrorModal</span> <span class=\"search-result-import-path\">flarum/compone/RequestErrorModal</span>",
     "class"
   ],
   [
@@ -630,15 +636,15 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/search~search",
+    "flarum/compone/search~search",
     "class/src/forum/components/Search.js~Search.html",
-    "<span>Search</span> <span class=\"search-result-import-path\">flarum/components/Search</span>",
+    "<span>Search</span> <span class=\"search-result-import-path\">flarum/compone/Search</span>",
     "class"
   ],
   [
-    "flarum/components/searchsource~searchsource",
+    "flarum/compone/searchsource~searchsource",
     "class/src/forum/components/SearchSource.js~SearchSource.html",
-    "<span>SearchSource</span> <span class=\"search-result-import-path\">flarum/components/SearchSource</span>",
+    "<span>SearchSource</span> <span class=\"search-result-import-path\">flarum/compone/SearchSource</span>",
     "class"
   ],
   [
@@ -648,21 +654,21 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/select~select",
+    "flarum/compone/select~select",
     "class/src/common/components/Select.js~Select.html",
-    "<span>Select</span> <span class=\"search-result-import-path\">flarum/components/Select</span>",
+    "<span>Select</span> <span class=\"search-result-import-path\">flarum/compone/Select</span>",
     "class"
   ],
   [
-    "flarum/components/selectdropdown~selectdropdown",
+    "flarum/compone/selectdropdown~selectdropdown",
     "class/src/common/components/SelectDropdown.js~SelectDropdown.html",
-    "<span>SelectDropdown</span> <span class=\"search-result-import-path\">flarum/components/SelectDropdown</span>",
+    "<span>SelectDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SelectDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/separator~separator",
+    "flarum/compone/separator~separator",
     "class/src/common/components/Separator.js~Separator.html",
-    "<span>Separator</span> <span class=\"search-result-import-path\">flarum/components/Separator</span>",
+    "<span>Separator</span> <span class=\"search-result-import-path\">flarum/compone/Separator</span>",
     "class"
   ],
   [
@@ -672,51 +678,51 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
-    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
-    "class"
-  ],
-  [
-    "flarum/components/sessiondropdown~sessiondropdown",
+    "flarum/compone/sessiondropdown~sessiondropdown",
     "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
-    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
+    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/settingdropdown~settingdropdown",
+    "flarum/compone/sessiondropdown~sessiondropdown",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
+    "class"
+  ],
+  [
+    "flarum/compone/settingdropdown~settingdropdown",
     "class/src/admin/components/SettingDropdown.js~SettingDropdown.html",
-    "<span>SettingDropdown</span> <span class=\"search-result-import-path\">flarum/components/SettingDropdown</span>",
+    "<span>SettingDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SettingDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/settingsmodal~settingsmodal",
+    "flarum/compone/settingsmodal~settingsmodal",
     "class/src/admin/components/SettingsModal.js~SettingsModal.html",
-    "<span>SettingsModal</span> <span class=\"search-result-import-path\">flarum/components/SettingsModal</span>",
+    "<span>SettingsModal</span> <span class=\"search-result-import-path\">flarum/compone/SettingsModal</span>",
     "class"
   ],
   [
-    "flarum/components/settingspage~settingspage",
+    "flarum/compone/settingspage~settingspage",
     "class/src/forum/components/SettingsPage.js~SettingsPage.html",
-    "<span>SettingsPage</span> <span class=\"search-result-import-path\">flarum/components/SettingsPage</span>",
+    "<span>SettingsPage</span> <span class=\"search-result-import-path\">flarum/compone/SettingsPage</span>",
     "class"
   ],
   [
-    "flarum/components/signupmodal~signupmodal",
+    "flarum/compone/signupmodal~signupmodal",
     "class/src/forum/components/SignUpModal.js~SignUpModal.html",
-    "<span>SignUpModal</span> <span class=\"search-result-import-path\">flarum/components/SignUpModal</span>",
+    "<span>SignUpModal</span> <span class=\"search-result-import-path\">flarum/compone/SignUpModal</span>",
     "class"
   ],
   [
-    "flarum/components/splitdropdown~splitdropdown",
+    "flarum/compone/splitdropdown~splitdropdown",
     "class/src/common/components/SplitDropdown.js~SplitDropdown.html",
-    "<span>SplitDropdown</span> <span class=\"search-result-import-path\">flarum/components/SplitDropdown</span>",
+    "<span>SplitDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SplitDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/statuswidget~statuswidget",
+    "flarum/compone/statuswidget~statuswidget",
     "class/src/admin/components/StatusWidget.js~StatusWidget.html",
-    "<span>StatusWidget</span> <span class=\"search-result-import-path\">flarum/components/StatusWidget</span>",
+    "<span>StatusWidget</span> <span class=\"search-result-import-path\">flarum/compone/StatusWidget</span>",
     "class"
   ],
   [
@@ -738,27 +744,27 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/switch~switch",
+    "flarum/compone/switch~switch",
     "class/src/common/components/Switch.js~Switch.html",
-    "<span>Switch</span> <span class=\"search-result-import-path\">flarum/components/Switch</span>",
+    "<span>Switch</span> <span class=\"search-result-import-path\">flarum/compone/Switch</span>",
     "class"
   ],
   [
-    "flarum/components/terminalpost~terminalpost",
+    "flarum/compone/terminalpost~terminalpost",
     "class/src/forum/components/TerminalPost.js~TerminalPost.html",
-    "<span>TerminalPost</span> <span class=\"search-result-import-path\">flarum/components/TerminalPost</span>",
+    "<span>TerminalPost</span> <span class=\"search-result-import-path\">flarum/compone/TerminalPost</span>",
     "class"
   ],
   [
-    "flarum/components/texteditor~texteditor",
+    "flarum/compone/texteditor~texteditor",
     "class/src/forum/components/TextEditor.js~TextEditor.html",
-    "<span>TextEditor</span> <span class=\"search-result-import-path\">flarum/components/TextEditor</span>",
+    "<span>TextEditor</span> <span class=\"search-result-import-path\">flarum/compone/TextEditor</span>",
     "class"
   ],
   [
-    "flarum/components/texteditorbutton~texteditorbutton",
+    "flarum/compone/texteditorbutton~texteditorbutton",
     "class/src/forum/components/TextEditorButton.js~TextEditorButton.html",
-    "<span>TextEditorButton</span> <span class=\"search-result-import-path\">flarum/components/TextEditorButton</span>",
+    "<span>TextEditorButton</span> <span class=\"search-result-import-path\">flarum/compone/TextEditorButton</span>",
     "class"
   ],
   [
@@ -768,9 +774,9 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/uploadimagebutton~uploadimagebutton",
+    "flarum/compone/uploadimagebutton~uploadimagebutton",
     "class/src/admin/components/UploadImageButton.js~UploadImageButton.html",
-    "<span>UploadImageButton</span> <span class=\"search-result-import-path\">flarum/components/UploadImageButton</span>",
+    "<span>UploadImageButton</span> <span class=\"search-result-import-path\">flarum/compone/UploadImageButton</span>",
     "class"
   ],
   [
@@ -780,28 +786,34 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/usercard~usercard",
+    "flarum/compone/usercard~usercard",
     "class/src/forum/components/UserCard.js~UserCard.html",
-    "<span>UserCard</span> <span class=\"search-result-import-path\">flarum/components/UserCard</span>",
+    "<span>UserCard</span> <span class=\"search-result-import-path\">flarum/compone/UserCard</span>",
     "class"
   ],
   [
-    "flarum/components/userpage~userpage",
+    "flarum/compone/userpage~userpage",
     "class/src/forum/components/UserPage.js~UserPage.html",
-    "<span>UserPage</span> <span class=\"search-result-import-path\">flarum/components/UserPage</span>",
+    "<span>UserPage</span> <span class=\"search-result-import-path\">flarum/compone/UserPage</span>",
     "class"
   ],
   [
-    "flarum/components/userssearchsource~userssearchresults",
+    "flarum/compone/userssearchsource~userssearchresults",
     "class/src/forum/components/UsersSearchSource.js~UsersSearchResults.html",
-    "<span>UsersSearchResults</span> <span class=\"search-result-import-path\">flarum/components/UsersSearchSource</span>",
+    "<span>UsersSearchResults</span> <span class=\"search-result-import-path\">flarum/compone/UsersSearchSource</span>",
     "class"
   ],
   [
-    "flarum/components/welcomehero~welcomehero",
+    "flarum/compone/welcomehero~welcomehero",
     "class/src/forum/components/WelcomeHero.js~WelcomeHero.html",
-    "<span>WelcomeHero</span> <span class=\"search-result-import-path\">flarum/components/WelcomeHero</span>",
+    "<span>WelcomeHero</span> <span class=\"search-result-import-path\">flarum/compone/WelcomeHero</span>",
     "class"
+  ],
+  [
+    "flarum/utils/abbreviatenumber~abbreviatenumber",
+    "function/index.html#static-function-abbreviateNumber",
+    "<span>abbreviateNumber</span> <span class=\"search-result-import-path\">flarum/utils/abbreviateNumber</span>",
+    "function"
   ],
   [
     "flarum/utils/affixsidebar~affixsidebar",
@@ -858,15 +870,33 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "flarum/utils/extract~extract",
+    "function/index.html#static-function-extract",
+    "<span>extract</span> <span class=\"search-result-import-path\">flarum/utils/extract</span>",
+    "function"
+  ],
+  [
     "flarum/utils/extracttext~extracttext",
     "function/index.html#static-function-extractText",
     "<span>extractText</span> <span class=\"search-result-import-path\">flarum/utils/extractText</span>",
     "function"
   ],
   [
+    "flarum/utils/formatnumber~formatnumber",
+    "function/index.html#static-function-formatNumber",
+    "<span>formatNumber</span> <span class=\"search-result-import-path\">flarum/utils/formatNumber</span>",
+    "function"
+  ],
+  [
     "flarum/helpers/fulltime~fulltime",
     "function/index.html#static-function-fullTime",
     "<span>fullTime</span> <span class=\"search-result-import-path\">flarum/helpers/fullTime</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/string~getplaincontent",
+    "function/index.html#static-function-getPlainContent",
+    "<span>getPlainContent</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
     "function"
   ],
   [
@@ -882,6 +912,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "flarum/utils/humantime~humantime",
+    "function/index.html#static-function-humanTime",
+    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/utils/humanTime</span>",
+    "function"
+  ],
+  [
     "flarum/helpers/icon~icon",
     "function/index.html#static-function-icon",
     "<span>icon</span> <span class=\"search-result-import-path\">flarum/helpers/icon</span>",
@@ -891,6 +927,12 @@ window.esdocSearchIndex = [
     "flarum/helpers/listitems~listitems",
     "function/index.html#static-function-listItems",
     "<span>listItems</span> <span class=\"search-result-import-path\">flarum/helpers/listItems</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/livehumantimes~livehumantimes",
+    "function/index.html#static-function-liveHumanTimes",
+    "<span>liveHumanTimes</span> <span class=\"search-result-import-path\">flarum/utils/liveHumanTimes</span>",
     "function"
   ],
   [
@@ -948,9 +990,33 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "flarum/utils/string~slug",
+    "function/index.html#static-function-slug",
+    "<span>slug</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/stringtocolor~stringtocolor",
+    "function/index.html#static-function-stringToColor",
+    "<span>stringToColor</span> <span class=\"search-result-import-path\">flarum/utils/stringToColor</span>",
+    "function"
+  ],
+  [
     "flarum/utils/subclassof~subclassof",
     "function/index.html#static-function-subclassOf",
     "<span>subclassOf</span> <span class=\"search-result-import-path\">flarum/utils/subclassOf</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/string~truncate",
+    "function/index.html#static-function-truncate",
+    "<span>truncate</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/string~ucfirst",
+    "function/index.html#static-function-ucfirst",
+    "<span>ucfirst</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
     "function"
   ],
   [
@@ -2286,12 +2352,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/common/application.js~application#drawer",
-    "class/src/common/Application.js~Application.html#instance-member-drawer",
-    "src/common/Application.js~Application#drawer",
-    "member"
-  ],
-  [
     "src/common/application.js~application#forum",
     "class/src/common/Application.js~Application.html#instance-member-forum",
     "src/common/Application.js~Application#forum",
@@ -2418,81 +2478,33 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/component.js",
-    "file/src/common/Component.js.html",
-    "src/common/Component.js",
+    "src/common/component.ts",
+    "file/src/common/Component.ts.html",
+    "src/common/Component.ts",
     "file"
   ],
   [
-    "src/common/component.js~component#$",
-    "class/src/common/Component.js~Component.html#instance-method-$",
-    "src/common/Component.js~Component#$",
+    "src/common/component.ts~component#$",
+    "class/src/common/Component.ts~Component.html#instance-method-$",
+    "src/common/Component.ts~Component#$",
     "method"
   ],
   [
-    "src/common/component.js~component#config",
-    "class/src/common/Component.js~Component.html#instance-method-config",
-    "src/common/Component.js~Component#config",
-    "method"
-  ],
-  [
-    "src/common/component.js~component#constructor",
-    "class/src/common/Component.js~Component.html#instance-constructor-constructor",
-    "src/common/Component.js~Component#constructor",
-    "method"
-  ],
-  [
-    "src/common/component.js~component#element",
-    "class/src/common/Component.js~Component.html#instance-member-element",
-    "src/common/Component.js~Component#element",
+    "src/common/component.ts~component#element",
+    "class/src/common/Component.ts~Component.html#instance-member-element",
+    "src/common/Component.ts~Component#element",
     "member"
   ],
   [
-    "src/common/component.js~component#init",
-    "class/src/common/Component.js~Component.html#instance-method-init",
-    "src/common/Component.js~Component#init",
+    "src/common/component.ts~component#oncreate",
+    "class/src/common/Component.ts~Component.html#instance-method-oncreate",
+    "src/common/Component.ts~Component#oncreate",
     "method"
   ],
   [
-    "src/common/component.js~component#onunload",
-    "class/src/common/Component.js~Component.html#instance-method-onunload",
-    "src/common/Component.js~Component#onunload",
-    "method"
-  ],
-  [
-    "src/common/component.js~component#props",
-    "class/src/common/Component.js~Component.html#instance-member-props",
-    "src/common/Component.js~Component#props",
-    "member"
-  ],
-  [
-    "src/common/component.js~component#render",
-    "class/src/common/Component.js~Component.html#instance-method-render",
-    "src/common/Component.js~Component#render",
-    "method"
-  ],
-  [
-    "src/common/component.js~component#retain",
-    "class/src/common/Component.js~Component.html#instance-member-retain",
-    "src/common/Component.js~Component#retain",
-    "member"
-  ],
-  [
-    "src/common/component.js~component#view",
-    "class/src/common/Component.js~Component.html#instance-method-view",
-    "src/common/Component.js~Component#view",
-    "method"
-  ],
-  [
-    "src/common/component.js~component.component",
-    "class/src/common/Component.js~Component.html#static-method-component",
-    "src/common/Component.js~Component.component",
-    "method"
-  ],
-  [
-    "src/common/component.js~component.initprops",
-    "class/src/common/Component.js~Component.html#static-method-initProps",
-    "src/common/Component.js~Component.initProps",
+    "src/common/component.ts~component.component",
+    "class/src/common/Component.ts~Component.html#static-method-component",
+    "src/common/Component.ts~Component.component",
     "method"
   ],
   [
@@ -2916,12 +2928,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/dropdown.js~dropdown#config",
-    "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-config",
-    "src/common/components/Dropdown.js~Dropdown#config",
-    "method"
-  ],
-  [
     "src/common/components/dropdown.js~dropdown#getbutton",
     "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-getButton",
     "src/common/components/Dropdown.js~Dropdown#getButton",
@@ -2940,9 +2946,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/dropdown.js~dropdown#init",
-    "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-init",
-    "src/common/components/Dropdown.js~Dropdown#init",
+    "src/common/components/dropdown.js~dropdown#initattrs",
+    "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-initAttrs",
+    "src/common/components/Dropdown.js~Dropdown#initAttrs",
+    "method"
+  ],
+  [
+    "src/common/components/dropdown.js~dropdown#oncreate",
+    "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-oncreate",
+    "src/common/components/Dropdown.js~Dropdown#oncreate",
+    "method"
+  ],
+  [
+    "src/common/components/dropdown.js~dropdown#oninit",
+    "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-oninit",
+    "src/common/components/Dropdown.js~Dropdown#oninit",
     "method"
   ],
   [
@@ -2955,12 +2973,6 @@ window.esdocSearchIndex = [
     "src/common/components/dropdown.js~dropdown#view",
     "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-view",
     "src/common/components/Dropdown.js~Dropdown#view",
-    "method"
-  ],
-  [
-    "src/common/components/dropdown.js~dropdown.initprops",
-    "class/src/common/components/Dropdown.js~Dropdown.html#static-method-initProps",
-    "src/common/components/Dropdown.js~Dropdown.initProps",
     "method"
   ],
   [
@@ -3018,9 +3030,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/loadingindicator.js~loadingindicator#config",
-    "class/src/common/components/LoadingIndicator.js~LoadingIndicator.html#instance-method-config",
-    "src/common/components/LoadingIndicator.js~LoadingIndicator#config",
+    "src/common/components/loadingindicator.js~loadingindicator#oncreate",
+    "class/src/common/components/LoadingIndicator.js~LoadingIndicator.html#instance-method-oncreate",
+    "src/common/components/LoadingIndicator.js~LoadingIndicator#oncreate",
     "method"
   ],
   [
@@ -3087,6 +3099,12 @@ window.esdocSearchIndex = [
     "src/common/components/modal.js~modal#onerror",
     "class/src/common/components/Modal.js~Modal.html#instance-method-onerror",
     "src/common/components/Modal.js~Modal#onerror",
+    "method"
+  ],
+  [
+    "src/common/components/modal.js~modal#onhide",
+    "class/src/common/components/Modal.js~Modal.html#instance-method-onhide",
+    "src/common/components/Modal.js~Modal#onhide",
     "method"
   ],
   [
@@ -3282,9 +3300,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/selectdropdown.js~selectdropdown.initprops",
-    "class/src/common/components/SelectDropdown.js~SelectDropdown.html#static-method-initProps",
-    "src/common/components/SelectDropdown.js~SelectDropdown.initProps",
+    "src/common/components/selectdropdown.js~selectdropdown#initattrs",
+    "class/src/common/components/SelectDropdown.js~SelectDropdown.html#instance-method-initAttrs",
+    "src/common/components/SelectDropdown.js~SelectDropdown#initAttrs",
     "method"
   ],
   [
@@ -3732,6 +3750,120 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/utils/itemlist.ts",
+    "file/src/common/utils/ItemList.ts.html",
+    "src/common/utils/ItemList.ts",
+    "file"
+  ],
+  [
+    "src/common/utils/itemlist.ts~itemlist#add",
+    "class/src/common/utils/ItemList.ts~ItemList.html#instance-method-add",
+    "src/common/utils/ItemList.ts~ItemList#add",
+    "method"
+  ],
+  [
+    "src/common/utils/itemlist.ts~itemlist#constructor",
+    "class/src/common/utils/ItemList.ts~ItemList.html#instance-constructor-constructor",
+    "src/common/utils/ItemList.ts~ItemList#constructor",
+    "method"
+  ],
+  [
+    "src/common/utils/itemlist.ts~itemlist#get",
+    "class/src/common/utils/ItemList.ts~ItemList.html#instance-method-get",
+    "src/common/utils/ItemList.ts~ItemList#get",
+    "method"
+  ],
+  [
+    "src/common/utils/itemlist.ts~itemlist#has",
+    "class/src/common/utils/ItemList.ts~ItemList.html#instance-method-has",
+    "src/common/utils/ItemList.ts~ItemList#has",
+    "method"
+  ],
+  [
+    "src/common/utils/itemlist.ts~itemlist#isempty",
+    "class/src/common/utils/ItemList.ts~ItemList.html#instance-method-isEmpty",
+    "src/common/utils/ItemList.ts~ItemList#isEmpty",
+    "method"
+  ],
+  [
+    "src/common/utils/itemlist.ts~itemlist#items",
+    "class/src/common/utils/ItemList.ts~ItemList.html#instance-member-items",
+    "src/common/utils/ItemList.ts~ItemList#items",
+    "member"
+  ],
+  [
+    "src/common/utils/itemlist.ts~itemlist#merge",
+    "class/src/common/utils/ItemList.ts~ItemList.html#instance-method-merge",
+    "src/common/utils/ItemList.ts~ItemList#merge",
+    "method"
+  ],
+  [
+    "src/common/utils/itemlist.ts~itemlist#remove",
+    "class/src/common/utils/ItemList.ts~ItemList.html#instance-method-remove",
+    "src/common/utils/ItemList.ts~ItemList#remove",
+    "method"
+  ],
+  [
+    "src/common/utils/itemlist.ts~itemlist#replace",
+    "class/src/common/utils/ItemList.ts~ItemList.html#instance-method-replace",
+    "src/common/utils/ItemList.ts~ItemList#replace",
+    "method"
+  ],
+  [
+    "src/common/utils/itemlist.ts~itemlist#toarray",
+    "class/src/common/utils/ItemList.ts~ItemList.html#instance-method-toArray",
+    "src/common/utils/ItemList.ts~ItemList#toArray",
+    "method"
+  ],
+  [
+    "src/common/utils/requesterror.ts",
+    "file/src/common/utils/RequestError.ts.html",
+    "src/common/utils/RequestError.ts",
+    "file"
+  ],
+  [
+    "src/common/utils/requesterror.ts~requesterror#alert",
+    "class/src/common/utils/RequestError.ts~RequestError.html#instance-member-alert",
+    "src/common/utils/RequestError.ts~RequestError#alert",
+    "member"
+  ],
+  [
+    "src/common/utils/requesterror.ts~requesterror#constructor",
+    "class/src/common/utils/RequestError.ts~RequestError.html#instance-constructor-constructor",
+    "src/common/utils/RequestError.ts~RequestError#constructor",
+    "method"
+  ],
+  [
+    "src/common/utils/requesterror.ts~requesterror#options",
+    "class/src/common/utils/RequestError.ts~RequestError.html#instance-member-options",
+    "src/common/utils/RequestError.ts~RequestError#options",
+    "member"
+  ],
+  [
+    "src/common/utils/requesterror.ts~requesterror#response",
+    "class/src/common/utils/RequestError.ts~RequestError.html#instance-member-response",
+    "src/common/utils/RequestError.ts~RequestError#response",
+    "member"
+  ],
+  [
+    "src/common/utils/requesterror.ts~requesterror#responsetext",
+    "class/src/common/utils/RequestError.ts~RequestError.html#instance-member-responseText",
+    "src/common/utils/RequestError.ts~RequestError#responseText",
+    "member"
+  ],
+  [
+    "src/common/utils/requesterror.ts~requesterror#status",
+    "class/src/common/utils/RequestError.ts~RequestError.html#instance-member-status",
+    "src/common/utils/RequestError.ts~RequestError#status",
+    "member"
+  ],
+  [
+    "src/common/utils/requesterror.ts~requesterror#xhr",
+    "class/src/common/utils/RequestError.ts~RequestError.html#instance-member-xhr",
+    "src/common/utils/RequestError.ts~RequestError#xhr",
+    "member"
+  ],
+  [
     "src/common/utils/scrolllistener.js",
     "file/src/common/utils/ScrollListener.js.html",
     "src/common/utils/ScrollListener.js",
@@ -3900,6 +4032,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/utils/abbreviatenumber.ts",
+    "file/src/common/utils/abbreviateNumber.ts.html",
+    "src/common/utils/abbreviateNumber.ts",
+    "file"
+  ],
+  [
     "src/common/utils/anchorscroll.js",
     "file/src/common/utils/anchorScroll.js.html",
     "src/common/utils/anchorScroll.js",
@@ -3924,9 +4062,33 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/common/utils/extract.ts",
+    "file/src/common/utils/extract.ts.html",
+    "src/common/utils/extract.ts",
+    "file"
+  ],
+  [
     "src/common/utils/extracttext.js",
     "file/src/common/utils/extractText.js.html",
     "src/common/utils/extractText.js",
+    "file"
+  ],
+  [
+    "src/common/utils/formatnumber.ts",
+    "file/src/common/utils/formatNumber.ts.html",
+    "src/common/utils/formatNumber.ts",
+    "file"
+  ],
+  [
+    "src/common/utils/humantime.ts",
+    "file/src/common/utils/humanTime.ts.html",
+    "src/common/utils/humanTime.ts",
+    "file"
+  ],
+  [
+    "src/common/utils/livehumantimes.ts",
+    "file/src/common/utils/liveHumanTimes.ts.html",
+    "src/common/utils/liveHumanTimes.ts",
     "file"
   ],
   [
@@ -3948,6 +4110,18 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/common/utils/string.ts",
+    "file/src/common/utils/string.ts.html",
+    "src/common/utils/string.ts",
+    "file"
+  ],
+  [
+    "src/common/utils/stringtocolor.ts",
+    "file/src/common/utils/stringToColor.ts.html",
+    "src/common/utils/stringToColor.ts",
+    "file"
+  ],
+  [
     "src/common/utils/subclassof.js",
     "file/src/common/utils/subclassOf.js.html",
     "src/common/utils/subclassOf.js",
@@ -3964,12 +4138,6 @@ window.esdocSearchIndex = [
     "class/src/forum/ForumApplication.js~ForumApplication.html#instance-method-authenticationComplete",
     "src/forum/ForumApplication.js~ForumApplication#authenticationComplete",
     "method"
-  ],
-  [
-    "src/forum/forumapplication.js~forumapplication#composer",
-    "class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-composer",
-    "src/forum/ForumApplication.js~ForumApplication#composer",
-    "member"
   ],
   [
     "src/forum/forumapplication.js~forumapplication#constructor",
@@ -4008,12 +4176,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/forumapplication.js~forumapplication#notifications",
-    "class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-notifications",
-    "src/forum/ForumApplication.js~ForumApplication#notifications",
-    "member"
-  ],
-  [
     "src/forum/forumapplication.js~forumapplication#pane",
     "class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-pane",
     "src/forum/ForumApplication.js~ForumApplication#pane",
@@ -4023,12 +4185,6 @@ window.esdocSearchIndex = [
     "src/forum/forumapplication.js~forumapplication#postcomponents",
     "class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-postComponents",
     "src/forum/ForumApplication.js~ForumApplication#postComponents",
-    "member"
-  ],
-  [
-    "src/forum/forumapplication.js~forumapplication#search",
-    "class/src/forum/ForumApplication.js~ForumApplication.html#instance-member-search",
-    "src/forum/ForumApplication.js~ForumApplication#search",
     "member"
   ],
   [
@@ -4752,12 +4908,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/discussionpage.js~discussionpage#load",
-    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-load",
-    "src/forum/components/DiscussionPage.js~DiscussionPage#load",
-    "method"
-  ],
-  [
     "src/forum/components/discussionpage.js~discussionpage#near",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-near",
     "src/forum/components/DiscussionPage.js~DiscussionPage#near",
@@ -4773,6 +4923,12 @@ window.esdocSearchIndex = [
     "src/forum/components/discussionpage.js~discussionpage#positionchanged",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-positionChanged",
     "src/forum/components/DiscussionPage.js~DiscussionPage#positionChanged",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionpage.js~discussionpage#refresh",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-refresh",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#refresh",
     "method"
   ],
   [
@@ -5166,12 +5322,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/headerprimary.js~headerprimary#config",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-config",
-    "src/forum/components/HeaderPrimary.js~HeaderPrimary#config",
-    "method"
-  ],
-  [
     "src/forum/components/headerprimary.js~headerprimary#items",
     "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-items",
     "src/forum/components/HeaderPrimary.js~HeaderPrimary#items",
@@ -5188,12 +5338,6 @@ window.esdocSearchIndex = [
     "file/src/forum/components/HeaderSecondary.js.html",
     "src/forum/components/HeaderSecondary.js",
     "file"
-  ],
-  [
-    "src/forum/components/headersecondary.js~headersecondary#config",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-config",
-    "src/forum/components/HeaderSecondary.js~HeaderSecondary#config",
-    "method"
   ],
   [
     "src/forum/components/headersecondary.js~headersecondary#items",
@@ -5832,6 +5976,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/poststream.js~poststream#count",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-count",
+    "src/forum/components/PostStream.js~PostStream#count",
+    "method"
+  ],
+  [
     "src/forum/components/poststream.js~poststream#discussion",
     "class/src/forum/components/PostStream.js~PostStream.html#instance-member-discussion",
     "src/forum/components/PostStream.js~PostStream#discussion",
@@ -5850,9 +6000,75 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/poststream.js~poststream#gotofirst",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToFirst",
+    "src/forum/components/PostStream.js~PostStream#goToFirst",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#gotoindex",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToIndex",
+    "src/forum/components/PostStream.js~PostStream#goToIndex",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#gotolast",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToLast",
+    "src/forum/components/PostStream.js~PostStream#goToLast",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#gotonumber",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-goToNumber",
+    "src/forum/components/PostStream.js~PostStream#goToNumber",
+    "method"
+  ],
+  [
     "src/forum/components/poststream.js~poststream#init",
     "class/src/forum/components/PostStream.js~PostStream.html#instance-method-init",
     "src/forum/components/PostStream.js~PostStream#init",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#loadnearindex",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNearIndex",
+    "src/forum/components/PostStream.js~PostStream#loadNearIndex",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#loadnearnumber",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNearNumber",
+    "src/forum/components/PostStream.js~PostStream#loadNearNumber",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#loadnext",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadNext",
+    "src/forum/components/PostStream.js~PostStream#loadNext",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#loadpage",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadPage",
+    "src/forum/components/PostStream.js~PostStream#loadPage",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#loadpagetimeouts",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-loadPageTimeouts",
+    "src/forum/components/PostStream.js~PostStream#loadPageTimeouts",
+    "member"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#loadprevious",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadPrevious",
+    "src/forum/components/PostStream.js~PostStream#loadPrevious",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#loadrange",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadRange",
+    "src/forum/components/PostStream.js~PostStream#loadRange",
     "method"
   ],
   [
@@ -5862,10 +6078,34 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#prevtarget",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-prevTarget",
-    "src/forum/components/PostStream.js~PostStream#prevTarget",
+    "src/forum/components/poststream.js~poststream#pagesloading",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-pagesLoading",
+    "src/forum/components/PostStream.js~PostStream#pagesLoading",
     "member"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#paused",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-paused",
+    "src/forum/components/PostStream.js~PostStream#paused",
+    "member"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#posts",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-posts",
+    "src/forum/components/PostStream.js~PostStream#posts",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#reset",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-reset",
+    "src/forum/components/PostStream.js~PostStream#reset",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#sanitizeindex",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-sanitizeIndex",
+    "src/forum/components/PostStream.js~PostStream#sanitizeIndex",
+    "method"
   ],
   [
     "src/forum/components/poststream.js~poststream#scrolllistener",
@@ -5892,21 +6132,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#stream",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-stream",
-    "src/forum/components/PostStream.js~PostStream#stream",
-    "member"
-  ],
-  [
-    "src/forum/components/poststream.js~poststream#triggerscroll",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-triggerScroll",
-    "src/forum/components/PostStream.js~PostStream#triggerScroll",
+    "src/forum/components/poststream.js~poststream#show",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-show",
+    "src/forum/components/PostStream.js~PostStream#show",
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#updatescrubber",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-updateScrubber",
-    "src/forum/components/PostStream.js~PostStream#updateScrubber",
+    "src/forum/components/poststream.js~poststream#unpause",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-unpause",
+    "src/forum/components/PostStream.js~PostStream#unpause",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#update",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-update",
+    "src/forum/components/PostStream.js~PostStream#update",
     "method"
   ],
   [
@@ -5916,21 +6156,51 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/poststream.js~poststream#viewingend",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-viewingEnd",
+    "src/forum/components/PostStream.js~PostStream#viewingEnd",
+    "member"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#visibleend",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-visibleEnd",
+    "src/forum/components/PostStream.js~PostStream#visibleEnd",
+    "member"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#visiblestart",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-visibleStart",
+    "src/forum/components/PostStream.js~PostStream#visibleStart",
+    "member"
+  ],
+  [
     "src/forum/components/poststreamscrubber.js",
     "file/src/forum/components/PostStreamScrubber.js.html",
     "src/forum/components/PostStreamScrubber.js",
     "file"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#adjustingheight",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-adjustingHeight",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#adjustingHeight",
-    "member"
-  ],
-  [
     "src/forum/components/poststreamscrubber.js~poststreamscrubber#config",
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-config",
     "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#config",
+    "method"
+  ],
+  [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#count",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-count",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#count",
+    "method"
+  ],
+  [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#description",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-description",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#description",
+    "member"
+  ],
+  [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#disabled",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-disabled",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#disabled",
     "method"
   ],
   [
@@ -5955,6 +6225,12 @@ window.esdocSearchIndex = [
     "src/forum/components/poststreamscrubber.js~poststreamscrubber#handlers",
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-handlers",
     "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#handlers",
+    "member"
+  ],
+  [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#index",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-index",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#index",
     "member"
   ],
   [
@@ -6012,9 +6288,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#onscroll",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onscroll",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onscroll",
+    "method"
+  ],
+  [
     "src/forum/components/poststreamscrubber.js~poststreamscrubber#percentperpost",
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-percentPerPost",
     "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#percentPerPost",
+    "method"
+  ],
+  [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#renderscrollbar",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-renderScrollbar",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#renderScrollbar",
     "method"
   ],
   [
@@ -6024,15 +6312,21 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#stream",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-stream",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#stream",
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#streamwasunpaused",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-streamWasUnpaused",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#streamWasUnpaused",
+    "method"
+  ],
+  [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#subtree",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-subtree",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#subtree",
     "member"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#updatescrubbervalues",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-updateScrubberValues",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#updateScrubberValues",
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#update",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-update",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#update",
     "method"
   ],
   [
@@ -6040,6 +6334,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-view",
     "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#view",
     "method"
+  ],
+  [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#visible",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-visible",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#visible",
+    "member"
   ],
   [
     "src/forum/components/postuser.js",
@@ -7252,204 +7552,6 @@ window.esdocSearchIndex = [
     "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-parseResults",
     "src/forum/states/NotificationListState.js~NotificationListState#parseResults",
     "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js",
-    "file/src/forum/states/PostStreamState.js.html",
-    "src/forum/states/PostStreamState.js",
-    "file"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#constructor",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-constructor-constructor",
-    "src/forum/states/PostStreamState.js~PostStreamState#constructor",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#count",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-count",
-    "src/forum/states/PostStreamState.js~PostStreamState#count",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#description",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-description",
-    "src/forum/states/PostStreamState.js~PostStreamState#description",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#disabled",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-disabled",
-    "src/forum/states/PostStreamState.js~PostStreamState#disabled",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#discussion",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-discussion",
-    "src/forum/states/PostStreamState.js~PostStreamState#discussion",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#gotofirst",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-goToFirst",
-    "src/forum/states/PostStreamState.js~PostStreamState#goToFirst",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#gotoindex",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-goToIndex",
-    "src/forum/states/PostStreamState.js~PostStreamState#goToIndex",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#gotolast",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-goToLast",
-    "src/forum/states/PostStreamState.js~PostStreamState#goToLast",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#gotonumber",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-goToNumber",
-    "src/forum/states/PostStreamState.js~PostStreamState#goToNumber",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#index",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-index",
-    "src/forum/states/PostStreamState.js~PostStreamState#index",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#loadnearindex",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadNearIndex",
-    "src/forum/states/PostStreamState.js~PostStreamState#loadNearIndex",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#loadnearnumber",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadNearNumber",
-    "src/forum/states/PostStreamState.js~PostStreamState#loadNearNumber",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#loadnext",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadNext",
-    "src/forum/states/PostStreamState.js~PostStreamState#loadNext",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#loadpage",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadPage",
-    "src/forum/states/PostStreamState.js~PostStreamState#loadPage",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#loadpagetimeouts",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-loadPageTimeouts",
-    "src/forum/states/PostStreamState.js~PostStreamState#loadPageTimeouts",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#loadprevious",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadPrevious",
-    "src/forum/states/PostStreamState.js~PostStreamState#loadPrevious",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#loadpromise",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-loadPromise",
-    "src/forum/states/PostStreamState.js~PostStreamState#loadPromise",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#loadrange",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadRange",
-    "src/forum/states/PostStreamState.js~PostStreamState#loadRange",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#noanimationscroll",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-noAnimationScroll",
-    "src/forum/states/PostStreamState.js~PostStreamState#noAnimationScroll",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#number",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-number",
-    "src/forum/states/PostStreamState.js~PostStreamState#number",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#pagesloading",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-pagesLoading",
-    "src/forum/states/PostStreamState.js~PostStreamState#pagesLoading",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#paused",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-paused",
-    "src/forum/states/PostStreamState.js~PostStreamState#paused",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#posts",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-posts",
-    "src/forum/states/PostStreamState.js~PostStreamState#posts",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#reset",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-reset",
-    "src/forum/states/PostStreamState.js~PostStreamState#reset",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#sanitizeindex",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-sanitizeIndex",
-    "src/forum/states/PostStreamState.js~PostStreamState#sanitizeIndex",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#show",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-show",
-    "src/forum/states/PostStreamState.js~PostStreamState#show",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#targetpost",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-targetPost",
-    "src/forum/states/PostStreamState.js~PostStreamState#targetPost",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#update",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-update",
-    "src/forum/states/PostStreamState.js~PostStreamState#update",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#viewingend",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-viewingEnd",
-    "src/forum/states/PostStreamState.js~PostStreamState#viewingEnd",
-    "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#visible",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-visible",
-    "src/forum/states/PostStreamState.js~PostStreamState#visible",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#visibleend",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-visibleEnd",
-    "src/forum/states/PostStreamState.js~PostStreamState#visibleEnd",
-    "member"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#visiblestart",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-visibleStart",
-    "src/forum/states/PostStreamState.js~PostStreamState#visibleStart",
-    "member"
   ],
   [
     "src/forum/states/searchstate.js",

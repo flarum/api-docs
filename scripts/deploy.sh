@@ -41,17 +41,17 @@ echo -e "\e[36m\e[1mBuilding for commit $SHA"
 node src --php --js
 
 # rewrite js
-echo -e "\e[36m\e[1mBuilding ds/frontend-framework-rewrite-mithril"
+echo -e "\e[36m\e[1mBuilding mithril-2-update"
 
 cd $FLARUM_FOLDER
 git fetch origin
-git checkout ds/frontend-framework-rewrite-mithril
+git checkout mithril-2-update
 SHA_REWRITE=$(getSHA)
 
 cd js
 npm i --prefer-offline --no-audit
 npm i -g typedoc typescript typedoc-plugin-external-module-map
-typedoc src --includeDeclarations --ignoreCompilerErrors --jsx preserve --out "$REPO_FOLDER/docs/js/ds~frontend-framework-rewrite-mithril" --excludeExternals --name 'Flarum API' --plugin typedoc-plugin-external-module-map --external-modulemap ".*js\/src\/([\\w\\-_]+(\/[\\w\\-_]+)?)\/"  --listInvalidSymbolLinks --hideGenerator
+typedoc src --includeDeclarations --ignoreCompilerErrors --jsx preserve --out "$REPO_FOLDER/docs/js/mithril-2-update" --excludeExternals --name 'Flarum API' --plugin typedoc-plugin-external-module-map --external-modulemap ".*(?:js|tsx?)\/src\/([\\w\\-_]+(\/[\\w\\-_]+)?)\/"  --listInvalidSymbolLinks --hideGenerator
 
 # -> DEPLOY
 

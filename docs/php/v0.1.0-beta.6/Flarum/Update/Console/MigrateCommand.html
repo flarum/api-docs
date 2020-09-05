@@ -5,128 +5,257 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Update\Console\MigrateCommand | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Update_Console_MigrateCommand" data-root-path="../../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../../index.html">v0.1.0-beta.6</a>
-    </li>
-  </ul>
-</nav>
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://api.flarum.dev/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/core"></a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option value="../../../../v0.1.0-beta" data-version="v0.1.0-beta">v0.1.0-beta</option>
+                                            <option value="../../../../v0.1.0-beta.2" data-version="v0.1.0-beta.2">v0.1.0-beta.2</option>
+                                            <option value="../../../../v0.1.0-beta.3" data-version="v0.1.0-beta.3">v0.1.0-beta.3</option>
+                                            <option value="../../../../v0.1.0-beta.4" data-version="v0.1.0-beta.4">v0.1.0-beta.4</option>
+                                            <option value="../../../../v0.1.0-beta.5" data-version="v0.1.0-beta.5">v0.1.0-beta.5</option>
+                                            <option value="../../../../v0.1.0-beta.6" data-version="v0.1.0-beta.6">v0.1.0-beta.6</option>
+                                            <option value="../../../../v0.1.0-beta.7" data-version="v0.1.0-beta.7">v0.1.0-beta.7</option>
+                                            <option value="../../../../v0.1.0-beta.8" data-version="v0.1.0-beta.8">v0.1.0-beta.8</option>
+                                            <option value="../../../../v0.1.0-beta.9" data-version="v0.1.0-beta.9">v0.1.0-beta.9</option>
+                                            <option value="../../../../v0.1.0-beta.10" data-version="v0.1.0-beta.10">v0.1.0-beta.10</option>
+                                            <option value="../../../../v0.1.0-beta.11" data-version="v0.1.0-beta.11">v0.1.0-beta.11</option>
+                                            <option value="../../../../v0.1.0-beta.12" data-version="v0.1.0-beta.12">v0.1.0-beta.12</option>
+                                            <option value="../../../../v0.1.0-beta.13" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
+                                            <option value="../../../../master" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../../classes.html">Classes</a></li>
 
-                <li><a href="../../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../../traits.html">Traits</a></li>
-        <li><a href="../../../doc-index.html">Index</a></li>
-        <li><a href="../../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                    <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+                <div id="page-content">
+                    
     <div class="page-header">
         <h1>
             MigrateCommand
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Update/Console/MigrateCommand.php">
-        <img src="../../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class        
     <strong>MigrateCommand</strong>        extends <a href="../../../Flarum/Console/Command/AbstractCommand.html"><abbr title="Flarum\Console\Command\AbstractCommand">AbstractCommand</abbr></a></p>
+
+        
+    
 
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_input">
+                                        protected                                        InputInterface
+                </td>
+                <td>$input</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Console/Command/AbstractCommand.html#property_input"><abbr title="Flarum\Console\Command\AbstractCommand">AbstractCommand</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L22" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_output">
+                                        protected                                        OutputInterface
+                </td>
+                <td>$output</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Console/Command/AbstractCommand.html#property_output"><abbr title="Flarum\Console\Command\AbstractCommand">AbstractCommand</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L27" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_container">
+                                        protected                                        Container
+                </td>
+                <td>$container</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L21" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_execute">execute</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p>{@inheritdoc}</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Console/Command/AbstractCommand.html#method_execute"><abbr title="Flarum\Console\Command\AbstractCommand">AbstractCommand</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Update/Console/MigrateCommand.php#L26">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L32" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_upgrade">upgrade</a>()
+                    <a href="#method_fire">fire</a>()
+        
+                                            <p>Fire the command.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L46" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_hasOption">hasOption</a>(string $name)
+        
+                                            <p>Did the user pass the given option?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Console/Command/AbstractCommand.html#method_hasOption"><abbr title="Flarum\Console\Command\AbstractCommand">AbstractCommand</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L51" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_info">info</a>(string $string)
+        
+                                            <p>Send an info string to the user.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Console/Command/AbstractCommand.html#method_info"><abbr title="Flarum\Console\Command\AbstractCommand">AbstractCommand</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L61" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Update/Console/MigrateCommand.php#L55">
-        <img src="../../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L26" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_configure">configure</a>()
+        
+                                            <p>{@inheritdoc}</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L36" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_upgrade">upgrade</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L55" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -138,16 +267,167 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_execute">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Update/Console/MigrateCommand.php#L26">
-                at line 26
-            </a>
+                            in <a href="../../../Flarum/Console/Command/AbstractCommand.html#method_execute"><abbr title="Flarum\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Console/Command/AbstractCommand.php#L32" target="_blank">
+            line 32
+        </a>
         </div>
-        <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)</code>
+        <code>            protected        
+    <strong>execute</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>{@inheritdoc}</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fire">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L46" target="_blank">
+            line 46
+        </a>
+        </div>
+        <code>            protected        
+    <strong>fire</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Fire the command.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasOption">
+        <div class="location">
+                            in <a href="../../../Flarum/Console/Command/AbstractCommand.html#method_hasOption"><abbr title="Flarum\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Console/Command/AbstractCommand.php#L51" target="_blank">
+            line 51
+        </a>
+        </div>
+        <code>            protected        bool
+    <strong>hasOption</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Did the user pass the given option?</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_info">
+        <div class="location">
+                            in <a href="../../../Flarum/Console/Command/AbstractCommand.html#method_info"><abbr title="Flarum\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Console/Command/AbstractCommand.php#L61" target="_blank">
+            line 61
+        </a>
+        </div>
+        <code>            protected        
+    <strong>info</strong>(string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an info string to the user.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L26" target="_blank">
+            line 26
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -167,16 +447,45 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_upgrade">
+                    <h3 id="method_configure">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.6/src/Update/Console/MigrateCommand.php#L55">
-                at line 55
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L36" target="_blank">
+            line 36
+        </a>
         </div>
-        <code>                    
-    <strong>upgrade</strong>()</code>
+        <code>            protected        
+    <strong>configure</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>{@inheritdoc}</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_upgrade">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.5/src/Update/Console/MigrateCommand.php#L55" target="_blank">
+            line 55
+        </a>
+        </div>
+        <code>                    
+    <strong>upgrade</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
                 <div class="tags">
             
             
@@ -188,13 +497,15 @@
             </div>
 
     
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+            </div>
+        </div>
+    </div>
     </body>
 
 </html>

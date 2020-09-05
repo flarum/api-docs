@@ -5,121 +5,130 @@
     <meta name="robots" content="index, follow, all" />
     <title>Flarum\Core\User | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
 
     <body id="class" data-name="class:Flarum_Core_User" data-root-path="../../">
-        <div id="content">
-  <nav id="flarum-header">
-  <h1 class="flarum-title">Flarum API</h1>
-  <ul>
-    <li><a href="http://flarum.org">Flarum</a></li>
-    <li><a href="https://discuss.flarum.org">Forum</a></li>
-    <li class="active"><a href="../../index.html">PHP Docs</a></li>
-    <li><a href="https://datitisev.github.io/FlarumAPIDocs/js/">JS Docs</a></li>
-  </ul>
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
 
-  <ul class="socials">
-    <li><a class="fa fa-github" target="_blank" href="https://github.com/flarum/core"></a></li>
-  </ul>
-  <ul class="navbar-right">
-    <li class="version">
-      <a href="../../../index.html">v0.1.0-beta.4</a>
-    </li>
-  </ul>
-</nav>
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://api.flarum.dev/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/core"></a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <nav id="site-nav" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option value="../../../v0.1.0-beta" data-version="v0.1.0-beta">v0.1.0-beta</option>
+                                            <option value="../../../v0.1.0-beta.2" data-version="v0.1.0-beta.2">v0.1.0-beta.2</option>
+                                            <option value="../../../v0.1.0-beta.3" data-version="v0.1.0-beta.3">v0.1.0-beta.3</option>
+                                            <option value="../../../v0.1.0-beta.4" data-version="v0.1.0-beta.4">v0.1.0-beta.4</option>
+                                            <option value="../../../v0.1.0-beta.5" data-version="v0.1.0-beta.5">v0.1.0-beta.5</option>
+                                            <option value="../../../v0.1.0-beta.6" data-version="v0.1.0-beta.6">v0.1.0-beta.6</option>
+                                            <option value="../../../v0.1.0-beta.7" data-version="v0.1.0-beta.7">v0.1.0-beta.7</option>
+                                            <option value="../../../v0.1.0-beta.8" data-version="v0.1.0-beta.8">v0.1.0-beta.8</option>
+                                            <option value="../../../v0.1.0-beta.9" data-version="v0.1.0-beta.9">v0.1.0-beta.9</option>
+                                            <option value="../../../v0.1.0-beta.10" data-version="v0.1.0-beta.10">v0.1.0-beta.10</option>
+                                            <option value="../../../v0.1.0-beta.11" data-version="v0.1.0-beta.11">v0.1.0-beta.11</option>
+                                            <option value="../../../v0.1.0-beta.12" data-version="v0.1.0-beta.12">v0.1.0-beta.12</option>
+                                            <option value="../../../v0.1.0-beta.13" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
+                                            <option value="../../../master" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-elements">
-      <ul class="nav navbar-nav">
-        <li><a href="../../classes.html">Classes</a></li>
 
-                <li><a href="../../namespaces.html">Namespaces</a></li>
-                <li><a href="../../interfaces.html">Interfaces</a></li>
-        <li><a href="../../traits.html">Traits</a></li>
-        <li><a href="../../doc-index.html">Index</a></li>
-        <li><a href="../../search.html">Search</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                    <div id="api-tree"></div>
 
-  <div id="left-column">
-    <div id="control-panel">
-  <form id="search-form" action="../../search.html" method="GET">
-    <span class="glyphicon glyphicon-search"></span>
-    <input name="search"
-    class="typeahead form-control"
-    type="search"
-    placeholder="Search">
-  </form>
-</div>
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
 
-    <div id="api-tree"></div>
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
 
-  </div>
-  <div id="right-column">
-    <div id="page-content">
-      
+                <div id="page-content">
+                    
     <div class="page-header">
         <h1>
             User
+                
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php">
-        <img src="../../img/code.svg" height="30" />
+                <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>class
+    <p>    class        
     <strong>User</strong>        extends <a href="../../Flarum/Database/AbstractModel.html"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></p>
+
+        
+    
 
     
             <h2>Traits</h2>
 
-        <div class="container-fluid underlined">
+        
+    <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Core/Support/EventGeneratorTrait.html"><abbr title="Flarum\Core\Support\EventGeneratorTrait">Flarum\Core\Support\EventGeneratorTrait</abbr></a>
-                                    </div>
+                                            <a href="../../Flarum/Core/Support/EventGeneratorTrait.html"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/Support/EventGeneratorTrait.php">
-        <img src="../../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/Support/EventGeneratorTrait.php" target="_blank">
+        <img src="../../assets/img/code.svg"  />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Core/Support/ScopeVisibilityTrait.html"><abbr title="Flarum\Core\Support\ScopeVisibilityTrait">Flarum\Core\Support\ScopeVisibilityTrait</abbr></a>
-                                    </div>
+                                            <a href="../../Flarum/Core/Support/ScopeVisibilityTrait.html"><abbr title="Flarum\Core\Support\ScopeVisibilityTrait">ScopeVisibilityTrait</abbr></a>
+                                            
+                </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/Support/ScopeVisibilityTrait.php">
-        <img src="../../img/code.svg"  />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/Support/ScopeVisibilityTrait.php" target="_blank">
+        <img src="../../assets/img/code.svg"  />
     </a>
 
                 </div>
@@ -132,121 +141,85 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_timestamps">
-                                                                                boolean
+                                                                                bool
                 </td>
                 <td>$timestamps</td>
                 <td class="last">Indicates if the model should be timestamped. Turn off by default.</td>
                 <td><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#property_timestamps"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L33">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L33" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
-                <td class="type" id="property_id">
-                                                                                int
+                <td class="type" id="property_afterSaveCallbacks">
+                                        protected                                        callable[]
                 </td>
-                <td>$id</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td>$afterSaveCallbacks</td>
+                <td class="last">An array of callbacks to be run once after the model is saved.</td>
+                <td><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#property_afterSaveCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L40" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
-                <td class="type" id="property_username">
-                                                                                string
+                <td class="type" id="property_afterDeleteCallbacks">
+                                        protected                                        callable[]
                 </td>
-                <td>$username</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td>$afterDeleteCallbacks</td>
+                <td class="last">An array of callbacks to be run once after the model is deleted.</td>
+                <td><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#property_afterDeleteCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L47" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
-                <td class="type" id="property_email">
-                                                                                string
+                <td class="type" id="property_pendingEvents">
+                                        protected                                        array
                 </td>
-                <td>$email</td>
+                <td>$pendingEvents</td>
                 <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td><small>from&nbsp;<a href="../../Flarum/Core/Support/EventGeneratorTrait.html#property_pendingEvents"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L18" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
-                <td class="type" id="property_is_activated">
-                                                                                bool
+                <td class="type" id="property_table">
+                                        protected                                        
                 </td>
-                <td>$is_activated</td>
-                <td class="last"></td>
+                <td>$table</td>
+                <td class="last">{@inheritdoc}</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L62" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
-                <td class="type" id="property_password">
-                                                                                string
+                <td class="type" id="property_dates">
+                                        protected                                        
                 </td>
-                <td>$password</td>
-                <td class="last"></td>
+                <td>$dates</td>
+                <td class="last">{@inheritdoc}</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L67" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
-                <td class="type" id="property_locale">
-                                                                                string
+                <td class="type" id="property_permissions">
+                                        protected                                        string[]|null
                 </td>
-                <td>$locale</td>
-                <td class="last"></td>
+                <td>$permissions</td>
+                <td class="last">An array of permissions that this user has.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_bio">
-                                                                                string
-                </td>
-                <td>$bio</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_avatar_path">
-                                                                                <abbr title="string|null">string|null</abbr>
-                </td>
-                <td>$avatar_path</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_avatar_url">
-                                                                                string
-                </td>
-                <td>$avatar_url</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L79" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -257,56 +230,188 @@
                 <td>$preferences</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hasher">
+                    static                    protected                                        Hasher
+                </td>
+                <td>$hasher</td>
+                <td class="last">The hasher with which to hash passwords.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L97" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_gate">
+                    static                    protected                                        Gate
+                </td>
+                <td>$gate</td>
+                <td class="last">The access gate.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L104" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_id">
+                                                                                int
+                </td>
+                <td>$id</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_username">
+                                                                                string
+                </td>
+                <td>$username</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_email">
+                                                                                string
+                </td>
+                <td>$email</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_is_activated">
+                                                                                bool
+                </td>
+                <td>$is_activated</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_password">
+                                                                                string
+                </td>
+                <td>$password</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_locale">
+                                                                                string
+                </td>
+                <td>$locale</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bio">
+                                                                                string
+                </td>
+                <td>$bio</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_avatar_path">
+                                                                                string|null
+                </td>
+                <td>$avatar_path</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_avatar_url">
+                                                                                string
+                </td>
+                <td>$avatar_url</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
                 <td class="type" id="property_join_time">
-                                                                                <abbr title="Carbon\Carbon|null">Carbon|null</abbr>
+                                                                                <abbr title="Carbon\Carbon">Carbon</abbr>|null
                 </td>
                 <td>$join_time</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
                 <td class="type" id="property_last_seen_time">
-                                                                                <abbr title="Carbon\Carbon|null">Carbon|null</abbr>
+                                                                                <abbr title="Carbon\Carbon">Carbon</abbr>|null
                 </td>
                 <td>$last_seen_time</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
                 <td class="type" id="property_read_time">
-                                                                                <abbr title="Carbon\Carbon|null">Carbon|null</abbr>
+                                                                                <abbr title="Carbon\Carbon">Carbon</abbr>|null
                 </td>
                 <td>$read_time</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
                 <td class="type" id="property_notifications_read_time">
-                                                                                <abbr title="Carbon\Carbon|null">Carbon|null</abbr>
+                                                                                <abbr title="Carbon\Carbon">Carbon</abbr>|null
                 </td>
                 <td>$notifications_read_time</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -317,8 +422,8 @@
                 <td>$discussions_count</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -329,8 +434,8 @@
                 <td>$comments_count</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L54">
-        <img src="../../img/code.svg" height="18" />
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -339,813 +444,898 @@
     
             <h2>Methods</h2>
 
-            <div id="methods-summary" class="container-fluid underlined">
+            <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_boot">boot</a>()
-                                            <p class="method-description">Boot the model.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_boot">boot</a>()
+        
+                                            <p>Boot the model.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L111">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L111" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getDates">getDates</a>()
-                                            <p class="method-description">Get the attributes that should be converted to dates.</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_getDates"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                    <a href="#method_getDates">getDates</a>()
+        
+                                            <p>Get the attributes that should be converted to dates.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_getDates"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L74">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L74" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     mixed
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getAttribute">getAttribute</a>(string $key)
-                                            <p class="method-description">Get an attribute from the model. If nothing is found, attempt to load
+                    <a href="#method_getAttribute">getAttribute</a>(string $key)
+        
+                                            <p>Get an attribute from the model. If nothing is found, attempt to load
 a custom relation method with this key.</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_getAttribute"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_getAttribute"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L98">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L98" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getCustomRelation">getCustomRelation</a>(string $name)
+        
+                                            <p>Get a custom relation object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_getCustomRelation"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L123" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_afterSave">afterSave</a>(callable $callback)
-                                            <p class="method-description">Register a callback to be run once after the model is saved.</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_afterSave"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                    <a href="#method_afterSave">afterSave</a>(callable $callback)
+        
+                                            <p>Register a callback to be run once after the model is saved.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_afterSave"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L136">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L136" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_afterDelete">afterDelete</a>(callable $callback)
-                                            <p class="method-description">Register a callback to be run once after the model is deleted.</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_afterDelete"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                    <a href="#method_afterDelete">afterDelete</a>(callable $callback)
+        
+                                            <p>Register a callback to be run once after the model is deleted.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_afterDelete"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L147">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L147" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     callable[]
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_releaseAfterSaveCallbacks">releaseAfterSaveCallbacks</a>()
+                    <a href="#method_releaseAfterSaveCallbacks">releaseAfterSaveCallbacks</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterSaveCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterSaveCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L155">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L155" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     callable[]
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_releaseAfterDeleteCallbacks">releaseAfterDeleteCallbacks</a>()
+                    <a href="#method_releaseAfterDeleteCallbacks">releaseAfterDeleteCallbacks</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterDeleteCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterDeleteCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L167">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L167" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method___call">__call</a>($method, $arguments)
-                                            <p class="method-description">{@inheritdoc}</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method___call"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                    <a href="#method___call">__call</a>($method, $arguments)
+        
+                                            <p>{@inheritdoc}</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method___call"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L179">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L179" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_raise">raise</a>(mixed $event)
-                                            <p class="method-description">Raise a new event.</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Core/Support/EventGeneratorTrait.html#method_raise"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a></small></div>
+                    <a href="#method_raise">raise</a>(mixed $event)
+        
+                                            <p>Raise a new event.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Core/Support/EventGeneratorTrait.html#method_raise"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L25">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L25" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_releaseEvents">releaseEvents</a>()
-                                            <p class="method-description">Return and reset all pending events.</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Core/Support/EventGeneratorTrait.html#method_releaseEvents"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a></small></div>
+                    <a href="#method_releaseEvents">releaseEvents</a>()
+        
+                                            <p>Return and reset all pending events.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Core/Support/EventGeneratorTrait.html#method_releaseEvents"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L35">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L35" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_scopeWhereVisibleTo">scopeWhereVisibleTo</a>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, <a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $actor)
-                                            <p class="method-description">Scope a query to only include records that are visible to a user.</p>                </div>
-                <div class="col-md-2 method-inheritance"><small>from&nbsp;<a href="../../Flarum/Core/Support/ScopeVisibilityTrait.html#method_scopeWhereVisibleTo"><abbr title="Flarum\Core\Support\ScopeVisibilityTrait">ScopeVisibilityTrait</abbr></a></small></div>
+                    <a href="#method_scopeWhereVisibleTo">scopeWhereVisibleTo</a>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, <a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $actor)
+        
+                                            <p>Scope a query to only include records that are visible to a user.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Core/Support/ScopeVisibilityTrait.html#method_scopeWhereVisibleTo"><abbr title="Flarum\Core\Support\ScopeVisibilityTrait">ScopeVisibilityTrait</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L25">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L25" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;<a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_register">register</a>(string $username, string $email, string $password)
-                                            <p class="method-description">Register a new user.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_register">register</a>(string $username, string $email, string $password)
+        
+                                            <p>Register a new user.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L155">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L155" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    static&nbsp;<a href="../../Flarum/Core/Access/Gate.html"><abbr title="Flarum\Core\Access\Gate">Gate</abbr></a>
+                <div class="col-md-2 type">
+                    static&nbsp;Gate
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getGate">getGate</a>()
+                    <a href="#method_getGate">getGate</a>()
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L172">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L172" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setGate">setGate</a>(<a href="../../Flarum/Core/Access/Gate.html"><abbr title="Flarum\Core\Access\Gate">Gate</abbr></a> $gate)
+                    <a href="#method_setGate">setGate</a>(Gate $gate)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L180">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L180" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_rename">rename</a>(string $username)
-                                            <p class="method-description">Rename the user.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_rename">rename</a>(string $username)
+        
+                                            <p>Rename the user.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L191">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L191" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_changeEmail">changeEmail</a>(string $email)
-                                            <p class="method-description">Change the user's email.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_changeEmail">changeEmail</a>(string $email)
+        
+                                            <p>Change the user&#039;s email.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L208">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L208" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_requestEmailChange">requestEmailChange</a>(string $email)
-                                            <p class="method-description">Request that the user's email be changed.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_requestEmailChange">requestEmailChange</a>(string $email)
+        
+                                            <p>Request that the user&#039;s email be changed.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L225">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L225" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_changePassword">changePassword</a>(string $password)
-                                            <p class="method-description">Change the user's password.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_changePassword">changePassword</a>(string $password)
+        
+                                            <p>Change the user&#039;s password.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L240">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L240" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setPasswordAttribute">setPasswordAttribute</a>(string $value)
-                                            <p class="method-description">Set the password attribute, storing it as a hash.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_setPasswordAttribute">setPasswordAttribute</a>(string $value)
+        
+                                            <p>Set the password attribute, storing it as a hash.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L254">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L254" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_changeBio">changeBio</a>(string $bio)
-                                            <p class="method-description">Change the user's bio.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_changeBio">changeBio</a>(string $bio)
+        
+                                            <p>Change the user&#039;s bio.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L265">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L265" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_markAllAsRead">markAllAsRead</a>()
-                                            <p class="method-description">Mark all discussions as read.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_markAllAsRead">markAllAsRead</a>()
+        
+                                            <p>Mark all discussions as read.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L279">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L279" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_markNotificationsAsRead">markNotificationsAsRead</a>()
-                                            <p class="method-description">Mark all notifications as read.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_markNotificationsAsRead">markNotificationsAsRead</a>()
+        
+                                            <p>Mark all notifications as read.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L291">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L291" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_changeAvatarPath">changeAvatarPath</a>(string $path)
-                                            <p class="method-description">Change the path of the user avatar.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_changeAvatarPath">changeAvatarPath</a>(string $path)
+        
+                                            <p>Change the path of the user avatar.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L304">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L304" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getAvatarUrlAttribute">getAvatarUrlAttribute</a>()
-                                            <p class="method-description">Get the URL of the user's avatar.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getAvatarUrlAttribute">getAvatarUrlAttribute</a>()
+        
+                                            <p>Get the URL of the user&#039;s avatar.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L319">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L319" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getLocaleAttribute">getLocaleAttribute</a>(string $value)
-                                            <p class="method-description">Get the user's locale, falling back to the forum's default if they
-haven't set one.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getLocaleAttribute">getLocaleAttribute</a>(string $value)
+        
+                                            <p>Get the user&#039;s locale, falling back to the forum&#039;s default if they
+haven&#039;t set one.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L333">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L333" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    boolean
+                <div class="col-md-2 type">
+                    bool
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_checkPassword">checkPassword</a>(string $password)
-                                            <p class="method-description">Check if a given password matches the user's password.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_checkPassword">checkPassword</a>(string $password)
+        
+                                            <p>Check if a given password matches the user&#039;s password.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L344">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L344" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_activate">activate</a>()
-                                            <p class="method-description">Activate the user's account.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_activate">activate</a>()
+        
+                                            <p>Activate the user&#039;s account.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L354">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L354" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    boolean
+                <div class="col-md-2 type">
+                    bool
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_hasPermission">hasPermission</a>(string $permission)
-                                            <p class="method-description">Check whether the user has a certain permission based on their groups.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_hasPermission">hasPermission</a>(string $permission)
+        
+                                            <p>Check whether the user has a certain permission based on their groups.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L369">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L369" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    boolean
+                <div class="col-md-2 type">
+                    bool
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_hasPermissionLike">hasPermissionLike</a>(string $match)
-                                            <p class="method-description">Check whether the user has a permission that is like the given string,
+                    <a href="#method_hasPermissionLike">hasPermissionLike</a>(string $match)
+        
+                                            <p>Check whether the user has a permission that is like the given string,
 based on their groups.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L389">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L389" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getAlertableNotificationTypes">getAlertableNotificationTypes</a>()
-                                            <p class="method-description">Get the notification types that should be alerted to this user, according
+                    <a href="#method_getAlertableNotificationTypes">getAlertableNotificationTypes</a>()
+        
+                                            <p>Get the notification types that should be alerted to this user, according
 to their preferences.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L414">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L414" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     int
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getUnreadNotificationsCount">getUnreadNotificationsCount</a>()
-                                            <p class="method-description">Get the number of unread notifications for the user.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getUnreadNotificationsCount">getUnreadNotificationsCount</a>()
+        
+                                            <p>Get the number of unread notifications for the user.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L426">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L426" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getUnreadNotifications">getUnreadNotifications</a>()
+        
+                                            <p>Get all notifications that have not been read yet</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L436" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     int
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getNewNotificationsCount">getNewNotificationsCount</a>()
-                                            <p class="method-description">Get the number of new, unseen notifications for the user.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getNewNotificationsCount">getNewNotificationsCount</a>()
+        
+                                            <p>Get the number of new, unseen notifications for the user.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L456">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L456" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getPreferencesAttribute">getPreferencesAttribute</a>(string $value)
-                                            <p class="method-description">Get the values of all registered preferences for this user, by
+                    <a href="#method_getPreferencesAttribute">getPreferencesAttribute</a>(string $value)
+        
+                                            <p>Get the values of all registered preferences for this user, by
 transforming their stored preferences and merging them with the defaults.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L470">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L470" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setPreferencesAttribute">setPreferencesAttribute</a>(mixed $value)
-                                            <p class="method-description">Encode an array of preferences for storage in the database.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_setPreferencesAttribute">setPreferencesAttribute</a>(mixed $value)
+        
+                                            <p>Encode an array of preferences for storage in the database.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L486">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L486" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_shouldAlert">shouldAlert</a>(string $type)
-                                            <p class="method-description">Check whether or not the user should receive an alert for a notification
+                    <a href="#method_shouldAlert">shouldAlert</a>(string $type)
+        
+                                            <p>Check whether or not the user should receive an alert for a notification
 type.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L498">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L498" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_shouldEmail">shouldEmail</a>(string $type)
-                                            <p class="method-description">Check whether or not the user should receive an email for a notification
+                    <a href="#method_shouldEmail">shouldEmail</a>(string $type)
+        
+                                            <p>Check whether or not the user should receive an email for a notification
 type.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L510">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L510" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     mixed
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getPreference">getPreference</a>(string $key, mixed $default = null)
-                                            <p class="method-description">Get the value of a preference for this user.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getPreference">getPreference</a>(string $key, mixed $default = null)
+        
+                                            <p>Get the value of a preference for this user.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L522">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L522" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setPreference">setPreference</a>(string $key, mixed $value)
-                                            <p class="method-description">Set the value of a preference for this user.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_setPreference">setPreference</a>(string $key, mixed $value)
+        
+                                            <p>Set the value of a preference for this user.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L534">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L534" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
-                    <abbr title="Flarum\Core\$this">$this</abbr>
+                <div class="col-md-2 type">
+                    $this
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_updateLastSeen">updateLastSeen</a>()
-                                            <p class="method-description">Set the user as being last seen just now.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_updateLastSeen">updateLastSeen</a>()
+        
+                                            <p>Set the user as being last seen just now.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L556">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L556" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_isAdmin">isAdmin</a>()
-                                            <p class="method-description">Check whether or not the user is an administrator.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_isAdmin">isAdmin</a>()
+        
+                                            <p>Check whether or not the user is an administrator.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L568">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L568" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_isGuest">isGuest</a>()
-                                            <p class="method-description">Check whether or not the user is a guest.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_isGuest">isGuest</a>()
+        
+                                            <p>Check whether or not the user is a guest.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L578">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L578" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_posts">posts</a>()
-                                            <p class="method-description">Define the relationship with the user's posts.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_posts">posts</a>()
+        
+                                            <p>Define the relationship with the user&#039;s posts.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L588">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L588" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_read">read</a>()
-                                            <p class="method-description">Define the relationship with the user's read discussions.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_read">read</a>()
+        
+                                            <p>Define the relationship with the user&#039;s read discussions.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L598">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L598" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Illuminate\Database\Eloquent\Relations\BelongsToMany">BelongsToMany</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_groups">groups</a>()
-                                            <p class="method-description">Define the relationship with the user's groups.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_groups">groups</a>()
+        
+                                            <p>Define the relationship with the user&#039;s groups.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L608">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L608" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_notifications">notifications</a>()
-                                            <p class="method-description">Define the relationship with the user's notifications.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_notifications">notifications</a>()
+        
+                                            <p>Define the relationship with the user&#039;s notifications.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L618">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L618" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_permissions">permissions</a>()
-                                            <p class="method-description">Define the relationship with the permissions of all of the groups that
+                    <a href="#method_permissions">permissions</a>()
+        
+                                            <p>Define the relationship with the permissions of all of the groups that
 the user is in.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L629">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L629" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     string[]
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getPermissions">getPermissions</a>()
-                                            <p class="method-description">Get a list of permissions that the user has.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_getPermissions">getPermissions</a>()
+        
+                                            <p>Get a list of permissions that the user has.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L651">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L651" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_accessTokens">accessTokens</a>()
-                                            <p class="method-description">Define the relationship with the user's access tokens.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_accessTokens">accessTokens</a>()
+        
+                                            <p>Define the relationship with the user&#039;s access tokens.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L661">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L661" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_can">can</a>(string $ability, array|mixed $arguments = array())
+                    <a href="#method_can">can</a>(string $ability, array|mixed $arguments = [])
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L671">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L671" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_cannot">cannot</a>(string $ability, array|mixed $arguments = array())
+                    <a href="#method_cannot">cannot</a>(string $ability, array|mixed $arguments = [])
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L681">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L681" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_setHasher">setHasher</a>(<abbr title="Illuminate\Contracts\Hashing\Hasher">Hasher</abbr> $hasher)
-                                            <p class="method-description">Set the hasher with which to hash passwords.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_setHasher">setHasher</a>(<abbr title="Illuminate\Contracts\Hashing\Hasher">Hasher</abbr> $hasher)
+        
+                                            <p>Set the hasher with which to hash passwords.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L691">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L691" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_addPreference">addPreference</a>(string $key, callable $transformer = null, mixed $default = null)
-                                            <p class="method-description">Register a preference with a transformer and a default value.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                    <a href="#method_addPreference">addPreference</a>(string $key, callable $transformer = null, mixed $default = null)
+        
+                                            <p>Register a preference with a transformer and a default value.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L703">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L703" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type method-hint">
+                <div class="col-md-2 type">
                     static&nbsp;string
                 </div>
                 <div class="col-md-6 type">
-                    <a class="signature" href="#method_getNotificationPreferenceKey">getNotificationPreferenceKey</a>(string $type, string $method)
-                                            <p class="method-description">Get the key for a preference which flags whether or not the user will
+                    <a href="#method_getNotificationPreferenceKey">getNotificationPreferenceKey</a>(string $type, string $method)
+        
+                                            <p>Get the key for a preference which flags whether or not the user will
 receive a notification for $type via $method.</p>                </div>
-                <div class="col-md-2 method-inheritance"></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L716">
-        <img src="../../img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L716" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -1159,16 +1349,20 @@ receive a notification for $type via $method.</p>                </div>
                     <div class="method-item">
                     <h3 id="method_boot">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L111">
-                at line 111
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L111" target="_blank">
+            line 111
+        </a>
         </div>
         <code>        static            
-    <strong>boot</strong>()</code>
+    <strong>boot</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Boot the model.</p>                                </div>
+                                    <p>Boot the model.</p>                                                </div>
                 <div class="tags">
             
             
@@ -1181,16 +1375,20 @@ receive a notification for $type via $method.</p>                </div>
                     <h3 id="method_getDates">
         <div class="location">
                             in <a href="../../Flarum/Database/AbstractModel.html#method_getDates"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Database/AbstractModel.php#L74">
-                at line 74
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Database/AbstractModel.php#L74" target="_blank">
+            line 74
+        </a>
         </div>
         <code>                    array
-    <strong>getDates</strong>()</code>
+    <strong>getDates</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the attributes that should be converted to dates.</p>                                </div>
+                                    <p>Get the attributes that should be converted to dates.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1212,17 +1410,21 @@ receive a notification for $type via $method.</p>                </div>
                     <h3 id="method_getAttribute">
         <div class="location">
                             in <a href="../../Flarum/Database/AbstractModel.html#method_getAttribute"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Database/AbstractModel.php#L98">
-                at line 98
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Database/AbstractModel.php#L98" target="_blank">
+            line 98
+        </a>
         </div>
         <code>                    mixed
-    <strong>getAttribute</strong>(string $key)</code>
+    <strong>getAttribute</strong>(string $key)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Get an attribute from the model. If nothing is found, attempt to load
-a custom relation method with this key.</p>                                </div>
+a custom relation method with this key.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1251,19 +1453,68 @@ a custom relation method with this key.</p>                                </div
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getCustomRelation">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method_getCustomRelation"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Database/AbstractModel.php#L123" target="_blank">
+            line 123
+        </a>
+        </div>
+        <code>            protected        mixed
+    <strong>getCustomRelation</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a custom relation object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_afterSave">
         <div class="location">
                             in <a href="../../Flarum/Database/AbstractModel.html#method_afterSave"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Database/AbstractModel.php#L136">
-                at line 136
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Database/AbstractModel.php#L136" target="_blank">
+            line 136
+        </a>
         </div>
         <code>                    void
-    <strong>afterSave</strong>(callable $callback)</code>
+    <strong>afterSave</strong>(callable $callback)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Register a callback to be run once after the model is saved.</p>                                </div>
+                                    <p>Register a callback to be run once after the model is saved.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1295,16 +1546,20 @@ a custom relation method with this key.</p>                                </div
                     <h3 id="method_afterDelete">
         <div class="location">
                             in <a href="../../Flarum/Database/AbstractModel.html#method_afterDelete"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Database/AbstractModel.php#L147">
-                at line 147
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Database/AbstractModel.php#L147" target="_blank">
+            line 147
+        </a>
         </div>
         <code>                    void
-    <strong>afterDelete</strong>(callable $callback)</code>
+    <strong>afterDelete</strong>(callable $callback)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Register a callback to be run once after the model is deleted.</p>                                </div>
+                                    <p>Register a callback to be run once after the model is deleted.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1336,14 +1591,18 @@ a custom relation method with this key.</p>                                </div
                     <h3 id="method_releaseAfterSaveCallbacks">
         <div class="location">
                             in <a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterSaveCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Database/AbstractModel.php#L155">
-                at line 155
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Database/AbstractModel.php#L155" target="_blank">
+            line 155
+        </a>
         </div>
         <code>                    callable[]
-    <strong>releaseAfterSaveCallbacks</strong>()</code>
+    <strong>releaseAfterSaveCallbacks</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1365,14 +1624,18 @@ a custom relation method with this key.</p>                                </div
                     <h3 id="method_releaseAfterDeleteCallbacks">
         <div class="location">
                             in <a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterDeleteCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Database/AbstractModel.php#L167">
-                at line 167
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Database/AbstractModel.php#L167" target="_blank">
+            line 167
+        </a>
         </div>
         <code>                    callable[]
-    <strong>releaseAfterDeleteCallbacks</strong>()</code>
+    <strong>releaseAfterDeleteCallbacks</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1394,16 +1657,20 @@ a custom relation method with this key.</p>                                </div
                     <h3 id="method___call">
         <div class="location">
                             in <a href="../../Flarum/Database/AbstractModel.html#method___call"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Database/AbstractModel.php#L179">
-                at line 179
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Database/AbstractModel.php#L179" target="_blank">
+            line 179
+        </a>
         </div>
         <code>                    
-    <strong>__call</strong>($method, $arguments)</code>
+    <strong>__call</strong>($method, $arguments)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                </div>
+                                    <p>{@inheritdoc}</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1431,16 +1698,20 @@ a custom relation method with this key.</p>                                </div
                     <h3 id="method_raise">
         <div class="location">
                             in <a href="../../Flarum/Core/Support/EventGeneratorTrait.html#method_raise"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/Support/EventGeneratorTrait.php#L25">
-                at line 25
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/Support/EventGeneratorTrait.php#L25" target="_blank">
+            line 25
+        </a>
         </div>
         <code>                    
-    <strong>raise</strong>(mixed $event)</code>
+    <strong>raise</strong>(mixed $event)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Raise a new event.</p>                                </div>
+                                    <p>Raise a new event.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1463,16 +1734,20 @@ a custom relation method with this key.</p>                                </div
                     <h3 id="method_releaseEvents">
         <div class="location">
                             in <a href="../../Flarum/Core/Support/EventGeneratorTrait.html#method_releaseEvents"><abbr title="Flarum\Core\Support\EventGeneratorTrait">EventGeneratorTrait</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/Support/EventGeneratorTrait.php#L35">
-                at line 35
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/Support/EventGeneratorTrait.php#L35" target="_blank">
+            line 35
+        </a>
         </div>
         <code>                    array
-    <strong>releaseEvents</strong>()</code>
+    <strong>releaseEvents</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Return and reset all pending events.</p>                                </div>
+                                    <p>Return and reset all pending events.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1494,16 +1769,20 @@ a custom relation method with this key.</p>                                </div
                     <h3 id="method_scopeWhereVisibleTo">
         <div class="location">
                             in <a href="../../Flarum/Core/Support/ScopeVisibilityTrait.html#method_scopeWhereVisibleTo"><abbr title="Flarum\Core\Support\ScopeVisibilityTrait">ScopeVisibilityTrait</abbr></a>
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/Support/ScopeVisibilityTrait.php#L25">
-                at line 25
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/Support/ScopeVisibilityTrait.php#L25" target="_blank">
+            line 25
+        </a>
         </div>
         <code>                    
-    <strong>scopeWhereVisibleTo</strong>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, <a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $actor)</code>
+    <strong>scopeWhereVisibleTo</strong>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, <a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a> $actor)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Scope a query to only include records that are visible to a user.</p>                                </div>
+                                    <p>Scope a query to only include records that are visible to a user.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1530,16 +1809,20 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_register">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L155">
-                at line 155
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L155" target="_blank">
+            line 155
+        </a>
         </div>
         <code>        static            <a href="../../Flarum/Core/User.html"><abbr title="Flarum\Core\User">User</abbr></a>
-    <strong>register</strong>(string $username, string $email, string $password)</code>
+    <strong>register</strong>(string $username, string $email, string $password)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Register a new user.</p>                                </div>
+                                    <p>Register a new user.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1580,21 +1863,25 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_getGate">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L172">
-                at line 172
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L172" target="_blank">
+            line 172
+        </a>
         </div>
-        <code>        static            <a href="../../Flarum/Core/Access/Gate.html"><abbr title="Flarum\Core\Access\Gate">Gate</abbr></a>
-    <strong>getGate</strong>()</code>
+        <code>        static            Gate
+    <strong>getGate</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Flarum/Core/Access/Gate.html"><abbr title="Flarum\Core\Access\Gate">Gate</abbr></a></td>
+            <td>Gate</td>
             <td></td>
         </tr>
     </table>
@@ -1608,20 +1895,24 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_setGate">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L180">
-                at line 180
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L180" target="_blank">
+            line 180
+        </a>
         </div>
         <code>        static            
-    <strong>setGate</strong>(<a href="../../Flarum/Core/Access/Gate.html"><abbr title="Flarum\Core\Access\Gate">Gate</abbr></a> $gate)</code>
+    <strong>setGate</strong>(Gate $gate)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../Flarum/Core/Access/Gate.html"><abbr title="Flarum\Core\Access\Gate">Gate</abbr></a></td>
+                <td>Gate</td>
                 <td>$gate</td>
                 <td></td>
             </tr>
@@ -1637,16 +1928,20 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_rename">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L191">
-                at line 191
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L191" target="_blank">
+            line 191
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>rename</strong>(string $username)</code>
+        <code>                    $this
+    <strong>rename</strong>(string $username)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Rename the user.</p>                                </div>
+                                    <p>Rename the user.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1663,7 +1958,7 @@ a custom relation method with this key.</p>                                </div
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -1677,16 +1972,20 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_changeEmail">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L208">
-                at line 208
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L208" target="_blank">
+            line 208
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>changeEmail</strong>(string $email)</code>
+        <code>                    $this
+    <strong>changeEmail</strong>(string $email)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Change the user's email.</p>                                </div>
+                                    <p>Change the user&#039;s email.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1703,7 +2002,7 @@ a custom relation method with this key.</p>                                </div
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -1717,16 +2016,20 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_requestEmailChange">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L225">
-                at line 225
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L225" target="_blank">
+            line 225
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>requestEmailChange</strong>(string $email)</code>
+        <code>                    $this
+    <strong>requestEmailChange</strong>(string $email)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Request that the user's email be changed.</p>                                </div>
+                                    <p>Request that the user&#039;s email be changed.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1743,7 +2046,7 @@ a custom relation method with this key.</p>                                </div
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -1757,16 +2060,20 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_changePassword">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L240">
-                at line 240
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L240" target="_blank">
+            line 240
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>changePassword</strong>(string $password)</code>
+        <code>                    $this
+    <strong>changePassword</strong>(string $password)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Change the user's password.</p>                                </div>
+                                    <p>Change the user&#039;s password.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1783,7 +2090,7 @@ a custom relation method with this key.</p>                                </div
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -1797,16 +2104,20 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_setPasswordAttribute">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L254">
-                at line 254
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L254" target="_blank">
+            line 254
+        </a>
         </div>
         <code>                    
-    <strong>setPasswordAttribute</strong>(string $value)</code>
+    <strong>setPasswordAttribute</strong>(string $value)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Set the password attribute, storing it as a hash.</p>                                </div>
+                                    <p>Set the password attribute, storing it as a hash.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1828,16 +2139,20 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_changeBio">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L265">
-                at line 265
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L265" target="_blank">
+            line 265
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>changeBio</strong>(string $bio)</code>
+        <code>                    $this
+    <strong>changeBio</strong>(string $bio)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Change the user's bio.</p>                                </div>
+                                    <p>Change the user&#039;s bio.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1854,7 +2169,7 @@ a custom relation method with this key.</p>                                </div
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -1868,23 +2183,27 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_markAllAsRead">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L279">
-                at line 279
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L279" target="_blank">
+            line 279
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>markAllAsRead</strong>()</code>
+        <code>                    $this
+    <strong>markAllAsRead</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Mark all discussions as read.</p>                                </div>
+                                    <p>Mark all discussions as read.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -1898,23 +2217,27 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_markNotificationsAsRead">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L291">
-                at line 291
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L291" target="_blank">
+            line 291
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>markNotificationsAsRead</strong>()</code>
+        <code>                    $this
+    <strong>markNotificationsAsRead</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Mark all notifications as read.</p>                                </div>
+                                    <p>Mark all notifications as read.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -1928,16 +2251,20 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_changeAvatarPath">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L304">
-                at line 304
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L304" target="_blank">
+            line 304
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>changeAvatarPath</strong>(string $path)</code>
+        <code>                    $this
+    <strong>changeAvatarPath</strong>(string $path)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Change the path of the user avatar.</p>                                </div>
+                                    <p>Change the path of the user avatar.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1954,7 +2281,7 @@ a custom relation method with this key.</p>                                </div
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -1968,16 +2295,20 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_getAvatarUrlAttribute">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L319">
-                at line 319
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L319" target="_blank">
+            line 319
+        </a>
         </div>
         <code>                    string
-    <strong>getAvatarUrlAttribute</strong>()</code>
+    <strong>getAvatarUrlAttribute</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the URL of the user's avatar.</p>                                </div>
+                                    <p>Get the URL of the user&#039;s avatar.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1998,17 +2329,21 @@ a custom relation method with this key.</p>                                </div
                     <div class="method-item">
                     <h3 id="method_getLocaleAttribute">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L333">
-                at line 333
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L333" target="_blank">
+            line 333
+        </a>
         </div>
         <code>                    string
-    <strong>getLocaleAttribute</strong>(string $value)</code>
+    <strong>getLocaleAttribute</strong>(string $value)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the user's locale, falling back to the forum's default if they
-haven't set one.</p>                                </div>
+                                    <p>Get the user&#039;s locale, falling back to the forum&#039;s default if they
+haven&#039;t set one.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2039,16 +2374,20 @@ haven't set one.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_checkPassword">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L344">
-                at line 344
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L344" target="_blank">
+            line 344
+        </a>
         </div>
-        <code>                    boolean
-    <strong>checkPassword</strong>(string $password)</code>
+        <code>                    bool
+    <strong>checkPassword</strong>(string $password)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Check if a given password matches the user's password.</p>                                </div>
+                                    <p>Check if a given password matches the user&#039;s password.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2065,7 +2404,7 @@ haven't set one.</p>                                </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>boolean</td>
+            <td>bool</td>
             <td></td>
         </tr>
     </table>
@@ -2079,23 +2418,27 @@ haven't set one.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_activate">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L354">
-                at line 354
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L354" target="_blank">
+            line 354
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>activate</strong>()</code>
+        <code>                    $this
+    <strong>activate</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Activate the user's account.</p>                                </div>
+                                    <p>Activate the user&#039;s account.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -2109,16 +2452,20 @@ haven't set one.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_hasPermission">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L369">
-                at line 369
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L369" target="_blank">
+            line 369
+        </a>
         </div>
-        <code>                    boolean
-    <strong>hasPermission</strong>(string $permission)</code>
+        <code>                    bool
+    <strong>hasPermission</strong>(string $permission)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Check whether the user has a certain permission based on their groups.</p>                                </div>
+                                    <p>Check whether the user has a certain permission based on their groups.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2135,7 +2482,7 @@ haven't set one.</p>                                </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>boolean</td>
+            <td>bool</td>
             <td></td>
         </tr>
     </table>
@@ -2149,17 +2496,21 @@ haven't set one.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_hasPermissionLike">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L389">
-                at line 389
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L389" target="_blank">
+            line 389
+        </a>
         </div>
-        <code>                    boolean
-    <strong>hasPermissionLike</strong>(string $match)</code>
+        <code>                    bool
+    <strong>hasPermissionLike</strong>(string $match)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Check whether the user has a permission that is like the given string,
-based on their groups.</p>                                </div>
+based on their groups.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2176,7 +2527,7 @@ based on their groups.</p>                                </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>boolean</td>
+            <td>bool</td>
             <td></td>
         </tr>
     </table>
@@ -2190,17 +2541,21 @@ based on their groups.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_getAlertableNotificationTypes">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L414">
-                at line 414
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L414" target="_blank">
+            line 414
+        </a>
         </div>
         <code>                    array
-    <strong>getAlertableNotificationTypes</strong>()</code>
+    <strong>getAlertableNotificationTypes</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Get the notification types that should be alerted to this user, according
-to their preferences.</p>                                </div>
+to their preferences.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2221,16 +2576,20 @@ to their preferences.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_getUnreadNotificationsCount">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L426">
-                at line 426
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L426" target="_blank">
+            line 426
+        </a>
         </div>
         <code>                    int
-    <strong>getUnreadNotificationsCount</strong>()</code>
+    <strong>getUnreadNotificationsCount</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the number of unread notifications for the user.</p>                                </div>
+                                    <p>Get the number of unread notifications for the user.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2249,18 +2608,56 @@ to their preferences.</p>                                </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getNewNotificationsCount">
+                    <h3 id="method_getUnreadNotifications">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L456">
-                at line 456
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L436" target="_blank">
+            line 436
+        </a>
         </div>
-        <code>                    int
-    <strong>getNewNotificationsCount</strong>()</code>
+        <code>            protected        <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+    <strong>getUnreadNotifications</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the number of new, unseen notifications for the user.</p>                                </div>
+                                    <p>Get all notifications that have not been read yet</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNewNotificationsCount">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L456" target="_blank">
+            line 456
+        </a>
+        </div>
+        <code>                    int
+    <strong>getNewNotificationsCount</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the number of new, unseen notifications for the user.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2281,17 +2678,21 @@ to their preferences.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_getPreferencesAttribute">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L470">
-                at line 470
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L470" target="_blank">
+            line 470
+        </a>
         </div>
         <code>                    array
-    <strong>getPreferencesAttribute</strong>(string $value)</code>
+    <strong>getPreferencesAttribute</strong>(string $value)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Get the values of all registered preferences for this user, by
-transforming their stored preferences and merging them with the defaults.</p>                                </div>
+transforming their stored preferences and merging them with the defaults.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2322,16 +2723,20 @@ transforming their stored preferences and merging them with the defaults.</p>   
                     <div class="method-item">
                     <h3 id="method_setPreferencesAttribute">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L486">
-                at line 486
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L486" target="_blank">
+            line 486
+        </a>
         </div>
         <code>                    
-    <strong>setPreferencesAttribute</strong>(mixed $value)</code>
+    <strong>setPreferencesAttribute</strong>(mixed $value)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Encode an array of preferences for storage in the database.</p>                                </div>
+                                    <p>Encode an array of preferences for storage in the database.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2353,17 +2758,21 @@ transforming their stored preferences and merging them with the defaults.</p>   
                     <div class="method-item">
                     <h3 id="method_shouldAlert">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L498">
-                at line 498
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L498" target="_blank">
+            line 498
+        </a>
         </div>
         <code>                    bool
-    <strong>shouldAlert</strong>(string $type)</code>
+    <strong>shouldAlert</strong>(string $type)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Check whether or not the user should receive an alert for a notification
-type.</p>                                </div>
+type.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2394,17 +2803,21 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_shouldEmail">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L510">
-                at line 510
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L510" target="_blank">
+            line 510
+        </a>
         </div>
         <code>                    bool
-    <strong>shouldEmail</strong>(string $type)</code>
+    <strong>shouldEmail</strong>(string $type)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Check whether or not the user should receive an email for a notification
-type.</p>                                </div>
+type.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2435,16 +2848,20 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_getPreference">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L522">
-                at line 522
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L522" target="_blank">
+            line 522
+        </a>
         </div>
         <code>                    mixed
-    <strong>getPreference</strong>(string $key, mixed $default = null)</code>
+    <strong>getPreference</strong>(string $key, mixed $default = null)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get the value of a preference for this user.</p>                                </div>
+                                    <p>Get the value of a preference for this user.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2480,16 +2897,20 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_setPreference">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L534">
-                at line 534
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L534" target="_blank">
+            line 534
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>setPreference</strong>(string $key, mixed $value)</code>
+        <code>                    $this
+    <strong>setPreference</strong>(string $key, mixed $value)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Set the value of a preference for this user.</p>                                </div>
+                                    <p>Set the value of a preference for this user.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2511,7 +2932,7 @@ type.</p>                                </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -2525,23 +2946,27 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_updateLastSeen">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L556">
-                at line 556
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L556" target="_blank">
+            line 556
+        </a>
         </div>
-        <code>                    <abbr title="Flarum\Core\$this">$this</abbr>
-    <strong>updateLastSeen</strong>()</code>
+        <code>                    $this
+    <strong>updateLastSeen</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Set the user as being last seen just now.</p>                                </div>
+                                    <p>Set the user as being last seen just now.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Flarum\Core\$this">$this</abbr></td>
+            <td>$this</td>
             <td></td>
         </tr>
     </table>
@@ -2555,16 +2980,20 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_isAdmin">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L568">
-                at line 568
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L568" target="_blank">
+            line 568
+        </a>
         </div>
         <code>                    bool
-    <strong>isAdmin</strong>()</code>
+    <strong>isAdmin</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Check whether or not the user is an administrator.</p>                                </div>
+                                    <p>Check whether or not the user is an administrator.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2585,16 +3014,20 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_isGuest">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L578">
-                at line 578
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L578" target="_blank">
+            line 578
+        </a>
         </div>
         <code>                    bool
-    <strong>isGuest</strong>()</code>
+    <strong>isGuest</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Check whether or not the user is a guest.</p>                                </div>
+                                    <p>Check whether or not the user is a guest.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2615,16 +3048,20 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_posts">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L588">
-                at line 588
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L588" target="_blank">
+            line 588
+        </a>
         </div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
-    <strong>posts</strong>()</code>
+    <strong>posts</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Define the relationship with the user's posts.</p>                                </div>
+                                    <p>Define the relationship with the user&#039;s posts.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2645,16 +3082,20 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_read">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L598">
-                at line 598
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L598" target="_blank">
+            line 598
+        </a>
         </div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr>
-    <strong>read</strong>()</code>
+    <strong>read</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Define the relationship with the user's read discussions.</p>                                </div>
+                                    <p>Define the relationship with the user&#039;s read discussions.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2675,16 +3116,20 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_groups">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L608">
-                at line 608
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L608" target="_blank">
+            line 608
+        </a>
         </div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\BelongsToMany">BelongsToMany</abbr>
-    <strong>groups</strong>()</code>
+    <strong>groups</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Define the relationship with the user's groups.</p>                                </div>
+                                    <p>Define the relationship with the user&#039;s groups.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2705,16 +3150,20 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_notifications">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L618">
-                at line 618
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L618" target="_blank">
+            line 618
+        </a>
         </div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
-    <strong>notifications</strong>()</code>
+    <strong>notifications</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Define the relationship with the user's notifications.</p>                                </div>
+                                    <p>Define the relationship with the user&#039;s notifications.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2735,17 +3184,21 @@ type.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_permissions">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L629">
-                at line 629
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L629" target="_blank">
+            line 629
+        </a>
         </div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
-    <strong>permissions</strong>()</code>
+    <strong>permissions</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Define the relationship with the permissions of all of the groups that
-the user is in.</p>                                </div>
+the user is in.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2766,16 +3219,20 @@ the user is in.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_getPermissions">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L651">
-                at line 651
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L651" target="_blank">
+            line 651
+        </a>
         </div>
         <code>                    string[]
-    <strong>getPermissions</strong>()</code>
+    <strong>getPermissions</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Get a list of permissions that the user has.</p>                                </div>
+                                    <p>Get a list of permissions that the user has.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2796,16 +3253,20 @@ the user is in.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_accessTokens">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L661">
-                at line 661
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L661" target="_blank">
+            line 661
+        </a>
         </div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr>
-    <strong>accessTokens</strong>()</code>
+    <strong>accessTokens</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Define the relationship with the user's access tokens.</p>                                </div>
+                                    <p>Define the relationship with the user&#039;s access tokens.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2826,14 +3287,18 @@ the user is in.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_can">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L671">
-                at line 671
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L671" target="_blank">
+            line 671
+        </a>
         </div>
         <code>                    bool
-    <strong>can</strong>(string $ability, array|mixed $arguments = array())</code>
+    <strong>can</strong>(string $ability, array|mixed $arguments = [])
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2869,14 +3334,18 @@ the user is in.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_cannot">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L681">
-                at line 681
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L681" target="_blank">
+            line 681
+        </a>
         </div>
         <code>                    bool
-    <strong>cannot</strong>(string $ability, array|mixed $arguments = array())</code>
+    <strong>cannot</strong>(string $ability, array|mixed $arguments = [])
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2912,16 +3381,20 @@ the user is in.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_setHasher">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L691">
-                at line 691
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L691" target="_blank">
+            line 691
+        </a>
         </div>
         <code>        static            
-    <strong>setHasher</strong>(<abbr title="Illuminate\Contracts\Hashing\Hasher">Hasher</abbr> $hasher)</code>
+    <strong>setHasher</strong>(<abbr title="Illuminate\Contracts\Hashing\Hasher">Hasher</abbr> $hasher)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Set the hasher with which to hash passwords.</p>                                </div>
+                                    <p>Set the hasher with which to hash passwords.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2943,16 +3416,20 @@ the user is in.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_addPreference">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L703">
-                at line 703
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L703" target="_blank">
+            line 703
+        </a>
         </div>
         <code>        static            
-    <strong>addPreference</strong>(string $key, callable $transformer = null, mixed $default = null)</code>
+    <strong>addPreference</strong>(string $key, callable $transformer = null, mixed $default = null)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Register a preference with a transformer and a default value.</p>                                </div>
+                                    <p>Register a preference with a transformer and a default value.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2984,17 +3461,21 @@ the user is in.</p>                                </div>
                     <div class="method-item">
                     <h3 id="method_getNotificationPreferenceKey">
         <div class="location">
-                        <a href="https://github.com/flarum/core/blob/v0.1.0-beta.4/src/Core/User.php#L716">
-                at line 716
-            </a>
+                        at         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.3/src/Core/User.php#L716" target="_blank">
+            line 716
+        </a>
         </div>
         <code>        static            string
-    <strong>getNotificationPreferenceKey</strong>(string $type, string $method)</code>
+    <strong>getNotificationPreferenceKey</strong>(string $type, string $method)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Get the key for a preference which flags whether or not the user will
-receive a notification for $type via $method.</p>                                </div>
+receive a notification for $type via $method.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -3030,13 +3511,15 @@ receive a notification for $type via $method.</p>                               
             </div>
 
     
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
     </div>
-    <div id="footer">
-  Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
-</div>
 
-  </div>
-</div>
+            </div>
+        </div>
+    </div>
     </body>
 
 </html>

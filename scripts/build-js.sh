@@ -33,4 +33,4 @@ for tag in $tags; do
     generate $tag
 done
 
-bash $SCRIPTS_PATH/set-redirects.sh 
+bash $SCRIPTS_PATH/set-redirects.sh php

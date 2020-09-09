@@ -25,13 +25,13 @@ jobs:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
       - name: Build
-        run: '. scripts/build-${{ matrix.language }}.sh'
+        run: scripts/build-${{ matrix.language }}.sh
 
       - name: Commit
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -m "${{ matrix.language}}: update" -a
+          git commit -m "${{ matrix.language}}: update (flarum/core@FLARUM_SHA)" docs/${{ matrix.language }}
 
       - name: Push
         uses: ad-m/github-push-action@master

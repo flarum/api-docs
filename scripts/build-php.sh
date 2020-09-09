@@ -2,7 +2,7 @@
 
 source $(dirname $0)/_vars.sh
 
-echo "${style}Generating $reset"
+echo -e "${style}Generating $reset"
 
 php "$REPO_PATH/doctum.phar" update doctum-config.php -v
 

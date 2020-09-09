@@ -2,7 +2,7 @@
 
 cp "$REPO_PATH/src/index-template.html" "$REPO_PATH/docs/$1/index.html"
 
-echo "${style}Filling index.html $reset"
+echo -e "${style}Filling index.html $reset"
 
 BRANCHES=()
 HTML=""

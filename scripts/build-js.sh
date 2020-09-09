@@ -5,7 +5,7 @@ source $(dirname $0)/_vars.sh
 branches=()
 eval "$(git for-each-ref --shell --format='branches+=(%(refname))' refs/heads/)"
 
-echo "${style}Generating $reset"
+echo -e "${style}Generating $reset"
 
 generate () {
     ref=$1
@@ -15,7 +15,7 @@ generate () {
         return
     fi
 
-    echo "$style - $ref$reset"
+    echo -e "$style - $ref$reset"
 
     rm -rf $path
     mkdir $path

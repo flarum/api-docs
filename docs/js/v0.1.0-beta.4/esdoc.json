@@ -1,8 +1,7 @@
 {
-  "source": "../../../../flarum/js",
+  "source": "../../../../flarum/js/src",
   "destination": "./",
   "package": "../../../package.json",
-  "excludes": ["dist"],
   "plugins": [
     {
       "name": "esdoc-standard-plugin",
@@ -11,8 +10,8 @@
           "logo": "../../../src/flarum.png",
           "title": "Flarum API",
           "description": "Unofficial Flarum API documentation",
-          "repository": "https://github.com/datitisev/FlarumAPIDocs",
-          "site": "https://datitisev.github.io/FlarumAPIDocs/js",
+          "repository": "https://github.com/flarum/core",
+          "site": "https://api.flarum.dev/js",
           "author": "https://github.com/datitisev"
         },
         "lint": { "enable": false }
@@ -25,12 +24,23 @@
       "name": "esdoc-exclude-source-plugin"
     },
     {
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": {
+        "all": true
+      }
+    },
+    {
+      "name": "@atscm/esdoc-typescript-plugin"
+    },
+    {
       "name": "esdoc-importpath-plugin",
       "option": {
         "replaces": [
-          {"from": "js/forum/src/", "to": ""},
-          {"from": "js/admin/src/", "to": ""},
-          {"from": "js/lib/", "to": ""}
+          {"from": "src/forum/", "to": ""},
+          {"from": "src/admin/", "to": ""},
+          {"from": "src/common/", "to": ""},
+          {"from": ".js", "to": ""},
+          {"from": ".ts", "to": ""}
         ]
       }
     }

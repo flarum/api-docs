@@ -1,4 +1,4 @@
-name: Build API Docs
+name: build
 
 on:
   schedule:
@@ -23,6 +23,16 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+
+      - name: JS > Use Node.js 10.x
+        if: ${{ matrix.language == 'js' }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+
+      - name: JS > Install dependencies
+        if: ${{ matrix.language == 'js' }}
+        run: npm ci
 
       - name: Build
         run: scripts/build-${{ matrix.language }}.sh

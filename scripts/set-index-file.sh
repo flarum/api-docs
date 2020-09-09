@@ -14,4 +14,4 @@ for branch in $(printf '%s\n' "${BRANCHES[@]}" | sort -V); do
 done
 
 sed -i -e "s#%LINKS%#$HTML#" "$REPO_PATH/docs/$1/index.html"
-sed -i -e "s#%LANG%#$(echo $1 | tr [:lower:] [:upper:])#" "$REPO_PATH/docs/$1/index.html"
+sed -i -e "s#%LANG%#$(echo $1 | tr '[:lower:]' '[:upper:]')#" "$REPO_PATH/docs/$1/index.html"

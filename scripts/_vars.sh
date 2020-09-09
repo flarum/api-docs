@@ -2,8 +2,8 @@
 
 set -e
 
-export style="\e[47;1;31m"
-export reset="\e[0;10m"
+export style="\e[1;34m"
+export reset="\e[0m"
 
 export SCRIPTS_PATH=$(dirname $0)
 export REPO_PATH=$(cd $SCRIPTS_PATH; cd ..; pwd)

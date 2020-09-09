@@ -24,6 +24,9 @@ jobs:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
+      - name: Clone flarum/core
+        run: git clone flarum/core flarum
+
       - name: JS > Use Node.js 10.x
         if: ${{ matrix.language == 'js' }}
         uses: actions/setup-node@v1

@@ -1,3 +1,5 @@
+#!/bin/bash -l
+
 cp "$REPO_PATH/src/index-template.html" "$REPO_PATH/docs/$1/index.html"
 
 echo "${style}Filling index.html $reset"

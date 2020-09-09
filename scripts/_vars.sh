@@ -1,3 +1,5 @@
+#!/bin/bash -l
+
 set -e
 
 export style='\e[47;1;31m'

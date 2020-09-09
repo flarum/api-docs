@@ -1,3 +1,5 @@
+#!/bin/bash -l
+
 source $(dirname $0)/_vars.sh
 
 branches=()

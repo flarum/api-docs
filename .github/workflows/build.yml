@@ -47,6 +47,8 @@ jobs:
           git add docs/${{ matrix.language }}
           if [ "$(git status --porcelain docs/${{ matrix.language }} | wc -l)" -lt "2" ]; then
             echo "No changes to commit"
+            git reset
+            git checkout -- .
           else
             git commit -m "${{ matrix.language }}: update (flarum/core@${FLARUM_SHA})" docs/${{ matrix.language }}
           fi

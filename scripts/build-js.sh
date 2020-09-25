@@ -31,7 +31,6 @@ generate () {
 }
 
 generate master
-generate mithril-2-update
 
 tags=$(cd $FLARUM_PATH && git tag)
 

@@ -24,6 +24,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/compone/affixedsidebar~affixedsidebar",
+    "class/src/forum/components/AffixedSidebar.js~AffixedSidebar.html",
+    "<span>AffixedSidebar</span> <span class=\"search-result-import-path\">flarum/compone/AffixedSidebar</span>",
+    "class"
+  ],
+  [
     "flarum/compone/alert~alert",
     "class/src/common/components/Alert.js~Alert.html",
     "<span>Alert</span> <span class=\"search-result-import-path\">flarum/compone/Alert</span>",
@@ -103,7 +109,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/component~component",
-    "class/src/common/Component.js~Component.html",
+    "class/src/common/Component.ts~Component.html",
     "<span>Component</span> <span class=\"search-result-import-path\">flarum/Component</span>",
     "class"
   ],
@@ -123,6 +129,12 @@ window.esdocSearchIndex = [
     "flarum/compone/composerbutton~composerbutton",
     "class/src/forum/components/ComposerButton.js~ComposerButton.html",
     "<span>ComposerButton</span> <span class=\"search-result-import-path\">flarum/compone/ComposerButton</span>",
+    "class"
+  ],
+  [
+    "flarum/compone/composerpostpreview~composerpostpreview",
+    "class/src/forum/components/ComposerPostPreview.js~ComposerPostPreview.html",
+    "<span>ComposerPostPreview</span> <span class=\"search-result-import-path\">flarum/compone/ComposerPostPreview</span>",
     "class"
   ],
   [
@@ -177,6 +189,12 @@ window.esdocSearchIndex = [
     "flarum/compone/discussionlistitem~discussionlistitem",
     "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html",
     "<span>DiscussionListItem</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionListItem</span>",
+    "class"
+  ],
+  [
+    "flarum/compone/discussionlistpane~discussionlistpane",
+    "class/src/forum/components/DiscussionListPane.js~DiscussionListPane.html",
+    "<span>DiscussionListPane</span> <span class=\"search-result-import-path\">flarum/compone/DiscussionListPane</span>",
     "class"
   ],
   [
@@ -300,6 +318,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/fragment~fragment",
+    "class/src/common/Fragment.ts~Fragment.html",
+    "<span>Fragment</span> <span class=\"search-result-import-path\">flarum/Fragment</span>",
+    "class"
+  ],
+  [
     "flarum/states/globalsearchstate~globalsearchstate",
     "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html",
     "<span>GlobalSearchState</span> <span class=\"search-result-import-path\">flarum/states/GlobalSearchState</span>",
@@ -319,25 +343,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/compone/headerprimary~headerprimary",
     "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/compone/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
+    "flarum/compone/headerprimary~headerprimary",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/compone/headersecondary~headersecondary",
     "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/compone/headersecondary~headersecondary",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
@@ -822,12 +846,6 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "flarum/utils/affixsidebar~affixsidebar",
-    "function/index.html#static-function-affixSidebar",
-    "<span>affixSidebar</span> <span class=\"search-result-import-path\">flarum/utils/affixSidebar</span>",
-    "function"
-  ],
-  [
     "flarum/utils/alertemailconfirmation~alertemailconfirmation",
     "function/index.html#static-function-alertEmailConfirmation",
     "<span>alertEmailConfirmation</span> <span class=\"search-result-import-path\">flarum/utils/alertEmailConfirmation</span>",
@@ -990,6 +1008,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "flarum/utils/setroutewithforcedrefresh~setroutewithforcedrefresh",
+    "function/index.html#static-function-setRouteWithForcedRefresh",
+    "<span>setRouteWithForcedRefresh</span> <span class=\"search-result-import-path\">flarum/utils/setRouteWithForcedRefresh</span>",
+    "function"
+  ],
+  [
     "flarum/utils/slidable~slidable",
     "function/index.html#static-function-slidable",
     "<span>slidable</span> <span class=\"search-result-import-path\">flarum/utils/slidable</span>",
@@ -1035,6 +1059,12 @@ window.esdocSearchIndex = [
     "flarum/helpers/username~username",
     "function/index.html#static-function-username",
     "<span>username</span> <span class=\"search-result-import-path\">flarum/helpers/username</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/withattr~withattr",
+    "function/index.html#static-function-withAttr",
+    "<span>withAttr</span> <span class=\"search-result-import-path\">flarum/utils/withAttr</span>",
     "function"
   ],
   [
@@ -1434,16 +1464,16 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/admin/components/appearancepage.js~appearancepage#init",
-    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-init",
-    "src/admin/components/AppearancePage.js~AppearancePage#init",
-    "method"
-  ],
-  [
     "src/admin/components/appearancepage.js~appearancepage#loading",
     "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-loading",
     "src/admin/components/AppearancePage.js~AppearancePage#loading",
     "member"
+  ],
+  [
+    "src/admin/components/appearancepage.js~appearancepage#oninit",
+    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-oninit",
+    "src/admin/components/AppearancePage.js~AppearancePage#oninit",
+    "method"
   ],
   [
     "src/admin/components/appearancepage.js~appearancepage#onsubmit",
@@ -1500,12 +1530,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/basicspage.js~basicspage#init",
-    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-init",
-    "src/admin/components/BasicsPage.js~BasicsPage#init",
-    "method"
-  ],
-  [
     "src/admin/components/basicspage.js~basicspage#loading",
     "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-loading",
     "src/admin/components/BasicsPage.js~BasicsPage#loading",
@@ -1516,6 +1540,12 @@ window.esdocSearchIndex = [
     "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-localeOptions",
     "src/admin/components/BasicsPage.js~BasicsPage#localeOptions",
     "member"
+  ],
+  [
+    "src/admin/components/basicspage.js~basicspage#oninit",
+    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-oninit",
+    "src/admin/components/BasicsPage.js~BasicsPage#oninit",
+    "method"
   ],
   [
     "src/admin/components/basicspage.js~basicspage#onsubmit",
@@ -1722,12 +1752,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/admin/components/editgroupmodal.js~editgroupmodal#init",
-    "class/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-init",
-    "src/admin/components/EditGroupModal.js~EditGroupModal#init",
-    "method"
-  ],
-  [
     "src/admin/components/editgroupmodal.js~editgroupmodal#ishidden",
     "class/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-member-isHidden",
     "src/admin/components/EditGroupModal.js~EditGroupModal#isHidden",
@@ -1750,6 +1774,12 @@ window.esdocSearchIndex = [
     "class/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-member-nameSingular",
     "src/admin/components/EditGroupModal.js~EditGroupModal#nameSingular",
     "member"
+  ],
+  [
+    "src/admin/components/editgroupmodal.js~editgroupmodal#oninit",
+    "class/src/admin/components/EditGroupModal.js~EditGroupModal.html#instance-method-oninit",
+    "src/admin/components/EditGroupModal.js~EditGroupModal#oninit",
+    "method"
   ],
   [
     "src/admin/components/editgroupmodal.js~editgroupmodal#onsubmit",
@@ -1830,12 +1860,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/admin/components/headersecondary.js~headersecondary#config",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-config",
-    "src/admin/components/HeaderSecondary.js~HeaderSecondary#config",
-    "method"
-  ],
-  [
     "src/admin/components/headersecondary.js~headersecondary#items",
     "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-items",
     "src/admin/components/HeaderSecondary.js~HeaderSecondary#items",
@@ -1902,16 +1926,16 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/admin/components/mailpage.js~mailpage#init",
-    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-init",
-    "src/admin/components/MailPage.js~MailPage#init",
-    "method"
-  ],
-  [
     "src/admin/components/mailpage.js~mailpage#loading",
     "class/src/admin/components/MailPage.js~MailPage.html#instance-member-loading",
     "src/admin/components/MailPage.js~MailPage#loading",
     "member"
+  ],
+  [
+    "src/admin/components/mailpage.js~mailpage#oninit",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-oninit",
+    "src/admin/components/MailPage.js~MailPage#oninit",
+    "method"
   ],
   [
     "src/admin/components/mailpage.js~mailpage#onsubmit",
@@ -2010,9 +2034,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/permissiondropdown.js~permissiondropdown.initprops",
-    "class/src/admin/components/PermissionDropdown.js~PermissionDropdown.html#static-method-initProps",
-    "src/admin/components/PermissionDropdown.js~PermissionDropdown.initProps",
+    "src/admin/components/permissiondropdown.js~permissiondropdown.initattrs",
+    "class/src/admin/components/PermissionDropdown.js~PermissionDropdown.html#static-method-initAttrs",
+    "src/admin/components/PermissionDropdown.js~PermissionDropdown.initAttrs",
     "method"
   ],
   [
@@ -2022,15 +2046,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/admin/components/permissiongrid.js~permissiongrid#init",
-    "class/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-init",
-    "src/admin/components/PermissionGrid.js~PermissionGrid#init",
-    "method"
-  ],
-  [
     "src/admin/components/permissiongrid.js~permissiongrid#moderateitems",
     "class/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-moderateItems",
     "src/admin/components/PermissionGrid.js~PermissionGrid#moderateItems",
+    "method"
+  ],
+  [
+    "src/admin/components/permissiongrid.js~permissiongrid#oninit",
+    "class/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-oninit",
+    "src/admin/components/PermissionGrid.js~PermissionGrid#oninit",
     "method"
   ],
   [
@@ -2118,9 +2142,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/sessiondropdown.js~sessiondropdown.initprops",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html#static-method-initProps",
-    "src/admin/components/SessionDropdown.js~SessionDropdown.initProps",
+    "src/admin/components/sessiondropdown.js~sessiondropdown.initattrs",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html#static-method-initAttrs",
+    "src/admin/components/SessionDropdown.js~SessionDropdown.initAttrs",
     "method"
   ],
   [
@@ -2130,9 +2154,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/admin/components/settingdropdown.js~settingdropdown.initprops",
-    "class/src/admin/components/SettingDropdown.js~SettingDropdown.html#static-method-initProps",
-    "src/admin/components/SettingDropdown.js~SettingDropdown.initProps",
+    "src/admin/components/settingdropdown.js~settingdropdown#view",
+    "class/src/admin/components/SettingDropdown.js~SettingDropdown.html#instance-method-view",
+    "src/admin/components/SettingDropdown.js~SettingDropdown#view",
+    "method"
+  ],
+  [
+    "src/admin/components/settingdropdown.js~settingdropdown.initattrs",
+    "class/src/admin/components/SettingDropdown.js~SettingDropdown.html#static-method-initAttrs",
+    "src/admin/components/SettingDropdown.js~SettingDropdown.initAttrs",
     "method"
   ],
   [
@@ -2166,16 +2196,16 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/settingsmodal.js~settingsmodal#init",
-    "class/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-init",
-    "src/admin/components/SettingsModal.js~SettingsModal#init",
-    "method"
-  ],
-  [
     "src/admin/components/settingsmodal.js~settingsmodal#loading",
     "class/src/admin/components/SettingsModal.js~SettingsModal.html#instance-member-loading",
     "src/admin/components/SettingsModal.js~SettingsModal#loading",
     "member"
+  ],
+  [
+    "src/admin/components/settingsmodal.js~settingsmodal#oninit",
+    "class/src/admin/components/SettingsModal.js~SettingsModal.html#instance-method-oninit",
+    "src/admin/components/SettingsModal.js~SettingsModal#oninit",
+    "method"
   ],
   [
     "src/admin/components/settingsmodal.js~settingsmodal#onsaved",
@@ -2247,12 +2277,6 @@ window.esdocSearchIndex = [
     "src/admin/components/uploadimagebutton.js~uploadimagebutton#failure",
     "class/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-method-failure",
     "src/admin/components/UploadImageButton.js~UploadImageButton#failure",
-    "method"
-  ],
-  [
-    "src/admin/components/uploadimagebutton.js~uploadimagebutton#init",
-    "class/src/admin/components/UploadImageButton.js~UploadImageButton.html#instance-method-init",
-    "src/admin/components/UploadImageButton.js~UploadImageButton#init",
     "method"
   ],
   [
@@ -2490,81 +2514,87 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/component.js",
-    "file/src/common/Component.js.html",
-    "src/common/Component.js",
+    "src/common/component.ts",
+    "file/src/common/Component.ts.html",
+    "src/common/Component.ts",
     "file"
   ],
   [
-    "src/common/component.js~component#$",
-    "class/src/common/Component.js~Component.html#instance-method-$",
-    "src/common/Component.js~Component#$",
+    "src/common/component.ts~component#$",
+    "class/src/common/Component.ts~Component.html#instance-method-$",
+    "src/common/Component.ts~Component#$",
     "method"
   ],
   [
-    "src/common/component.js~component#config",
-    "class/src/common/Component.js~Component.html#instance-method-config",
-    "src/common/Component.js~Component#config",
-    "method"
-  ],
-  [
-    "src/common/component.js~component#constructor",
-    "class/src/common/Component.js~Component.html#instance-constructor-constructor",
-    "src/common/Component.js~Component#constructor",
-    "method"
-  ],
-  [
-    "src/common/component.js~component#element",
-    "class/src/common/Component.js~Component.html#instance-member-element",
-    "src/common/Component.js~Component#element",
+    "src/common/component.ts~component#attrs",
+    "class/src/common/Component.ts~Component.html#instance-member-attrs",
+    "src/common/Component.ts~Component#attrs",
     "member"
   ],
   [
-    "src/common/component.js~component#init",
-    "class/src/common/Component.js~Component.html#instance-method-init",
-    "src/common/Component.js~Component#init",
-    "method"
-  ],
-  [
-    "src/common/component.js~component#onunload",
-    "class/src/common/Component.js~Component.html#instance-method-onunload",
-    "src/common/Component.js~Component#onunload",
-    "method"
-  ],
-  [
-    "src/common/component.js~component#props",
-    "class/src/common/Component.js~Component.html#instance-member-props",
-    "src/common/Component.js~Component#props",
+    "src/common/component.ts~component#element",
+    "class/src/common/Component.ts~Component.html#instance-member-element",
+    "src/common/Component.ts~Component#element",
     "member"
   ],
   [
-    "src/common/component.js~component#render",
-    "class/src/common/Component.js~Component.html#instance-method-render",
-    "src/common/Component.js~Component#render",
+    "src/common/component.ts~component#onbeforeupdate",
+    "class/src/common/Component.ts~Component.html#instance-method-onbeforeupdate",
+    "src/common/Component.ts~Component#onbeforeupdate",
     "method"
   ],
   [
-    "src/common/component.js~component#retain",
-    "class/src/common/Component.js~Component.html#instance-member-retain",
-    "src/common/Component.js~Component#retain",
+    "src/common/component.ts~component#oncreate",
+    "class/src/common/Component.ts~Component.html#instance-method-oncreate",
+    "src/common/Component.ts~Component#oncreate",
+    "method"
+  ],
+  [
+    "src/common/component.ts~component#oninit",
+    "class/src/common/Component.ts~Component.html#instance-method-oninit",
+    "src/common/Component.ts~Component#oninit",
+    "method"
+  ],
+  [
+    "src/common/component.ts~component#setattrs",
+    "class/src/common/Component.ts~Component.html#instance-method-setAttrs",
+    "src/common/Component.ts~Component#setAttrs",
+    "method"
+  ],
+  [
+    "src/common/component.ts~component.component",
+    "class/src/common/Component.ts~Component.html#static-method-component",
+    "src/common/Component.ts~Component.component",
+    "method"
+  ],
+  [
+    "src/common/component.ts~component.initattrs",
+    "class/src/common/Component.ts~Component.html#static-method-initAttrs",
+    "src/common/Component.ts~Component.initAttrs",
+    "method"
+  ],
+  [
+    "src/common/fragment.ts",
+    "file/src/common/Fragment.ts.html",
+    "src/common/Fragment.ts",
+    "file"
+  ],
+  [
+    "src/common/fragment.ts~fragment#$",
+    "class/src/common/Fragment.ts~Fragment.html#instance-method-$",
+    "src/common/Fragment.ts~Fragment#$",
+    "method"
+  ],
+  [
+    "src/common/fragment.ts~fragment#element",
+    "class/src/common/Fragment.ts~Fragment.html#instance-member-element",
+    "src/common/Fragment.ts~Fragment#element",
     "member"
   ],
   [
-    "src/common/component.js~component#view",
-    "class/src/common/Component.js~Component.html#instance-method-view",
-    "src/common/Component.js~Component#view",
-    "method"
-  ],
-  [
-    "src/common/component.js~component.component",
-    "class/src/common/Component.js~Component.html#static-method-component",
-    "src/common/Component.js~Component.component",
-    "method"
-  ],
-  [
-    "src/common/component.js~component.initprops",
-    "class/src/common/Component.js~Component.html#static-method-initProps",
-    "src/common/Component.js~Component.initProps",
+    "src/common/fragment.ts~fragment#render",
+    "class/src/common/Fragment.ts~Fragment.html#instance-method-render",
+    "src/common/Fragment.ts~Fragment#render",
     "method"
   ],
   [
@@ -2880,15 +2910,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/alertmanager.js~alertmanager#config",
-    "class/src/common/components/AlertManager.js~AlertManager.html#instance-method-config",
-    "src/common/components/AlertManager.js~AlertManager#config",
-    "method"
-  ],
-  [
-    "src/common/components/alertmanager.js~alertmanager#init",
-    "class/src/common/components/AlertManager.js~AlertManager.html#instance-method-init",
-    "src/common/components/AlertManager.js~AlertManager#init",
+    "src/common/components/alertmanager.js~alertmanager#oninit",
+    "class/src/common/components/AlertManager.js~AlertManager.html#instance-method-oninit",
+    "src/common/components/AlertManager.js~AlertManager#oninit",
     "method"
   ],
   [
@@ -2910,9 +2934,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/badge.js~badge#config",
-    "class/src/common/components/Badge.js~Badge.html#instance-method-config",
-    "src/common/components/Badge.js~Badge#config",
+    "src/common/components/badge.js~badge#oncreate",
+    "class/src/common/components/Badge.js~Badge.html#instance-method-oncreate",
+    "src/common/components/Badge.js~Badge#oncreate",
     "method"
   ],
   [
@@ -2970,9 +2994,27 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/confirmdocumentunload.js~confirmdocumentunload#config",
-    "class/src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload.html#instance-method-config",
-    "src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload#config",
+    "src/common/components/confirmdocumentunload.js~confirmdocumentunload#boundhandler",
+    "class/src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload.html#instance-member-boundHandler",
+    "src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload#boundHandler",
+    "member"
+  ],
+  [
+    "src/common/components/confirmdocumentunload.js~confirmdocumentunload#handler",
+    "class/src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload.html#instance-method-handler",
+    "src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload#handler",
+    "method"
+  ],
+  [
+    "src/common/components/confirmdocumentunload.js~confirmdocumentunload#oncreate",
+    "class/src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload.html#instance-method-oncreate",
+    "src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload#oncreate",
+    "method"
+  ],
+  [
+    "src/common/components/confirmdocumentunload.js~confirmdocumentunload#onremove",
+    "class/src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload.html#instance-method-onremove",
+    "src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload#onremove",
     "method"
   ],
   [
@@ -2986,12 +3028,6 @@ window.esdocSearchIndex = [
     "file/src/common/components/Dropdown.js.html",
     "src/common/components/Dropdown.js",
     "file"
-  ],
-  [
-    "src/common/components/dropdown.js~dropdown#config",
-    "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-config",
-    "src/common/components/Dropdown.js~Dropdown#config",
-    "method"
   ],
   [
     "src/common/components/dropdown.js~dropdown#getbutton",
@@ -3012,9 +3048,15 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/dropdown.js~dropdown#init",
-    "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-init",
-    "src/common/components/Dropdown.js~Dropdown#init",
+    "src/common/components/dropdown.js~dropdown#oncreate",
+    "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-oncreate",
+    "src/common/components/Dropdown.js~Dropdown#oncreate",
+    "method"
+  ],
+  [
+    "src/common/components/dropdown.js~dropdown#oninit",
+    "class/src/common/components/Dropdown.js~Dropdown.html#instance-method-oninit",
+    "src/common/components/Dropdown.js~Dropdown#oninit",
     "method"
   ],
   [
@@ -3030,9 +3072,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/dropdown.js~dropdown.initprops",
-    "class/src/common/components/Dropdown.js~Dropdown.html#static-method-initProps",
-    "src/common/components/Dropdown.js~Dropdown.initProps",
+    "src/common/components/dropdown.js~dropdown.initattrs",
+    "class/src/common/components/Dropdown.js~Dropdown.html#static-method-initAttrs",
+    "src/common/components/Dropdown.js~Dropdown.initAttrs",
     "method"
   ],
   [
@@ -3054,9 +3096,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/groupbadge.js~groupbadge.initprops",
-    "class/src/common/components/GroupBadge.js~GroupBadge.html#static-method-initProps",
-    "src/common/components/GroupBadge.js~GroupBadge.initProps",
+    "src/common/components/groupbadge.js~groupbadge.initattrs",
+    "class/src/common/components/GroupBadge.js~GroupBadge.html#static-method-initAttrs",
+    "src/common/components/GroupBadge.js~GroupBadge.initAttrs",
     "method"
   ],
   [
@@ -3072,9 +3114,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/linkbutton.js~linkbutton.initprops",
-    "class/src/common/components/LinkButton.js~LinkButton.html#static-method-initProps",
-    "src/common/components/LinkButton.js~LinkButton.initProps",
+    "src/common/components/linkbutton.js~linkbutton.initattrs",
+    "class/src/common/components/LinkButton.js~LinkButton.html#static-method-initAttrs",
+    "src/common/components/LinkButton.js~LinkButton.initAttrs",
     "method"
   ],
   [
@@ -3090,9 +3132,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/loadingindicator.js~loadingindicator#config",
-    "class/src/common/components/LoadingIndicator.js~LoadingIndicator.html#instance-method-config",
-    "src/common/components/LoadingIndicator.js~LoadingIndicator#config",
+    "src/common/components/loadingindicator.js~loadingindicator#oncreate",
+    "class/src/common/components/LoadingIndicator.js~LoadingIndicator.html#instance-method-oncreate",
+    "src/common/components/LoadingIndicator.js~LoadingIndicator#oncreate",
     "method"
   ],
   [
@@ -3120,12 +3162,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/modal.js~modal#config",
-    "class/src/common/components/Modal.js~Modal.html#instance-method-config",
-    "src/common/components/Modal.js~Modal#config",
-    "method"
-  ],
-  [
     "src/common/components/modal.js~modal#content",
     "class/src/common/components/Modal.js~Modal.html#instance-method-content",
     "src/common/components/Modal.js~Modal#content",
@@ -3135,12 +3171,6 @@ window.esdocSearchIndex = [
     "src/common/components/modal.js~modal#hide",
     "class/src/common/components/Modal.js~Modal.html#instance-method-hide",
     "src/common/components/Modal.js~Modal#hide",
-    "method"
-  ],
-  [
-    "src/common/components/modal.js~modal#init",
-    "class/src/common/components/Modal.js~Modal.html#instance-method-init",
-    "src/common/components/Modal.js~Modal#init",
     "method"
   ],
   [
@@ -3154,6 +3184,12 @@ window.esdocSearchIndex = [
     "class/src/common/components/Modal.js~Modal.html#instance-member-loading",
     "src/common/components/Modal.js~Modal#loading",
     "member"
+  ],
+  [
+    "src/common/components/modal.js~modal#oncreate",
+    "class/src/common/components/Modal.js~Modal.html#instance-method-oncreate",
+    "src/common/components/Modal.js~Modal#oncreate",
+    "method"
   ],
   [
     "src/common/components/modal.js~modal#onerror",
@@ -3210,22 +3246,16 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/modalmanager.js~modalmanager#config",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-config",
-    "src/common/components/ModalManager.js~ModalManager#config",
+    "src/common/components/modalmanager.js~modalmanager#oncreate",
+    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-oncreate",
+    "src/common/components/ModalManager.js~ModalManager#oncreate",
     "method"
   ],
   [
-    "src/common/components/modalmanager.js~modalmanager#init",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-init",
-    "src/common/components/ModalManager.js~ModalManager#init",
+    "src/common/components/modalmanager.js~modalmanager#onupdate",
+    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-onupdate",
+    "src/common/components/ModalManager.js~ModalManager#onupdate",
     "method"
-  ],
-  [
-    "src/common/components/modalmanager.js~modalmanager#state",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-member-state",
-    "src/common/components/ModalManager.js~ModalManager#state",
-    "member"
   ],
   [
     "src/common/components/modalmanager.js~modalmanager#view",
@@ -3238,12 +3268,6 @@ window.esdocSearchIndex = [
     "file/src/common/components/Navigation.js.html",
     "src/common/components/Navigation.js",
     "file"
-  ],
-  [
-    "src/common/components/navigation.js~navigation#config",
-    "class/src/common/components/Navigation.js~Navigation.html#instance-method-config",
-    "src/common/components/Navigation.js~Navigation#config",
-    "method"
   ],
   [
     "src/common/components/navigation.js~navigation#getbackbutton",
@@ -3282,15 +3306,27 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/common/components/page.js~page#config",
-    "class/src/common/components/Page.js~Page.html#instance-method-config",
-    "src/common/components/Page.js~Page#config",
+    "src/common/components/page.js~page#onnewroute",
+    "class/src/common/components/Page.js~Page.html#instance-method-onNewRoute",
+    "src/common/components/Page.js~Page#onNewRoute",
     "method"
   ],
   [
-    "src/common/components/page.js~page#init",
-    "class/src/common/components/Page.js~Page.html#instance-method-init",
-    "src/common/components/Page.js~Page#init",
+    "src/common/components/page.js~page#oncreate",
+    "class/src/common/components/Page.js~Page.html#instance-method-oncreate",
+    "src/common/components/Page.js~Page#oncreate",
+    "method"
+  ],
+  [
+    "src/common/components/page.js~page#oninit",
+    "class/src/common/components/Page.js~Page.html#instance-method-oninit",
+    "src/common/components/Page.js~Page#oninit",
+    "method"
+  ],
+  [
+    "src/common/components/page.js~page#onremove",
+    "class/src/common/components/Page.js~Page.html#instance-method-onremove",
+    "src/common/components/Page.js~Page#onremove",
     "method"
   ],
   [
@@ -3354,9 +3390,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/selectdropdown.js~selectdropdown.initprops",
-    "class/src/common/components/SelectDropdown.js~SelectDropdown.html#static-method-initProps",
-    "src/common/components/SelectDropdown.js~SelectDropdown.initProps",
+    "src/common/components/selectdropdown.js~selectdropdown.initattrs",
+    "class/src/common/components/SelectDropdown.js~SelectDropdown.html#static-method-initAttrs",
+    "src/common/components/SelectDropdown.js~SelectDropdown.initAttrs",
     "method"
   ],
   [
@@ -3390,9 +3426,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/splitdropdown.js~splitdropdown.initprops",
-    "class/src/common/components/SplitDropdown.js~SplitDropdown.html#static-method-initProps",
-    "src/common/components/SplitDropdown.js~SplitDropdown.initProps",
+    "src/common/components/splitdropdown.js~splitdropdown.initattrs",
+    "class/src/common/components/SplitDropdown.js~SplitDropdown.html#static-method-initAttrs",
+    "src/common/components/SplitDropdown.js~SplitDropdown.initAttrs",
     "method"
   ],
   [
@@ -3408,9 +3444,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/switch.js~switch.initprops",
-    "class/src/common/components/Switch.js~Switch.html#static-method-initProps",
-    "src/common/components/Switch.js~Switch.initProps",
+    "src/common/components/switch.js~switch.initattrs",
+    "class/src/common/components/Switch.js~Switch.html#static-method-initAttrs",
+    "src/common/components/Switch.js~Switch.initAttrs",
     "method"
   ],
   [
@@ -4008,9 +4044,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/utils/subtreeretainer.js~subtreeretainer#retain",
-    "class/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-method-retain",
-    "src/common/utils/SubtreeRetainer.js~SubtreeRetainer#retain",
+    "src/common/utils/subtreeretainer.js~subtreeretainer#needsrebuild",
+    "class/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html#instance-method-needsRebuild",
+    "src/common/utils/SubtreeRetainer.js~SubtreeRetainer#needsRebuild",
     "method"
   ],
   [
@@ -4164,6 +4200,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/common/utils/setroutewithforcedrefresh.ts",
+    "file/src/common/utils/setRouteWithForcedRefresh.ts.html",
+    "src/common/utils/setRouteWithForcedRefresh.ts",
+    "file"
+  ],
+  [
     "src/common/utils/string.ts",
     "file/src/common/utils/string.ts.html",
     "src/common/utils/string.ts",
@@ -4179,6 +4221,12 @@ window.esdocSearchIndex = [
     "src/common/utils/subclassof.js",
     "file/src/common/utils/subclassOf.js.html",
     "src/common/utils/subclassOf.js",
+    "file"
+  ],
+  [
+    "src/common/utils/withattr.ts",
+    "file/src/common/utils/withAttr.ts.html",
+    "src/common/utils/withAttr.ts",
     "file"
   ],
   [
@@ -4272,6 +4320,42 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/forum/components/affixedsidebar.js",
+    "file/src/forum/components/AffixedSidebar.js.html",
+    "src/forum/components/AffixedSidebar.js",
+    "file"
+  ],
+  [
+    "src/forum/components/affixedsidebar.js~affixedsidebar#boundonresize",
+    "class/src/forum/components/AffixedSidebar.js~AffixedSidebar.html#instance-member-boundOnresize",
+    "src/forum/components/AffixedSidebar.js~AffixedSidebar#boundOnresize",
+    "member"
+  ],
+  [
+    "src/forum/components/affixedsidebar.js~affixedsidebar#oncreate",
+    "class/src/forum/components/AffixedSidebar.js~AffixedSidebar.html#instance-method-oncreate",
+    "src/forum/components/AffixedSidebar.js~AffixedSidebar#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/affixedsidebar.js~affixedsidebar#onremove",
+    "class/src/forum/components/AffixedSidebar.js~AffixedSidebar.html#instance-method-onremove",
+    "src/forum/components/AffixedSidebar.js~AffixedSidebar#onremove",
+    "method"
+  ],
+  [
+    "src/forum/components/affixedsidebar.js~affixedsidebar#onresize",
+    "class/src/forum/components/AffixedSidebar.js~AffixedSidebar.html#instance-method-onresize",
+    "src/forum/components/AffixedSidebar.js~AffixedSidebar#onresize",
+    "method"
+  ],
+  [
+    "src/forum/components/affixedsidebar.js~affixedsidebar#view",
+    "class/src/forum/components/AffixedSidebar.js~AffixedSidebar.html#instance-method-view",
+    "src/forum/components/AffixedSidebar.js~AffixedSidebar#view",
+    "method"
+  ],
+  [
     "src/forum/components/avatareditor.js",
     "file/src/forum/components/AvatarEditor.js.html",
     "src/forum/components/AvatarEditor.js",
@@ -4308,12 +4392,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/avatareditor.js~avatareditor#init",
-    "class/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-init",
-    "src/forum/components/AvatarEditor.js~AvatarEditor#init",
-    "method"
-  ],
-  [
     "src/forum/components/avatareditor.js~avatareditor#isdraggedover",
     "class/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-member-isDraggedOver",
     "src/forum/components/AvatarEditor.js~AvatarEditor#isDraggedOver",
@@ -4324,6 +4402,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-member-loading",
     "src/forum/components/AvatarEditor.js~AvatarEditor#loading",
     "member"
+  ],
+  [
+    "src/forum/components/avatareditor.js~avatareditor#oninit",
+    "class/src/forum/components/AvatarEditor.js~AvatarEditor.html#instance-method-oninit",
+    "src/forum/components/AvatarEditor.js~AvatarEditor#oninit",
+    "method"
   ],
   [
     "src/forum/components/avatareditor.js~avatareditor#openpicker",
@@ -4362,12 +4446,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/avatareditor.js~avatareditor.initprops",
-    "class/src/forum/components/AvatarEditor.js~AvatarEditor.html#static-method-initProps",
-    "src/forum/components/AvatarEditor.js~AvatarEditor.initProps",
-    "method"
-  ],
-  [
     "src/forum/components/changeemailmodal.js",
     "file/src/forum/components/ChangeEmailModal.js.html",
     "src/forum/components/ChangeEmailModal.js",
@@ -4392,12 +4470,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/changeemailmodal.js~changeemailmodal#init",
-    "class/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-init",
-    "src/forum/components/ChangeEmailModal.js~ChangeEmailModal#init",
-    "method"
-  ],
-  [
     "src/forum/components/changeemailmodal.js~changeemailmodal#loading",
     "class/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-member-loading",
     "src/forum/components/ChangeEmailModal.js~ChangeEmailModal#loading",
@@ -4407,6 +4479,12 @@ window.esdocSearchIndex = [
     "src/forum/components/changeemailmodal.js~changeemailmodal#onerror",
     "class/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-onerror",
     "src/forum/components/ChangeEmailModal.js~ChangeEmailModal#onerror",
+    "method"
+  ],
+  [
+    "src/forum/components/changeemailmodal.js~changeemailmodal#oninit",
+    "class/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html#instance-method-oninit",
+    "src/forum/components/ChangeEmailModal.js~ChangeEmailModal#oninit",
     "method"
   ],
   [
@@ -4476,33 +4554,27 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/commentpost.js~commentpost#attrs",
-    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-attrs",
-    "src/forum/components/CommentPost.js~CommentPost#attrs",
-    "method"
-  ],
-  [
     "src/forum/components/commentpost.js~commentpost#cardvisible",
     "class/src/forum/components/CommentPost.js~CommentPost.html#instance-member-cardVisible",
     "src/forum/components/CommentPost.js~CommentPost#cardVisible",
     "member"
   ],
   [
-    "src/forum/components/commentpost.js~commentpost#config",
-    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-config",
-    "src/forum/components/CommentPost.js~CommentPost#config",
-    "method"
-  ],
-  [
-    "src/forum/components/commentpost.js~commentpost#configpreview",
-    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-configPreview",
-    "src/forum/components/CommentPost.js~CommentPost#configPreview",
-    "method"
-  ],
-  [
     "src/forum/components/commentpost.js~commentpost#content",
     "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-content",
     "src/forum/components/CommentPost.js~CommentPost#content",
+    "method"
+  ],
+  [
+    "src/forum/components/commentpost.js~commentpost#contenthtml",
+    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-member-contentHtml",
+    "src/forum/components/CommentPost.js~CommentPost#contentHtml",
+    "member"
+  ],
+  [
+    "src/forum/components/commentpost.js~commentpost#elementattrs",
+    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-elementAttrs",
+    "src/forum/components/CommentPost.js~CommentPost#elementAttrs",
     "method"
   ],
   [
@@ -4512,15 +4584,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/commentpost.js~commentpost#init",
-    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-init",
-    "src/forum/components/CommentPost.js~CommentPost#init",
-    "method"
-  ],
-  [
     "src/forum/components/commentpost.js~commentpost#isediting",
     "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-isEditing",
     "src/forum/components/CommentPost.js~CommentPost#isEditing",
+    "method"
+  ],
+  [
+    "src/forum/components/commentpost.js~commentpost#oninit",
+    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-oninit",
+    "src/forum/components/CommentPost.js~CommentPost#oninit",
+    "method"
+  ],
+  [
+    "src/forum/components/commentpost.js~commentpost#onupdate",
+    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-onupdate",
+    "src/forum/components/CommentPost.js~CommentPost#onupdate",
     "method"
   ],
   [
@@ -4572,12 +4650,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/composer.js~composer#config",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-config",
-    "src/forum/components/Composer.js~Composer#config",
-    "method"
-  ],
-  [
     "src/forum/components/composer.js~composer#confighandle",
     "class/src/forum/components/Composer.js~Composer.html#instance-method-configHandle",
     "src/forum/components/Composer.js~Composer#configHandle",
@@ -4608,6 +4680,12 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/forum/components/composer.js~composer#handlers",
+    "class/src/forum/components/Composer.js~Composer.html#instance-member-handlers",
+    "src/forum/components/Composer.js~Composer#handlers",
+    "member"
+  ],
+  [
     "src/forum/components/composer.js~composer#hide",
     "class/src/forum/components/Composer.js~Composer.html#instance-method-hide",
     "src/forum/components/Composer.js~Composer#hide",
@@ -4617,12 +4695,6 @@ window.esdocSearchIndex = [
     "src/forum/components/composer.js~composer#hidebackdrop",
     "class/src/forum/components/Composer.js~Composer.html#instance-method-hideBackdrop",
     "src/forum/components/Composer.js~Composer#hideBackdrop",
-    "method"
-  ],
-  [
-    "src/forum/components/composer.js~composer#init",
-    "class/src/forum/components/Composer.js~Composer.html#instance-method-init",
-    "src/forum/components/Composer.js~Composer#init",
     "method"
   ],
   [
@@ -4638,6 +4710,18 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/composer.js~composer#oncreate",
+    "class/src/forum/components/Composer.js~Composer.html#instance-method-oncreate",
+    "src/forum/components/Composer.js~Composer#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/composer.js~composer#oninit",
+    "class/src/forum/components/Composer.js~Composer.html#instance-method-oninit",
+    "src/forum/components/Composer.js~Composer#oninit",
+    "method"
+  ],
+  [
     "src/forum/components/composer.js~composer#onmousemove",
     "class/src/forum/components/Composer.js~Composer.html#instance-method-onmousemove",
     "src/forum/components/Composer.js~Composer#onmousemove",
@@ -4647,6 +4731,18 @@ window.esdocSearchIndex = [
     "src/forum/components/composer.js~composer#onmouseup",
     "class/src/forum/components/Composer.js~Composer.html#instance-method-onmouseup",
     "src/forum/components/Composer.js~Composer#onmouseup",
+    "method"
+  ],
+  [
+    "src/forum/components/composer.js~composer#onremove",
+    "class/src/forum/components/Composer.js~Composer.html#instance-method-onremove",
+    "src/forum/components/Composer.js~Composer#onremove",
+    "method"
+  ],
+  [
+    "src/forum/components/composer.js~composer#onupdate",
+    "class/src/forum/components/Composer.js~Composer.html#instance-method-onupdate",
+    "src/forum/components/Composer.js~Composer#onupdate",
     "method"
   ],
   [
@@ -4728,12 +4824,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/composerbody.js~composerbody#init",
-    "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-init",
-    "src/forum/components/ComposerBody.js~ComposerBody#init",
-    "method"
-  ],
-  [
     "src/forum/components/composerbody.js~composerbody#loaded",
     "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-loaded",
     "src/forum/components/ComposerBody.js~ComposerBody#loaded",
@@ -4744,6 +4834,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-member-loading",
     "src/forum/components/ComposerBody.js~ComposerBody#loading",
     "member"
+  ],
+  [
+    "src/forum/components/composerbody.js~composerbody#oninit",
+    "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-method-oninit",
+    "src/forum/components/ComposerBody.js~ComposerBody#oninit",
+    "method"
   ],
   [
     "src/forum/components/composerbody.js~composerbody#onsubmit",
@@ -4764,9 +4860,45 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/composerbutton.js~composerbutton.initprops",
-    "class/src/forum/components/ComposerButton.js~ComposerButton.html#static-method-initProps",
-    "src/forum/components/ComposerButton.js~ComposerButton.initProps",
+    "src/forum/components/composerbutton.js~composerbutton.initattrs",
+    "class/src/forum/components/ComposerButton.js~ComposerButton.html#static-method-initAttrs",
+    "src/forum/components/ComposerButton.js~ComposerButton.initAttrs",
+    "method"
+  ],
+  [
+    "src/forum/components/composerpostpreview.js",
+    "file/src/forum/components/ComposerPostPreview.js.html",
+    "src/forum/components/ComposerPostPreview.js",
+    "file"
+  ],
+  [
+    "src/forum/components/composerpostpreview.js~composerpostpreview#oncreate",
+    "class/src/forum/components/ComposerPostPreview.js~ComposerPostPreview.html#instance-method-oncreate",
+    "src/forum/components/ComposerPostPreview.js~ComposerPostPreview#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/composerpostpreview.js~composerpostpreview#onremove",
+    "class/src/forum/components/ComposerPostPreview.js~ComposerPostPreview.html#instance-method-onremove",
+    "src/forum/components/ComposerPostPreview.js~ComposerPostPreview#onremove",
+    "method"
+  ],
+  [
+    "src/forum/components/composerpostpreview.js~composerpostpreview#updateinterval",
+    "class/src/forum/components/ComposerPostPreview.js~ComposerPostPreview.html#instance-member-updateInterval",
+    "src/forum/components/ComposerPostPreview.js~ComposerPostPreview#updateInterval",
+    "member"
+  ],
+  [
+    "src/forum/components/composerpostpreview.js~composerpostpreview#view",
+    "class/src/forum/components/ComposerPostPreview.js~ComposerPostPreview.html#instance-method-view",
+    "src/forum/components/ComposerPostPreview.js~ComposerPostPreview#view",
+    "method"
+  ],
+  [
+    "src/forum/components/composerpostpreview.js~composerpostpreview.initattrs",
+    "class/src/forum/components/ComposerPostPreview.js~ComposerPostPreview.html#static-method-initAttrs",
+    "src/forum/components/ComposerPostPreview.js~ComposerPostPreview.initAttrs",
     "method"
   ],
   [
@@ -4794,16 +4926,16 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/discussioncomposer.js~discussioncomposer#init",
-    "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-init",
-    "src/forum/components/DiscussionComposer.js~DiscussionComposer#init",
-    "method"
-  ],
-  [
     "src/forum/components/discussioncomposer.js~discussioncomposer#loading",
     "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-member-loading",
     "src/forum/components/DiscussionComposer.js~DiscussionComposer#loading",
     "member"
+  ],
+  [
+    "src/forum/components/discussioncomposer.js~discussioncomposer#oninit",
+    "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#instance-method-oninit",
+    "src/forum/components/DiscussionComposer.js~DiscussionComposer#oninit",
+    "method"
   ],
   [
     "src/forum/components/discussioncomposer.js~discussioncomposer#onkeydown",
@@ -4824,9 +4956,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/discussioncomposer.js~discussioncomposer.initprops",
-    "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#static-method-initProps",
-    "src/forum/components/DiscussionComposer.js~DiscussionComposer.initProps",
+    "src/forum/components/discussioncomposer.js~discussioncomposer.initattrs",
+    "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html#static-method-initAttrs",
+    "src/forum/components/DiscussionComposer.js~DiscussionComposer.initAttrs",
     "method"
   ],
   [
@@ -4854,18 +4986,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/discussionlist.js~discussionlist#init",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-init",
-    "src/forum/components/DiscussionList.js~DiscussionList#init",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionlist.js~discussionlist#state",
-    "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-member-state",
-    "src/forum/components/DiscussionList.js~DiscussionList#state",
-    "member"
-  ],
-  [
     "src/forum/components/discussionlist.js~discussionlist#view",
     "class/src/forum/components/DiscussionList.js~DiscussionList.html#instance-method-view",
     "src/forum/components/DiscussionList.js~DiscussionList#view",
@@ -4884,15 +5004,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/discussionlistitem.js~discussionlistitem#attrs",
-    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-attrs",
-    "src/forum/components/DiscussionListItem.js~DiscussionListItem#attrs",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionlistitem.js~discussionlistitem#config",
-    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-config",
-    "src/forum/components/DiscussionListItem.js~DiscussionListItem#config",
+    "src/forum/components/discussionlistitem.js~discussionlistitem#elementattrs",
+    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-elementAttrs",
+    "src/forum/components/DiscussionListItem.js~DiscussionListItem#elementAttrs",
     "method"
   ],
   [
@@ -4908,15 +5022,27 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/discussionlistitem.js~discussionlistitem#init",
-    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-init",
-    "src/forum/components/DiscussionListItem.js~DiscussionListItem#init",
-    "method"
-  ],
-  [
     "src/forum/components/discussionlistitem.js~discussionlistitem#markasread",
     "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-markAsRead",
     "src/forum/components/DiscussionListItem.js~DiscussionListItem#markAsRead",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionlistitem.js~discussionlistitem#onbeforeupdate",
+    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-onbeforeupdate",
+    "src/forum/components/DiscussionListItem.js~DiscussionListItem#onbeforeupdate",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionlistitem.js~discussionlistitem#oncreate",
+    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-oncreate",
+    "src/forum/components/DiscussionListItem.js~DiscussionListItem#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionlistitem.js~discussionlistitem#oninit",
+    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-oninit",
+    "src/forum/components/DiscussionListItem.js~DiscussionListItem#oninit",
     "method"
   ],
   [
@@ -4944,6 +5070,36 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/discussionlistpane.js",
+    "file/src/forum/components/DiscussionListPane.js.html",
+    "src/forum/components/DiscussionListPane.js",
+    "file"
+  ],
+  [
+    "src/forum/components/discussionlistpane.js~discussionlistpane#enoughspace",
+    "class/src/forum/components/DiscussionListPane.js~DiscussionListPane.html#instance-method-enoughSpace",
+    "src/forum/components/DiscussionListPane.js~DiscussionListPane#enoughSpace",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionlistpane.js~discussionlistpane#oncreate",
+    "class/src/forum/components/DiscussionListPane.js~DiscussionListPane.html#instance-method-oncreate",
+    "src/forum/components/DiscussionListPane.js~DiscussionListPane#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionlistpane.js~discussionlistpane#onremove",
+    "class/src/forum/components/DiscussionListPane.js~DiscussionListPane.html#instance-method-onremove",
+    "src/forum/components/DiscussionListPane.js~DiscussionListPane#onremove",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionlistpane.js~discussionlistpane#view",
+    "class/src/forum/components/DiscussionListPane.js~DiscussionListPane.html#instance-method-view",
+    "src/forum/components/DiscussionListPane.js~DiscussionListPane#view",
+    "method"
+  ],
+  [
     "src/forum/components/discussionpage.js",
     "file/src/forum/components/DiscussionPage.js.html",
     "src/forum/components/DiscussionPage.js",
@@ -4956,28 +5112,10 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/discussionpage.js~discussionpage#config",
-    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-config",
-    "src/forum/components/DiscussionPage.js~DiscussionPage#config",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionpage.js~discussionpage#configpane",
-    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-configPane",
-    "src/forum/components/DiscussionPage.js~DiscussionPage#configPane",
-    "method"
-  ],
-  [
     "src/forum/components/discussionpage.js~discussionpage#discussion",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-discussion",
     "src/forum/components/DiscussionPage.js~DiscussionPage#discussion",
     "member"
-  ],
-  [
-    "src/forum/components/discussionpage.js~discussionpage#init",
-    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-init",
-    "src/forum/components/DiscussionPage.js~DiscussionPage#init",
-    "method"
   ],
   [
     "src/forum/components/discussionpage.js~discussionpage#load",
@@ -4992,9 +5130,21 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/discussionpage.js~discussionpage#onunload",
-    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-onunload",
-    "src/forum/components/DiscussionPage.js~DiscussionPage#onunload",
+    "src/forum/components/discussionpage.js~discussionpage#onbeforeupdate",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-onbeforeupdate",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#onbeforeupdate",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionpage.js~discussionpage#oninit",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-oninit",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#oninit",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionpage.js~discussionpage#onremove",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-onremove",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#onremove",
     "method"
   ],
   [
@@ -5002,6 +5152,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-positionChanged",
     "src/forum/components/DiscussionPage.js~DiscussionPage#positionChanged",
     "method"
+  ],
+  [
+    "src/forum/components/discussionpage.js~discussionpage#prevroute",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-prevRoute",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#prevRoute",
+    "member"
   ],
   [
     "src/forum/components/discussionpage.js~discussionpage#requestparams",
@@ -5124,9 +5280,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/discussionsuserpage.js~discussionsuserpage#init",
-    "class/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html#instance-method-init",
-    "src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage#init",
+    "src/forum/components/discussionsuserpage.js~discussionsuserpage#oninit",
+    "class/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html#instance-method-oninit",
+    "src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage#oninit",
     "method"
   ],
   [
@@ -5178,9 +5334,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/editpostcomposer.js~editpostcomposer.initprops",
-    "class/src/forum/components/EditPostComposer.js~EditPostComposer.html#static-method-initProps",
-    "src/forum/components/EditPostComposer.js~EditPostComposer.initProps",
+    "src/forum/components/editpostcomposer.js~editpostcomposer.initattrs",
+    "class/src/forum/components/EditPostComposer.js~EditPostComposer.html#static-method-initAttrs",
+    "src/forum/components/EditPostComposer.js~EditPostComposer.initAttrs",
     "method"
   ],
   [
@@ -5232,12 +5388,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/editusermodal.js~editusermodal#init",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-init",
-    "src/forum/components/EditUserModal.js~EditUserModal#init",
-    "method"
-  ],
-  [
     "src/forum/components/editusermodal.js~editusermodal#isemailconfirmed",
     "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-isEmailConfirmed",
     "src/forum/components/EditUserModal.js~EditUserModal#isEmailConfirmed",
@@ -5248,6 +5398,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-loading",
     "src/forum/components/EditUserModal.js~EditUserModal#loading",
     "member"
+  ],
+  [
+    "src/forum/components/editusermodal.js~editusermodal#oninit",
+    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-oninit",
+    "src/forum/components/EditUserModal.js~EditUserModal#oninit",
+    "method"
   ],
   [
     "src/forum/components/editusermodal.js~editusermodal#onsubmit",
@@ -5286,12 +5442,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/eventpost.js~eventpost#attrs",
-    "class/src/forum/components/EventPost.js~EventPost.html#instance-method-attrs",
-    "src/forum/components/EventPost.js~EventPost#attrs",
-    "method"
-  ],
-  [
     "src/forum/components/eventpost.js~eventpost#content",
     "class/src/forum/components/EventPost.js~EventPost.html#instance-method-content",
     "src/forum/components/EventPost.js~EventPost#content",
@@ -5313,6 +5463,12 @@ window.esdocSearchIndex = [
     "src/forum/components/eventpost.js~eventpost#descriptionkey",
     "class/src/forum/components/EventPost.js~EventPost.html#instance-method-descriptionKey",
     "src/forum/components/EventPost.js~EventPost#descriptionKey",
+    "method"
+  ],
+  [
+    "src/forum/components/eventpost.js~eventpost#elementattrs",
+    "class/src/forum/components/EventPost.js~EventPost.html#instance-method-elementAttrs",
+    "src/forum/components/EventPost.js~EventPost#elementAttrs",
     "method"
   ],
   [
@@ -5352,12 +5508,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#init",
-    "class/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-init",
-    "src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#init",
-    "method"
-  ],
-  [
     "src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#loading",
     "class/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-member-loading",
     "src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#loading",
@@ -5367,6 +5517,12 @@ window.esdocSearchIndex = [
     "src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#onerror",
     "class/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-onerror",
     "src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#onerror",
+    "method"
+  ],
+  [
+    "src/forum/components/forgotpasswordmodal.js~forgotpasswordmodal#oninit",
+    "class/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html#instance-method-oninit",
+    "src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal#oninit",
     "method"
   ],
   [
@@ -5394,12 +5550,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/headerprimary.js~headerprimary#config",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-config",
-    "src/forum/components/HeaderPrimary.js~HeaderPrimary#config",
-    "method"
-  ],
-  [
     "src/forum/components/headerprimary.js~headerprimary#items",
     "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html#instance-method-items",
     "src/forum/components/HeaderPrimary.js~HeaderPrimary#items",
@@ -5416,12 +5566,6 @@ window.esdocSearchIndex = [
     "file/src/forum/components/HeaderSecondary.js.html",
     "src/forum/components/HeaderSecondary.js",
     "file"
-  ],
-  [
-    "src/forum/components/headersecondary.js~headersecondary#config",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html#instance-method-config",
-    "src/forum/components/HeaderSecondary.js~HeaderSecondary#config",
-    "method"
   ],
   [
     "src/forum/components/headersecondary.js~headersecondary#items",
@@ -5454,21 +5598,15 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/indexpage.js~indexpage#config",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-config",
-    "src/forum/components/IndexPage.js~IndexPage#config",
-    "method"
+    "src/forum/components/indexpage.js~indexpage#currentpath",
+    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-member-currentPath",
+    "src/forum/components/IndexPage.js~IndexPage#currentPath",
+    "member"
   ],
   [
     "src/forum/components/indexpage.js~indexpage#hero",
     "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-hero",
     "src/forum/components/IndexPage.js~IndexPage#hero",
-    "method"
-  ],
-  [
-    "src/forum/components/indexpage.js~indexpage#init",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-init",
-    "src/forum/components/IndexPage.js~IndexPage#init",
     "method"
   ],
   [
@@ -5496,9 +5634,33 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/indexpage.js~indexpage#onunload",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-onunload",
-    "src/forum/components/IndexPage.js~IndexPage#onunload",
+    "src/forum/components/indexpage.js~indexpage#onbeforeupdate",
+    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-onbeforeupdate",
+    "src/forum/components/IndexPage.js~IndexPage#onbeforeupdate",
+    "method"
+  ],
+  [
+    "src/forum/components/indexpage.js~indexpage#oncreate",
+    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-oncreate",
+    "src/forum/components/IndexPage.js~IndexPage#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/indexpage.js~indexpage#oninit",
+    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-oninit",
+    "src/forum/components/IndexPage.js~IndexPage#oninit",
+    "method"
+  ],
+  [
+    "src/forum/components/indexpage.js~indexpage#onremove",
+    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-onremove",
+    "src/forum/components/IndexPage.js~IndexPage#onremove",
+    "method"
+  ],
+  [
+    "src/forum/components/indexpage.js~indexpage#settitle",
+    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-setTitle",
+    "src/forum/components/IndexPage.js~IndexPage#setTitle",
     "method"
   ],
   [
@@ -5544,9 +5706,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/loginbutton.js~loginbutton.initprops",
-    "class/src/forum/components/LogInButton.js~LogInButton.html#static-method-initProps",
-    "src/forum/components/LogInButton.js~LogInButton.initProps",
+    "src/forum/components/loginbutton.js~loginbutton.initattrs",
+    "class/src/forum/components/LogInButton.js~LogInButton.html#static-method-initAttrs",
+    "src/forum/components/LogInButton.js~LogInButton.initAttrs",
     "method"
   ],
   [
@@ -5616,12 +5778,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/loginmodal.js~loginmodal#init",
-    "class/src/forum/components/LogInModal.js~LogInModal.html#instance-method-init",
-    "src/forum/components/LogInModal.js~LogInModal#init",
-    "method"
-  ],
-  [
     "src/forum/components/loginmodal.js~loginmodal#loading",
     "class/src/forum/components/LogInModal.js~LogInModal.html#instance-member-loading",
     "src/forum/components/LogInModal.js~LogInModal#loading",
@@ -5631,6 +5787,12 @@ window.esdocSearchIndex = [
     "src/forum/components/loginmodal.js~loginmodal#onerror",
     "class/src/forum/components/LogInModal.js~LogInModal.html#instance-method-onerror",
     "src/forum/components/LogInModal.js~LogInModal#onerror",
+    "method"
+  ],
+  [
+    "src/forum/components/loginmodal.js~loginmodal#oninit",
+    "class/src/forum/components/LogInModal.js~LogInModal.html#instance-method-oninit",
+    "src/forum/components/LogInModal.js~LogInModal#oninit",
     "method"
   ],
   [
@@ -5718,18 +5880,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/notificationgrid.js~notificationgrid#config",
-    "class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-config",
-    "src/forum/components/NotificationGrid.js~NotificationGrid#config",
-    "method"
-  ],
-  [
-    "src/forum/components/notificationgrid.js~notificationgrid#init",
-    "class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-init",
-    "src/forum/components/NotificationGrid.js~NotificationGrid#init",
-    "method"
-  ],
-  [
     "src/forum/components/notificationgrid.js~notificationgrid#loading",
     "class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-member-loading",
     "src/forum/components/NotificationGrid.js~NotificationGrid#loading",
@@ -5751,6 +5901,18 @@ window.esdocSearchIndex = [
     "src/forum/components/notificationgrid.js~notificationgrid#notificationtypes",
     "class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-notificationTypes",
     "src/forum/components/NotificationGrid.js~NotificationGrid#notificationTypes",
+    "method"
+  ],
+  [
+    "src/forum/components/notificationgrid.js~notificationgrid#oncreate",
+    "class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-oncreate",
+    "src/forum/components/NotificationGrid.js~NotificationGrid#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/notificationgrid.js~notificationgrid#oninit",
+    "class/src/forum/components/NotificationGrid.js~NotificationGrid.html#instance-method-oninit",
+    "src/forum/components/NotificationGrid.js~NotificationGrid#oninit",
     "method"
   ],
   [
@@ -5796,22 +5958,40 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/notificationlist.js~notificationlist#config",
-    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-method-config",
-    "src/forum/components/NotificationList.js~NotificationList#config",
-    "method"
-  ],
-  [
-    "src/forum/components/notificationlist.js~notificationlist#init",
-    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-method-init",
-    "src/forum/components/NotificationList.js~NotificationList#init",
-    "method"
-  ],
-  [
-    "src/forum/components/notificationlist.js~notificationlist#state",
-    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-member-state",
-    "src/forum/components/NotificationList.js~NotificationList#state",
+    "src/forum/components/notificationlist.js~notificationlist#$notifications",
+    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-member-$notifications",
+    "src/forum/components/NotificationList.js~NotificationList#$notifications",
     "member"
+  ],
+  [
+    "src/forum/components/notificationlist.js~notificationlist#$scrollparent",
+    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-member-$scrollParent",
+    "src/forum/components/NotificationList.js~NotificationList#$scrollParent",
+    "member"
+  ],
+  [
+    "src/forum/components/notificationlist.js~notificationlist#boundscrollhandler",
+    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-member-boundScrollHandler",
+    "src/forum/components/NotificationList.js~NotificationList#boundScrollHandler",
+    "member"
+  ],
+  [
+    "src/forum/components/notificationlist.js~notificationlist#oncreate",
+    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-method-oncreate",
+    "src/forum/components/NotificationList.js~NotificationList#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/notificationlist.js~notificationlist#onremove",
+    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-method-onremove",
+    "src/forum/components/NotificationList.js~NotificationList#onremove",
+    "method"
+  ],
+  [
+    "src/forum/components/notificationlist.js~notificationlist#scrollhandler",
+    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-method-scrollHandler",
+    "src/forum/components/NotificationList.js~NotificationList#scrollHandler",
+    "method"
   ],
   [
     "src/forum/components/notificationlist.js~notificationlist#view",
@@ -5874,9 +6054,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/notificationsdropdown.js~notificationsdropdown.initprops",
-    "class/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#static-method-initProps",
-    "src/forum/components/NotificationsDropdown.js~NotificationsDropdown.initProps",
+    "src/forum/components/notificationsdropdown.js~notificationsdropdown.initattrs",
+    "class/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html#static-method-initAttrs",
+    "src/forum/components/NotificationsDropdown.js~NotificationsDropdown.initAttrs",
     "method"
   ],
   [
@@ -5892,9 +6072,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/notificationspage.js~notificationspage#init",
-    "class/src/forum/components/NotificationsPage.js~NotificationsPage.html#instance-method-init",
-    "src/forum/components/NotificationsPage.js~NotificationsPage#init",
+    "src/forum/components/notificationspage.js~notificationspage#oninit",
+    "class/src/forum/components/NotificationsPage.js~NotificationsPage.html#instance-method-oninit",
+    "src/forum/components/NotificationsPage.js~NotificationsPage#oninit",
     "method"
   ],
   [
@@ -5916,21 +6096,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/post.js~post#attrs",
-    "class/src/forum/components/Post.js~Post.html#instance-method-attrs",
-    "src/forum/components/Post.js~Post#attrs",
-    "method"
-  ],
-  [
     "src/forum/components/post.js~post#classes",
     "class/src/forum/components/Post.js~Post.html#instance-method-classes",
     "src/forum/components/Post.js~Post#classes",
-    "method"
-  ],
-  [
-    "src/forum/components/post.js~post#config",
-    "class/src/forum/components/Post.js~Post.html#instance-method-config",
-    "src/forum/components/Post.js~Post#config",
     "method"
   ],
   [
@@ -5940,15 +6108,15 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/post.js~post#footeritems",
-    "class/src/forum/components/Post.js~Post.html#instance-method-footerItems",
-    "src/forum/components/Post.js~Post#footerItems",
+    "src/forum/components/post.js~post#elementattrs",
+    "class/src/forum/components/Post.js~Post.html#instance-method-elementAttrs",
+    "src/forum/components/Post.js~Post#elementAttrs",
     "method"
   ],
   [
-    "src/forum/components/post.js~post#init",
-    "class/src/forum/components/Post.js~Post.html#instance-method-init",
-    "src/forum/components/Post.js~Post#init",
+    "src/forum/components/post.js~post#footeritems",
+    "class/src/forum/components/Post.js~Post.html#instance-method-footerItems",
+    "src/forum/components/Post.js~Post#footerItems",
     "method"
   ],
   [
@@ -5956,6 +6124,24 @@ window.esdocSearchIndex = [
     "class/src/forum/components/Post.js~Post.html#instance-member-loading",
     "src/forum/components/Post.js~Post#loading",
     "member"
+  ],
+  [
+    "src/forum/components/post.js~post#onbeforeupdate",
+    "class/src/forum/components/Post.js~Post.html#instance-method-onbeforeupdate",
+    "src/forum/components/Post.js~Post#onbeforeupdate",
+    "method"
+  ],
+  [
+    "src/forum/components/post.js~post#oninit",
+    "class/src/forum/components/Post.js~Post.html#instance-method-oninit",
+    "src/forum/components/Post.js~Post#oninit",
+    "method"
+  ],
+  [
+    "src/forum/components/post.js~post#onupdate",
+    "class/src/forum/components/Post.js~Post.html#instance-method-onupdate",
+    "src/forum/components/Post.js~Post#onupdate",
+    "method"
   ],
   [
     "src/forum/components/post.js~post#subtree",
@@ -5976,22 +6162,34 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/postedited.js~postedited#config",
-    "class/src/forum/components/PostEdited.js~PostEdited.html#instance-method-config",
-    "src/forum/components/PostEdited.js~PostEdited#config",
-    "method"
-  ],
-  [
-    "src/forum/components/postedited.js~postedited#init",
-    "class/src/forum/components/PostEdited.js~PostEdited.html#instance-method-init",
-    "src/forum/components/PostEdited.js~PostEdited#init",
-    "method"
-  ],
-  [
     "src/forum/components/postedited.js~postedited#oldeditedinfo",
     "class/src/forum/components/PostEdited.js~PostEdited.html#instance-member-oldEditedInfo",
     "src/forum/components/PostEdited.js~PostEdited#oldEditedInfo",
     "member"
+  ],
+  [
+    "src/forum/components/postedited.js~postedited#oncreate",
+    "class/src/forum/components/PostEdited.js~PostEdited.html#instance-method-oncreate",
+    "src/forum/components/PostEdited.js~PostEdited#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/postedited.js~postedited#oninit",
+    "class/src/forum/components/PostEdited.js~PostEdited.html#instance-method-oninit",
+    "src/forum/components/PostEdited.js~PostEdited#oninit",
+    "method"
+  ],
+  [
+    "src/forum/components/postedited.js~postedited#onupdate",
+    "class/src/forum/components/PostEdited.js~PostEdited.html#instance-method-onupdate",
+    "src/forum/components/PostEdited.js~PostEdited#onupdate",
+    "method"
+  ],
+  [
+    "src/forum/components/postedited.js~postedited#rebuildtooltip",
+    "class/src/forum/components/PostEdited.js~PostEdited.html#instance-method-rebuildTooltip",
+    "src/forum/components/PostEdited.js~PostEdited#rebuildTooltip",
+    "method"
   ],
   [
     "src/forum/components/postedited.js~postedited#shouldupdatetooltip",
@@ -6054,12 +6252,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/poststream.js~poststream#config",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-config",
-    "src/forum/components/PostStream.js~PostStream#config",
-    "method"
-  ],
-  [
     "src/forum/components/poststream.js~poststream#discussion",
     "class/src/forum/components/PostStream.js~PostStream.html#instance-member-discussion",
     "src/forum/components/PostStream.js~PostStream#discussion",
@@ -6078,15 +6270,33 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#init",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-init",
-    "src/forum/components/PostStream.js~PostStream#init",
+    "src/forum/components/poststream.js~poststream#oncreate",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-oncreate",
+    "src/forum/components/PostStream.js~PostStream#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#oninit",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-oninit",
+    "src/forum/components/PostStream.js~PostStream#oninit",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#onremove",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-onremove",
+    "src/forum/components/PostStream.js~PostStream#onremove",
     "method"
   ],
   [
     "src/forum/components/poststream.js~poststream#onscroll",
     "class/src/forum/components/PostStream.js~PostStream.html#instance-method-onscroll",
     "src/forum/components/PostStream.js~PostStream#onscroll",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#onupdate",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-onupdate",
+    "src/forum/components/PostStream.js~PostStream#onupdate",
     "method"
   ],
   [
@@ -6156,12 +6366,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#config",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-config",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#config",
-    "method"
-  ],
-  [
     "src/forum/components/poststreamscrubber.js~poststreamscrubber#dragging",
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-dragging",
     "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#dragging",
@@ -6192,12 +6396,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#init",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-init",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#init",
-    "method"
-  ],
-  [
     "src/forum/components/poststreamscrubber.js~poststreamscrubber#mousestart",
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-member-mouseStart",
     "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#mouseStart",
@@ -6210,9 +6408,15 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststreamscrubber.js~poststreamscrubber#ondestroy",
-    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-ondestroy",
-    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#ondestroy",
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#oncreate",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-oncreate",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#oninit",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-oninit",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#oninit",
     "method"
   ],
   [
@@ -6234,9 +6438,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#onremove",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onremove",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onremove",
+    "method"
+  ],
+  [
     "src/forum/components/poststreamscrubber.js~poststreamscrubber#onresize",
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onresize",
     "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onresize",
+    "method"
+  ],
+  [
+    "src/forum/components/poststreamscrubber.js~poststreamscrubber#onupdate",
+    "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html#instance-method-onupdate",
+    "src/forum/components/PostStreamScrubber.js~PostStreamScrubber#onupdate",
     "method"
   ],
   [
@@ -6276,15 +6492,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/postuser.js~postuser#config",
-    "class/src/forum/components/PostUser.js~PostUser.html#instance-method-config",
-    "src/forum/components/PostUser.js~PostUser#config",
-    "method"
-  ],
-  [
     "src/forum/components/postuser.js~postuser#hidecard",
     "class/src/forum/components/PostUser.js~PostUser.html#instance-method-hideCard",
     "src/forum/components/PostUser.js~PostUser#hideCard",
+    "method"
+  ],
+  [
+    "src/forum/components/postuser.js~postuser#oncreate",
+    "class/src/forum/components/PostUser.js~PostUser.html#instance-method-oncreate",
+    "src/forum/components/PostUser.js~PostUser#oncreate",
     "method"
   ],
   [
@@ -6309,12 +6525,6 @@ window.esdocSearchIndex = [
     "src/forum/components/postsuserpage.js~postsuserpage#content",
     "class/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-method-content",
     "src/forum/components/PostsUserPage.js~PostsUserPage#content",
-    "method"
-  ],
-  [
-    "src/forum/components/postsuserpage.js~postsuserpage#init",
-    "class/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-method-init",
-    "src/forum/components/PostsUserPage.js~PostsUserPage#init",
     "method"
   ],
   [
@@ -6346,6 +6556,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-member-moreResults",
     "src/forum/components/PostsUserPage.js~PostsUserPage#moreResults",
     "member"
+  ],
+  [
+    "src/forum/components/postsuserpage.js~postsuserpage#oninit",
+    "class/src/forum/components/PostsUserPage.js~PostsUserPage.html#instance-method-oninit",
+    "src/forum/components/PostsUserPage.js~PostsUserPage#oninit",
+    "method"
   ],
   [
     "src/forum/components/postsuserpage.js~postsuserpage#parseresults",
@@ -6402,12 +6618,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/renamediscussionmodal.js~renamediscussionmodal#init",
-    "class/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-init",
-    "src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#init",
-    "method"
-  ],
-  [
     "src/forum/components/renamediscussionmodal.js~renamediscussionmodal#loading",
     "class/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-member-loading",
     "src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#loading",
@@ -6418,6 +6628,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-member-newTitle",
     "src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#newTitle",
     "member"
+  ],
+  [
+    "src/forum/components/renamediscussionmodal.js~renamediscussionmodal#oninit",
+    "class/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html#instance-method-oninit",
+    "src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal#oninit",
+    "method"
   ],
   [
     "src/forum/components/renamediscussionmodal.js~renamediscussionmodal#onsubmit",
@@ -6468,9 +6684,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/replycomposer.js~replycomposer.initprops",
-    "class/src/forum/components/ReplyComposer.js~ReplyComposer.html#static-method-initProps",
-    "src/forum/components/ReplyComposer.js~ReplyComposer.initProps",
+    "src/forum/components/replycomposer.js~replycomposer.initattrs",
+    "class/src/forum/components/ReplyComposer.js~ReplyComposer.html#static-method-initAttrs",
+    "src/forum/components/ReplyComposer.js~ReplyComposer.initAttrs",
     "method"
   ],
   [
@@ -6480,9 +6696,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/replyplaceholder.js~replyplaceholder#configpreview",
-    "class/src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder.html#instance-method-configPreview",
-    "src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder#configPreview",
+    "src/forum/components/replyplaceholder.js~replyplaceholder#anchorpreview",
+    "class/src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder.html#instance-method-anchorPreview",
+    "src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder#anchorPreview",
     "method"
   ],
   [
@@ -6501,12 +6717,6 @@ window.esdocSearchIndex = [
     "src/forum/components/search.js~search#clear",
     "class/src/forum/components/Search.js~Search.html#instance-method-clear",
     "src/forum/components/Search.js~Search#clear",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#config",
-    "class/src/forum/components/Search.js~Search.html#instance-method-config",
-    "src/forum/components/Search.js~Search#config",
     "method"
   ],
   [
@@ -6534,12 +6744,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/search.js~search#init",
-    "class/src/forum/components/Search.js~Search.html#instance-method-init",
-    "src/forum/components/Search.js~Search#init",
-    "method"
-  ],
-  [
     "src/forum/components/search.js~search#loadingsources",
     "class/src/forum/components/Search.js~Search.html#instance-member-loadingSources",
     "src/forum/components/Search.js~Search#loadingSources",
@@ -6550,6 +6754,24 @@ window.esdocSearchIndex = [
     "class/src/forum/components/Search.js~Search.html#instance-member-navigator",
     "src/forum/components/Search.js~Search#navigator",
     "member"
+  ],
+  [
+    "src/forum/components/search.js~search#oncreate",
+    "class/src/forum/components/Search.js~Search.html#instance-method-oncreate",
+    "src/forum/components/Search.js~Search#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/search.js~search#oninit",
+    "class/src/forum/components/Search.js~Search.html#instance-method-oninit",
+    "src/forum/components/Search.js~Search#oninit",
+    "method"
+  ],
+  [
+    "src/forum/components/search.js~search#onupdate",
+    "class/src/forum/components/Search.js~Search.html#instance-method-onupdate",
+    "src/forum/components/Search.js~Search#onupdate",
+    "method"
   ],
   [
     "src/forum/components/search.js~search#selectresult",
@@ -6636,9 +6858,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/sessiondropdown.js~sessiondropdown.initprops",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html#static-method-initProps",
-    "src/forum/components/SessionDropdown.js~SessionDropdown.initProps",
+    "src/forum/components/sessiondropdown.js~sessiondropdown.initattrs",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html#static-method-initAttrs",
+    "src/forum/components/SessionDropdown.js~SessionDropdown.initAttrs",
     "method"
   ],
   [
@@ -6666,21 +6888,15 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/settingspage.js~settingspage#init",
-    "class/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-init",
-    "src/forum/components/SettingsPage.js~SettingsPage#init",
-    "method"
-  ],
-  [
     "src/forum/components/settingspage.js~settingspage#notificationsitems",
     "class/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-notificationsItems",
     "src/forum/components/SettingsPage.js~SettingsPage#notificationsItems",
     "method"
   ],
   [
-    "src/forum/components/settingspage.js~settingspage#preferencesaver",
-    "class/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-preferenceSaver",
-    "src/forum/components/SettingsPage.js~SettingsPage#preferenceSaver",
+    "src/forum/components/settingspage.js~settingspage#oninit",
+    "class/src/forum/components/SettingsPage.js~SettingsPage.html#instance-method-oninit",
+    "src/forum/components/SettingsPage.js~SettingsPage#oninit",
     "method"
   ],
   [
@@ -6738,12 +6954,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/signupmodal.js~signupmodal#init",
-    "class/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-init",
-    "src/forum/components/SignUpModal.js~SignUpModal#init",
-    "method"
-  ],
-  [
     "src/forum/components/signupmodal.js~signupmodal#isprovided",
     "class/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-isProvided",
     "src/forum/components/SignUpModal.js~SignUpModal#isProvided",
@@ -6759,6 +6969,12 @@ window.esdocSearchIndex = [
     "src/forum/components/signupmodal.js~signupmodal#login",
     "class/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-logIn",
     "src/forum/components/SignUpModal.js~SignUpModal#logIn",
+    "method"
+  ],
+  [
+    "src/forum/components/signupmodal.js~signupmodal#oninit",
+    "class/src/forum/components/SignUpModal.js~SignUpModal.html#instance-method-oninit",
+    "src/forum/components/SignUpModal.js~SignUpModal#oninit",
     "method"
   ],
   [
@@ -6816,21 +7032,21 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/texteditor.js~texteditor#configtextarea",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-configTextarea",
-    "src/forum/components/TextEditor.js~TextEditor#configTextarea",
-    "method"
-  ],
-  [
     "src/forum/components/texteditor.js~texteditor#controlitems",
     "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-controlItems",
     "src/forum/components/TextEditor.js~TextEditor#controlItems",
     "method"
   ],
   [
-    "src/forum/components/texteditor.js~texteditor#init",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-init",
-    "src/forum/components/TextEditor.js~TextEditor#init",
+    "src/forum/components/texteditor.js~texteditor#oncreate",
+    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-oncreate",
+    "src/forum/components/TextEditor.js~TextEditor#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/texteditor.js~texteditor#oninit",
+    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-oninit",
+    "src/forum/components/TextEditor.js~TextEditor#oninit",
     "method"
   ],
   [
@@ -6870,15 +7086,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/texteditorbutton.js~texteditorbutton#config",
-    "class/src/forum/components/TextEditorButton.js~TextEditorButton.html#instance-method-config",
-    "src/forum/components/TextEditorButton.js~TextEditorButton#config",
+    "src/forum/components/texteditorbutton.js~texteditorbutton#oncreate",
+    "class/src/forum/components/TextEditorButton.js~TextEditorButton.html#instance-method-oncreate",
+    "src/forum/components/TextEditorButton.js~TextEditorButton#oncreate",
     "method"
   ],
   [
-    "src/forum/components/texteditorbutton.js~texteditorbutton.initprops",
-    "class/src/forum/components/TextEditorButton.js~TextEditorButton.html#static-method-initProps",
-    "src/forum/components/TextEditorButton.js~TextEditorButton.initProps",
+    "src/forum/components/texteditorbutton.js~texteditorbutton.initattrs",
+    "class/src/forum/components/TextEditorButton.js~TextEditorButton.html#static-method-initAttrs",
+    "src/forum/components/TextEditorButton.js~TextEditorButton.initAttrs",
     "method"
   ],
   [
@@ -6918,12 +7134,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/userpage.js~userpage#init",
-    "class/src/forum/components/UserPage.js~UserPage.html#instance-method-init",
-    "src/forum/components/UserPage.js~UserPage#init",
-    "method"
-  ],
-  [
     "src/forum/components/userpage.js~userpage#loaduser",
     "class/src/forum/components/UserPage.js~UserPage.html#instance-method-loadUser",
     "src/forum/components/UserPage.js~UserPage#loadUser",
@@ -6934,6 +7144,24 @@ window.esdocSearchIndex = [
     "class/src/forum/components/UserPage.js~UserPage.html#instance-method-navItems",
     "src/forum/components/UserPage.js~UserPage#navItems",
     "method"
+  ],
+  [
+    "src/forum/components/userpage.js~userpage#onbeforeupdate",
+    "class/src/forum/components/UserPage.js~UserPage.html#instance-method-onbeforeupdate",
+    "src/forum/components/UserPage.js~UserPage#onbeforeupdate",
+    "method"
+  ],
+  [
+    "src/forum/components/userpage.js~userpage#oninit",
+    "class/src/forum/components/UserPage.js~UserPage.html#instance-method-oninit",
+    "src/forum/components/UserPage.js~UserPage#oninit",
+    "method"
+  ],
+  [
+    "src/forum/components/userpage.js~userpage#prevusername",
+    "class/src/forum/components/UserPage.js~UserPage.html#instance-member-prevUsername",
+    "src/forum/components/UserPage.js~UserPage#prevUsername",
+    "member"
   ],
   [
     "src/forum/components/userpage.js~userpage#show",
@@ -7008,9 +7236,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/welcomehero.js~welcomehero#init",
-    "class/src/forum/components/WelcomeHero.js~WelcomeHero.html#instance-method-init",
-    "src/forum/components/WelcomeHero.js~WelcomeHero#init",
+    "src/forum/components/welcomehero.js~welcomehero#oninit",
+    "class/src/forum/components/WelcomeHero.js~WelcomeHero.html#instance-method-oninit",
+    "src/forum/components/WelcomeHero.js~WelcomeHero#oninit",
     "method"
   ],
   [
@@ -7971,12 +8199,6 @@ window.esdocSearchIndex = [
     "src/forum/utils/usercontrols.js",
     "file/src/forum/utils/UserControls.js.html",
     "src/forum/utils/UserControls.js",
-    "file"
-  ],
-  [
-    "src/forum/utils/affixsidebar.js",
-    "file/src/forum/utils/affixSidebar.js.html",
-    "src/forum/utils/affixSidebar.js",
     "file"
   ],
   [

@@ -45,7 +45,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add docs/${{ matrix.language }}
-          if [ -z "$(git status --porcelain docs/${{ matrix.language }})" ]; then
+          if [ "$(git status --porcelain docs/${{ matrix.language }} | wc -l)" -lt "2" ]; then
             echo "No changes to commit"
           else
             git commit -m "${{ matrix.language }}: update (flarum/core@${FLARUM_SHA})" docs/${{ matrix.language }}

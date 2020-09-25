@@ -355,13 +355,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/compone/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
@@ -2556,6 +2556,18 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/component.ts~component#props",
+    "class/src/common/Component.ts~Component.html#instance-get-props",
+    "src/common/Component.ts~Component#props",
+    "member"
+  ],
+  [
+    "src/common/component.ts~component#props",
+    "class/src/common/Component.ts~Component.html#instance-set-props",
+    "src/common/Component.ts~Component#props",
+    "member"
+  ],
+  [
     "src/common/component.ts~component#setattrs",
     "class/src/common/Component.ts~Component.html#instance-method-setAttrs",
     "src/common/Component.ts~Component#setAttrs",
@@ -2571,6 +2583,12 @@ window.esdocSearchIndex = [
     "src/common/component.ts~component.initattrs",
     "class/src/common/Component.ts~Component.html#static-method-initAttrs",
     "src/common/Component.ts~Component.initAttrs",
+    "method"
+  ],
+  [
+    "src/common/component.ts~component.initprops",
+    "class/src/common/Component.ts~Component.html#static-method-initProps",
+    "src/common/Component.ts~Component.initProps",
     "method"
   ],
   [

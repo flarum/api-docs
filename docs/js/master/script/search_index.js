@@ -709,13 +709,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/compone/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
@@ -2557,13 +2557,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-get-props",
+    "class/src/common/Component.ts~Component.html#instance-set-props",
     "src/common/Component.ts~Component#props",
     "member"
   ],
   [
     "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-set-props",
+    "class/src/common/Component.ts~Component.html#instance-get-props",
     "src/common/Component.ts~Component#props",
     "member"
   ],
@@ -2583,12 +2583,6 @@ window.esdocSearchIndex = [
     "src/common/component.ts~component.initattrs",
     "class/src/common/Component.ts~Component.html#static-method-initAttrs",
     "src/common/Component.ts~Component.initAttrs",
-    "method"
-  ],
-  [
-    "src/common/component.ts~component.initprops",
-    "class/src/common/Component.ts~Component.html#static-method-initProps",
-    "src/common/Component.ts~Component.initProps",
     "method"
   ],
   [

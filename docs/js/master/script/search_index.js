@@ -355,13 +355,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/compone/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
@@ -709,13 +709,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/compone/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
@@ -4018,6 +4018,12 @@ window.esdocSearchIndex = [
     "class/src/common/utils/ScrollListener.js~ScrollListener.html#instance-method-update",
     "src/common/utils/ScrollListener.js~ScrollListener#update",
     "method"
+  ],
+  [
+    "src/common/utils/stream.js",
+    "file/src/common/utils/Stream.js.html",
+    "src/common/utils/Stream.js",
+    "file"
   ],
   [
     "src/common/utils/subtreeretainer.js",

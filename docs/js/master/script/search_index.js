@@ -709,13 +709,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/compone/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
@@ -7624,12 +7624,6 @@ window.esdocSearchIndex = [
     "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-params",
     "src/forum/states/GlobalSearchState.js~GlobalSearchState#params",
     "method"
-  ],
-  [
-    "src/forum/states/globalsearchstate.js~globalsearchstate#searchroute",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-member-searchRoute",
-    "src/forum/states/GlobalSearchState.js~GlobalSearchState#searchRoute",
-    "member"
   ],
   [
     "src/forum/states/globalsearchstate.js~globalsearchstate#stickyparams",

@@ -343,13 +343,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/compone/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
     "class"
   ],
@@ -709,13 +709,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/compone/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
@@ -3198,6 +3198,12 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/common/components/modal.js~modal#onbeforeremove",
+    "class/src/common/components/Modal.js~Modal.html#instance-method-onbeforeremove",
+    "src/common/components/Modal.js~Modal#onbeforeremove",
+    "method"
+  ],
+  [
     "src/common/components/modal.js~modal#oncreate",
     "class/src/common/components/Modal.js~Modal.html#instance-method-oncreate",
     "src/common/components/Modal.js~Modal#oncreate",
@@ -3261,12 +3267,6 @@ window.esdocSearchIndex = [
     "src/common/components/modalmanager.js~modalmanager#oncreate",
     "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-oncreate",
     "src/common/components/ModalManager.js~ModalManager#oncreate",
-    "method"
-  ],
-  [
-    "src/common/components/modalmanager.js~modalmanager#onupdate",
-    "class/src/common/components/ModalManager.js~ModalManager.html#instance-method-onupdate",
-    "src/common/components/ModalManager.js~ModalManager#onupdate",
     "method"
   ],
   [
@@ -7728,6 +7728,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/forum/states/poststreamstate.js~poststreamstate#animatescroll",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-animateScroll",
+    "src/forum/states/PostStreamState.js~PostStreamState#animateScroll",
+    "member"
+  ],
+  [
     "src/forum/states/poststreamstate.js~poststreamstate#constructor",
     "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-constructor-constructor",
     "src/forum/states/PostStreamState.js~PostStreamState#constructor",
@@ -7755,6 +7761,12 @@ window.esdocSearchIndex = [
     "src/forum/states/poststreamstate.js~poststreamstate#discussion",
     "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-discussion",
     "src/forum/states/PostStreamState.js~PostStreamState#discussion",
+    "member"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#forceupdatescrubber",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-forceUpdateScrubber",
+    "src/forum/states/PostStreamState.js~PostStreamState#forceUpdateScrubber",
     "member"
   ],
   [
@@ -7834,12 +7846,6 @@ window.esdocSearchIndex = [
     "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadRange",
     "src/forum/states/PostStreamState.js~PostStreamState#loadRange",
     "method"
-  ],
-  [
-    "src/forum/states/poststreamstate.js~poststreamstate#noanimationscroll",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-noAnimationScroll",
-    "src/forum/states/PostStreamState.js~PostStreamState#noAnimationScroll",
-    "member"
   ],
   [
     "src/forum/states/poststreamstate.js~poststreamstate#number",

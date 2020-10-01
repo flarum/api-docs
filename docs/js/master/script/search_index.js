@@ -355,13 +355,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/compone/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
@@ -709,13 +709,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/compone/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/compone/SessionDropdown</span>",
     "class"
   ],
@@ -2557,13 +2557,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-set-props",
+    "class/src/common/Component.ts~Component.html#instance-get-props",
     "src/common/Component.ts~Component#props",
     "member"
   ],
   [
     "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-get-props",
+    "class/src/common/Component.ts~Component.html#instance-set-props",
     "src/common/Component.ts~Component#props",
     "member"
   ],
@@ -6318,12 +6318,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/poststream.js~poststream#prevtarget",
-    "class/src/forum/components/PostStream.js~PostStream.html#instance-member-prevTarget",
-    "src/forum/components/PostStream.js~PostStream#prevTarget",
-    "member"
-  ],
-  [
     "src/forum/components/poststream.js~poststream#scrolllistener",
     "class/src/forum/components/PostStream.js~PostStream.html#instance-member-scrollListener",
     "src/forum/components/PostStream.js~PostStream#scrollListener",
@@ -7846,6 +7840,12 @@ window.esdocSearchIndex = [
     "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadRange",
     "src/forum/states/PostStreamState.js~PostStreamState#loadRange",
     "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#needsscroll",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-needsScroll",
+    "src/forum/states/PostStreamState.js~PostStreamState#needsScroll",
+    "member"
   ],
   [
     "src/forum/states/poststreamstate.js~poststreamstate#number",

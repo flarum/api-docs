@@ -343,25 +343,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/compone/headerprimary~headerprimary",
     "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/compone/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
+    "flarum/compone/headerprimary~headerprimary",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/compone/headersecondary~headersecondary",
     "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/compone/headersecondary~headersecondary",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
@@ -387,6 +387,12 @@ window.esdocSearchIndex = [
     "flarum/utils/keyboardnavigatable~keyboardnavigatable",
     "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html",
     "<span>KeyboardNavigatable</span> <span class=\"search-result-import-path\">flarum/utils/KeyboardNavigatable</span>",
+    "class"
+  ],
+  [
+    "flarum/compone/link~link",
+    "class/src/common/components/Link.js~Link.html",
+    "<span>Link</span> <span class=\"search-result-import-path\">flarum/compone/Link</span>",
     "class"
   ],
   [
@@ -3111,6 +3117,18 @@ window.esdocSearchIndex = [
     "src/common/components/groupbadge.js~groupbadge.initattrs",
     "class/src/common/components/GroupBadge.js~GroupBadge.html#static-method-initAttrs",
     "src/common/components/GroupBadge.js~GroupBadge.initAttrs",
+    "method"
+  ],
+  [
+    "src/common/components/link.js",
+    "file/src/common/components/Link.js.html",
+    "src/common/components/Link.js",
+    "file"
+  ],
+  [
+    "src/common/components/link.js~link#view",
+    "class/src/common/components/Link.js~Link.html#instance-method-view",
+    "src/common/components/Link.js~Link#view",
     "method"
   ],
   [

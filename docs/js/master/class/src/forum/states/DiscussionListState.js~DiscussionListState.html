@@ -743,7 +743,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-refresh">refresh</a></span></span><span class="code" data-ice="signature">(objectPattern: {&quot;clear&quot;: <span>*</span>}): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-refresh">refresh</a></span></span><span class="code" data-ice="signature">(objectPattern: {&quot;deferClear&quot;: <span>*</span>}): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1163,7 +1163,7 @@ translation) to the API sort value that they represent.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber158">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber164">source</a></span></span>
     </span>
   </h3>
 
@@ -1267,7 +1267,7 @@ translation) to the API sort value that they represent.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber187">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber193">source</a></span></span>
     </span>
   </h3>
 
@@ -1379,7 +1379,7 @@ translation) to the API sort value that they represent.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber166">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber172">source</a></span></span>
     </span>
   </h3>
 
@@ -1435,7 +1435,7 @@ translation) to the API sort value that they represent.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber173">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber179">source</a></span></span>
     </span>
   </h3>
 
@@ -1491,7 +1491,7 @@ translation) to the API sort value that they represent.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber180">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber186">source</a></span></span>
     </span>
   </h3>
 
@@ -1547,7 +1547,7 @@ translation) to the API sort value that they represent.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber122">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber128">source</a></span></span>
     </span>
   </h3>
 
@@ -1591,7 +1591,7 @@ translation) to the API sort value that they represent.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber105">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber111">source</a></span></span>
     </span>
   </h3>
 
@@ -1664,7 +1664,7 @@ translation) to the API sort value that they represent.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber131">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber137">source</a></span></span>
     </span>
   </h3>
 
@@ -1732,18 +1732,20 @@ translation) to the API sort value that they represent.</p>
     
     
     
-    <span class="code" data-ice="name">refresh</span><span class="code" data-ice="signature">(objectPattern: {&quot;clear&quot;: <span>*</span>}): <span>*</span></span>
+    <span class="code" data-ice="name">refresh</span><span class="code" data-ice="signature">(objectPattern: {&quot;deferClear&quot;: <span>*</span>}): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber82">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber84">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Clear and reload the discussion list.</p>
+  <div data-ice="description"><p>Clear and reload the discussion list. Passing the option <code>deferClear: true</code>
+will clear discussions only after new data has been received.
+This can be used to refresh discussions without loading animations.</p>
 </div>
 
   
@@ -1758,7 +1760,7 @@ translation) to the API sort value that they represent.</p>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">objectPattern</td>
-      <td data-ice="type" class="code">{&quot;clear&quot;: <span>*</span>}</td>
+      <td data-ice="type" class="code">{&quot;deferClear&quot;: <span>*</span>}</td>
       <td data-ice="appendix"><ul><li>optional</li>
 <li>default: {}</li></ul></td>
       <td data-ice="description"></td>
@@ -1870,7 +1872,7 @@ old ones, update params and refresh the discussion list from the database.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber145">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/states/DiscussionListState.js.html#lineNumber151">source</a></span></span>
     </span>
   </h3>
 

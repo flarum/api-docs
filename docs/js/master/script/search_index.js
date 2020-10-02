@@ -30,12 +30,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/compone/alert~alert",
-    "class/src/common/components/Alert.js~Alert.html",
-    "<span>Alert</span> <span class=\"search-result-import-path\">flarum/compone/Alert</span>",
-    "class"
-  ],
-  [
     "flarum/compone/alertmanager~alertmanager",
     "class/src/common/components/AlertManager.js~AlertManager.html",
     "<span>AlertManager</span> <span class=\"search-result-import-path\">flarum/compone/AlertManager</span>",
@@ -43,7 +37,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/states/alertmanagerstate~alertmanagerstate",
-    "class/src/common/states/AlertManagerState.js~AlertManagerState.html",
+    "class/src/common/states/AlertManagerState.ts~AlertManagerState.html",
     "<span>AlertManagerState</span> <span class=\"search-result-import-path\">flarum/states/AlertManagerState</span>",
     "class"
   ],
@@ -355,13 +349,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/compone/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderSecondary</span>",
     "class"
   ],
@@ -2916,18 +2910,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/alert.js",
-    "file/src/common/components/Alert.js.html",
-    "src/common/components/Alert.js",
-    "file"
-  ],
-  [
-    "src/common/components/alert.js~alert#view",
-    "class/src/common/components/Alert.js~Alert.html#instance-method-view",
-    "src/common/components/Alert.js~Alert#view",
-    "method"
-  ],
-  [
     "src/common/components/alertmanager.js",
     "file/src/common/components/AlertManager.js.html",
     "src/common/components/AlertManager.js",
@@ -3714,51 +3696,51 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/states/alertmanagerstate.js",
-    "file/src/common/states/AlertManagerState.js.html",
-    "src/common/states/AlertManagerState.js",
+    "src/common/states/alertmanagerstate.ts",
+    "file/src/common/states/AlertManagerState.ts.html",
+    "src/common/states/AlertManagerState.ts",
     "file"
   ],
   [
-    "src/common/states/alertmanagerstate.js~alertmanagerstate#activealerts",
-    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-member-activeAlerts",
-    "src/common/states/AlertManagerState.js~AlertManagerState#activeAlerts",
+    "src/common/states/alertmanagerstate.ts~alertmanagerstate#activealerts",
+    "class/src/common/states/AlertManagerState.ts~AlertManagerState.html#instance-member-activeAlerts",
+    "src/common/states/AlertManagerState.ts~AlertManagerState#activeAlerts",
     "member"
   ],
   [
-    "src/common/states/alertmanagerstate.js~alertmanagerstate#alertid",
-    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-member-alertId",
-    "src/common/states/AlertManagerState.js~AlertManagerState#alertId",
+    "src/common/states/alertmanagerstate.ts~alertmanagerstate#alertid",
+    "class/src/common/states/AlertManagerState.ts~AlertManagerState.html#instance-member-alertId",
+    "src/common/states/AlertManagerState.ts~AlertManagerState#alertId",
     "member"
   ],
   [
-    "src/common/states/alertmanagerstate.js~alertmanagerstate#clear",
-    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-method-clear",
-    "src/common/states/AlertManagerState.js~AlertManagerState#clear",
+    "src/common/states/alertmanagerstate.ts~alertmanagerstate#clear",
+    "class/src/common/states/AlertManagerState.ts~AlertManagerState.html#instance-method-clear",
+    "src/common/states/AlertManagerState.ts~AlertManagerState#clear",
     "method"
   ],
   [
-    "src/common/states/alertmanagerstate.js~alertmanagerstate#constructor",
-    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-constructor-constructor",
-    "src/common/states/AlertManagerState.js~AlertManagerState#constructor",
+    "src/common/states/alertmanagerstate.ts~alertmanagerstate#constructor",
+    "class/src/common/states/AlertManagerState.ts~AlertManagerState.html#instance-constructor-constructor",
+    "src/common/states/AlertManagerState.ts~AlertManagerState#constructor",
     "method"
   ],
   [
-    "src/common/states/alertmanagerstate.js~alertmanagerstate#dismiss",
-    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-method-dismiss",
-    "src/common/states/AlertManagerState.js~AlertManagerState#dismiss",
+    "src/common/states/alertmanagerstate.ts~alertmanagerstate#dismiss",
+    "class/src/common/states/AlertManagerState.ts~AlertManagerState.html#instance-method-dismiss",
+    "src/common/states/AlertManagerState.ts~AlertManagerState#dismiss",
     "method"
   ],
   [
-    "src/common/states/alertmanagerstate.js~alertmanagerstate#getactivealerts",
-    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-method-getActiveAlerts",
-    "src/common/states/AlertManagerState.js~AlertManagerState#getActiveAlerts",
+    "src/common/states/alertmanagerstate.ts~alertmanagerstate#getactivealerts",
+    "class/src/common/states/AlertManagerState.ts~AlertManagerState.html#instance-method-getActiveAlerts",
+    "src/common/states/AlertManagerState.ts~AlertManagerState#getActiveAlerts",
     "method"
   ],
   [
-    "src/common/states/alertmanagerstate.js~alertmanagerstate#show",
-    "class/src/common/states/AlertManagerState.js~AlertManagerState.html#instance-method-show",
-    "src/common/states/AlertManagerState.js~AlertManagerState#show",
+    "src/common/states/alertmanagerstate.ts~alertmanagerstate#show",
+    "class/src/common/states/AlertManagerState.ts~AlertManagerState.html#instance-method-show",
+    "src/common/states/AlertManagerState.ts~AlertManagerState#show",
     "method"
   ],
   [

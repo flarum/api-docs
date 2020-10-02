@@ -1,4 +1,4 @@
 # Flarum API Docs
 
-- [PHP](https://datitisev.github.io/FlarumAPIDocs/php/index.html)
-- [JavaScript](https://datitisev.github.io/FlarumAPIDocs/js/)
+- [PHP](https://api.docs.flarum.org/php/)
+- [JavaScript](https://api.docs.flarum.org/js/)

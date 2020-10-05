@@ -337,13 +337,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/compone/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/compone/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/compone/HeaderPrimary</span>",
     "class"
   ],
@@ -939,12 +939,6 @@ window.esdocSearchIndex = [
     "flarum/utils/humantime~humantime",
     "function/index.html#static-function-humanTime",
     "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/utils/humanTime</span>",
-    "function"
-  ],
-  [
-    "flarum/helpers/icon~icon",
-    "function/index.html#static-function-icon",
-    "<span>icon</span> <span class=\"search-result-import-path\">flarum/helpers/icon</span>",
     "function"
   ],
   [
@@ -3615,12 +3609,6 @@ window.esdocSearchIndex = [
     "src/common/helpers/humantime.js",
     "file/src/common/helpers/humanTime.js.html",
     "src/common/helpers/humanTime.js",
-    "file"
-  ],
-  [
-    "src/common/helpers/icon.js",
-    "file/src/common/helpers/icon.js.html",
-    "src/common/helpers/icon.js",
     "file"
   ],
   [

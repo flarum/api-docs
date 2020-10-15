@@ -156,6 +156,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/resolvers/defaultresolver~defaultresolver",
+    "class/src/common/resolvers/DefaultResolver.ts~DefaultResolver.html",
+    "<span>DefaultResolver</span> <span class=\"search-result-import-path\">flarum/resolvers/DefaultResolver</span>",
+    "class"
+  ],
+  [
     "flarum/models/discussion~discussion",
     "class/src/common/models/Discussion.js~Discussion.html",
     "<span>Discussion</span> <span class=\"search-result-import-path\">flarum/models/Discussion</span>",
@@ -201,6 +207,12 @@ window.esdocSearchIndex = [
     "flarum/components/discussionpage~discussionpage",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html",
     "<span>DiscussionPage</span> <span class=\"search-result-import-path\">flarum/components/DiscussionPage</span>",
+    "class"
+  ],
+  [
+    "flarum/resolver/discussionpageresolver~discussionpageresolver",
+    "class/src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver.html",
+    "<span>DiscussionPageResolver</span> <span class=\"search-result-import-path\">flarum/resolver/DiscussionPageResolver</span>",
     "class"
   ],
   [
@@ -337,13 +349,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -709,13 +721,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -3318,12 +3330,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/common/components/page.js~page#onnewroute",
-    "class/src/common/components/Page.js~Page.html#instance-method-onNewRoute",
-    "src/common/components/Page.js~Page#onNewRoute",
-    "method"
-  ],
-  [
     "src/common/components/page.js~page#oncreate",
     "class/src/common/components/Page.js~Page.html#instance-method-oncreate",
     "src/common/components/Page.js~Page#oncreate",
@@ -3682,6 +3688,48 @@ window.esdocSearchIndex = [
     "file/src/common/models/User.js.html",
     "src/common/models/User.js",
     "file"
+  ],
+  [
+    "src/common/resolvers/defaultresolver.ts",
+    "file/src/common/resolvers/DefaultResolver.ts.html",
+    "src/common/resolvers/DefaultResolver.ts",
+    "file"
+  ],
+  [
+    "src/common/resolvers/defaultresolver.ts~defaultresolver#component",
+    "class/src/common/resolvers/DefaultResolver.ts~DefaultResolver.html#instance-member-component",
+    "src/common/resolvers/DefaultResolver.ts~DefaultResolver#component",
+    "member"
+  ],
+  [
+    "src/common/resolvers/defaultresolver.ts~defaultresolver#constructor",
+    "class/src/common/resolvers/DefaultResolver.ts~DefaultResolver.html#instance-constructor-constructor",
+    "src/common/resolvers/DefaultResolver.ts~DefaultResolver#constructor",
+    "method"
+  ],
+  [
+    "src/common/resolvers/defaultresolver.ts~defaultresolver#makekey",
+    "class/src/common/resolvers/DefaultResolver.ts~DefaultResolver.html#instance-method-makeKey",
+    "src/common/resolvers/DefaultResolver.ts~DefaultResolver#makeKey",
+    "method"
+  ],
+  [
+    "src/common/resolvers/defaultresolver.ts~defaultresolver#onmatch",
+    "class/src/common/resolvers/DefaultResolver.ts~DefaultResolver.html#instance-method-onmatch",
+    "src/common/resolvers/DefaultResolver.ts~DefaultResolver#onmatch",
+    "method"
+  ],
+  [
+    "src/common/resolvers/defaultresolver.ts~defaultresolver#render",
+    "class/src/common/resolvers/DefaultResolver.ts~DefaultResolver.html#instance-method-render",
+    "src/common/resolvers/DefaultResolver.ts~DefaultResolver#render",
+    "method"
+  ],
+  [
+    "src/common/resolvers/defaultresolver.ts~defaultresolver#routename",
+    "class/src/common/resolvers/DefaultResolver.ts~DefaultResolver.html#instance-member-routeName",
+    "src/common/resolvers/DefaultResolver.ts~DefaultResolver#routeName",
+    "member"
   ],
   [
     "src/common/states/alertmanagerstate.ts",
@@ -5142,12 +5190,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/discussionpage.js~discussionpage#onbeforeupdate",
-    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-onbeforeupdate",
-    "src/forum/components/DiscussionPage.js~DiscussionPage#onbeforeupdate",
-    "method"
-  ],
-  [
     "src/forum/components/discussionpage.js~discussionpage#oninit",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-oninit",
     "src/forum/components/DiscussionPage.js~DiscussionPage#oninit",
@@ -5164,12 +5206,6 @@ window.esdocSearchIndex = [
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-positionChanged",
     "src/forum/components/DiscussionPage.js~DiscussionPage#positionChanged",
     "method"
-  ],
-  [
-    "src/forum/components/discussionpage.js~discussionpage#prevroute",
-    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-prevRoute",
-    "src/forum/components/DiscussionPage.js~DiscussionPage#prevRoute",
-    "member"
   ],
   [
     "src/forum/components/discussionpage.js~discussionpage#requestparams",
@@ -5610,12 +5646,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/components/indexpage.js~indexpage#currentpath",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-member-currentPath",
-    "src/forum/components/IndexPage.js~IndexPage#currentPath",
-    "member"
-  ],
-  [
     "src/forum/components/indexpage.js~indexpage#hero",
     "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-hero",
     "src/forum/components/IndexPage.js~IndexPage#hero",
@@ -5643,12 +5673,6 @@ window.esdocSearchIndex = [
     "src/forum/components/indexpage.js~indexpage#newdiscussionaction",
     "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-newDiscussionAction",
     "src/forum/components/IndexPage.js~IndexPage#newDiscussionAction",
-    "method"
-  ],
-  [
-    "src/forum/components/indexpage.js~indexpage#onbeforeupdate",
-    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-onbeforeupdate",
-    "src/forum/components/IndexPage.js~IndexPage#onbeforeupdate",
     "method"
   ],
   [
@@ -7152,22 +7176,10 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/userpage.js~userpage#onbeforeupdate",
-    "class/src/forum/components/UserPage.js~UserPage.html#instance-method-onbeforeupdate",
-    "src/forum/components/UserPage.js~UserPage#onbeforeupdate",
-    "method"
-  ],
-  [
     "src/forum/components/userpage.js~userpage#oninit",
     "class/src/forum/components/UserPage.js~UserPage.html#instance-method-oninit",
     "src/forum/components/UserPage.js~UserPage#oninit",
     "method"
-  ],
-  [
-    "src/forum/components/userpage.js~userpage#prevusername",
-    "class/src/forum/components/UserPage.js~UserPage.html#instance-member-prevUsername",
-    "src/forum/components/UserPage.js~UserPage#prevUsername",
-    "member"
   ],
   [
     "src/forum/components/userpage.js~userpage#show",
@@ -7258,6 +7270,30 @@ window.esdocSearchIndex = [
     "file/src/forum/index.js.html",
     "src/forum/index.js",
     "file"
+  ],
+  [
+    "src/forum/resolver/discussionpageresolver.ts",
+    "file/src/forum/resolver/DiscussionPageResolver.ts.html",
+    "src/forum/resolver/DiscussionPageResolver.ts",
+    "file"
+  ],
+  [
+    "src/forum/resolver/discussionpageresolver.ts~discussionpageresolver#makekey",
+    "class/src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver.html#instance-method-makeKey",
+    "src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver#makeKey",
+    "method"
+  ],
+  [
+    "src/forum/resolver/discussionpageresolver.ts~discussionpageresolver#onmatch",
+    "class/src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver.html#instance-method-onmatch",
+    "src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver#onmatch",
+    "method"
+  ],
+  [
+    "src/forum/resolver/discussionpageresolver.ts~discussionpageresolver#render",
+    "class/src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver.html#instance-method-render",
+    "src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver#render",
+    "method"
   ],
   [
     "src/forum/routes.js",

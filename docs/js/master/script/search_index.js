@@ -349,25 +349,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -721,13 +721,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -2569,13 +2569,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-set-props",
+    "class/src/common/Component.ts~Component.html#instance-get-props",
     "src/common/Component.ts~Component#props",
     "member"
   ],
   [
     "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-get-props",
+    "class/src/common/Component.ts~Component.html#instance-set-props",
     "src/common/Component.ts~Component#props",
     "member"
   ],
@@ -3705,6 +3705,12 @@ window.esdocSearchIndex = [
     "src/common/resolvers/defaultresolver.ts~defaultresolver#constructor",
     "class/src/common/resolvers/DefaultResolver.ts~DefaultResolver.html#instance-constructor-constructor",
     "src/common/resolvers/DefaultResolver.ts~DefaultResolver#constructor",
+    "method"
+  ],
+  [
+    "src/common/resolvers/defaultresolver.ts~defaultresolver#makeattrs",
+    "class/src/common/resolvers/DefaultResolver.ts~DefaultResolver.html#instance-method-makeAttrs",
+    "src/common/resolvers/DefaultResolver.ts~DefaultResolver#makeAttrs",
     "method"
   ],
   [

@@ -210,9 +210,9 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/resolver/discussionpageresolver~discussionpageresolver",
-    "class/src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver.html",
-    "<span>DiscussionPageResolver</span> <span class=\"search-result-import-path\">flarum/resolver/DiscussionPageResolver</span>",
+    "flarum/resolvers/discussionpageresolver~discussionpageresolver",
+    "class/src/forum/resolvers/DiscussionPageResolver.ts~DiscussionPageResolver.html",
+    "<span>DiscussionPageResolver</span> <span class=\"search-result-import-path\">flarum/resolvers/DiscussionPageResolver</span>",
     "class"
   ],
   [
@@ -7278,27 +7278,27 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/resolver/discussionpageresolver.ts",
-    "file/src/forum/resolver/DiscussionPageResolver.ts.html",
-    "src/forum/resolver/DiscussionPageResolver.ts",
+    "src/forum/resolvers/discussionpageresolver.ts",
+    "file/src/forum/resolvers/DiscussionPageResolver.ts.html",
+    "src/forum/resolvers/DiscussionPageResolver.ts",
     "file"
   ],
   [
-    "src/forum/resolver/discussionpageresolver.ts~discussionpageresolver#makekey",
-    "class/src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver.html#instance-method-makeKey",
-    "src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver#makeKey",
+    "src/forum/resolvers/discussionpageresolver.ts~discussionpageresolver#makekey",
+    "class/src/forum/resolvers/DiscussionPageResolver.ts~DiscussionPageResolver.html#instance-method-makeKey",
+    "src/forum/resolvers/DiscussionPageResolver.ts~DiscussionPageResolver#makeKey",
     "method"
   ],
   [
-    "src/forum/resolver/discussionpageresolver.ts~discussionpageresolver#onmatch",
-    "class/src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver.html#instance-method-onmatch",
-    "src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver#onmatch",
+    "src/forum/resolvers/discussionpageresolver.ts~discussionpageresolver#onmatch",
+    "class/src/forum/resolvers/DiscussionPageResolver.ts~DiscussionPageResolver.html#instance-method-onmatch",
+    "src/forum/resolvers/DiscussionPageResolver.ts~DiscussionPageResolver#onmatch",
     "method"
   ],
   [
-    "src/forum/resolver/discussionpageresolver.ts~discussionpageresolver#render",
-    "class/src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver.html#instance-method-render",
-    "src/forum/resolver/DiscussionPageResolver.ts~DiscussionPageResolver#render",
+    "src/forum/resolvers/discussionpageresolver.ts~discussionpageresolver#render",
+    "class/src/forum/resolvers/DiscussionPageResolver.ts~DiscussionPageResolver.html#instance-method-render",
+    "src/forum/resolvers/DiscussionPageResolver.ts~DiscussionPageResolver#render",
     "method"
   ],
   [

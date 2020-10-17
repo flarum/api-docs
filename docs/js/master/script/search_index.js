@@ -349,13 +349,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -721,13 +721,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -3348,6 +3348,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/components/page.js~page#scrolltoponcreate",
+    "class/src/common/components/Page.js~Page.html#instance-member-scrollTopOnCreate",
+    "src/common/components/Page.js~Page#scrollTopOnCreate",
+    "member"
+  ],
+  [
     "src/common/components/placeholder.js",
     "file/src/common/components/Placeholder.js.html",
     "src/common/components/Placeholder.js",
@@ -5682,6 +5688,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/indexpage.js~indexpage#onbeforeremove",
+    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-onbeforeremove",
+    "src/forum/components/IndexPage.js~IndexPage#onbeforeremove",
+    "method"
+  ],
+  [
     "src/forum/components/indexpage.js~indexpage#oncreate",
     "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-oncreate",
     "src/forum/components/IndexPage.js~IndexPage#oncreate",
@@ -5698,6 +5710,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/IndexPage.js~IndexPage.html#instance-method-onremove",
     "src/forum/components/IndexPage.js~IndexPage#onremove",
     "method"
+  ],
+  [
+    "src/forum/components/indexpage.js~indexpage#scrolltoponcreate",
+    "class/src/forum/components/IndexPage.js~IndexPage.html#instance-member-scrollTopOnCreate",
+    "src/forum/components/IndexPage.js~IndexPage#scrollTopOnCreate",
+    "member"
   ],
   [
     "src/forum/components/indexpage.js~indexpage#settitle",

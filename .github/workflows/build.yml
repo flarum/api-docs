@@ -44,7 +44,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add docs/${{ matrix.language }}
+          git add docs
           if [ "$(git status --porcelain docs/${{ matrix.language }} | wc -l)" -lt "2" ]; then
             echo "No changes to commit"
             git reset

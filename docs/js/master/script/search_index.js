@@ -349,13 +349,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -721,13 +721,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -4662,6 +4662,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/commentpost.js~commentpost#oncreate",
+    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-oncreate",
+    "src/forum/components/CommentPost.js~CommentPost#oncreate",
+    "method"
+  ],
+  [
     "src/forum/components/commentpost.js~commentpost#oninit",
     "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-oninit",
     "src/forum/components/CommentPost.js~CommentPost#oninit",
@@ -4671,6 +4677,12 @@ window.esdocSearchIndex = [
     "src/forum/components/commentpost.js~commentpost#onupdate",
     "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-onupdate",
     "src/forum/components/CommentPost.js~CommentPost#onupdate",
+    "method"
+  ],
+  [
+    "src/forum/components/commentpost.js~commentpost#refreshcontent",
+    "class/src/forum/components/CommentPost.js~CommentPost.html#instance-method-refreshContent",
+    "src/forum/components/CommentPost.js~CommentPost#refreshContent",
     "method"
   ],
   [

@@ -721,13 +721,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -924,12 +924,6 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "flarum/helpers/fulltime~fulltime",
-    "function/index.html#static-function-fullTime",
-    "<span>fullTime</span> <span class=\"search-result-import-path\">flarum/helpers/fullTime</span>",
-    "function"
-  ],
-  [
     "flarum/utils/string~getplaincontent",
     "function/index.html#static-function-getPlainContent",
     "<span>getPlainContent</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
@@ -939,12 +933,6 @@ window.esdocSearchIndex = [
     "flarum/helpers/highlight~highlight",
     "function/index.html#static-function-highlight",
     "<span>highlight</span> <span class=\"search-result-import-path\">flarum/helpers/highlight</span>",
-    "function"
-  ],
-  [
-    "flarum/helpers/humantime~humantime",
-    "function/index.html#static-function-humanTime",
-    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/helpers/humanTime</span>",
     "function"
   ],
   [
@@ -3606,21 +3594,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/helpers/fulltime.js",
-    "file/src/common/helpers/fullTime.js.html",
-    "src/common/helpers/fullTime.js",
-    "file"
-  ],
-  [
     "src/common/helpers/highlight.js",
     "file/src/common/helpers/highlight.js.html",
     "src/common/helpers/highlight.js",
-    "file"
-  ],
-  [
-    "src/common/helpers/humantime.js",
-    "file/src/common/helpers/humanTime.js.html",
-    "src/common/helpers/humanTime.js",
     "file"
   ],
   [

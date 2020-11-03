@@ -50,6 +50,7 @@
                                             <option value="../../../v0.1.0-beta.11" data-version="v0.1.0-beta.11">v0.1.0-beta.11</option>
                                             <option value="../../../v0.1.0-beta.12" data-version="v0.1.0-beta.12">v0.1.0-beta.12</option>
                                             <option value="../../../v0.1.0-beta.13" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
+                                            <option value="../../../v0.1.0-beta.14" data-version="v0.1.0-beta.14">v0.1.0-beta.14</option>
                                             <option value="../../../master" data-version="master">master</option>
                                     </select>
             </form>
@@ -111,13 +112,46 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_configure">configure</a>($callback)
+                    <a href="#method_configure">configure</a>(callable|string $callback)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Configure the formatter. This can be used to add support for custom markdown/bbcode/etc tags,
+or otherwise change the formatter. Please see documentation for the s9e text formatter library for more
+information on how to use this.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L22" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L32" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_parse">parse</a>(callable|string $callback)
+        
+                                            <p>Prepare the system for parsing. This can be used to modify the text that will be parsed, or to modify the parser.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L53" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_render">render</a>(callable|string $callback)
+        
+                                            <p>Prepare the system for rendering. This can be used to modify the xml that will be rendered, or to modify the renderer.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L75" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -134,7 +168,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L29" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L82" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -151,7 +185,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L47" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L113" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -168,7 +202,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L53" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L119" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -183,26 +217,114 @@
                     <div class="method-item">
                     <h3 id="method_configure">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L22" target="_blank">
-            line 22
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L32" target="_blank">
+            line 32
         </a>
         </div>
         <code>                    
-    <strong>configure</strong>($callback)
+    <strong>configure</strong>(callable|string $callback)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Configure the formatter. This can be used to add support for custom markdown/bbcode/etc tags,
+or otherwise change the formatter. Please see documentation for the s9e text formatter library for more
+information on how to use this.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>callable|string</td>
                 <td>$callback</td>
-                <td></td>
+                <td>The callback can be a closure or invokable class, and should accept:
+- \s9e\TextFormatter\Configurator $configurator</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parse">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L53" target="_blank">
+            line 53
+        </a>
+        </div>
+        <code>                    
+    <strong>parse</strong>(callable|string $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prepare the system for parsing. This can be used to modify the text that will be parsed, or to modify the parser.</p>                    <p>Please note that the text to be parsed must be returned, regardless of whether it&#039;s changed.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|string</td>
+                <td>$callback</td>
+                <td>The callback can be a closure or invokable class, and should accept:
+- \s9e\TextFormatter\Parser $parser
+- mixed $context
+- string $text: The text to be parsed.&lt;/p&gt;
+
+&lt;p&gt;The callback should return:
+- string $text: The text to be parsed.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L75" target="_blank">
+            line 75
+        </a>
+        </div>
+        <code>                    
+    <strong>render</strong>(callable|string $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prepare the system for rendering. This can be used to modify the xml that will be rendered, or to modify the renderer.</p>                    <p>Please note that the xml to be rendered must be returned, regardless of whether it&#039;s changed.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|string</td>
+                <td>$callback</td>
+                <td>The callback can be a closure or invokable class, and should accept:
+- \s9e\TextFormatter\Rendered $renderer
+- mixed $context
+- string $xml: The xml to be rendered.
+- ServerRequestInterface $request&lt;/p&gt;
+
+&lt;p&gt;The callback should return:
+- string $xml: The xml to be rendered.</td>
             </tr>
             </table>
 
@@ -216,8 +338,8 @@
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L29" target="_blank">
-            line 29
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L82" target="_blank">
+            line 82
         </a>
         </div>
         <code>                    
@@ -254,8 +376,8 @@
                     <div class="method-item">
                     <h3 id="method_onEnable">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L47" target="_blank">
-            line 47
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L113" target="_blank">
+            line 113
         </a>
         </div>
         <code>                    
@@ -292,8 +414,8 @@
                     <div class="method-item">
                     <h3 id="method_onDisable">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L53" target="_blank">
-            line 53
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L119" target="_blank">
+            line 119
         </a>
         </div>
         <code>                    

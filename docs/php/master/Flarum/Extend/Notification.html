@@ -109,16 +109,33 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <a href="../../Flarum/Extend/Notification.html"><abbr title="Flarum\Extend\Notification">Notification</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_type">type</a>(string $blueprint, string $serializer, array $channelsEnabledByDefault = [])
+                    <a href="#method_type">type</a>(string $blueprint, string $serializer, array $driversEnabledByDefault = [])
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L20" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L31" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Notification.html"><abbr title="Flarum\Extend\Notification">Notification</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_driver">driver</a>(string $driverName, string $driver, array $typesEnabledByDefault = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L46" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -135,7 +152,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L28" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L54" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -150,12 +167,12 @@
                     <div class="method-item">
                     <h3 id="method_type">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L20" target="_blank">
-            line 20
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L31" target="_blank">
+            line 31
         </a>
         </div>
-        <code>                    
-    <strong>type</strong>(string $blueprint, string $serializer, array $channelsEnabledByDefault = [])
+        <code>                    <a href="../../Flarum/Extend/Notification.html"><abbr title="Flarum\Extend\Notification">Notification</abbr></a>
+    <strong>type</strong>(string $blueprint, string $serializer, array $driversEnabledByDefault = [])
         </code>
     </h3>
     <div class="details">
@@ -169,21 +186,86 @@
                     <tr>
                 <td>string</td>
                 <td>$blueprint</td>
-                <td></td>
+                <td>The ::class attribute of the blueprint class.
+This blueprint should implement \Flarum\Notification\Blueprint\BlueprintInterface.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$serializer</td>
-                <td></td>
+                <td>The ::class attribute of the serializer class.
+This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</td>
             </tr>
                     <tr>
                 <td>array</td>
-                <td>$channelsEnabledByDefault</td>
-                <td></td>
+                <td>$driversEnabledByDefault</td>
+                <td>The names of the drivers enabled by default for this notification type.
+(example: alert, email).</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Notification.html"><abbr title="Flarum\Extend\Notification">Notification</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_driver">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L46" target="_blank">
+            line 46
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Notification.html"><abbr title="Flarum\Extend\Notification">Notification</abbr></a>
+    <strong>driver</strong>(string $driverName, string $driver, array $typesEnabledByDefault = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$driverName</td>
+                <td>The name of the notification driver.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$driver</td>
+                <td>The ::class attribute of the driver class.
+This driver should implement \Flarum\Notification\Driver\NotificationDriverInterface.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$typesEnabledByDefault</td>
+                <td>The names of blueprint classes of types enabled by default for this driver.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Notification.html"><abbr title="Flarum\Extend\Notification">Notification</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -193,8 +275,8 @@
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L28" target="_blank">
-            line 28
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L54" target="_blank">
+            line 54
         </a>
         </div>
         <code>                    

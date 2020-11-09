@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Extend\User | Flarum API</title>
+    <title>Flarum\Foundation\ContainerUtil | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Extend_User" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Foundation_ContainerUtil" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -83,10 +83,10 @@
                     
     <div class="page-header">
         <h1>
-            User
+            ContainerUtil
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Extend/User.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Foundation/ContainerUtil.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -94,8 +94,7 @@
     </div>
 
     <p>    class        
-    <strong>User</strong>        implements
-        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
+    <strong>ContainerUtil</strong></p>
 
         
     
@@ -109,48 +108,15 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    static&nbsp;
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_displayNameDriver">displayNameDriver</a>(string $identifier, string $driver)
+                    <a href="#method_wrapCallback">wrapCallback</a>($callback, <abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
         
-                                            <p>Add a display name driver.</p>                </div>
+                                            <p>Wraps a callback so that string-based invokable classes get resolved only when actually used.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/User.php#L26" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_permissionGroups">permissionGroups</a>(callable|string $callback)
-        
-                                            <p>Dynamically process a user&#039;s list of groups when calculating permissions.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/User.php#L47" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/User.php#L54" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Foundation/ContainerUtil.php#L24" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -163,14 +129,14 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_displayNameDriver">
+                    <h3 id="method_wrapCallback">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/User.php#L26" target="_blank">
-            line 26
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/ContainerUtil.php#L24" target="_blank">
+            line 24
         </a>
         </div>
-        <code>                    
-    <strong>displayNameDriver</strong>(string $identifier, string $driver)
+        <code>        static            
+    <strong>wrapCallback</strong>($callback, <abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
         </code>
     </h3>
     <div class="details">
@@ -178,98 +144,19 @@
     
 
                     <div class="method-description">
-                                    <p>Add a display name driver.</p>                                                </div>
+                                    <p>Wraps a callback so that string-based invokable classes get resolved only when actually used.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$identifier</td>
-                <td>Identifier for display name driver. E.g. &#039;username&#039; for UserNameDriver</td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$driver</td>
-                <td>::class attribute of driver class, which must implement Flarum\User\DisplayName\DriverInterface</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_permissionGroups">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/User.php#L47" target="_blank">
-            line 47
-        </a>
-        </div>
-        <code>                    
-    <strong>permissionGroups</strong>(callable|string $callback)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Dynamically process a user&#039;s list of groups when calculating permissions.</p>                    <p>This can be used to give a user permissions for groups they aren&#039;t actually in, based on context.
-It will not change the group badges displayed for the user.</p>                            </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>callable|string</td>
+                <td></td>
                 <td>$callback</td>
-                <td>The callable can be a closure or invokable class, and should accept:
-- \Flarum\User\User $user: the user in question.
-- array $groupIds: an array of ids for the groups the user belongs to.&lt;/p&gt;
-
-&lt;p&gt;The callable should return:
-- array $groupIds: an array of ids for the groups the user belongs to.</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_extend">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/User.php#L54" target="_blank">
-            line 54
-        </a>
-        </div>
-        <code>                    
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
-                <td>$container</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a></td>
-                <td>$extension</td>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
                 <td></td>
             </tr>
             </table>

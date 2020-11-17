@@ -11,4 +11,4 @@ export FLARUM_PATH="${REPO_PATH}/flarum";
 
 echo -e "${style}Using flarum/core @ $FLARUM_PATH$reset"
 
-echo "::set-env name=FLARUM_SHA::$(cd $FLARUM_PATH && git rev-parse --verify HEAD --short)"
+echo "FLARUM_SHA=$(cd $FLARUM_PATH && git rev-parse --verify HEAD --short)" >> $GITHUB_ENV

@@ -12,6 +12,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/components/adminheader~adminheader",
+    "class/src/admin/components/AdminHeader.js~AdminHeader.html",
+    "<span>AdminHeader</span> <span class=\"search-result-import-path\">flarum/components/AdminHeader</span>",
+    "class"
+  ],
+  [
     "flarum/components/adminlinkbutton~adminlinkbutton",
     "class/src/admin/components/AdminLinkButton.js~AdminLinkButton.html",
     "<span>AdminLinkButton</span> <span class=\"search-result-import-path\">flarum/components/AdminLinkButton</span>",
@@ -294,9 +300,39 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/extensionspage~extensionspage",
-    "class/src/admin/components/ExtensionsPage.js~ExtensionsPage.html",
-    "<span>ExtensionsPage</span> <span class=\"search-result-import-path\">flarum/components/ExtensionsPage</span>",
+    "flarum/utils/extensiondata~extensiondata",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html",
+    "<span>ExtensionData</span> <span class=\"search-result-import-path\">flarum/utils/ExtensionData</span>",
+    "class"
+  ],
+  [
+    "flarum/components/extensionlinkbutton~extensionlinkbutton",
+    "class/src/admin/components/ExtensionLinkButton.js~ExtensionLinkButton.html",
+    "<span>ExtensionLinkButton</span> <span class=\"search-result-import-path\">flarum/components/ExtensionLinkButton</span>",
+    "class"
+  ],
+  [
+    "flarum/components/extensionpage~extensionpage",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html",
+    "<span>ExtensionPage</span> <span class=\"search-result-import-path\">flarum/components/ExtensionPage</span>",
+    "class"
+  ],
+  [
+    "flarum/resolvers/extensionpageresolver~extensionpageresolver",
+    "class/src/admin/resolvers/ExtensionPageResolver.ts~ExtensionPageResolver.html",
+    "<span>ExtensionPageResolver</span> <span class=\"search-result-import-path\">flarum/resolvers/ExtensionPageResolver</span>",
+    "class"
+  ],
+  [
+    "flarum/components/extensionpermissiongrid~extensionpermissiongrid",
+    "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html",
+    "<span>ExtensionPermissionGrid</span> <span class=\"search-result-import-path\">flarum/components/ExtensionPermissionGrid</span>",
+    "class"
+  ],
+  [
+    "flarum/components/extensionswidget~extensionswidget",
+    "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html",
+    "<span>ExtensionsWidget</span> <span class=\"search-result-import-path\">flarum/components/ExtensionsWidget</span>",
     "class"
   ],
   [
@@ -349,13 +385,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -721,13 +757,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -924,6 +960,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "flarum/utils/getcategorizedextensions~getcategorizedextensions",
+    "function/index.html#static-function-getCategorizedExtensions",
+    "<span>getCategorizedExtensions</span> <span class=\"search-result-import-path\">flarum/utils/getCategorizedExtensions</span>",
+    "function"
+  ],
+  [
     "flarum/utils/string~getplaincontent",
     "function/index.html#static-function-getPlainContent",
     "<span>getPlainContent</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
@@ -939,6 +981,12 @@ window.esdocSearchIndex = [
     "flarum/utils/humantime~humantime",
     "function/index.html#static-function-humanTime",
     "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/utils/humanTime</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/isextensionenabled~isextensionenabled",
+    "function/index.html#static-function-isExtensionEnabled",
+    "<span>isExtensionEnabled</span> <span class=\"search-result-import-path\">flarum/utils/isExtensionEnabled</span>",
     "function"
   ],
   [
@@ -1356,6 +1404,18 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/adminapplication.js~adminapplication#extensioncategories",
+    "class/src/admin/AdminApplication.js~AdminApplication.html#instance-member-extensionCategories",
+    "src/admin/AdminApplication.js~AdminApplication#extensionCategories",
+    "member"
+  ],
+  [
+    "src/admin/adminapplication.js~adminapplication#extensiondata",
+    "class/src/admin/AdminApplication.js~AdminApplication.html#instance-member-extensionData",
+    "src/admin/AdminApplication.js~AdminApplication#extensionData",
+    "member"
+  ],
+  [
     "src/admin/adminapplication.js~adminapplication#extensionsettings",
     "class/src/admin/AdminApplication.js~AdminApplication.html#instance-member-extensionSettings",
     "src/admin/AdminApplication.js~AdminApplication#extensionSettings",
@@ -1410,6 +1470,18 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/adminheader.js",
+    "file/src/admin/components/AdminHeader.js.html",
+    "src/admin/components/AdminHeader.js",
+    "file"
+  ],
+  [
+    "src/admin/components/adminheader.js~adminheader#view",
+    "class/src/admin/components/AdminHeader.js~AdminHeader.html#instance-method-view",
+    "src/admin/components/AdminHeader.js~AdminHeader#view",
+    "method"
+  ],
+  [
     "src/admin/components/adminlinkbutton.js",
     "file/src/admin/components/AdminLinkButton.js.html",
     "src/admin/components/AdminLinkButton.js",
@@ -1428,10 +1500,28 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/admin/components/adminnav.js~adminnav#extensionitems",
+    "class/src/admin/components/AdminNav.js~AdminNav.html#instance-method-extensionItems",
+    "src/admin/components/AdminNav.js~AdminNav#extensionItems",
+    "method"
+  ],
+  [
     "src/admin/components/adminnav.js~adminnav#items",
     "class/src/admin/components/AdminNav.js~AdminNav.html#instance-method-items",
     "src/admin/components/AdminNav.js~AdminNav#items",
     "method"
+  ],
+  [
+    "src/admin/components/adminnav.js~adminnav#oninit",
+    "class/src/admin/components/AdminNav.js~AdminNav.html#instance-method-oninit",
+    "src/admin/components/AdminNav.js~AdminNav#oninit",
+    "method"
+  ],
+  [
+    "src/admin/components/adminnav.js~adminnav#query",
+    "class/src/admin/components/AdminNav.js~AdminNav.html#instance-member-query",
+    "src/admin/components/AdminNav.js~AdminNav#query",
+    "member"
   ],
   [
     "src/admin/components/adminnav.js~adminnav#view",
@@ -1794,39 +1884,231 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/extensionspage.js",
-    "file/src/admin/components/ExtensionsPage.js.html",
-    "src/admin/components/ExtensionsPage.js",
+    "src/admin/components/extensionlinkbutton.js",
+    "file/src/admin/components/ExtensionLinkButton.js.html",
+    "src/admin/components/ExtensionLinkButton.js",
     "file"
   ],
   [
-    "src/admin/components/extensionspage.js~extensionspage#controlitems",
-    "class/src/admin/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-controlItems",
-    "src/admin/components/ExtensionsPage.js~ExtensionsPage#controlItems",
+    "src/admin/components/extensionlinkbutton.js~extensionlinkbutton#getbuttoncontent",
+    "class/src/admin/components/ExtensionLinkButton.js~ExtensionLinkButton.html#instance-method-getButtonContent",
+    "src/admin/components/ExtensionLinkButton.js~ExtensionLinkButton#getButtonContent",
     "method"
   ],
   [
-    "src/admin/components/extensionspage.js~extensionspage#isenabled",
-    "class/src/admin/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-isEnabled",
-    "src/admin/components/ExtensionsPage.js~ExtensionsPage#isEnabled",
+    "src/admin/components/extensionlinkbutton.js~extensionlinkbutton#statusitems",
+    "class/src/admin/components/ExtensionLinkButton.js~ExtensionLinkButton.html#instance-method-statusItems",
+    "src/admin/components/ExtensionLinkButton.js~ExtensionLinkButton#statusItems",
     "method"
   ],
   [
-    "src/admin/components/extensionspage.js~extensionspage#onerror",
-    "class/src/admin/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-onerror",
-    "src/admin/components/ExtensionsPage.js~ExtensionsPage#onerror",
+    "src/admin/components/extensionpage.js",
+    "file/src/admin/components/ExtensionPage.js.html",
+    "src/admin/components/ExtensionPage.js",
+    "file"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#buildsettingcomponent",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-buildSettingComponent",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#buildSettingComponent",
     "method"
   ],
   [
-    "src/admin/components/extensionspage.js~extensionspage#toggle",
-    "class/src/admin/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-toggle",
-    "src/admin/components/ExtensionsPage.js~ExtensionsPage#toggle",
+    "src/admin/components/extensionpage.js~extensionpage#changingstate",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-member-changingState",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#changingState",
+    "member"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#classname",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-className",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#className",
     "method"
   ],
   [
-    "src/admin/components/extensionspage.js~extensionspage#view",
-    "class/src/admin/components/ExtensionsPage.js~ExtensionsPage.html#instance-method-view",
-    "src/admin/components/ExtensionsPage.js~ExtensionsPage#view",
+    "src/admin/components/extensionpage.js~extensionpage#content",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-content",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#content",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#dirty",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-dirty",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#dirty",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#extension",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-member-extension",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#extension",
+    "member"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#header",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-header",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#header",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#infofields",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-member-infoFields",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#infoFields",
+    "member"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#infoitems",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-infoItems",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#infoItems",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#ischanged",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-isChanged",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#isChanged",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#isenabled",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-isEnabled",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#isEnabled",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#loading",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-member-loading",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#loading",
+    "member"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#onerror",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-onerror",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#onerror",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#oninit",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-oninit",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#oninit",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#onsaved",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-onsaved",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#onsaved",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#savesettings",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-saveSettings",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#saveSettings",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#sections",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-sections",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#sections",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#setting",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-setting",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#setting",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#settings",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-member-settings",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#settings",
+    "member"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#submitbutton",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-submitButton",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#submitButton",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#toggle",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-toggle",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#toggle",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#topitems",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-topItems",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#topItems",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpage.js~extensionpage#view",
+    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-view",
+    "src/admin/components/ExtensionPage.js~ExtensionPage#view",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpermissiongrid.js",
+    "file/src/admin/components/ExtensionPermissionGrid.js.html",
+    "src/admin/components/ExtensionPermissionGrid.js",
+    "file"
+  ],
+  [
+    "src/admin/components/extensionpermissiongrid.js~extensionpermissiongrid#extensionid",
+    "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html#instance-member-extensionId",
+    "src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid#extensionId",
+    "member"
+  ],
+  [
+    "src/admin/components/extensionpermissiongrid.js~extensionpermissiongrid#moderateitems",
+    "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html#instance-method-moderateItems",
+    "src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid#moderateItems",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpermissiongrid.js~extensionpermissiongrid#oninit",
+    "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html#instance-method-oninit",
+    "src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid#oninit",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpermissiongrid.js~extensionpermissiongrid#permissionitems",
+    "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html#instance-method-permissionItems",
+    "src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid#permissionItems",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpermissiongrid.js~extensionpermissiongrid#replyitems",
+    "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html#instance-method-replyItems",
+    "src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid#replyItems",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpermissiongrid.js~extensionpermissiongrid#startitems",
+    "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html#instance-method-startItems",
+    "src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid#startItems",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionpermissiongrid.js~extensionpermissiongrid#viewitems",
+    "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html#instance-method-viewItems",
+    "src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid#viewItems",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionswidget.js",
+    "file/src/admin/components/ExtensionsWidget.js.html",
+    "src/admin/components/ExtensionsWidget.js",
+    "file"
+  ],
+  [
+    "src/admin/components/extensionswidget.js~extensionswidget#classname",
+    "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html#instance-method-className",
+    "src/admin/components/ExtensionsWidget.js~ExtensionsWidget#className",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionswidget.js~extensionswidget#content",
+    "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html#instance-method-content",
+    "src/admin/components/ExtensionsWidget.js~ExtensionsWidget#content",
     "method"
   ],
   [
@@ -2052,22 +2334,10 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/permissiongrid.js~permissiongrid#oninit",
-    "class/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-oninit",
-    "src/admin/components/PermissionGrid.js~PermissionGrid#oninit",
-    "method"
-  ],
-  [
     "src/admin/components/permissiongrid.js~permissiongrid#permissionitems",
     "class/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-method-permissionItems",
     "src/admin/components/PermissionGrid.js~PermissionGrid#permissionItems",
     "method"
-  ],
-  [
-    "src/admin/components/permissiongrid.js~permissiongrid#permissions",
-    "class/src/admin/components/PermissionGrid.js~PermissionGrid.html#instance-member-permissions",
-    "src/admin/components/PermissionGrid.js~PermissionGrid#permissions",
-    "member"
   ],
   [
     "src/admin/components/permissiongrid.js~permissiongrid#replyitems",
@@ -2322,9 +2592,111 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/admin/resolvers/extensionpageresolver.ts",
+    "file/src/admin/resolvers/ExtensionPageResolver.ts.html",
+    "src/admin/resolvers/ExtensionPageResolver.ts",
+    "file"
+  ],
+  [
+    "src/admin/resolvers/extensionpageresolver.ts~extensionpageresolver#onmatch",
+    "class/src/admin/resolvers/ExtensionPageResolver.ts~ExtensionPageResolver.html#instance-method-onmatch",
+    "src/admin/resolvers/ExtensionPageResolver.ts~ExtensionPageResolver#onmatch",
+    "method"
+  ],
+  [
     "src/admin/routes.js",
     "file/src/admin/routes.js.html",
     "src/admin/routes.js",
+    "file"
+  ],
+  [
+    "src/admin/utils/extensiondata.js",
+    "file/src/admin/utils/ExtensionData.js.html",
+    "src/admin/utils/ExtensionData.js",
+    "file"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#constructor",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-constructor-constructor",
+    "src/admin/utils/ExtensionData.js~ExtensionData#constructor",
+    "method"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#currentextension",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-member-currentExtension",
+    "src/admin/utils/ExtensionData.js~ExtensionData#currentExtension",
+    "member"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#data",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-member-data",
+    "src/admin/utils/ExtensionData.js~ExtensionData#data",
+    "member"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#extensionhaspermissions",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-method-extensionHasPermissions",
+    "src/admin/utils/ExtensionData.js~ExtensionData#extensionHasPermissions",
+    "method"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#for",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-method-for",
+    "src/admin/utils/ExtensionData.js~ExtensionData#for",
+    "method"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#getallextensionpermissions",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-method-getAllExtensionPermissions",
+    "src/admin/utils/ExtensionData.js~ExtensionData#getAllExtensionPermissions",
+    "method"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#getextensionpermissions",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-method-getExtensionPermissions",
+    "src/admin/utils/ExtensionData.js~ExtensionData#getExtensionPermissions",
+    "method"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#getpage",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-method-getPage",
+    "src/admin/utils/ExtensionData.js~ExtensionData#getPage",
+    "method"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#getsettings",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-method-getSettings",
+    "src/admin/utils/ExtensionData.js~ExtensionData#getSettings",
+    "method"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#registerpage",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-method-registerPage",
+    "src/admin/utils/ExtensionData.js~ExtensionData#registerPage",
+    "method"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#registerpermission",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-method-registerPermission",
+    "src/admin/utils/ExtensionData.js~ExtensionData#registerPermission",
+    "method"
+  ],
+  [
+    "src/admin/utils/extensiondata.js~extensiondata#registersetting",
+    "class/src/admin/utils/ExtensionData.js~ExtensionData.html#instance-method-registerSetting",
+    "src/admin/utils/ExtensionData.js~ExtensionData#registerSetting",
+    "method"
+  ],
+  [
+    "src/admin/utils/getcategorizedextensions.js",
+    "file/src/admin/utils/getCategorizedExtensions.js.html",
+    "src/admin/utils/getCategorizedExtensions.js",
+    "file"
+  ],
+  [
+    "src/admin/utils/isextensionenabled.js",
+    "file/src/admin/utils/isExtensionEnabled.js.html",
+    "src/admin/utils/isExtensionEnabled.js",
     "file"
   ],
   [
@@ -2557,13 +2929,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-get-props",
+    "class/src/common/Component.ts~Component.html#instance-set-props",
     "src/common/Component.ts~Component#props",
     "member"
   ],
   [
     "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-set-props",
+    "class/src/common/Component.ts~Component.html#instance-get-props",
     "src/common/Component.ts~Component#props",
     "member"
   ],

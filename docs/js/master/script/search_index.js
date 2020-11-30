@@ -397,13 +397,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -757,13 +757,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -2929,13 +2929,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-get-props",
+    "class/src/common/Component.ts~Component.html#instance-set-props",
     "src/common/Component.ts~Component#props",
     "member"
   ],
   [
     "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-set-props",
+    "class/src/common/Component.ts~Component.html#instance-get-props",
     "src/common/Component.ts~Component#props",
     "member"
   ],
@@ -3711,6 +3711,12 @@ window.esdocSearchIndex = [
     "src/common/components/page.js~page#scrolltoponcreate",
     "class/src/common/components/Page.js~Page.html#instance-member-scrollTopOnCreate",
     "src/common/components/Page.js~Page#scrollTopOnCreate",
+    "member"
+  ],
+  [
+    "src/common/components/page.js~page#usebrowserscrollrestoration",
+    "class/src/common/components/Page.js~Page.html#instance-member-useBrowserScrollRestoration",
+    "src/common/components/Page.js~Page#useBrowserScrollRestoration",
     "member"
   ],
   [
@@ -5607,6 +5613,12 @@ window.esdocSearchIndex = [
     "src/forum/components/discussionpage.js~discussionpage#stream",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-stream",
     "src/forum/components/DiscussionPage.js~DiscussionPage#stream",
+    "member"
+  ],
+  [
+    "src/forum/components/discussionpage.js~discussionpage#usebrowserscrollrestoration",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-member-useBrowserScrollRestoration",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#useBrowserScrollRestoration",
     "member"
   ],
   [

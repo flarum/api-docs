@@ -385,13 +385,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -2928,18 +2928,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-set-props",
-    "src/common/Component.ts~Component#props",
-    "member"
-  ],
-  [
-    "src/common/component.ts~component#props",
-    "class/src/common/Component.ts~Component.html#instance-get-props",
-    "src/common/Component.ts~Component#props",
-    "member"
-  ],
-  [
     "src/common/component.ts~component#setattrs",
     "class/src/common/Component.ts~Component.html#instance-method-setAttrs",
     "src/common/Component.ts~Component#setAttrs",
@@ -5241,18 +5229,6 @@ window.esdocSearchIndex = [
     "src/forum/components/composerbody.js~composerbody#composer",
     "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-member-composer",
     "src/forum/components/ComposerBody.js~ComposerBody#composer",
-    "member"
-  ],
-  [
-    "src/forum/components/composerbody.js~composerbody#content",
-    "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-member-content",
-    "src/forum/components/ComposerBody.js~ComposerBody#content",
-    "member"
-  ],
-  [
-    "src/forum/components/composerbody.js~composerbody#editor",
-    "class/src/forum/components/ComposerBody.js~ComposerBody.html#instance-member-editor",
-    "src/forum/components/ComposerBody.js~ComposerBody#editor",
     "member"
   ],
   [
@@ -7734,12 +7710,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/states/composerstate.js~composerstate#component",
-    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-component",
-    "src/forum/states/ComposerState.js~ComposerState#component",
-    "member"
-  ],
-  [
     "src/forum/states/composerstate.js~composerstate#composingreplyto",
     "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-composingReplyTo",
     "src/forum/states/ComposerState.js~ComposerState#composingReplyTo",
@@ -7756,12 +7726,6 @@ window.esdocSearchIndex = [
     "class/src/forum/states/ComposerState.js~ComposerState.html#instance-constructor-constructor",
     "src/forum/states/ComposerState.js~ComposerState#constructor",
     "method"
-  ],
-  [
-    "src/forum/states/composerstate.js~composerstate#content",
-    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-content",
-    "src/forum/states/ComposerState.js~ComposerState#content",
-    "member"
   ],
   [
     "src/forum/states/composerstate.js~composerstate#editor",
@@ -7864,12 +7828,6 @@ window.esdocSearchIndex = [
     "class/src/forum/states/ComposerState.js~ComposerState.html#instance-method-show",
     "src/forum/states/ComposerState.js~ComposerState#show",
     "method"
-  ],
-  [
-    "src/forum/states/composerstate.js~composerstate#value",
-    "class/src/forum/states/ComposerState.js~ComposerState.html#instance-member-value",
-    "src/forum/states/ComposerState.js~ComposerState#value",
-    "member"
   ],
   [
     "src/forum/states/discussionliststate.js",

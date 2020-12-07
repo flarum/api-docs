@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Http\HttpServiceProvider | Flarum API</title>
+    <title>Flarum\Http\SlugManager | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Http_HttpServiceProvider" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Http_SlugManager" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -83,10 +83,10 @@
                     
     <div class="page-header">
         <h1>
-            HttpServiceProvider
+            SlugManager
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Http/HttpServiceProvider.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Http/SlugManager.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -94,7 +94,7 @@
     </div>
 
     <p>    class        
-    <strong>HttpServiceProvider</strong>        extends <a href="../../Flarum/Foundation/AbstractServiceProvider.html"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></p>
+    <strong>SlugManager</strong></p>
 
         
     
@@ -106,13 +106,13 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_app">
-                                        protected                                        Container
+                <td class="type" id="property_drivers">
+                                        protected                                        
                 </td>
-                <td>$app</td>
+                <td>$drivers</td>
                 <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#property_app"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/HttpServiceProvider.php#L20" target="_blank">
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/SlugManager.php#L16" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -128,13 +128,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+                    <a href="#method___construct">__construct</a>(array $drivers)
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/HttpServiceProvider.php#L25" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/SlugManager.php#L18" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -142,15 +142,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <a href="../../Flarum/Http/SlugDriverInterface.html"><abbr title="Flarum\Http\SlugDriverInterface">SlugDriverInterface</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_register">register</a>()
+                    <a href="#method_forResource">forResource</a>(string $resourceName)
         
-                                            <p>{@inheritdoc}</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/HttpServiceProvider.php#L25" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/SlugManager.php#L23" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -165,13 +166,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                            in <a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a>
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/AbstractServiceProvider.php#L25" target="_blank">
-            line 25
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/SlugManager.php#L18" target="_blank">
+            line 18
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+    <strong>__construct</strong>(array $drivers)
         </code>
     </h3>
     <div class="details">
@@ -183,8 +183,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
-                <td>$container</td>
+                <td>array</td>
+                <td>$drivers</td>
                 <td></td>
             </tr>
             </table>
@@ -197,24 +197,41 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_register">
+                    <h3 id="method_forResource">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/HttpServiceProvider.php#L25" target="_blank">
-            line 25
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/SlugManager.php#L23" target="_blank">
+            line 23
         </a>
         </div>
-        <code>                    
-    <strong>register</strong>()
+        <code>                    <a href="../../Flarum/Http/SlugDriverInterface.html"><abbr title="Flarum\Http\SlugDriverInterface">SlugDriverInterface</abbr></a>
+    <strong>forResource</strong>(string $resourceName)
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resourceName</td>
+                <td></td>
+            </tr>
+            </table>
+
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Http/SlugDriverInterface.html"><abbr title="Flarum\Http\SlugDriverInterface">SlugDriverInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

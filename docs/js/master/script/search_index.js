@@ -757,13 +757,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -930,6 +930,18 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "flarum/index~compat",
+    "variable/index.html#static-variable-compat",
+    "<span>compat</span> <span class=\"search-result-import-path\">flarum/index</span>",
+    "variable"
+  ],
+  [
+    "flarum/index~compat",
+    "variable/index.html#static-variable-compat",
+    "<span>compat</span> <span class=\"search-result-import-path\">flarum/index</span>",
+    "variable"
+  ],
+  [
     "flarum/utils/computed~computed",
     "function/index.html#static-function-computed",
     "<span>computed</span> <span class=\"search-result-import-path\">flarum/utils/computed</span>",
@@ -1023,6 +1035,12 @@ window.esdocSearchIndex = [
     "flarum/utils/patchmithril~patchmithril",
     "function/index.html#static-function-patchMithril",
     "<span>patchMithril</span> <span class=\"search-result-import-path\">flarum/utils/patchMithril</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/proxifycompat~proxifycompat",
+    "function/index.html#static-function-proxifyCompat",
+    "<span>proxifyCompat</span> <span class=\"search-result-import-path\">flarum/utils/proxifyCompat</span>",
     "function"
   ],
   [
@@ -1636,6 +1654,12 @@ window.esdocSearchIndex = [
     "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-onsubmit",
     "src/admin/components/BasicsPage.js~BasicsPage#onsubmit",
     "method"
+  ],
+  [
+    "src/admin/components/basicspage.js~basicspage#slugdriveroptions",
+    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-slugDriverOptions",
+    "src/admin/components/BasicsPage.js~BasicsPage#slugDriverOptions",
+    "member"
   ],
   [
     "src/admin/components/basicspage.js~basicspage#successalert",
@@ -4614,6 +4638,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/common/utils/proxifycompat.ts",
+    "file/src/common/utils/proxifyCompat.ts.html",
+    "src/common/utils/proxifyCompat.ts",
+    "file"
+  ],
+  [
     "src/common/utils/setroutewithforcedrefresh.ts",
     "file/src/common/utils/setRouteWithForcedRefresh.ts.html",
     "src/common/utils/setRouteWithForcedRefresh.ts",
@@ -7224,6 +7254,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/search.js~search.min_search_len",
+    "class/src/forum/components/Search.js~Search.html#static-member-MIN_SEARCH_LEN",
+    "src/forum/components/Search.js~Search.MIN_SEARCH_LEN",
+    "member"
+  ],
+  [
     "src/forum/components/searchsource.js",
     "file/src/forum/components/SearchSource.js.html",
     "src/forum/components/SearchSource.js",
@@ -7654,6 +7690,12 @@ window.esdocSearchIndex = [
     "file/src/forum/resolvers/DiscussionPageResolver.ts.html",
     "src/forum/resolvers/DiscussionPageResolver.ts",
     "file"
+  ],
+  [
+    "src/forum/resolvers/discussionpageresolver.ts~discussionpageresolver#canonicalizediscussionslug",
+    "class/src/forum/resolvers/DiscussionPageResolver.ts~DiscussionPageResolver.html#instance-method-canonicalizeDiscussionSlug",
+    "src/forum/resolvers/DiscussionPageResolver.ts~DiscussionPageResolver#canonicalizeDiscussionSlug",
+    "method"
   ],
   [
     "src/forum/resolvers/discussionpageresolver.ts~discussionpageresolver#makekey",

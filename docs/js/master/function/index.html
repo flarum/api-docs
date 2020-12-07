@@ -32,6 +32,7 @@
   <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#admin">admin</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/admin/AdminApplication.js~AdminApplication.html">AdminApplication</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-routes">routes</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-app">app</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-compat">compat</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#admin-components">admin/components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/admin/components/AddExtensionModal.js~AddExtensionModal.html">AddExtensionModal</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/admin/components/AdminHeader.js~AdminHeader.html">AdminHeader</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/admin/components/AdminLinkButton.js~AdminLinkButton.html">AdminLinkButton</a></span></span></li>
@@ -133,6 +134,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mapRoutes">mapRoutes</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mixin">mixin</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-patchMithril">patchMithril</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-proxifyCompat">proxifyCompat</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setRouteWithForcedRefresh">setRouteWithForcedRefresh</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPlainContent">getPlainContent</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-slug">slug</a></span></span></li>
@@ -144,6 +146,7 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum">forum</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/ForumApplication.js~ForumApplication.html">ForumApplication</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-routes">routes</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-app">app</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-compat">compat</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum-components">forum/components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/components/AffixedSidebar.js~AffixedSidebar.html">AffixedSidebar</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/components/AvatarEditor.js~AvatarEditor.html">AvatarEditor</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html">ChangeEmailModal</a></span></span></li>
@@ -833,6 +836,34 @@ new function will be run every time the object&apos;s method is called.</p>
           
           
           <span class="code" data-ice="name"><span><a href="function/index.html#static-function-patchMithril">patchMithril</a></span></span><span class="code" data-ice="signature">(global: <span>*</span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-proxifyCompat">proxifyCompat</a></span></span><span class="code" data-ice="signature">(compat: <span>*</span>, namespace: <span>*</span>): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -2835,6 +2866,83 @@ prototype will be the desired target of extension, not the class itself.</p>
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-proxifyCompat">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">proxifyCompat</span><span class="code" data-ice="signature">(compat: <span>*</span>, namespace: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/common/utils/proxifyCompat.ts.html#lineNumber1">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import proxifyCompat from &apos;<span><a href="file/src/common/utils/proxifyCompat.ts.html#lineNumber1">flarum/utils/proxifyCompat</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">compat</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">namespace</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="static-function-punctuateSeries">
     <span class="access" data-ice="access">public</span>
     
@@ -2921,11 +3029,11 @@ fluently in the application&apos;s locale.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/routes.js.html#lineNumber14">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/admin/routes.js.html#lineNumber14">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import routes from &apos;<span><a href="file/src/forum/routes.js.html#lineNumber14">flarum/routes</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import routes from &apos;<span><a href="file/src/admin/routes.js.html#lineNumber14">flarum/routes</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>The <code>routes</code> initializer defines the forum app&apos;s routes.</p>
@@ -2981,11 +3089,11 @@ fluently in the application&apos;s locale.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/admin/routes.js.html#lineNumber14">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/routes.js.html#lineNumber14">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import routes from &apos;<span><a href="file/src/admin/routes.js.html#lineNumber14">flarum/routes</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import routes from &apos;<span><a href="file/src/forum/routes.js.html#lineNumber14">flarum/routes</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>The <code>routes</code> initializer defines the forum app&apos;s routes.</p>

@@ -32,6 +32,7 @@
   <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#admin">admin</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/admin/AdminApplication.js~AdminApplication.html">AdminApplication</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-routes">routes</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-app">app</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-compat">compat</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#admin-components">admin/components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/admin/components/AddExtensionModal.js~AddExtensionModal.html">AddExtensionModal</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/admin/components/AdminHeader.js~AdminHeader.html">AdminHeader</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/admin/components/AdminLinkButton.js~AdminLinkButton.html">AdminLinkButton</a></span></span></li>
@@ -133,6 +134,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mapRoutes">mapRoutes</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mixin">mixin</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-patchMithril">patchMithril</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-proxifyCompat">proxifyCompat</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setRouteWithForcedRefresh">setRouteWithForcedRefresh</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPlainContent">getPlainContent</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-slug">slug</a></span></span></li>
@@ -144,6 +146,7 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum">forum</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/ForumApplication.js~ForumApplication.html">ForumApplication</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-routes">routes</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-app">app</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-compat">compat</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#forum-components">forum/components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/components/AffixedSidebar.js~AffixedSidebar.html">AffixedSidebar</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/components/AvatarEditor.js~AvatarEditor.html">AvatarEditor</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html">ChangeEmailModal</a></span></span></li>
@@ -219,13 +222,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import DiscussionListItem from &apos;<span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber28">flarum/components/DiscussionListItem</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import DiscussionListItem from &apos;<span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber29">flarum/components/DiscussionListItem</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber28">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber29">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -646,7 +649,7 @@ the number of unread posts.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber76">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber77">source</a></span></span>
     </span>
   </h3>
 
@@ -689,7 +692,7 @@ the number of unread posts.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber38">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber39">source</a></span></span>
     </span>
   </h3>
 
@@ -737,7 +740,7 @@ unless new data comes in.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber158">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber159">source</a></span></span>
     </span>
   </h3>
 
@@ -793,7 +796,7 @@ unless new data comes in.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber48">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber49">source</a></span></span>
     </span>
   </h3>
 
@@ -848,7 +851,7 @@ unless new data comes in.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber203">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber202">source</a></span></span>
     </span>
   </h3>
 
@@ -905,7 +908,7 @@ just the first/last post indicator.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber188">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber187">source</a></span></span>
     </span>
   </h3>
 
@@ -949,7 +952,7 @@ just the first/last post indicator.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber147">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber148">source</a></span></span>
     </span>
   </h3>
 
@@ -1026,7 +1029,7 @@ just the first/last post indicator.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber134">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber135">source</a></span></span>
     </span>
   </h3>
 
@@ -1085,7 +1088,7 @@ just the first/last post indicator.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber29">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber30">source</a></span></span>
     </span>
   </h3>
 
@@ -1144,7 +1147,7 @@ just the first/last post indicator.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber171">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber170">source</a></span></span>
     </span>
   </h3>
 
@@ -1202,7 +1205,7 @@ the discussion.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber181">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber180">source</a></span></span>
     </span>
   </h3>
 
@@ -1259,7 +1262,7 @@ the number of unread posts.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber59">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/DiscussionListItem.js.html#lineNumber60">source</a></span></span>
     </span>
   </h3>
 

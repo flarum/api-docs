@@ -1530,9 +1530,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/adminnav.js~adminnav#oncreate",
+    "class/src/admin/components/AdminNav.js~AdminNav.html#instance-method-oncreate",
+    "src/admin/components/AdminNav.js~AdminNav#oncreate",
+    "method"
+  ],
+  [
     "src/admin/components/adminnav.js~adminnav#oninit",
     "class/src/admin/components/AdminNav.js~AdminNav.html#instance-method-oninit",
     "src/admin/components/AdminNav.js~AdminNav#oninit",
+    "method"
+  ],
+  [
+    "src/admin/components/adminnav.js~adminnav#onupdate",
+    "class/src/admin/components/AdminNav.js~AdminNav.html#instance-method-onupdate",
+    "src/admin/components/AdminNav.js~AdminNav#onupdate",
     "method"
   ],
   [
@@ -1540,6 +1552,12 @@ window.esdocSearchIndex = [
     "class/src/admin/components/AdminNav.js~AdminNav.html#instance-member-query",
     "src/admin/components/AdminNav.js~AdminNav#query",
     "member"
+  ],
+  [
+    "src/admin/components/adminnav.js~adminnav#scrolltoactive",
+    "class/src/admin/components/AdminNav.js~AdminNav.html#instance-method-scrollToActive",
+    "src/admin/components/AdminNav.js~AdminNav#scrollToActive",
+    "method"
   ],
   [
     "src/admin/components/adminnav.js~adminnav#view",

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Group\GroupPolicy | Flarum API</title>
+    <title>Flarum\Extend\ModelVisibility | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Group_GroupPolicy" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extend_ModelVisibility" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -83,10 +83,10 @@
                     
     <div class="page-header">
         <h1>
-            GroupPolicy
+            ModelVisibility
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Group/GroupPolicy.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelVisibility.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -94,31 +94,28 @@
     </div>
 
     <p>    class        
-    <strong>GroupPolicy</strong>        extends <a href="../../Flarum/User/AbstractPolicy.html"><abbr title="Flarum\User\AbstractPolicy">AbstractPolicy</abbr></a></p>
+    <strong>ModelVisibility</strong>        implements
+        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
 
         
     
 
-    
-    
-    
-            <h2>Properties</h2>
+            <div class="description">
+            <p>Model visibility scoping allows us to scope queries based on the current user.</p>            <p>The main usage of this is only showing model instances that a user is allowed to see.</p>
 
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_model">
-                                        protected                                        
-                </td>
-                <td>$model</td>
-                <td class="last">{@inheritdoc}</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Group/GroupPolicy.php#L20" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
+<p>This is done by running a query through a series of "scoper" callbacks, which apply
+additional <code>where</code>s to the query based on the user.</p>
 
+<p>Scopers are classified under an ability. Calling <code>whereVisibleTo</code> on a query
+will apply scopers under the <code>view</code> ability. Generally, the main <code>view</code> scopers
+can request scoping with other abilities, which provides an entrypoint for extensions
+to modify some restriction to a query.</p>
+
+<p>Scopers registered via <code>scopeAll</code> will apply to all queries under a model, regardless
+of the ability, and will accept the ability name as an additional argument.</p>                    </div>
+    
+    
+    
     
             <h2>Methods</h2>
 
@@ -128,13 +125,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_subscribe">subscribe</a>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
+                    <a href="#method___construct">__construct</a>(string $modelClass)
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/User/AbstractPolicy.html#method_subscribe"><abbr title="Flarum\User\AbstractPolicy">AbstractPolicy</abbr></a></small></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Group/GroupPolicy.php#L26" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelVisibility.php#L43" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -142,16 +139,31 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool|void
+                    <a href="../../Flarum/Extend/ModelVisibility.html"><abbr title="Flarum\Extend\ModelVisibility">ModelVisibility</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_getPermission">getPermission</a>(<a href="../../Flarum/Event/GetPermission.html"><abbr title="Flarum\Event\GetPermission">GetPermission</abbr></a> $event)
+                    <a href="#method_scope">scope</a>($callback, $ability = &#039;view&#039;)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/User/AbstractPolicy.html#method_getPermission"><abbr title="Flarum\User\AbstractPolicy">AbstractPolicy</abbr></a></small></div>
+                                            <p>Add a scoper for a given ability.</p>                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Group/GroupPolicy.php#L36" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelVisibility.php#L64" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/ModelVisibility.html"><abbr title="Flarum\Extend\ModelVisibility">ModelVisibility</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_scopeAll">scopeAll</a>(callable|string $callback)
+        
+                                            <p>Add a scoper scoper that will always run for this model, regardless of requested ability.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelVisibility.php#L83" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -162,30 +174,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_scopeModelVisibility">scopeModelVisibility</a>(<a href="../../Flarum/Event/ScopeModelVisibility.html"><abbr title="Flarum\Event\ScopeModelVisibility">ScopeModelVisibility</abbr></a> $event)
-        <small><sup><span class="label label-danger">deprecated</span></sup></small>
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/User/AbstractPolicy.html#method_scopeModelVisibility"><abbr title="Flarum\User\AbstractPolicy">AbstractPolicy</abbr></a></small></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Group/GroupPolicy.php#L59" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    bool|null
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_can">can</a>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, string $ability)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Group/GroupPolicy.php#L27" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelVisibility.php#L90" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -198,15 +193,14 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_subscribe">
+                    <h3 id="method___construct">
         <div class="location">
-                            in <a href="../../Flarum/User/AbstractPolicy.html#method_subscribe"><abbr title="Flarum\User\AbstractPolicy">AbstractPolicy</abbr></a>
-                        at         <a href="https://github.com/flarum/core/blob/master/src/User/AbstractPolicy.php#L26" target="_blank">
-            line 26
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelVisibility.php#L43" target="_blank">
+            line 43
         </a>
         </div>
         <code>                    
-    <strong>subscribe</strong>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
+    <strong>__construct</strong>(string $modelClass)
         </code>
     </h3>
     <div class="details">
@@ -217,130 +211,50 @@
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></td>
-                <td>$events</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getPermission">
-        <div class="location">
-                            in <a href="../../Flarum/User/AbstractPolicy.html#method_getPermission"><abbr title="Flarum\User\AbstractPolicy">AbstractPolicy</abbr></a>
-                        at         <a href="https://github.com/flarum/core/blob/master/src/User/AbstractPolicy.php#L36" target="_blank">
-            line 36
-        </a>
-        </div>
-        <code>                    bool|void
-    <strong>getPermission</strong>(<a href="../../Flarum/Event/GetPermission.html"><abbr title="Flarum\Event\GetPermission">GetPermission</abbr></a> $event)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../Flarum/Event/GetPermission.html"><abbr title="Flarum\Event\GetPermission">GetPermission</abbr></a></td>
-                <td>$event</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool|void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_scopeModelVisibility">
-        <div class="location">
-                            in <a href="../../Flarum/User/AbstractPolicy.html#method_scopeModelVisibility"><abbr title="Flarum\User\AbstractPolicy">AbstractPolicy</abbr></a>
-                        at         <a href="https://github.com/flarum/core/blob/master/src/User/AbstractPolicy.php#L59" target="_blank">
-            line 59
-        </a>
-        </div>
-        <code>                    
-    <strong>scopeModelVisibility</strong>(<a href="../../Flarum/Event/ScopeModelVisibility.html"><abbr title="Flarum\Event\ScopeModelVisibility">ScopeModelVisibility</abbr></a> $event)
-        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
-    </h3>
-    <div class="details">
-            
-            <p>
-                <small><sup><span class="label label-danger">deprecated</span></sup></small>
-                            <tr>
-                    <td></td>
-                    <td>beta 15, remove beta 16</td>
-                </tr>
-                    </p>
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../Flarum/Event/ScopeModelVisibility.html"><abbr title="Flarum\Event\ScopeModelVisibility">ScopeModelVisibility</abbr></a></td>
-                <td>$event</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_can">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Group/GroupPolicy.php#L27" target="_blank">
-            line 27
-        </a>
-        </div>
-        <code>                    bool|null
-    <strong>can</strong>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, string $ability)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
-                <td>$actor</td>
-                <td></td>
-            </tr>
                     <tr>
                 <td>string</td>
+                <td>$modelClass</td>
+                <td>The ::class attribute of the model you are applying scopers to.
+This model must extend from \Flarum\Database\AbstractModel,
+and use \Flarum\Database\ScopeVisibilityTrait.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scope">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelVisibility.php#L64" target="_blank">
+            line 64
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/ModelVisibility.html"><abbr title="Flarum\Extend\ModelVisibility">ModelVisibility</abbr></a>
+    <strong>scope</strong>($callback, $ability = &#039;view&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a scoper for a given ability.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
                 <td>$ability</td>
                 <td></td>
             </tr>
@@ -351,11 +265,96 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool|null</td>
+            <td><a href="../../Flarum/Extend/ModelVisibility.html"><abbr title="Flarum\Extend\ModelVisibility">ModelVisibility</abbr></a></td>
             <td></td>
         </tr>
     </table>
 
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeAll">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelVisibility.php#L83" target="_blank">
+            line 83
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/ModelVisibility.html"><abbr title="Flarum\Extend\ModelVisibility">ModelVisibility</abbr></a>
+    <strong>scopeAll</strong>(callable|string $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a scoper scoper that will always run for this model, regardless of requested ability.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|string</td>
+                <td>$callback</td>
+                <td>The callback can be a closure or invokable class, and should accept:
+- \Flarum\User\User $actor
+- \Illuminate\Database\Eloquent\Builder $query
+- string $ability</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/ModelVisibility.html"><abbr title="Flarum\Extend\ModelVisibility">ModelVisibility</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelVisibility.php#L90" target="_blank">
+            line 90
+        </a>
+        </div>
+        <code>                    
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a></td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
             
             
                     </div>

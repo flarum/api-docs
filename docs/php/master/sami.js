@@ -1955,7 +1955,7 @@ window.projectVersion = 'master';
                     {"type": "Method", "fromName": "Flarum\\Post\\DiscussionRenamedPost", "fromLink": "Flarum/Post/DiscussionRenamedPost.html", "link": "Flarum/Post/DiscussionRenamedPost.html#method_reply", "name": "Flarum\\Post\\DiscussionRenamedPost::reply", "doc": "&quot;Create a new instance in reply to a discussion.&quot;"},
                     {"type": "Method", "fromName": "Flarum\\Post\\DiscussionRenamedPost", "fromLink": "Flarum/Post/DiscussionRenamedPost.html", "link": "Flarum/Post/DiscussionRenamedPost.html#method_buildContent", "name": "Flarum\\Post\\DiscussionRenamedPost::buildContent", "doc": "&quot;Build the content attribute.&quot;"},
             
-            {"type": "Class", "fromName": "Flarum\\Post\\Event", "fromLink": "Flarum/Post/Event.html", "link": "Flarum/Post/Event/CheckingForFlooding.html", "name": "Flarum\\Post\\Event\\CheckingForFlooding", "doc": "null"},
+            {"type": "Class", "fromName": "Flarum\\Post\\Event", "fromLink": "Flarum/Post/Event.html", "link": "Flarum/Post/Event/CheckingForFlooding.html", "name": "Flarum\\Post\\Event\\CheckingForFlooding", "doc": "&quot;&quot;"},
                                                         {"type": "Method", "fromName": "Flarum\\Post\\Event\\CheckingForFlooding", "fromLink": "Flarum/Post/Event/CheckingForFlooding.html", "link": "Flarum/Post/Event/CheckingForFlooding.html#method___construct", "name": "Flarum\\Post\\Event\\CheckingForFlooding::__construct", "doc": "&quot;&quot;"},
             
             {"type": "Class", "fromName": "Flarum\\Post\\Event", "fromLink": "Flarum/Post/Event.html", "link": "Flarum/Post/Event/Deleted.html", "name": "Flarum\\Post\\Event\\Deleted", "doc": "null"},

@@ -27,6 +27,12 @@ jobs:
       - name: Clone flarum/core
         run: git clone https://github.com/flarum/core.git flarum
 
+      - name: PHP > Use PHP 7.4
+        if: ${{ matrix.language == 'php' }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+
       - name: JS > Use Node.js 10.x
         if: ${{ matrix.language == 'js' }}
         uses: actions/setup-node@v1

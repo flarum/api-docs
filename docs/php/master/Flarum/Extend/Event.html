@@ -51,6 +51,7 @@
                                             <option value="../../../v0.1.0-beta.12" data-version="v0.1.0-beta.12">v0.1.0-beta.12</option>
                                             <option value="../../../v0.1.0-beta.13" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
                                             <option value="../../../v0.1.0-beta.14" data-version="v0.1.0-beta.14">v0.1.0-beta.14</option>
+                                            <option value="../../../v0.1.0-beta.15" data-version="v0.1.0-beta.15">v0.1.0-beta.15</option>
                                             <option value="../../../master" data-version="master">master</option>
                                     </select>
             </form>
@@ -117,7 +118,23 @@
                                             <p>Add a listener to a domain event dispatched by flarum or a flarum extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Event.php#L30" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Event.php#L33" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_subscribe">subscribe</a>(string $subscriber)
+        
+                                            <p>Add a subscriber for a set of domain events dispatched by flarum or a flarum extension.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Event.php#L49" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -134,7 +151,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Event.php#L37" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Event.php#L56" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -149,8 +166,8 @@
                     <div class="method-item">
                     <h3 id="method_listen">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Event.php#L30" target="_blank">
-            line 30
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Event.php#L33" target="_blank">
+            line 33
         </a>
         </div>
         <code>                    
@@ -163,8 +180,10 @@
 
                     <div class="method-description">
                                     <p>Add a listener to a domain event dispatched by flarum or a flarum extension.</p>                    <p>The listener can either be:
-- a callback function or
-- the class attribute of a class with a public &lt;code&gt;handle&lt;/code&gt; method, which accepts an instance of the event as a parameter</p>                            </div>
+- a callback function
+- the class attribute of a class with a public &lt;code&gt;handle&lt;/code&gt; method, which accepts an instance of the event as a parameter
+- an array, where the first argument is an object or class name, and the second argument is the method on the
+  first argument that should be executed as the listener</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -189,10 +208,57 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_subscribe">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Event.php#L49" target="_blank">
+            line 49
+        </a>
+        </div>
+        <code>                    
+    <strong>subscribe</strong>(string $subscriber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a subscriber for a set of domain events dispatched by flarum or a flarum extension.</p>                    <p>Event subscribers are classes that may subscribe to multiple events from within the subscriber class itself,
+allowing you to define several event handlers within a single class.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscriber</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://laravel.com/docs/6.x/events#writing-event-subscribers">https://laravel.com/docs/6.x/events#writing-event-subscribers</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Event.php#L37" target="_blank">
-            line 37
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Event.php#L56" target="_blank">
+            line 56
         </a>
         </div>
         <code>                    

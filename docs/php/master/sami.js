@@ -801,6 +801,7 @@ window.projectVersion = 'master';
             
             {"type": "Class", "fromName": "Flarum\\Extend", "fromLink": "Flarum/Extend.html", "link": "Flarum/Extend/Event.html", "name": "Flarum\\Extend\\Event", "doc": "null"},
                                                         {"type": "Method", "fromName": "Flarum\\Extend\\Event", "fromLink": "Flarum/Extend/Event.html", "link": "Flarum/Extend/Event.html#method_listen", "name": "Flarum\\Extend\\Event::listen", "doc": "&quot;Add a listener to a domain event dispatched by flarum or a flarum extension.&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\Extend\\Event", "fromLink": "Flarum/Extend/Event.html", "link": "Flarum/Extend/Event.html#method_subscribe", "name": "Flarum\\Extend\\Event::subscribe", "doc": "&quot;Add a subscriber for a set of domain events dispatched by flarum or a flarum extension.&quot;"},
                     {"type": "Method", "fromName": "Flarum\\Extend\\Event", "fromLink": "Flarum/Extend/Event.html", "link": "Flarum/Extend/Event.html#method_extend", "name": "Flarum\\Extend\\Event::extend", "doc": "null"},
             
             {"type": "Class", "fromName": "Flarum\\Extend", "fromLink": "Flarum/Extend.html", "link": "Flarum/Extend/ExtenderInterface.html", "name": "Flarum\\Extend\\ExtenderInterface", "doc": "null"},

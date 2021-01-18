@@ -51,6 +51,7 @@
                                             <option value="../../../../v0.1.0-beta.12" data-version="v0.1.0-beta.12">v0.1.0-beta.12</option>
                                             <option value="../../../../v0.1.0-beta.13" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
                                             <option value="../../../../v0.1.0-beta.14" data-version="v0.1.0-beta.14">v0.1.0-beta.14</option>
+                                            <option value="../../../../v0.1.0-beta.15" data-version="v0.1.0-beta.15">v0.1.0-beta.15</option>
                                             <option value="../../../../master" data-version="master">master</option>
                                     </select>
             </form>
@@ -216,7 +217,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool|void
+                    string|void
                 </div>
                 <div class="col-md-6 type">
                     <a href="#method_checkAbility">checkAbility</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, string $ability, $instance)
@@ -226,6 +227,23 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/master/src/User/Access/AbstractPolicy.php#L48" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_sanitizeResult">sanitizeResult</a>(mixed $result)
+        
+                                            <p>Allows &lt;code&gt;true&lt;/code&gt; to be used in place of &lt;code&gt;-&amp;gt;allow()&lt;/code&gt;, and &lt;code&gt;false&lt;/code&gt; instead of &lt;code&gt;-&amp;gt;deny()&lt;/code&gt;
+This allows more concise and intuitive code, by returning boolean statements:.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/User/Access/AbstractPolicy.php#L78" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -336,7 +354,7 @@
             line 48
         </a>
         </div>
-        <code>                    bool|void
+        <code>                    string|void
     <strong>checkAbility</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, string $ability, $instance)
         </code>
     </h3>
@@ -370,7 +388,56 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool|void</td>
+            <td>string|void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sanitizeResult">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/User/Access/AbstractPolicy.php#L78" target="_blank">
+            line 78
+        </a>
+        </div>
+        <code>                    string|void
+    <strong>sanitizeResult</strong>(mixed $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Allows &lt;code&gt;true&lt;/code&gt; to be used in place of &lt;code&gt;-&amp;gt;allow()&lt;/code&gt;, and &lt;code&gt;false&lt;/code&gt; instead of &lt;code&gt;-&amp;gt;deny()&lt;/code&gt;
+This allows more concise and intuitive code, by returning boolean statements:.</p>                    <p>WITHOUT THIS:
+`return SOME_BOOLEAN_LOGIC ? $this-&gt;allow() : $this-&gt;deny();&lt;/p&gt;
+
+&lt;p&gt;WITH THIS:
+`return SOME_BOOLEAN_LOGIC;</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|void</td>
             <td></td>
         </tr>
     </table>

@@ -397,13 +397,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -757,13 +757,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -921,6 +921,12 @@ window.esdocSearchIndex = [
     "flarum/helpers/avatar~avatar",
     "function/index.html#static-function-avatar",
     "<span>avatar</span> <span class=\"search-result-import-path\">flarum/helpers/avatar</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/bidi~bidi",
+    "function/index.html#static-function-bidi",
+    "<span>bidi</span> <span class=\"search-result-import-path\">flarum/utils/bidi</span>",
     "function"
   ],
   [
@@ -4587,6 +4593,12 @@ window.esdocSearchIndex = [
     "src/common/utils/anchorscroll.js",
     "file/src/common/utils/anchorScroll.js.html",
     "src/common/utils/anchorScroll.js",
+    "file"
+  ],
+  [
+    "src/common/utils/bidi.js",
+    "file/src/common/utils/bidi.js.html",
+    "src/common/utils/bidi.js",
     "file"
   ],
   [

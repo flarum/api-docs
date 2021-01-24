@@ -397,13 +397,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -6436,6 +6436,12 @@ window.esdocSearchIndex = [
     "class/src/forum/components/NotificationList.js~NotificationList.html#instance-member-boundScrollHandler",
     "src/forum/components/NotificationList.js~NotificationList#boundScrollHandler",
     "member"
+  ],
+  [
+    "src/forum/components/notificationlist.js~notificationlist#inpanel",
+    "class/src/forum/components/NotificationList.js~NotificationList.html#instance-method-inPanel",
+    "src/forum/components/NotificationList.js~NotificationList#inPanel",
+    "method"
   ],
   [
     "src/forum/components/notificationlist.js~notificationlist#oncreate",

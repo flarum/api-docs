@@ -397,13 +397,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -6735,6 +6735,12 @@ window.esdocSearchIndex = [
     "src/forum/components/poststream.js~poststream#getmargintop",
     "class/src/forum/components/PostStream.js~PostStream.html#instance-method-getMarginTop",
     "src/forum/components/PostStream.js~PostStream#getMarginTop",
+    "method"
+  ],
+  [
+    "src/forum/components/poststream.js~poststream#loadpostsifneeded",
+    "class/src/forum/components/PostStream.js~PostStream.html#instance-method-loadPostsIfNeeded",
+    "src/forum/components/PostStream.js~PostStream#loadPostsIfNeeded",
     "method"
   ],
   [

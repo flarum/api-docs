@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Search\SearchServiceProvider | Flarum API</title>
+    <title>Flarum\Extend\SimpleFlarumSearch | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Search_SearchServiceProvider" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extend_SimpleFlarumSearch" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -84,10 +84,10 @@
                     
     <div class="page-header">
         <h1>
-            SearchServiceProvider
+            SimpleFlarumSearch
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Search/SearchServiceProvider.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -95,7 +95,8 @@
     </div>
 
     <p>    class        
-    <strong>SearchServiceProvider</strong>        extends <a href="../../Flarum/Foundation/AbstractServiceProvider.html"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></p>
+    <strong>SimpleFlarumSearch</strong>        implements
+        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
 
         
     
@@ -103,23 +104,6 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_app">
-                                        protected                                        Container
-                </td>
-                <td>$app</td>
-                <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#property_app"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Search/SearchServiceProvider.php#L20" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -129,13 +113,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+                    <a href="#method___construct">__construct</a>($searcherClass)
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/SearchServiceProvider.php#L25" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L26" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -146,13 +130,12 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_register">register</a>()
+                    <a href="#method_addGambit">addGambit</a>($gambitClass)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Add a gambit to this searcher. Gambits are used to filter search queries.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/SearchServiceProvider.php#L33" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L37" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -163,12 +146,45 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_boot">boot</a>()
+                    <a href="#method_setFullTextGambit">setFullTextGambit</a>($gambitClass)
         
-                                            <p>{@inheritdoc}</p>                </div>
+                                            <p>Set the full text gambit for this searcher. The full text gambit actually executes the search.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/SearchServiceProvider.php#L65" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L50" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_addSearchMutator">addSearchMutator</a>(callable|string $callback)
+        
+                                            <p>Add a callback through which to run all search queries after gambits have been applied.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L66" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L73" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -183,13 +199,152 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                            in <a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a>
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Foundation/AbstractServiceProvider.php#L25" target="_blank">
-            line 25
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L26" target="_blank">
+            line 26
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+    <strong>__construct</strong>($searcherClass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$searcherClass</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addGambit">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L37" target="_blank">
+            line 37
+        </a>
+        </div>
+        <code>                    
+    <strong>addGambit</strong>($gambitClass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a gambit to this searcher. Gambits are used to filter search queries.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$gambitClass</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFullTextGambit">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L50" target="_blank">
+            line 50
+        </a>
+        </div>
+        <code>                    
+    <strong>setFullTextGambit</strong>($gambitClass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the full text gambit for this searcher. The full text gambit actually executes the search.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$gambitClass</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSearchMutator">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L66" target="_blank">
+            line 66
+        </a>
+        </div>
+        <code>                    
+    <strong>addSearchMutator</strong>(callable|string $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a callback through which to run all search queries after gambits have been applied.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|string</td>
+                <td>$callback</td>
+                <td>The callback can be a closure or an invokable class, and should accept:
+- Flarum\Search\AbstractSearch $search
+- Flarum\Search\SearchCriteria $criteria</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L73" target="_blank">
+            line 73
+        </a>
+        </div>
+        <code>                    
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -205,56 +360,13 @@
                 <td>$container</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a></td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
             </table>
 
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_register">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/SearchServiceProvider.php#L33" target="_blank">
-            line 33
-        </a>
-        </div>
-        <code>                    
-    <strong>register</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_boot">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/SearchServiceProvider.php#L65" target="_blank">
-            line 65
-        </a>
-        </div>
-        <code>                    
-    <strong>boot</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                                </div>
-                <div class="tags">
             
             
             

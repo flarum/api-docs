@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Search\GambitManager | Flarum API</title>
+    <title>Flarum\Search\AbstractSearcher | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Search_GambitManager" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Search_AbstractSearcher" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -84,23 +84,43 @@
                     
     <div class="page-header">
         <h1>
-            GambitManager
+            AbstractSearcher
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>    class        
-    <strong>GambitManager</strong></p>
+    <p>abstract     class        
+    <strong>AbstractSearcher</strong></p>
 
         
     
 
     
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Flarum/Search/ApplySearchParametersTrait.html"><abbr title="Flarum\Search\ApplySearchParametersTrait">ApplySearchParametersTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/core/blob/master/src/Search/ApplySearchParametersTrait.php" target="_blank">
+        <img src="../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+            </div>
     
     
             <h2>Properties</h2>
@@ -108,24 +128,24 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_gambits">
-                                        protected                                        array
+                                        protected                                        GambitManager
                 </td>
                 <td>$gambits</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L22" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L22" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
-                <td class="type" id="property_fulltextGambit">
-                                        protected                                        GambitInterface
+                <td class="type" id="property_searchMutators">
+                                        protected                                        array
                 </td>
-                <td>$fulltextGambit</td>
+                <td>$searchMutators</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L27" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L27" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -141,12 +161,12 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_add">add</a>(GambitInterface $gambit)
+                    <a href="#method_applySort">applySort</a>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, array $sort = null)
         
-                                            <p>Add a gambit.</p>                </div>
-                <div class="col-md-2"></div>
+                                            <p>Apply sort criteria to a discussion search.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Search/ApplySearchParametersTrait.html#method_applySort"><abbr title="Flarum\Search\ApplySearchParametersTrait">ApplySearchParametersTrait</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L34" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L22" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -157,13 +177,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_getFullTextGambit">getFullTextGambit</a>()
-        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                    <a href="#method_applyOffset">applyOffset</a>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, int $offset)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Search/ApplySearchParametersTrait.html#method_applyOffset"><abbr title="Flarum\Search\ApplySearchParametersTrait">ApplySearchParametersTrait</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L42" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -174,13 +194,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_getGambits">getGambits</a>()
-        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                    <a href="#method_applyLimit">applyLimit</a>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, int|null $limit)
+        
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Search/ApplySearchParametersTrait.html#method_applyLimit"><abbr title="Flarum\Search\ApplySearchParametersTrait">ApplySearchParametersTrait</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L50" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L56" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -191,61 +211,47 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_apply">apply</a>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, string $query)
-        
-                                            <p>Apply gambits to a search, given a search query.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L61" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_setFulltextGambit">setFulltextGambit</a>(GambitInterface $gambit)
-        
-                                            <p>Set the gambit to handle fulltext searching.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L75" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_explode">explode</a>(string $query)
-        
-                                            <p>Explode a search query into an array of bits.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L86" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_applyGambits">applyGambits</a>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, string $query)
+                    <a href="#method___construct">__construct</a>(<a href="../../Flarum/Search/GambitManager.html"><abbr title="Flarum\Search\GambitManager">GambitManager</abbr></a> $gambits, array $searchMutators)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L96" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L29" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getQuery">getQuery</a>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L35" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getSearch">getSearch</a>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L37" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -256,13 +262,30 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_applyFulltext">applyFulltext</a>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, string $query)
+                    <a href="#method_mutateSearch">mutateSearch</a>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, <a href="../../Flarum/Search/SearchCriteria.html"><abbr title="Flarum\Search\SearchCriteria">SearchCriteria</abbr></a> $criteria)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L127" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L39" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    SearchResults
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_search">search</a>(<a href="../../Flarum/Search/SearchCriteria.html"><abbr title="Flarum\Search\SearchCriteria">SearchCriteria</abbr></a> $criteria, $limit = null, $offset = 0, array $load = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L53" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -275,275 +298,56 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_add">
+                    <h3 id="method_applySort">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L34" target="_blank">
-            line 34
-        </a>
-        </div>
-        <code>                    
-    <strong>add</strong>(GambitInterface $gambit)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Add a gambit.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>GambitInterface</td>
-                <td>$gambit</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getFullTextGambit">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L42" target="_blank">
-            line 42
-        </a>
-        </div>
-        <code>                    
-    <strong>getFullTextGambit</strong>()
-        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
-    </h3>
-    <div class="details">
-            
-            <p>
-                <small><sup><span class="label label-danger">deprecated</span></sup></small>
-                            <tr>
-                    <td></td>
-                    <td>Do not use. Added temporarily to provide support for ConfigureUserGambits and ConfigureDiscussionGambits until they are removed in beta 17.</td>
-                </tr>
-                    </p>
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getGambits">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L50" target="_blank">
-            line 50
-        </a>
-        </div>
-        <code>                    
-    <strong>getGambits</strong>()
-        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
-    </h3>
-    <div class="details">
-            
-            <p>
-                <small><sup><span class="label label-danger">deprecated</span></sup></small>
-                            <tr>
-                    <td></td>
-                    <td>Do not use. Added temporarily to provide support for ConfigureUserGambits and ConfigureDiscussionGambits until they are removed in beta 17.</td>
-                </tr>
-                    </p>
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_apply">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L61" target="_blank">
-            line 61
-        </a>
-        </div>
-        <code>                    
-    <strong>apply</strong>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, string $query)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Apply gambits to a search, given a search query.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a></td>
-                <td>$search</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$query</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setFulltextGambit">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L75" target="_blank">
-            line 75
-        </a>
-        </div>
-        <code>                    
-    <strong>setFulltextGambit</strong>(GambitInterface $gambit)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Set the gambit to handle fulltext searching.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>GambitInterface</td>
-                <td>$gambit</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_explode">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L86" target="_blank">
-            line 86
-        </a>
-        </div>
-        <code>            protected        array
-    <strong>explode</strong>(string $query)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Explode a search query into an array of bits.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$query</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_applyGambits">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L96" target="_blank">
-            line 96
-        </a>
-        </div>
-        <code>            protected        string
-    <strong>applyGambits</strong>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, string $query)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a></td>
-                <td>$search</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$query</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_applyFulltext">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/GambitManager.php#L127" target="_blank">
-            line 127
+                            in <a href="../../Flarum/Search/ApplySearchParametersTrait.html#method_applySort"><abbr title="Flarum\Search\ApplySearchParametersTrait">ApplySearchParametersTrait</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/ApplySearchParametersTrait.php#L22" target="_blank">
+            line 22
         </a>
         </div>
         <code>            protected        
-    <strong>applyFulltext</strong>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, string $query)
+    <strong>applySort</strong>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, array $sort = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Apply sort criteria to a discussion search.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a></td>
+                <td>$search</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$sort</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_applyOffset">
+        <div class="location">
+                            in <a href="../../Flarum/Search/ApplySearchParametersTrait.html#method_applyOffset"><abbr title="Flarum\Search\ApplySearchParametersTrait">ApplySearchParametersTrait</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/ApplySearchParametersTrait.php#L45" target="_blank">
+            line 45
+        </a>
+        </div>
+        <code>            protected        
+    <strong>applyOffset</strong>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, int $offset)
         </code>
     </h3>
     <div class="details">
@@ -560,13 +364,274 @@
                 <td></td>
             </tr>
                     <tr>
-                <td>string</td>
-                <td>$query</td>
+                <td>int</td>
+                <td>$offset</td>
                 <td></td>
             </tr>
             </table>
 
             
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_applyLimit">
+        <div class="location">
+                            in <a href="../../Flarum/Search/ApplySearchParametersTrait.html#method_applyLimit"><abbr title="Flarum\Search\ApplySearchParametersTrait">ApplySearchParametersTrait</abbr></a>
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/ApplySearchParametersTrait.php#L56" target="_blank">
+            line 56
+        </a>
+        </div>
+        <code>            protected        
+    <strong>applyLimit</strong>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, int|null $limit)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a></td>
+                <td>$search</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L29" target="_blank">
+            line 29
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Flarum/Search/GambitManager.html"><abbr title="Flarum\Search\GambitManager">GambitManager</abbr></a> $gambits, array $searchMutators)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Search/GambitManager.html"><abbr title="Flarum\Search\GambitManager">GambitManager</abbr></a></td>
+                <td>$gambits</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$searchMutators</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQuery">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L35" target="_blank">
+            line 35
+        </a>
+        </div>
+        <code>    abstract        protected        <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+    <strong>getQuery</strong>(<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
+                <td>$actor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSearch">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L37" target="_blank">
+            line 37
+        </a>
+        </div>
+        <code>    abstract        protected        <a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a>
+    <strong>getSearch</strong>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
+                <td>$actor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mutateSearch">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L39" target="_blank">
+            line 39
+        </a>
+        </div>
+        <code>            protected        
+    <strong>mutateSearch</strong>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, <a href="../../Flarum/Search/SearchCriteria.html"><abbr title="Flarum\Search\SearchCriteria">SearchCriteria</abbr></a> $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a></td>
+                <td>$search</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Search/SearchCriteria.html"><abbr title="Flarum\Search\SearchCriteria">SearchCriteria</abbr></a></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_search">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractSearcher.php#L53" target="_blank">
+            line 53
+        </a>
+        </div>
+        <code>                    SearchResults
+    <strong>search</strong>(<a href="../../Flarum/Search/SearchCriteria.html"><abbr title="Flarum\Search\SearchCriteria">SearchCriteria</abbr></a> $criteria, $limit = null, $offset = 0, array $load = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Search/SearchCriteria.html"><abbr title="Flarum\Search\SearchCriteria">SearchCriteria</abbr></a></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$load</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>SearchResults</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

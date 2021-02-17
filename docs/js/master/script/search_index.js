@@ -385,13 +385,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -8184,6 +8184,18 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/forum/states/poststreamstate.js~poststreamstate#_loadnext",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-_loadNext",
+    "src/forum/states/PostStreamState.js~PostStreamState#_loadNext",
+    "method"
+  ],
+  [
+    "src/forum/states/poststreamstate.js~poststreamstate#_loadprevious",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-_loadPrevious",
+    "src/forum/states/PostStreamState.js~PostStreamState#_loadPrevious",
+    "method"
+  ],
+  [
     "src/forum/states/poststreamstate.js~poststreamstate#animatescroll",
     "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-animateScroll",
     "src/forum/states/PostStreamState.js~PostStreamState#animateScroll",
@@ -8269,9 +8281,9 @@ window.esdocSearchIndex = [
   ],
   [
     "src/forum/states/poststreamstate.js~poststreamstate#loadnext",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadNext",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-loadNext",
     "src/forum/states/PostStreamState.js~PostStreamState#loadNext",
-    "method"
+    "member"
   ],
   [
     "src/forum/states/poststreamstate.js~poststreamstate#loadpage",
@@ -8287,9 +8299,9 @@ window.esdocSearchIndex = [
   ],
   [
     "src/forum/states/poststreamstate.js~poststreamstate#loadprevious",
-    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-method-loadPrevious",
+    "class/src/forum/states/PostStreamState.js~PostStreamState.html#instance-member-loadPrevious",
     "src/forum/states/PostStreamState.js~PostStreamState#loadPrevious",
-    "method"
+    "member"
   ],
   [
     "src/forum/states/poststreamstate.js~poststreamstate#loadpromise",

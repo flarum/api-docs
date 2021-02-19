@@ -1,11 +1,5 @@
 window.esdocSearchIndex = [
   [
-    "flarum/components/addextensionmodal~addextensionmodal",
-    "class/src/admin/components/AddExtensionModal.js~AddExtensionModal.html",
-    "<span>AddExtensionModal</span> <span class=\"search-result-import-path\">flarum/components/AddExtensionModal</span>",
-    "class"
-  ],
-  [
     "flarum/adminapplication~adminapplication",
     "class/src/admin/AdminApplication.js~AdminApplication.html",
     "<span>AdminApplication</span> <span class=\"search-result-import-path\">flarum/AdminApplication</span>",
@@ -18,15 +12,15 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/adminlinkbutton~adminlinkbutton",
-    "class/src/admin/components/AdminLinkButton.js~AdminLinkButton.html",
-    "<span>AdminLinkButton</span> <span class=\"search-result-import-path\">flarum/components/AdminLinkButton</span>",
-    "class"
-  ],
-  [
     "flarum/components/adminnav~adminnav",
     "class/src/admin/components/AdminNav.js~AdminNav.html",
     "<span>AdminNav</span> <span class=\"search-result-import-path\">flarum/components/AdminNav</span>",
+    "class"
+  ],
+  [
+    "flarum/components/adminpage~adminpage",
+    "class/src/admin/components/AdminPage.js~AdminPage.html",
+    "<span>AdminPage</span> <span class=\"search-result-import-path\">flarum/components/AdminPage</span>",
     "class"
   ],
   [
@@ -397,13 +391,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -1434,12 +1428,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/admin/adminapplication.js~adminapplication#extensionsettings",
-    "class/src/admin/AdminApplication.js~AdminApplication.html#instance-member-extensionSettings",
-    "src/admin/AdminApplication.js~AdminApplication#extensionSettings",
-    "member"
-  ],
-  [
     "src/admin/adminapplication.js~adminapplication#getrequiredpermissions",
     "class/src/admin/AdminApplication.js~AdminApplication.html#instance-method-getRequiredPermissions",
     "src/admin/AdminApplication.js~AdminApplication#getRequiredPermissions",
@@ -1464,30 +1452,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/admin/components/addextensionmodal.js",
-    "file/src/admin/components/AddExtensionModal.js.html",
-    "src/admin/components/AddExtensionModal.js",
-    "file"
-  ],
-  [
-    "src/admin/components/addextensionmodal.js~addextensionmodal#classname",
-    "class/src/admin/components/AddExtensionModal.js~AddExtensionModal.html#instance-method-className",
-    "src/admin/components/AddExtensionModal.js~AddExtensionModal#className",
-    "method"
-  ],
-  [
-    "src/admin/components/addextensionmodal.js~addextensionmodal#content",
-    "class/src/admin/components/AddExtensionModal.js~AddExtensionModal.html#instance-method-content",
-    "src/admin/components/AddExtensionModal.js~AddExtensionModal#content",
-    "method"
-  ],
-  [
-    "src/admin/components/addextensionmodal.js~addextensionmodal#title",
-    "class/src/admin/components/AddExtensionModal.js~AddExtensionModal.html#instance-method-title",
-    "src/admin/components/AddExtensionModal.js~AddExtensionModal#title",
-    "method"
-  ],
-  [
     "src/admin/components/adminheader.js",
     "file/src/admin/components/AdminHeader.js.html",
     "src/admin/components/AdminHeader.js",
@@ -1497,18 +1461,6 @@ window.esdocSearchIndex = [
     "src/admin/components/adminheader.js~adminheader#view",
     "class/src/admin/components/AdminHeader.js~AdminHeader.html#instance-method-view",
     "src/admin/components/AdminHeader.js~AdminHeader#view",
-    "method"
-  ],
-  [
-    "src/admin/components/adminlinkbutton.js",
-    "file/src/admin/components/AdminLinkButton.js.html",
-    "src/admin/components/AdminLinkButton.js",
-    "file"
-  ],
-  [
-    "src/admin/components/adminlinkbutton.js~adminlinkbutton#getbuttoncontent",
-    "class/src/admin/components/AdminLinkButton.js~AdminLinkButton.html#instance-method-getButtonContent",
-    "src/admin/components/AdminLinkButton.js~AdminLinkButton#getButtonContent",
     "method"
   ],
   [
@@ -1566,57 +1518,123 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/adminpage.js",
+    "file/src/admin/components/AdminPage.js.html",
+    "src/admin/components/AdminPage.js",
+    "file"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#buildsettingcomponent",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-buildSettingComponent",
+    "src/admin/components/AdminPage.js~AdminPage#buildSettingComponent",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#content",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-content",
+    "src/admin/components/AdminPage.js~AdminPage#content",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#dirty",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-dirty",
+    "src/admin/components/AdminPage.js~AdminPage#dirty",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#header",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-header",
+    "src/admin/components/AdminPage.js~AdminPage#header",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#headerinfo",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-headerInfo",
+    "src/admin/components/AdminPage.js~AdminPage#headerInfo",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#ischanged",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-isChanged",
+    "src/admin/components/AdminPage.js~AdminPage#isChanged",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#loading",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-member-loading",
+    "src/admin/components/AdminPage.js~AdminPage#loading",
+    "member"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#oninit",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-oninit",
+    "src/admin/components/AdminPage.js~AdminPage#oninit",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#onsaved",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-onsaved",
+    "src/admin/components/AdminPage.js~AdminPage#onsaved",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#savesettings",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-saveSettings",
+    "src/admin/components/AdminPage.js~AdminPage#saveSettings",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#setting",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-setting",
+    "src/admin/components/AdminPage.js~AdminPage#setting",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#settings",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-member-settings",
+    "src/admin/components/AdminPage.js~AdminPage#settings",
+    "member"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#submitbutton",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-submitButton",
+    "src/admin/components/AdminPage.js~AdminPage#submitButton",
+    "method"
+  ],
+  [
+    "src/admin/components/adminpage.js~adminpage#view",
+    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-view",
+    "src/admin/components/AdminPage.js~AdminPage#view",
+    "method"
+  ],
+  [
     "src/admin/components/appearancepage.js",
     "file/src/admin/components/AppearancePage.js.html",
     "src/admin/components/AppearancePage.js",
     "file"
   ],
   [
-    "src/admin/components/appearancepage.js~appearancepage#coloredheader",
-    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-coloredHeader",
-    "src/admin/components/AppearancePage.js~AppearancePage#coloredHeader",
-    "member"
-  ],
-  [
-    "src/admin/components/appearancepage.js~appearancepage#darkmode",
-    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-darkMode",
-    "src/admin/components/AppearancePage.js~AppearancePage#darkMode",
-    "member"
-  ],
-  [
-    "src/admin/components/appearancepage.js~appearancepage#loading",
-    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-loading",
-    "src/admin/components/AppearancePage.js~AppearancePage#loading",
-    "member"
-  ],
-  [
-    "src/admin/components/appearancepage.js~appearancepage#oninit",
-    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-oninit",
-    "src/admin/components/AppearancePage.js~AppearancePage#oninit",
+    "src/admin/components/appearancepage.js~appearancepage#content",
+    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-content",
+    "src/admin/components/AppearancePage.js~AppearancePage#content",
     "method"
   ],
   [
-    "src/admin/components/appearancepage.js~appearancepage#onsubmit",
-    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-onsubmit",
-    "src/admin/components/AppearancePage.js~AppearancePage#onsubmit",
+    "src/admin/components/appearancepage.js~appearancepage#headerinfo",
+    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-headerInfo",
+    "src/admin/components/AppearancePage.js~AppearancePage#headerInfo",
     "method"
   ],
   [
-    "src/admin/components/appearancepage.js~appearancepage#primarycolor",
-    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-primaryColor",
-    "src/admin/components/AppearancePage.js~AppearancePage#primaryColor",
-    "member"
+    "src/admin/components/appearancepage.js~appearancepage#onsaved",
+    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-onsaved",
+    "src/admin/components/AppearancePage.js~AppearancePage#onsaved",
+    "method"
   ],
   [
-    "src/admin/components/appearancepage.js~appearancepage#secondarycolor",
-    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-member-secondaryColor",
-    "src/admin/components/AppearancePage.js~AppearancePage#secondaryColor",
-    "member"
-  ],
-  [
-    "src/admin/components/appearancepage.js~appearancepage#view",
-    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-view",
-    "src/admin/components/AppearancePage.js~AppearancePage#view",
+    "src/admin/components/appearancepage.js~appearancepage#savesettings",
+    "class/src/admin/components/AppearancePage.js~AppearancePage.html#instance-method-saveSettings",
+    "src/admin/components/AppearancePage.js~AppearancePage#saveSettings",
     "method"
   ],
   [
@@ -1626,9 +1644,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/admin/components/basicspage.js~basicspage#changed",
-    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-changed",
-    "src/admin/components/BasicsPage.js~BasicsPage#changed",
+    "src/admin/components/basicspage.js~basicspage#content",
+    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-content",
+    "src/admin/components/BasicsPage.js~BasicsPage#content",
     "method"
   ],
   [
@@ -1638,22 +1656,16 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/admin/components/basicspage.js~basicspage#fields",
-    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-fields",
-    "src/admin/components/BasicsPage.js~BasicsPage#fields",
-    "member"
+    "src/admin/components/basicspage.js~basicspage#headerinfo",
+    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-headerInfo",
+    "src/admin/components/BasicsPage.js~BasicsPage#headerInfo",
+    "method"
   ],
   [
     "src/admin/components/basicspage.js~basicspage#homepageitems",
     "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-homePageItems",
     "src/admin/components/BasicsPage.js~BasicsPage#homePageItems",
     "method"
-  ],
-  [
-    "src/admin/components/basicspage.js~basicspage#loading",
-    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-loading",
-    "src/admin/components/BasicsPage.js~BasicsPage#loading",
-    "member"
   ],
   [
     "src/admin/components/basicspage.js~basicspage#localeoptions",
@@ -1668,34 +1680,10 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/basicspage.js~basicspage#onsubmit",
-    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-onsubmit",
-    "src/admin/components/BasicsPage.js~BasicsPage#onsubmit",
-    "method"
-  ],
-  [
     "src/admin/components/basicspage.js~basicspage#slugdriveroptions",
     "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-slugDriverOptions",
     "src/admin/components/BasicsPage.js~BasicsPage#slugDriverOptions",
     "member"
-  ],
-  [
-    "src/admin/components/basicspage.js~basicspage#successalert",
-    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-successAlert",
-    "src/admin/components/BasicsPage.js~BasicsPage#successAlert",
-    "member"
-  ],
-  [
-    "src/admin/components/basicspage.js~basicspage#values",
-    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-member-values",
-    "src/admin/components/BasicsPage.js~BasicsPage#values",
-    "member"
-  ],
-  [
-    "src/admin/components/basicspage.js~basicspage#view",
-    "class/src/admin/components/BasicsPage.js~BasicsPage.html#instance-method-view",
-    "src/admin/components/BasicsPage.js~BasicsPage#view",
-    "method"
   ],
   [
     "src/admin/components/dashboardpage.js",
@@ -1710,9 +1698,15 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/dashboardpage.js~dashboardpage#view",
-    "class/src/admin/components/DashboardPage.js~DashboardPage.html#instance-method-view",
-    "src/admin/components/DashboardPage.js~DashboardPage#view",
+    "src/admin/components/dashboardpage.js~dashboardpage#content",
+    "class/src/admin/components/DashboardPage.js~DashboardPage.html#instance-method-content",
+    "src/admin/components/DashboardPage.js~DashboardPage#content",
+    "method"
+  ],
+  [
+    "src/admin/components/dashboardpage.js~dashboardpage#headerinfo",
+    "class/src/admin/components/DashboardPage.js~DashboardPage.html#instance-method-headerInfo",
+    "src/admin/components/DashboardPage.js~DashboardPage#headerInfo",
     "method"
   ],
   [
@@ -1950,12 +1944,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/admin/components/extensionpage.js~extensionpage#buildsettingcomponent",
-    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-buildSettingComponent",
-    "src/admin/components/ExtensionPage.js~ExtensionPage#buildSettingComponent",
-    "method"
-  ],
-  [
     "src/admin/components/extensionpage.js~extensionpage#changingstate",
     "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-member-changingState",
     "src/admin/components/ExtensionPage.js~ExtensionPage#changingState",
@@ -1971,12 +1959,6 @@ window.esdocSearchIndex = [
     "src/admin/components/extensionpage.js~extensionpage#content",
     "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-content",
     "src/admin/components/ExtensionPage.js~ExtensionPage#content",
-    "method"
-  ],
-  [
-    "src/admin/components/extensionpage.js~extensionpage#dirty",
-    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-dirty",
-    "src/admin/components/ExtensionPage.js~ExtensionPage#dirty",
     "method"
   ],
   [
@@ -2004,22 +1986,10 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/extensionpage.js~extensionpage#ischanged",
-    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-isChanged",
-    "src/admin/components/ExtensionPage.js~ExtensionPage#isChanged",
-    "method"
-  ],
-  [
     "src/admin/components/extensionpage.js~extensionpage#isenabled",
     "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-isEnabled",
     "src/admin/components/ExtensionPage.js~ExtensionPage#isEnabled",
     "method"
-  ],
-  [
-    "src/admin/components/extensionpage.js~extensionpage#loading",
-    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-member-loading",
-    "src/admin/components/ExtensionPage.js~ExtensionPage#loading",
-    "member"
   ],
   [
     "src/admin/components/extensionpage.js~extensionpage#onerror",
@@ -2034,39 +2004,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/extensionpage.js~extensionpage#onsaved",
-    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-onsaved",
-    "src/admin/components/ExtensionPage.js~ExtensionPage#onsaved",
-    "method"
-  ],
-  [
-    "src/admin/components/extensionpage.js~extensionpage#savesettings",
-    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-saveSettings",
-    "src/admin/components/ExtensionPage.js~ExtensionPage#saveSettings",
-    "method"
-  ],
-  [
     "src/admin/components/extensionpage.js~extensionpage#sections",
     "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-sections",
     "src/admin/components/ExtensionPage.js~ExtensionPage#sections",
-    "method"
-  ],
-  [
-    "src/admin/components/extensionpage.js~extensionpage#setting",
-    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-setting",
-    "src/admin/components/ExtensionPage.js~ExtensionPage#setting",
-    "method"
-  ],
-  [
-    "src/admin/components/extensionpage.js~extensionpage#settings",
-    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-member-settings",
-    "src/admin/components/ExtensionPage.js~ExtensionPage#settings",
-    "member"
-  ],
-  [
-    "src/admin/components/extensionpage.js~extensionpage#submitbutton",
-    "class/src/admin/components/ExtensionPage.js~ExtensionPage.html#instance-method-submitButton",
-    "src/admin/components/ExtensionPage.js~ExtensionPage#submitButton",
     "method"
   ],
   [
@@ -2124,6 +2064,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/extensionpermissiongrid.js~extensionpermissiongrid#scopecontrolitems",
+    "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html#instance-method-scopeControlItems",
+    "src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid#scopeControlItems",
+    "method"
+  ],
+  [
     "src/admin/components/extensionpermissiongrid.js~extensionpermissiongrid#startitems",
     "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html#instance-method-startItems",
     "src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid#startItems",
@@ -2142,6 +2088,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/admin/components/extensionswidget.js~extensionswidget#categorizedextensions",
+    "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html#instance-member-categorizedExtensions",
+    "src/admin/components/ExtensionsWidget.js~ExtensionsWidget#categorizedExtensions",
+    "member"
+  ],
+  [
     "src/admin/components/extensionswidget.js~extensionswidget#classname",
     "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html#instance-method-className",
     "src/admin/components/ExtensionsWidget.js~ExtensionsWidget#className",
@@ -2151,6 +2103,24 @@ window.esdocSearchIndex = [
     "src/admin/components/extensionswidget.js~extensionswidget#content",
     "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html#instance-method-content",
     "src/admin/components/ExtensionsWidget.js~ExtensionsWidget#content",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionswidget.js~extensionswidget#extensioncategory",
+    "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html#instance-method-extensionCategory",
+    "src/admin/components/ExtensionsWidget.js~ExtensionsWidget#extensionCategory",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionswidget.js~extensionswidget#extensionwidget",
+    "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html#instance-method-extensionWidget",
+    "src/admin/components/ExtensionsWidget.js~ExtensionsWidget#extensionWidget",
+    "method"
+  ],
+  [
+    "src/admin/components/extensionswidget.js~extensionswidget#oninit",
+    "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html#instance-method-oninit",
+    "src/admin/components/ExtensionsWidget.js~ExtensionsWidget#oninit",
     "method"
   ],
   [
@@ -2232,9 +2202,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/admin/components/mailpage.js~mailpage#changed",
-    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-changed",
-    "src/admin/components/MailPage.js~MailPage#changed",
+    "src/admin/components/mailpage.js~mailpage#content",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-content",
+    "src/admin/components/MailPage.js~MailPage#content",
     "method"
   ],
   [
@@ -2244,10 +2214,10 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/admin/components/mailpage.js~mailpage#fields",
-    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-fields",
-    "src/admin/components/MailPage.js~MailPage#fields",
-    "member"
+    "src/admin/components/mailpage.js~mailpage#headerinfo",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-headerInfo",
+    "src/admin/components/MailPage.js~MailPage#headerInfo",
+    "method"
   ],
   [
     "src/admin/components/mailpage.js~mailpage#loading",
@@ -2262,28 +2232,16 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/mailpage.js~mailpage#onsubmit",
-    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-onsubmit",
-    "src/admin/components/MailPage.js~MailPage#onsubmit",
-    "method"
-  ],
-  [
     "src/admin/components/mailpage.js~mailpage#refresh",
     "class/src/admin/components/MailPage.js~MailPage.html#instance-method-refresh",
     "src/admin/components/MailPage.js~MailPage#refresh",
     "method"
   ],
   [
-    "src/admin/components/mailpage.js~mailpage#renderfield",
-    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-renderField",
-    "src/admin/components/MailPage.js~MailPage#renderField",
+    "src/admin/components/mailpage.js~mailpage#savesettings",
+    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-saveSettings",
+    "src/admin/components/MailPage.js~MailPage#saveSettings",
     "method"
-  ],
-  [
-    "src/admin/components/mailpage.js~mailpage#saving",
-    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-saving",
-    "src/admin/components/MailPage.js~MailPage#saving",
-    "member"
   ],
   [
     "src/admin/components/mailpage.js~mailpage#sendtestemail",
@@ -2304,28 +2262,10 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/admin/components/mailpage.js~mailpage#successalert",
-    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-successAlert",
-    "src/admin/components/MailPage.js~MailPage#successAlert",
-    "member"
-  ],
-  [
     "src/admin/components/mailpage.js~mailpage#testemailsuccessalert",
     "class/src/admin/components/MailPage.js~MailPage.html#instance-member-testEmailSuccessAlert",
     "src/admin/components/MailPage.js~MailPage#testEmailSuccessAlert",
     "member"
-  ],
-  [
-    "src/admin/components/mailpage.js~mailpage#values",
-    "class/src/admin/components/MailPage.js~MailPage.html#instance-member-values",
-    "src/admin/components/MailPage.js~MailPage#values",
-    "member"
-  ],
-  [
-    "src/admin/components/mailpage.js~mailpage#view",
-    "class/src/admin/components/MailPage.js~MailPage.html#instance-method-view",
-    "src/admin/components/MailPage.js~MailPage#view",
-    "method"
   ],
   [
     "src/admin/components/permissiondropdown.js",
@@ -2424,9 +2364,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/admin/components/permissionspage.js~permissionspage#view",
-    "class/src/admin/components/PermissionsPage.js~PermissionsPage.html#instance-method-view",
-    "src/admin/components/PermissionsPage.js~PermissionsPage#view",
+    "src/admin/components/permissionspage.js~permissionspage#content",
+    "class/src/admin/components/PermissionsPage.js~PermissionsPage.html#instance-method-content",
+    "src/admin/components/PermissionsPage.js~PermissionsPage#content",
+    "method"
+  ],
+  [
+    "src/admin/components/permissionspage.js~permissionspage#headerinfo",
+    "class/src/admin/components/PermissionsPage.js~PermissionsPage.html#instance-method-headerInfo",
+    "src/admin/components/PermissionsPage.js~PermissionsPage#headerInfo",
     "method"
   ],
   [

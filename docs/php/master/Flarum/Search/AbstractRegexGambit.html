@@ -50,6 +50,8 @@
                                             <option value="../../../v0.1.0-beta.11" data-version="v0.1.0-beta.11">v0.1.0-beta.11</option>
                                             <option value="../../../v0.1.0-beta.12" data-version="v0.1.0-beta.12">v0.1.0-beta.12</option>
                                             <option value="../../../v0.1.0-beta.13" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
+                                            <option value="../../../v0.1.0-beta.14" data-version="v0.1.0-beta.14">v0.1.0-beta.14</option>
+                                            <option value="../../../v0.1.0-beta.15" data-version="v0.1.0-beta.15">v0.1.0-beta.15</option>
                                             <option value="../../../master" data-version="master">master</option>
                                     </select>
             </form>
@@ -102,33 +104,32 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_pattern">
-                                        protected                                        string
-                </td>
-                <td>$pattern</td>
-                <td class="last">The regex pattern to match the bit against.</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractRegexGambit.php#L19" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getGambitPattern">getGambitPattern</a>()
+        
+                                            <p>The regex pattern to match the bit against.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractRegexGambit.php#L17" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_apply">apply</a>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, string $bit)
+                    <a href="#method_apply">apply</a>(<a href="../../Flarum/Search/SearchState.html"><abbr title="Flarum\Search\SearchState">SearchState</abbr></a> $search, string $bit)
         
                                             <p>Apply conditions to the searcher for a bit of the search string.</p>                </div>
                 <div class="col-md-2"></div>
@@ -155,28 +156,37 @@
 
                 </div>
             </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    mixed
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_conditions">conditions</a>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, array $matches, bool $negate)
-        
-                                            <p>Apply conditions to the search, given that the gambit was matched.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractRegexGambit.php#L57" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
             </div>
 
 
         <h2>Details</h2>
 
             <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getGambitPattern">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractRegexGambit.php#L17" target="_blank">
+            line 17
+        </a>
+        </div>
+        <code>            protected        
+    <strong>getGambitPattern</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The regex pattern to match the bit against.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
                     <div class="method-item">
                     <h3 id="method_apply">
         <div class="location">
@@ -185,7 +195,7 @@
         </a>
         </div>
         <code>                    bool
-    <strong>apply</strong>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, string $bit)
+    <strong>apply</strong>(<a href="../../Flarum/Search/SearchState.html"><abbr title="Flarum\Search\SearchState">SearchState</abbr></a> $search, string $bit)
         </code>
     </h3>
     <div class="details">
@@ -199,7 +209,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a></td>
+                <td><a href="../../Flarum/Search/SearchState.html"><abbr title="Flarum\Search\SearchState">SearchState</abbr></a></td>
                 <td>$search</td>
                 <td></td>
             </tr>
@@ -260,61 +270,6 @@
                     <table class="table table-condensed">
         <tr>
             <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_conditions">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Search/AbstractRegexGambit.php#L57" target="_blank">
-            line 57
-        </a>
-        </div>
-        <code>    abstract        protected        mixed
-    <strong>conditions</strong>(<a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a> $search, array $matches, bool $negate)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Apply conditions to the search, given that the gambit was matched.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../Flarum/Search/AbstractSearch.html"><abbr title="Flarum\Search\AbstractSearch">AbstractSearch</abbr></a></td>
-                <td>$search</td>
-                <td>The search object.</td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$matches</td>
-                <td>An array of matches from the search bit.</td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$negate</td>
-                <td>Whether or not the bit was negated, and thus whether
-or not the conditions should be negated.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
             <td></td>
         </tr>
     </table>

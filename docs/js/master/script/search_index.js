@@ -66,6 +66,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/utils/basiceditordriver~basiceditordriver",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html",
+    "<span>BasicEditorDriver</span> <span class=\"search-result-import-path\">flarum/utils/BasicEditorDriver</span>",
+    "class"
+  ],
+  [
     "flarum/components/basicspage~basicspage",
     "class/src/admin/components/BasicsPage.js~BasicsPage.html",
     "<span>BasicsPage</span> <span class=\"search-result-import-path\">flarum/components/BasicsPage</span>",
@@ -391,13 +397,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -751,13 +757,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -807,12 +813,6 @@ window.esdocSearchIndex = [
     "flarum/utils/subtreeretainer~subtreeretainer",
     "class/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html",
     "<span>SubtreeRetainer</span> <span class=\"search-result-import-path\">flarum/utils/SubtreeRetainer</span>",
-    "class"
-  ],
-  [
-    "flarum/utils/supertextarea~supertextarea",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html",
-    "<span>SuperTextarea</span> <span class=\"search-result-import-path\">flarum/utils/SuperTextarea</span>",
     "class"
   ],
   [
@@ -4446,78 +4446,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/utils/supertextarea.js",
-    "file/src/common/utils/SuperTextarea.js.html",
-    "src/common/utils/SuperTextarea.js",
-    "file"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#$",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-member-$",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#$",
-    "member"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#constructor",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-constructor-constructor",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#constructor",
-    "method"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#el",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-member-el",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#el",
-    "member"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#getselectionrange",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-getSelectionRange",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#getSelectionRange",
-    "method"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#insertat",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-insertAt",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#insertAt",
-    "method"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#insertatcursor",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-insertAtCursor",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#insertAtCursor",
-    "method"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#insertbetween",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-insertBetween",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#insertBetween",
-    "method"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#movecursorto",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-moveCursorTo",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#moveCursorTo",
-    "method"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#replacebeforecursor",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-replaceBeforeCursor",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#replaceBeforeCursor",
-    "method"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#setselectionrange",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-setSelectionRange",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#setSelectionRange",
-    "method"
-  ],
-  [
-    "src/common/utils/supertextarea.js~supertextarea#setvalue",
-    "class/src/common/utils/SuperTextarea.js~SuperTextarea.html#instance-method-setValue",
-    "src/common/utils/SuperTextarea.js~SuperTextarea#setValue",
-    "method"
-  ],
-  [
     "src/common/utils/abbreviatenumber.ts",
     "file/src/common/utils/abbreviateNumber.ts.html",
     "src/common/utils/abbreviateNumber.ts",
@@ -7452,10 +7380,28 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/forum/components/texteditor.js~texteditor#buildeditor",
+    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-buildEditor",
+    "src/forum/components/TextEditor.js~TextEditor#buildEditor",
+    "method"
+  ],
+  [
+    "src/forum/components/texteditor.js~texteditor#buildeditorparams",
+    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-buildEditorParams",
+    "src/forum/components/TextEditor.js~TextEditor#buildEditorParams",
+    "method"
+  ],
+  [
     "src/forum/components/texteditor.js~texteditor#controlitems",
     "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-controlItems",
     "src/forum/components/TextEditor.js~TextEditor#controlItems",
     "method"
+  ],
+  [
+    "src/forum/components/texteditor.js~texteditor#disabled",
+    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-member-disabled",
+    "src/forum/components/TextEditor.js~TextEditor#disabled",
+    "member"
   ],
   [
     "src/forum/components/texteditor.js~texteditor#oncreate",
@@ -7479,6 +7425,12 @@ window.esdocSearchIndex = [
     "src/forum/components/texteditor.js~texteditor#onsubmit",
     "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-onsubmit",
     "src/forum/components/TextEditor.js~TextEditor#onsubmit",
+    "method"
+  ],
+  [
+    "src/forum/components/texteditor.js~texteditor#onupdate",
+    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-onupdate",
+    "src/forum/components/TextEditor.js~TextEditor#onupdate",
     "method"
   ],
   [
@@ -8400,9 +8352,117 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/forum/utils/basiceditordriver.ts",
+    "file/src/forum/utils/BasicEditorDriver.ts.html",
+    "src/forum/utils/BasicEditorDriver.ts",
+    "file"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#build",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-build",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#build",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#constructor",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-constructor-constructor",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#constructor",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#destroy",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-destroy",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#destroy",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#disabled",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-disabled",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#disabled",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#el",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-member-el",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#el",
+    "member"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#focus",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-focus",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#focus",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#getcaretcoordinates",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-getCaretCoordinates",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#getCaretCoordinates",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#getlastnchars",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-getLastNChars",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#getLastNChars",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#getselectionrange",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-getSelectionRange",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#getSelectionRange",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#insertat",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-insertAt",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#insertAt",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#insertatcursor",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-insertAtCursor",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#insertAtCursor",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#insertbetween",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-insertBetween",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#insertBetween",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#movecursorto",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-moveCursorTo",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#moveCursorTo",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#replacebeforecursor",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-replaceBeforeCursor",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#replaceBeforeCursor",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#setselectionrange",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-setSelectionRange",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#setSelectionRange",
+    "method"
+  ],
+  [
+    "src/forum/utils/basiceditordriver.ts~basiceditordriver#setvalue",
+    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-setValue",
+    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#setValue",
+    "method"
+  ],
+  [
     "src/forum/utils/discussioncontrols.js",
     "file/src/forum/utils/DiscussionControls.js.html",
     "src/forum/utils/DiscussionControls.js",
+    "file"
+  ],
+  [
+    "src/forum/utils/editordriverinterface.ts",
+    "file/src/forum/utils/EditorDriverInterface.ts.html",
+    "src/forum/utils/EditorDriverInterface.ts",
     "file"
   ],
   [

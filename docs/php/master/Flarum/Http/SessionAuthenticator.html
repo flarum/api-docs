@@ -50,6 +50,8 @@
                                             <option value="../../../v0.1.0-beta.11" data-version="v0.1.0-beta.11">v0.1.0-beta.11</option>
                                             <option value="../../../v0.1.0-beta.12" data-version="v0.1.0-beta.12">v0.1.0-beta.12</option>
                                             <option value="../../../v0.1.0-beta.13" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
+                                            <option value="../../../v0.1.0-beta.14" data-version="v0.1.0-beta.14">v0.1.0-beta.14</option>
+                                            <option value="../../../v0.1.0-beta.15" data-version="v0.1.0-beta.15">v0.1.0-beta.15</option>
                                             <option value="../../../master" data-version="master">master</option>
                                     </select>
             </form>
@@ -110,7 +112,7 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_logIn">logIn</a>(<abbr title="Illuminate\Contracts\Session\Session">Session</abbr> $session, int $userId)
+                    <a href="#method_logIn">logIn</a>(<abbr title="Illuminate\Contracts\Session\Session">Session</abbr> $session, AccessToken|int $token)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -133,7 +135,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/SessionAuthenticator.php#L29" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/SessionAuthenticator.php#L39" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -153,7 +155,7 @@
         </a>
         </div>
         <code>                    
-    <strong>logIn</strong>(<abbr title="Illuminate\Contracts\Session\Session">Session</abbr> $session, int $userId)
+    <strong>logIn</strong>(<abbr title="Illuminate\Contracts\Session\Session">Session</abbr> $session, AccessToken|int $token)
         </code>
     </h3>
     <div class="details">
@@ -170,9 +172,9 @@
                 <td></td>
             </tr>
                     <tr>
-                <td>int</td>
-                <td>$userId</td>
-                <td></td>
+                <td>AccessToken|int</td>
+                <td>$token</td>
+                <td>Token or user ID. Use of User ID is deprecated in beta 16, will be removed in beta 17</td>
             </tr>
             </table>
 
@@ -186,8 +188,8 @@
                     <div class="method-item">
                     <h3 id="method_logOut">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/SessionAuthenticator.php#L29" target="_blank">
-            line 29
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/SessionAuthenticator.php#L39" target="_blank">
+            line 39
         </a>
         </div>
         <code>                    

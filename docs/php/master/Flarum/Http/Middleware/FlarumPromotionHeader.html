@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Forum\Content\Index | Flarum API</title>
+    <title>Flarum\Http\Middleware\FlarumPromotionHeader | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Forum_Content_Index" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Http_Middleware_FlarumPromotionHeader" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -84,10 +84,10 @@
                     
     <div class="page-header">
         <h1>
-            Index
+            FlarumPromotionHeader
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Forum/Content/Index.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/FlarumPromotionHeader.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -95,7 +95,8 @@
     </div>
 
     <p>    class        
-    <strong>Index</strong></p>
+    <strong>FlarumPromotionHeader</strong>        implements
+        <abbr title="Psr\Http\Server\MiddlewareInterface">MiddlewareInterface</abbr></p>
 
         
     
@@ -107,61 +108,13 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_api">
-                                        protected                                        Client
+                <td class="type" id="property_enabled">
+                                        protected                                        
                 </td>
-                <td>$api</td>
+                <td>$enabled</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Forum/Content/Index.php#L28" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_view">
-                                        protected                                        Factory
-                </td>
-                <td>$view</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Forum/Content/Index.php#L33" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_settings">
-                                        protected                                        SettingsRepositoryInterface
-                </td>
-                <td>$settings</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Forum/Content/Index.php#L38" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_url">
-                                        protected                                        UrlGenerator
-                </td>
-                <td>$url</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Forum/Content/Index.php#L43" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_translator">
-                                        protected                                        TranslatorInterface
-                </td>
-                <td>$translator</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Forum/Content/Index.php#L48" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/FlarumPromotionHeader.php#L20" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -177,13 +130,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Api/Client.html"><abbr title="Flarum\Api\Client">Client</abbr></a> $api, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/Content/Index.php#L57" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/FlarumPromotionHeader.php#L22" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -191,16 +144,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___invoke">__invoke</a>(<a href="../../../Flarum/Frontend/Document.html"><abbr title="Flarum\Frontend\Document">Document</abbr></a> $document, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+                    <a href="#method_process">process</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Forum/Content/Index.php#L66" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/FlarumPromotionHeader.php#L27" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -215,12 +168,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Forum/Content/Index.php#L57" target="_blank">
-            line 57
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/FlarumPromotionHeader.php#L22" target="_blank">
+            line 22
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Api/Client.html"><abbr title="Flarum\Api\Client">Client</abbr></a> $api, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator)
+    <strong>__construct</strong>(<a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config)
         </code>
     </h3>
     <div class="details">
@@ -232,28 +185,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Flarum/Api/Client.html"><abbr title="Flarum\Api\Client">Client</abbr></a></td>
-                <td>$api</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></td>
-                <td>$view</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
-                <td>$settings</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a></td>
-                <td>$url</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
-                <td>$translator</td>
+                <td><a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a></td>
+                <td>$config</td>
                 <td></td>
             </tr>
             </table>
@@ -266,14 +199,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___invoke">
+                    <h3 id="method_process">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Forum/Content/Index.php#L66" target="_blank">
-            line 66
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Middleware/FlarumPromotionHeader.php#L27" target="_blank">
+            line 27
         </a>
         </div>
-        <code>                    
-    <strong>__invoke</strong>(<a href="../../../Flarum/Frontend/Document.html"><abbr title="Flarum\Frontend\Document">Document</abbr></a> $document, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>process</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
         </code>
     </h3>
     <div class="details">
@@ -285,18 +218,27 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Flarum/Frontend/Document.html"><abbr title="Flarum\Frontend\Document">Document</abbr></a></td>
-                <td>$document</td>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
+                <td><abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></td>
+                <td>$handler</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

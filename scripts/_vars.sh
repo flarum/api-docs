@@ -2,6 +2,16 @@
 
 set -e
 
+# log commands run, useful when debugging
+trap 'log "$BASH_COMMAND"' DEBUG
+
+log() {
+    # ignore echo commands
+    if [[ $1 != echo* ]]; then
+        echo "##[command]$1"
+    fi
+}
+
 export style="\e[1;34m"
 export reset="\e[0m"
 

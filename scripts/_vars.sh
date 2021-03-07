@@ -12,7 +12,7 @@ log() {
     fi
 }
 
-export style="\e[1;34m"
+export style="\e[47;1;31m"
 export reset="\e[0m"
 
 export SCRIPTS_PATH=$(dirname $0)

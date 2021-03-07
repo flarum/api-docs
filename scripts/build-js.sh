@@ -8,6 +8,8 @@ eval "$(git for-each-ref --shell --format='branches+=(%(refname))' refs/heads/)"
 echo -e "${style}Generating $reset"
 
 generate () {
+    trap 'log "$BASH_COMMAND"' DEBUG
+
     ref=$1
     path="$REPO_PATH/docs/js/$ref"
 

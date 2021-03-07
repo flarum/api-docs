@@ -27,7 +27,7 @@ generate () {
 
     cd $path
     (cd $FLARUM_PATH && git checkout -q -- . && git checkout -q $ref)
-    npx esdoc -c esdoc.json 2>&1 >/dev/null
+    npx esdoc -c esdoc.json 2>&1 "$REPO_PATH/esdoc.log"
 
     cd $REPO_PATH
 }

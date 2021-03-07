@@ -67,7 +67,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/utils/basiceditordriver~basiceditordriver",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html",
     "<span>BasicEditorDriver</span> <span class=\"search-result-import-path\">flarum/utils/BasicEditorDriver</span>",
     "class"
   ],
@@ -757,13 +757,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -829,13 +829,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/texteditor~texteditor",
-    "class/src/forum/components/TextEditor.js~TextEditor.html",
+    "class/src/common/components/TextEditor.js~TextEditor.html",
     "<span>TextEditor</span> <span class=\"search-result-import-path\">flarum/components/TextEditor</span>",
     "class"
   ],
   [
     "flarum/components/texteditorbutton~texteditorbutton",
-    "class/src/forum/components/TextEditorButton.js~TextEditorButton.html",
+    "class/src/common/components/TextEditorButton.js~TextEditorButton.html",
     "<span>TextEditorButton</span> <span class=\"search-result-import-path\">flarum/components/TextEditorButton</span>",
     "class"
   ],
@@ -910,12 +910,6 @@ window.esdocSearchIndex = [
     "variable/index.html#static-variable-app",
     "<span>app</span> <span class=\"search-result-import-path\">flarum/index</span>",
     "variable"
-  ],
-  [
-    "flarum/helpers/avatar~avatar",
-    "function/index.html#static-function-avatar",
-    "<span>avatar</span> <span class=\"search-result-import-path\">flarum/helpers/avatar</span>",
-    "function"
   ],
   [
     "flarum/utils/bidi~bidi",
@@ -996,9 +990,9 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "flarum/helpers/listitems~listitems",
-    "function/index.html#static-function-listItems",
-    "<span>listItems</span> <span class=\"search-result-import-path\">flarum/helpers/listItems</span>",
+    "flarum/utils/issafarimobile~issafarimobile",
+    "function/index.html#static-function-isSafariMobile",
+    "<span>isSafariMobile</span> <span class=\"search-result-import-path\">flarum/utils/isSafariMobile</span>",
     "function"
   ],
   [
@@ -1101,18 +1095,6 @@ window.esdocSearchIndex = [
     "flarum/utils/string~ucfirst",
     "function/index.html#static-function-ucfirst",
     "<span>ucfirst</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
-    "function"
-  ],
-  [
-    "flarum/helpers/useronline~useronline",
-    "function/index.html#static-function-userOnline",
-    "<span>userOnline</span> <span class=\"search-result-import-path\">flarum/helpers/userOnline</span>",
-    "function"
-  ],
-  [
-    "flarum/helpers/username~username",
-    "function/index.html#static-function-username",
-    "<span>username</span> <span class=\"search-result-import-path\">flarum/helpers/username</span>",
     "function"
   ],
   [
@@ -3816,6 +3798,102 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/components/texteditor.js",
+    "file/src/common/components/TextEditor.js.html",
+    "src/common/components/TextEditor.js",
+    "file"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#buildeditor",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-method-buildEditor",
+    "src/common/components/TextEditor.js~TextEditor#buildEditor",
+    "method"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#buildeditorparams",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-method-buildEditorParams",
+    "src/common/components/TextEditor.js~TextEditor#buildEditorParams",
+    "method"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#controlitems",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-method-controlItems",
+    "src/common/components/TextEditor.js~TextEditor#controlItems",
+    "method"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#disabled",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-member-disabled",
+    "src/common/components/TextEditor.js~TextEditor#disabled",
+    "member"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#oncreate",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-method-oncreate",
+    "src/common/components/TextEditor.js~TextEditor#oncreate",
+    "method"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#oninit",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-method-oninit",
+    "src/common/components/TextEditor.js~TextEditor#oninit",
+    "method"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#oninput",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-method-oninput",
+    "src/common/components/TextEditor.js~TextEditor#oninput",
+    "method"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#onsubmit",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-method-onsubmit",
+    "src/common/components/TextEditor.js~TextEditor#onsubmit",
+    "method"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#onupdate",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-method-onupdate",
+    "src/common/components/TextEditor.js~TextEditor#onupdate",
+    "method"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#toolbaritems",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-method-toolbarItems",
+    "src/common/components/TextEditor.js~TextEditor#toolbarItems",
+    "method"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#value",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-member-value",
+    "src/common/components/TextEditor.js~TextEditor#value",
+    "member"
+  ],
+  [
+    "src/common/components/texteditor.js~texteditor#view",
+    "class/src/common/components/TextEditor.js~TextEditor.html#instance-method-view",
+    "src/common/components/TextEditor.js~TextEditor#view",
+    "method"
+  ],
+  [
+    "src/common/components/texteditorbutton.js",
+    "file/src/common/components/TextEditorButton.js.html",
+    "src/common/components/TextEditorButton.js",
+    "file"
+  ],
+  [
+    "src/common/components/texteditorbutton.js~texteditorbutton#oncreate",
+    "class/src/common/components/TextEditorButton.js~TextEditorButton.html#instance-method-oncreate",
+    "src/common/components/TextEditorButton.js~TextEditorButton#oncreate",
+    "method"
+  ],
+  [
+    "src/common/components/texteditorbutton.js~texteditorbutton.initattrs",
+    "class/src/common/components/TextEditorButton.js~TextEditorButton.html#static-method-initAttrs",
+    "src/common/components/TextEditorButton.js~TextEditorButton.initAttrs",
+    "method"
+  ],
+  [
     "src/common/extend.js",
     "file/src/common/extend.js.html",
     "src/common/extend.js",
@@ -3942,33 +4020,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/helpers/avatar.js",
-    "file/src/common/helpers/avatar.js.html",
-    "src/common/helpers/avatar.js",
-    "file"
-  ],
-  [
-    "src/common/helpers/listitems.js",
-    "file/src/common/helpers/listItems.js.html",
-    "src/common/helpers/listItems.js",
-    "file"
-  ],
-  [
     "src/common/helpers/punctuateseries.js",
     "file/src/common/helpers/punctuateSeries.js.html",
     "src/common/helpers/punctuateSeries.js",
-    "file"
-  ],
-  [
-    "src/common/helpers/useronline.js",
-    "file/src/common/helpers/userOnline.js.html",
-    "src/common/helpers/userOnline.js",
-    "file"
-  ],
-  [
-    "src/common/helpers/username.js",
-    "file/src/common/helpers/username.js.html",
-    "src/common/helpers/username.js",
     "file"
   ],
   [
@@ -4194,6 +4248,108 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/common/utils/basiceditordriver.ts",
+    "file/src/common/utils/BasicEditorDriver.ts.html",
+    "src/common/utils/BasicEditorDriver.ts",
+    "file"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#build",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-build",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#build",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#constructor",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-constructor-constructor",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#constructor",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#destroy",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-destroy",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#destroy",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#disabled",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-disabled",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#disabled",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#el",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-member-el",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#el",
+    "member"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#focus",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-focus",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#focus",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#getcaretcoordinates",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-getCaretCoordinates",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#getCaretCoordinates",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#getlastnchars",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-getLastNChars",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#getLastNChars",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#getselectionrange",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-getSelectionRange",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#getSelectionRange",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#insertat",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-insertAt",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#insertAt",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#insertatcursor",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-insertAtCursor",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#insertAtCursor",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#insertbetween",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-insertBetween",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#insertBetween",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#movecursorto",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-moveCursorTo",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#moveCursorTo",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#replacebeforecursor",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-replaceBeforeCursor",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#replaceBeforeCursor",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#setselectionrange",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-setSelectionRange",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#setSelectionRange",
+    "method"
+  ],
+  [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#setvalue",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-setValue",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#setValue",
+    "method"
+  ],
+  [
     "src/common/utils/drawer.js",
     "file/src/common/utils/Drawer.js.html",
     "src/common/utils/Drawer.js",
@@ -4228,6 +4384,12 @@ window.esdocSearchIndex = [
     "class/src/common/utils/Drawer.js~Drawer.html#instance-method-show",
     "src/common/utils/Drawer.js~Drawer#show",
     "method"
+  ],
+  [
+    "src/common/utils/editordriverinterface.ts",
+    "file/src/common/utils/EditorDriverInterface.ts.html",
+    "src/common/utils/EditorDriverInterface.ts",
+    "file"
   ],
   [
     "src/common/utils/itemlist.ts",
@@ -5736,6 +5898,12 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/forum/components/editusermodal.js~editusermodal#nonadmineditingadmin",
+    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-nonAdminEditingAdmin",
+    "src/forum/components/EditUserModal.js~EditUserModal#nonAdminEditingAdmin",
+    "method"
+  ],
+  [
     "src/forum/components/editusermodal.js~editusermodal#oninit",
     "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-oninit",
     "src/forum/components/EditUserModal.js~EditUserModal#oninit",
@@ -5763,6 +5931,12 @@ window.esdocSearchIndex = [
     "src/forum/components/editusermodal.js~editusermodal#title",
     "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-title",
     "src/forum/components/EditUserModal.js~EditUserModal#title",
+    "method"
+  ],
+  [
+    "src/forum/components/editusermodal.js~editusermodal#userisadmin",
+    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-userIsAdmin",
+    "src/forum/components/EditUserModal.js~EditUserModal#userIsAdmin",
     "method"
   ],
   [
@@ -7374,102 +7548,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/texteditor.js",
-    "file/src/forum/components/TextEditor.js.html",
-    "src/forum/components/TextEditor.js",
-    "file"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#buildeditor",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-buildEditor",
-    "src/forum/components/TextEditor.js~TextEditor#buildEditor",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#buildeditorparams",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-buildEditorParams",
-    "src/forum/components/TextEditor.js~TextEditor#buildEditorParams",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#controlitems",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-controlItems",
-    "src/forum/components/TextEditor.js~TextEditor#controlItems",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#disabled",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-member-disabled",
-    "src/forum/components/TextEditor.js~TextEditor#disabled",
-    "member"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#oncreate",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-oncreate",
-    "src/forum/components/TextEditor.js~TextEditor#oncreate",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#oninit",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-oninit",
-    "src/forum/components/TextEditor.js~TextEditor#oninit",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#oninput",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-oninput",
-    "src/forum/components/TextEditor.js~TextEditor#oninput",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#onsubmit",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-onsubmit",
-    "src/forum/components/TextEditor.js~TextEditor#onsubmit",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#onupdate",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-onupdate",
-    "src/forum/components/TextEditor.js~TextEditor#onupdate",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#toolbaritems",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-toolbarItems",
-    "src/forum/components/TextEditor.js~TextEditor#toolbarItems",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#value",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-member-value",
-    "src/forum/components/TextEditor.js~TextEditor#value",
-    "member"
-  ],
-  [
-    "src/forum/components/texteditor.js~texteditor#view",
-    "class/src/forum/components/TextEditor.js~TextEditor.html#instance-method-view",
-    "src/forum/components/TextEditor.js~TextEditor#view",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditorbutton.js",
-    "file/src/forum/components/TextEditorButton.js.html",
-    "src/forum/components/TextEditorButton.js",
-    "file"
-  ],
-  [
-    "src/forum/components/texteditorbutton.js~texteditorbutton#oncreate",
-    "class/src/forum/components/TextEditorButton.js~TextEditorButton.html#instance-method-oncreate",
-    "src/forum/components/TextEditorButton.js~TextEditorButton#oncreate",
-    "method"
-  ],
-  [
-    "src/forum/components/texteditorbutton.js~texteditorbutton.initattrs",
-    "class/src/forum/components/TextEditorButton.js~TextEditorButton.html#static-method-initAttrs",
-    "src/forum/components/TextEditorButton.js~TextEditorButton.initAttrs",
-    "method"
-  ],
-  [
     "src/forum/components/usercard.js",
     "file/src/forum/components/UserCard.js.html",
     "src/forum/components/UserCard.js",
@@ -8352,117 +8430,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/utils/basiceditordriver.ts",
-    "file/src/forum/utils/BasicEditorDriver.ts.html",
-    "src/forum/utils/BasicEditorDriver.ts",
-    "file"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#build",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-build",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#build",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#constructor",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-constructor-constructor",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#constructor",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#destroy",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-destroy",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#destroy",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#disabled",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-disabled",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#disabled",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#el",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-member-el",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#el",
-    "member"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#focus",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-focus",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#focus",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#getcaretcoordinates",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-getCaretCoordinates",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#getCaretCoordinates",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#getlastnchars",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-getLastNChars",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#getLastNChars",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#getselectionrange",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-getSelectionRange",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#getSelectionRange",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#insertat",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-insertAt",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#insertAt",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#insertatcursor",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-insertAtCursor",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#insertAtCursor",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#insertbetween",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-insertBetween",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#insertBetween",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#movecursorto",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-moveCursorTo",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#moveCursorTo",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#replacebeforecursor",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-replaceBeforeCursor",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#replaceBeforeCursor",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#setselectionrange",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-setSelectionRange",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#setSelectionRange",
-    "method"
-  ],
-  [
-    "src/forum/utils/basiceditordriver.ts~basiceditordriver#setvalue",
-    "class/src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-setValue",
-    "src/forum/utils/BasicEditorDriver.ts~BasicEditorDriver#setValue",
-    "method"
-  ],
-  [
     "src/forum/utils/discussioncontrols.js",
     "file/src/forum/utils/DiscussionControls.js.html",
     "src/forum/utils/DiscussionControls.js",
-    "file"
-  ],
-  [
-    "src/forum/utils/editordriverinterface.ts",
-    "file/src/forum/utils/EditorDriverInterface.ts.html",
-    "src/forum/utils/EditorDriverInterface.ts",
     "file"
   ],
   [
@@ -8703,6 +8673,12 @@ window.esdocSearchIndex = [
     "src/forum/utils/alertemailconfirmation.js",
     "file/src/forum/utils/alertEmailConfirmation.js.html",
     "src/forum/utils/alertEmailConfirmation.js",
+    "file"
+  ],
+  [
+    "src/forum/utils/issafarimobile.ts",
+    "file/src/forum/utils/isSafariMobile.ts.html",
+    "src/forum/utils/isSafariMobile.ts",
     "file"
   ],
   [

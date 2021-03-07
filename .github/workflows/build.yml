@@ -46,13 +46,6 @@ jobs:
       - name: Build
         run: ./scripts/build-${{ matrix.language }}.sh
 
-      - name: JS > Upload ESDoc Log
-        if: ${{ failure() }}
-        uses: actions/upload-artifact@v2
-        with:
-          name: esdoc.log
-          path: esdoc.log
-
       - name: Commit
         run: |
           git config --local user.email "action@github.com"

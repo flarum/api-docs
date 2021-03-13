@@ -102,7 +102,7 @@
     
 
             <div class="description">
-            <p>Some models, in particular Discussion and Post, are intended to
+            <p>Some models, in particular Discussion and CommentPost, are intended to
 support a "private" mode, wherein they aren't visible unless some
 criteria is met. This can be used to implement anything from
 private discussions to post approvals.</p>            <p>When a model is saved, any "privacy checkers" registered for it will
@@ -111,7 +111,7 @@ of that model instance will be set to <code>true</code>. Otherwise, it will be s
 <code>false</code>. Accordingly, this is only available for models with an <code>is_private</code>
 field.</p>
 
-<p>In Flarum core, the Discussion and Post models come with private support.
+<p>In Flarum core, the Discussion and CommentPost models come with private support.
 Core also contains visibility scopers that hide instances of these models
 with <code>is_private = true</code> from queries. Extensions can register custom scopers
 for these classes with the <code>viewPrivate</code> ability to grant access to view some
@@ -150,7 +150,7 @@ private instances under some conditions.</p>                    </div>
                                             <p>Add a model privacy checker.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelPrivate.php#L61" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelPrivate.php#L60" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -167,7 +167,7 @@ private instances under some conditions.</p>                    </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelPrivate.php#L68" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelPrivate.php#L67" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -201,7 +201,7 @@ private instances under some conditions.</p>                    </div>
                     <tr>
                 <td>string</td>
                 <td>$modelClass</td>
-                <td>The ::class attribute of the model you are applying scopers to.
+                <td>The ::class attribute of the model you are applying private checkers to.
 This model must have a &lt;code&gt;is_private&lt;/code&gt; field.</td>
             </tr>
             </table>
@@ -216,8 +216,8 @@ This model must have a &lt;code&gt;is_private&lt;/code&gt; field.</td>
                     <div class="method-item">
                     <h3 id="method_checker">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelPrivate.php#L61" target="_blank">
-            line 61
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelPrivate.php#L60" target="_blank">
+            line 60
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/ModelPrivate.html"><abbr title="Flarum\Extend\ModelPrivate">ModelPrivate</abbr></a>
@@ -238,8 +238,7 @@ This model must have a &lt;code&gt;is_private&lt;/code&gt; field.</td>
                 <td>callable|string</td>
                 <td>$callback</td>
                 <td>The callback can be a closure or invokable class, and should accept:
-- \Flarum\User\User $actor
-- \Illuminate\Database\Eloquent\Builder $query&lt;/p&gt;
+- \Flarum\Database\AbstractModel $instance: An instance of the model.&lt;/p&gt;
 
 &lt;p&gt;It should return &lt;code&gt;true&lt;/code&gt; if the model instance should be made private.</td>
             </tr>
@@ -264,8 +263,8 @@ This model must have a &lt;code&gt;is_private&lt;/code&gt; field.</td>
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelPrivate.php#L68" target="_blank">
-            line 68
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/ModelPrivate.php#L67" target="_blank">
+            line 67
         </a>
         </div>
         <code>                    

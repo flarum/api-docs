@@ -1027,7 +1027,9 @@ window.projectVersion = 'master';
                     {"type": "Method", "fromName": "Flarum\\Filter\\FilterServiceProvider", "fromLink": "Flarum/Filter/FilterServiceProvider.html", "link": "Flarum/Filter/FilterServiceProvider.html#method_boot", "name": "Flarum\\Filter\\FilterServiceProvider::boot", "doc": "null"},
             
             {"type": "Class", "fromName": "Flarum\\Filter", "fromLink": "Flarum/Filter.html", "link": "Flarum/Filter/FilterState.html", "name": "Flarum\\Filter\\FilterState", "doc": "null"},
-                    
+                                                        {"type": "Method", "fromName": "Flarum\\Filter\\FilterState", "fromLink": "Flarum/Filter/FilterState.html", "link": "Flarum/Filter/FilterState.html#method_getActiveFilters", "name": "Flarum\\Filter\\FilterState::getActiveFilters", "doc": "&quot;Get a list of the filters that are active.&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\Filter\\FilterState", "fromLink": "Flarum/Filter/FilterState.html", "link": "Flarum/Filter/FilterState.html#method_addActiveFilter", "name": "Flarum\\Filter\\FilterState::addActiveFilter", "doc": "&quot;Add a filter as being active.&quot;"},
+            
             {"type": "Class", "fromName": "Flarum\\Formatter", "fromLink": "Flarum/Formatter.html", "link": "Flarum/Formatter/Formatter.html", "name": "Flarum\\Formatter\\Formatter", "doc": "null"},
                                                         {"type": "Method", "fromName": "Flarum\\Formatter\\Formatter", "fromLink": "Flarum/Formatter/Formatter.html", "link": "Flarum/Formatter/Formatter.html#method___construct", "name": "Flarum\\Formatter\\Formatter::__construct", "doc": "&quot;&quot;"},
                     {"type": "Method", "fromName": "Flarum\\Formatter\\Formatter", "fromLink": "Flarum/Formatter/Formatter.html", "link": "Flarum/Formatter/Formatter.html#method_addConfigurationCallback", "name": "Flarum\\Formatter\\Formatter::addConfigurationCallback", "doc": "null"},

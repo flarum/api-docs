@@ -52,6 +52,7 @@
                                             <option value="../../../v0.1.0-beta.13" data-version="v0.1.0-beta.13">v0.1.0-beta.13</option>
                                             <option value="../../../v0.1.0-beta.14" data-version="v0.1.0-beta.14">v0.1.0-beta.14</option>
                                             <option value="../../../v0.1.0-beta.15" data-version="v0.1.0-beta.15">v0.1.0-beta.15</option>
+                                            <option value="../../../v0.1.0-beta.16" data-version="v0.1.0-beta.16">v0.1.0-beta.16</option>
                                             <option value="../../../master" data-version="master">master</option>
                                     </select>
             </form>
@@ -158,29 +159,12 @@
                     ResponseInterface
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_remember">remember</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <a href="../../Flarum/Http/AccessToken.html"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a> $token)
+                    <a href="#method_remember">remember</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <a href="../../Flarum/Http/RememberAccessToken.html"><abbr title="Flarum\Http\RememberAccessToken">RememberAccessToken</abbr></a> $token)
         
                                             <p>Sets the remember cookie on a response.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/master/src/Http/Rememberer.php#L38" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    ResponseInterface
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_rememberUser">rememberUser</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, $userId)
-        <small><sup><span class="label label-danger">deprecated</span></sup></small>
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Rememberer.php#L59" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -197,7 +181,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Http/Rememberer.php#L66" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/Rememberer.php#L46" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -250,7 +234,7 @@
         </a>
         </div>
         <code>                    ResponseInterface
-    <strong>remember</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <a href="../../Flarum/Http/AccessToken.html"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a> $token)
+    <strong>remember</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <a href="../../Flarum/Http/RememberAccessToken.html"><abbr title="Flarum\Http\RememberAccessToken">RememberAccessToken</abbr></a> $token)
         </code>
     </h3>
     <div class="details">
@@ -269,63 +253,9 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../Flarum/Http/AccessToken.html"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></td>
+                <td><a href="../../Flarum/Http/RememberAccessToken.html"><abbr title="Flarum\Http\RememberAccessToken">RememberAccessToken</abbr></a></td>
                 <td>$token</td>
-                <td>The remember token to set on the response. Use of non-remember token is deprecated in beta 16, removed eta 17.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>ResponseInterface</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_rememberUser">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Rememberer.php#L59" target="_blank">
-            line 59
-        </a>
-        </div>
-        <code>                    ResponseInterface
-    <strong>rememberUser</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, $userId)
-        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
-    </h3>
-    <div class="details">
-            
-            <p>
-                <small><sup><span class="label label-danger">deprecated</span></sup></small>
-                            <tr>
-                    <td></td>
-                    <td>beta 16, removed beta 17. Use remember() with a token</td>
-                </tr>
-                    </p>
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-                <td>$response</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$userId</td>
-                <td></td>
+                <td>The remember token to set on the response.</td>
             </tr>
             </table>
 
@@ -348,8 +278,8 @@
                     <div class="method-item">
                     <h3 id="method_forget">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Rememberer.php#L66" target="_blank">
-            line 66
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/Rememberer.php#L46" target="_blank">
+            line 46
         </a>
         </div>
         <code>                    

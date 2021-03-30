@@ -757,13 +757,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -898,18 +898,6 @@ window.esdocSearchIndex = [
     "function/index.html#static-function-anchorScroll",
     "<span>anchorScroll</span> <span class=\"search-result-import-path\">flarum/utils/anchorScroll</span>",
     "function"
-  ],
-  [
-    "flarum/index~app",
-    "variable/index.html#static-variable-app",
-    "<span>app</span> <span class=\"search-result-import-path\">flarum/index</span>",
-    "variable"
-  ],
-  [
-    "flarum/index~app",
-    "variable/index.html#static-variable-app",
-    "<span>app</span> <span class=\"search-result-import-path\">flarum/index</span>",
-    "variable"
   ],
   [
     "flarum/utils/bidi~bidi",
@@ -1426,6 +1414,12 @@ window.esdocSearchIndex = [
     "class/src/admin/AdminApplication.js~AdminApplication.html#instance-method-mount",
     "src/admin/AdminApplication.js~AdminApplication#mount",
     "method"
+  ],
+  [
+    "src/admin/app.ts",
+    "file/src/admin/app.ts.html",
+    "src/admin/app.ts",
+    "file"
   ],
   [
     "src/admin/compat.js",
@@ -4810,6 +4804,12 @@ window.esdocSearchIndex = [
     "class/src/forum/ForumApplication.js~ForumApplication.html#instance-method-viewingDiscussion",
     "src/forum/ForumApplication.js~ForumApplication#viewingDiscussion",
     "method"
+  ],
+  [
+    "src/forum/app.ts",
+    "file/src/forum/app.ts.html",
+    "src/forum/app.ts",
+    "file"
   ],
   [
     "src/forum/compat.js",

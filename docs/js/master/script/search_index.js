@@ -907,9 +907,9 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/utils/classlist~classlist",
-    "function/index.html#static-function-classList",
+    "variable/index.html#static-variable-classList",
     "<span>classList</span> <span class=\"search-result-import-path\">flarum/utils/classList</span>",
-    "function"
+    "variable"
   ],
   [
     "flarum/index~compat",
@@ -4620,9 +4620,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/utils/classlist.js",
-    "file/src/common/utils/classList.js.html",
-    "src/common/utils/classList.js",
+    "src/common/utils/classlist.ts",
+    "file/src/common/utils/classList.ts.html",
+    "src/common/utils/classList.ts",
     "file"
   ],
   [

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Api\Client | Flarum API</title>
+    <title>Flarum\Http\RequestUtil | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Api_Client" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Http_RequestUtil" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -85,10 +85,10 @@
                     
     <div class="page-header">
         <h1>
-            Client
+            RequestUtil
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Api/Client.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Http/RequestUtil.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -96,7 +96,7 @@
     </div>
 
     <p>    class        
-    <strong>Client</strong></p>
+    <strong>RequestUtil</strong></p>
 
         
     
@@ -104,51 +104,22 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_container">
-                                        protected                                        Container
-                </td>
-                <td>$container</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Api/Client.php#L29" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_registry">
-                                        protected                                        Registry
-                </td>
-                <td>$registry</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/core/blob/master/src/Api/Client.php#L34" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    static&nbsp;<a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a> $registry)
+                    <a href="#method_getActor">getActor</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Client.php#L40" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RequestUtil.php#L17" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -156,15 +127,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                    static&nbsp;<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_send">send</a>(string|RequestHandlerInterface $controller, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null, array $queryParams = [], array $body = [])
+                    <a href="#method_withActor">withActor</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
         
-                                            <p>Execute the given API action class, pass the input and return its response.</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Api/Client.php#L56" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Http/RequestUtil.php#L22" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -177,14 +149,14 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_getActor">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Client.php#L40" target="_blank">
-            line 40
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RequestUtil.php#L17" target="_blank">
+            line 17
         </a>
         </div>
-        <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a> $registry)
+        <code>        static            <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>
+    <strong>getActor</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         </code>
     </h3>
     <div class="details">
@@ -196,63 +168,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
-                <td>$container</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../Flarum/Foundation/ErrorHandling/Registry.html"><abbr title="Flarum\Foundation\ErrorHandling\Registry">Registry</abbr></a></td>
-                <td>$registry</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_send">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Api/Client.php#L56" target="_blank">
-            line 56
-        </a>
-        </div>
-        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>send</strong>(string|RequestHandlerInterface $controller, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor = null, array $queryParams = [], array $body = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Execute the given API action class, pass the input and return its response.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string|RequestHandlerInterface</td>
-                <td>$controller</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
-                <td>$actor</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$queryParams</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$body</td>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
                 <td></td>
             </tr>
             </table>
@@ -262,21 +179,59 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td><a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
             <td></td>
         </tr>
     </table>
 
             
-                            <h4>Exceptions</h4>
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withActor">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Http/RequestUtil.php#L22" target="_blank">
+            line 22
+        </a>
+        </div>
+        <code>        static            <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+    <strong>withActor</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
+                <td>$actor</td>
                 <td></td>
             </tr>
             </table>
 
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
             
                     </div>
     </div>

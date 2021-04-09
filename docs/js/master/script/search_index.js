@@ -444,12 +444,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/loadingindicator~loadingindicator",
-    "class/src/common/components/LoadingIndicator.js~LoadingIndicator.html",
-    "<span>LoadingIndicator</span> <span class=\"search-result-import-path\">flarum/components/LoadingIndicator</span>",
-    "class"
-  ],
-  [
     "flarum/components/loadingmodal~loadingmodal",
     "class/src/admin/components/LoadingModal.js~LoadingModal.html",
     "<span>LoadingModal</span> <span class=\"search-result-import-path\">flarum/components/LoadingModal</span>",
@@ -757,13 +751,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -3465,24 +3459,6 @@ window.esdocSearchIndex = [
     "src/common/components/linkbutton.js~linkbutton.isactive",
     "class/src/common/components/LinkButton.js~LinkButton.html#static-method-isActive",
     "src/common/components/LinkButton.js~LinkButton.isActive",
-    "method"
-  ],
-  [
-    "src/common/components/loadingindicator.js",
-    "file/src/common/components/LoadingIndicator.js.html",
-    "src/common/components/LoadingIndicator.js",
-    "file"
-  ],
-  [
-    "src/common/components/loadingindicator.js~loadingindicator#oncreate",
-    "class/src/common/components/LoadingIndicator.js~LoadingIndicator.html#instance-method-oncreate",
-    "src/common/components/LoadingIndicator.js~LoadingIndicator#oncreate",
-    "method"
-  ],
-  [
-    "src/common/components/loadingindicator.js~loadingindicator#view",
-    "class/src/common/components/LoadingIndicator.js~LoadingIndicator.html#instance-method-view",
-    "src/common/components/LoadingIndicator.js~LoadingIndicator#view",
     "method"
   ],
   [

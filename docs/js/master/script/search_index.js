@@ -385,25 +385,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -7266,6 +7266,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/search.js~search#onremove",
+    "class/src/forum/components/Search.js~Search.html#instance-method-onremove",
+    "src/forum/components/Search.js~Search#onremove",
+    "method"
+  ],
+  [
     "src/forum/components/search.js~search#onupdate",
     "class/src/forum/components/Search.js~Search.html#instance-method-onupdate",
     "src/forum/components/Search.js~Search#onupdate",
@@ -7305,6 +7311,18 @@ window.esdocSearchIndex = [
     "src/forum/components/search.js~search#state",
     "class/src/forum/components/Search.js~Search.html#instance-member-state",
     "src/forum/components/Search.js~Search#state",
+    "member"
+  ],
+  [
+    "src/forum/components/search.js~search#updatemaxheight",
+    "class/src/forum/components/Search.js~Search.html#instance-method-updateMaxHeight",
+    "src/forum/components/Search.js~Search#updateMaxHeight",
+    "method"
+  ],
+  [
+    "src/forum/components/search.js~search#updatemaxheighthandler",
+    "class/src/forum/components/Search.js~Search.html#instance-member-updateMaxHeightHandler",
+    "src/forum/components/Search.js~Search#updateMaxHeightHandler",
     "member"
   ],
   [

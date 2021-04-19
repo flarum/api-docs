@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Extend\SimpleFlarumSearch | Flarum API</title>
+    <title>Flarum\Extend\Filesystem | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Extend_SimpleFlarumSearch" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extend_Filesystem" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -85,10 +85,10 @@
                     
     <div class="page-header">
         <h1>
-            SimpleFlarumSearch
+            Filesystem
                 
             &nbsp;
-                <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php" target="_blank">
+                <a href="https://github.com/flarum/core/blob/master/src/Extend/Filesystem.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -96,7 +96,7 @@
     </div>
 
     <p>    class        
-    <strong>SimpleFlarumSearch</strong>        implements
+    <strong>Filesystem</strong>        implements
         <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
 
         
@@ -114,13 +114,12 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>($searcherClass)
+                    <a href="#method_disk">disk</a>(string $name, $callback)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Declare a new filesystem disk.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L26" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Filesystem.php#L50" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -131,44 +130,12 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_addGambit">addGambit</a>($gambitClass)
+                    <a href="#method_driver">driver</a>(string $name, string $driverClass)
         
-                                            <p>Add a gambit to this searcher. Gambits are used to filter search queries.</p>                </div>
+                                            <p>Register a new filesystem driver.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L37" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_setFullTextGambit">setFullTextGambit</a>($gambitClass)
-        
-                                            <p>Set the full text gambit for this searcher. The full text gambit actually executes the search.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L50" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_addSearchMutator">addSearchMutator</a>(callable|string $callback)
-        
-                                            <p>Add a callback through which to run all search queries after gambits have been applied.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L66" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Filesystem.php#L64" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -185,7 +152,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L73" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Filesystem.php#L71" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -198,82 +165,14 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_disk">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L26" target="_blank">
-            line 26
-        </a>
-        </div>
-        <code>                    
-    <strong>__construct</strong>($searcherClass)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$searcherClass</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_addGambit">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L37" target="_blank">
-            line 37
-        </a>
-        </div>
-        <code>                    
-    <strong>addGambit</strong>($gambitClass)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Add a gambit to this searcher. Gambits are used to filter search queries.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$gambitClass</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setFullTextGambit">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L50" target="_blank">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Filesystem.php#L50" target="_blank">
             line 50
         </a>
         </div>
         <code>                    
-    <strong>setFullTextGambit</strong>($gambitClass)
+    <strong>disk</strong>(string $name, $callback)
         </code>
     </h3>
     <div class="details">
@@ -281,14 +180,25 @@
     
 
                     <div class="method-description">
-                                    <p>Set the full text gambit for this searcher. The full text gambit actually executes the search.</p>                                                </div>
+                                    <p>Declare a new filesystem disk.</p>                    <p>Disks represent storage locations, and are backed by storage drivers.
+Flarum core uses disks for storing assets and avatars.&lt;/p&gt;
+
+&lt;p&gt;By default, the &quot;local&quot; driver will be used for disks.
+The &quot;local&quot; driver represents the filesystem where your Flarum installation is running.&lt;/p&gt;
+
+&lt;p&gt;To declare a new disk, you must provide default configuration a &quot;local&quot; driver.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
+                <td>string</td>
+                <td>$name</td>
                 <td></td>
-                <td>$gambitClass</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$callback</td>
                 <td></td>
             </tr>
             </table>
@@ -296,19 +206,30 @@
             
             
             
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://laravel.com/docs/8.x/filesystem#configuration">https://laravel.com/docs/8.x/filesystem#configuration</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
                     </div>
     </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_addSearchMutator">
+                    <h3 id="method_driver">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L66" target="_blank">
-            line 66
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Filesystem.php#L64" target="_blank">
+            line 64
         </a>
         </div>
         <code>                    
-    <strong>addSearchMutator</strong>(callable|string $callback)
+    <strong>driver</strong>(string $name, string $driverClass)
         </code>
     </h3>
     <div class="details">
@@ -316,17 +237,20 @@
     
 
                     <div class="method-description">
-                                    <p>Add a callback through which to run all search queries after gambits have been applied.</p>                                                </div>
+                                    <p>Register a new filesystem driver.</p>                    <p>Drivers must implement &lt;code&gt;\Flarum\Filesystem\DriverInterface&lt;/code&gt;.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>callable|string</td>
-                <td>$callback</td>
-                <td>The callback can be a closure or an invokable class, and should accept:
-- Flarum\Search\SearchState $search
-- Flarum\Query\QueryCriteria $criteria</td>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$driverClass</td>
+                <td></td>
             </tr>
             </table>
 
@@ -340,8 +264,8 @@
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/SimpleFlarumSearch.php#L73" target="_blank">
-            line 73
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Filesystem.php#L71" target="_blank">
+            line 71
         </a>
         </div>
         <code>                    

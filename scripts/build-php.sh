@@ -4,7 +4,7 @@ source $(dirname $0)/_vars.sh
 
 echo -e "${style}Generating $reset"
 
-php "$REPO_PATH/doctum.phar" update doctum-config.php -v --force
+php "$REPO_PATH/doctum.phar" update doctum-config.php -v --force --no-progress
 
 bash $SCRIPTS_PATH/set-redirects.sh php
 bash $SCRIPTS_PATH/set-index-file.sh php

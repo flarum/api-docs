@@ -289,7 +289,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/editusermodal~editusermodal",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html",
     "<span>EditUserModal</span> <span class=\"search-result-import-path\">flarum/components/EditUserModal</span>",
     "class"
   ],
@@ -385,25 +385,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -3402,6 +3402,114 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/components/editusermodal.js",
+    "file/src/common/components/EditUserModal.js.html",
+    "src/common/components/EditUserModal.js",
+    "file"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#activate",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-method-activate",
+    "src/common/components/EditUserModal.js~EditUserModal#activate",
+    "method"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#classname",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-method-className",
+    "src/common/components/EditUserModal.js~EditUserModal#className",
+    "method"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#content",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-method-content",
+    "src/common/components/EditUserModal.js~EditUserModal#content",
+    "method"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#data",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-method-data",
+    "src/common/components/EditUserModal.js~EditUserModal#data",
+    "method"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#email",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-member-email",
+    "src/common/components/EditUserModal.js~EditUserModal#email",
+    "member"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#fields",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-method-fields",
+    "src/common/components/EditUserModal.js~EditUserModal#fields",
+    "method"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#groups",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-member-groups",
+    "src/common/components/EditUserModal.js~EditUserModal#groups",
+    "member"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#isemailconfirmed",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-member-isEmailConfirmed",
+    "src/common/components/EditUserModal.js~EditUserModal#isEmailConfirmed",
+    "member"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#loading",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-member-loading",
+    "src/common/components/EditUserModal.js~EditUserModal#loading",
+    "member"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#nonadmineditingadmin",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-method-nonAdminEditingAdmin",
+    "src/common/components/EditUserModal.js~EditUserModal#nonAdminEditingAdmin",
+    "method"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#oninit",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-method-oninit",
+    "src/common/components/EditUserModal.js~EditUserModal#oninit",
+    "method"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#onsubmit",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-method-onsubmit",
+    "src/common/components/EditUserModal.js~EditUserModal#onsubmit",
+    "method"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#password",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-member-password",
+    "src/common/components/EditUserModal.js~EditUserModal#password",
+    "member"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#setpassword",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-member-setPassword",
+    "src/common/components/EditUserModal.js~EditUserModal#setPassword",
+    "member"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#title",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-method-title",
+    "src/common/components/EditUserModal.js~EditUserModal#title",
+    "method"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#userisadmin",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-method-userIsAdmin",
+    "src/common/components/EditUserModal.js~EditUserModal#userIsAdmin",
+    "method"
+  ],
+  [
+    "src/common/components/editusermodal.js~editusermodal#username",
+    "class/src/common/components/EditUserModal.js~EditUserModal.html#instance-member-username",
+    "src/common/components/EditUserModal.js~EditUserModal#username",
+    "member"
+  ],
+  [
     "src/common/components/fieldset.js",
     "file/src/common/components/FieldSet.js.html",
     "src/common/components/FieldSet.js",
@@ -5818,114 +5926,6 @@ window.esdocSearchIndex = [
     "class/src/forum/components/EditPostComposer.js~EditPostComposer.html#static-method-initAttrs",
     "src/forum/components/EditPostComposer.js~EditPostComposer.initAttrs",
     "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js",
-    "file/src/forum/components/EditUserModal.js.html",
-    "src/forum/components/EditUserModal.js",
-    "file"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#activate",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-activate",
-    "src/forum/components/EditUserModal.js~EditUserModal#activate",
-    "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#classname",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-className",
-    "src/forum/components/EditUserModal.js~EditUserModal#className",
-    "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#content",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-content",
-    "src/forum/components/EditUserModal.js~EditUserModal#content",
-    "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#data",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-data",
-    "src/forum/components/EditUserModal.js~EditUserModal#data",
-    "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#email",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-email",
-    "src/forum/components/EditUserModal.js~EditUserModal#email",
-    "member"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#fields",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-fields",
-    "src/forum/components/EditUserModal.js~EditUserModal#fields",
-    "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#groups",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-groups",
-    "src/forum/components/EditUserModal.js~EditUserModal#groups",
-    "member"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#isemailconfirmed",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-isEmailConfirmed",
-    "src/forum/components/EditUserModal.js~EditUserModal#isEmailConfirmed",
-    "member"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#loading",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-loading",
-    "src/forum/components/EditUserModal.js~EditUserModal#loading",
-    "member"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#nonadmineditingadmin",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-nonAdminEditingAdmin",
-    "src/forum/components/EditUserModal.js~EditUserModal#nonAdminEditingAdmin",
-    "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#oninit",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-oninit",
-    "src/forum/components/EditUserModal.js~EditUserModal#oninit",
-    "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#onsubmit",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-onsubmit",
-    "src/forum/components/EditUserModal.js~EditUserModal#onsubmit",
-    "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#password",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-password",
-    "src/forum/components/EditUserModal.js~EditUserModal#password",
-    "member"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#setpassword",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-setPassword",
-    "src/forum/components/EditUserModal.js~EditUserModal#setPassword",
-    "member"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#title",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-title",
-    "src/forum/components/EditUserModal.js~EditUserModal#title",
-    "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#userisadmin",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-method-userIsAdmin",
-    "src/forum/components/EditUserModal.js~EditUserModal#userIsAdmin",
-    "method"
-  ],
-  [
-    "src/forum/components/editusermodal.js~editusermodal#username",
-    "class/src/forum/components/EditUserModal.js~EditUserModal.html#instance-member-username",
-    "src/forum/components/EditUserModal.js~EditUserModal#username",
-    "member"
   ],
   [
     "src/forum/components/eventpost.js",

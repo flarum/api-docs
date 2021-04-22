@@ -116,9 +116,9 @@
                 <div class="col-md-6 type">
                     <a href="#method_configure">configure</a>(callable|string $callback)
         
-                                            <p>Configure the formatter. This can be used to add support for custom markdown/bbcode/etc tags,
+                                            <p>&lt;p&gt;Configure the formatter. This can be used to add support for custom markdown/bbcode/etc tags,
 or otherwise change the formatter. Please see documentation for the s9e text formatter library for more
-information on how to use this.</p>                </div>
+information on how to use this.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L34" target="_blank">
@@ -134,7 +134,7 @@ information on how to use this.</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_parse">parse</a>(callable|string $callback)
         
-                                            <p>Prepare the system for parsing. This can be used to modify the text that will be parsed, or to modify the parser.</p>                </div>
+                                            <p>&lt;p&gt;Prepare the system for parsing. This can be used to modify the text that will be parsed, or to modify the parser.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L55" target="_blank">
@@ -150,7 +150,7 @@ information on how to use this.</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_unparse">unparse</a>(callable|string $callback)
         
-                                            <p>Prepare the system for unparsing. This can be used to modify the text that was parsed.</p>                </div>
+                                            <p>&lt;p&gt;Prepare the system for unparsing. This can be used to modify the text that was parsed.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L77" target="_blank">
@@ -166,7 +166,7 @@ information on how to use this.</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_render">render</a>(callable|string $callback)
         
-                                            <p>Prepare the system for rendering. This can be used to modify the xml that will be rendered, or to modify the renderer.</p>                </div>
+                                            <p>&lt;p&gt;Prepare the system for rendering. This can be used to modify the xml that will be rendered, or to modify the renderer.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/master/src/Extend/Formatter.php#L99" target="_blank">
@@ -248,9 +248,9 @@ information on how to use this.</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>Configure the formatter. This can be used to add support for custom markdown/bbcode/etc tags,
+                                    <p>&lt;p&gt;Configure the formatter. This can be used to add support for custom markdown/bbcode/etc tags,
 or otherwise change the formatter. Please see documentation for the s9e text formatter library for more
-information on how to use this.</p>                                                </div>
+information on how to use this.&lt;/p&gt;</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -258,8 +258,10 @@ information on how to use this.</p>                                             
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or invokable class, and should accept:
-- \s9e\TextFormatter\Configurator $configurator</td>
+                <td>&lt;p&gt;The callback can be a closure or invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\s9e\TextFormatter\Configurator $configurator&lt;/li&gt;
+&lt;/ul&gt;</td>
             </tr>
             </table>
 
@@ -286,7 +288,7 @@ information on how to use this.</p>                                             
     
 
                     <div class="method-description">
-                                    <p>Prepare the system for parsing. This can be used to modify the text that will be parsed, or to modify the parser.</p>                    <p>Please note that the text to be parsed must be returned, regardless of whether it&#039;s changed.</p>                            </div>
+                                    <p>&lt;p&gt;Prepare the system for parsing. This can be used to modify the text that will be parsed, or to modify the parser.&lt;/p&gt;</p>                    <p>&lt;p&gt;Please note that the text to be parsed must be returned, regardless of whether it&#039;s changed.&lt;/p&gt;</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -294,13 +296,16 @@ information on how to use this.</p>                                             
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or invokable class, and should accept:
-- \s9e\TextFormatter\Parser $parser
-- mixed $context
-- string $text: The text to be parsed.&lt;/p&gt;
-
-&lt;p&gt;The callback should return:
-- string $text: The text to be parsed.</td>
+                <td>&lt;p&gt;The callback can be a closure or invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\s9e\TextFormatter\Parser $parser&lt;/li&gt;
+&lt;li&gt;mixed $context&lt;/li&gt;
+&lt;li&gt;string $text: The text to be parsed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The callback should return:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;string $text: The text to be parsed.&lt;/li&gt;
+&lt;/ul&gt;</td>
             </tr>
             </table>
 
@@ -327,7 +332,7 @@ information on how to use this.</p>                                             
     
 
                     <div class="method-description">
-                                    <p>Prepare the system for unparsing. This can be used to modify the text that was parsed.</p>                    <p>Please note that the parsed text must be returned, regardless of whether it&#039;s changed.</p>                            </div>
+                                    <p>&lt;p&gt;Prepare the system for unparsing. This can be used to modify the text that was parsed.&lt;/p&gt;</p>                    <p>&lt;p&gt;Please note that the parsed text must be returned, regardless of whether it&#039;s changed.&lt;/p&gt;</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -335,12 +340,15 @@ information on how to use this.</p>                                             
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or invokable class, and should accept:
-- mixed $context
-- string $xml: The parsed text.&lt;/p&gt;
-
-&lt;p&gt;The callback should return:
-- string $xml: The text to be unparsed.</td>
+                <td>&lt;p&gt;The callback can be a closure or invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mixed $context&lt;/li&gt;
+&lt;li&gt;string $xml: The parsed text.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The callback should return:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;string $xml: The text to be unparsed.&lt;/li&gt;
+&lt;/ul&gt;</td>
             </tr>
             </table>
 
@@ -376,7 +384,7 @@ information on how to use this.</p>                                             
     
 
                     <div class="method-description">
-                                    <p>Prepare the system for rendering. This can be used to modify the xml that will be rendered, or to modify the renderer.</p>                    <p>Please note that the xml to be rendered must be returned, regardless of whether it&#039;s changed.</p>                            </div>
+                                    <p>&lt;p&gt;Prepare the system for rendering. This can be used to modify the xml that will be rendered, or to modify the renderer.&lt;/p&gt;</p>                    <p>&lt;p&gt;Please note that the xml to be rendered must be returned, regardless of whether it&#039;s changed.&lt;/p&gt;</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -384,14 +392,17 @@ information on how to use this.</p>                                             
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or invokable class, and should accept:
-- \s9e\TextFormatter\Rendered $renderer
-- mixed $context
-- string $xml: The xml to be rendered.
-- ServerRequestInterface $request. This argument MUST either be nullable, or omitted entirely.&lt;/p&gt;
-
-&lt;p&gt;The callback should return:
-- string $xml: The xml to be rendered.</td>
+                <td>&lt;p&gt;The callback can be a closure or invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\s9e\TextFormatter\Rendered $renderer&lt;/li&gt;
+&lt;li&gt;mixed $context&lt;/li&gt;
+&lt;li&gt;string $xml: The xml to be rendered.&lt;/li&gt;
+&lt;li&gt;ServerRequestInterface $request. This argument MUST either be nullable, or omitted entirely.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The callback should return:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;string $xml: The xml to be rendered.&lt;/li&gt;
+&lt;/ul&gt;</td>
             </tr>
             </table>
 
@@ -522,7 +533,7 @@ information on how to use this.</p>                                             
                 </div>
                     <div id="footer">
         <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
-        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
     </div>
 
             </div>

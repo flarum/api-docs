@@ -131,7 +131,7 @@
                     <a href="../../Flarum/Extend/ApiSerializer.html"><abbr title="Flarum\Extend\ApiSerializer">ApiSerializer</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_attribute">attribute</a>(string $name, $callback)
+                    <a href="#method_attribute">attribute</a>(string $name, callable|string $callback)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -150,7 +150,7 @@
                 <div class="col-md-6 type">
                     <a href="#method_attributes">attributes</a>(callable|string $callback)
         
-                                            <p>Add to or modify the attributes array of this serializer.</p>                </div>
+                                            <p>&lt;p&gt;Add to or modify the attributes array of this serializer.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.16/src/Extend/ApiSerializer.php#L70" target="_blank">
@@ -166,7 +166,7 @@
                 <div class="col-md-6 type">
                     <a href="#method_mutate">mutate</a>(callable|string $callback)
         <small><sup><span class="label label-danger">deprecated</span></sup></small>
-                                            <p>Add to or modify the attributes array of this serializer.</p>                </div>
+                                            <p>&lt;p&gt;Add to or modify the attributes array of this serializer.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.16/src/Extend/ApiSerializer.php#L94" target="_blank">
@@ -182,7 +182,7 @@
                 <div class="col-md-6 type">
                     <a href="#method_hasOne">hasOne</a>(string $name, string $serializerClass)
         
-                                            <p>Establish a simple hasOne relationship from this serializer to another serializer.</p>                </div>
+                                            <p>&lt;p&gt;Establish a simple hasOne relationship from this serializer to another serializer.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.16/src/Extend/ApiSerializer.php#L109" target="_blank">
@@ -198,7 +198,7 @@
                 <div class="col-md-6 type">
                     <a href="#method_hasMany">hasMany</a>(string $name, string $serializerClass)
         
-                                            <p>Establish a simple hasMany relationship from this serializer to another serializer.</p>                </div>
+                                            <p>&lt;p&gt;Establish a simple hasMany relationship from this serializer to another serializer.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.16/src/Extend/ApiSerializer.php#L126" target="_blank">
@@ -212,9 +212,9 @@
                     <a href="../../Flarum/Extend/ApiSerializer.html"><abbr title="Flarum\Extend\ApiSerializer">ApiSerializer</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_relationship">relationship</a>(string $name, $callback)
+                    <a href="#method_relationship">relationship</a>(string $name, callable|string $callback)
         
-                                            <p>Add a relationship from this serializer to another serializer.</p>                </div>
+                                            <p>&lt;p&gt;Add a relationship from this serializer to another serializer.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/core/blob/v0.1.0-beta.16/src/Extend/ApiSerializer.php#L149" target="_blank">
@@ -268,8 +268,8 @@
                     <tr>
                 <td>string</td>
                 <td>$serializerClass</td>
-                <td>The ::class attribute of the serializer you are modifying.
-This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</td>
+                <td>&lt;p&gt;The ::class attribute of the serializer you are modifying.
+This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.&lt;/p&gt;</td>
             </tr>
             </table>
 
@@ -288,7 +288,7 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/ApiSerializer.html"><abbr title="Flarum\Extend\ApiSerializer">ApiSerializer</abbr></a>
-    <strong>attribute</strong>(string $name, $callback)
+    <strong>attribute</strong>(string $name, callable|string $callback)
         </code>
     </h3>
     <div class="details">
@@ -305,9 +305,18 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>callable|string</td>
                 <td>$callback</td>
-                <td></td>
+                <td>&lt;p&gt;The callback can be a closure or an invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$serializer: An instance of this serializer.&lt;/li&gt;
+&lt;li&gt;$model: An instance of the model being serialized.&lt;/li&gt;
+&lt;li&gt;$attributes: An array of existing attributes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The callable should return:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The value of the attribute.&lt;/li&gt;
+&lt;/ul&gt;</td>
             </tr>
             </table>
 
@@ -343,7 +352,7 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
     
 
                     <div class="method-description">
-                                    <p>Add to or modify the attributes array of this serializer.</p>                                                </div>
+                                    <p>&lt;p&gt;Add to or modify the attributes array of this serializer.&lt;/p&gt;</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -351,14 +360,17 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or an invokable class, and should accept:
-- $serializer: An instance of this serializer.
-- $model: An instance of the model being serialized.
-- $attributes: An array of existing attributes.&lt;/p&gt;
-
-&lt;p&gt;The callable should return:
-- An array of additional attributes to merge with the existing array.
-  Or a modified $attributes array.</td>
+                <td>&lt;p&gt;The callback can be a closure or an invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$serializer: An instance of this serializer.&lt;/li&gt;
+&lt;li&gt;$model: An instance of the model being serialized.&lt;/li&gt;
+&lt;li&gt;$attributes: An array of existing attributes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The callable should return:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An array of additional attributes to merge with the existing array.
+Or a modified $attributes array.&lt;/li&gt;
+&lt;/ul&gt;</td>
             </tr>
             </table>
 
@@ -394,14 +406,14 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
             <p>
                 <small><sup><span class="label label-danger">deprecated</span></sup></small>
                             <tr>
-                    <td></td>
-                    <td>in beta 16, removed in beta 17</td>
+                    <td>in</td>
+                    <td>beta 16, removed in beta 17</td>
                 </tr>
                     </p>
     
 
                     <div class="method-description">
-                                    <p>Add to or modify the attributes array of this serializer.</p>                                                </div>
+                                    <p>&lt;p&gt;Add to or modify the attributes array of this serializer.&lt;/p&gt;</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -409,14 +421,17 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or an invokable class, and should accept:
-- $serializer: An instance of this serializer.
-- $model: An instance of the model being serialized.
-- $attributes: An array of existing attributes.&lt;/p&gt;
-
-&lt;p&gt;The callable should return:
-- An array of additional attributes to merge with the existing array.
-  Or a modified $attributes array.</td>
+                <td>&lt;p&gt;The callback can be a closure or an invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$serializer: An instance of this serializer.&lt;/li&gt;
+&lt;li&gt;$model: An instance of the model being serialized.&lt;/li&gt;
+&lt;li&gt;$attributes: An array of existing attributes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The callable should return:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An array of additional attributes to merge with the existing array.
+Or a modified $attributes array.&lt;/li&gt;
+&lt;/ul&gt;</td>
             </tr>
             </table>
 
@@ -452,7 +467,7 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
     
 
                     <div class="method-description">
-                                    <p>Establish a simple hasOne relationship from this serializer to another serializer.</p>                    <p>This represents a one-to-one relationship.</p>                            </div>
+                                    <p>&lt;p&gt;Establish a simple hasOne relationship from this serializer to another serializer.&lt;/p&gt;</p>                    <p>&lt;p&gt;This represents a one-to-one relationship.&lt;/p&gt;</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -501,7 +516,7 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
     
 
                     <div class="method-description">
-                                    <p>Establish a simple hasMany relationship from this serializer to another serializer.</p>                    <p>This represents a one-to-many relationship.</p>                            </div>
+                                    <p>&lt;p&gt;Establish a simple hasMany relationship from this serializer to another serializer.&lt;/p&gt;</p>                    <p>&lt;p&gt;This represents a one-to-many relationship.&lt;/p&gt;</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -542,7 +557,7 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/ApiSerializer.html"><abbr title="Flarum\Extend\ApiSerializer">ApiSerializer</abbr></a>
-    <strong>relationship</strong>(string $name, $callback)
+    <strong>relationship</strong>(string $name, callable|string $callback)
         </code>
     </h3>
     <div class="details">
@@ -550,7 +565,7 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
     
 
                     <div class="method-description">
-                                    <p>Add a relationship from this serializer to another serializer.</p>                                                </div>
+                                    <p>&lt;p&gt;Add a relationship from this serializer to another serializer.&lt;/p&gt;</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -561,9 +576,17 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>callable|string</td>
                 <td>$callback</td>
-                <td></td>
+                <td>&lt;p&gt;The callable can be a closure or an invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$serializer: An instance of this serializer.&lt;/li&gt;
+&lt;li&gt;$model: An instance of the model being serialized.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The callable should return:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$relationship: An instance of \Tobscure\JsonApi\Relationship.&lt;/li&gt;
+&lt;/ul&gt;</td>
             </tr>
             </table>
 
@@ -627,7 +650,7 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
                 </div>
                     <div id="footer">
         <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
-        <p>Created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/datitisev/FlarumAPIDocs">GitHub</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
     </div>
 
             </div>

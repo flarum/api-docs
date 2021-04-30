@@ -385,25 +385,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -751,13 +751,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -3168,39 +3168,33 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/translator.js~translator#apply",
-    "class/src/common/Translator.js~Translator.html#instance-method-apply",
-    "src/common/Translator.js~Translator#apply",
-    "method"
-  ],
-  [
     "src/common/translator.js~translator#constructor",
     "class/src/common/Translator.js~Translator.html#instance-constructor-constructor",
     "src/common/Translator.js~Translator#constructor",
     "method"
   ],
   [
-    "src/common/translator.js~translator#convertnumber",
-    "class/src/common/Translator.js~Translator.html#instance-method-convertNumber",
-    "src/common/Translator.js~Translator#convertNumber",
-    "method"
-  ],
-  [
-    "src/common/translator.js~translator#locale",
-    "class/src/common/Translator.js~Translator.html#instance-member-locale",
-    "src/common/Translator.js~Translator#locale",
+    "src/common/translator.js~translator#formatter",
+    "class/src/common/Translator.js~Translator.html#instance-member-formatter",
+    "src/common/Translator.js~Translator#formatter",
     "member"
   ],
   [
-    "src/common/translator.js~translator#pluralposition",
-    "class/src/common/Translator.js~Translator.html#instance-method-pluralPosition",
-    "src/common/Translator.js~Translator#pluralPosition",
+    "src/common/translator.js~translator#formattertypehandlers",
+    "class/src/common/Translator.js~Translator.html#instance-method-formatterTypeHandlers",
+    "src/common/Translator.js~Translator#formatterTypeHandlers",
     "method"
   ],
   [
-    "src/common/translator.js~translator#pluralize",
-    "class/src/common/Translator.js~Translator.html#instance-method-pluralize",
-    "src/common/Translator.js~Translator#pluralize",
+    "src/common/translator.js~translator#preprocessparameters",
+    "class/src/common/Translator.js~Translator.html#instance-method-preprocessParameters",
+    "src/common/Translator.js~Translator#preprocessParameters",
+    "method"
+  ],
+  [
+    "src/common/translator.js~translator#setlocale",
+    "class/src/common/Translator.js~Translator.html#instance-method-setLocale",
+    "src/common/Translator.js~Translator#setLocale",
     "method"
   ],
   [

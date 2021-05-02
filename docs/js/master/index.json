@@ -11482,14 +11482,15 @@
     "importStyle": "{extend}",
     "description": "Extend an object's method by running its output through a mutating callback\nevery time it is called.\n\nThe callback accepts the method's return value and should perform any\nmutations directly on this value. For this reason, this function will not be\neffective on methods which return scalar values (numbers, strings, booleans).\n\nCare should be taken to extend the correct object – in most cases, a class'\nprototype will be the desired target of extension, not the class itself.",
     "examples": [
-      "extend(Discussion.prototype, 'badges', function(badges) {\n  // do something with `badges`\n});"
+      "<caption>Example usage of extending one method.</caption>\nextend(Discussion.prototype, 'badges', function(badges) {\n  // do something with `badges`\n});",
+      "<caption>Example usage of extending multiple methods.</caption>\nextend(IndexPage.prototype, ['oncreate', 'onupdate'], function(vnode) {\n  // something that needs to be run on creation and update\n});"
     ],
-    "lineNumber": 21,
+    "lineNumber": 26,
     "params": [
       {
         "nullable": null,
         "types": [
-          "Object"
+          "object"
         ],
         "spread": false,
         "optional": false,
@@ -11499,12 +11500,13 @@
       {
         "nullable": null,
         "types": [
-          "String"
+          "string",
+          "string[]"
         ],
         "spread": false,
         "optional": false,
-        "name": "method",
-        "description": "The name of the method to extend"
+        "name": "methods",
+        "description": "The name or names of the method(s) to extend"
       },
       {
         "nullable": null,
@@ -11532,16 +11534,17 @@
     "export": true,
     "importPath": "flarum/extend",
     "importStyle": "{override}",
-    "description": "Override an object's method by replacing it with a new function, so that the\nnew function will be run every time the object's method is called.\n\nThe replacement function accepts the original method as its first argument,\nwhich is like a call to 'super'. Any arguments passed to the original method\nare also passed to the replacement.\n\nCare should be taken to extend the correct object – in most cases, a class'\nprototype will be the desired target of extension, not the class itself.",
+    "description": "Override an object's method by replacing it with a new function, so that the\nnew function will be run every time the object's method is called.\n\nThe replacement function accepts the original method as its first argument,\nwhich is like a call to `super`. Any arguments passed to the original method\nare also passed to the replacement.\n\nCare should be taken to extend the correct object – in most cases, a class'\nprototype will be the desired target of extension, not the class itself.",
     "examples": [
-      "override(Discussion.prototype, 'badges', function(original) {\n  const badges = original();\n  // do something with badges\n  return badges;\n});"
+      "<caption>Example usage of overriding one method.</caption>\noverride(Discussion.prototype, 'badges', function(original) {\n  const badges = original();\n  // do something with badges\n  return badges;\n});",
+      "<caption>Example usage of overriding multiple methods.</caption>\nextend(Discussion.prototype, ['oncreate', 'onupdate'], function(original, vnode) {\n  // something that needs to be run on creation and update\n});"
     ],
-    "lineNumber": 57,
+    "lineNumber": 71,
     "params": [
       {
         "nullable": null,
         "types": [
-          "Object"
+          "object"
         ],
         "spread": false,
         "optional": false,
@@ -11551,12 +11554,13 @@
       {
         "nullable": null,
         "types": [
-          "String"
+          "string",
+          "string[]"
         ],
         "spread": false,
         "optional": false,
         "name": "method",
-        "description": "The name of the method to override"
+        "description": "The name or names of the method(s) to override"
       },
       {
         "nullable": null,

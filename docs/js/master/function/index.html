@@ -379,7 +379,7 @@ any of the dependent values are dirty.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-extend">extend</a></span></span><span class="code" data-ice="signature">(object: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, method: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>, callback: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>)</span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-extend">extend</a></span></span><span class="code" data-ice="signature">(object: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>, methods: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>, callback: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>)</span>
         </p>
       </div>
       <div>
@@ -735,7 +735,7 @@ the prototype of a parent object.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-override">override</a></span></span><span class="code" data-ice="signature">(object: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, method: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>, newMethod: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>)</span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-override">override</a></span></span><span class="code" data-ice="signature">(object: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>, method: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>, newMethod: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>)</span>
         </p>
       </div>
       <div>
@@ -1548,15 +1548,15 @@ any of the dependent values are dirty.</p>
     
     
     
-    <span class="code" data-ice="name">extend</span><span class="code" data-ice="signature">(object: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, method: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>, callback: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>)</span>
+    <span class="code" data-ice="name">extend</span><span class="code" data-ice="signature">(object: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>, methods: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>, callback: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/common/extend.js.html#lineNumber21">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/common/extend.js.html#lineNumber26">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {extend} from &apos;<span><a href="file/src/common/extend.js.html#lineNumber21">flarum/extend</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {extend} from &apos;<span><a href="file/src/common/extend.js.html#lineNumber26">flarum/extend</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Extend an object&apos;s method by running its output through a mutating callback
@@ -1580,16 +1580,16 @@ prototype will be the desired target of extension, not the class itself.</p>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">object</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The object that owns the method</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">method</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
+      <td data-ice="name" class="code" data-depth="0">methods</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The name of the method to extend</p>
+      <td data-ice="description"><p>The name or names of the method(s) to extend</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
@@ -1618,9 +1618,15 @@ prototype will be the desired target of extension, not the class itself.</p>
     <h4>Example:</h4>
     
   <div class="example-doc" data-ice="exampleDoc">
-      
+      <div class="example-caption" data-ice="exampleCaption">Example usage of extending one method.</div>
       <pre class="prettyprint source-code"><code data-ice="exampleCode">extend(Discussion.prototype, &apos;badges&apos;, function(badges) {
   // do something with `badges`
+});</code></pre>
+    </div>
+<div class="example-doc" data-ice="exampleDoc">
+      <div class="example-caption" data-ice="exampleCaption">Example usage of extending multiple methods.</div>
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">extend(IndexPage.prototype, [&apos;oncreate&apos;, &apos;onupdate&apos;], function(vnode) {
+  // something that needs to be run on creation and update
 });</code></pre>
     </div>
 </div>
@@ -2403,21 +2409,21 @@ the prototype of a parent object.</p>
     
     
     
-    <span class="code" data-ice="name">override</span><span class="code" data-ice="signature">(object: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, method: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>, newMethod: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>)</span>
+    <span class="code" data-ice="name">override</span><span class="code" data-ice="signature">(object: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>, method: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>, newMethod: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/common/extend.js.html#lineNumber57">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/common/extend.js.html#lineNumber71">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {override} from &apos;<span><a href="file/src/common/extend.js.html#lineNumber57">flarum/extend</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {override} from &apos;<span><a href="file/src/common/extend.js.html#lineNumber71">flarum/extend</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Override an object&apos;s method by replacing it with a new function, so that the
 new function will be run every time the object&apos;s method is called.</p>
 <p>The replacement function accepts the original method as its first argument,
-which is like a call to &apos;super&apos;. Any arguments passed to the original method
+which is like a call to <code>super</code>. Any arguments passed to the original method
 are also passed to the replacement.</p>
 <p>Care should be taken to extend the correct object &#x2013; in most cases, a class&apos;
 prototype will be the desired target of extension, not the class itself.</p>
@@ -2435,16 +2441,16 @@ prototype will be the desired target of extension, not the class itself.</p>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">object</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The object that owns the method</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">method</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The name of the method to override</p>
+      <td data-ice="description"><p>The name or names of the method(s) to override</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
@@ -2473,11 +2479,17 @@ prototype will be the desired target of extension, not the class itself.</p>
     <h4>Example:</h4>
     
   <div class="example-doc" data-ice="exampleDoc">
-      
+      <div class="example-caption" data-ice="exampleCaption">Example usage of overriding one method.</div>
       <pre class="prettyprint source-code"><code data-ice="exampleCode">override(Discussion.prototype, &apos;badges&apos;, function(original) {
   const badges = original();
   // do something with badges
   return badges;
+});</code></pre>
+    </div>
+<div class="example-doc" data-ice="exampleDoc">
+      <div class="example-caption" data-ice="exampleCaption">Example usage of overriding multiple methods.</div>
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">extend(Discussion.prototype, [&apos;oncreate&apos;, &apos;onupdate&apos;], function(original, vnode) {
+  // something that needs to be run on creation and update
 });</code></pre>
     </div>
 </div>

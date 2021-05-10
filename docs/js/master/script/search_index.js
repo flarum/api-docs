@@ -751,13 +751,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -3276,12 +3276,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/badge.js~badge#oncreate",
-    "class/src/common/components/Badge.js~Badge.html#instance-method-oncreate",
-    "src/common/components/Badge.js~Badge#oncreate",
-    "method"
-  ],
-  [
     "src/common/components/badge.js~badge#view",
     "class/src/common/components/Badge.js~Badge.html#instance-method-view",
     "src/common/components/Badge.js~Badge#view",
@@ -3984,9 +3978,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/common/components/texteditorbutton.js~texteditorbutton#oncreate",
-    "class/src/common/components/TextEditorButton.js~TextEditorButton.html#instance-method-oncreate",
-    "src/common/components/TextEditorButton.js~TextEditorButton#oncreate",
+    "src/common/components/texteditorbutton.js~texteditorbutton#view",
+    "class/src/common/components/TextEditorButton.js~TextEditorButton.html#instance-method-view",
+    "src/common/components/TextEditorButton.js~TextEditorButton#view",
     "method"
   ],
   [
@@ -6696,12 +6690,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/forum/components/postedited.js~postedited#oldeditedinfo",
-    "class/src/forum/components/PostEdited.js~PostEdited.html#instance-member-oldEditedInfo",
-    "src/forum/components/PostEdited.js~PostEdited#oldEditedInfo",
-    "member"
-  ],
-  [
     "src/forum/components/postedited.js~postedited#oncreate",
     "class/src/forum/components/PostEdited.js~PostEdited.html#instance-method-oncreate",
     "src/forum/components/PostEdited.js~PostEdited#oncreate",
@@ -6712,24 +6700,6 @@ window.esdocSearchIndex = [
     "class/src/forum/components/PostEdited.js~PostEdited.html#instance-method-oninit",
     "src/forum/components/PostEdited.js~PostEdited#oninit",
     "method"
-  ],
-  [
-    "src/forum/components/postedited.js~postedited#onupdate",
-    "class/src/forum/components/PostEdited.js~PostEdited.html#instance-method-onupdate",
-    "src/forum/components/PostEdited.js~PostEdited#onupdate",
-    "method"
-  ],
-  [
-    "src/forum/components/postedited.js~postedited#rebuildtooltip",
-    "class/src/forum/components/PostEdited.js~PostEdited.html#instance-method-rebuildTooltip",
-    "src/forum/components/PostEdited.js~PostEdited#rebuildTooltip",
-    "method"
-  ],
-  [
-    "src/forum/components/postedited.js~postedited#shouldupdatetooltip",
-    "class/src/forum/components/PostEdited.js~PostEdited.html#instance-member-shouldUpdateTooltip",
-    "src/forum/components/PostEdited.js~PostEdited#shouldUpdateTooltip",
-    "member"
   ],
   [
     "src/forum/components/postedited.js~postedited#view",

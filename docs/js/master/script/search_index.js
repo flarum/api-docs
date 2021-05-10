@@ -385,25 +385,25 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
-    "class"
-  ],
-  [
-    "flarum/components/headerprimary~headerprimary",
     "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
-    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "flarum/components/headerprimary~headerprimary",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headersecondary~headersecondary",
     "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "class"
+  ],
+  [
+    "flarum/components/headersecondary~headersecondary",
+    "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
     "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
     "class"
   ],
@@ -751,13 +751,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
   [
     "flarum/components/sessiondropdown~sessiondropdown",
-    "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
+    "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
     "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
     "class"
   ],
@@ -835,7 +835,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/translator~translator",
-    "class/src/common/Translator.js~Translator.html",
+    "class/src/common/Translator.ts~Translator.html",
     "<span>Translator</span> <span class=\"search-result-import-path\">flarum/Translator</span>",
     "class"
   ],
@@ -972,6 +972,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "flarum/utils/inserttext~inserttext",
+    "function/index.html#static-function-insertText",
+    "<span>insertText</span> <span class=\"search-result-import-path\">flarum/utils/insertText</span>",
+    "function"
+  ],
+  [
     "flarum/utils/isextensionenabled~isextensionenabled",
     "function/index.html#static-function-isExtensionEnabled",
     "<span>isExtensionEnabled</span> <span class=\"search-result-import-path\">flarum/utils/isExtensionEnabled</span>",
@@ -1065,6 +1071,12 @@ window.esdocSearchIndex = [
     "flarum/utils/stringtocolor~stringtocolor",
     "function/index.html#static-function-stringToColor",
     "<span>stringToColor</span> <span class=\"search-result-import-path\">flarum/utils/stringToColor</span>",
+    "function"
+  ],
+  [
+    "flarum/utils/styleselectedtext~styleselectedtext",
+    "function/index.html#static-function-styleSelectedText",
+    "<span>styleSelectedText</span> <span class=\"search-result-import-path\">flarum/utils/styleSelectedText</span>",
     "function"
   ],
   [
@@ -2550,9 +2562,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/index.js",
-    "file/src/admin/index.js.html",
-    "src/admin/index.js",
+    "src/admin/index.ts",
+    "file/src/admin/index.ts.html",
+    "src/admin/index.ts",
     "file"
   ],
   [
@@ -3180,63 +3192,57 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/translator.js",
-    "file/src/common/Translator.js.html",
-    "src/common/Translator.js",
+    "src/common/translator.ts",
+    "file/src/common/Translator.ts.html",
+    "src/common/Translator.ts",
     "file"
   ],
   [
-    "src/common/translator.js~translator#addtranslations",
-    "class/src/common/Translator.js~Translator.html#instance-method-addTranslations",
-    "src/common/Translator.js~Translator#addTranslations",
+    "src/common/translator.ts~translator#addtranslations",
+    "class/src/common/Translator.ts~Translator.html#instance-method-addTranslations",
+    "src/common/Translator.ts~Translator#addTranslations",
     "method"
   ],
   [
-    "src/common/translator.js~translator#constructor",
-    "class/src/common/Translator.js~Translator.html#instance-constructor-constructor",
-    "src/common/Translator.js~Translator#constructor",
+    "src/common/translator.ts~translator#constructor",
+    "class/src/common/Translator.ts~Translator.html#instance-constructor-constructor",
+    "src/common/Translator.ts~Translator#constructor",
     "method"
   ],
   [
-    "src/common/translator.js~translator#formatter",
-    "class/src/common/Translator.js~Translator.html#instance-member-formatter",
-    "src/common/Translator.js~Translator#formatter",
+    "src/common/translator.ts~translator#formatter",
+    "class/src/common/Translator.ts~Translator.html#instance-member-formatter",
+    "src/common/Translator.ts~Translator#formatter",
     "member"
   ],
   [
-    "src/common/translator.js~translator#formattertypehandlers",
-    "class/src/common/Translator.js~Translator.html#instance-method-formatterTypeHandlers",
-    "src/common/Translator.js~Translator#formatterTypeHandlers",
+    "src/common/translator.ts~translator#formattertypehandlers",
+    "class/src/common/Translator.ts~Translator.html#instance-method-formatterTypeHandlers",
+    "src/common/Translator.ts~Translator#formatterTypeHandlers",
     "method"
   ],
   [
-    "src/common/translator.js~translator#preprocessparameters",
-    "class/src/common/Translator.js~Translator.html#instance-method-preprocessParameters",
-    "src/common/Translator.js~Translator#preprocessParameters",
+    "src/common/translator.ts~translator#preprocessparameters",
+    "class/src/common/Translator.ts~Translator.html#instance-method-preprocessParameters",
+    "src/common/Translator.ts~Translator#preprocessParameters",
     "method"
   ],
   [
-    "src/common/translator.js~translator#setlocale",
-    "class/src/common/Translator.js~Translator.html#instance-method-setLocale",
-    "src/common/Translator.js~Translator#setLocale",
+    "src/common/translator.ts~translator#setlocale",
+    "class/src/common/Translator.ts~Translator.html#instance-method-setLocale",
+    "src/common/Translator.ts~Translator#setLocale",
     "method"
   ],
   [
-    "src/common/translator.js~translator#trans",
-    "class/src/common/Translator.js~Translator.html#instance-method-trans",
-    "src/common/Translator.js~Translator#trans",
+    "src/common/translator.ts~translator#trans",
+    "class/src/common/Translator.ts~Translator.html#instance-method-trans",
+    "src/common/Translator.ts~Translator#trans",
     "method"
   ],
   [
-    "src/common/translator.js~translator#transchoice",
-    "class/src/common/Translator.js~Translator.html#instance-method-transChoice",
-    "src/common/Translator.js~Translator#transChoice",
-    "method"
-  ],
-  [
-    "src/common/translator.js~translator#translations",
-    "class/src/common/Translator.js~Translator.html#instance-member-translations",
-    "src/common/Translator.js~Translator#translations",
+    "src/common/translator.ts~translator#translations",
+    "class/src/common/Translator.ts~Translator.html#instance-member-translations",
+    "src/common/Translator.ts~Translator#translations",
     "member"
   ],
   [
@@ -4422,6 +4428,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/utils/basiceditordriver.ts~basiceditordriver#keyhandlers",
+    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-keyHandlers",
+    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#keyHandlers",
+    "method"
+  ],
+  [
     "src/common/utils/basiceditordriver.ts~basiceditordriver#movecursorto",
     "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-moveCursorTo",
     "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#moveCursorTo",
@@ -4437,12 +4449,6 @@ window.esdocSearchIndex = [
     "src/common/utils/basiceditordriver.ts~basiceditordriver#setselectionrange",
     "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-setSelectionRange",
     "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#setSelectionRange",
-    "method"
-  ],
-  [
-    "src/common/utils/basiceditordriver.ts~basiceditordriver#setvalue",
-    "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html#instance-method-setValue",
-    "src/common/utils/BasicEditorDriver.ts~BasicEditorDriver#setValue",
     "method"
   ],
   [
@@ -4656,9 +4662,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/utils/stream.js",
-    "file/src/common/utils/Stream.js.html",
-    "src/common/utils/Stream.js",
+    "src/common/utils/stream.ts",
+    "file/src/common/utils/Stream.ts.html",
+    "src/common/utils/Stream.ts",
     "file"
   ],
   [
@@ -4776,6 +4782,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/common/utils/inserttext.ts",
+    "file/src/common/utils/insertText.ts.html",
+    "src/common/utils/insertText.ts",
+    "file"
+  ],
+  [
     "src/common/utils/livehumantimes.ts",
     "file/src/common/utils/liveHumanTimes.ts.html",
     "src/common/utils/liveHumanTimes.ts",
@@ -4821,6 +4833,12 @@ window.esdocSearchIndex = [
     "src/common/utils/stringtocolor.ts",
     "file/src/common/utils/stringToColor.ts.html",
     "src/common/utils/stringToColor.ts",
+    "file"
+  ],
+  [
+    "src/common/utils/styleselectedtext.ts",
+    "file/src/common/utils/styleSelectedText.ts.html",
+    "src/common/utils/styleSelectedText.ts",
     "file"
   ],
   [
@@ -7692,9 +7710,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/index.js",
-    "file/src/forum/index.js.html",
-    "src/forum/index.js",
+    "src/forum/index.ts",
+    "file/src/forum/index.ts.html",
+    "src/forum/index.ts",
     "file"
   ],
   [

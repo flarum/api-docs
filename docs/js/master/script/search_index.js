@@ -234,12 +234,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/discussionssearchsource~discussionssearchsource",
-    "class/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html",
-    "<span>DiscussionsSearchSource</span> <span class=\"search-result-import-path\">flarum/components/DiscussionsSearchSource</span>",
-    "class"
-  ],
-  [
     "flarum/components/discussionsuserpage~discussionsuserpage",
     "class/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html",
     "<span>DiscussionsUserPage</span> <span class=\"search-result-import-path\">flarum/components/DiscussionsUserPage</span>",
@@ -367,7 +361,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/states/globalsearchstate~globalsearchstate",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html",
     "<span>GlobalSearchState</span> <span class=\"search-result-import-path\">flarum/states/GlobalSearchState</span>",
     "class"
   ],
@@ -427,7 +421,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/utils/keyboardnavigatable~keyboardnavigatable",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html",
     "<span>KeyboardNavigatable</span> <span class=\"search-result-import-path\">flarum/utils/KeyboardNavigatable</span>",
     "class"
   ],
@@ -708,20 +702,8 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/components/search~search",
-    "class/src/forum/components/Search.js~Search.html",
-    "<span>Search</span> <span class=\"search-result-import-path\">flarum/components/Search</span>",
-    "class"
-  ],
-  [
-    "flarum/components/searchsource~searchsource",
-    "class/src/forum/components/SearchSource.js~SearchSource.html",
-    "<span>SearchSource</span> <span class=\"search-result-import-path\">flarum/components/SearchSource</span>",
-    "class"
-  ],
-  [
     "flarum/states/searchstate~searchstate",
-    "class/src/forum/states/SearchState.js~SearchState.html",
+    "class/src/forum/states/SearchState.ts~SearchState.html",
     "<span>SearchState</span> <span class=\"search-result-import-path\">flarum/states/SearchState</span>",
     "class"
   ],
@@ -861,12 +843,6 @@ window.esdocSearchIndex = [
     "flarum/components/userpage~userpage",
     "class/src/forum/components/UserPage.js~UserPage.html",
     "<span>UserPage</span> <span class=\"search-result-import-path\">flarum/components/UserPage</span>",
-    "class"
-  ],
-  [
-    "flarum/components/userssearchsource~userssearchresults",
-    "class/src/forum/components/UsersSearchSource.js~UsersSearchResults.html",
-    "<span>UsersSearchResults</span> <span class=\"search-result-import-path\">flarum/components/UsersSearchSource</span>",
     "class"
   ],
   [
@@ -5874,36 +5850,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/discussionssearchsource.js",
-    "file/src/forum/components/DiscussionsSearchSource.js.html",
-    "src/forum/components/DiscussionsSearchSource.js",
-    "file"
-  ],
-  [
-    "src/forum/components/discussionssearchsource.js~discussionssearchsource#constructor",
-    "class/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-constructor-constructor",
-    "src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource#constructor",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionssearchsource.js~discussionssearchsource#results",
-    "class/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-member-results",
-    "src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource#results",
-    "member"
-  ],
-  [
-    "src/forum/components/discussionssearchsource.js~discussionssearchsource#search",
-    "class/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-method-search",
-    "src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource#search",
-    "method"
-  ],
-  [
-    "src/forum/components/discussionssearchsource.js~discussionssearchsource#view",
-    "class/src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource.html#instance-method-view",
-    "src/forum/components/DiscussionsSearchSource.js~DiscussionsSearchSource#view",
-    "method"
-  ],
-  [
     "src/forum/components/discussionsuserpage.js",
     "file/src/forum/components/DiscussionsUserPage.js.html",
     "src/forum/components/DiscussionsUserPage.js",
@@ -7230,156 +7176,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/components/search.js",
-    "file/src/forum/components/Search.js.html",
-    "src/forum/components/Search.js",
-    "file"
-  ],
-  [
-    "src/forum/components/search.js~search#clear",
-    "class/src/forum/components/Search.js~Search.html#instance-method-clear",
-    "src/forum/components/Search.js~Search#clear",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#getcurrentnumericindex",
-    "class/src/forum/components/Search.js~Search.html#instance-method-getCurrentNumericIndex",
-    "src/forum/components/Search.js~Search#getCurrentNumericIndex",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#getitem",
-    "class/src/forum/components/Search.js~Search.html#instance-method-getItem",
-    "src/forum/components/Search.js~Search#getItem",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#hasfocus",
-    "class/src/forum/components/Search.js~Search.html#instance-member-hasFocus",
-    "src/forum/components/Search.js~Search#hasFocus",
-    "member"
-  ],
-  [
-    "src/forum/components/search.js~search#index",
-    "class/src/forum/components/Search.js~Search.html#instance-member-index",
-    "src/forum/components/Search.js~Search#index",
-    "member"
-  ],
-  [
-    "src/forum/components/search.js~search#loadingsources",
-    "class/src/forum/components/Search.js~Search.html#instance-member-loadingSources",
-    "src/forum/components/Search.js~Search#loadingSources",
-    "member"
-  ],
-  [
-    "src/forum/components/search.js~search#navigator",
-    "class/src/forum/components/Search.js~Search.html#instance-member-navigator",
-    "src/forum/components/Search.js~Search#navigator",
-    "member"
-  ],
-  [
-    "src/forum/components/search.js~search#oncreate",
-    "class/src/forum/components/Search.js~Search.html#instance-method-oncreate",
-    "src/forum/components/Search.js~Search#oncreate",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#oninit",
-    "class/src/forum/components/Search.js~Search.html#instance-method-oninit",
-    "src/forum/components/Search.js~Search#oninit",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#onremove",
-    "class/src/forum/components/Search.js~Search.html#instance-method-onremove",
-    "src/forum/components/Search.js~Search#onremove",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#onupdate",
-    "class/src/forum/components/Search.js~Search.html#instance-method-onupdate",
-    "src/forum/components/Search.js~Search#onupdate",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#selectresult",
-    "class/src/forum/components/Search.js~Search.html#instance-method-selectResult",
-    "src/forum/components/Search.js~Search#selectResult",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#selectableitems",
-    "class/src/forum/components/Search.js~Search.html#instance-method-selectableItems",
-    "src/forum/components/Search.js~Search#selectableItems",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#setindex",
-    "class/src/forum/components/Search.js~Search.html#instance-method-setIndex",
-    "src/forum/components/Search.js~Search#setIndex",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#sourceitems",
-    "class/src/forum/components/Search.js~Search.html#instance-method-sourceItems",
-    "src/forum/components/Search.js~Search#sourceItems",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#sources",
-    "class/src/forum/components/Search.js~Search.html#instance-member-sources",
-    "src/forum/components/Search.js~Search#sources",
-    "member"
-  ],
-  [
-    "src/forum/components/search.js~search#state",
-    "class/src/forum/components/Search.js~Search.html#instance-member-state",
-    "src/forum/components/Search.js~Search#state",
-    "member"
-  ],
-  [
-    "src/forum/components/search.js~search#updatemaxheight",
-    "class/src/forum/components/Search.js~Search.html#instance-method-updateMaxHeight",
-    "src/forum/components/Search.js~Search#updateMaxHeight",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search#updatemaxheighthandler",
-    "class/src/forum/components/Search.js~Search.html#instance-member-updateMaxHeightHandler",
-    "src/forum/components/Search.js~Search#updateMaxHeightHandler",
-    "member"
-  ],
-  [
-    "src/forum/components/search.js~search#view",
-    "class/src/forum/components/Search.js~Search.html#instance-method-view",
-    "src/forum/components/Search.js~Search#view",
-    "method"
-  ],
-  [
-    "src/forum/components/search.js~search.min_search_len",
-    "class/src/forum/components/Search.js~Search.html#static-member-MIN_SEARCH_LEN",
-    "src/forum/components/Search.js~Search.MIN_SEARCH_LEN",
-    "member"
-  ],
-  [
-    "src/forum/components/searchsource.js",
-    "file/src/forum/components/SearchSource.js.html",
-    "src/forum/components/SearchSource.js",
-    "file"
-  ],
-  [
-    "src/forum/components/searchsource.js~searchsource#search",
-    "class/src/forum/components/SearchSource.js~SearchSource.html#instance-method-search",
-    "src/forum/components/SearchSource.js~SearchSource#search",
-    "method"
-  ],
-  [
-    "src/forum/components/searchsource.js~searchsource#view",
-    "class/src/forum/components/SearchSource.js~SearchSource.html#instance-method-view",
-    "src/forum/components/SearchSource.js~SearchSource#view",
-    "method"
-  ],
-  [
     "src/forum/components/sessiondropdown.js",
     "file/src/forum/components/SessionDropdown.js.html",
     "src/forum/components/SessionDropdown.js",
@@ -7647,36 +7443,6 @@ window.esdocSearchIndex = [
     "src/forum/components/userpage.js~userpage#view",
     "class/src/forum/components/UserPage.js~UserPage.html#instance-method-view",
     "src/forum/components/UserPage.js~UserPage#view",
-    "method"
-  ],
-  [
-    "src/forum/components/userssearchsource.js",
-    "file/src/forum/components/UsersSearchSource.js.html",
-    "src/forum/components/UsersSearchSource.js",
-    "file"
-  ],
-  [
-    "src/forum/components/userssearchsource.js~userssearchresults#constructor",
-    "class/src/forum/components/UsersSearchSource.js~UsersSearchResults.html#instance-constructor-constructor",
-    "src/forum/components/UsersSearchSource.js~UsersSearchResults#constructor",
-    "method"
-  ],
-  [
-    "src/forum/components/userssearchsource.js~userssearchresults#results",
-    "class/src/forum/components/UsersSearchSource.js~UsersSearchResults.html#instance-member-results",
-    "src/forum/components/UsersSearchSource.js~UsersSearchResults#results",
-    "member"
-  ],
-  [
-    "src/forum/components/userssearchsource.js~userssearchresults#search",
-    "class/src/forum/components/UsersSearchSource.js~UsersSearchResults.html#instance-method-search",
-    "src/forum/components/UsersSearchSource.js~UsersSearchResults#search",
-    "method"
-  ],
-  [
-    "src/forum/components/userssearchsource.js~userssearchresults#view",
-    "class/src/forum/components/UsersSearchSource.js~UsersSearchResults.html#instance-method-view",
-    "src/forum/components/UsersSearchSource.js~UsersSearchResults#view",
     "method"
   ],
   [
@@ -8034,64 +7800,76 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/states/globalsearchstate.js",
-    "file/src/forum/states/GlobalSearchState.js.html",
-    "src/forum/states/GlobalSearchState.js",
+    "src/forum/states/globalsearchstate.ts",
+    "file/src/forum/states/GlobalSearchState.ts.html",
+    "src/forum/states/GlobalSearchState.ts",
     "file"
   ],
   [
-    "src/forum/states/globalsearchstate.js~globalsearchstate#changesort",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-changeSort",
-    "src/forum/states/GlobalSearchState.js~GlobalSearchState#changeSort",
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#changesort",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-method-changeSort",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#changeSort",
     "method"
   ],
   [
-    "src/forum/states/globalsearchstate.js~globalsearchstate#clear",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-clear",
-    "src/forum/states/GlobalSearchState.js~GlobalSearchState#clear",
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#clear",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-method-clear",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#clear",
     "method"
   ],
   [
-    "src/forum/states/globalsearchstate.js~globalsearchstate#clearinitialsearch",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-clearInitialSearch",
-    "src/forum/states/GlobalSearchState.js~GlobalSearchState#clearInitialSearch",
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#clearinitialsearch",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-method-clearInitialSearch",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#clearInitialSearch",
     "method"
   ],
   [
-    "src/forum/states/globalsearchstate.js~globalsearchstate#constructor",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-constructor-constructor",
-    "src/forum/states/GlobalSearchState.js~GlobalSearchState#constructor",
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#constructor",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-constructor-constructor",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#constructor",
     "method"
   ],
   [
-    "src/forum/states/globalsearchstate.js~globalsearchstate#getinitialsearch",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-getInitialSearch",
-    "src/forum/states/GlobalSearchState.js~GlobalSearchState#getInitialSearch",
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#currpageprovidessearch",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-method-currPageProvidesSearch",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#currPageProvidesSearch",
     "method"
   ],
   [
-    "src/forum/states/globalsearchstate.js~globalsearchstate#getvalue",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-getValue",
-    "src/forum/states/GlobalSearchState.js~GlobalSearchState#getValue",
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#getinitialsearch",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-method-getInitialSearch",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#getInitialSearch",
     "method"
   ],
   [
-    "src/forum/states/globalsearchstate.js~globalsearchstate#params",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-params",
-    "src/forum/states/GlobalSearchState.js~GlobalSearchState#params",
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#getvalue",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-method-getValue",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#getValue",
     "method"
   ],
   [
-    "src/forum/states/globalsearchstate.js~globalsearchstate#stickyparams",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-method-stickyParams",
-    "src/forum/states/GlobalSearchState.js~GlobalSearchState#stickyParams",
-    "method"
-  ],
-  [
-    "src/forum/states/globalsearchstate.js~globalsearchstate#value",
-    "class/src/forum/states/GlobalSearchState.js~GlobalSearchState.html#instance-member-value",
-    "src/forum/states/GlobalSearchState.js~GlobalSearchState#value",
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#initialvalueset",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-member-initialValueSet",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#initialValueSet",
     "member"
+  ],
+  [
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#intializevalue",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-method-intializeValue",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#intializeValue",
+    "method"
+  ],
+  [
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#params",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-method-params",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#params",
+    "method"
+  ],
+  [
+    "src/forum/states/globalsearchstate.ts~globalsearchstate#stickyparams",
+    "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html#instance-method-stickyParams",
+    "src/forum/states/GlobalSearchState.ts~GlobalSearchState#stickyParams",
+    "method"
   ],
   [
     "src/forum/states/notificationliststate.js",
@@ -8400,57 +8178,63 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/states/searchstate.js",
-    "file/src/forum/states/SearchState.js.html",
-    "src/forum/states/SearchState.js",
+    "src/forum/states/searchstate.ts",
+    "file/src/forum/states/SearchState.ts.html",
+    "src/forum/states/SearchState.ts",
     "file"
   ],
   [
-    "src/forum/states/searchstate.js~searchstate#cache",
-    "class/src/forum/states/SearchState.js~SearchState.html#instance-method-cache",
-    "src/forum/states/SearchState.js~SearchState#cache",
+    "src/forum/states/searchstate.ts~searchstate#cache",
+    "class/src/forum/states/SearchState.ts~SearchState.html#instance-method-cache",
+    "src/forum/states/SearchState.ts~SearchState#cache",
     "method"
   ],
   [
-    "src/forum/states/searchstate.js~searchstate#cachedsearches",
-    "class/src/forum/states/SearchState.js~SearchState.html#instance-member-cachedSearches",
-    "src/forum/states/SearchState.js~SearchState#cachedSearches",
+    "src/forum/states/searchstate.ts~searchstate#cachedsearches",
+    "class/src/forum/states/SearchState.ts~SearchState.html#instance-member-cachedSearches",
+    "src/forum/states/SearchState.ts~SearchState#cachedSearches",
     "member"
   ],
   [
-    "src/forum/states/searchstate.js~searchstate#clear",
-    "class/src/forum/states/SearchState.js~SearchState.html#instance-method-clear",
-    "src/forum/states/SearchState.js~SearchState#clear",
+    "src/forum/states/searchstate.ts~searchstate#clear",
+    "class/src/forum/states/SearchState.ts~SearchState.html#instance-method-clear",
+    "src/forum/states/SearchState.ts~SearchState#clear",
     "method"
   ],
   [
-    "src/forum/states/searchstate.js~searchstate#constructor",
-    "class/src/forum/states/SearchState.js~SearchState.html#instance-constructor-constructor",
-    "src/forum/states/SearchState.js~SearchState#constructor",
+    "src/forum/states/searchstate.ts~searchstate#constructor",
+    "class/src/forum/states/SearchState.ts~SearchState.html#instance-constructor-constructor",
+    "src/forum/states/SearchState.ts~SearchState#constructor",
     "method"
   ],
   [
-    "src/forum/states/searchstate.js~searchstate#getvalue",
-    "class/src/forum/states/SearchState.js~SearchState.html#instance-method-getValue",
-    "src/forum/states/SearchState.js~SearchState#getValue",
+    "src/forum/states/searchstate.ts~searchstate#getinitialsearch",
+    "class/src/forum/states/SearchState.ts~SearchState.html#instance-method-getInitialSearch",
+    "src/forum/states/SearchState.ts~SearchState#getInitialSearch",
     "method"
   ],
   [
-    "src/forum/states/searchstate.js~searchstate#iscached",
-    "class/src/forum/states/SearchState.js~SearchState.html#instance-method-isCached",
-    "src/forum/states/SearchState.js~SearchState#isCached",
+    "src/forum/states/searchstate.ts~searchstate#getvalue",
+    "class/src/forum/states/SearchState.ts~SearchState.html#instance-method-getValue",
+    "src/forum/states/SearchState.ts~SearchState#getValue",
     "method"
   ],
   [
-    "src/forum/states/searchstate.js~searchstate#setvalue",
-    "class/src/forum/states/SearchState.js~SearchState.html#instance-method-setValue",
-    "src/forum/states/SearchState.js~SearchState#setValue",
+    "src/forum/states/searchstate.ts~searchstate#iscached",
+    "class/src/forum/states/SearchState.ts~SearchState.html#instance-method-isCached",
+    "src/forum/states/SearchState.ts~SearchState#isCached",
     "method"
   ],
   [
-    "src/forum/states/searchstate.js~searchstate#value",
-    "class/src/forum/states/SearchState.js~SearchState.html#instance-member-value",
-    "src/forum/states/SearchState.js~SearchState#value",
+    "src/forum/states/searchstate.ts~searchstate#setvalue",
+    "class/src/forum/states/SearchState.ts~SearchState.html#instance-method-setValue",
+    "src/forum/states/SearchState.ts~SearchState#setValue",
+    "method"
+  ],
+  [
+    "src/forum/states/searchstate.ts~searchstate#value",
+    "class/src/forum/states/SearchState.ts~SearchState.html#instance-member-value",
+    "src/forum/states/SearchState.ts~SearchState#value",
     "member"
   ],
   [
@@ -8520,75 +8304,75 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js",
-    "file/src/forum/utils/KeyboardNavigatable.js.html",
-    "src/forum/utils/KeyboardNavigatable.js",
+    "src/forum/utils/keyboardnavigatable.ts",
+    "file/src/forum/utils/KeyboardNavigatable.ts.html",
+    "src/forum/utils/KeyboardNavigatable.ts",
     "file"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#bindto",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-bindTo",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#bindTo",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#bindto",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-method-bindTo",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#bindTo",
     "method"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#callbacks",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-member-callbacks",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#callbacks",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#callbacks",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-member-callbacks",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#callbacks",
     "member"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#constructor",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-constructor-constructor",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#constructor",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#constructor",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-constructor-constructor",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#constructor",
     "method"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#navigate",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-navigate",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#navigate",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#navigate",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-method-navigate",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#navigate",
     "method"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#oncancel",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onCancel",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#onCancel",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#oncancel",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-method-onCancel",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#onCancel",
     "method"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#ondown",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onDown",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#onDown",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#ondown",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-method-onDown",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#onDown",
     "method"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#onremove",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onRemove",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#onRemove",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#onremove",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-method-onRemove",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#onRemove",
     "method"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#onselect",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onSelect",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#onSelect",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#onselect",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-method-onSelect",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#onSelect",
     "method"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#onup",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-onUp",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#onUp",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#onup",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-method-onUp",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#onUp",
     "method"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#when",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-method-when",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#when",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#when",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-method-when",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#when",
     "method"
   ],
   [
-    "src/forum/utils/keyboardnavigatable.js~keyboardnavigatable#whencallback",
-    "class/src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable.html#instance-member-whenCallback",
-    "src/forum/utils/KeyboardNavigatable.js~KeyboardNavigatable#whenCallback",
+    "src/forum/utils/keyboardnavigatable.ts~keyboardnavigatable#whencallback",
+    "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html#instance-member-whenCallback",
+    "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable#whenCallback",
     "member"
   ],
   [

@@ -18642,7 +18642,7 @@
     "importPath": "flarum/components/DiscussionList",
     "importStyle": "DiscussionList",
     "description": "The `DiscussionList` component displays a list of discussions.\n\n### Attrs\n\n- `state` A DiscussionListState object that represents the discussion lists's state.",
-    "lineNumber": 14,
+    "lineNumber": 15,
     "interface": false,
     "extends": [
       "src/common/Component.js~Component"
@@ -18659,7 +18659,7 @@
     "longname": "src/forum/components/DiscussionList.js~DiscussionList#view",
     "access": "public",
     "description": null,
-    "lineNumber": 15,
+    "lineNumber": 16,
     "undocument": true,
     "params": [],
     "return": {
@@ -26486,10 +26486,10 @@
   {
     "__docId__": 1378,
     "kind": "file",
-    "name": "src/forum/states/DiscussionListState.js",
+    "name": "src/forum/states/DiscussionListState.ts",
     "content": "",
     "static": true,
-    "longname": "/home/runner/work/api-docs/api-docs/flarum/js/src/forum/states/DiscussionListState.js",
+    "longname": "/home/runner/work/api-docs/api-docs/flarum/js/src/forum/states/DiscussionListState.ts",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -26498,110 +26498,136 @@
     "__docId__": 1379,
     "kind": "class",
     "name": "DiscussionListState",
-    "memberof": "src/forum/states/DiscussionListState.js",
+    "memberof": "src/forum/states/DiscussionListState.ts",
     "static": true,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState",
     "access": "public",
     "export": true,
     "importPath": "flarum/states/DiscussionListState",
     "importStyle": "DiscussionListState",
-    "description": null,
-    "lineNumber": 1,
-    "undocument": true,
-    "interface": false
+    "description": "",
+    "lineNumber": 4,
+    "interface": false,
+    "extends": [
+      "src/common/states/PaginatedListState.js~PaginatedListState"
+    ]
   },
   {
     "__docId__": 1380,
     "kind": "constructor",
     "name": "constructor",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#constructor",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#constructor",
     "access": "public",
     "description": null,
-    "lineNumber": 2,
+    "lineNumber": 9,
     "undocument": true
   },
   {
     "__docId__": 1381,
     "kind": "member",
-    "name": "params",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "name": "extraDiscussions",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#params",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#extraDiscussions",
     "access": "public",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
+    "description": "",
+    "lineNumber": 5,
     "type": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "undefined"
+      ],
+      "spread": false,
+      "description": null
     }
   },
   {
     "__docId__": 1382,
-    "kind": "member",
-    "name": "app",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "kind": "get",
+    "name": "type",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
+    "generator": false,
+    "async": false,
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#app",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#type",
     "access": "public",
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
+    "description": "",
+    "lineNumber": 11,
     "type": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "string"
+      ],
+      "spread": false,
+      "description": null
     }
   },
   {
     "__docId__": 1383,
-    "kind": "member",
-    "name": "discussions",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "kind": "method",
+    "name": "requestParams",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
+    "generator": false,
+    "async": false,
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#discussions",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#requestParams",
     "access": "public",
-    "description": null,
-    "lineNumber": 7,
-    "undocument": true,
-    "type": {
+    "description": "",
+    "lineNumber": 15,
+    "params": [],
+    "return": {
       "types": [
-        "*[]"
+        "*"
       ]
     }
   },
   {
     "__docId__": 1384,
-    "kind": "member",
-    "name": "moreResults",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "kind": "method",
+    "name": "loadPage",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
+    "generator": false,
+    "async": false,
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#moreResults",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#loadPage",
     "access": "public",
-    "description": null,
-    "lineNumber": 9,
-    "undocument": true,
-    "type": {
+    "description": "",
+    "lineNumber": 28,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "page",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
       "types": [
-        "boolean"
-      ]
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
     }
   },
   {
     "__docId__": 1385,
     "kind": "member",
-    "name": "loading",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "name": "initialLoading",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#loading",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#initialLoading",
     "access": "public",
     "description": null,
-    "lineNumber": 11,
+    "lineNumber": 60,
     "undocument": true,
     "type": {
       "types": [
@@ -26612,59 +26638,30 @@
   {
     "__docId__": 1386,
     "kind": "method",
-    "name": "requestParams",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "name": "clear",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#requestParams",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#clear",
     "access": "public",
-    "description": "Get the parameters that should be passed in the API request to get\ndiscussion results.",
-    "lineNumber": 20,
-    "unknown": [
-      {
-        "tagName": "@api",
-        "tagValue": ""
-      }
-    ],
+    "description": "",
+    "lineNumber": 40,
     "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 1387,
-    "kind": "method",
-    "name": "sortMap",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#sortMap",
-    "access": "public",
-    "description": "Get a map of sort keys (which appear in the URL, and are used for\ntranslation) to the API sort value that they represent.",
-    "lineNumber": 38,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
+    "return": null
   },
   {
     "__docId__": 1388,
     "kind": "method",
-    "name": "getParams",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "name": "sortMap",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#getParams",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#sortMap",
     "access": "public",
-    "description": "Get the search parameters.",
-    "lineNumber": 55,
+    "description": "Get a map of sort keys (which appear in the URL, and are used for\ntranslation) to the API sort value that they represent.",
+    "lineNumber": 50,
     "params": [],
     "return": {
       "types": [
@@ -26675,262 +26672,120 @@
   {
     "__docId__": 1389,
     "kind": "method",
-    "name": "clear",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "name": "isSearchResults",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#clear",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#isSearchResults",
     "access": "public",
-    "description": "Clear cached discussions.",
-    "lineNumber": 62,
+    "description": "In the last request, has the user searched for a discussion?",
+    "lineNumber": 67,
     "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 1390,
+    "kind": "method",
+    "name": "removeDiscussion",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#removeDiscussion",
+    "access": "public",
+    "description": "",
+    "lineNumber": 71,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Discussion"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "discussion",
+        "description": ""
+      }
+    ],
     "return": null
   },
   {
     "__docId__": 1391,
     "kind": "method",
-    "name": "refreshParams",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "name": "addDiscussion",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#refreshParams",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#addDiscussion",
     "access": "public",
-    "description": "If there are no cached discussions or the new params differ from the\nold ones, update params and refresh the discussion list from the database.",
-    "lineNumber": 71,
-    "params": [
-      {
-        "name": "newParams",
-        "types": [
-          "*"
-        ]
-      }
-    ],
-    "return": null
-  },
-  {
-    "__docId__": 1393,
-    "kind": "method",
-    "name": "refresh",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#refresh",
-    "access": "public",
-    "description": "Clear and reload the discussion list. Passing the option `deferClear: true`\nwill clear discussions only after new data has been received.\nThis can be used to refresh discussions without loading animations.",
-    "lineNumber": 84,
-    "params": [
-      {
-        "name": "objectPattern",
-        "optional": true,
-        "types": [
-          "{\"deferClear\": *}"
-        ],
-        "defaultRaw": {},
-        "defaultValue": "{}"
-      }
-    ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 1397,
-    "kind": "method",
-    "name": "loadResults",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#loadResults",
-    "access": "public",
-    "description": "Load a new page of discussion results.",
-    "lineNumber": 111,
+    "description": "Add a discussion to the top of the list.",
+    "lineNumber": 93,
     "params": [
       {
         "nullable": null,
         "types": [
-          "*"
+          "Discussion"
         ],
         "spread": false,
         "optional": false,
-        "name": "offset",
-        "description": "The index to start the page at."
-      }
-    ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 1398,
-    "kind": "method",
-    "name": "loadMore",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#loadMore",
-    "access": "public",
-    "description": "Load the next page of discussion results.",
-    "lineNumber": 128,
-    "params": [],
-    "return": null
-  },
-  {
-    "__docId__": 1400,
-    "kind": "method",
-    "name": "parseResults",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#parseResults",
-    "access": "public",
-    "description": "Parse results and append them to the discussion list.",
-    "lineNumber": 137,
-    "params": [
-      {
-        "name": "results",
-        "types": [
-          "*"
-        ]
-      }
-    ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 1403,
-    "kind": "method",
-    "name": "removeDiscussion",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#removeDiscussion",
-    "access": "public",
-    "description": "Remove a discussion from the list if it is present.",
-    "lineNumber": 151,
-    "params": [
-      {
         "name": "discussion",
-        "types": [
-          "*"
-        ]
+        "description": ""
       }
     ],
     "return": null
   },
   {
-    "__docId__": 1404,
+    "__docId__": 1392,
     "kind": "method",
-    "name": "addDiscussion",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "name": "getAllItems",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#addDiscussion",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#getAllItems",
     "access": "public",
-    "description": "Add a discussion to the top of the list.",
-    "lineNumber": 164,
-    "params": [
-      {
-        "name": "discussion",
-        "types": [
-          "*"
-        ]
-      }
-    ],
-    "return": null
-  },
-  {
-    "__docId__": 1405,
-    "kind": "method",
-    "name": "hasDiscussions",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#hasDiscussions",
-    "access": "public",
-    "description": "Are there discussions stored in the discussion list state?",
-    "lineNumber": 172,
-    "params": [],
+    "description": "",
+    "lineNumber": 100,
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
-    }
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
   },
   {
-    "__docId__": 1406,
+    "__docId__": 1393,
     "kind": "method",
-    "name": "isLoading",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
+    "name": "getPages",
+    "memberof": "src/forum/states/DiscussionListState.ts~DiscussionListState",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#isLoading",
+    "longname": "src/forum/states/DiscussionListState.ts~DiscussionListState#getPages",
     "access": "public",
-    "description": "Are discussions currently being loaded?",
-    "lineNumber": 179,
-    "params": [],
+    "description": "",
+    "lineNumber": 104,
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
-    }
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
   },
   {
-    "__docId__": 1407,
-    "kind": "method",
-    "name": "isSearchResults",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#isSearchResults",
-    "access": "public",
-    "description": "In the last request, has the user searched for a discussion?",
-    "lineNumber": 186,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 1408,
-    "kind": "method",
-    "name": "empty",
-    "memberof": "src/forum/states/DiscussionListState.js~DiscussionListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/DiscussionListState.js~DiscussionListState#empty",
-    "access": "public",
-    "description": "Have the search results come up empty?",
-    "lineNumber": 193,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 1409,
+    "__docId__": 1394,
     "kind": "file",
     "name": "src/forum/states/GlobalSearchState.ts",
     "content": "",
@@ -26941,7 +26796,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1410,
+    "__docId__": 1395,
     "kind": "class",
     "name": "GlobalSearchState",
     "memberof": "src/forum/states/GlobalSearchState.ts",
@@ -26959,7 +26814,7 @@
     ]
   },
   {
-    "__docId__": 1411,
+    "__docId__": 1396,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -26973,7 +26828,7 @@
     "undocument": true
   },
   {
-    "__docId__": 1412,
+    "__docId__": 1397,
     "kind": "member",
     "name": "initialValueSet",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -26989,7 +26844,7 @@
     }
   },
   {
-    "__docId__": 1413,
+    "__docId__": 1398,
     "kind": "method",
     "name": "getValue",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -27011,7 +26866,7 @@
     "params": []
   },
   {
-    "__docId__": 1414,
+    "__docId__": 1399,
     "kind": "method",
     "name": "intializeValue",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -27026,7 +26881,7 @@
     "return": null
   },
   {
-    "__docId__": 1416,
+    "__docId__": 1401,
     "kind": "method",
     "name": "currPageProvidesSearch",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -27048,7 +26903,7 @@
     "params": []
   },
   {
-    "__docId__": 1417,
+    "__docId__": 1402,
     "kind": "method",
     "name": "getInitialSearch",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -27073,7 +26928,7 @@
     }
   },
   {
-    "__docId__": 1418,
+    "__docId__": 1403,
     "kind": "method",
     "name": "clear",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -27088,7 +26943,7 @@
     "return": null
   },
   {
-    "__docId__": 1419,
+    "__docId__": 1404,
     "kind": "method",
     "name": "clearInitialSearch",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -27103,7 +26958,7 @@
     "return": null
   },
   {
-    "__docId__": 1420,
+    "__docId__": 1405,
     "kind": "method",
     "name": "stickyParams",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -27125,7 +26980,7 @@
     "params": []
   },
   {
-    "__docId__": 1421,
+    "__docId__": 1406,
     "kind": "method",
     "name": "params",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -27147,7 +27002,7 @@
     "params": []
   },
   {
-    "__docId__": 1422,
+    "__docId__": 1407,
     "kind": "method",
     "name": "changeSort",
     "memberof": "src/forum/states/GlobalSearchState.ts~GlobalSearchState",
@@ -27173,73 +27028,101 @@
     "return": null
   },
   {
-    "__docId__": 1423,
+    "__docId__": 1408,
     "kind": "file",
-    "name": "src/forum/states/NotificationListState.js",
+    "name": "src/forum/states/NotificationListState.ts",
     "content": "",
     "static": true,
-    "longname": "/home/runner/work/api-docs/api-docs/flarum/js/src/forum/states/NotificationListState.js",
+    "longname": "/home/runner/work/api-docs/api-docs/flarum/js/src/forum/states/NotificationListState.ts",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 1424,
+    "__docId__": 1409,
     "kind": "class",
     "name": "NotificationListState",
-    "memberof": "src/forum/states/NotificationListState.js",
+    "memberof": "src/forum/states/NotificationListState.ts",
     "static": true,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState",
+    "longname": "src/forum/states/NotificationListState.ts~NotificationListState",
     "access": "public",
     "export": true,
     "importPath": "flarum/states/NotificationListState",
     "importStyle": "NotificationListState",
-    "description": null,
-    "lineNumber": 1,
-    "undocument": true,
-    "interface": false
+    "description": "",
+    "lineNumber": 4,
+    "interface": false,
+    "extends": [
+      "src/common/states/PaginatedListState.js~PaginatedListState"
+    ]
   },
   {
-    "__docId__": 1425,
+    "__docId__": 1410,
     "kind": "constructor",
     "name": "constructor",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
+    "memberof": "src/forum/states/NotificationListState.ts~NotificationListState",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#constructor",
+    "longname": "src/forum/states/NotificationListState.ts~NotificationListState#constructor",
     "access": "public",
     "description": null,
-    "lineNumber": 2,
+    "lineNumber": 9,
     "undocument": true
   },
   {
-    "__docId__": 1426,
-    "kind": "member",
-    "name": "app",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
+    "__docId__": 1411,
+    "kind": "get",
+    "name": "type",
+    "memberof": "src/forum/states/NotificationListState.ts~NotificationListState",
+    "generator": false,
+    "async": false,
     "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#app",
+    "longname": "src/forum/states/NotificationListState.ts~NotificationListState#type",
     "access": "public",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
+    "description": "",
+    "lineNumber": 9,
     "type": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "string"
+      ],
+      "spread": false,
+      "description": null
     }
   },
   {
-    "__docId__": 1427,
-    "kind": "member",
-    "name": "notificationPages",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
+    "__docId__": 1412,
+    "kind": "method",
+    "name": "load",
+    "memberof": "src/forum/states/NotificationListState.ts~NotificationListState",
+    "generator": false,
+    "async": false,
     "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#notificationPages",
+    "longname": "src/forum/states/NotificationListState.ts~NotificationListState#load",
+    "access": "public",
+    "description": "Load the next page of notification results.",
+    "lineNumber": 16,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 1413,
+    "kind": "member",
+    "name": "pages",
+    "memberof": "src/forum/states/NotificationListState.ts~NotificationListState",
+    "static": false,
+    "longname": "src/forum/states/NotificationListState.ts~NotificationListState#pages",
     "access": "public",
     "description": null,
-    "lineNumber": 5,
+    "lineNumber": 33,
     "undocument": true,
     "type": {
       "types": [
@@ -27248,199 +27131,43 @@
     }
   },
   {
-    "__docId__": 1428,
+    "__docId__": 1414,
     "kind": "member",
-    "name": "loading",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
+    "name": "location",
+    "memberof": "src/forum/states/NotificationListState.ts~NotificationListState",
     "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#loading",
+    "longname": "src/forum/states/NotificationListState.ts~NotificationListState#location",
     "access": "public",
     "description": null,
-    "lineNumber": 7,
+    "lineNumber": 34,
     "undocument": true,
     "type": {
       "types": [
-        "boolean"
+        "{\"page\": number}"
       ]
     }
   },
   {
-    "__docId__": 1429,
-    "kind": "member",
-    "name": "moreResults",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
-    "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#moreResults",
-    "access": "public",
-    "description": null,
-    "lineNumber": 9,
-    "undocument": true,
-    "type": {
-      "types": [
-        "boolean"
-      ]
-    }
-  },
-  {
-    "__docId__": 1430,
-    "kind": "method",
-    "name": "clear",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#clear",
-    "access": "public",
-    "description": null,
-    "lineNumber": 12,
-    "undocument": true,
-    "params": [],
-    "return": null
-  },
-  {
-    "__docId__": 1432,
-    "kind": "method",
-    "name": "getNotificationPages",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#getNotificationPages",
-    "access": "public",
-    "description": null,
-    "lineNumber": 16,
-    "undocument": true,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 1433,
-    "kind": "method",
-    "name": "isLoading",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#isLoading",
-    "access": "public",
-    "description": null,
-    "lineNumber": 20,
-    "undocument": true,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 1434,
-    "kind": "method",
-    "name": "hasMoreResults",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#hasMoreResults",
-    "access": "public",
-    "description": null,
-    "lineNumber": 24,
-    "undocument": true,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 1435,
-    "kind": "method",
-    "name": "load",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#load",
-    "access": "public",
-    "description": "Load notifications into the application's cache if they haven't already\nbeen loaded.",
-    "lineNumber": 32,
-    "params": [],
-    "return": null
-  },
-  {
-    "__docId__": 1437,
-    "kind": "method",
-    "name": "loadMore",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#loadMore",
-    "access": "public",
-    "description": "Load the next page of notification results.",
-    "lineNumber": 51,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 1440,
-    "kind": "method",
-    "name": "parseResults",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#parseResults",
-    "access": "public",
-    "description": "Parse results and append them to the notification list.",
-    "lineNumber": 73,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "Notification[]"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "results",
-        "description": ""
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "Notification[]"
-      ],
-      "spread": false,
-      "description": ""
-    }
-  },
-  {
-    "__docId__": 1442,
+    "__docId__": 1415,
     "kind": "method",
     "name": "markAllAsRead",
-    "memberof": "src/forum/states/NotificationListState.js~NotificationListState",
+    "memberof": "src/forum/states/NotificationListState.ts~NotificationListState",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/forum/states/NotificationListState.js~NotificationListState#markAllAsRead",
+    "longname": "src/forum/states/NotificationListState.ts~NotificationListState#markAllAsRead",
     "access": "public",
     "description": "Mark all of the notifications as read.",
-    "lineNumber": 84,
+    "lineNumber": 34,
     "params": [],
-    "return": null
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
   },
   {
-    "__docId__": 1443,
+    "__docId__": 1416,
     "kind": "file",
     "name": "src/forum/states/PostStreamState.js",
     "content": "",
@@ -27451,7 +27178,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1444,
+    "__docId__": 1417,
     "kind": "class",
     "name": "PostStreamState",
     "memberof": "src/forum/states/PostStreamState.js",
@@ -27467,7 +27194,7 @@
     "interface": false
   },
   {
-    "__docId__": 1445,
+    "__docId__": 1418,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27481,7 +27208,7 @@
     "undocument": true
   },
   {
-    "__docId__": 1446,
+    "__docId__": 1419,
     "kind": "member",
     "name": "discussion",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27500,7 +27227,7 @@
     }
   },
   {
-    "__docId__": 1447,
+    "__docId__": 1420,
     "kind": "member",
     "name": "paused",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27519,7 +27246,7 @@
     }
   },
   {
-    "__docId__": 1448,
+    "__docId__": 1421,
     "kind": "member",
     "name": "loadPageTimeouts",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27536,7 +27263,7 @@
     }
   },
   {
-    "__docId__": 1449,
+    "__docId__": 1422,
     "kind": "member",
     "name": "pagesLoading",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27553,7 +27280,7 @@
     }
   },
   {
-    "__docId__": 1450,
+    "__docId__": 1423,
     "kind": "member",
     "name": "index",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27570,7 +27297,7 @@
     }
   },
   {
-    "__docId__": 1451,
+    "__docId__": 1424,
     "kind": "member",
     "name": "number",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27587,7 +27314,7 @@
     }
   },
   {
-    "__docId__": 1452,
+    "__docId__": 1425,
     "kind": "member",
     "name": "visible",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27606,7 +27333,7 @@
     }
   },
   {
-    "__docId__": 1453,
+    "__docId__": 1426,
     "kind": "member",
     "name": "description",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27625,7 +27352,7 @@
     }
   },
   {
-    "__docId__": 1454,
+    "__docId__": 1427,
     "kind": "member",
     "name": "forceUpdateScrubber",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27644,7 +27371,7 @@
     }
   },
   {
-    "__docId__": 1455,
+    "__docId__": 1428,
     "kind": "member",
     "name": "loadNext",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27661,7 +27388,7 @@
     }
   },
   {
-    "__docId__": 1456,
+    "__docId__": 1429,
     "kind": "member",
     "name": "loadPrevious",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27678,7 +27405,7 @@
     }
   },
   {
-    "__docId__": 1457,
+    "__docId__": 1430,
     "kind": "method",
     "name": "update",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27697,7 +27424,7 @@
     }
   },
   {
-    "__docId__": 1458,
+    "__docId__": 1431,
     "kind": "member",
     "name": "visibleEnd",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27714,7 +27441,7 @@
     }
   },
   {
-    "__docId__": 1459,
+    "__docId__": 1432,
     "kind": "method",
     "name": "goToFirst",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27736,7 +27463,7 @@
     "params": []
   },
   {
-    "__docId__": 1460,
+    "__docId__": 1433,
     "kind": "method",
     "name": "goToLast",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27758,7 +27485,7 @@
     "params": []
   },
   {
-    "__docId__": 1461,
+    "__docId__": 1434,
     "kind": "method",
     "name": "goToNumber",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27802,7 +27529,7 @@
     }
   },
   {
-    "__docId__": 1463,
+    "__docId__": 1436,
     "kind": "member",
     "name": "loadPromise",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27819,7 +27546,7 @@
     }
   },
   {
-    "__docId__": 1464,
+    "__docId__": 1437,
     "kind": "member",
     "name": "needsScroll",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27836,7 +27563,7 @@
     }
   },
   {
-    "__docId__": 1465,
+    "__docId__": 1438,
     "kind": "member",
     "name": "targetPost",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27853,7 +27580,7 @@
     }
   },
   {
-    "__docId__": 1466,
+    "__docId__": 1439,
     "kind": "member",
     "name": "animateScroll",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27870,7 +27597,7 @@
     }
   },
   {
-    "__docId__": 1468,
+    "__docId__": 1441,
     "kind": "method",
     "name": "goToIndex",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27913,7 +27640,7 @@
     }
   },
   {
-    "__docId__": 1475,
+    "__docId__": 1448,
     "kind": "method",
     "name": "loadNearNumber",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27946,7 +27673,7 @@
     }
   },
   {
-    "__docId__": 1476,
+    "__docId__": 1449,
     "kind": "method",
     "name": "loadNearIndex",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27979,7 +27706,7 @@
     }
   },
   {
-    "__docId__": 1477,
+    "__docId__": 1450,
     "kind": "method",
     "name": "_loadNext",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -27994,7 +27721,7 @@
     "return": null
   },
   {
-    "__docId__": 1478,
+    "__docId__": 1451,
     "kind": "member",
     "name": "visibleStart",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28011,7 +27738,7 @@
     }
   },
   {
-    "__docId__": 1479,
+    "__docId__": 1452,
     "kind": "method",
     "name": "_loadPrevious",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28026,7 +27753,7 @@
     "return": null
   },
   {
-    "__docId__": 1481,
+    "__docId__": 1454,
     "kind": "method",
     "name": "loadPage",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28072,7 +27799,7 @@
     "return": null
   },
   {
-    "__docId__": 1482,
+    "__docId__": 1455,
     "kind": "method",
     "name": "loadRange",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28115,7 +27842,7 @@
     }
   },
   {
-    "__docId__": 1483,
+    "__docId__": 1456,
     "kind": "method",
     "name": "show",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28141,7 +27868,7 @@
     "return": null
   },
   {
-    "__docId__": 1486,
+    "__docId__": 1459,
     "kind": "method",
     "name": "reset",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28177,7 +27904,7 @@
     "return": null
   },
   {
-    "__docId__": 1489,
+    "__docId__": 1462,
     "kind": "method",
     "name": "posts",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28199,7 +27926,7 @@
     "params": []
   },
   {
-    "__docId__": 1490,
+    "__docId__": 1463,
     "kind": "method",
     "name": "count",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28221,7 +27948,7 @@
     "params": []
   },
   {
-    "__docId__": 1491,
+    "__docId__": 1464,
     "kind": "method",
     "name": "disabled",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28243,7 +27970,7 @@
     "params": []
   },
   {
-    "__docId__": 1492,
+    "__docId__": 1465,
     "kind": "method",
     "name": "viewingEnd",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28265,7 +27992,7 @@
     "params": []
   },
   {
-    "__docId__": 1493,
+    "__docId__": 1466,
     "kind": "method",
     "name": "sanitizeIndex",
     "memberof": "src/forum/states/PostStreamState.js~PostStreamState",
@@ -28295,7 +28022,7 @@
     }
   },
   {
-    "__docId__": 1494,
+    "__docId__": 1467,
     "kind": "file",
     "name": "src/forum/states/SearchState.ts",
     "content": "",
@@ -28306,7 +28033,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1495,
+    "__docId__": 1468,
     "kind": "class",
     "name": "SearchState",
     "memberof": "src/forum/states/SearchState.ts",
@@ -28321,7 +28048,7 @@
     "interface": false
   },
   {
-    "__docId__": 1496,
+    "__docId__": 1469,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/forum/states/SearchState.ts~SearchState",
@@ -28335,7 +28062,7 @@
     "undocument": true
   },
   {
-    "__docId__": 1497,
+    "__docId__": 1470,
     "kind": "member",
     "name": "value",
     "memberof": "src/forum/states/SearchState.ts~SearchState",
@@ -28354,7 +28081,7 @@
     }
   },
   {
-    "__docId__": 1498,
+    "__docId__": 1471,
     "kind": "member",
     "name": "cachedSearches",
     "memberof": "src/forum/states/SearchState.ts~SearchState",
@@ -28371,7 +28098,7 @@
     }
   },
   {
-    "__docId__": 1499,
+    "__docId__": 1472,
     "kind": "method",
     "name": "getInitialSearch",
     "memberof": "src/forum/states/SearchState.ts~SearchState",
@@ -28393,7 +28120,7 @@
     "params": []
   },
   {
-    "__docId__": 1500,
+    "__docId__": 1473,
     "kind": "method",
     "name": "getValue",
     "memberof": "src/forum/states/SearchState.ts~SearchState",
@@ -28415,7 +28142,7 @@
     "params": []
   },
   {
-    "__docId__": 1501,
+    "__docId__": 1474,
     "kind": "method",
     "name": "setValue",
     "memberof": "src/forum/states/SearchState.ts~SearchState",
@@ -28441,7 +28168,7 @@
     "return": null
   },
   {
-    "__docId__": 1503,
+    "__docId__": 1476,
     "kind": "method",
     "name": "clear",
     "memberof": "src/forum/states/SearchState.ts~SearchState",
@@ -28456,7 +28183,7 @@
     "return": null
   },
   {
-    "__docId__": 1504,
+    "__docId__": 1477,
     "kind": "method",
     "name": "cache",
     "memberof": "src/forum/states/SearchState.ts~SearchState",
@@ -28482,7 +28209,7 @@
     "return": null
   },
   {
-    "__docId__": 1505,
+    "__docId__": 1478,
     "kind": "method",
     "name": "isCached",
     "memberof": "src/forum/states/SearchState.ts~SearchState",
@@ -28515,7 +28242,7 @@
     }
   },
   {
-    "__docId__": 1506,
+    "__docId__": 1479,
     "kind": "file",
     "name": "src/forum/utils/DiscussionControls.js",
     "content": "",
@@ -28526,7 +28253,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1507,
+    "__docId__": 1480,
     "kind": "file",
     "name": "src/forum/utils/History.js",
     "content": "",
@@ -28537,7 +28264,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1508,
+    "__docId__": 1481,
     "kind": "class",
     "name": "History",
     "memberof": "src/forum/utils/History.js",
@@ -28552,7 +28279,7 @@
     "interface": false
   },
   {
-    "__docId__": 1509,
+    "__docId__": 1482,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/forum/utils/History.js~History",
@@ -28566,7 +28293,7 @@
     "undocument": true
   },
   {
-    "__docId__": 1510,
+    "__docId__": 1483,
     "kind": "member",
     "name": "stack",
     "memberof": "src/forum/utils/History.js~History",
@@ -28585,7 +28312,7 @@
     }
   },
   {
-    "__docId__": 1511,
+    "__docId__": 1484,
     "kind": "method",
     "name": "getCurrent",
     "memberof": "src/forum/utils/History.js~History",
@@ -28607,7 +28334,7 @@
     "params": []
   },
   {
-    "__docId__": 1512,
+    "__docId__": 1485,
     "kind": "method",
     "name": "getPrevious",
     "memberof": "src/forum/utils/History.js~History",
@@ -28629,7 +28356,7 @@
     "params": []
   },
   {
-    "__docId__": 1513,
+    "__docId__": 1486,
     "kind": "method",
     "name": "push",
     "memberof": "src/forum/utils/History.js~History",
@@ -28675,7 +28402,7 @@
     "return": null
   },
   {
-    "__docId__": 1514,
+    "__docId__": 1487,
     "kind": "method",
     "name": "canGoBack",
     "memberof": "src/forum/utils/History.js~History",
@@ -28697,7 +28424,7 @@
     "params": []
   },
   {
-    "__docId__": 1515,
+    "__docId__": 1488,
     "kind": "method",
     "name": "back",
     "memberof": "src/forum/utils/History.js~History",
@@ -28716,7 +28443,7 @@
     }
   },
   {
-    "__docId__": 1516,
+    "__docId__": 1489,
     "kind": "method",
     "name": "backUrl",
     "memberof": "src/forum/utils/History.js~History",
@@ -28735,7 +28462,7 @@
     }
   },
   {
-    "__docId__": 1517,
+    "__docId__": 1490,
     "kind": "method",
     "name": "home",
     "memberof": "src/forum/utils/History.js~History",
@@ -28750,7 +28477,7 @@
     "return": null
   },
   {
-    "__docId__": 1518,
+    "__docId__": 1491,
     "kind": "file",
     "name": "src/forum/utils/KeyboardNavigatable.ts",
     "content": "",
@@ -28761,7 +28488,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1519,
+    "__docId__": 1492,
     "kind": "class",
     "name": "KeyboardNavigatable",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts",
@@ -28776,7 +28503,7 @@
     "interface": false
   },
   {
-    "__docId__": 1520,
+    "__docId__": 1493,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -28790,7 +28517,7 @@
     "undocument": true
   },
   {
-    "__docId__": 1521,
+    "__docId__": 1494,
     "kind": "member",
     "name": "callbacks",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -28806,7 +28533,7 @@
     }
   },
   {
-    "__docId__": 1522,
+    "__docId__": 1495,
     "kind": "member",
     "name": "whenCallback",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -28825,7 +28552,7 @@
     }
   },
   {
-    "__docId__": 1523,
+    "__docId__": 1496,
     "kind": "method",
     "name": "onUp",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -28858,7 +28585,7 @@
     }
   },
   {
-    "__docId__": 1524,
+    "__docId__": 1497,
     "kind": "method",
     "name": "onDown",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -28891,7 +28618,7 @@
     }
   },
   {
-    "__docId__": 1525,
+    "__docId__": 1498,
     "kind": "method",
     "name": "onSelect",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -28924,7 +28651,7 @@
     }
   },
   {
-    "__docId__": 1526,
+    "__docId__": 1499,
     "kind": "method",
     "name": "onCancel",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -28957,7 +28684,7 @@
     }
   },
   {
-    "__docId__": 1527,
+    "__docId__": 1500,
     "kind": "method",
     "name": "onRemove",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -28990,7 +28717,7 @@
     }
   },
   {
-    "__docId__": 1528,
+    "__docId__": 1501,
     "kind": "method",
     "name": "when",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -29023,7 +28750,7 @@
     }
   },
   {
-    "__docId__": 1529,
+    "__docId__": 1502,
     "kind": "method",
     "name": "bindTo",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -29049,7 +28776,7 @@
     "return": null
   },
   {
-    "__docId__": 1530,
+    "__docId__": 1503,
     "kind": "method",
     "name": "navigate",
     "memberof": "src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable",
@@ -29075,7 +28802,7 @@
     "return": null
   },
   {
-    "__docId__": 1531,
+    "__docId__": 1504,
     "kind": "file",
     "name": "src/forum/utils/Pane.js",
     "content": "",
@@ -29086,7 +28813,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1532,
+    "__docId__": 1505,
     "kind": "class",
     "name": "Pane",
     "memberof": "src/forum/utils/Pane.js",
@@ -29101,7 +28828,7 @@
     "interface": false
   },
   {
-    "__docId__": 1533,
+    "__docId__": 1506,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29115,7 +28842,7 @@
     "undocument": true
   },
   {
-    "__docId__": 1534,
+    "__docId__": 1507,
     "kind": "member",
     "name": "pinnedKey",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29134,7 +28861,7 @@
     }
   },
   {
-    "__docId__": 1535,
+    "__docId__": 1508,
     "kind": "member",
     "name": "$element",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29153,7 +28880,7 @@
     }
   },
   {
-    "__docId__": 1536,
+    "__docId__": 1509,
     "kind": "member",
     "name": "pinned",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29172,7 +28899,7 @@
     }
   },
   {
-    "__docId__": 1537,
+    "__docId__": 1510,
     "kind": "member",
     "name": "active",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29191,7 +28918,7 @@
     }
   },
   {
-    "__docId__": 1538,
+    "__docId__": 1511,
     "kind": "member",
     "name": "showing",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29210,7 +28937,7 @@
     }
   },
   {
-    "__docId__": 1539,
+    "__docId__": 1512,
     "kind": "method",
     "name": "enable",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29225,7 +28952,7 @@
     "return": null
   },
   {
-    "__docId__": 1541,
+    "__docId__": 1514,
     "kind": "method",
     "name": "disable",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29240,7 +28967,7 @@
     "return": null
   },
   {
-    "__docId__": 1544,
+    "__docId__": 1517,
     "kind": "method",
     "name": "show",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29255,7 +28982,7 @@
     "return": null
   },
   {
-    "__docId__": 1546,
+    "__docId__": 1519,
     "kind": "method",
     "name": "hide",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29270,7 +28997,7 @@
     "return": null
   },
   {
-    "__docId__": 1548,
+    "__docId__": 1521,
     "kind": "method",
     "name": "onmouseleave",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29285,7 +29012,7 @@
     "return": null
   },
   {
-    "__docId__": 1549,
+    "__docId__": 1522,
     "kind": "member",
     "name": "hideTimeout",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29302,7 +29029,7 @@
     }
   },
   {
-    "__docId__": 1550,
+    "__docId__": 1523,
     "kind": "method",
     "name": "togglePinned",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29317,7 +29044,7 @@
     "return": null
   },
   {
-    "__docId__": 1552,
+    "__docId__": 1525,
     "kind": "method",
     "name": "render",
     "memberof": "src/forum/utils/Pane.js~Pane",
@@ -29332,7 +29059,7 @@
     "return": null
   },
   {
-    "__docId__": 1553,
+    "__docId__": 1526,
     "kind": "file",
     "name": "src/forum/utils/PostControls.js",
     "content": "",
@@ -29343,7 +29070,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1554,
+    "__docId__": 1527,
     "kind": "file",
     "name": "src/forum/utils/UserControls.js",
     "content": "",
@@ -29354,7 +29081,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1555,
+    "__docId__": 1528,
     "kind": "file",
     "name": "src/forum/utils/alertEmailConfirmation.js",
     "content": "",
@@ -29365,7 +29092,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1556,
+    "__docId__": 1529,
     "kind": "function",
     "name": "alertEmailConfirmation",
     "memberof": "src/forum/utils/alertEmailConfirmation.js",
@@ -29398,7 +29125,7 @@
     }
   },
   {
-    "__docId__": 1557,
+    "__docId__": 1530,
     "kind": "file",
     "name": "src/forum/utils/isSafariMobile.ts",
     "content": "",
@@ -29409,7 +29136,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1558,
+    "__docId__": 1531,
     "kind": "function",
     "name": "isSafariMobile",
     "memberof": "src/forum/utils/isSafariMobile.ts",
@@ -29434,7 +29161,7 @@
     }
   },
   {
-    "__docId__": 1559,
+    "__docId__": 1532,
     "kind": "file",
     "name": "src/forum/utils/slidable.js",
     "content": "",
@@ -29445,7 +29172,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 1560,
+    "__docId__": 1533,
     "kind": "function",
     "name": "slidable",
     "memberof": "src/forum/utils/slidable.js",

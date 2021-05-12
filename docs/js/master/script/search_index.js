@@ -205,7 +205,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/states/discussionliststate~discussionliststate",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html",
     "<span>DiscussionListState</span> <span class=\"search-result-import-path\">flarum/states/DiscussionListState</span>",
     "class"
   ],
@@ -379,13 +379,13 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
   [
     "flarum/components/headerprimary~headerprimary",
-    "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
+    "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
     "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
     "class"
   ],
@@ -535,7 +535,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/states/notificationliststate~notificationliststate",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html",
+    "class/src/forum/states/NotificationListState.ts~NotificationListState.html",
     "<span>NotificationListState</span> <span class=\"search-result-import-path\">flarum/states/NotificationListState</span>",
     "class"
   ],
@@ -7668,136 +7668,88 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/states/discussionliststate.js",
-    "file/src/forum/states/DiscussionListState.js.html",
-    "src/forum/states/DiscussionListState.js",
+    "src/forum/states/discussionliststate.ts",
+    "file/src/forum/states/DiscussionListState.ts.html",
+    "src/forum/states/DiscussionListState.ts",
     "file"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#adddiscussion",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-addDiscussion",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#addDiscussion",
+    "src/forum/states/discussionliststate.ts~discussionliststate#adddiscussion",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-method-addDiscussion",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#addDiscussion",
     "method"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#app",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-member-app",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#app",
+    "src/forum/states/discussionliststate.ts~discussionliststate#clear",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-method-clear",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#clear",
+    "method"
+  ],
+  [
+    "src/forum/states/discussionliststate.ts~discussionliststate#constructor",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-constructor-constructor",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#constructor",
+    "method"
+  ],
+  [
+    "src/forum/states/discussionliststate.ts~discussionliststate#extradiscussions",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-member-extraDiscussions",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#extraDiscussions",
     "member"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#clear",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-clear",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#clear",
+    "src/forum/states/discussionliststate.ts~discussionliststate#getallitems",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-method-getAllItems",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#getAllItems",
     "method"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#constructor",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-constructor-constructor",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#constructor",
+    "src/forum/states/discussionliststate.ts~discussionliststate#getpages",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-method-getPages",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#getPages",
     "method"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#discussions",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-member-discussions",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#discussions",
+    "src/forum/states/discussionliststate.ts~discussionliststate#initialloading",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-member-initialLoading",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#initialLoading",
     "member"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#empty",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-empty",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#empty",
+    "src/forum/states/discussionliststate.ts~discussionliststate#issearchresults",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-method-isSearchResults",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#isSearchResults",
     "method"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#getparams",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-getParams",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#getParams",
+    "src/forum/states/discussionliststate.ts~discussionliststate#loadpage",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-method-loadPage",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#loadPage",
     "method"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#hasdiscussions",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-hasDiscussions",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#hasDiscussions",
+    "src/forum/states/discussionliststate.ts~discussionliststate#removediscussion",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-method-removeDiscussion",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#removeDiscussion",
     "method"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#isloading",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-isLoading",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#isLoading",
+    "src/forum/states/discussionliststate.ts~discussionliststate#requestparams",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-method-requestParams",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#requestParams",
     "method"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#issearchresults",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-isSearchResults",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#isSearchResults",
+    "src/forum/states/discussionliststate.ts~discussionliststate#sortmap",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-method-sortMap",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#sortMap",
     "method"
   ],
   [
-    "src/forum/states/discussionliststate.js~discussionliststate#loadmore",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-loadMore",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#loadMore",
-    "method"
-  ],
-  [
-    "src/forum/states/discussionliststate.js~discussionliststate#loadresults",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-loadResults",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#loadResults",
-    "method"
-  ],
-  [
-    "src/forum/states/discussionliststate.js~discussionliststate#loading",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-member-loading",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#loading",
+    "src/forum/states/discussionliststate.ts~discussionliststate#type",
+    "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html#instance-get-type",
+    "src/forum/states/DiscussionListState.ts~DiscussionListState#type",
     "member"
-  ],
-  [
-    "src/forum/states/discussionliststate.js~discussionliststate#moreresults",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-member-moreResults",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#moreResults",
-    "member"
-  ],
-  [
-    "src/forum/states/discussionliststate.js~discussionliststate#params",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-member-params",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#params",
-    "member"
-  ],
-  [
-    "src/forum/states/discussionliststate.js~discussionliststate#parseresults",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-parseResults",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#parseResults",
-    "method"
-  ],
-  [
-    "src/forum/states/discussionliststate.js~discussionliststate#refresh",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-refresh",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#refresh",
-    "method"
-  ],
-  [
-    "src/forum/states/discussionliststate.js~discussionliststate#refreshparams",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-refreshParams",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#refreshParams",
-    "method"
-  ],
-  [
-    "src/forum/states/discussionliststate.js~discussionliststate#removediscussion",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-removeDiscussion",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#removeDiscussion",
-    "method"
-  ],
-  [
-    "src/forum/states/discussionliststate.js~discussionliststate#requestparams",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-requestParams",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#requestParams",
-    "method"
-  ],
-  [
-    "src/forum/states/discussionliststate.js~discussionliststate#sortmap",
-    "class/src/forum/states/DiscussionListState.js~DiscussionListState.html#instance-method-sortMap",
-    "src/forum/states/DiscussionListState.js~DiscussionListState#sortMap",
-    "method"
   ],
   [
     "src/forum/states/globalsearchstate.ts",
@@ -7872,88 +7824,46 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/forum/states/notificationliststate.js",
-    "file/src/forum/states/NotificationListState.js.html",
-    "src/forum/states/NotificationListState.js",
+    "src/forum/states/notificationliststate.ts",
+    "file/src/forum/states/NotificationListState.ts.html",
+    "src/forum/states/NotificationListState.ts",
     "file"
   ],
   [
-    "src/forum/states/notificationliststate.js~notificationliststate#app",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-member-app",
-    "src/forum/states/NotificationListState.js~NotificationListState#app",
+    "src/forum/states/notificationliststate.ts~notificationliststate#constructor",
+    "class/src/forum/states/NotificationListState.ts~NotificationListState.html#instance-constructor-constructor",
+    "src/forum/states/NotificationListState.ts~NotificationListState#constructor",
+    "method"
+  ],
+  [
+    "src/forum/states/notificationliststate.ts~notificationliststate#load",
+    "class/src/forum/states/NotificationListState.ts~NotificationListState.html#instance-method-load",
+    "src/forum/states/NotificationListState.ts~NotificationListState#load",
+    "method"
+  ],
+  [
+    "src/forum/states/notificationliststate.ts~notificationliststate#location",
+    "class/src/forum/states/NotificationListState.ts~NotificationListState.html#instance-member-location",
+    "src/forum/states/NotificationListState.ts~NotificationListState#location",
     "member"
   ],
   [
-    "src/forum/states/notificationliststate.js~notificationliststate#clear",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-clear",
-    "src/forum/states/NotificationListState.js~NotificationListState#clear",
+    "src/forum/states/notificationliststate.ts~notificationliststate#markallasread",
+    "class/src/forum/states/NotificationListState.ts~NotificationListState.html#instance-method-markAllAsRead",
+    "src/forum/states/NotificationListState.ts~NotificationListState#markAllAsRead",
     "method"
   ],
   [
-    "src/forum/states/notificationliststate.js~notificationliststate#constructor",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-constructor-constructor",
-    "src/forum/states/NotificationListState.js~NotificationListState#constructor",
-    "method"
-  ],
-  [
-    "src/forum/states/notificationliststate.js~notificationliststate#getnotificationpages",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-getNotificationPages",
-    "src/forum/states/NotificationListState.js~NotificationListState#getNotificationPages",
-    "method"
-  ],
-  [
-    "src/forum/states/notificationliststate.js~notificationliststate#hasmoreresults",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-hasMoreResults",
-    "src/forum/states/NotificationListState.js~NotificationListState#hasMoreResults",
-    "method"
-  ],
-  [
-    "src/forum/states/notificationliststate.js~notificationliststate#isloading",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-isLoading",
-    "src/forum/states/NotificationListState.js~NotificationListState#isLoading",
-    "method"
-  ],
-  [
-    "src/forum/states/notificationliststate.js~notificationliststate#load",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-load",
-    "src/forum/states/NotificationListState.js~NotificationListState#load",
-    "method"
-  ],
-  [
-    "src/forum/states/notificationliststate.js~notificationliststate#loadmore",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-loadMore",
-    "src/forum/states/NotificationListState.js~NotificationListState#loadMore",
-    "method"
-  ],
-  [
-    "src/forum/states/notificationliststate.js~notificationliststate#loading",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-member-loading",
-    "src/forum/states/NotificationListState.js~NotificationListState#loading",
+    "src/forum/states/notificationliststate.ts~notificationliststate#pages",
+    "class/src/forum/states/NotificationListState.ts~NotificationListState.html#instance-member-pages",
+    "src/forum/states/NotificationListState.ts~NotificationListState#pages",
     "member"
   ],
   [
-    "src/forum/states/notificationliststate.js~notificationliststate#markallasread",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-markAllAsRead",
-    "src/forum/states/NotificationListState.js~NotificationListState#markAllAsRead",
-    "method"
-  ],
-  [
-    "src/forum/states/notificationliststate.js~notificationliststate#moreresults",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-member-moreResults",
-    "src/forum/states/NotificationListState.js~NotificationListState#moreResults",
+    "src/forum/states/notificationliststate.ts~notificationliststate#type",
+    "class/src/forum/states/NotificationListState.ts~NotificationListState.html#instance-get-type",
+    "src/forum/states/NotificationListState.ts~NotificationListState#type",
     "member"
-  ],
-  [
-    "src/forum/states/notificationliststate.js~notificationliststate#notificationpages",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-member-notificationPages",
-    "src/forum/states/NotificationListState.js~NotificationListState#notificationPages",
-    "member"
-  ],
-  [
-    "src/forum/states/notificationliststate.js~notificationliststate#parseresults",
-    "class/src/forum/states/NotificationListState.js~NotificationListState.html#instance-method-parseResults",
-    "src/forum/states/NotificationListState.js~NotificationListState#parseResults",
-    "method"
   ],
   [
     "src/forum/states/poststreamstate.js",

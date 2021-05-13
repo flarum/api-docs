@@ -154,7 +154,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L61" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L69" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -171,7 +171,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L68" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L76" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -205,20 +205,17 @@
                     <tr>
                 <td>string</td>
                 <td>$blueprint</td>
-                <td>&lt;p&gt;The ::class attribute of the blueprint class.
-This blueprint should implement \Flarum\Notification\Blueprint\BlueprintInterface.&lt;/p&gt;</td>
+                <td></td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$serializer</td>
-                <td>&lt;p&gt;The ::class attribute of the serializer class.
-This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.&lt;/p&gt;</td>
+                <td></td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$driversEnabledByDefault</td>
-                <td>&lt;p&gt;The names of the drivers enabled by default for this notification type.
-(example: alert, email).&lt;/p&gt;</td>
+                <td></td>
             </tr>
             </table>
 
@@ -260,18 +257,17 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.&lt
                     <tr>
                 <td>string</td>
                 <td>$driverName</td>
-                <td>&lt;p&gt;The name of the notification driver.&lt;/p&gt;</td>
+                <td></td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$driver</td>
-                <td>&lt;p&gt;The ::class attribute of the driver class.
-This driver should implement \Flarum\Notification\Driver\NotificationDriverInterface.&lt;/p&gt;</td>
+                <td></td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$typesEnabledByDefault</td>
-                <td>&lt;p&gt;The names of blueprint classes of types enabled by default for this driver.&lt;/p&gt;</td>
+                <td></td>
             </tr>
             </table>
 
@@ -294,8 +290,8 @@ This driver should implement \Flarum\Notification\Driver\NotificationDriverInter
                     <div class="method-item">
                     <h3 id="method_beforeSending">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L61" target="_blank">
-            line 61
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L69" target="_blank">
+            line 69
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Notification.html"><abbr title="Flarum\Extend\Notification">Notification</abbr></a>
@@ -313,7 +309,15 @@ This driver should implement \Flarum\Notification\Driver\NotificationDriverInter
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td></td>
+                <td>&lt;p&gt;The callback can be a closure or an invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\Flarum\Notification\Blueprint\BlueprintInterface $blueprint&lt;/li&gt;
+&lt;li&gt;\Flarum\User\User[] $newRecipients&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The callable should return an array of recipients.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\Flarum\User\User[] $newRecipients&lt;/li&gt;
+&lt;/ul&gt;</td>
             </tr>
             </table>
 
@@ -336,8 +340,8 @@ This driver should implement \Flarum\Notification\Driver\NotificationDriverInter
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L68" target="_blank">
-            line 68
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Notification.php#L76" target="_blank">
+            line 76
         </a>
         </div>
         <code>                    

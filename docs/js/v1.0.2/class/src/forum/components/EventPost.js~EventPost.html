@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">Translator | Flarum API</title>
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">EventPost | Flarum API</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -70,7 +70,6 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/Model.js~Model.html">Model</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/Session.js~Session.html">Session</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/Store.js~Store.html">Store</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/Translator.ts~Translator.html">Translator</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-extend">extend</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-override">override</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-components">common/components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/components/AlertManager.js~AlertManager.html">AlertManager</a></span></span></li>
@@ -214,24 +213,24 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Translator from &apos;<span><a href="file/src/common/Translator.ts.html#lineNumber9">flarum/Translator</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import EventPost from &apos;<span><a href="file/src/forum/components/EventPost.js.html#lineNumber18">flarum/components/EventPost</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/common/Translator.ts.html#lineNumber9">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/forum/components/EventPost.js.html#lineNumber18">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
-  <h1 data-ice="name">Translator</h1>
+  <h1 data-ice="name">EventPost</h1>
 
   
 
   
   
-  
-  
+  <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span>src/common/Component.js~Component</span> &#x2192; <span><a href="class/src/forum/components/Post.js~Post.html">Post</a></span> &#x2192; EventPost</div></div>
+  <div class="flat-list" data-ice="directSubclass"><h4>Direct Subclass:</h4><div><span><a href="class/src/forum/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html">DiscussionRenamedPost</a></span></div></div>
   
   
   
@@ -240,7 +239,13 @@
 
   
   
-  
+  <div class="description" data-ice="description"><p>The <code>EventPost</code> component displays a post which indicating a discussion
+event, like a discussion being renamed or stickied. Subclasses must implement
+the <code>icon</code> and <code>description</code> methods.</p>
+<h3 id="attrs">Attrs</h3><ul>
+<li>All of the attrs for <code>Post</code></li>
+</ul>
+</div>
   
 
   
@@ -254,106 +259,8 @@
 
 
 
-<div data-ice="constructorSummary"><h2>Constructor Summary</h2><table class="summary" data-ice="summary">
-  <thead><tr><td data-ice="title" colspan="3">Public Constructor</td></tr></thead>
-  <tbody>
-  
-  <tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Translator.ts~Translator.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-</tbody>
-</table>
-</div>
-<div data-ice="memberSummary"><h2>Member Summary</h2><table class="summary" data-ice="summary">
-  <thead><tr><td data-ice="title" colspan="3">Public Members</td></tr></thead>
-  <tbody>
-  
-  <tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Translator.ts~Translator.html#instance-member-formatter">formatter</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>The underlying ICU MessageFormatter util.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/common/Translator.ts~Translator.html#instance-member-translations">translations</a></span></span><span class="code" data-ice="signature">: <span>Translations</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>A map of translation keys to their translated values.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-</tbody>
-</table>
-</div>
+
+
 <div data-ice="methodSummary"><h2>Method Summary</h2><table class="summary" data-ice="summary">
   <thead><tr><td data-ice="title" colspan="3">Public Methods</td></tr></thead>
   <tbody>
@@ -372,7 +279,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/common/Translator.ts~Translator.html#instance-method-addTranslations">addTranslations</a></span></span><span class="code" data-ice="signature">(translations: <span>Translations</span>)</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/EventPost.js~EventPost.html#instance-method-content">content</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -400,13 +307,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/common/Translator.ts~Translator.html#instance-method-formatterTypeHandlers">formatterTypeHandlers</a></span></span><span class="code" data-ice="signature">(): {&quot;plural&quot;: <span>*</span>, &quot;select&quot;: <span>*</span>}</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/EventPost.js~EventPost.html#instance-method-description">description</a></span></span><span class="code" data-ice="signature">(data: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>An extensible entrypoint for extenders to register type handlers for translations.</p>
+        <div data-ice="description"><p>Get the description text for the event.</p>
 </div>
       </div>
     </td>
@@ -429,13 +336,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/common/Translator.ts~Translator.html#instance-method-preprocessParameters">preprocessParameters</a></span></span><span class="code" data-ice="signature">(parameters: <span>TranslatorParameters</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/EventPost.js~EventPost.html#instance-method-descriptionData">descriptionData</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>A temporary system to preprocess parameters.</p>
+        <div data-ice="description"><p>Get the translation data for the description of the event.</p>
 </div>
       </div>
     </td>
@@ -458,7 +365,36 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/common/Translator.ts~Translator.html#instance-method-setLocale">setLocale</a></span></span><span class="code" data-ice="signature">(locale: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>)</span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/EventPost.js~EventPost.html#instance-method-descriptionKey">descriptionKey</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get the translation key for the description of the event.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/EventPost.js~EventPost.html#instance-method-elementAttrs">elementAttrs</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -486,7 +422,331 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/common/Translator.ts~Translator.html#instance-method-trans">trans</a></span></span><span class="code" data-ice="signature">(id: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, parameters: <span>TranslatorParameters</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/EventPost.js~EventPost.html#instance-method-icon">icon</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get the name of the event icon.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+<div class="inherited-summary" data-ice="inheritedSummary"><h2>Inherited Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3"><span class="toggle closed"></span> From class <span><a href="class/src/forum/components/Post.js~Post.html">Post</a></span></td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-member-loading">loading</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-member-subtree">subtree</a></span></span><span class="code" data-ice="signature">: <span><a href="class/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html">SubtreeRetainer</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Set up a subtree retainer so that the post will not be redrawn
+unless new data comes in.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-actionItems">actionItems</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/common/utils/ItemList.ts~ItemList.html">ItemList</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Build an item list for the post&apos;s actions.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-classes">classes</a></span></span><span class="code" data-ice="signature">(string: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get the post&apos;s classes.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-content">content</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get the post&apos;s content.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-elementAttrs">elementAttrs</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get attributes for the post element.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-footerItems">footerItems</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/common/utils/ItemList.ts~ItemList.html">ItemList</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Build an item list for the post&apos;s footer.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-onbeforeupdate">onbeforeupdate</a></span></span><span class="code" data-ice="signature">(vnode: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-oninit">oninit</a></span></span><span class="code" data-ice="signature">(vnode: <span>*</span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-onupdate">onupdate</a></span></span><span class="code" data-ice="signature">(vnode: <span>*</span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-view">view</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -508,188 +768,48 @@
 
 
 
-<div data-ice="constructorDetails"><h2 data-ice="title">Public Constructors</h2>
-
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-constructor-constructor">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">()</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/common/Translator.ts.html#lineNumber12">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-</div>
-<div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
-
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-formatter">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">formatter</span><span class="code" data-ice="signature">: <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/common/Translator.ts.html#lineNumber18">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>The underlying ICU MessageFormatter util.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-translations">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">translations</span><span class="code" data-ice="signature">: <span>Translations</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/common/Translator.ts.html#lineNumber13">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>A map of translation keys to their translated values.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-</div>
 <div data-ice="methodDetails"><h2 data-ice="title">Public Methods</h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-addTranslations">
+  <h3 data-ice="anchor" id="instance-method-content">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">addTranslations</span><span class="code" data-ice="signature">(translations: <span>Translations</span>)</span>
+    <span class="code" data-ice="name">content</span><span class="code" data-ice="signature">(): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/common/Translator.ts.html#lineNumber24">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/EventPost.js.html#lineNumber27">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">translations</td>
-      <td data-ice="type" class="code"><span>Translations</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
+  <div data-ice="description"><p>Get the post&apos;s content.</p>
 </div>
 
-  
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-content">Post#content</a></span></div>
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
 
   
 
@@ -707,25 +827,98 @@
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-formatterTypeHandlers">
+  <h3 data-ice="anchor" id="instance-method-description">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">formatterTypeHandlers</span><span class="code" data-ice="signature">(): {&quot;plural&quot;: <span>*</span>, &quot;select&quot;: <span>*</span>}</span>
+    <span class="code" data-ice="name">description</span><span class="code" data-ice="signature">(data: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/common/Translator.ts.html#lineNumber31">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/EventPost.js.html#lineNumber59">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>An extensible entrypoint for extenders to register type handlers for translations.</p>
+  <div data-ice="description"><p>Get the description text for the event.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">data</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The description to render in the DOM</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-descriptionData">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">descriptionData</span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/components/EventPost.js.html#lineNumber77">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Get the translation data for the description of the event.</p>
 </div>
 
   
@@ -738,7 +931,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType">{&quot;plural&quot;: <span>*</span>, &quot;select&quot;: <span>*</span>}</td>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
           
         </tr>
       </tbody>
@@ -763,48 +956,86 @@
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-preprocessParameters">
+  <h3 data-ice="anchor" id="instance-method-descriptionKey">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">preprocessParameters</span><span class="code" data-ice="signature">(parameters: <span>TranslatorParameters</span>): <span>*</span></span>
+    <span class="code" data-ice="name">descriptionKey</span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/common/Translator.ts.html#lineNumber45">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/EventPost.js.html#lineNumber68">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>A temporary system to preprocess parameters.
-Should not be used by extensions.
-TODO: An extender will be added in v1.x.</p>
+  <div data-ice="description"><p>Get the translation key for the description of the event.</p>
 </div>
 
   
 
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">parameters</td>
-      <td data-ice="type" class="code"><span>TranslatorParameters</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
+  <div data-ice="properties">
 </div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-elementAttrs">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">elementAttrs</span><span class="code" data-ice="signature">(): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/forum/components/EventPost.js.html#lineNumber19">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Get attributes for the post element.</p>
+</div>
+
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/forum/components/Post.js~Post.html#instance-method-elementAttrs">Post#elementAttrs</a></span></div>
+
+  <div data-ice="properties">
 </div>
 
   <div class="return-params" data-ice="returnParams">
@@ -837,110 +1068,30 @@ TODO: An extender will be added in v1.x.</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-setLocale">
+  <h3 data-ice="anchor" id="instance-method-icon">
     <span class="access" data-ice="access">public</span>
     
     
     
     
     
-    <span class="code" data-ice="name">setLocale</span><span class="code" data-ice="signature">(locale: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>)</span>
+    <span class="code" data-ice="name">icon</span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/common/Translator.ts.html#lineNumber20">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/forum/components/EventPost.js.html#lineNumber49">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">locale</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
+  <div data-ice="description"><p>Get the name of the event icon.</p>
 </div>
 
   
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-trans">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">trans</span><span class="code" data-ice="signature">(id: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, parameters: <span>TranslatorParameters</span>): <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/common/Translator.ts.html#lineNumber59">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">id</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">parameters</td>
-      <td data-ice="type" class="code"><span>TranslatorParameters</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
+  <div data-ice="properties">
 </div>
 
   <div class="return-params" data-ice="returnParams">
@@ -948,7 +1099,7 @@ TODO: An extender will be added in v1.x.</p>
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
           
         </tr>
       </tbody>

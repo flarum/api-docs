@@ -13,7 +13,7 @@ $iterator = Finder::create()
 
 $versions = GitVersionCollection::create($flarum)
   ->addFromTags(function ($version) {
-    return preg_match('/^v?0\.\d+\.\d+(-beta(\.\d+)?)?$/', $version);
+    return preg_match('/^v?([0-9]+)\.([0-9]+)\.0$/', $version);
   })
   ->add('master', 'master');
 

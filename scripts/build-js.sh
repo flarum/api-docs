@@ -37,7 +37,7 @@ generate master
 tags=$(cd $FLARUM_PATH && git tag)
 
 for tag in $tags; do
-    if [[ "$tag" =~ -beta.[0-9]{1,}.[0-9]{1,}$ ]]; then
+    if [[ "$tag" =~ v[0-9]{1,}\.[0-9]{1,}\.[1-9]{1,}$  || "$tag" =~ 0.1.0-beta ]]; then
         continue
     fi
 

@@ -2,6 +2,7 @@
   "source": "../../../flarum/js/src",
   "destination": "./",
   "package": "../../../package.json",
+  "includes": ["\\.js$", "\\.tsx?$"],
   "plugins": [
     {
       "name": "esdoc-standard-plugin",
@@ -36,11 +37,18 @@
       "name": "esdoc-importpath-plugin",
       "option": {
         "replaces": [
-          {"from": "src/forum/", "to": ""},
-          {"from": "src/admin/", "to": ""},
-          {"from": "src/common/", "to": ""},
+          {"from": "src/", "to": ""},
           {"from": "\\.js", "to": ""},
-          {"from": "\\.ts", "to": ""}
+          {"from": "\\.tsx?", "to": ""}
+        ]
+      }
+    },
+    {
+      "name": "../../../src/esdoc-babel-plugin",
+      "option": {
+        "presets": [
+          "@babel/preset-react",
+          "@babel/preset-typescript"
         ]
       }
     }

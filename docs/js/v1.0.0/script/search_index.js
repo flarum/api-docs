@@ -1,1082 +1,1172 @@
 window.esdocSearchIndex = [
   [
-    "flarum/adminapplication~adminapplication",
+    "flarum/admin/adminapplication~adminapplication",
     "class/src/admin/AdminApplication.js~AdminApplication.html",
-    "<span>AdminApplication</span> <span class=\"search-result-import-path\">flarum/AdminApplication</span>",
+    "<span>AdminApplication</span> <span class=\"search-result-import-path\">flarum/admin/AdminApplication</span>",
     "class"
   ],
   [
-    "flarum/components/adminheader~adminheader",
+    "flarum/admin/components/adminheader~adminheader",
     "class/src/admin/components/AdminHeader.js~AdminHeader.html",
-    "<span>AdminHeader</span> <span class=\"search-result-import-path\">flarum/components/AdminHeader</span>",
+    "<span>AdminHeader</span> <span class=\"search-result-import-path\">flarum/admin/components/AdminHeader</span>",
     "class"
   ],
   [
-    "flarum/components/adminnav~adminnav",
+    "flarum/admin/components/adminnav~adminnav",
     "class/src/admin/components/AdminNav.js~AdminNav.html",
-    "<span>AdminNav</span> <span class=\"search-result-import-path\">flarum/components/AdminNav</span>",
+    "<span>AdminNav</span> <span class=\"search-result-import-path\">flarum/admin/components/AdminNav</span>",
     "class"
   ],
   [
-    "flarum/components/adminpage~adminpage",
+    "flarum/admin/components/adminpage~adminpage",
     "class/src/admin/components/AdminPage.js~AdminPage.html",
-    "<span>AdminPage</span> <span class=\"search-result-import-path\">flarum/components/AdminPage</span>",
+    "<span>AdminPage</span> <span class=\"search-result-import-path\">flarum/admin/components/AdminPage</span>",
     "class"
   ],
   [
-    "flarum/components/affixedsidebar~affixedsidebar",
+    "flarum/forum/components/affixedsidebar~affixedsidebar",
     "class/src/forum/components/AffixedSidebar.js~AffixedSidebar.html",
-    "<span>AffixedSidebar</span> <span class=\"search-result-import-path\">flarum/components/AffixedSidebar</span>",
+    "<span>AffixedSidebar</span> <span class=\"search-result-import-path\">flarum/forum/components/AffixedSidebar</span>",
     "class"
   ],
   [
-    "flarum/components/alertmanager~alertmanager",
+    "flarum/common/components/alert~alert",
+    "class/src/common/components/Alert.tsx~Alert.html",
+    "<span>Alert</span> <span class=\"search-result-import-path\">flarum/common/components/Alert</span>",
+    "class"
+  ],
+  [
+    "flarum/common/components/alertmanager~alertmanager",
     "class/src/common/components/AlertManager.js~AlertManager.html",
-    "<span>AlertManager</span> <span class=\"search-result-import-path\">flarum/components/AlertManager</span>",
+    "<span>AlertManager</span> <span class=\"search-result-import-path\">flarum/common/components/AlertManager</span>",
     "class"
   ],
   [
-    "flarum/states/alertmanagerstate~alertmanagerstate",
+    "flarum/common/states/alertmanagerstate~alertmanagerstate",
     "class/src/common/states/AlertManagerState.ts~AlertManagerState.html",
-    "<span>AlertManagerState</span> <span class=\"search-result-import-path\">flarum/states/AlertManagerState</span>",
+    "<span>AlertManagerState</span> <span class=\"search-result-import-path\">flarum/common/states/AlertManagerState</span>",
     "class"
   ],
   [
-    "flarum/components/appearancepage~appearancepage",
+    "flarum/admin/components/appearancepage~appearancepage",
     "class/src/admin/components/AppearancePage.js~AppearancePage.html",
-    "<span>AppearancePage</span> <span class=\"search-result-import-path\">flarum/components/AppearancePage</span>",
+    "<span>AppearancePage</span> <span class=\"search-result-import-path\">flarum/admin/components/AppearancePage</span>",
     "class"
   ],
   [
-    "flarum/application~application",
+    "flarum/common/application~application",
     "class/src/common/Application.js~Application.html",
-    "<span>Application</span> <span class=\"search-result-import-path\">flarum/Application</span>",
+    "<span>Application</span> <span class=\"search-result-import-path\">flarum/common/Application</span>",
     "class"
   ],
   [
-    "flarum/components/avatareditor~avatareditor",
+    "flarum/forum/components/avatareditor~avatareditor",
     "class/src/forum/components/AvatarEditor.js~AvatarEditor.html",
-    "<span>AvatarEditor</span> <span class=\"search-result-import-path\">flarum/components/AvatarEditor</span>",
+    "<span>AvatarEditor</span> <span class=\"search-result-import-path\">flarum/forum/components/AvatarEditor</span>",
     "class"
   ],
   [
-    "flarum/components/badge~badge",
+    "flarum/common/components/badge~badge",
     "class/src/common/components/Badge.js~Badge.html",
-    "<span>Badge</span> <span class=\"search-result-import-path\">flarum/components/Badge</span>",
+    "<span>Badge</span> <span class=\"search-result-import-path\">flarum/common/components/Badge</span>",
     "class"
   ],
   [
-    "flarum/utils/basiceditordriver~basiceditordriver",
+    "flarum/common/utils/basiceditordriver~basiceditordriver",
     "class/src/common/utils/BasicEditorDriver.ts~BasicEditorDriver.html",
-    "<span>BasicEditorDriver</span> <span class=\"search-result-import-path\">flarum/utils/BasicEditorDriver</span>",
+    "<span>BasicEditorDriver</span> <span class=\"search-result-import-path\">flarum/common/utils/BasicEditorDriver</span>",
     "class"
   ],
   [
-    "flarum/components/basicspage~basicspage",
+    "flarum/admin/components/basicspage~basicspage",
     "class/src/admin/components/BasicsPage.js~BasicsPage.html",
-    "<span>BasicsPage</span> <span class=\"search-result-import-path\">flarum/components/BasicsPage</span>",
+    "<span>BasicsPage</span> <span class=\"search-result-import-path\">flarum/admin/components/BasicsPage</span>",
     "class"
   ],
   [
-    "flarum/components/button~button",
+    "flarum/common/components/button~button",
     "class/src/common/components/Button.js~Button.html",
-    "<span>Button</span> <span class=\"search-result-import-path\">flarum/components/Button</span>",
+    "<span>Button</span> <span class=\"search-result-import-path\">flarum/common/components/Button</span>",
     "class"
   ],
   [
-    "flarum/components/changeemailmodal~changeemailmodal",
+    "flarum/forum/components/changeemailmodal~changeemailmodal",
     "class/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html",
-    "<span>ChangeEmailModal</span> <span class=\"search-result-import-path\">flarum/components/ChangeEmailModal</span>",
+    "<span>ChangeEmailModal</span> <span class=\"search-result-import-path\">flarum/forum/components/ChangeEmailModal</span>",
     "class"
   ],
   [
-    "flarum/components/changepasswordmodal~changepasswordmodal",
+    "flarum/forum/components/changepasswordmodal~changepasswordmodal",
     "class/src/forum/components/ChangePasswordModal.js~ChangePasswordModal.html",
-    "<span>ChangePasswordModal</span> <span class=\"search-result-import-path\">flarum/components/ChangePasswordModal</span>",
+    "<span>ChangePasswordModal</span> <span class=\"search-result-import-path\">flarum/forum/components/ChangePasswordModal</span>",
     "class"
   ],
   [
-    "flarum/components/checkbox~checkbox",
+    "flarum/common/components/checkbox~checkbox",
     "class/src/common/components/Checkbox.js~Checkbox.html",
-    "<span>Checkbox</span> <span class=\"search-result-import-path\">flarum/components/Checkbox</span>",
+    "<span>Checkbox</span> <span class=\"search-result-import-path\">flarum/common/components/Checkbox</span>",
     "class"
   ],
   [
-    "flarum/components/commentpost~commentpost",
+    "flarum/forum/components/commentpost~commentpost",
     "class/src/forum/components/CommentPost.js~CommentPost.html",
-    "<span>CommentPost</span> <span class=\"search-result-import-path\">flarum/components/CommentPost</span>",
+    "<span>CommentPost</span> <span class=\"search-result-import-path\">flarum/forum/components/CommentPost</span>",
     "class"
   ],
   [
-    "flarum/component~component",
+    "flarum/common/component~component",
     "class/src/common/Component.ts~Component.html",
-    "<span>Component</span> <span class=\"search-result-import-path\">flarum/Component</span>",
+    "<span>Component</span> <span class=\"search-result-import-path\">flarum/common/Component</span>",
     "class"
   ],
   [
-    "flarum/components/composer~composer",
+    "flarum/forum/components/composer~composer",
     "class/src/forum/components/Composer.js~Composer.html",
-    "<span>Composer</span> <span class=\"search-result-import-path\">flarum/components/Composer</span>",
+    "<span>Composer</span> <span class=\"search-result-import-path\">flarum/forum/components/Composer</span>",
     "class"
   ],
   [
-    "flarum/components/composerbody~composerbody",
+    "flarum/forum/components/composerbody~composerbody",
     "class/src/forum/components/ComposerBody.js~ComposerBody.html",
-    "<span>ComposerBody</span> <span class=\"search-result-import-path\">flarum/components/ComposerBody</span>",
+    "<span>ComposerBody</span> <span class=\"search-result-import-path\">flarum/forum/components/ComposerBody</span>",
     "class"
   ],
   [
-    "flarum/components/composerbutton~composerbutton",
+    "flarum/forum/components/composerbutton~composerbutton",
     "class/src/forum/components/ComposerButton.js~ComposerButton.html",
-    "<span>ComposerButton</span> <span class=\"search-result-import-path\">flarum/components/ComposerButton</span>",
+    "<span>ComposerButton</span> <span class=\"search-result-import-path\">flarum/forum/components/ComposerButton</span>",
     "class"
   ],
   [
-    "flarum/components/composerpostpreview~composerpostpreview",
+    "flarum/forum/components/composerpostpreview~composerpostpreview",
     "class/src/forum/components/ComposerPostPreview.js~ComposerPostPreview.html",
-    "<span>ComposerPostPreview</span> <span class=\"search-result-import-path\">flarum/components/ComposerPostPreview</span>",
+    "<span>ComposerPostPreview</span> <span class=\"search-result-import-path\">flarum/forum/components/ComposerPostPreview</span>",
     "class"
   ],
   [
-    "flarum/states/composerstate~composerstate",
+    "flarum/forum/states/composerstate~composerstate",
     "class/src/forum/states/ComposerState.js~ComposerState.html",
-    "<span>ComposerState</span> <span class=\"search-result-import-path\">flarum/states/ComposerState</span>",
+    "<span>ComposerState</span> <span class=\"search-result-import-path\">flarum/forum/states/ComposerState</span>",
     "class"
   ],
   [
-    "flarum/components/confirmdocumentunload~confirmdocumentunload",
+    "flarum/common/components/confirmdocumentunload~confirmdocumentunload",
     "class/src/common/components/ConfirmDocumentUnload.js~ConfirmDocumentUnload.html",
-    "<span>ConfirmDocumentUnload</span> <span class=\"search-result-import-path\">flarum/components/ConfirmDocumentUnload</span>",
+    "<span>ConfirmDocumentUnload</span> <span class=\"search-result-import-path\">flarum/common/components/ConfirmDocumentUnload</span>",
     "class"
   ],
   [
-    "flarum/components/dashboardpage~dashboardpage",
+    "flarum/admin/components/dashboardpage~dashboardpage",
     "class/src/admin/components/DashboardPage.js~DashboardPage.html",
-    "<span>DashboardPage</span> <span class=\"search-result-import-path\">flarum/components/DashboardPage</span>",
+    "<span>DashboardPage</span> <span class=\"search-result-import-path\">flarum/admin/components/DashboardPage</span>",
     "class"
   ],
   [
-    "flarum/components/dashboardwidget~dashboardwidget",
+    "flarum/admin/components/dashboardwidget~dashboardwidget",
     "class/src/admin/components/DashboardWidget.js~DashboardWidget.html",
-    "<span>DashboardWidget</span> <span class=\"search-result-import-path\">flarum/components/DashboardWidget</span>",
+    "<span>DashboardWidget</span> <span class=\"search-result-import-path\">flarum/admin/components/DashboardWidget</span>",
     "class"
   ],
   [
-    "flarum/resolvers/defaultresolver~defaultresolver",
+    "flarum/common/resolvers/defaultresolver~defaultresolver",
     "class/src/common/resolvers/DefaultResolver.ts~DefaultResolver.html",
-    "<span>DefaultResolver</span> <span class=\"search-result-import-path\">flarum/resolvers/DefaultResolver</span>",
+    "<span>DefaultResolver</span> <span class=\"search-result-import-path\">flarum/common/resolvers/DefaultResolver</span>",
     "class"
   ],
   [
-    "flarum/models/discussion~discussion",
+    "flarum/common/models/discussion~discussion",
     "class/src/common/models/Discussion.js~Discussion.html",
-    "<span>Discussion</span> <span class=\"search-result-import-path\">flarum/models/Discussion</span>",
+    "<span>Discussion</span> <span class=\"search-result-import-path\">flarum/common/models/Discussion</span>",
     "class"
   ],
   [
-    "flarum/components/discussioncomposer~discussioncomposer",
+    "flarum/forum/components/discussioncomposer~discussioncomposer",
     "class/src/forum/components/DiscussionComposer.js~DiscussionComposer.html",
-    "<span>DiscussionComposer</span> <span class=\"search-result-import-path\">flarum/components/DiscussionComposer</span>",
+    "<span>DiscussionComposer</span> <span class=\"search-result-import-path\">flarum/forum/components/DiscussionComposer</span>",
     "class"
   ],
   [
-    "flarum/components/discussionhero~discussionhero",
+    "flarum/forum/components/discussionhero~discussionhero",
     "class/src/forum/components/DiscussionHero.js~DiscussionHero.html",
-    "<span>DiscussionHero</span> <span class=\"search-result-import-path\">flarum/components/DiscussionHero</span>",
+    "<span>DiscussionHero</span> <span class=\"search-result-import-path\">flarum/forum/components/DiscussionHero</span>",
     "class"
   ],
   [
-    "flarum/components/discussionlist~discussionlist",
+    "flarum/forum/components/discussionlist~discussionlist",
     "class/src/forum/components/DiscussionList.js~DiscussionList.html",
-    "<span>DiscussionList</span> <span class=\"search-result-import-path\">flarum/components/DiscussionList</span>",
+    "<span>DiscussionList</span> <span class=\"search-result-import-path\">flarum/forum/components/DiscussionList</span>",
     "class"
   ],
   [
-    "flarum/components/discussionlistitem~discussionlistitem",
+    "flarum/forum/components/discussionlistitem~discussionlistitem",
     "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html",
-    "<span>DiscussionListItem</span> <span class=\"search-result-import-path\">flarum/components/DiscussionListItem</span>",
+    "<span>DiscussionListItem</span> <span class=\"search-result-import-path\">flarum/forum/components/DiscussionListItem</span>",
     "class"
   ],
   [
-    "flarum/components/discussionlistpane~discussionlistpane",
+    "flarum/forum/components/discussionlistpane~discussionlistpane",
     "class/src/forum/components/DiscussionListPane.js~DiscussionListPane.html",
-    "<span>DiscussionListPane</span> <span class=\"search-result-import-path\">flarum/components/DiscussionListPane</span>",
+    "<span>DiscussionListPane</span> <span class=\"search-result-import-path\">flarum/forum/components/DiscussionListPane</span>",
     "class"
   ],
   [
-    "flarum/states/discussionliststate~discussionliststate",
+    "flarum/forum/states/discussionliststate~discussionliststate",
     "class/src/forum/states/DiscussionListState.ts~DiscussionListState.html",
-    "<span>DiscussionListState</span> <span class=\"search-result-import-path\">flarum/states/DiscussionListState</span>",
+    "<span>DiscussionListState</span> <span class=\"search-result-import-path\">flarum/forum/states/DiscussionListState</span>",
     "class"
   ],
   [
-    "flarum/components/discussionpage~discussionpage",
+    "flarum/forum/components/discussionpage~discussionpage",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html",
-    "<span>DiscussionPage</span> <span class=\"search-result-import-path\">flarum/components/DiscussionPage</span>",
+    "<span>DiscussionPage</span> <span class=\"search-result-import-path\">flarum/forum/components/DiscussionPage</span>",
     "class"
   ],
   [
-    "flarum/resolvers/discussionpageresolver~discussionpageresolver",
+    "flarum/forum/resolvers/discussionpageresolver~discussionpageresolver",
     "class/src/forum/resolvers/DiscussionPageResolver.ts~DiscussionPageResolver.html",
-    "<span>DiscussionPageResolver</span> <span class=\"search-result-import-path\">flarum/resolvers/DiscussionPageResolver</span>",
+    "<span>DiscussionPageResolver</span> <span class=\"search-result-import-path\">flarum/forum/resolvers/DiscussionPageResolver</span>",
     "class"
   ],
   [
-    "flarum/components/discussionrenamednotification~discussionrenamednotification",
+    "flarum/forum/components/discussionrenamednotification~discussionrenamednotification",
     "class/src/forum/components/DiscussionRenamedNotification.js~DiscussionRenamedNotification.html",
-    "<span>DiscussionRenamedNotification</span> <span class=\"search-result-import-path\">flarum/components/DiscussionRenamedNotification</span>",
+    "<span>DiscussionRenamedNotification</span> <span class=\"search-result-import-path\">flarum/forum/components/DiscussionRenamedNotification</span>",
     "class"
   ],
   [
-    "flarum/components/discussionrenamedpost~discussionrenamedpost",
+    "flarum/forum/components/discussionrenamedpost~discussionrenamedpost",
     "class/src/forum/components/DiscussionRenamedPost.js~DiscussionRenamedPost.html",
-    "<span>DiscussionRenamedPost</span> <span class=\"search-result-import-path\">flarum/components/DiscussionRenamedPost</span>",
+    "<span>DiscussionRenamedPost</span> <span class=\"search-result-import-path\">flarum/forum/components/DiscussionRenamedPost</span>",
     "class"
   ],
   [
-    "flarum/components/discussionsuserpage~discussionsuserpage",
+    "flarum/forum/components/discussionssearchsource~discussionssearchsource",
+    "class/src/forum/components/DiscussionsSearchSource.tsx~DiscussionsSearchSource.html",
+    "<span>DiscussionsSearchSource</span> <span class=\"search-result-import-path\">flarum/forum/components/DiscussionsSearchSource</span>",
+    "class"
+  ],
+  [
+    "flarum/forum/components/discussionsuserpage~discussionsuserpage",
     "class/src/forum/components/DiscussionsUserPage.js~DiscussionsUserPage.html",
-    "<span>DiscussionsUserPage</span> <span class=\"search-result-import-path\">flarum/components/DiscussionsUserPage</span>",
+    "<span>DiscussionsUserPage</span> <span class=\"search-result-import-path\">flarum/forum/components/DiscussionsUserPage</span>",
     "class"
   ],
   [
-    "flarum/utils/drawer~drawer",
+    "flarum/common/utils/drawer~drawer",
     "class/src/common/utils/Drawer.js~Drawer.html",
-    "<span>Drawer</span> <span class=\"search-result-import-path\">flarum/utils/Drawer</span>",
+    "<span>Drawer</span> <span class=\"search-result-import-path\">flarum/common/utils/Drawer</span>",
     "class"
   ],
   [
-    "flarum/components/dropdown~dropdown",
+    "flarum/common/components/dropdown~dropdown",
     "class/src/common/components/Dropdown.js~Dropdown.html",
-    "<span>Dropdown</span> <span class=\"search-result-import-path\">flarum/components/Dropdown</span>",
+    "<span>Dropdown</span> <span class=\"search-result-import-path\">flarum/common/components/Dropdown</span>",
     "class"
   ],
   [
-    "flarum/components/editcustomcssmodal~editcustomcssmodal",
+    "flarum/admin/components/editcustomcssmodal~editcustomcssmodal",
     "class/src/admin/components/EditCustomCssModal.js~EditCustomCssModal.html",
-    "<span>EditCustomCssModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomCssModal</span>",
+    "<span>EditCustomCssModal</span> <span class=\"search-result-import-path\">flarum/admin/components/EditCustomCssModal</span>",
     "class"
   ],
   [
-    "flarum/components/editcustomfootermodal~editcustomfootermodal",
+    "flarum/admin/components/editcustomfootermodal~editcustomfootermodal",
     "class/src/admin/components/EditCustomFooterModal.js~EditCustomFooterModal.html",
-    "<span>EditCustomFooterModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomFooterModal</span>",
+    "<span>EditCustomFooterModal</span> <span class=\"search-result-import-path\">flarum/admin/components/EditCustomFooterModal</span>",
     "class"
   ],
   [
-    "flarum/components/editcustomheadermodal~editcustomheadermodal",
+    "flarum/admin/components/editcustomheadermodal~editcustomheadermodal",
     "class/src/admin/components/EditCustomHeaderModal.js~EditCustomHeaderModal.html",
-    "<span>EditCustomHeaderModal</span> <span class=\"search-result-import-path\">flarum/components/EditCustomHeaderModal</span>",
+    "<span>EditCustomHeaderModal</span> <span class=\"search-result-import-path\">flarum/admin/components/EditCustomHeaderModal</span>",
     "class"
   ],
   [
-    "flarum/components/editgroupmodal~editgroupmodal",
+    "flarum/admin/components/editgroupmodal~editgroupmodal",
     "class/src/admin/components/EditGroupModal.js~EditGroupModal.html",
-    "<span>EditGroupModal</span> <span class=\"search-result-import-path\">flarum/components/EditGroupModal</span>",
+    "<span>EditGroupModal</span> <span class=\"search-result-import-path\">flarum/admin/components/EditGroupModal</span>",
     "class"
   ],
   [
-    "flarum/components/editpostcomposer~editpostcomposer",
+    "flarum/forum/components/editpostcomposer~editpostcomposer",
     "class/src/forum/components/EditPostComposer.js~EditPostComposer.html",
-    "<span>EditPostComposer</span> <span class=\"search-result-import-path\">flarum/components/EditPostComposer</span>",
+    "<span>EditPostComposer</span> <span class=\"search-result-import-path\">flarum/forum/components/EditPostComposer</span>",
     "class"
   ],
   [
-    "flarum/components/editusermodal~editusermodal",
+    "flarum/common/components/editusermodal~editusermodal",
     "class/src/common/components/EditUserModal.js~EditUserModal.html",
-    "<span>EditUserModal</span> <span class=\"search-result-import-path\">flarum/components/EditUserModal</span>",
+    "<span>EditUserModal</span> <span class=\"search-result-import-path\">flarum/common/components/EditUserModal</span>",
     "class"
   ],
   [
-    "flarum/components/eventpost~eventpost",
+    "flarum/forum/components/eventpost~eventpost",
     "class/src/forum/components/EventPost.js~EventPost.html",
-    "<span>EventPost</span> <span class=\"search-result-import-path\">flarum/components/EventPost</span>",
+    "<span>EventPost</span> <span class=\"search-result-import-path\">flarum/forum/components/EventPost</span>",
     "class"
   ],
   [
-    "flarum/utils/extensiondata~extensiondata",
+    "flarum/admin/utils/extensiondata~extensiondata",
     "class/src/admin/utils/ExtensionData.js~ExtensionData.html",
-    "<span>ExtensionData</span> <span class=\"search-result-import-path\">flarum/utils/ExtensionData</span>",
+    "<span>ExtensionData</span> <span class=\"search-result-import-path\">flarum/admin/utils/ExtensionData</span>",
     "class"
   ],
   [
-    "flarum/components/extensionlinkbutton~extensionlinkbutton",
+    "flarum/admin/components/extensionlinkbutton~extensionlinkbutton",
     "class/src/admin/components/ExtensionLinkButton.js~ExtensionLinkButton.html",
-    "<span>ExtensionLinkButton</span> <span class=\"search-result-import-path\">flarum/components/ExtensionLinkButton</span>",
+    "<span>ExtensionLinkButton</span> <span class=\"search-result-import-path\">flarum/admin/components/ExtensionLinkButton</span>",
     "class"
   ],
   [
-    "flarum/components/extensionpage~extensionpage",
+    "flarum/admin/components/extensionpage~extensionpage",
     "class/src/admin/components/ExtensionPage.js~ExtensionPage.html",
-    "<span>ExtensionPage</span> <span class=\"search-result-import-path\">flarum/components/ExtensionPage</span>",
+    "<span>ExtensionPage</span> <span class=\"search-result-import-path\">flarum/admin/components/ExtensionPage</span>",
     "class"
   ],
   [
-    "flarum/resolvers/extensionpageresolver~extensionpageresolver",
+    "flarum/admin/resolvers/extensionpageresolver~extensionpageresolver",
     "class/src/admin/resolvers/ExtensionPageResolver.ts~ExtensionPageResolver.html",
-    "<span>ExtensionPageResolver</span> <span class=\"search-result-import-path\">flarum/resolvers/ExtensionPageResolver</span>",
+    "<span>ExtensionPageResolver</span> <span class=\"search-result-import-path\">flarum/admin/resolvers/ExtensionPageResolver</span>",
     "class"
   ],
   [
-    "flarum/components/extensionpermissiongrid~extensionpermissiongrid",
+    "flarum/admin/components/extensionpermissiongrid~extensionpermissiongrid",
     "class/src/admin/components/ExtensionPermissionGrid.js~ExtensionPermissionGrid.html",
-    "<span>ExtensionPermissionGrid</span> <span class=\"search-result-import-path\">flarum/components/ExtensionPermissionGrid</span>",
+    "<span>ExtensionPermissionGrid</span> <span class=\"search-result-import-path\">flarum/admin/components/ExtensionPermissionGrid</span>",
     "class"
   ],
   [
-    "flarum/components/extensionswidget~extensionswidget",
+    "flarum/admin/components/extensionswidget~extensionswidget",
     "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html",
-    "<span>ExtensionsWidget</span> <span class=\"search-result-import-path\">flarum/components/ExtensionsWidget</span>",
+    "<span>ExtensionsWidget</span> <span class=\"search-result-import-path\">flarum/admin/components/ExtensionsWidget</span>",
     "class"
   ],
   [
-    "flarum/components/fieldset~fieldset",
+    "flarum/common/components/fieldset~fieldset",
     "class/src/common/components/FieldSet.js~FieldSet.html",
-    "<span>FieldSet</span> <span class=\"search-result-import-path\">flarum/components/FieldSet</span>",
+    "<span>FieldSet</span> <span class=\"search-result-import-path\">flarum/common/components/FieldSet</span>",
     "class"
   ],
   [
-    "flarum/components/forgotpasswordmodal~forgotpasswordmodal",
+    "flarum/forum/components/forgotpasswordmodal~forgotpasswordmodal",
     "class/src/forum/components/ForgotPasswordModal.js~ForgotPasswordModal.html",
-    "<span>ForgotPasswordModal</span> <span class=\"search-result-import-path\">flarum/components/ForgotPasswordModal</span>",
+    "<span>ForgotPasswordModal</span> <span class=\"search-result-import-path\">flarum/forum/components/ForgotPasswordModal</span>",
     "class"
   ],
   [
-    "flarum/models/forum~forum",
+    "flarum/common/models/forum~forum",
     "class/src/common/models/Forum.js~Forum.html",
-    "<span>Forum</span> <span class=\"search-result-import-path\">flarum/models/Forum</span>",
+    "<span>Forum</span> <span class=\"search-result-import-path\">flarum/common/models/Forum</span>",
     "class"
   ],
   [
-    "flarum/forumapplication~forumapplication",
+    "flarum/forum/forumapplication~forumapplication",
     "class/src/forum/ForumApplication.js~ForumApplication.html",
-    "<span>ForumApplication</span> <span class=\"search-result-import-path\">flarum/ForumApplication</span>",
+    "<span>ForumApplication</span> <span class=\"search-result-import-path\">flarum/forum/ForumApplication</span>",
     "class"
   ],
   [
-    "flarum/fragment~fragment",
+    "flarum/common/fragment~fragment",
     "class/src/common/Fragment.ts~Fragment.html",
-    "<span>Fragment</span> <span class=\"search-result-import-path\">flarum/Fragment</span>",
+    "<span>Fragment</span> <span class=\"search-result-import-path\">flarum/common/Fragment</span>",
     "class"
   ],
   [
-    "flarum/states/globalsearchstate~globalsearchstate",
+    "flarum/forum/states/globalsearchstate~globalsearchstate",
     "class/src/forum/states/GlobalSearchState.ts~GlobalSearchState.html",
-    "<span>GlobalSearchState</span> <span class=\"search-result-import-path\">flarum/states/GlobalSearchState</span>",
+    "<span>GlobalSearchState</span> <span class=\"search-result-import-path\">flarum/forum/states/GlobalSearchState</span>",
     "class"
   ],
   [
-    "flarum/models/group~group",
+    "flarum/common/models/group~group",
     "class/src/common/models/Group.js~Group.html",
-    "<span>Group</span> <span class=\"search-result-import-path\">flarum/models/Group</span>",
+    "<span>Group</span> <span class=\"search-result-import-path\">flarum/common/models/Group</span>",
     "class"
   ],
   [
-    "flarum/components/groupbadge~groupbadge",
+    "flarum/common/components/groupbadge~groupbadge",
     "class/src/common/components/GroupBadge.js~GroupBadge.html",
-    "<span>GroupBadge</span> <span class=\"search-result-import-path\">flarum/components/GroupBadge</span>",
+    "<span>GroupBadge</span> <span class=\"search-result-import-path\">flarum/common/components/GroupBadge</span>",
     "class"
   ],
   [
-    "flarum/components/headerprimary~headerprimary",
+    "flarum/admin/components/headerprimary~headerprimary",
     "class/src/admin/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/admin/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headerprimary~headerprimary",
+    "flarum/forum/components/headerprimary~headerprimary",
     "class/src/forum/components/HeaderPrimary.js~HeaderPrimary.html",
-    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/components/HeaderPrimary</span>",
+    "<span>HeaderPrimary</span> <span class=\"search-result-import-path\">flarum/forum/components/HeaderPrimary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
+    "flarum/admin/components/headersecondary~headersecondary",
     "class/src/admin/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/admin/components/HeaderSecondary</span>",
     "class"
   ],
   [
-    "flarum/components/headersecondary~headersecondary",
+    "flarum/forum/components/headersecondary~headersecondary",
     "class/src/forum/components/HeaderSecondary.js~HeaderSecondary.html",
-    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/components/HeaderSecondary</span>",
+    "<span>HeaderSecondary</span> <span class=\"search-result-import-path\">flarum/forum/components/HeaderSecondary</span>",
     "class"
   ],
   [
-    "flarum/utils/history~history",
+    "flarum/forum/utils/history~history",
     "class/src/forum/utils/History.js~History.html",
-    "<span>History</span> <span class=\"search-result-import-path\">flarum/utils/History</span>",
+    "<span>History</span> <span class=\"search-result-import-path\">flarum/forum/utils/History</span>",
     "class"
   ],
   [
-    "flarum/components/indexpage~indexpage",
+    "flarum/forum/components/indexpage~indexpage",
     "class/src/forum/components/IndexPage.js~IndexPage.html",
-    "<span>IndexPage</span> <span class=\"search-result-import-path\">flarum/components/IndexPage</span>",
+    "<span>IndexPage</span> <span class=\"search-result-import-path\">flarum/forum/components/IndexPage</span>",
     "class"
   ],
   [
-    "flarum/utils/itemlist~itemlist",
+    "flarum/common/utils/itemlist~itemlist",
     "class/src/common/utils/ItemList.ts~ItemList.html",
-    "<span>ItemList</span> <span class=\"search-result-import-path\">flarum/utils/ItemList</span>",
+    "<span>ItemList</span> <span class=\"search-result-import-path\">flarum/common/utils/ItemList</span>",
     "class"
   ],
   [
-    "flarum/utils/keyboardnavigatable~keyboardnavigatable",
+    "flarum/forum/utils/keyboardnavigatable~keyboardnavigatable",
     "class/src/forum/utils/KeyboardNavigatable.ts~KeyboardNavigatable.html",
-    "<span>KeyboardNavigatable</span> <span class=\"search-result-import-path\">flarum/utils/KeyboardNavigatable</span>",
+    "<span>KeyboardNavigatable</span> <span class=\"search-result-import-path\">flarum/forum/utils/KeyboardNavigatable</span>",
     "class"
   ],
   [
-    "flarum/components/link~link",
+    "flarum/common/components/link~link",
     "class/src/common/components/Link.js~Link.html",
-    "<span>Link</span> <span class=\"search-result-import-path\">flarum/components/Link</span>",
+    "<span>Link</span> <span class=\"search-result-import-path\">flarum/common/components/Link</span>",
     "class"
   ],
   [
-    "flarum/components/linkbutton~linkbutton",
+    "flarum/common/components/linkbutton~linkbutton",
     "class/src/common/components/LinkButton.js~LinkButton.html",
-    "<span>LinkButton</span> <span class=\"search-result-import-path\">flarum/components/LinkButton</span>",
+    "<span>LinkButton</span> <span class=\"search-result-import-path\">flarum/common/components/LinkButton</span>",
     "class"
   ],
   [
-    "flarum/components/loadingmodal~loadingmodal",
+    "flarum/common/components/loadingindicator~loadingindicator",
+    "class/src/common/components/LoadingIndicator.tsx~LoadingIndicator.html",
+    "<span>LoadingIndicator</span> <span class=\"search-result-import-path\">flarum/common/components/LoadingIndicator</span>",
+    "class"
+  ],
+  [
+    "flarum/admin/components/loadingmodal~loadingmodal",
     "class/src/admin/components/LoadingModal.js~LoadingModal.html",
-    "<span>LoadingModal</span> <span class=\"search-result-import-path\">flarum/components/LoadingModal</span>",
+    "<span>LoadingModal</span> <span class=\"search-result-import-path\">flarum/admin/components/LoadingModal</span>",
     "class"
   ],
   [
-    "flarum/components/loadingpost~loadingpost",
+    "flarum/forum/components/loadingpost~loadingpost",
     "class/src/forum/components/LoadingPost.js~LoadingPost.html",
-    "<span>LoadingPost</span> <span class=\"search-result-import-path\">flarum/components/LoadingPost</span>",
+    "<span>LoadingPost</span> <span class=\"search-result-import-path\">flarum/forum/components/LoadingPost</span>",
     "class"
   ],
   [
-    "flarum/components/loginbutton~loginbutton",
+    "flarum/forum/components/loginbutton~loginbutton",
     "class/src/forum/components/LogInButton.js~LogInButton.html",
-    "<span>LogInButton</span> <span class=\"search-result-import-path\">flarum/components/LogInButton</span>",
+    "<span>LogInButton</span> <span class=\"search-result-import-path\">flarum/forum/components/LogInButton</span>",
     "class"
   ],
   [
-    "flarum/components/loginbuttons~loginbuttons",
+    "flarum/forum/components/loginbuttons~loginbuttons",
     "class/src/forum/components/LogInButtons.js~LogInButtons.html",
-    "<span>LogInButtons</span> <span class=\"search-result-import-path\">flarum/components/LogInButtons</span>",
+    "<span>LogInButtons</span> <span class=\"search-result-import-path\">flarum/forum/components/LogInButtons</span>",
     "class"
   ],
   [
-    "flarum/components/loginmodal~loginmodal",
+    "flarum/forum/components/loginmodal~loginmodal",
     "class/src/forum/components/LogInModal.js~LogInModal.html",
-    "<span>LogInModal</span> <span class=\"search-result-import-path\">flarum/components/LogInModal</span>",
+    "<span>LogInModal</span> <span class=\"search-result-import-path\">flarum/forum/components/LogInModal</span>",
     "class"
   ],
   [
-    "flarum/components/mailpage~mailpage",
+    "flarum/admin/components/mailpage~mailpage",
     "class/src/admin/components/MailPage.js~MailPage.html",
-    "<span>MailPage</span> <span class=\"search-result-import-path\">flarum/components/MailPage</span>",
+    "<span>MailPage</span> <span class=\"search-result-import-path\">flarum/admin/components/MailPage</span>",
     "class"
   ],
   [
-    "flarum/components/modal~modal",
+    "flarum/common/components/modal~modal",
     "class/src/common/components/Modal.js~Modal.html",
-    "<span>Modal</span> <span class=\"search-result-import-path\">flarum/components/Modal</span>",
+    "<span>Modal</span> <span class=\"search-result-import-path\">flarum/common/components/Modal</span>",
     "class"
   ],
   [
-    "flarum/components/modalmanager~modalmanager",
+    "flarum/common/components/modalmanager~modalmanager",
     "class/src/common/components/ModalManager.js~ModalManager.html",
-    "<span>ModalManager</span> <span class=\"search-result-import-path\">flarum/components/ModalManager</span>",
+    "<span>ModalManager</span> <span class=\"search-result-import-path\">flarum/common/components/ModalManager</span>",
     "class"
   ],
   [
-    "flarum/states/modalmanagerstate~modalmanagerstate",
+    "flarum/common/states/modalmanagerstate~modalmanagerstate",
     "class/src/common/states/ModalManagerState.js~ModalManagerState.html",
-    "<span>ModalManagerState</span> <span class=\"search-result-import-path\">flarum/states/ModalManagerState</span>",
+    "<span>ModalManagerState</span> <span class=\"search-result-import-path\">flarum/common/states/ModalManagerState</span>",
     "class"
   ],
   [
-    "flarum/model~model",
+    "flarum/common/model~model",
     "class/src/common/Model.js~Model.html",
-    "<span>Model</span> <span class=\"search-result-import-path\">flarum/Model</span>",
+    "<span>Model</span> <span class=\"search-result-import-path\">flarum/common/Model</span>",
     "class"
   ],
   [
-    "flarum/extend/model~model",
+    "flarum/common/extend/model~model",
     "class/src/common/extend/Model.js~Model.html",
-    "<span>Model</span> <span class=\"search-result-import-path\">flarum/extend/Model</span>",
+    "<span>Model</span> <span class=\"search-result-import-path\">flarum/common/extend/Model</span>",
     "class"
   ],
   [
-    "flarum/components/navigation~navigation",
+    "flarum/common/components/navigation~navigation",
     "class/src/common/components/Navigation.js~Navigation.html",
-    "<span>Navigation</span> <span class=\"search-result-import-path\">flarum/components/Navigation</span>",
+    "<span>Navigation</span> <span class=\"search-result-import-path\">flarum/common/components/Navigation</span>",
     "class"
   ],
   [
-    "flarum/components/notification~notification",
-    "class/src/forum/components/Notification.js~Notification.html",
-    "<span>Notification</span> <span class=\"search-result-import-path\">flarum/components/Notification</span>",
-    "class"
-  ],
-  [
-    "flarum/models/notification~notification",
+    "flarum/common/models/notification~notification",
     "class/src/common/models/Notification.js~Notification.html",
-    "<span>Notification</span> <span class=\"search-result-import-path\">flarum/models/Notification</span>",
+    "<span>Notification</span> <span class=\"search-result-import-path\">flarum/common/models/Notification</span>",
     "class"
   ],
   [
-    "flarum/components/notificationgrid~notificationgrid",
+    "flarum/forum/components/notification~notification",
+    "class/src/forum/components/Notification.js~Notification.html",
+    "<span>Notification</span> <span class=\"search-result-import-path\">flarum/forum/components/Notification</span>",
+    "class"
+  ],
+  [
+    "flarum/forum/components/notificationgrid~notificationgrid",
     "class/src/forum/components/NotificationGrid.js~NotificationGrid.html",
-    "<span>NotificationGrid</span> <span class=\"search-result-import-path\">flarum/components/NotificationGrid</span>",
+    "<span>NotificationGrid</span> <span class=\"search-result-import-path\">flarum/forum/components/NotificationGrid</span>",
     "class"
   ],
   [
-    "flarum/components/notificationlist~notificationlist",
+    "flarum/forum/components/notificationlist~notificationlist",
     "class/src/forum/components/NotificationList.js~NotificationList.html",
-    "<span>NotificationList</span> <span class=\"search-result-import-path\">flarum/components/NotificationList</span>",
+    "<span>NotificationList</span> <span class=\"search-result-import-path\">flarum/forum/components/NotificationList</span>",
     "class"
   ],
   [
-    "flarum/states/notificationliststate~notificationliststate",
+    "flarum/forum/states/notificationliststate~notificationliststate",
     "class/src/forum/states/NotificationListState.ts~NotificationListState.html",
-    "<span>NotificationListState</span> <span class=\"search-result-import-path\">flarum/states/NotificationListState</span>",
+    "<span>NotificationListState</span> <span class=\"search-result-import-path\">flarum/forum/states/NotificationListState</span>",
     "class"
   ],
   [
-    "flarum/components/notificationsdropdown~notificationsdropdown",
+    "flarum/forum/components/notificationsdropdown~notificationsdropdown",
     "class/src/forum/components/NotificationsDropdown.js~NotificationsDropdown.html",
-    "<span>NotificationsDropdown</span> <span class=\"search-result-import-path\">flarum/components/NotificationsDropdown</span>",
+    "<span>NotificationsDropdown</span> <span class=\"search-result-import-path\">flarum/forum/components/NotificationsDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/notificationspage~notificationspage",
+    "flarum/forum/components/notificationspage~notificationspage",
     "class/src/forum/components/NotificationsPage.js~NotificationsPage.html",
-    "<span>NotificationsPage</span> <span class=\"search-result-import-path\">flarum/components/NotificationsPage</span>",
+    "<span>NotificationsPage</span> <span class=\"search-result-import-path\">flarum/forum/components/NotificationsPage</span>",
     "class"
   ],
   [
-    "flarum/components/page~page",
+    "flarum/common/components/page~page",
     "class/src/common/components/Page.js~Page.html",
-    "<span>Page</span> <span class=\"search-result-import-path\">flarum/components/Page</span>",
+    "<span>Page</span> <span class=\"search-result-import-path\">flarum/common/components/Page</span>",
     "class"
   ],
   [
-    "flarum/states/pagestate~pagestate",
+    "flarum/common/states/pagestate~pagestate",
     "class/src/common/states/PageState.js~PageState.html",
-    "<span>PageState</span> <span class=\"search-result-import-path\">flarum/states/PageState</span>",
+    "<span>PageState</span> <span class=\"search-result-import-path\">flarum/common/states/PageState</span>",
     "class"
   ],
   [
-    "flarum/utils/pane~pane",
+    "flarum/forum/utils/pane~pane",
     "class/src/forum/utils/Pane.js~Pane.html",
-    "<span>Pane</span> <span class=\"search-result-import-path\">flarum/utils/Pane</span>",
+    "<span>Pane</span> <span class=\"search-result-import-path\">flarum/forum/utils/Pane</span>",
     "class"
   ],
   [
-    "flarum/components/permissiondropdown~permissiondropdown",
+    "flarum/admin/components/permissiondropdown~permissiondropdown",
     "class/src/admin/components/PermissionDropdown.js~PermissionDropdown.html",
-    "<span>PermissionDropdown</span> <span class=\"search-result-import-path\">flarum/components/PermissionDropdown</span>",
+    "<span>PermissionDropdown</span> <span class=\"search-result-import-path\">flarum/admin/components/PermissionDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/permissiongrid~permissiongrid",
+    "flarum/admin/components/permissiongrid~permissiongrid",
     "class/src/admin/components/PermissionGrid.js~PermissionGrid.html",
-    "<span>PermissionGrid</span> <span class=\"search-result-import-path\">flarum/components/PermissionGrid</span>",
+    "<span>PermissionGrid</span> <span class=\"search-result-import-path\">flarum/admin/components/PermissionGrid</span>",
     "class"
   ],
   [
-    "flarum/components/permissionspage~permissionspage",
+    "flarum/admin/components/permissionspage~permissionspage",
     "class/src/admin/components/PermissionsPage.js~PermissionsPage.html",
-    "<span>PermissionsPage</span> <span class=\"search-result-import-path\">flarum/components/PermissionsPage</span>",
+    "<span>PermissionsPage</span> <span class=\"search-result-import-path\">flarum/admin/components/PermissionsPage</span>",
     "class"
   ],
   [
-    "flarum/components/placeholder~placeholder",
+    "flarum/common/components/placeholder~placeholder",
     "class/src/common/components/Placeholder.js~Placeholder.html",
-    "<span>Placeholder</span> <span class=\"search-result-import-path\">flarum/components/Placeholder</span>",
+    "<span>Placeholder</span> <span class=\"search-result-import-path\">flarum/common/components/Placeholder</span>",
     "class"
   ],
   [
-    "flarum/components/post~post",
-    "class/src/forum/components/Post.js~Post.html",
-    "<span>Post</span> <span class=\"search-result-import-path\">flarum/components/Post</span>",
-    "class"
-  ],
-  [
-    "flarum/models/post~post",
+    "flarum/common/models/post~post",
     "class/src/common/models/Post.js~Post.html",
-    "<span>Post</span> <span class=\"search-result-import-path\">flarum/models/Post</span>",
+    "<span>Post</span> <span class=\"search-result-import-path\">flarum/common/models/Post</span>",
     "class"
   ],
   [
-    "flarum/components/postedited~postedited",
+    "flarum/forum/components/post~post",
+    "class/src/forum/components/Post.js~Post.html",
+    "<span>Post</span> <span class=\"search-result-import-path\">flarum/forum/components/Post</span>",
+    "class"
+  ],
+  [
+    "flarum/forum/components/postedited~postedited",
     "class/src/forum/components/PostEdited.js~PostEdited.html",
-    "<span>PostEdited</span> <span class=\"search-result-import-path\">flarum/components/PostEdited</span>",
+    "<span>PostEdited</span> <span class=\"search-result-import-path\">flarum/forum/components/PostEdited</span>",
     "class"
   ],
   [
-    "flarum/components/postmeta~postmeta",
+    "flarum/forum/components/postmeta~postmeta",
     "class/src/forum/components/PostMeta.js~PostMeta.html",
-    "<span>PostMeta</span> <span class=\"search-result-import-path\">flarum/components/PostMeta</span>",
+    "<span>PostMeta</span> <span class=\"search-result-import-path\">flarum/forum/components/PostMeta</span>",
     "class"
   ],
   [
-    "flarum/components/postpreview~postpreview",
+    "flarum/forum/components/postpreview~postpreview",
     "class/src/forum/components/PostPreview.js~PostPreview.html",
-    "<span>PostPreview</span> <span class=\"search-result-import-path\">flarum/components/PostPreview</span>",
+    "<span>PostPreview</span> <span class=\"search-result-import-path\">flarum/forum/components/PostPreview</span>",
     "class"
   ],
   [
-    "flarum/components/poststream~poststream",
+    "flarum/forum/components/poststream~poststream",
     "class/src/forum/components/PostStream.js~PostStream.html",
-    "<span>PostStream</span> <span class=\"search-result-import-path\">flarum/components/PostStream</span>",
+    "<span>PostStream</span> <span class=\"search-result-import-path\">flarum/forum/components/PostStream</span>",
     "class"
   ],
   [
-    "flarum/components/poststreamscrubber~poststreamscrubber",
+    "flarum/forum/components/poststreamscrubber~poststreamscrubber",
     "class/src/forum/components/PostStreamScrubber.js~PostStreamScrubber.html",
-    "<span>PostStreamScrubber</span> <span class=\"search-result-import-path\">flarum/components/PostStreamScrubber</span>",
+    "<span>PostStreamScrubber</span> <span class=\"search-result-import-path\">flarum/forum/components/PostStreamScrubber</span>",
     "class"
   ],
   [
-    "flarum/states/poststreamstate~poststreamstate",
+    "flarum/forum/states/poststreamstate~poststreamstate",
     "class/src/forum/states/PostStreamState.js~PostStreamState.html",
-    "<span>PostStreamState</span> <span class=\"search-result-import-path\">flarum/states/PostStreamState</span>",
+    "<span>PostStreamState</span> <span class=\"search-result-import-path\">flarum/forum/states/PostStreamState</span>",
     "class"
   ],
   [
-    "flarum/extend/posttypes~posttypes",
+    "flarum/common/extend/posttypes~posttypes",
     "class/src/common/extend/PostTypes.js~PostTypes.html",
-    "<span>PostTypes</span> <span class=\"search-result-import-path\">flarum/extend/PostTypes</span>",
+    "<span>PostTypes</span> <span class=\"search-result-import-path\">flarum/common/extend/PostTypes</span>",
     "class"
   ],
   [
-    "flarum/components/postuser~postuser",
+    "flarum/forum/components/postuser~postuser",
     "class/src/forum/components/PostUser.js~PostUser.html",
-    "<span>PostUser</span> <span class=\"search-result-import-path\">flarum/components/PostUser</span>",
+    "<span>PostUser</span> <span class=\"search-result-import-path\">flarum/forum/components/PostUser</span>",
     "class"
   ],
   [
-    "flarum/components/postsuserpage~postsuserpage",
+    "flarum/forum/components/postsuserpage~postsuserpage",
     "class/src/forum/components/PostsUserPage.js~PostsUserPage.html",
-    "<span>PostsUserPage</span> <span class=\"search-result-import-path\">flarum/components/PostsUserPage</span>",
+    "<span>PostsUserPage</span> <span class=\"search-result-import-path\">flarum/forum/components/PostsUserPage</span>",
     "class"
   ],
   [
-    "flarum/components/renamediscussionmodal~renamediscussionmodal",
+    "flarum/forum/components/renamediscussionmodal~renamediscussionmodal",
     "class/src/forum/components/RenameDiscussionModal.js~RenameDiscussionModal.html",
-    "<span>RenameDiscussionModal</span> <span class=\"search-result-import-path\">flarum/components/RenameDiscussionModal</span>",
+    "<span>RenameDiscussionModal</span> <span class=\"search-result-import-path\">flarum/forum/components/RenameDiscussionModal</span>",
     "class"
   ],
   [
-    "flarum/components/replycomposer~replycomposer",
+    "flarum/forum/components/replycomposer~replycomposer",
     "class/src/forum/components/ReplyComposer.js~ReplyComposer.html",
-    "<span>ReplyComposer</span> <span class=\"search-result-import-path\">flarum/components/ReplyComposer</span>",
+    "<span>ReplyComposer</span> <span class=\"search-result-import-path\">flarum/forum/components/ReplyComposer</span>",
     "class"
   ],
   [
-    "flarum/components/replyplaceholder~replyplaceholder",
+    "flarum/forum/components/replyplaceholder~replyplaceholder",
     "class/src/forum/components/ReplyPlaceholder.js~ReplyPlaceholder.html",
-    "<span>ReplyPlaceholder</span> <span class=\"search-result-import-path\">flarum/components/ReplyPlaceholder</span>",
+    "<span>ReplyPlaceholder</span> <span class=\"search-result-import-path\">flarum/forum/components/ReplyPlaceholder</span>",
     "class"
   ],
   [
-    "flarum/utils/requesterror~requesterror",
+    "flarum/common/utils/requesterror~requesterror",
     "class/src/common/utils/RequestError.ts~RequestError.html",
-    "<span>RequestError</span> <span class=\"search-result-import-path\">flarum/utils/RequestError</span>",
+    "<span>RequestError</span> <span class=\"search-result-import-path\">flarum/common/utils/RequestError</span>",
     "class"
   ],
   [
-    "flarum/components/requesterrormodal~requesterrormodal",
+    "flarum/common/components/requesterrormodal~requesterrormodal",
     "class/src/common/components/RequestErrorModal.js~RequestErrorModal.html",
-    "<span>RequestErrorModal</span> <span class=\"search-result-import-path\">flarum/components/RequestErrorModal</span>",
+    "<span>RequestErrorModal</span> <span class=\"search-result-import-path\">flarum/common/components/RequestErrorModal</span>",
     "class"
   ],
   [
-    "flarum/extend/routes~routes",
+    "flarum/common/extend/routes~routes",
     "class/src/common/extend/Routes.js~Routes.html",
-    "<span>Routes</span> <span class=\"search-result-import-path\">flarum/extend/Routes</span>",
+    "<span>Routes</span> <span class=\"search-result-import-path\">flarum/common/extend/Routes</span>",
     "class"
   ],
   [
-    "flarum/utils/scrolllistener~scrolllistener",
+    "flarum/common/utils/scrolllistener~scrolllistener",
     "class/src/common/utils/ScrollListener.js~ScrollListener.html",
-    "<span>ScrollListener</span> <span class=\"search-result-import-path\">flarum/utils/ScrollListener</span>",
+    "<span>ScrollListener</span> <span class=\"search-result-import-path\">flarum/common/utils/ScrollListener</span>",
     "class"
   ],
   [
-    "flarum/states/searchstate~searchstate",
+    "flarum/forum/components/search~search",
+    "class/src/forum/components/Search.tsx~Search.html",
+    "<span>Search</span> <span class=\"search-result-import-path\">flarum/forum/components/Search</span>",
+    "class"
+  ],
+  [
+    "flarum/forum/states/searchstate~searchstate",
     "class/src/forum/states/SearchState.ts~SearchState.html",
-    "<span>SearchState</span> <span class=\"search-result-import-path\">flarum/states/SearchState</span>",
+    "<span>SearchState</span> <span class=\"search-result-import-path\">flarum/forum/states/SearchState</span>",
     "class"
   ],
   [
-    "flarum/components/select~select",
+    "flarum/common/components/select~select",
     "class/src/common/components/Select.js~Select.html",
-    "<span>Select</span> <span class=\"search-result-import-path\">flarum/components/Select</span>",
+    "<span>Select</span> <span class=\"search-result-import-path\">flarum/common/components/Select</span>",
     "class"
   ],
   [
-    "flarum/components/selectdropdown~selectdropdown",
+    "flarum/common/components/selectdropdown~selectdropdown",
     "class/src/common/components/SelectDropdown.js~SelectDropdown.html",
-    "<span>SelectDropdown</span> <span class=\"search-result-import-path\">flarum/components/SelectDropdown</span>",
+    "<span>SelectDropdown</span> <span class=\"search-result-import-path\">flarum/common/components/SelectDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/separator~separator",
+    "flarum/common/components/separator~separator",
     "class/src/common/components/Separator.js~Separator.html",
-    "<span>Separator</span> <span class=\"search-result-import-path\">flarum/components/Separator</span>",
+    "<span>Separator</span> <span class=\"search-result-import-path\">flarum/common/components/Separator</span>",
     "class"
   ],
   [
-    "flarum/session~session",
+    "flarum/common/session~session",
     "class/src/common/Session.js~Session.html",
-    "<span>Session</span> <span class=\"search-result-import-path\">flarum/Session</span>",
+    "<span>Session</span> <span class=\"search-result-import-path\">flarum/common/Session</span>",
     "class"
   ],
   [
-    "flarum/components/sessiondropdown~sessiondropdown",
+    "flarum/admin/components/sessiondropdown~sessiondropdown",
     "class/src/admin/components/SessionDropdown.js~SessionDropdown.html",
-    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
+    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/admin/components/SessionDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/sessiondropdown~sessiondropdown",
+    "flarum/forum/components/sessiondropdown~sessiondropdown",
     "class/src/forum/components/SessionDropdown.js~SessionDropdown.html",
-    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/components/SessionDropdown</span>",
+    "<span>SessionDropdown</span> <span class=\"search-result-import-path\">flarum/forum/components/SessionDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/settingdropdown~settingdropdown",
+    "flarum/admin/components/settingdropdown~settingdropdown",
     "class/src/admin/components/SettingDropdown.js~SettingDropdown.html",
-    "<span>SettingDropdown</span> <span class=\"search-result-import-path\">flarum/components/SettingDropdown</span>",
+    "<span>SettingDropdown</span> <span class=\"search-result-import-path\">flarum/admin/components/SettingDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/settingsmodal~settingsmodal",
+    "flarum/admin/components/settingsmodal~settingsmodal",
     "class/src/admin/components/SettingsModal.js~SettingsModal.html",
-    "<span>SettingsModal</span> <span class=\"search-result-import-path\">flarum/components/SettingsModal</span>",
+    "<span>SettingsModal</span> <span class=\"search-result-import-path\">flarum/admin/components/SettingsModal</span>",
     "class"
   ],
   [
-    "flarum/components/settingspage~settingspage",
+    "flarum/forum/components/settingspage~settingspage",
     "class/src/forum/components/SettingsPage.js~SettingsPage.html",
-    "<span>SettingsPage</span> <span class=\"search-result-import-path\">flarum/components/SettingsPage</span>",
+    "<span>SettingsPage</span> <span class=\"search-result-import-path\">flarum/forum/components/SettingsPage</span>",
     "class"
   ],
   [
-    "flarum/components/signupmodal~signupmodal",
+    "flarum/forum/components/signupmodal~signupmodal",
     "class/src/forum/components/SignUpModal.js~SignUpModal.html",
-    "<span>SignUpModal</span> <span class=\"search-result-import-path\">flarum/components/SignUpModal</span>",
+    "<span>SignUpModal</span> <span class=\"search-result-import-path\">flarum/forum/components/SignUpModal</span>",
     "class"
   ],
   [
-    "flarum/components/splitdropdown~splitdropdown",
+    "flarum/common/components/splitdropdown~splitdropdown",
     "class/src/common/components/SplitDropdown.js~SplitDropdown.html",
-    "<span>SplitDropdown</span> <span class=\"search-result-import-path\">flarum/components/SplitDropdown</span>",
+    "<span>SplitDropdown</span> <span class=\"search-result-import-path\">flarum/common/components/SplitDropdown</span>",
     "class"
   ],
   [
-    "flarum/components/statuswidget~statuswidget",
+    "flarum/admin/components/statuswidget~statuswidget",
     "class/src/admin/components/StatusWidget.js~StatusWidget.html",
-    "<span>StatusWidget</span> <span class=\"search-result-import-path\">flarum/components/StatusWidget</span>",
+    "<span>StatusWidget</span> <span class=\"search-result-import-path\">flarum/admin/components/StatusWidget</span>",
     "class"
   ],
   [
-    "flarum/store~store",
+    "flarum/common/store~store",
     "class/src/common/Store.js~Store.html",
-    "<span>Store</span> <span class=\"search-result-import-path\">flarum/Store</span>",
+    "<span>Store</span> <span class=\"search-result-import-path\">flarum/common/Store</span>",
     "class"
   ],
   [
-    "flarum/utils/subtreeretainer~subtreeretainer",
+    "flarum/common/utils/subtreeretainer~subtreeretainer",
     "class/src/common/utils/SubtreeRetainer.js~SubtreeRetainer.html",
-    "<span>SubtreeRetainer</span> <span class=\"search-result-import-path\">flarum/utils/SubtreeRetainer</span>",
+    "<span>SubtreeRetainer</span> <span class=\"search-result-import-path\">flarum/common/utils/SubtreeRetainer</span>",
     "class"
   ],
   [
-    "flarum/components/switch~switch",
+    "flarum/common/components/switch~switch",
     "class/src/common/components/Switch.js~Switch.html",
-    "<span>Switch</span> <span class=\"search-result-import-path\">flarum/components/Switch</span>",
+    "<span>Switch</span> <span class=\"search-result-import-path\">flarum/common/components/Switch</span>",
     "class"
   ],
   [
-    "flarum/components/terminalpost~terminalpost",
+    "flarum/forum/components/terminalpost~terminalpost",
     "class/src/forum/components/TerminalPost.js~TerminalPost.html",
-    "<span>TerminalPost</span> <span class=\"search-result-import-path\">flarum/components/TerminalPost</span>",
+    "<span>TerminalPost</span> <span class=\"search-result-import-path\">flarum/forum/components/TerminalPost</span>",
     "class"
   ],
   [
-    "flarum/components/texteditor~texteditor",
+    "flarum/common/components/texteditor~texteditor",
     "class/src/common/components/TextEditor.js~TextEditor.html",
-    "<span>TextEditor</span> <span class=\"search-result-import-path\">flarum/components/TextEditor</span>",
+    "<span>TextEditor</span> <span class=\"search-result-import-path\">flarum/common/components/TextEditor</span>",
     "class"
   ],
   [
-    "flarum/components/texteditorbutton~texteditorbutton",
+    "flarum/common/components/texteditorbutton~texteditorbutton",
     "class/src/common/components/TextEditorButton.js~TextEditorButton.html",
-    "<span>TextEditorButton</span> <span class=\"search-result-import-path\">flarum/components/TextEditorButton</span>",
+    "<span>TextEditorButton</span> <span class=\"search-result-import-path\">flarum/common/components/TextEditorButton</span>",
     "class"
   ],
   [
-    "flarum/translator~translator",
+    "flarum/common/components/tooltip~tooltip",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html",
+    "<span>Tooltip</span> <span class=\"search-result-import-path\">flarum/common/components/Tooltip</span>",
+    "class"
+  ],
+  [
+    "flarum/common/translator~translator",
     "class/src/common/Translator.ts~Translator.html",
-    "<span>Translator</span> <span class=\"search-result-import-path\">flarum/Translator</span>",
+    "<span>Translator</span> <span class=\"search-result-import-path\">flarum/common/Translator</span>",
     "class"
   ],
   [
-    "flarum/components/uploadimagebutton~uploadimagebutton",
+    "flarum/admin/components/uploadimagebutton~uploadimagebutton",
     "class/src/admin/components/UploadImageButton.js~UploadImageButton.html",
-    "<span>UploadImageButton</span> <span class=\"search-result-import-path\">flarum/components/UploadImageButton</span>",
+    "<span>UploadImageButton</span> <span class=\"search-result-import-path\">flarum/admin/components/UploadImageButton</span>",
     "class"
   ],
   [
-    "flarum/models/user~user",
+    "flarum/common/models/user~user",
     "class/src/common/models/User.js~User.html",
-    "<span>User</span> <span class=\"search-result-import-path\">flarum/models/User</span>",
+    "<span>User</span> <span class=\"search-result-import-path\">flarum/common/models/User</span>",
     "class"
   ],
   [
-    "flarum/components/usercard~usercard",
+    "flarum/forum/components/usercard~usercard",
     "class/src/forum/components/UserCard.js~UserCard.html",
-    "<span>UserCard</span> <span class=\"search-result-import-path\">flarum/components/UserCard</span>",
+    "<span>UserCard</span> <span class=\"search-result-import-path\">flarum/forum/components/UserCard</span>",
     "class"
   ],
   [
-    "flarum/components/userpage~userpage",
+    "flarum/admin/components/userlistpage~userlistpage",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html",
+    "<span>UserListPage</span> <span class=\"search-result-import-path\">flarum/admin/components/UserListPage</span>",
+    "class"
+  ],
+  [
+    "flarum/forum/components/userpage~userpage",
     "class/src/forum/components/UserPage.js~UserPage.html",
-    "<span>UserPage</span> <span class=\"search-result-import-path\">flarum/components/UserPage</span>",
+    "<span>UserPage</span> <span class=\"search-result-import-path\">flarum/forum/components/UserPage</span>",
     "class"
   ],
   [
-    "flarum/components/welcomehero~welcomehero",
+    "flarum/forum/components/userssearchsource~userssearchresults",
+    "class/src/forum/components/UsersSearchSource.tsx~UsersSearchResults.html",
+    "<span>UsersSearchResults</span> <span class=\"search-result-import-path\">flarum/forum/components/UsersSearchSource</span>",
+    "class"
+  ],
+  [
+    "flarum/forum/components/welcomehero~welcomehero",
     "class/src/forum/components/WelcomeHero.js~WelcomeHero.html",
-    "<span>WelcomeHero</span> <span class=\"search-result-import-path\">flarum/components/WelcomeHero</span>",
+    "<span>WelcomeHero</span> <span class=\"search-result-import-path\">flarum/forum/components/WelcomeHero</span>",
     "class"
   ],
   [
-    "flarum/utils/abbreviatenumber~abbreviatenumber",
+    "flarum/common/utils/abbreviatenumber~abbreviatenumber",
     "function/index.html#static-function-abbreviateNumber",
-    "<span>abbreviateNumber</span> <span class=\"search-result-import-path\">flarum/utils/abbreviateNumber</span>",
+    "<span>abbreviateNumber</span> <span class=\"search-result-import-path\">flarum/common/utils/abbreviateNumber</span>",
     "function"
   ],
   [
-    "flarum/utils/alertemailconfirmation~alertemailconfirmation",
+    "flarum/forum/utils/alertemailconfirmation~alertemailconfirmation",
     "function/index.html#static-function-alertEmailConfirmation",
-    "<span>alertEmailConfirmation</span> <span class=\"search-result-import-path\">flarum/utils/alertEmailConfirmation</span>",
+    "<span>alertEmailConfirmation</span> <span class=\"search-result-import-path\">flarum/forum/utils/alertEmailConfirmation</span>",
     "function"
   ],
   [
-    "flarum/utils/anchorscroll~anchorscroll",
+    "flarum/common/utils/anchorscroll~anchorscroll",
     "function/index.html#static-function-anchorScroll",
-    "<span>anchorScroll</span> <span class=\"search-result-import-path\">flarum/utils/anchorScroll</span>",
+    "<span>anchorScroll</span> <span class=\"search-result-import-path\">flarum/common/utils/anchorScroll</span>",
     "function"
   ],
   [
-    "flarum/utils/bidi~bidi",
+    "flarum/common/helpers/avatar~avatar",
+    "function/index.html#static-function-avatar",
+    "<span>avatar</span> <span class=\"search-result-import-path\">flarum/common/helpers/avatar</span>",
+    "function"
+  ],
+  [
+    "flarum/common/utils/bidi~bidi",
     "function/index.html#static-function-bidi",
-    "<span>bidi</span> <span class=\"search-result-import-path\">flarum/utils/bidi</span>",
+    "<span>bidi</span> <span class=\"search-result-import-path\">flarum/common/utils/bidi</span>",
     "function"
   ],
   [
-    "flarum/utils/classlist~classlist",
+    "flarum/common/utils/classlist~classlist",
     "variable/index.html#static-variable-classList",
-    "<span>classList</span> <span class=\"search-result-import-path\">flarum/utils/classList</span>",
+    "<span>classList</span> <span class=\"search-result-import-path\">flarum/common/utils/classList</span>",
     "variable"
   ],
   [
-    "flarum/index~compat",
+    "flarum/admin/index~compat",
     "variable/index.html#static-variable-compat",
-    "<span>compat</span> <span class=\"search-result-import-path\">flarum/index</span>",
+    "<span>compat</span> <span class=\"search-result-import-path\">flarum/admin/index</span>",
     "variable"
   ],
   [
-    "flarum/index~compat",
+    "flarum/forum/index~compat",
     "variable/index.html#static-variable-compat",
-    "<span>compat</span> <span class=\"search-result-import-path\">flarum/index</span>",
+    "<span>compat</span> <span class=\"search-result-import-path\">flarum/forum/index</span>",
     "variable"
   ],
   [
-    "flarum/utils/computed~computed",
+    "flarum/common/utils/computed~computed",
     "function/index.html#static-function-computed",
-    "<span>computed</span> <span class=\"search-result-import-path\">flarum/utils/computed</span>",
+    "<span>computed</span> <span class=\"search-result-import-path\">flarum/common/utils/computed</span>",
     "function"
   ],
   [
-    "flarum/utils/escaperegexp~escaperegexp",
+    "flarum/common/utils/escaperegexp~escaperegexp",
     "function/index.html#static-function-escapeRegExp",
-    "<span>escapeRegExp</span> <span class=\"search-result-import-path\">flarum/utils/escapeRegExp</span>",
+    "<span>escapeRegExp</span> <span class=\"search-result-import-path\">flarum/common/utils/escapeRegExp</span>",
     "function"
   ],
   [
-    "flarum/extend~extend",
+    "flarum/common/extend~extend",
     "function/index.html#static-function-extend",
-    "<span>extend</span> <span class=\"search-result-import-path\">flarum/extend</span>",
+    "<span>extend</span> <span class=\"search-result-import-path\">flarum/common/extend</span>",
     "function"
   ],
   [
-    "flarum/utils/extract~extract",
+    "flarum/common/utils/extract~extract",
     "function/index.html#static-function-extract",
-    "<span>extract</span> <span class=\"search-result-import-path\">flarum/utils/extract</span>",
+    "<span>extract</span> <span class=\"search-result-import-path\">flarum/common/utils/extract</span>",
     "function"
   ],
   [
-    "flarum/utils/extracttext~extracttext",
+    "flarum/common/utils/extracttext~extracttext",
     "function/index.html#static-function-extractText",
-    "<span>extractText</span> <span class=\"search-result-import-path\">flarum/utils/extractText</span>",
+    "<span>extractText</span> <span class=\"search-result-import-path\">flarum/common/utils/extractText</span>",
     "function"
   ],
   [
-    "flarum/utils/formatnumber~formatnumber",
+    "flarum/common/utils/formatnumber~formatnumber",
     "function/index.html#static-function-formatNumber",
-    "<span>formatNumber</span> <span class=\"search-result-import-path\">flarum/utils/formatNumber</span>",
+    "<span>formatNumber</span> <span class=\"search-result-import-path\">flarum/common/utils/formatNumber</span>",
     "function"
   ],
   [
-    "flarum/utils/getcategorizedextensions~getcategorizedextensions",
+    "flarum/common/helpers/fulltime~fulltime",
+    "function/index.html#static-function-fullTime",
+    "<span>fullTime</span> <span class=\"search-result-import-path\">flarum/common/helpers/fullTime</span>",
+    "function"
+  ],
+  [
+    "flarum/admin/utils/getcategorizedextensions~getcategorizedextensions",
     "function/index.html#static-function-getCategorizedExtensions",
-    "<span>getCategorizedExtensions</span> <span class=\"search-result-import-path\">flarum/utils/getCategorizedExtensions</span>",
+    "<span>getCategorizedExtensions</span> <span class=\"search-result-import-path\">flarum/admin/utils/getCategorizedExtensions</span>",
     "function"
   ],
   [
-    "flarum/utils/string~getplaincontent",
+    "flarum/common/utils/string~getplaincontent",
     "function/index.html#static-function-getPlainContent",
-    "<span>getPlainContent</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
+    "<span>getPlainContent</span> <span class=\"search-result-import-path\">flarum/common/utils/string</span>",
     "function"
   ],
   [
-    "flarum/utils/humantime~humantime",
+    "flarum/common/helpers/highlight~highlight",
+    "function/index.html#static-function-highlight",
+    "<span>highlight</span> <span class=\"search-result-import-path\">flarum/common/helpers/highlight</span>",
+    "function"
+  ],
+  [
+    "flarum/common/helpers/humantime~humantime",
     "function/index.html#static-function-humanTime",
-    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/utils/humanTime</span>",
+    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/common/helpers/humanTime</span>",
     "function"
   ],
   [
-    "flarum/utils/inserttext~inserttext",
+    "flarum/common/utils/humantime~humantime",
+    "function/index.html#static-function-humanTime",
+    "<span>humanTime</span> <span class=\"search-result-import-path\">flarum/common/utils/humanTime</span>",
+    "function"
+  ],
+  [
+    "flarum/common/helpers/icon~icon",
+    "function/index.html#static-function-icon",
+    "<span>icon</span> <span class=\"search-result-import-path\">flarum/common/helpers/icon</span>",
+    "function"
+  ],
+  [
+    "flarum/common/utils/inserttext~inserttext",
     "function/index.html#static-function-insertText",
-    "<span>insertText</span> <span class=\"search-result-import-path\">flarum/utils/insertText</span>",
+    "<span>insertText</span> <span class=\"search-result-import-path\">flarum/common/utils/insertText</span>",
     "function"
   ],
   [
-    "flarum/utils/isextensionenabled~isextensionenabled",
+    "flarum/admin/utils/isextensionenabled~isextensionenabled",
     "function/index.html#static-function-isExtensionEnabled",
-    "<span>isExtensionEnabled</span> <span class=\"search-result-import-path\">flarum/utils/isExtensionEnabled</span>",
+    "<span>isExtensionEnabled</span> <span class=\"search-result-import-path\">flarum/admin/utils/isExtensionEnabled</span>",
     "function"
   ],
   [
-    "flarum/utils/issafarimobile~issafarimobile",
+    "flarum/forum/utils/issafarimobile~issafarimobile",
     "function/index.html#static-function-isSafariMobile",
-    "<span>isSafariMobile</span> <span class=\"search-result-import-path\">flarum/utils/isSafariMobile</span>",
+    "<span>isSafariMobile</span> <span class=\"search-result-import-path\">flarum/forum/utils/isSafariMobile</span>",
     "function"
   ],
   [
-    "flarum/utils/livehumantimes~livehumantimes",
+    "flarum/common/helpers/listitems~listitems",
+    "function/index.html#static-function-listItems",
+    "<span>listItems</span> <span class=\"search-result-import-path\">flarum/common/helpers/listItems</span>",
+    "function"
+  ],
+  [
+    "flarum/common/utils/livehumantimes~livehumantimes",
     "function/index.html#static-function-liveHumanTimes",
-    "<span>liveHumanTimes</span> <span class=\"search-result-import-path\">flarum/utils/liveHumanTimes</span>",
+    "<span>liveHumanTimes</span> <span class=\"search-result-import-path\">flarum/common/utils/liveHumanTimes</span>",
     "function"
   ],
   [
-    "flarum/utils/maproutes~maproutes",
+    "flarum/common/utils/maproutes~maproutes",
     "function/index.html#static-function-mapRoutes",
-    "<span>mapRoutes</span> <span class=\"search-result-import-path\">flarum/utils/mapRoutes</span>",
+    "<span>mapRoutes</span> <span class=\"search-result-import-path\">flarum/common/utils/mapRoutes</span>",
     "function"
   ],
   [
-    "flarum/utils/mixin~mixin",
+    "flarum/common/utils/mixin~mixin",
     "function/index.html#static-function-mixin",
-    "<span>mixin</span> <span class=\"search-result-import-path\">flarum/utils/mixin</span>",
+    "<span>mixin</span> <span class=\"search-result-import-path\">flarum/common/utils/mixin</span>",
     "function"
   ],
   [
-    "flarum/extend~override",
+    "flarum/common/extend~override",
     "function/index.html#static-function-override",
-    "<span>override</span> <span class=\"search-result-import-path\">flarum/extend</span>",
+    "<span>override</span> <span class=\"search-result-import-path\">flarum/common/extend</span>",
     "function"
   ],
   [
-    "flarum/utils/patchmithril~patchmithril",
+    "flarum/common/utils/patchmithril~patchmithril",
     "function/index.html#static-function-patchMithril",
-    "<span>patchMithril</span> <span class=\"search-result-import-path\">flarum/utils/patchMithril</span>",
+    "<span>patchMithril</span> <span class=\"search-result-import-path\">flarum/common/utils/patchMithril</span>",
     "function"
   ],
   [
-    "flarum/utils/proxifycompat~proxifycompat",
+    "flarum/common/utils/proxifycompat~proxifycompat",
     "function/index.html#static-function-proxifyCompat",
-    "<span>proxifyCompat</span> <span class=\"search-result-import-path\">flarum/utils/proxifyCompat</span>",
+    "<span>proxifyCompat</span> <span class=\"search-result-import-path\">flarum/common/utils/proxifyCompat</span>",
     "function"
   ],
   [
-    "flarum/helpers/punctuateseries~punctuateseries",
+    "flarum/common/helpers/punctuateseries~punctuateseries",
     "function/index.html#static-function-punctuateSeries",
-    "<span>punctuateSeries</span> <span class=\"search-result-import-path\">flarum/helpers/punctuateSeries</span>",
+    "<span>punctuateSeries</span> <span class=\"search-result-import-path\">flarum/common/helpers/punctuateSeries</span>",
     "function"
   ],
   [
-    "flarum/routes~routes",
+    "flarum/admin/routes~routes",
     "function/index.html#static-function-routes",
-    "<span>routes</span> <span class=\"search-result-import-path\">flarum/routes</span>",
+    "<span>routes</span> <span class=\"search-result-import-path\">flarum/admin/routes</span>",
     "function"
   ],
   [
-    "flarum/routes~routes",
+    "flarum/forum/routes~routes",
     "function/index.html#static-function-routes",
-    "<span>routes</span> <span class=\"search-result-import-path\">flarum/routes</span>",
+    "<span>routes</span> <span class=\"search-result-import-path\">flarum/forum/routes</span>",
     "function"
   ],
   [
-    "flarum/utils/savesettings~savesettings",
+    "flarum/admin/utils/savesettings~savesettings",
     "function/index.html#static-function-saveSettings",
-    "<span>saveSettings</span> <span class=\"search-result-import-path\">flarum/utils/saveSettings</span>",
+    "<span>saveSettings</span> <span class=\"search-result-import-path\">flarum/admin/utils/saveSettings</span>",
     "function"
   ],
   [
-    "flarum/utils/setroutewithforcedrefresh~setroutewithforcedrefresh",
+    "flarum/common/utils/setroutewithforcedrefresh~setroutewithforcedrefresh",
     "function/index.html#static-function-setRouteWithForcedRefresh",
-    "<span>setRouteWithForcedRefresh</span> <span class=\"search-result-import-path\">flarum/utils/setRouteWithForcedRefresh</span>",
+    "<span>setRouteWithForcedRefresh</span> <span class=\"search-result-import-path\">flarum/common/utils/setRouteWithForcedRefresh</span>",
     "function"
   ],
   [
-    "flarum/utils/slidable~slidable",
+    "flarum/forum/utils/slidable~slidable",
     "function/index.html#static-function-slidable",
-    "<span>slidable</span> <span class=\"search-result-import-path\">flarum/utils/slidable</span>",
+    "<span>slidable</span> <span class=\"search-result-import-path\">flarum/forum/utils/slidable</span>",
     "function"
   ],
   [
-    "flarum/utils/string~slug",
+    "flarum/common/utils/string~slug",
     "function/index.html#static-function-slug",
-    "<span>slug</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
+    "<span>slug</span> <span class=\"search-result-import-path\">flarum/common/utils/string</span>",
     "function"
   ],
   [
-    "flarum/utils/stringtocolor~stringtocolor",
+    "flarum/common/utils/stringtocolor~stringtocolor",
     "function/index.html#static-function-stringToColor",
-    "<span>stringToColor</span> <span class=\"search-result-import-path\">flarum/utils/stringToColor</span>",
+    "<span>stringToColor</span> <span class=\"search-result-import-path\">flarum/common/utils/stringToColor</span>",
     "function"
   ],
   [
-    "flarum/utils/styleselectedtext~styleselectedtext",
+    "flarum/common/utils/styleselectedtext~styleselectedtext",
     "function/index.html#static-function-styleSelectedText",
-    "<span>styleSelectedText</span> <span class=\"search-result-import-path\">flarum/utils/styleSelectedText</span>",
+    "<span>styleSelectedText</span> <span class=\"search-result-import-path\">flarum/common/utils/styleSelectedText</span>",
     "function"
   ],
   [
-    "flarum/utils/subclassof~subclassof",
+    "flarum/common/utils/subclassof~subclassof",
     "function/index.html#static-function-subclassOf",
-    "<span>subclassOf</span> <span class=\"search-result-import-path\">flarum/utils/subclassOf</span>",
+    "<span>subclassOf</span> <span class=\"search-result-import-path\">flarum/common/utils/subclassOf</span>",
     "function"
   ],
   [
-    "flarum/utils/string~truncate",
+    "flarum/common/utils/string~truncate",
     "function/index.html#static-function-truncate",
-    "<span>truncate</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
+    "<span>truncate</span> <span class=\"search-result-import-path\">flarum/common/utils/string</span>",
     "function"
   ],
   [
-    "flarum/utils/string~ucfirst",
+    "flarum/common/utils/string~ucfirst",
     "function/index.html#static-function-ucfirst",
-    "<span>ucfirst</span> <span class=\"search-result-import-path\">flarum/utils/string</span>",
+    "<span>ucfirst</span> <span class=\"search-result-import-path\">flarum/common/utils/string</span>",
     "function"
   ],
   [
-    "flarum/utils/withattr~withattr",
+    "flarum/common/helpers/useronline~useronline",
+    "function/index.html#static-function-userOnline",
+    "<span>userOnline</span> <span class=\"search-result-import-path\">flarum/common/helpers/userOnline</span>",
+    "function"
+  ],
+  [
+    "flarum/common/helpers/username~username",
+    "function/index.html#static-function-username",
+    "<span>username</span> <span class=\"search-result-import-path\">flarum/common/helpers/username</span>",
+    "function"
+  ],
+  [
+    "flarum/common/utils/withattr~withattr",
     "function/index.html#static-function-withAttr",
-    "<span>withAttr</span> <span class=\"search-result-import-path\">flarum/utils/withAttr</span>",
+    "<span>withAttr</span> <span class=\"search-result-import-path\">flarum/common/utils/withAttr</span>",
     "function"
   ],
   [
@@ -2538,6 +2628,90 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/userlistpage.tsx",
+    "file/src/admin/components/UserListPage.tsx.html",
+    "src/admin/components/UserListPage.tsx",
+    "file"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#columns",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-method-columns",
+    "src/admin/components/UserListPage.tsx~UserListPage#columns",
+    "method"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#content",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-method-content",
+    "src/admin/components/UserListPage.tsx~UserListPage#content",
+    "method"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#gettotalpagecount",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-method-getTotalPageCount",
+    "src/admin/components/UserListPage.tsx~UserListPage#getTotalPageCount",
+    "method"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#headerinfo",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-method-headerInfo",
+    "src/admin/components/UserListPage.tsx~UserListPage#headerInfo",
+    "method"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#isloadingpage",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-member-isLoadingPage",
+    "src/admin/components/UserListPage.tsx~UserListPage#isLoadingPage",
+    "member"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#loadpage",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-method-loadPage",
+    "src/admin/components/UserListPage.tsx~UserListPage#loadPage",
+    "method"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#moredata",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-member-moreData",
+    "src/admin/components/UserListPage.tsx~UserListPage#moreData",
+    "member"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#nextpage",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-method-nextPage",
+    "src/admin/components/UserListPage.tsx~UserListPage#nextPage",
+    "method"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#numperpage",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-member-numPerPage",
+    "src/admin/components/UserListPage.tsx~UserListPage#numPerPage",
+    "member"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#pagedata",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-member-pageData",
+    "src/admin/components/UserListPage.tsx~UserListPage#pageData",
+    "member"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#pagenumber",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-member-pageNumber",
+    "src/admin/components/UserListPage.tsx~UserListPage#pageNumber",
+    "member"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#previouspage",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-method-previousPage",
+    "src/admin/components/UserListPage.tsx~UserListPage#previousPage",
+    "method"
+  ],
+  [
+    "src/admin/components/userlistpage.tsx~userlistpage#usercount",
+    "class/src/admin/components/UserListPage.tsx~UserListPage.html#instance-member-userCount",
+    "src/admin/components/UserListPage.tsx~UserListPage#userCount",
+    "member"
+  ],
+  [
     "src/admin/index.ts",
     "file/src/admin/index.ts.html",
     "src/admin/index.ts",
@@ -3228,6 +3402,18 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/common/components/alert.tsx",
+    "file/src/common/components/Alert.tsx.html",
+    "src/common/components/Alert.tsx",
+    "file"
+  ],
+  [
+    "src/common/components/alert.tsx~alert#view",
+    "class/src/common/components/Alert.tsx~Alert.html#instance-method-view",
+    "src/common/components/Alert.tsx~Alert#view",
+    "method"
+  ],
+  [
     "src/common/components/alertmanager.js",
     "file/src/common/components/AlertManager.js.html",
     "src/common/components/AlertManager.js",
@@ -3561,6 +3747,18 @@ window.esdocSearchIndex = [
     "src/common/components/linkbutton.js~linkbutton.isactive",
     "class/src/common/components/LinkButton.js~LinkButton.html#static-method-isActive",
     "src/common/components/LinkButton.js~LinkButton.isActive",
+    "method"
+  ],
+  [
+    "src/common/components/loadingindicator.tsx",
+    "file/src/common/components/LoadingIndicator.tsx.html",
+    "src/common/components/LoadingIndicator.tsx",
+    "file"
+  ],
+  [
+    "src/common/components/loadingindicator.tsx~loadingindicator#view",
+    "class/src/common/components/LoadingIndicator.tsx~LoadingIndicator.html#instance-method-view",
+    "src/common/components/LoadingIndicator.tsx~LoadingIndicator#view",
     "method"
   ],
   [
@@ -3972,6 +4170,96 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/common/components/tooltip.tsx",
+    "file/src/common/components/Tooltip.tsx.html",
+    "src/common/components/Tooltip.tsx",
+    "file"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#checkdomnodechanged",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-method-checkDomNodeChanged",
+    "src/common/components/Tooltip.tsx~Tooltip#checkDomNodeChanged",
+    "method"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#childdomnode",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-member-childDomNode",
+    "src/common/components/Tooltip.tsx~Tooltip#childDomNode",
+    "member"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#createtooltip",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-method-createTooltip",
+    "src/common/components/Tooltip.tsx~Tooltip#createTooltip",
+    "method"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#firstchild",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-member-firstChild",
+    "src/common/components/Tooltip.tsx~Tooltip#firstChild",
+    "member"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#getrealtext",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-method-getRealText",
+    "src/common/components/Tooltip.tsx~Tooltip#getRealText",
+    "method"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#oldtext",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-member-oldText",
+    "src/common/components/Tooltip.tsx~Tooltip#oldText",
+    "member"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#oldvisibility",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-member-oldVisibility",
+    "src/common/components/Tooltip.tsx~Tooltip#oldVisibility",
+    "member"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#oncreate",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-method-oncreate",
+    "src/common/components/Tooltip.tsx~Tooltip#oncreate",
+    "method"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#onupdate",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-method-onupdate",
+    "src/common/components/Tooltip.tsx~Tooltip#onupdate",
+    "method"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#recreatetooltip",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-method-recreateTooltip",
+    "src/common/components/Tooltip.tsx~Tooltip#recreateTooltip",
+    "method"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#shouldchangetooltipvisibility",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-member-shouldChangeTooltipVisibility",
+    "src/common/components/Tooltip.tsx~Tooltip#shouldChangeTooltipVisibility",
+    "member"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#shouldrecreatetooltip",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-member-shouldRecreateTooltip",
+    "src/common/components/Tooltip.tsx~Tooltip#shouldRecreateTooltip",
+    "member"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#updatevisibility",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-method-updateVisibility",
+    "src/common/components/Tooltip.tsx~Tooltip#updateVisibility",
+    "method"
+  ],
+  [
+    "src/common/components/tooltip.tsx~tooltip#view",
+    "class/src/common/components/Tooltip.tsx~Tooltip.html#instance-method-view",
+    "src/common/components/Tooltip.tsx~Tooltip#view",
+    "method"
+  ],
+  [
     "src/common/extend.js",
     "file/src/common/extend.js.html",
     "src/common/extend.js",
@@ -4098,9 +4386,57 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/common/helpers/avatar.tsx",
+    "file/src/common/helpers/avatar.tsx.html",
+    "src/common/helpers/avatar.tsx",
+    "file"
+  ],
+  [
+    "src/common/helpers/fulltime.tsx",
+    "file/src/common/helpers/fullTime.tsx.html",
+    "src/common/helpers/fullTime.tsx",
+    "file"
+  ],
+  [
+    "src/common/helpers/highlight.tsx",
+    "file/src/common/helpers/highlight.tsx.html",
+    "src/common/helpers/highlight.tsx",
+    "file"
+  ],
+  [
+    "src/common/helpers/humantime.tsx",
+    "file/src/common/helpers/humanTime.tsx.html",
+    "src/common/helpers/humanTime.tsx",
+    "file"
+  ],
+  [
+    "src/common/helpers/icon.tsx",
+    "file/src/common/helpers/icon.tsx.html",
+    "src/common/helpers/icon.tsx",
+    "file"
+  ],
+  [
+    "src/common/helpers/listitems.tsx",
+    "file/src/common/helpers/listItems.tsx.html",
+    "src/common/helpers/listItems.tsx",
+    "file"
+  ],
+  [
     "src/common/helpers/punctuateseries.js",
     "file/src/common/helpers/punctuateSeries.js.html",
     "src/common/helpers/punctuateSeries.js",
+    "file"
+  ],
+  [
+    "src/common/helpers/useronline.tsx",
+    "file/src/common/helpers/userOnline.tsx.html",
+    "src/common/helpers/userOnline.tsx",
+    "file"
+  ],
+  [
+    "src/common/helpers/username.tsx",
+    "file/src/common/helpers/username.tsx.html",
+    "src/common/helpers/username.tsx",
     "file"
   ],
   [
@@ -5850,6 +6186,30 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/discussionssearchsource.tsx",
+    "file/src/forum/components/DiscussionsSearchSource.tsx.html",
+    "src/forum/components/DiscussionsSearchSource.tsx",
+    "file"
+  ],
+  [
+    "src/forum/components/discussionssearchsource.tsx~discussionssearchsource#results",
+    "class/src/forum/components/DiscussionsSearchSource.tsx~DiscussionsSearchSource.html#instance-member-results",
+    "src/forum/components/DiscussionsSearchSource.tsx~DiscussionsSearchSource#results",
+    "member"
+  ],
+  [
+    "src/forum/components/discussionssearchsource.tsx~discussionssearchsource#search",
+    "class/src/forum/components/DiscussionsSearchSource.tsx~DiscussionsSearchSource.html#instance-method-search",
+    "src/forum/components/DiscussionsSearchSource.tsx~DiscussionsSearchSource#search",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionssearchsource.tsx~discussionssearchsource#view",
+    "class/src/forum/components/DiscussionsSearchSource.tsx~DiscussionsSearchSource.html#instance-method-view",
+    "src/forum/components/DiscussionsSearchSource.tsx~DiscussionsSearchSource#view",
+    "method"
+  ],
+  [
     "src/forum/components/discussionsuserpage.js",
     "file/src/forum/components/DiscussionsUserPage.js.html",
     "src/forum/components/DiscussionsUserPage.js",
@@ -7182,6 +7542,138 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/search.tsx",
+    "file/src/forum/components/Search.tsx.html",
+    "src/forum/components/Search.tsx",
+    "file"
+  ],
+  [
+    "src/forum/components/search.tsx~search#clear",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-clear",
+    "src/forum/components/Search.tsx~Search#clear",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#getcurrentnumericindex",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-getCurrentNumericIndex",
+    "src/forum/components/Search.tsx~Search#getCurrentNumericIndex",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#getitem",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-getItem",
+    "src/forum/components/Search.tsx~Search#getItem",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#hasfocus",
+    "class/src/forum/components/Search.tsx~Search.html#instance-member-hasFocus",
+    "src/forum/components/Search.tsx~Search#hasFocus",
+    "member"
+  ],
+  [
+    "src/forum/components/search.tsx~search#index",
+    "class/src/forum/components/Search.tsx~Search.html#instance-member-index",
+    "src/forum/components/Search.tsx~Search#index",
+    "member"
+  ],
+  [
+    "src/forum/components/search.tsx~search#loadingsources",
+    "class/src/forum/components/Search.tsx~Search.html#instance-member-loadingSources",
+    "src/forum/components/Search.tsx~Search#loadingSources",
+    "member"
+  ],
+  [
+    "src/forum/components/search.tsx~search#navigator",
+    "class/src/forum/components/Search.tsx~Search.html#instance-member-navigator",
+    "src/forum/components/Search.tsx~Search#navigator",
+    "member"
+  ],
+  [
+    "src/forum/components/search.tsx~search#oncreate",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-oncreate",
+    "src/forum/components/Search.tsx~Search#oncreate",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#oninit",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-oninit",
+    "src/forum/components/Search.tsx~Search#oninit",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#onremove",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-onremove",
+    "src/forum/components/Search.tsx~Search#onremove",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#onupdate",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-onupdate",
+    "src/forum/components/Search.tsx~Search#onupdate",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#selectresult",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-selectResult",
+    "src/forum/components/Search.tsx~Search#selectResult",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#selectableitems",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-selectableItems",
+    "src/forum/components/Search.tsx~Search#selectableItems",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#setindex",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-setIndex",
+    "src/forum/components/Search.tsx~Search#setIndex",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#sourceitems",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-sourceItems",
+    "src/forum/components/Search.tsx~Search#sourceItems",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#sources",
+    "class/src/forum/components/Search.tsx~Search.html#instance-member-sources",
+    "src/forum/components/Search.tsx~Search#sources",
+    "member"
+  ],
+  [
+    "src/forum/components/search.tsx~search#state",
+    "class/src/forum/components/Search.tsx~Search.html#instance-member-state",
+    "src/forum/components/Search.tsx~Search#state",
+    "member"
+  ],
+  [
+    "src/forum/components/search.tsx~search#updatemaxheight",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-updateMaxHeight",
+    "src/forum/components/Search.tsx~Search#updateMaxHeight",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search#updatemaxheighthandler",
+    "class/src/forum/components/Search.tsx~Search.html#instance-member-updateMaxHeightHandler",
+    "src/forum/components/Search.tsx~Search#updateMaxHeightHandler",
+    "member"
+  ],
+  [
+    "src/forum/components/search.tsx~search#view",
+    "class/src/forum/components/Search.tsx~Search.html#instance-method-view",
+    "src/forum/components/Search.tsx~Search#view",
+    "method"
+  ],
+  [
+    "src/forum/components/search.tsx~search.min_search_len",
+    "class/src/forum/components/Search.tsx~Search.html#static-member-MIN_SEARCH_LEN",
+    "src/forum/components/Search.tsx~Search.MIN_SEARCH_LEN",
+    "member"
+  ],
+  [
     "src/forum/components/sessiondropdown.js",
     "file/src/forum/components/SessionDropdown.js.html",
     "src/forum/components/SessionDropdown.js",
@@ -7449,6 +7941,30 @@ window.esdocSearchIndex = [
     "src/forum/components/userpage.js~userpage#view",
     "class/src/forum/components/UserPage.js~UserPage.html#instance-method-view",
     "src/forum/components/UserPage.js~UserPage#view",
+    "method"
+  ],
+  [
+    "src/forum/components/userssearchsource.tsx",
+    "file/src/forum/components/UsersSearchSource.tsx.html",
+    "src/forum/components/UsersSearchSource.tsx",
+    "file"
+  ],
+  [
+    "src/forum/components/userssearchsource.tsx~userssearchresults#results",
+    "class/src/forum/components/UsersSearchSource.tsx~UsersSearchResults.html#instance-member-results",
+    "src/forum/components/UsersSearchSource.tsx~UsersSearchResults#results",
+    "member"
+  ],
+  [
+    "src/forum/components/userssearchsource.tsx~userssearchresults#search",
+    "class/src/forum/components/UsersSearchSource.tsx~UsersSearchResults.html#instance-method-search",
+    "src/forum/components/UsersSearchSource.tsx~UsersSearchResults#search",
+    "method"
+  ],
+  [
+    "src/forum/components/userssearchsource.tsx~userssearchresults#view",
+    "class/src/forum/components/UsersSearchSource.tsx~UsersSearchResults.html#instance-method-view",
+    "src/forum/components/UsersSearchSource.tsx~UsersSearchResults#view",
     "method"
   ],
   [

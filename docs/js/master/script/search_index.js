@@ -1452,6 +1452,18 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "src/@types/global.d.ts",
+    "file/src/@types/global.d.ts.html",
+    "src/@types/global.d.ts",
+    "file"
+  ],
+  [
+    "src/@types/tooltips/index.d.ts",
+    "file/src/@types/tooltips/index.d.ts.html",
+    "src/@types/tooltips/index.d.ts",
+    "file"
+  ],
+  [
     "src/admin/adminapplication.js",
     "file/src/admin/AdminApplication.js.html",
     "src/admin/AdminApplication.js",
@@ -3388,6 +3400,12 @@ window.esdocSearchIndex = [
     "class/src/common/Translator.tsx~Translator.html#instance-member-translations",
     "src/common/Translator.tsx~Translator#translations",
     "member"
+  ],
+  [
+    "src/common/app.ts",
+    "file/src/common/app.ts.html",
+    "src/common/app.ts",
+    "file"
   ],
   [
     "src/common/compat.js",

@@ -6084,9 +6084,27 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/forum/components/discussionpage.js~discussionpage#hero",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-hero",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#hero",
+    "method"
+  ],
+  [
     "src/forum/components/discussionpage.js~discussionpage#load",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-load",
     "src/forum/components/DiscussionPage.js~DiscussionPage#load",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionpage.js~discussionpage#loadingitems",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-loadingItems",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#loadingItems",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionpage.js~discussionpage#maincontent",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-mainContent",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#mainContent",
     "method"
   ],
   [
@@ -6108,6 +6126,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/discussionpage.js~discussionpage#pagecontent",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-pageContent",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#pageContent",
+    "method"
+  ],
+  [
     "src/forum/components/discussionpage.js~discussionpage#positionchanged",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-positionChanged",
     "src/forum/components/DiscussionPage.js~DiscussionPage#positionChanged",
@@ -6123,6 +6147,12 @@ window.esdocSearchIndex = [
     "src/forum/components/discussionpage.js~discussionpage#show",
     "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-show",
     "src/forum/components/DiscussionPage.js~DiscussionPage#show",
+    "method"
+  ],
+  [
+    "src/forum/components/discussionpage.js~discussionpage#sidebar",
+    "class/src/forum/components/DiscussionPage.js~DiscussionPage.html#instance-method-sidebar",
+    "src/forum/components/DiscussionPage.js~DiscussionPage#sidebar",
     "method"
   ],
   [

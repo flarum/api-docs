@@ -84,12 +84,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "flarum/common/components/button~button",
-    "class/src/common/components/Button.js~Button.html",
-    "<span>Button</span> <span class=\"search-result-import-path\">flarum/common/components/Button</span>",
-    "class"
-  ],
-  [
     "flarum/forum/components/changeemailmodal~changeemailmodal",
     "class/src/forum/components/ChangeEmailModal.js~ChangeEmailModal.html",
     "<span>ChangeEmailModal</span> <span class=\"search-result-import-path\">flarum/forum/components/ChangeEmailModal</span>",
@@ -969,6 +963,12 @@ window.esdocSearchIndex = [
     "flarum/common/utils/extracttext~extracttext",
     "function/index.html#static-function-extractText",
     "<span>extractText</span> <span class=\"search-result-import-path\">flarum/common/utils/extractText</span>",
+    "function"
+  ],
+  [
+    "flarum/common/helpers/firedebugwarning~firedebugwarning",
+    "function/index.html#static-function-fireDebugWarning",
+    "<span>fireDebugWarning</span> <span class=\"search-result-import-path\">flarum/common/helpers/fireDebugWarning</span>",
     "function"
   ],
   [
@@ -3462,24 +3462,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/button.js",
-    "file/src/common/components/Button.js.html",
-    "src/common/components/Button.js",
-    "file"
-  ],
-  [
-    "src/common/components/button.js~button#getbuttoncontent",
-    "class/src/common/components/Button.js~Button.html#instance-method-getButtonContent",
-    "src/common/components/Button.js~Button#getButtonContent",
-    "method"
-  ],
-  [
-    "src/common/components/button.js~button#view",
-    "class/src/common/components/Button.js~Button.html#instance-method-view",
-    "src/common/components/Button.js~Button#view",
-    "method"
-  ],
-  [
     "src/common/components/checkbox.js",
     "file/src/common/components/Checkbox.js.html",
     "src/common/components/Checkbox.js",
@@ -4401,6 +4383,12 @@ window.esdocSearchIndex = [
     "src/common/helpers/avatar.tsx",
     "file/src/common/helpers/avatar.tsx.html",
     "src/common/helpers/avatar.tsx",
+    "file"
+  ],
+  [
+    "src/common/helpers/firedebugwarning.ts",
+    "file/src/common/helpers/fireDebugWarning.ts.html",
+    "src/common/helpers/fireDebugWarning.ts",
     "file"
   ],
   [

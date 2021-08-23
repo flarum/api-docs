@@ -19,7 +19,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/admin/components/adminpage~adminpage",
-    "class/src/admin/components/AdminPage.js~AdminPage.html",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html",
     "<span>AdminPage</span> <span class=\"search-result-import-path\">flarum/admin/components/AdminPage</span>",
     "class"
   ],
@@ -565,7 +565,7 @@ window.esdocSearchIndex = [
   ],
   [
     "flarum/common/components/page~page",
-    "class/src/common/components/Page.js~Page.html",
+    "class/src/common/components/Page.tsx~Page.html",
     "<span>Page</span> <span class=\"search-result-import-path\">flarum/common/components/Page</span>",
     "class"
   ],
@@ -1584,93 +1584,75 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/admin/components/adminpage.js",
-    "file/src/admin/components/AdminPage.js.html",
-    "src/admin/components/AdminPage.js",
+    "src/admin/components/adminpage.tsx",
+    "file/src/admin/components/AdminPage.tsx.html",
+    "src/admin/components/AdminPage.tsx",
     "file"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#buildsettingcomponent",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-buildSettingComponent",
-    "src/admin/components/AdminPage.js~AdminPage#buildSettingComponent",
+    "src/admin/components/adminpage.tsx~adminpage#buildsettingcomponent",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-buildSettingComponent",
+    "src/admin/components/AdminPage.tsx~AdminPage#buildSettingComponent",
     "method"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#content",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-content",
-    "src/admin/components/AdminPage.js~AdminPage#content",
+    "src/admin/components/adminpage.tsx~adminpage#dirty",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-dirty",
+    "src/admin/components/AdminPage.tsx~AdminPage#dirty",
     "method"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#dirty",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-dirty",
-    "src/admin/components/AdminPage.js~AdminPage#dirty",
+    "src/admin/components/adminpage.tsx~adminpage#header",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-header",
+    "src/admin/components/AdminPage.tsx~AdminPage#header",
     "method"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#header",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-header",
-    "src/admin/components/AdminPage.js~AdminPage#header",
+    "src/admin/components/adminpage.tsx~adminpage#headerinfo",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-headerInfo",
+    "src/admin/components/AdminPage.tsx~AdminPage#headerInfo",
     "method"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#headerinfo",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-headerInfo",
-    "src/admin/components/AdminPage.js~AdminPage#headerInfo",
+    "src/admin/components/adminpage.tsx~adminpage#ischanged",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-isChanged",
+    "src/admin/components/AdminPage.tsx~AdminPage#isChanged",
     "method"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#ischanged",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-isChanged",
-    "src/admin/components/AdminPage.js~AdminPage#isChanged",
-    "method"
-  ],
-  [
-    "src/admin/components/adminpage.js~adminpage#loading",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-member-loading",
-    "src/admin/components/AdminPage.js~AdminPage#loading",
+    "src/admin/components/adminpage.tsx~adminpage#loading",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-member-loading",
+    "src/admin/components/AdminPage.tsx~AdminPage#loading",
     "member"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#oninit",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-oninit",
-    "src/admin/components/AdminPage.js~AdminPage#oninit",
+    "src/admin/components/adminpage.tsx~adminpage#onsaved",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-onsaved",
+    "src/admin/components/AdminPage.tsx~AdminPage#onsaved",
     "method"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#onsaved",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-onsaved",
-    "src/admin/components/AdminPage.js~AdminPage#onsaved",
+    "src/admin/components/adminpage.tsx~adminpage#savesettings",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-saveSettings",
+    "src/admin/components/AdminPage.tsx~AdminPage#saveSettings",
     "method"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#savesettings",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-saveSettings",
-    "src/admin/components/AdminPage.js~AdminPage#saveSettings",
+    "src/admin/components/adminpage.tsx~adminpage#setting",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-setting",
+    "src/admin/components/AdminPage.tsx~AdminPage#setting",
     "method"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#setting",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-setting",
-    "src/admin/components/AdminPage.js~AdminPage#setting",
+    "src/admin/components/adminpage.tsx~adminpage#submitbutton",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-submitButton",
+    "src/admin/components/AdminPage.tsx~AdminPage#submitButton",
     "method"
   ],
   [
-    "src/admin/components/adminpage.js~adminpage#settings",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-member-settings",
-    "src/admin/components/AdminPage.js~AdminPage#settings",
-    "member"
-  ],
-  [
-    "src/admin/components/adminpage.js~adminpage#submitbutton",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-submitButton",
-    "src/admin/components/AdminPage.js~AdminPage#submitButton",
-    "method"
-  ],
-  [
-    "src/admin/components/adminpage.js~adminpage#view",
-    "class/src/admin/components/AdminPage.js~AdminPage.html#instance-method-view",
-    "src/admin/components/AdminPage.js~AdminPage#view",
+    "src/admin/components/adminpage.tsx~adminpage#view",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-view",
+    "src/admin/components/AdminPage.tsx~AdminPage#view",
     "method"
   ],
   [
@@ -2826,6 +2808,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/utils/generateelementid.ts",
+    "file/src/admin/utils/generateElementId.ts.html",
+    "src/admin/utils/generateElementId.ts",
+    "file"
+  ],
+  [
     "src/admin/utils/getcategorizedextensions.js",
     "file/src/admin/utils/getCategorizedExtensions.js.html",
     "src/admin/utils/getCategorizedExtensions.js",
@@ -3906,45 +3894,45 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/common/components/page.js",
-    "file/src/common/components/Page.js.html",
-    "src/common/components/Page.js",
+    "src/common/components/page.tsx",
+    "file/src/common/components/Page.tsx.html",
+    "src/common/components/Page.tsx",
     "file"
   ],
   [
-    "src/common/components/page.js~page#bodyclass",
-    "class/src/common/components/Page.js~Page.html#instance-member-bodyClass",
-    "src/common/components/Page.js~Page#bodyClass",
+    "src/common/components/page.tsx~page#bodyclass",
+    "class/src/common/components/Page.tsx~Page.html#instance-member-bodyClass",
+    "src/common/components/Page.tsx~Page#bodyClass",
     "member"
   ],
   [
-    "src/common/components/page.js~page#oncreate",
-    "class/src/common/components/Page.js~Page.html#instance-method-oncreate",
-    "src/common/components/Page.js~Page#oncreate",
+    "src/common/components/page.tsx~page#oncreate",
+    "class/src/common/components/Page.tsx~Page.html#instance-method-oncreate",
+    "src/common/components/Page.tsx~Page#oncreate",
     "method"
   ],
   [
-    "src/common/components/page.js~page#oninit",
-    "class/src/common/components/Page.js~Page.html#instance-method-oninit",
-    "src/common/components/Page.js~Page#oninit",
+    "src/common/components/page.tsx~page#oninit",
+    "class/src/common/components/Page.tsx~Page.html#instance-method-oninit",
+    "src/common/components/Page.tsx~Page#oninit",
     "method"
   ],
   [
-    "src/common/components/page.js~page#onremove",
-    "class/src/common/components/Page.js~Page.html#instance-method-onremove",
-    "src/common/components/Page.js~Page#onremove",
+    "src/common/components/page.tsx~page#onremove",
+    "class/src/common/components/Page.tsx~Page.html#instance-method-onremove",
+    "src/common/components/Page.tsx~Page#onremove",
     "method"
   ],
   [
-    "src/common/components/page.js~page#scrolltoponcreate",
-    "class/src/common/components/Page.js~Page.html#instance-member-scrollTopOnCreate",
-    "src/common/components/Page.js~Page#scrollTopOnCreate",
+    "src/common/components/page.tsx~page#scrolltoponcreate",
+    "class/src/common/components/Page.tsx~Page.html#instance-member-scrollTopOnCreate",
+    "src/common/components/Page.tsx~Page#scrollTopOnCreate",
     "member"
   ],
   [
-    "src/common/components/page.js~page#usebrowserscrollrestoration",
-    "class/src/common/components/Page.js~Page.html#instance-member-useBrowserScrollRestoration",
-    "src/common/components/Page.js~Page#useBrowserScrollRestoration",
+    "src/common/components/page.tsx~page#usebrowserscrollrestoration",
+    "class/src/common/components/Page.tsx~Page.html#instance-member-useBrowserScrollRestoration",
+    "src/common/components/Page.tsx~Page#useBrowserScrollRestoration",
     "member"
   ],
   [

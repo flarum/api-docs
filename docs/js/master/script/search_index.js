@@ -1644,6 +1644,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/adminpage.tsx~adminpage#settings",
+    "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-member-settings",
+    "src/admin/components/AdminPage.tsx~AdminPage#settings",
+    "member"
+  ],
+  [
     "src/admin/components/adminpage.tsx~adminpage#submitbutton",
     "class/src/admin/components/AdminPage.tsx~AdminPage.html#instance-method-submitButton",
     "src/admin/components/AdminPage.tsx~AdminPage#submitButton",

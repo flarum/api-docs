@@ -5994,6 +5994,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/forum/components/discussionlistitem.js~discussionlistitem#replycountitem",
+    "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-replyCountItem",
+    "src/forum/components/DiscussionListItem.js~DiscussionListItem#replyCountItem",
+    "method"
+  ],
+  [
     "src/forum/components/discussionlistitem.js~discussionlistitem#showfirstpost",
     "class/src/forum/components/DiscussionListItem.js~DiscussionListItem.html#instance-method-showFirstPost",
     "src/forum/components/DiscussionListItem.js~DiscussionListItem#showFirstPost",

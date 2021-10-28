@@ -330,6 +330,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "flarum/admin/models/extensionreadme~extensionreadme",
+    "class/src/admin/models/ExtensionReadme.js~ExtensionReadme.html",
+    "<span>ExtensionReadme</span> <span class=\"search-result-import-path\">flarum/admin/models/ExtensionReadme</span>",
+    "class"
+  ],
+  [
     "flarum/admin/components/extensionswidget~extensionswidget",
     "class/src/admin/components/ExtensionsWidget.js~ExtensionsWidget.html",
     "<span>ExtensionsWidget</span> <span class=\"search-result-import-path\">flarum/admin/components/ExtensionsWidget</span>",
@@ -669,6 +675,12 @@ window.esdocSearchIndex = [
     "flarum/forum/components/postsuserpage~postsuserpage",
     "class/src/forum/components/PostsUserPage.js~PostsUserPage.html",
     "<span>PostsUserPage</span> <span class=\"search-result-import-path\">flarum/forum/components/PostsUserPage</span>",
+    "class"
+  ],
+  [
+    "flarum/admin/components/readmemodal~readmemodal",
+    "class/src/admin/components/ReadmeModal.js~ReadmeModal.html",
+    "<span>ReadmeModal</span> <span class=\"search-result-import-path\">flarum/admin/components/ReadmeModal</span>",
     "class"
   ],
   [
@@ -2430,6 +2442,66 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/admin/components/readmemodal.js",
+    "file/src/admin/components/ReadmeModal.js.html",
+    "src/admin/components/ReadmeModal.js",
+    "file"
+  ],
+  [
+    "src/admin/components/readmemodal.js~readmemodal#classname",
+    "class/src/admin/components/ReadmeModal.js~ReadmeModal.html#instance-method-className",
+    "src/admin/components/ReadmeModal.js~ReadmeModal#className",
+    "method"
+  ],
+  [
+    "src/admin/components/readmemodal.js~readmemodal#content",
+    "class/src/admin/components/ReadmeModal.js~ReadmeModal.html#instance-method-content",
+    "src/admin/components/ReadmeModal.js~ReadmeModal#content",
+    "method"
+  ],
+  [
+    "src/admin/components/readmemodal.js~readmemodal#extname",
+    "class/src/admin/components/ReadmeModal.js~ReadmeModal.html#instance-member-extName",
+    "src/admin/components/ReadmeModal.js~ReadmeModal#extName",
+    "member"
+  ],
+  [
+    "src/admin/components/readmemodal.js~readmemodal#loadreadme",
+    "class/src/admin/components/ReadmeModal.js~ReadmeModal.html#instance-method-loadReadme",
+    "src/admin/components/ReadmeModal.js~ReadmeModal#loadReadme",
+    "method"
+  ],
+  [
+    "src/admin/components/readmemodal.js~readmemodal#loading",
+    "class/src/admin/components/ReadmeModal.js~ReadmeModal.html#instance-member-loading",
+    "src/admin/components/ReadmeModal.js~ReadmeModal#loading",
+    "member"
+  ],
+  [
+    "src/admin/components/readmemodal.js~readmemodal#name",
+    "class/src/admin/components/ReadmeModal.js~ReadmeModal.html#instance-member-name",
+    "src/admin/components/ReadmeModal.js~ReadmeModal#name",
+    "member"
+  ],
+  [
+    "src/admin/components/readmemodal.js~readmemodal#oninit",
+    "class/src/admin/components/ReadmeModal.js~ReadmeModal.html#instance-method-oninit",
+    "src/admin/components/ReadmeModal.js~ReadmeModal#oninit",
+    "method"
+  ],
+  [
+    "src/admin/components/readmemodal.js~readmemodal#readme",
+    "class/src/admin/components/ReadmeModal.js~ReadmeModal.html#instance-member-readme",
+    "src/admin/components/ReadmeModal.js~ReadmeModal#readme",
+    "member"
+  ],
+  [
+    "src/admin/components/readmemodal.js~readmemodal#title",
+    "class/src/admin/components/ReadmeModal.js~ReadmeModal.html#instance-method-title",
+    "src/admin/components/ReadmeModal.js~ReadmeModal#title",
+    "method"
+  ],
+  [
     "src/admin/components/sessiondropdown.js",
     "file/src/admin/components/SessionDropdown.js.html",
     "src/admin/components/SessionDropdown.js",
@@ -2716,6 +2788,18 @@ window.esdocSearchIndex = [
     "file/src/admin/index.ts.html",
     "src/admin/index.ts",
     "file"
+  ],
+  [
+    "src/admin/models/extensionreadme.js",
+    "file/src/admin/models/ExtensionReadme.js.html",
+    "src/admin/models/ExtensionReadme.js",
+    "file"
+  ],
+  [
+    "src/admin/models/extensionreadme.js~extensionreadme#content",
+    "class/src/admin/models/ExtensionReadme.js~ExtensionReadme.html#instance-member-content",
+    "src/admin/models/ExtensionReadme.js~ExtensionReadme#content",
+    "member"
   ],
   [
     "src/admin/resolvers/extensionpageresolver.ts",

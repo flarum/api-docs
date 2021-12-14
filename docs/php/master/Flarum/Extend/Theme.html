@@ -105,7 +105,7 @@
                                             <p>&lt;p&gt;This can be used to override LESS files that are imported within the code.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L31" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L33" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -121,7 +121,23 @@
                                             <p>&lt;p&gt;This method allows overriding LESS file sources.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L48" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L50" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_addCustomLessFunction">addCustomLessFunction</a>(string $functionName, callable $callable)
+        
+                                            <p>&lt;p&gt;This method allows you to add custom Less functions.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L76" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -138,7 +154,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L55" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L103" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -153,8 +169,8 @@
                     <div class="method-item">
                     <h3 id="method_overrideLessImport">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L31" target="_blank">
-            line 31
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L33" target="_blank">
+            line 33
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
@@ -208,8 +224,8 @@ The contents of this file can be overriden with this method.&lt;/p&gt;</p>      
                     <div class="method-item">
                     <h3 id="method_overrideFileSource">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L48" target="_blank">
-            line 48
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L50" target="_blank">
+            line 50
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
@@ -261,10 +277,75 @@ and can therefore be overriden using this method.&lt;/p&gt;</p>                 
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_addCustomLessFunction">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L76" target="_blank">
+            line 76
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+    <strong>addCustomLessFunction</strong>(string $functionName, callable $callable)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;This method allows you to add custom Less functions.&lt;/p&gt;</p>                    <p>&lt;p&gt;All custom Less functions may only return numbers, strings or booleans.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example usage:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;(new Extend\Theme)
+    -&amp;gt;addCustomLessFunction(&#039;is-flarum&#039;, function (mixed $text) {
+        return strtolower($text) === &#039;flarum&#039;
+    }),&lt;/code&gt;&lt;/pre&gt;</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$functionName</td>
+                <td>&lt;p&gt;Name of the function identifier.&lt;/p&gt;</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callable</td>
+                <td>&lt;p&gt;The PHP function to run when the Less function is called.&lt;/p&gt;</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://leafo.net/lessphp/docs/#custom_functions">https://leafo.net/lessphp/docs/#custom_functions</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L55" target="_blank">
-            line 55
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/Theme.php#L103" target="_blank">
+            line 103
         </a>
         </div>
         <code>                    

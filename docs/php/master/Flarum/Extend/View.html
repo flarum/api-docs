@@ -88,6 +88,8 @@
         
     
 
+            <div class="description">
+            <p><p>Views are PHP files that use the Laravel Blade syntax for creation of server-side generated HTML.</p></p>            <p><p>Flarum's core uses them for error pages, the installer, HTML emails, and the skeletons for the forum and admin sites.</p></p>                    </div>
     
     
     
@@ -105,7 +107,23 @@
                                             <p>&lt;p&gt;Register a new namespace of Laravel views.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L37" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L41" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/View.html"><abbr title="Flarum\Extend\View">View</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extendNamespace">extendNamespace</a>(string $namespace, $hints)
+        
+                                            <p>&lt;p&gt;Extend an existing namespace of Laravel views.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L59" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -122,7 +140,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L44" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L66" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -139,7 +157,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L58" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L83" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -156,7 +174,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L69" target="_blank">
+                        <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L94" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -171,8 +189,8 @@
                     <div class="method-item">
                     <h3 id="method_namespace">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L37" target="_blank">
-            line 37
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L41" target="_blank">
+            line 41
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/View.html"><abbr title="Flarum\Extend\View">View</abbr></a>
@@ -184,12 +202,60 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Register a new namespace of Laravel views.&lt;/p&gt;</p>                    <p>&lt;p&gt;Views are php files that use the Laravel Blade syntax for creation of server-side generated html.
-Flarum core uses them for error pages, the installer, HTML emails, and the skeletons for the forum and admin sites.
-To create and use views in your extension, you will need to put them in a folder, and register that folder as a namespace.&lt;/p&gt;
+                                    <p>&lt;p&gt;Register a new namespace of Laravel views.&lt;/p&gt;</p>                    <p>&lt;p&gt;To create and use views in your extension, you will need to put them in a folder, and register that folder as a namespace.&lt;/p&gt;
 &lt;p&gt;Views can then be used in your extension by injecting an instance of &lt;code&gt;Illuminate\Contracts\View\Factory&lt;/code&gt;,
 and calling its &lt;code&gt;make&lt;/code&gt; method. The &lt;code&gt;make&lt;/code&gt; method takes the view parameter in the format NAMESPACE::VIEW_NAME.
-You can also pass variables into a view: for more information, see &lt;a href=&quot;https://laravel.com/api/8.x/Illuminate/View/Factory.html#method_make&quot;&gt;https://laravel.com/api/8.x/Illuminate/View/Factory.html#method_make&lt;/a&gt;&lt;/p&gt;</p>                            </div>
+You can also pass variables into a view. For more information, see: &lt;a href=&quot;https://laravel.com/api/8.x/Illuminate/View/Factory.html#method_make&quot;&gt;https://laravel.com/api/8.x/Illuminate/View/Factory.html#method_make&lt;/a&gt;&lt;/p&gt;</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$hints</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/View.html"><abbr title="Flarum\Extend\View">View</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extendNamespace">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L59" target="_blank">
+            line 59
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/View.html"><abbr title="Flarum\Extend\View">View</abbr></a>
+    <strong>extendNamespace</strong>(string $namespace, $hints)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Extend an existing namespace of Laravel views.&lt;/p&gt;</p>                    <p>&lt;p&gt;To extend an existing namespace, you will need to put views in a folder in your extension,
+and register that folder under the existing namespace with this extender.&lt;/p&gt;</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -225,8 +291,8 @@ You can also pass variables into a view: for more information, see &lt;a href=&q
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L44" target="_blank">
-            line 44
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L66" target="_blank">
+            line 66
         </a>
         </div>
         <code>                    
@@ -263,8 +329,8 @@ You can also pass variables into a view: for more information, see &lt;a href=&q
                     <div class="method-item">
                     <h3 id="method_onEnable">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L58" target="_blank">
-            line 58
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L83" target="_blank">
+            line 83
         </a>
         </div>
         <code>                    
@@ -310,8 +376,8 @@ You can also pass variables into a view: for more information, see &lt;a href=&q
                     <div class="method-item">
                     <h3 id="method_onDisable">
         <div class="location">
-                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L69" target="_blank">
-            line 69
+                        at         <a href="https://github.com/flarum/core/blob/master/src/Extend/View.php#L94" target="_blank">
+            line 94
         </a>
         </div>
         <code>                    

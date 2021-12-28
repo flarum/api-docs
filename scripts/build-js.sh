@@ -27,7 +27,7 @@ generate () {
 
     cd $path
     (cd $FLARUM_PATH && git checkout -q -- . && git checkout -q $ref)
-    (cd $js_path && yarn install --frozen-lockfile)
+    (cd $js_path && yarn install --immutable)
 
     cd $js_path
     npx typedoc --gitRevision $ref --out ../../docs/js/$ref --customTitle "Flarum ($ref)"

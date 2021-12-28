@@ -1,0 +1,21 @@
+{
+    "entryPoints": ["./src"],
+    "entryPointStrategy": "expand",
+    "exclude": [
+        "**/compat"
+    ],
+
+    "name": "Flarum",
+    "readme": "../../src/readme-js.md",
+    "gitRemote": "origin",
+    "tsconfig": "./tsconfig.json",
+
+    "excludeExternals": true,
+
+    "external-modulemap": "src\\/(\\w+(\\/\\w+)*)\\/.+\\.\\w+$",
+    "mergeModulesMergeMode": "module",
+
+    "footerTypedocVersion": true,
+    "footerDate": true,
+    "footerTime": true
+}

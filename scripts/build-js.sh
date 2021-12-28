@@ -12,6 +12,7 @@ generate () {
 
     ref=$1
     path="$REPO_PATH/docs/js/$ref"
+    js_path="$FLARUM_PATH/js"
 
     if [ "$2" == "true" ] && [ -d "$path" ]; then
         return
@@ -22,12 +23,14 @@ generate () {
     rm -rf $path
     mkdir $path
 
-    cp "$REPO_PATH/esdoc.json" $path
-    cp "$REPO_PATH/src/readme-js.md" "$path/README.md"
+    cp "$REPO_PATH/typedoc.json" $js_path
 
     cd $path
     (cd $FLARUM_PATH && git checkout -q -- . && git checkout -q $ref)
-    npx esdoc -c esdoc.json
+    (cd $js_path && yarn install --frozen-lockfile)
+
+    cd $js_path
+    npx typedoc --gitRevision $ref --out ../../docs/js/$ref --customTitle "Flarum ($ref)"
 
     cd $REPO_PATH
 }

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Mail\DriverInterface | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Mail_DriverInterface" data-root-path="../../">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/core"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
+                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
+                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
+                                            <option value="../../../master" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            DriverInterface
+                
+            &nbsp;
+                <a href="https://github.com/flarum/core/blob/v1.2.0/src/Mail/DriverInterface.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>        interface    
+    <strong>DriverInterface</strong></p>
+
+        
+    
+
+            <div class="description">
+            <p><p>An interface for a mail service.</p></p>            <p><p>This interface provides all methods necessary for configuring, checking and
+using one of Laravel's various email drivers throughout Flarum.</p></p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_availableSettings">availableSettings</a>()
+        
+                                            <p>&lt;p&gt;Provide a list of settings for this driver.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v1.2.0/src/Mail/DriverInterface.php#L34" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_validate">validate</a>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <abbr title="Illuminate\Contracts\Validation\Factory">Factory</abbr> $validator)
+        
+                                            <p>&lt;p&gt;Ensure the given settings are enough to send emails.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v1.2.0/src/Mail/DriverInterface.php#L49" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_canSend">canSend</a>()
+        
+                                            <p>&lt;p&gt;Does this driver actually send out emails?&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v1.2.0/src/Mail/DriverInterface.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Swift_Transport
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_buildTransport">buildTransport</a>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+        
+                                            <p>&lt;p&gt;Build a mail transport based on Flarum&#039;s current settings.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/core/blob/v1.2.0/src/Mail/DriverInterface.php#L59" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_availableSettings">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v1.2.0/src/Mail/DriverInterface.php#L34" target="_blank">
+            line 34
+        </a>
+        </div>
+        <code>                    array
+    <strong>availableSettings</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Provide a list of settings for this driver.&lt;/p&gt;</p>                    <p>&lt;p&gt;The list must be an array of field names (keys) mapping to their type
+(the empty string &amp;quot;&amp;quot; for a text field; or an array of possible values for
+a dropdown field).&lt;/p&gt;</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validate">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v1.2.0/src/Mail/DriverInterface.php#L49" target="_blank">
+            line 49
+        </a>
+        </div>
+        <code>                    <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>
+    <strong>validate</strong>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <abbr title="Illuminate\Contracts\Validation\Factory">Factory</abbr> $validator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Ensure the given settings are enough to send emails.&lt;/p&gt;</p>                    <p>&lt;p&gt;This method is responsible for determining whether the user-provided
+values stored in Flarum&#039;s settings are &amp;quot;valid&amp;quot; as far as a simple
+inspection of these values can determine it. Of course, this does not
+mean that the mail server or API will actually accept e.g. credentials.&lt;/p&gt;
+&lt;p&gt;Any errors must be wrapped in a {\Illuminate\Support\MessageBag}.
+If there are no errors, an empty instance can be returned. In the
+presence of validation problems with the configured mail driver, Flarum
+will fall back to its no-op {\Flarum\Mail\NullDriver}.&lt;/p&gt;</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Validation\Factory">Factory</abbr></td>
+                <td>$validator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canSend">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v1.2.0/src/Mail/DriverInterface.php#L54" target="_blank">
+            line 54
+        </a>
+        </div>
+        <code>                    bool
+    <strong>canSend</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Does this driver actually send out emails?&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildTransport">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/core/blob/v1.2.0/src/Mail/DriverInterface.php#L59" target="_blank">
+            line 59
+        </a>
+        </div>
+        <code>                    Swift_Transport
+    <strong>buildTransport</strong>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Build a mail transport based on Flarum&#039;s current settings.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Swift_Transport</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

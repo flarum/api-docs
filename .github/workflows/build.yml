@@ -28,14 +28,20 @@ jobs:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
-      - name: Clone flarum/core
-        run: git clone https://github.com/flarum/core.git flarum
+      - name: Clone flarum/flarum-core
+        run: git clone https://github.com/flarum/flarum-core.git flarum
 
       - name: PHP > Use PHP 7.4
         if: ${{ matrix.language == 'php' }}
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
+
+      - name: PHP > Doctum cache
+        uses: actions/cache@v2
+        with:
+          path: cache
+          key: ${{ runner.os }}-doctum
 
       - name: JS > Use Node.js 16.x
         if: ${{ matrix.language == 'js' }}
@@ -60,7 +66,7 @@ jobs:
             git reset
             git checkout -- .
           else
-            git commit -m "${{ matrix.language }}: update (flarum/core@${FLARUM_SHA})" docs
+            git commit -m "${{ matrix.language }}: update (flarum/flarum-core@${FLARUM_SHA})" docs
           fi
 
       - name: Pull

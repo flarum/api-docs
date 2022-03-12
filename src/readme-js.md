@@ -1,6 +1,6 @@
 # Flarum JS API Docs
 
-[Flarum](https://github.com/flarum/core)'s JS API Docs serve the purpose to help contributors contribute to Flarum, and extension developers to extend it as well.
+[Flarum](https://github.com/flarum/flarum-core)'s JS API Docs serve the purpose to help contributors contribute to Flarum, and extension developers to extend it as well.
 
 ## Contributing
 

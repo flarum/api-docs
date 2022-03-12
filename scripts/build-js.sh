@@ -35,7 +35,7 @@ generate () {
     cd $REPO_PATH
 }
 
-generate master
+generate main
 
 tags=$(cd $FLARUM_PATH && git tag)
 

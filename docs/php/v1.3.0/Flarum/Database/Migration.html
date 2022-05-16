@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Database\Migration | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Database_Migration" data-root-path="../../">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
+                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
+                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
+                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
+                                            <option value="../../../main" data-version="main">main</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            Migration
+                
+            &nbsp;
+                <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>abstract     class        
+    <strong>Migration</strong></p>
+
+        
+    
+
+            <div class="description">
+            <p><p>Migration factory.</p></p>            <p><p>Implements some handy shortcuts for creating typical migrations.</p></p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_createTable">createTable</a>($name, callable $definition)
+        
+                                            <p>&lt;p&gt;Create a table.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_renameTable">renameTable</a>($from, $to)
+        
+                                            <p>&lt;p&gt;Rename a table.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L44" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_addColumns">addColumns</a>($tableName, array $columnDefinitions)
+        
+                                            <p>&lt;p&gt;Add columns to a table.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L59" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_dropColumns">dropColumns</a>($tableName, array $columnDefinitions)
+        
+                                            <p>&lt;p&gt;Drop columns from a table.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L81" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_renameColumn">renameColumn</a>($tableName, $from, $to)
+        
+                                            <p>&lt;p&gt;Rename a column.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L94" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_renameColumns">renameColumns</a>($tableName, array $columnNames)
+        
+                                            <p>&lt;p&gt;Rename multiple columns.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L102" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_addSettings">addSettings</a>(array $defaults)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p>&lt;p&gt;Add default values for config values.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L128" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_addPermissions">addPermissions</a>(array $permissions)
+        
+                                            <p>&lt;p&gt;Add default permissions.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L155" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_createTable">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L27" target="_blank">
+            line 27
+        </a>
+        </div>
+        <code>        static            
+    <strong>createTable</strong>($name, callable $definition)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Create a table.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$definition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renameTable">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L44" target="_blank">
+            line 44
+        </a>
+        </div>
+        <code>        static            
+    <strong>renameTable</strong>($from, $to)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Rename a table.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$from</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$to</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addColumns">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L59" target="_blank">
+            line 59
+        </a>
+        </div>
+        <code>        static            
+    <strong>addColumns</strong>($tableName, array $columnDefinitions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Add columns to a table.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$columnDefinitions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropColumns">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L81" target="_blank">
+            line 81
+        </a>
+        </div>
+        <code>        static            
+    <strong>dropColumns</strong>($tableName, array $columnDefinitions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Drop columns from a table.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$columnDefinitions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renameColumn">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L94" target="_blank">
+            line 94
+        </a>
+        </div>
+        <code>        static            
+    <strong>renameColumn</strong>($tableName, $from, $to)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Rename a column.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$from</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$to</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renameColumns">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L102" target="_blank">
+            line 102
+        </a>
+        </div>
+        <code>        static            
+    <strong>renameColumns</strong>($tableName, array $columnNames)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Rename multiple columns.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$columnNames</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSettings">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L128" target="_blank">
+            line 128
+        </a>
+        </div>
+        <code>        static            
+    <strong>addSettings</strong>(array $defaults)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>Use</td>
+                    <td>the Settings extender's `default` method instead to register settings.</td>
+                </tr>
+                    </p>
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Add default values for config values.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$defaults</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Flarum/Extend/Settings.html#method_default"><abbr title="Flarum\Extend\Settings">Settings</abbr>::default</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPermissions">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.3.0/src/Database/Migration.php#L155" target="_blank">
+            line 155
+        </a>
+        </div>
+        <code>        static            
+    <strong>addPermissions</strong>(array $permissions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Add default permissions.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$permissions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Post\PostServiceProvider | Flarum API</title>
+    <title>Flarum\User\TokensClearer | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Post_PostServiceProvider" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_User_TokensClearer" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -74,10 +74,10 @@
                     
     <div class="page-header">
         <h1>
-            PostServiceProvider
+            TokensClearer
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/PostServiceProvider.php" target="_blank">
+                <a href="https://github.com/flarum/flarum-core/blob/main/src/User/TokensClearer.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -85,7 +85,7 @@
     </div>
 
     <p>    class        
-    <strong>PostServiceProvider</strong>        extends <a href="../../Flarum/Foundation/AbstractServiceProvider.html"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></p>
+    <strong>TokensClearer</strong></p>
 
         
     
@@ -93,51 +93,22 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_app">
-                                        protected                                        <abbr title="Illuminate\Contracts\Container\Container">Container</abbr>
-                </td>
-                <td>$app</td>
-                <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#property_app"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/PostServiceProvider.php#L21" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_container">
-                                        protected                                        <abbr title="Illuminate\Contracts\Container\Container">Container</abbr>
-                </td>
-                <td>$container</td>
-                <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#property_container"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/PostServiceProvider.php#L26" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+                    <a href="#method_subscribe">subscribe</a>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/PostServiceProvider.php#L31" target="_blank">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/User/TokensClearer.php#L18" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -145,15 +116,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_register">register</a>()
+                    <a href="#method_clearPasswordTokens">clearPasswordTokens</a>(<a href="../../Flarum/User/Event/PasswordChanged.html"><abbr title="Flarum\User\Event\PasswordChanged">PasswordChanged</abbr></a>|<a href="../../Flarum/User/Event/EmailChanged.html"><abbr title="Flarum\User\Event\EmailChanged">EmailChanged</abbr></a> $event)
         
-                                            <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/PostServiceProvider.php#L22" target="_blank">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/User/TokensClearer.php#L27" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -161,33 +133,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_boot">boot</a>(<a href="../../Flarum/Formatter/Formatter.html"><abbr title="Flarum\Formatter\Formatter">Formatter</abbr></a> $formatter)
+                    <a href="#method_clearEmailTokens">clearEmailTokens</a>(<a href="../../Flarum/User/Event/PasswordChanged.html"><abbr title="Flarum\User\Event\PasswordChanged">PasswordChanged</abbr></a> $event)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/PostServiceProvider.php#L31" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_setPostTypes">setPostTypes</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/PostServiceProvider.php#L40" target="_blank">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/User/TokensClearer.php#L35" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -200,15 +155,14 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_subscribe">
         <div class="location">
-                            in <a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a>
-                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/AbstractServiceProvider.php#L31" target="_blank">
-            line 31
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/User/TokensClearer.php#L18" target="_blank">
+            line 18
         </a>
         </div>
-        <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+        <code>                    void
+    <strong>subscribe</strong>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
         </code>
     </h3>
     <div class="details">
@@ -220,13 +174,22 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
-                <td>$container</td>
+                <td><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></td>
+                <td>$events</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -234,39 +197,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_register">
+                    <h3 id="method_clearPasswordTokens">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/PostServiceProvider.php#L22" target="_blank">
-            line 22
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/User/TokensClearer.php#L27" target="_blank">
+            line 27
         </a>
         </div>
-        <code>                    
-    <strong>register</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                                                </div>
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_boot">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/PostServiceProvider.php#L31" target="_blank">
-            line 31
-        </a>
-        </div>
-        <code>                    
-    <strong>boot</strong>(<a href="../../Flarum/Formatter/Formatter.html"><abbr title="Flarum\Formatter\Formatter">Formatter</abbr></a> $formatter)
+        <code>                    void
+    <strong>clearPasswordTokens</strong>(<a href="../../Flarum/User/Event/PasswordChanged.html"><abbr title="Flarum\User\Event\PasswordChanged">PasswordChanged</abbr></a>|<a href="../../Flarum/User/Event/EmailChanged.html"><abbr title="Flarum\User\Event\EmailChanged">EmailChanged</abbr></a> $event)
         </code>
     </h3>
     <div class="details">
@@ -278,13 +216,22 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../Flarum/Formatter/Formatter.html"><abbr title="Flarum\Formatter\Formatter">Formatter</abbr></a></td>
-                <td>$formatter</td>
+                <td><a href="../../Flarum/User/Event/PasswordChanged.html"><abbr title="Flarum\User\Event\PasswordChanged">PasswordChanged</abbr></a>|<a href="../../Flarum/User/Event/EmailChanged.html"><abbr title="Flarum\User\Event\EmailChanged">EmailChanged</abbr></a></td>
+                <td>$event</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -292,14 +239,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setPostTypes">
+                    <h3 id="method_clearEmailTokens">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/PostServiceProvider.php#L40" target="_blank">
-            line 40
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/User/TokensClearer.php#L35" target="_blank">
+            line 35
         </a>
         </div>
-        <code>            protected        
-    <strong>setPostTypes</strong>()
+        <code>                    void
+    <strong>clearEmailTokens</strong>(<a href="../../Flarum/User/Event/PasswordChanged.html"><abbr title="Flarum\User\Event\PasswordChanged">PasswordChanged</abbr></a> $event)
         </code>
     </h3>
     <div class="details">
@@ -307,7 +254,26 @@
     
 
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/User/Event/PasswordChanged.html"><abbr title="Flarum\User\Event\PasswordChanged">PasswordChanged</abbr></a></td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+            </table>
+
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

@@ -185,7 +185,7 @@
                     <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_content">content</a>($callback)
+                    <a href="#method_content">content</a>(callable|string|null $callback)
         
                                             <p>&lt;p&gt;Modify the content of the frontend.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
@@ -483,7 +483,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
-    <strong>content</strong>($callback)
+    <strong>content</strong>(callable|string|null $callback)
         </code>
     </h3>
     <div class="details">
@@ -497,9 +497,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>callable|string|null</td>
                 <td>$callback</td>
-                <td></td>
+                <td>&lt;p&gt;The content can be a closure or an invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\Flarum\Frontend\Document $document&lt;/li&gt;
+&lt;li&gt;\Psr\Http\Message\ServerRequestInterface $request&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The callable should return void.&lt;/p&gt;</td>
             </tr>
             </table>
 

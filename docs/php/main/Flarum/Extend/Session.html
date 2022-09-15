@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Foundation\Paths | Flarum API</title>
+    <title>Flarum\Extend\Session | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Foundation_Paths" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extend_Session" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -75,10 +75,10 @@
                     
     <div class="page-header">
         <h1>
-            Paths
+            Session
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/Paths.php" target="_blank">
+                <a href="https://github.com/flarum/flarum-core/blob/main/src/Extend/Session.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -86,7 +86,8 @@
     </div>
 
     <p>    class        
-    <strong>Paths</strong></p>
+    <strong>Session</strong>        implements
+        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
 
         
     
@@ -94,75 +95,21 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_base">
-                                                                                string
-                </td>
-                <td>$base</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/Paths.php#L20" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_public">
-                                                                                string
-                </td>
-                <td>$public</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/Paths.php#L20" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_storage">
-                                                                                string
-                </td>
-                <td>$storage</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/Paths.php#L20" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_vendor">
-                                                                                string
-                </td>
-                <td>$vendor</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/Paths.php#L20" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <a href="../../Flarum/Extend/Session.html"><abbr title="Flarum\Extend\Session">Session</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(array $paths)
+                    <a href="#method_driver">driver</a>(string $name, string $driverClass)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>&lt;p&gt;Register a new session driver.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/Paths.php#L24" target="_blank">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Extend/Session.php#L29" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -170,16 +117,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string|null
+                    
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___get">__get</a>($name)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/Paths.php#L40" target="_blank">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Extend/Session.php#L36" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -192,60 +139,34 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_driver">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/Paths.php#L24" target="_blank">
-            line 24
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Extend/Session.php#L29" target="_blank">
+            line 29
         </a>
         </div>
-        <code>                    
-    <strong>__construct</strong>(array $paths)
+        <code>                    <a href="../../Flarum/Extend/Session.html"><abbr title="Flarum\Extend\Session">Session</abbr></a>
+    <strong>driver</strong>(string $name, string $driverClass)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Register a new session driver.&lt;/p&gt;</p>                    <p>&lt;p&gt;A driver can currently be selected by setting &lt;code&gt;session.driver&lt;/code&gt; in &lt;code&gt;config.php&lt;/code&gt;.&lt;/p&gt;</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
-                <td>$paths</td>
+                <td>string</td>
+                <td>$name</td>
                 <td></td>
             </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method___get">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/Paths.php#L40" target="_blank">
-            line 40
-        </a>
-        </div>
-        <code>                    string|null
-    <strong>__get</strong>($name)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$name</td>
+                <td>string</td>
+                <td>$driverClass</td>
                 <td></td>
             </tr>
             </table>
@@ -255,11 +176,49 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string|null</td>
+            <td><a href="../../Flarum/Extend/Session.html"><abbr title="Flarum\Extend\Session">Session</abbr></a></td>
             <td></td>
         </tr>
     </table>
 
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Extend/Session.php#L36" target="_blank">
+            line 36
+        </a>
+        </div>
+        <code>                    
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a></td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
             
             
                     </div>

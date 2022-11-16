@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Api\ApiKey | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Api_ApiKey" data-root-path="../../">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
+                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
+                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
+                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
+                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
+                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
+                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
+                                            <option value="../../../main" data-version="main">main</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            ApiKey
+                
+            &nbsp;
+                <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>ApiKey</strong>        extends <a href="../../Flarum/Database/AbstractModel.html"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_timestamps">
+                                                                                bool
+                </td>
+                <td>$timestamps</td>
+                <td class="last">&lt;p&gt;Indicates if the model should be timestamped. Turn off by default.&lt;/p&gt;</td>
+                <td><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#property_timestamps"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L33" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_afterSaveCallbacks">
+                                        protected                                        callable[]
+                </td>
+                <td>$afterSaveCallbacks</td>
+                <td class="last">&lt;p&gt;An array of callbacks to be run once after the model is saved.&lt;/p&gt;</td>
+                <td><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#property_afterSaveCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L40" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_afterDeleteCallbacks">
+                                        protected                                        callable[]
+                </td>
+                <td>$afterDeleteCallbacks</td>
+                <td class="last">&lt;p&gt;An array of callbacks to be run once after the model is deleted.&lt;/p&gt;</td>
+                <td><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#property_afterDeleteCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L47" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_customRelations">
+                    static                                                            
+                </td>
+                <td>$customRelations</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#property_customRelations"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L52" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dateAttributes">
+                    static                                                            
+                </td>
+                <td>$dateAttributes</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#property_dateAttributes"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L57" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaults">
+                    static                                                            
+                </td>
+                <td>$defaults</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#property_defaults"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L62" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_id">
+                                                                                int
+                </td>
+                <td>$id</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dates">
+                                        protected                                        
+                </td>
+                <td>$dates</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L29" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_key">
+                                                                                string
+                </td>
+                <td>$key</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allowed_ips">
+                                                                                string|null
+                </td>
+                <td>$allowed_ips</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_scopes">
+                                                                                string|null
+                </td>
+                <td>$scopes</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_user_id">
+                                                                                int|null
+                </td>
+                <td>$user_id</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_user">
+                                                                                <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>|null
+                </td>
+                <td>$user</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_created_at">
+                                                                                <abbr title="Carbon\Carbon">Carbon</abbr>
+                </td>
+                <td>$created_at</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_last_activity_at">
+                                                                                <abbr title="Carbon\Carbon">Carbon</abbr>|null
+                </td>
+                <td>$last_activity_at</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_boot">boot</a>()
+        
+                                            <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_boot"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L67" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(array $attributes = [])
+        
+                                            <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method___construct"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L87" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getDates">getDates</a>()
+        
+                                            <p>&lt;p&gt;Get the attributes that should be converted to dates.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_getDates"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L107" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getAttribute">getAttribute</a>(string $key)
+        
+                                            <p>&lt;p&gt;Get an attribute from the model. If nothing is found, attempt to load
+a custom relation method with this key.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_getAttribute"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L125" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getCustomRelation">getCustomRelation</a>(string $name)
+        
+                                            <p>&lt;p&gt;Get a custom relation object.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_getCustomRelation"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L151" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_afterSave">afterSave</a>(callable $callback)
+        
+                                            <p>&lt;p&gt;Register a callback to be run once after the model is saved.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_afterSave"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L167" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_afterDelete">afterDelete</a>(callable $callback)
+        
+                                            <p>&lt;p&gt;Register a callback to be run once after the model is deleted.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_afterDelete"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L178" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable[]
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_releaseAfterSaveCallbacks">releaseAfterSaveCallbacks</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterSaveCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L186" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable[]
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_releaseAfterDeleteCallbacks">releaseAfterDeleteCallbacks</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterDeleteCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L198" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___call">__call</a>($method, $arguments)
+        
+                                            <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Database/AbstractModel.html#method___call"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L210" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Flarum/Api/ApiKey.html"><abbr title="Flarum\Api\ApiKey">ApiKey</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_generate">generate</a>()
+        
+                                            <p>&lt;p&gt;Generate an API key.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L36" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_touch">touch</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L45" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_user">user</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L52" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_boot">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method_boot"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Database/AbstractModel.php#L67" target="_blank">
+            line 67
+        </a>
+        </div>
+        <code>        static            
+    <strong>boot</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method___construct"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Database/AbstractModel.php#L87" target="_blank">
+            line 87
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDates">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method_getDates"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Database/AbstractModel.php#L107" target="_blank">
+            line 107
+        </a>
+        </div>
+        <code>                    array
+    <strong>getDates</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Get the attributes that should be converted to dates.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttribute">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method_getAttribute"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Database/AbstractModel.php#L125" target="_blank">
+            line 125
+        </a>
+        </div>
+        <code>                    mixed
+    <strong>getAttribute</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Get an attribute from the model. If nothing is found, attempt to load
+a custom relation method with this key.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCustomRelation">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method_getCustomRelation"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Database/AbstractModel.php#L151" target="_blank">
+            line 151
+        </a>
+        </div>
+        <code>            protected        mixed
+    <strong>getCustomRelation</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Get a custom relation object.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterSave">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method_afterSave"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Database/AbstractModel.php#L167" target="_blank">
+            line 167
+        </a>
+        </div>
+        <code>                    void
+    <strong>afterSave</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Register a callback to be run once after the model is saved.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterDelete">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method_afterDelete"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Database/AbstractModel.php#L178" target="_blank">
+            line 178
+        </a>
+        </div>
+        <code>                    void
+    <strong>afterDelete</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Register a callback to be run once after the model is deleted.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_releaseAfterSaveCallbacks">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterSaveCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Database/AbstractModel.php#L186" target="_blank">
+            line 186
+        </a>
+        </div>
+        <code>                    callable[]
+    <strong>releaseAfterSaveCallbacks</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_releaseAfterDeleteCallbacks">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method_releaseAfterDeleteCallbacks"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Database/AbstractModel.php#L198" target="_blank">
+            line 198
+        </a>
+        </div>
+        <code>                    callable[]
+    <strong>releaseAfterDeleteCallbacks</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">
+                            in <a href="../../Flarum/Database/AbstractModel.html#method___call"><abbr title="Flarum\Database\AbstractModel">AbstractModel</abbr></a>
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Database/AbstractModel.php#L210" target="_blank">
+            line 210
+        </a>
+        </div>
+        <code>                    
+    <strong>__call</strong>($method, $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generate">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L36" target="_blank">
+            line 36
+        </a>
+        </div>
+        <code>        static            <a href="../../Flarum/Api/ApiKey.html"><abbr title="Flarum\Api\ApiKey">ApiKey</abbr></a>
+    <strong>generate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Generate an API key.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Api/ApiKey.html"><abbr title="Flarum\Api\ApiKey">ApiKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_touch">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L45" target="_blank">
+            line 45
+        </a>
+        </div>
+        <code>                    
+    <strong>touch</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_user">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Api/ApiKey.php#L52" target="_blank">
+            line 52
+        </a>
+        </div>
+        <code>                    
+    <strong>user</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

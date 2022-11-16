@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Foundation\Application | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Foundation_Application" data-root-path="../../">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
+                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
+                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
+                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
+                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
+                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
+                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
+                                            <option value="../../../main" data-version="main">main</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            Application
+                
+            &nbsp;
+                <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>Application</strong></p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>VERSION</td>
+                <td class="last">
+                    <p><em>&lt;p&gt;The Flarum version.&lt;/p&gt;</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_paths">
+                                        protected                                        <a href="../../Flarum/Foundation/Paths.html"><abbr title="Flarum\Foundation\Paths">Paths</abbr></a>
+                </td>
+                <td>$paths</td>
+                <td class="last">&lt;p&gt;The paths for the Flarum installation.&lt;/p&gt;</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L38" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_booted">
+                                        protected                                        bool
+                </td>
+                <td>$booted</td>
+                <td class="last">&lt;p&gt;Indicates if the application has &amp;quot;booted&amp;quot;.&lt;/p&gt;</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L45" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bootingCallbacks">
+                                        protected                                        array
+                </td>
+                <td>$bootingCallbacks</td>
+                <td class="last">&lt;p&gt;The array of booting callbacks.&lt;/p&gt;</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L52" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bootedCallbacks">
+                                        protected                                        array
+                </td>
+                <td>$bootedCallbacks</td>
+                <td class="last">&lt;p&gt;The array of booted callbacks.&lt;/p&gt;</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L59" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_serviceProviders">
+                                        protected                                        array
+                </td>
+                <td>$serviceProviders</td>
+                <td class="last">&lt;p&gt;All of the registered service providers.&lt;/p&gt;</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L66" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_loadedProviders">
+                                        protected                                        array
+                </td>
+                <td>$loadedProviders</td>
+                <td class="last">&lt;p&gt;The names of the loaded service providers.&lt;/p&gt;</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L73" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Foundation/Paths.html"><abbr title="Flarum\Foundation\Paths">Paths</abbr></a> $paths)
+        
+                                            <p>&lt;p&gt;Create a new Flarum application instance.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L81" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_config">config</a>(string $key, mixed $default = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L96" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_inDebugMode">inDebugMode</a>()
+        
+                                            <p>&lt;p&gt;Check if Flarum is in debug mode.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L108" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_url">url</a>(string $path = null)
+        
+                                            <p>&lt;p&gt;Get the URL to the Flarum installation.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L119" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_registerBaseBindings">registerBaseBindings</a>()
+        
+                                            <p>&lt;p&gt;Register the basic bindings into the container.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L134" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_registerBaseServiceProviders">registerBaseServiceProviders</a>()
+        
+                                            <p>&lt;p&gt;Register all of the base service providers.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L158" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_register">register</a>(<abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>|string $provider, array $options = [], bool $force = false)
+        
+                                            <p>&lt;p&gt;Register a service provider with the application.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L171" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getProvider">getProvider</a>(<abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>|string $provider)
+        
+                                            <p>&lt;p&gt;Get the registered service provider instance if it exists.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L211" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_resolveProviderClass">resolveProviderClass</a>(string $provider)
+        
+                                            <p>&lt;p&gt;Resolve a service provider instance from the class name.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L226" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_markAsRegistered">markAsRegistered</a>(<abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr> $provider)
+        
+                                            <p>&lt;p&gt;Mark the given provider as registered.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L237" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_isBooted">isBooted</a>()
+        
+                                            <p>&lt;p&gt;Determine if the application has booted.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L251" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_boot">boot</a>()
+        
+                                            <p>&lt;p&gt;Boot the application&#039;s service providers.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L261" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_bootProvider">bootProvider</a>(<abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr> $provider)
+        
+                                            <p>&lt;p&gt;Boot the given service provider.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L287" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_booting">booting</a>(mixed $callback)
+        
+                                            <p>&lt;p&gt;Register a new boot listener.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L300" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_booted">booted</a>(mixed $callback)
+        
+                                            <p>&lt;p&gt;Register a new &amp;quot;booted&amp;quot; listener.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L311" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_fireAppCallbacks">fireAppCallbacks</a>(array $callbacks)
+        
+                                            <p>&lt;p&gt;Call the booting callbacks for the application.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L326" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_registerCoreContainerAliases">registerCoreContainerAliases</a>()
+        
+                                            <p>&lt;p&gt;Register the core class aliases in the container.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L336" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L81" target="_blank">
+            line 81
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Foundation/Paths.html"><abbr title="Flarum\Foundation\Paths">Paths</abbr></a> $paths)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Create a new Flarum application instance.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Foundation/Paths.html"><abbr title="Flarum\Foundation\Paths">Paths</abbr></a></td>
+                <td>$paths</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_config">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L96" target="_blank">
+            line 96
+        </a>
+        </div>
+        <code>                    mixed
+    <strong>config</strong>(string $key, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inDebugMode">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L108" target="_blank">
+            line 108
+        </a>
+        </div>
+        <code>                    bool
+    <strong>inDebugMode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Check if Flarum is in debug mode.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_url">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L119" target="_blank">
+            line 119
+        </a>
+        </div>
+        <code>                    string
+    <strong>url</strong>(string $path = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Get the URL to the Flarum installation.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerBaseBindings">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L134" target="_blank">
+            line 134
+        </a>
+        </div>
+        <code>            protected        
+    <strong>registerBaseBindings</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Register the basic bindings into the container.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerBaseServiceProviders">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L158" target="_blank">
+            line 158
+        </a>
+        </div>
+        <code>            protected        
+    <strong>registerBaseServiceProviders</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Register all of the base service providers.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L171" target="_blank">
+            line 171
+        </a>
+        </div>
+        <code>                    <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>
+    <strong>register</strong>(<abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>|string $provider, array $options = [], bool $force = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Register a service provider with the application.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>|string</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$force</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProvider">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L211" target="_blank">
+            line 211
+        </a>
+        </div>
+        <code>                    <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>|null
+    <strong>getProvider</strong>(<abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>|string $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Get the registered service provider instance if it exists.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>|string</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveProviderClass">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L226" target="_blank">
+            line 226
+        </a>
+        </div>
+        <code>                    <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>
+    <strong>resolveProviderClass</strong>(string $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Resolve a service provider instance from the class name.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_markAsRegistered">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L237" target="_blank">
+            line 237
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>markAsRegistered</strong>(<abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr> $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Mark the given provider as registered.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr></td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isBooted">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L251" target="_blank">
+            line 251
+        </a>
+        </div>
+        <code>                    bool
+    <strong>isBooted</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Determine if the application has booted.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_boot">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L261" target="_blank">
+            line 261
+        </a>
+        </div>
+        <code>                    void
+    <strong>boot</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Boot the application&#039;s service providers.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bootProvider">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L287" target="_blank">
+            line 287
+        </a>
+        </div>
+        <code>            protected        mixed
+    <strong>bootProvider</strong>(<abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr> $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Boot the given service provider.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr></td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_booting">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L300" target="_blank">
+            line 300
+        </a>
+        </div>
+        <code>                    void
+    <strong>booting</strong>(mixed $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Register a new boot listener.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_booted">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L311" target="_blank">
+            line 311
+        </a>
+        </div>
+        <code>                    void
+    <strong>booted</strong>(mixed $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Register a new &amp;quot;booted&amp;quot; listener.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fireAppCallbacks">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L326" target="_blank">
+            line 326
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>fireAppCallbacks</strong>(array $callbacks)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Call the booting callbacks for the application.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$callbacks</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerCoreContainerAliases">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Foundation/Application.php#L336" target="_blank">
+            line 336
+        </a>
+        </div>
+        <code>                    
+    <strong>registerCoreContainerAliases</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Register the core class aliases in the container.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

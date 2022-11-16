@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Extend\Model | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Extend_Model" data-root-path="../../">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
+                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
+                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
+                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
+                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
+                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
+                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
+                                            <option value="../../../main" data-version="main">main</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            Model
+                
+            &nbsp;
+                <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>Model</strong>        implements
+        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(string $modelClass)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_dateAttribute">dateAttribute</a>(string $attribute)
+        
+                                            <p>&lt;p&gt;Add an attribute to be treated as a date.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L38" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_default">default</a>(string $attribute, mixed $value)
+        
+                                            <p>&lt;p&gt;Add a default value for a given attribute, which can be an explicit value, a closure,
+or an instance of an invokable class. Unlike with some other extenders,
+it CANNOT be the &lt;code&gt;::class&lt;/code&gt; attribute of an invokable class.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L61" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_belongsTo">belongsTo</a>(string $name, string $related, string $foreignKey = null, string $ownerKey = null)
+        
+                                            <p>&lt;p&gt;Establish a simple belongsTo relationship from this model to another model.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L81" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_belongsToMany">belongsToMany</a>(string $name, string $related, string $table = null, string $foreignPivotKey = null, string $relatedPivotKey = null, string $parentKey = null, string $relatedKey = null)
+        
+                                            <p>&lt;p&gt;Establish a simple belongsToMany relationship from this model to another model.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L104" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_hasOne">hasOne</a>(string $name, string $related, string $foreignKey = null, string $localKey = null)
+        
+                                            <p>&lt;p&gt;Establish a simple hasOne relationship from this model to another model.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L131" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_hasMany">hasMany</a>(string $name, string $related, string $foreignKey = null, string $localKey = null)
+        
+                                            <p>&lt;p&gt;Establish a simple hasMany relationship from this model to another model.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L151" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_relationship">relationship</a>(string $name, callable|string $callback)
+        
+                                            <p>&lt;p&gt;Add a relationship from this model to another model.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L175" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L182" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L27" target="_blank">
+            line 27
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(string $modelClass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$modelClass</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dateAttribute">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L38" target="_blank">
+            line 38
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+    <strong>dateAttribute</strong>(string $attribute)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Add an attribute to be treated as a date.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$attribute</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_default">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L61" target="_blank">
+            line 61
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+    <strong>default</strong>(string $attribute, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Add a default value for a given attribute, which can be an explicit value, a closure,
+or an instance of an invokable class. Unlike with some other extenders,
+it CANNOT be the &lt;code&gt;::class&lt;/code&gt; attribute of an invokable class.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$attribute</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_belongsTo">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L81" target="_blank">
+            line 81
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+    <strong>belongsTo</strong>(string $name, string $related, string $foreignKey = null, string $ownerKey = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Establish a simple belongsTo relationship from this model to another model.&lt;/p&gt;</p>                    <p>&lt;p&gt;This represents an inverse one-to-one or inverse one-to-many relationship.
+For more complex relationships, use the -&amp;gt;relationship method.&lt;/p&gt;</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$related</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$foreignKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$ownerKey</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_belongsToMany">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L104" target="_blank">
+            line 104
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+    <strong>belongsToMany</strong>(string $name, string $related, string $table = null, string $foreignPivotKey = null, string $relatedPivotKey = null, string $parentKey = null, string $relatedKey = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Establish a simple belongsToMany relationship from this model to another model.&lt;/p&gt;</p>                    <p>&lt;p&gt;This represents a many-to-many relationship.
+For more complex relationships, use the -&amp;gt;relationship method.&lt;/p&gt;</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$related</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$foreignPivotKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relatedPivotKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$parentKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relatedKey</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasOne">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L131" target="_blank">
+            line 131
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+    <strong>hasOne</strong>(string $name, string $related, string $foreignKey = null, string $localKey = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Establish a simple hasOne relationship from this model to another model.&lt;/p&gt;</p>                    <p>&lt;p&gt;This represents a one-to-one relationship.
+For more complex relationships, use the -&amp;gt;relationship method.&lt;/p&gt;</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$related</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$foreignKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$localKey</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasMany">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L151" target="_blank">
+            line 151
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+    <strong>hasMany</strong>(string $name, string $related, string $foreignKey = null, string $localKey = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Establish a simple hasMany relationship from this model to another model.&lt;/p&gt;</p>                    <p>&lt;p&gt;This represents a one-to-many relationship.
+For more complex relationships, use the -&amp;gt;relationship method.&lt;/p&gt;</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$related</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$foreignKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$localKey</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_relationship">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L175" target="_blank">
+            line 175
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
+    <strong>relationship</strong>(string $name, callable|string $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Add a relationship from this model to another model.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable|string</td>
+                <td>$callback</td>
+                <td>&lt;p&gt;The callable can be a closure or invokable class, and should accept:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$instance: An instance of this model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The callable should return:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$relationship: A Laravel Relationship object. See relevant methods of models
+like \Flarum\User\User for examples of how relationships should be returned.&lt;/li&gt;
+&lt;/ul&gt;</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.6.0/src/Extend/Model.php#L182" target="_blank">
+            line 182
+        </a>
+        </div>
+        <code>                    
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a></td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

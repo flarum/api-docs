@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Foundation\ApplicationInfoProvider | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Foundation_ApplicationInfoProvider" data-root-path="../../">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
+                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
+                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
+                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
+                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
+                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
+                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
+                                            <option value="../../../main" data-version="main">main</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            ApplicationInfoProvider
+                
+            &nbsp;
+                <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>ApplicationInfoProvider</strong></p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_settings">
+                                        protected                                        <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a>
+                </td>
+                <td>$settings</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L29" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_translator">
+                                        protected                                        <a href="../../Flarum/Locale/Translator.html"><abbr title="Flarum\Locale\Translator">Translator</abbr></a>
+                </td>
+                <td>$translator</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L34" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_schedule">
+                                        protected                                        <abbr title="Illuminate\Console\Scheduling\Schedule">Schedule</abbr>
+                </td>
+                <td>$schedule</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L39" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_db">
+                                        protected                                        <abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr>
+                </td>
+                <td>$db</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L44" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_config">
+                                        protected                                        <a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a>
+                </td>
+                <td>$config</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L49" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_session">
+                                        protected                                        <a href="../../Flarum/User/SessionManager.html"><abbr title="Flarum\User\SessionManager">SessionManager</abbr></a>
+                </td>
+                <td>$session</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sessionHandler">
+                                        protected                                        <a target="_blank" href="http://php.net/SessionHandlerInterface">SessionHandlerInterface</a>
+                </td>
+                <td>$sessionHandler</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L59" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_queue">
+                                        protected                                        <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr>
+                </td>
+                <td>$queue</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L64" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../Flarum/Locale/Translator.html"><abbr title="Flarum\Locale\Translator">Translator</abbr></a> $translator, <abbr title="Illuminate\Console\Scheduling\Schedule">Schedule</abbr> $schedule, <abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr> $db, <a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config, <a href="../../Flarum/User/SessionManager.html"><abbr title="Flarum\User\SessionManager">SessionManager</abbr></a> $session, <a target="_blank" href="http://php.net/SessionHandlerInterface">SessionHandlerInterface</a> $sessionHandler, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $queue)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L76" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_scheduledTasksRegistered">scheduledTasksRegistered</a>()
+        
+                                            <p>&lt;p&gt;Identify if any tasks are registered with the scheduler.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L101" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getSchedulerStatus">getSchedulerStatus</a>()
+        
+                                            <p>&lt;p&gt;Gets the current status of the scheduler.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L111" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_identifyQueueDriver">identifyQueueDriver</a>()
+        
+                                            <p>&lt;p&gt;Identify the queue driver in use.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L130" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_identifyDatabaseVersion">identifyDatabaseVersion</a>()
+        
+                                            <p>&lt;p&gt;Identify the version of the database we are connected to.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L149" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_identifySessionDriver">identifySessionDriver</a>(bool $forWeb = false)
+        
+                                            <p>&lt;p&gt;Reports on the session driver in use based on three scenarios:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If the configured session driver is valid and in use, it will be returned.&lt;/li&gt;
+&lt;/ol&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L160" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_identifyPHPVersion">identifyPHPVersion</a>()
+        
+                                            <p>&lt;p&gt;Identifiy the current PHP version.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L208" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L76" target="_blank">
+            line 76
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../Flarum/Locale/Translator.html"><abbr title="Flarum\Locale\Translator">Translator</abbr></a> $translator, <abbr title="Illuminate\Console\Scheduling\Schedule">Schedule</abbr> $schedule, <abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr> $db, <a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config, <a href="../../Flarum/User/SessionManager.html"><abbr title="Flarum\User\SessionManager">SessionManager</abbr></a> $session, <a target="_blank" href="http://php.net/SessionHandlerInterface">SessionHandlerInterface</a> $sessionHandler, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $queue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Locale/Translator.html"><abbr title="Flarum\Locale\Translator">Translator</abbr></a></td>
+                <td>$translator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Console\Scheduling\Schedule">Schedule</abbr></td>
+                <td>$schedule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/User/SessionManager.html"><abbr title="Flarum\User\SessionManager">SessionManager</abbr></a></td>
+                <td>$session</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SessionHandlerInterface">SessionHandlerInterface</a></td>
+                <td>$sessionHandler</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scheduledTasksRegistered">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L101" target="_blank">
+            line 101
+        </a>
+        </div>
+        <code>                    bool
+    <strong>scheduledTasksRegistered</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Identify if any tasks are registered with the scheduler.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSchedulerStatus">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L111" target="_blank">
+            line 111
+        </a>
+        </div>
+        <code>                    string
+    <strong>getSchedulerStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Gets the current status of the scheduler.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_identifyQueueDriver">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L130" target="_blank">
+            line 130
+        </a>
+        </div>
+        <code>                    string
+    <strong>identifyQueueDriver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Identify the queue driver in use.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_identifyDatabaseVersion">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L149" target="_blank">
+            line 149
+        </a>
+        </div>
+        <code>                    string
+    <strong>identifyDatabaseVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Identify the version of the database we are connected to.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_identifySessionDriver">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L160" target="_blank">
+            line 160
+        </a>
+        </div>
+        <code>                    string
+    <strong>identifySessionDriver</strong>(bool $forWeb = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Reports on the session driver in use based on three scenarios:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If the configured session driver is valid and in use, it will be returned.&lt;/li&gt;
+&lt;/ol&gt;</p>                    <p>&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;If the configured session driver is invalid, fallback to the default one and mention it.&lt;/li&gt;
+&lt;li&gt;If the actual used driver (i.e &lt;code&gt;session.handler&lt;/code&gt;) is different from the current one (configured or default), mention it.&lt;/li&gt;
+&lt;/ol&gt;</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$forWeb</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_identifyPHPVersion">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Foundation/ApplicationInfoProvider.php#L208" target="_blank">
+            line 208
+        </a>
+        </div>
+        <code>                    string
+    <strong>identifyPHPVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Identifiy the current PHP version.&lt;/p&gt;</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

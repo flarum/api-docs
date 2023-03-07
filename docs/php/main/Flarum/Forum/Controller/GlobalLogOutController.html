@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Api\Controller\CreateTokenController | Flarum API</title>
+    <title>Flarum\Forum\Controller\GlobalLogOutController | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Api_Controller_CreateTokenController" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Forum_Controller_GlobalLogOutController" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -76,10 +76,10 @@
                     
     <div class="page-header">
         <h1>
-            CreateTokenController
+            GlobalLogOutController
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/main/src/Api/Controller/CreateTokenController.php" target="_blank">
+                <a href="https://github.com/flarum/flarum-core/blob/main/src/Forum/Controller/GlobalLogOutController.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -87,16 +87,12 @@
     </div>
 
     <p>    class        
-    <strong>CreateTokenController</strong>        implements
+    <strong>GlobalLogOutController</strong>        implements
         <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></p>
 
         
     
 
-            <div class="description">
-            <p><p>Not to be confused with the CreateAccessTokenController,
-this controller is used to authenticate a user with credentials,
-and return a system generated session-type access token.</p></p>                                </div>
     
     
     
@@ -104,37 +100,49 @@ and return a system generated session-type access token.</p></p>                
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_users">
-                                        protected                                        <a href="../../../Flarum/User/UserRepository.html"><abbr title="Flarum\User\UserRepository">UserRepository</abbr></a>
-                </td>
-                <td>$users</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Api/Controller/CreateTokenController.php#L34" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_bus">
-                                        protected                                        <abbr title="Illuminate\Contracts\Bus\Dispatcher">Dispatcher</abbr>
-                </td>
-                <td>$bus</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Api/Controller/CreateTokenController.php#L39" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
                 <td class="type" id="property_events">
                                         protected                                        <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>
                 </td>
                 <td>$events</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Api/Controller/CreateTokenController.php#L44" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Forum/Controller/GlobalLogOutController.php#L28" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authenticator">
+                                        protected                                        <a href="../../../Flarum/Http/SessionAuthenticator.html"><abbr title="Flarum\Http\SessionAuthenticator">SessionAuthenticator</abbr></a>
+                </td>
+                <td>$authenticator</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Forum/Controller/GlobalLogOutController.php#L33" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_rememberer">
+                                        protected                                        <a href="../../../Flarum/Http/Rememberer.html"><abbr title="Flarum\Http\Rememberer">Rememberer</abbr></a>
+                </td>
+                <td>$rememberer</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Forum/Controller/GlobalLogOutController.php#L38" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_url">
+                                        protected                                        <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a>
+                </td>
+                <td>$url</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Forum/Controller/GlobalLogOutController.php#L43" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -150,13 +158,13 @@ and return a system generated session-type access token.</p></p>                
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/User/UserRepository.html"><abbr title="Flarum\User\UserRepository">UserRepository</abbr></a> $users, <abbr title="Illuminate\Contracts\Bus\Dispatcher">Dispatcher</abbr> $bus, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <a href="../../../Flarum/Http/SessionAuthenticator.html"><abbr title="Flarum\Http\SessionAuthenticator">SessionAuthenticator</abbr></a> $authenticator, <a href="../../../Flarum/Http/Rememberer.html"><abbr title="Flarum\Http\Rememberer">Rememberer</abbr></a> $rememberer, <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Api/Controller/CreateTokenController.php#L51" target="_blank">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Forum/Controller/GlobalLogOutController.php#L45" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -169,10 +177,11 @@ and return a system generated session-type access token.</p></p>                
                 <div class="col-md-6 type">
                     <a href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         
-                                            <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Api/Controller/CreateTokenController.php#L61" target="_blank">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Forum/Controller/GlobalLogOutController.php#L57" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -187,12 +196,12 @@ and return a system generated session-type access token.</p></p>                
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Api/Controller/CreateTokenController.php#L51" target="_blank">
-            line 51
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Forum/Controller/GlobalLogOutController.php#L45" target="_blank">
+            line 45
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/User/UserRepository.html"><abbr title="Flarum\User\UserRepository">UserRepository</abbr></a> $users, <abbr title="Illuminate\Contracts\Bus\Dispatcher">Dispatcher</abbr> $bus, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events)
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <a href="../../../Flarum/Http/SessionAuthenticator.html"><abbr title="Flarum\Http\SessionAuthenticator">SessionAuthenticator</abbr></a> $authenticator, <a href="../../../Flarum/Http/Rememberer.html"><abbr title="Flarum\Http\Rememberer">Rememberer</abbr></a> $rememberer, <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url)
         </code>
     </h3>
     <div class="details">
@@ -204,18 +213,23 @@ and return a system generated session-type access token.</p></p>                
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Flarum/User/UserRepository.html"><abbr title="Flarum\User\UserRepository">UserRepository</abbr></a></td>
-                <td>$users</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\Bus\Dispatcher">Dispatcher</abbr></td>
-                <td>$bus</td>
-                <td></td>
-            </tr>
-                    <tr>
                 <td><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></td>
                 <td>$events</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Flarum/Http/SessionAuthenticator.html"><abbr title="Flarum\Http\SessionAuthenticator">SessionAuthenticator</abbr></a></td>
+                <td>$authenticator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Flarum/Http/Rememberer.html"><abbr title="Flarum\Http\Rememberer">Rememberer</abbr></a></td>
+                <td>$rememberer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a></td>
+                <td>$url</td>
                 <td></td>
             </tr>
             </table>
@@ -230,8 +244,8 @@ and return a system generated session-type access token.</p></p>                
                     <div class="method-item">
                     <h3 id="method_handle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Api/Controller/CreateTokenController.php#L61" target="_blank">
-            line 61
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Forum/Controller/GlobalLogOutController.php#L57" target="_blank">
+            line 57
         </a>
         </div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
@@ -242,8 +256,6 @@ and return a system generated session-type access token.</p></p>                
             
     
 
-                    <div class="method-description">
-                                    <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

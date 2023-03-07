@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Discussion\Event\UserRead | Flarum API</title>
+    <title>Flarum\Http\Filter\UserFilter | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Discussion_Event_UserRead" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Http_Filter_UserFilter" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -76,10 +76,10 @@
                     
     <div class="page-header">
         <h1>
-            UserRead
+            UserFilter
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/main/src/Discussion/Event/UserRead.php" target="_blank">
+                <a href="https://github.com/flarum/flarum-core/blob/main/src/Http/Filter/UserFilter.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -87,59 +87,50 @@
     </div>
 
     <p>    class        
-    <strong>UserRead</strong></p>
+    <strong>UserFilter</strong>        implements
+        <a href="../../../Flarum/Filter/FilterInterface.html"><abbr title="Flarum\Filter\FilterInterface">FilterInterface</abbr></a></p>
 
         
     
 
+            <div class="description">
+            <p><p>Filters an access tokens request by the related user.</p></p>                                </div>
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_state">
-                                                                                <a href="../../../Flarum/Discussion/UserState.html"><abbr title="Flarum\Discussion\UserState">UserState</abbr></a>
-                </td>
-                <td>$state</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Discussion/Event/UserRead.php#L20" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_actor">
-                                                                                <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>
-                </td>
-                <td>$actor</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Discussion/Event/UserRead.php#L25" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Discussion/UserState.html"><abbr title="Flarum\Discussion\UserState">UserState</abbr></a> $state)
+                    <a href="#method_getFilterKey">getFilterKey</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Discussion/Event/UserRead.php#L30" target="_blank">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Http/Filter/UserFilter.php#L26" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_filter">filter</a>(<a href="../../../Flarum/Filter/FilterState.html"><abbr title="Flarum\Filter\FilterState">FilterState</abbr></a> $filterState, string $filterValue, bool $negate)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Http/Filter/UserFilter.php#L34" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -152,14 +143,46 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_getFilterKey">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Discussion/Event/UserRead.php#L30" target="_blank">
-            line 30
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Http/Filter/UserFilter.php#L26" target="_blank">
+            line 26
+        </a>
+        </div>
+        <code>                    string
+    <strong>getFilterKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Http/Filter/UserFilter.php#L34" target="_blank">
+            line 34
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Discussion/UserState.html"><abbr title="Flarum\Discussion\UserState">UserState</abbr></a> $state)
+    <strong>filter</strong>(<a href="../../../Flarum/Filter/FilterState.html"><abbr title="Flarum\Filter\FilterState">FilterState</abbr></a> $filterState, string $filterValue, bool $negate)
         </code>
     </h3>
     <div class="details">
@@ -171,8 +194,18 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Flarum/Discussion/UserState.html"><abbr title="Flarum\Discussion\UserState">UserState</abbr></a></td>
-                <td>$state</td>
+                <td><a href="../../../Flarum/Filter/FilterState.html"><abbr title="Flarum\Filter\FilterState">FilterState</abbr></a></td>
+                <td>$filterState</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filterValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$negate</td>
                 <td></td>
             </tr>
             </table>

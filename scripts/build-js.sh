@@ -18,7 +18,7 @@ generate () {
         return
     fi
 
-    echo -e "$style - $ref$reset"
+    echo -e "$style - $ref (`git rev-parse --short HEAD`) $reset"
 
     rm -rf $path
     mkdir $path

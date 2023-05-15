@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Post\Event\Revised | Flarum API</title>
+    <title>Flarum\Database\Eloquent\Collection | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Post_Event_Revised" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Database_Eloquent_Collection" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -77,10 +77,10 @@
                     
     <div class="page-header">
         <h1>
-            Revised
+            Collection
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/Event/Revised.php" target="_blank">
+                <a href="https://github.com/flarum/flarum-core/blob/main/src/Database/Eloquent/Collection.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -88,7 +88,7 @@
     </div>
 
     <p>    class        
-    <strong>Revised</strong></p>
+    <strong>Collection</strong>        extends <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr></p>
 
         
     
@@ -96,49 +96,6 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_post">
-                                                                                <a href="../../../Flarum/Post/CommentPost.html"><abbr title="Flarum\Post\CommentPost">CommentPost</abbr></a>
-                </td>
-                <td>$post</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/Event/Revised.php#L20" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_actor">
-                                                                                <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>
-                </td>
-                <td>$actor</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/Event/Revised.php#L25" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_oldContent">
-                                                                                string
-                </td>
-                <td>$oldContent</td>
-                <td class="last">&lt;p&gt;We manually set the old content because at this stage the post
-has already been updated with the new content. So the original
-content is not available anymore.&lt;/p&gt;</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/Event/Revised.php#L34" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -148,13 +105,12 @@ content is not available anymore.&lt;/p&gt;</td>
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Post/CommentPost.html"><abbr title="Flarum\Post\CommentPost">CommentPost</abbr></a> $post, <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, string $oldContent)
+                    <a href="#method_loadAggregate">loadAggregate</a>($relations, $column, $function = null)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>&lt;p&gt;This is done to prevent conflicts when using visibility scopes.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/Event/Revised.php#L36" target="_blank">
+                        <a href="https://github.com/flarum/flarum-core/blob/main/src/Database/Eloquent/Collection.php#L40" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -167,37 +123,53 @@ content is not available anymore.&lt;/p&gt;</td>
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_loadAggregate">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Post/Event/Revised.php#L36" target="_blank">
-            line 36
+                        at         <a href="https://github.com/flarum/flarum-core/blob/main/src/Database/Eloquent/Collection.php#L40" target="_blank">
+            line 40
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Post/CommentPost.html"><abbr title="Flarum\Post\CommentPost">CommentPost</abbr></a> $post, <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, string $oldContent)
+    <strong>loadAggregate</strong>($relations, $column, $function = null)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>&lt;p&gt;This is done to prevent conflicts when using visibility scopes.&lt;/p&gt;</p>                    <p>&lt;p&gt;Without this, we get the following example query when using a visibility scope
+and eager loading the count of &lt;code&gt;mentionedBy&lt;/code&gt;:.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sql&quot;&gt;SELECT `id`, (
+  SELECT count(*)
+  FROM `posts` AS `laravel_reserved_0`
+  INNER JOIN `post_mentions_post` ON `laravel_reserved_0`.`id` = `post_mentions_post`.`post_id`
+  WHERE `posts`.`id` = `post_mentions_post`.`mentions_post_id`
+  ---   ^^^^^^^ this is the problem, visibility scopes always assume the default table name, rather than
+  ---           the Laravel auto-generated alias.
+
+    AND `TYPE` in (&#039;discussionTagged&#039;, &#039;discussionStickied&#039;, &#039;discussionLocked&#039;, &#039;comment&#039;, &#039;discussionRenamed&#039;)
+) AS `mentioned_by_count`
+FROM `posts`
+WHERE `posts`.`id` in (23642)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So by applying an alias on the parent query, we prevent Laravel from auto aliasing the sub-query.&lt;/p&gt;</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Flarum/Post/CommentPost.html"><abbr title="Flarum\Post\CommentPost">CommentPost</abbr></a></td>
-                <td>$post</td>
+                <td></td>
+                <td>$relations</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
-                <td>$actor</td>
+                <td></td>
+                <td>$column</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>string</td>
-                <td>$oldContent</td>
+                <td></td>
+                <td>$function</td>
                 <td></td>
             </tr>
             </table>

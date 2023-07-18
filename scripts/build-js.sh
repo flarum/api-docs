@@ -30,7 +30,7 @@ generate () {
     (cd $js_path && yarn install --immutable)
 
     cd $js_path
-    npx typedoc --gitRevision $ref --out ../../docs/js/$ref --customTitle "Flarum ($ref)"
+    npx typedoc --gitRevision $ref --out "$REPO_PATH/docs/js/$ref" --customTitle "Flarum ($ref)" --readme "$REPO_PATH/src/readme-js.md"
 
     cd $REPO_PATH
 }

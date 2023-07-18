@@ -54,7 +54,7 @@
 
 {% macro method_source_link(method) -%}
     {% if method.sourcepath %}
-        <a href="https://github.com/flarum/flarum-core/blob/{{ project.version }}/src/{{ method.class.name|split('\\')|slice(1)|join('/') }}.php#L{{ method.line }}" target="_blank">
+        <a href="https://github.com/flarum/framework/blob/{{ project.version }}/framework/core/src/{{ method.class.name|split('\\')|slice(1)|join('/') }}.php#L{{ method.line }}" target="_blank">
             line {{ method.line|raw }}
         </a>
     {%- else %}
@@ -157,7 +157,7 @@
 
 
 {% macro github_link(name, line, height, tree) %}
-    <a href="https://github.com/flarum/flarum-core/{% if tree %}tree{% else %}blob{% endif %}/{{ project.version }}/src/{{ name|split('\\')|slice(1)|join('/') }}{% if tree != true %}.php{% if line %}#L{{ line }}{% endif %}{% endif %}" target="_blank">
+    <a href="https://github.com/flarum/framework/{% if tree %}tree{% else %}blob{% endif %}/{{ project.version }}/framework/core/src/{{ name|split('\\')|slice(1)|join('/') }}{% if tree != true %}.php{% if line %}#L{{ line }}{% endif %}{% endif %}" target="_blank">
         <img src="{{ path('assets/img/code.svg') }}" {% if height %}height="{{ height }}"{% endif %} />
     </a>
 {% endmacro %}

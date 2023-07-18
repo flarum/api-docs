@@ -13,9 +13,10 @@ $iterator = Finder::create()
 
 $versions = GitVersionCollection::create($flarum)
   ->addFromTags(function ($version) {
-    return preg_match('/^v?([0-9]+)\.([0-9]+)\.0$/', $version);
+    return preg_match('/^v?([0-9]+)\.([0-9]+)\.0$/', $version) && (preg_match('/^v1\.[0-2]/i', $version) === 0);
   })
-  ->add('main', 'main');
+  ->add('main', 'main')
+  ->add('2.x', '2.x');
 
 return new Doctum($iterator, array(
   'theme'                 => 'flarum',
@@ -24,8 +25,8 @@ return new Doctum($iterator, array(
   'build_dir'             => __DIR__ . '/docs/php/%version%/',
   'cache_dir'             => __DIR__ . '/cache/php/%version%/',
   'template_dirs'         => array(__DIR__.'/themes/flarum'),
-  'remote_repository'     => new GitHubRemoteRepository('flarum/flarum-core', $flarum),
+  'remote_repository'     => new GitHubRemoteRepository('flarum/main', $flarum),
   'default_opened_level'  => 1,
-  'source_url'            => 'https://github.com/flarum/flarum-core/',
+  'source_url'            => 'https://github.com/flarum/main/',
   'source_dir'            => 'src'
 ));

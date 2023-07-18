@@ -17,9 +17,9 @@ export reset="\e[0m"
 
 export SCRIPTS_PATH=$(dirname $0)
 export REPO_PATH=$(cd $SCRIPTS_PATH; cd ..; pwd)
-export FLARUM_PATH="${REPO_PATH}/flarum";
+export FLARUM_PATH="${REPO_PATH}/flarum/framework/core";
 
-echo -e "${style}Using flarum/flarum-core @ $FLARUM_PATH$reset"
+echo -e "${style}Using flarum/framework @ $FLARUM_PATH$reset"
 
 if [[ -z "${GITHUB_ENV}" ]]; then
     echo -e "${style}Assuming local environment. \$GITHUB_ENV not set.$reset"

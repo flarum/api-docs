@@ -12,7 +12,7 @@ generate () {
 
     ref=$1
     path="$REPO_PATH/docs/js/$ref"
-    js_path="$FLARUM_PATH/js"
+    # js_path="$FLARUM_CORE_PATH/js"
 
     if [ "$2" == "true" ] && [ -d "$path" ]; then
         return
@@ -23,14 +23,24 @@ generate () {
     rm -rf $path
     mkdir $path
 
-    cp "$REPO_PATH/typedoc.json" $js_path
-
     cd $path
     (cd $FLARUM_PATH && git checkout -q -- . && git checkout -q $ref)
-    (cd $js_path && yarn install --immutable)
+    (cd $FLARUM_PATH && yarn install --immutable)
 
-    cd $js_path
-    npx typedoc --gitRevision $ref --out "$REPO_PATH/docs/js/$ref" --customTitle "Flarum ($ref)" --readme "$REPO_PATH/src/readme-js.md"
+    cp -v "$REPO_PATH/typedoc.package.json" "$FLARUM_CORE_PATH/js/typedoc.json"
+    for i in $(echo "$FLARUM_PATH/extensions/*/js"); do        
+        cp -v "$REPO_PATH/typedoc.package.json" "$i/typedoc.json"
+        
+        if ! [[ -f "$i/tsconfig.json" ]]; then
+            cp "$FLARUM_PATH/extensions/flags/js/tsconfig.json" "$i/tsconfig.json"
+        else
+            sed -i "s+framework/core/js/dist-typings+framework/core/js/src+g" "$i/tsconfig.json"
+        fi
+    done
+
+    cd $REPO_PATH
+    export NODE_OPTIONS="--max-old-space-size=16384"
+    npx typedoc --gitRevision $ref --out "$REPO_PATH/docs/js/$ref" --name "Flarum ($ref)" --readme "$REPO_PATH/src/readme-js.md" --skipErrorChecking 
 
     cd $REPO_PATH
 }
@@ -38,7 +48,7 @@ generate () {
 generate main
 generate "2.x"
 
-tags=$(cd $FLARUM_PATH && git tag)
+tags=$(cd $FLARUM_CORE_PATH && git tag)
 
 for tag in $tags; do
     if [[ "$tag" =~ v[0-9]{1,}\.[0-9]{1,}\.[1-9]{1,}$  || "$tag" =~ 0.1.0-beta ]]; then

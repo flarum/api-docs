@@ -1,26 +1,24 @@
 {
-    "entryPoints": ["./src"],
-    "entryPointStrategy": "expand",
-    "exclude": [
-        "**/compat"
-    ],
+    "entryPoints": ["flarum/framework/core/js", "flarum/extensions/*/js"],
+    "entryPointStrategy": "packages",
+    "includeVersion": true,
 
-    "name": "Flarum",
     "gitRemote": "origin",
-    "tsconfig": "./tsconfig.json",
 
     "plugin": [
         "typedoc-plugin-extras",
-        "typedoc-plugin-mdn-links",
         "typedoc-plugin-merge-modules",
         "typedoc-plugin-missing-exports",
     ],
 
     "excludeExternals": true,
+    "excludeReferences": true,
     "skipErrorChecking": true,
 
     "mergeModulesMergeMode": "module",
 
-    "footerTypedocVersion": true
+    "footerTypedocVersion": true,
+
+    "logLevel": "Verbose"
 }
  

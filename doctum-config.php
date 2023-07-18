@@ -5,7 +5,7 @@ use Doctum\RemoteRepository\GitHubRemoteRepository;
 use Doctum\Version\GitVersionCollection;
 use Symfony\Component\Finder\Finder;
 
-$flarum = getenv('FLARUM_PATH');
+$flarum = getenv('FLARUM_CORE_PATH');
 $iterator = Finder::create()
   ->files()
   ->name('*.php')

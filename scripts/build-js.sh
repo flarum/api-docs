@@ -36,6 +36,7 @@ generate () {
 }
 
 generate main
+generate "2.x"
 
 tags=$(cd $FLARUM_PATH && git tag)
 

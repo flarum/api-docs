@@ -10,11 +10,18 @@
     "gitRemote": "origin",
     "tsconfig": "./tsconfig.json",
 
+    "plugin": [
+        "typedoc-plugin-extras",
+        "typedoc-plugin-mdn-links",
+        "typedoc-plugin-merge-modules",
+        "typedoc-plugin-missing-exports"
+    ],
+
     "excludeExternals": true,
     "skipErrorChecking": true,
 
-    "external-modulemap": "**PLUGIN NOT UPDATED FOR TYPEDOC v0.23** ^(\\w+(\\/\\w+)*)\\/.+$",
     "mergeModulesMergeMode": "module",
+    "footerLastModified": true,
 
     "footerTypedocVersion": true
 }

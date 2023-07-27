@@ -809,6 +809,7 @@ window.projectVersion = '2.x';
             
             {"type": "Class", "fromName": "Flarum\\Extend", "fromLink": "Flarum/Extend.html", "link": "Flarum/Extend/Conditional.html", "name": "Flarum\\Extend\\Conditional", "doc": "null"},
                                                         {"type": "Method", "fromName": "Flarum\\Extend\\Conditional", "fromLink": "Flarum/Extend/Conditional.html", "link": "Flarum/Extend/Conditional.html#method_whenExtensionEnabled", "name": "Flarum\\Extend\\Conditional::whenExtensionEnabled", "doc": "&quot;&quot;"},
+                    {"type": "Method", "fromName": "Flarum\\Extend\\Conditional", "fromLink": "Flarum/Extend/Conditional.html", "link": "Flarum/Extend/Conditional.html#method_whenExtensionDisabled", "name": "Flarum\\Extend\\Conditional::whenExtensionDisabled", "doc": "&quot;&quot;"},
                     {"type": "Method", "fromName": "Flarum\\Extend\\Conditional", "fromLink": "Flarum/Extend/Conditional.html", "link": "Flarum/Extend/Conditional.html#method_when", "name": "Flarum\\Extend\\Conditional::when", "doc": "null"},
                     {"type": "Method", "fromName": "Flarum\\Extend\\Conditional", "fromLink": "Flarum/Extend/Conditional.html", "link": "Flarum/Extend/Conditional.html#method_extend", "name": "Flarum\\Extend\\Conditional::extend", "doc": "null"},
             

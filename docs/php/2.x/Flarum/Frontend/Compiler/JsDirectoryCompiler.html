@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Frontend\Compiler\RevisionCompiler | Flarum API</title>
+    <title>Flarum\Frontend\Compiler\JsDirectoryCompiler | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Frontend_Compiler_RevisionCompiler" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Frontend_Compiler_JsDirectoryCompiler" data-root-path="../../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -76,10 +76,10 @@
                     
     <div class="page-header">
         <h1>
-            RevisionCompiler
+            JsDirectoryCompiler
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -87,12 +87,14 @@
     </div>
 
     <p>    class        
-    <strong>RevisionCompiler</strong>        implements
+    <strong>JsDirectoryCompiler</strong>        implements
         <a href="../../../Flarum/Frontend/Compiler/CompilerInterface.html"><abbr title="Flarum\Frontend\Compiler\CompilerInterface">CompilerInterface</abbr></a></p>
 
         
     
 
+            <div class="description">
+            <p><p>Used to copy JS files from a package directory to the assets' directory.</p></p>            <p><p>Without concatenating them. Primarily used for lazy loading JS modules.</p></p>                    </div>
     
             <h2>Traits</h2>
 
@@ -115,18 +117,6 @@
             </div>
             </div>
     
-            <h2>Constants</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td>EMPTY_REVISION</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-            </table>
-
     
             <h2>Properties</h2>
 
@@ -138,7 +128,7 @@
                 <td>$sourcesCallbacks</td>
                 <td class="last"></td>
                 <td><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#property_sourcesCallbacks"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L20" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L20" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -150,7 +140,7 @@
                 <td>$versioner</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L27" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L28" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -172,7 +162,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_addSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L22" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L22" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -180,16 +170,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    <abbr title="Flarum\Frontend\Compiler\Source\DirectorySource[]">DirectorySource[]</abbr>
                 </div>
                 <div class="col-md-6 type">
                     <a href="#method_getSources">getSources</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_getSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L30" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L24" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -206,7 +196,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L163" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L69" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -217,13 +207,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr> $assetsDir, string $filename)
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr> $assetsDir, string $destinationPath)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L29" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L30" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -240,7 +230,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L36" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L37" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -257,7 +247,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L41" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L42" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -274,7 +264,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L46" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L47" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -291,92 +281,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L68" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    bool
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_save">save</a>(string $file, array $sources)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L98" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_compile">compile</a>(array $sources)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L112" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_format">format</a>(string $string)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L123" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_calculateRevision">calculateRevision</a>(array $sources)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L131" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array|null
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_getCacheDifferentiator">getCacheDifferentiator</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L142" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L54" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -393,7 +298,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L147" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L59" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -404,13 +309,81 @@
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_delete">delete</a>(string $file)
+                    <a href="#method_compileSource">compileSource</a>(<a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a> $source, bool $force = false)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L156" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L74" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_flushSource">flushSource</a>(<a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a> $source)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L79" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_eachFile">eachFile</a>(<a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a> $source, callable $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L98" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Frontend/Compiler/JsCompiler.html"><abbr title="Flarum\Frontend\Compiler\JsCompiler">JsCompiler</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_compilerFor">compilerFor</a>(<a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a> $source, <abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr> $filesystem, string $relativeFilePath)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L113" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_destinationFor">destinationFor</a>(<a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a> $source, string|null $relativeFilePath = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L131" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -468,12 +441,11 @@
                     <div class="method-item">
                     <h3 id="method_getSources">
         <div class="location">
-                            in <a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_getSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/Concerns/HasSources.php#L30" target="_blank">
-            line 30
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L24" target="_blank">
+            line 24
         </a>
         </div>
-        <code>            protected        array
+        <code>                    <abbr title="Flarum\Frontend\Compiler\Source\DirectorySource[]">DirectorySource[]</abbr>
     <strong>getSources</strong>()
         </code>
     </h3>
@@ -487,7 +459,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource[]">DirectorySource[]</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -501,8 +473,8 @@
                     <div class="method-item">
                     <h3 id="method_allowedSourceTypes">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L163" target="_blank">
-            line 163
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L69" target="_blank">
+            line 69
         </a>
         </div>
         <code>            protected        array
@@ -533,12 +505,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L29" target="_blank">
-            line 29
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L30" target="_blank">
+            line 30
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr> $assetsDir, string $filename)
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr> $assetsDir, string $destinationPath)
         </code>
     </h3>
     <div class="details">
@@ -556,7 +528,7 @@
             </tr>
                     <tr>
                 <td>string</td>
-                <td>$filename</td>
+                <td>$destinationPath</td>
                 <td></td>
             </tr>
             </table>
@@ -571,8 +543,8 @@
                     <div class="method-item">
                     <h3 id="method_getFilename">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L36" target="_blank">
-            line 36
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L37" target="_blank">
+            line 37
         </a>
         </div>
         <code>                    string|null
@@ -603,8 +575,8 @@
                     <div class="method-item">
                     <h3 id="method_setFilename">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L41" target="_blank">
-            line 41
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L42" target="_blank">
+            line 42
         </a>
         </div>
         <code>                    void
@@ -645,8 +617,8 @@
                     <div class="method-item">
                     <h3 id="method_commit">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L46" target="_blank">
-            line 46
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L47" target="_blank">
+            line 47
         </a>
         </div>
         <code>                    void
@@ -687,8 +659,8 @@
                     <div class="method-item">
                     <h3 id="method_getUrl">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L68" target="_blank">
-            line 68
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L54" target="_blank">
+            line 54
         </a>
         </div>
         <code>                    string|null
@@ -717,215 +689,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_save">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L98" target="_blank">
-            line 98
-        </a>
-        </div>
-        <code>            protected        bool
-    <strong>save</strong>(string $file, array $sources)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$file</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$sources</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td>&lt;p&gt;true if the file was written, false if there was nothing to write&lt;/p&gt;</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_compile">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L112" target="_blank">
-            line 112
-        </a>
-        </div>
-        <code>            protected        string
-    <strong>compile</strong>(array $sources)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$sources</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_format">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L123" target="_blank">
-            line 123
-        </a>
-        </div>
-        <code>            protected        string
-    <strong>format</strong>(string $string)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$string</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_calculateRevision">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L131" target="_blank">
-            line 131
-        </a>
-        </div>
-        <code>            protected        string
-    <strong>calculateRevision</strong>(array $sources)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$sources</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getCacheDifferentiator">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L142" target="_blank">
-            line 142
-        </a>
-        </div>
-        <code>            protected        array|null
-    <strong>getCacheDifferentiator</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array|null</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_flush">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L147" target="_blank">
-            line 147
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L59" target="_blank">
+            line 59
         </a>
         </div>
         <code>                    void
@@ -954,14 +721,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_delete">
+                    <h3 id="method_compileSource">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L156" target="_blank">
-            line 156
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L74" target="_blank">
+            line 74
         </a>
         </div>
         <code>            protected        void
-    <strong>delete</strong>(string $file)
+    <strong>compileSource</strong>(<a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a> $source, bool $force = false)
         </code>
     </h3>
     <div class="details">
@@ -973,8 +740,13 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$file</td>
+                <td><a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$force</td>
                 <td></td>
             </tr>
             </table>
@@ -985,6 +757,194 @@
                     <table class="table table-condensed">
         <tr>
             <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushSource">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L79" target="_blank">
+            line 79
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>flushSource</strong>(<a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_eachFile">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L98" target="_blank">
+            line 98
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>eachFile</strong>(<a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a> $source, callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compilerFor">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L113" target="_blank">
+            line 113
+        </a>
+        </div>
+        <code>            protected        <a href="../../../Flarum/Frontend/Compiler/JsCompiler.html"><abbr title="Flarum\Frontend\Compiler\JsCompiler">JsCompiler</abbr></a>
+    <strong>compilerFor</strong>(<a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a> $source, <abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr> $filesystem, string $relativeFilePath)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Filesystem\FilesystemAdapter">FilesystemAdapter</abbr></td>
+                <td>$filesystem</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relativeFilePath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Frontend/Compiler/JsCompiler.html"><abbr title="Flarum\Frontend\Compiler\JsCompiler">JsCompiler</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destinationFor">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsDirectoryCompiler.php#L131" target="_blank">
+            line 131
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>destinationFor</strong>(<a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a> $source, string|null $relativeFilePath = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Frontend/Compiler/Source/DirectorySource.html"><abbr title="Flarum\Frontend\Compiler\Source\DirectorySource">DirectorySource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$relativeFilePath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
             <td></td>
         </tr>
     </table>

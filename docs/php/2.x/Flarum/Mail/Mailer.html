@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Notification\NotificationMailer | Flarum API</title>
+    <title>Flarum\Mail\Mailer | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Notification_NotificationMailer" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Mail_Mailer" data-root-path="../../">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -76,10 +76,10 @@
                     
     <div class="page-header">
         <h1>
-            NotificationMailer
+            Mailer
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationMailer.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -87,7 +87,7 @@
     </div>
 
     <p>    class        
-    <strong>NotificationMailer</strong></p>
+    <strong>Mailer</strong>        extends <abbr title="Illuminate\Mail\Mailer">Mailer</abbr></p>
 
         
     
@@ -104,13 +104,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Mail\Mailer">Mailer</abbr> $mailer, <a href="../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a> $translator, <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+                    <a href="#method___construct">__construct</a>(string $name, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $views, <abbr title="Symfony\Component\Mailer\Transport\TransportInterface">TransportInterface</abbr> $transport, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events = null, <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationMailer.php#L20" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L20" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -118,16 +118,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_send">send</a>(<a href="../../Flarum/Notification/MailableInterface.html"><abbr title="Flarum\Notification\MailableInterface">MailableInterface</abbr></a> $blueprint, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
+                    <a href="#method_send">send</a>($view, array $data = [], $callback = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationMailer.php#L27" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L30" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -142,12 +142,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationMailer.php#L20" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L20" target="_blank">
             line 20
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Mail\Mailer">Mailer</abbr> $mailer, <a href="../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a> $translator, <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+    <strong>__construct</strong>(string $name, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $views, <abbr title="Symfony\Component\Mailer\Transport\TransportInterface">TransportInterface</abbr> $transport, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events = null, <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
         </code>
     </h3>
     <div class="details">
@@ -159,13 +159,23 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Mail\Mailer">Mailer</abbr></td>
-                <td>$mailer</td>
+                <td>string</td>
+                <td>$name</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a></td>
-                <td>$translator</td>
+                <td><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></td>
+                <td>$views</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Mailer\Transport\TransportInterface">TransportInterface</abbr></td>
+                <td>$transport</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></td>
+                <td>$events</td>
                 <td></td>
             </tr>
                     <tr>
@@ -185,12 +195,12 @@
                     <div class="method-item">
                     <h3 id="method_send">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationMailer.php#L27" target="_blank">
-            line 27
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L30" target="_blank">
+            line 30
         </a>
         </div>
-        <code>                    void
-    <strong>send</strong>(<a href="../../Flarum/Notification/MailableInterface.html"><abbr title="Flarum\Notification\MailableInterface">MailableInterface</abbr></a> $blueprint, <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
+        <code>                    
+    <strong>send</strong>($view, array $data = [], $callback = null)
         </code>
     </h3>
     <div class="details">
@@ -202,27 +212,23 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../Flarum/Notification/MailableInterface.html"><abbr title="Flarum\Notification\MailableInterface">MailableInterface</abbr></a></td>
-                <td>$blueprint</td>
+                <td></td>
+                <td>$view</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
-                <td>$user</td>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$callback</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>

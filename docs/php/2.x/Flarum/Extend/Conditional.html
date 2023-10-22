@@ -93,6 +93,10 @@
         
     
 
+            <div class="description">
+            <p><p>The Conditional extender allows developers to conditionally apply other extenders
+based on either boolean values or results from callable functions.</p></p>            <p><p>This is useful for applying extenders only if certain conditions are met,
+such as the presence of an enabled extension or a specific configuration setting.</p></p>                    </div>
     
     
     
@@ -104,9 +108,9 @@
                                         protected                                        
                 </td>
                 <td>$conditions</td>
-                <td class="last"></td>
+                <td class="last">&lt;p&gt;An array of conditions and their associated extenders.&lt;/p&gt;</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L21" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L34" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -122,47 +126,44 @@
                     <a href="../../Flarum/Extend/Conditional.html"><abbr title="Flarum\Extend\Conditional">Conditional</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_whenExtensionEnabled">whenExtensionEnabled</a>(string $extensionId, array $extenders)
+                    <a href="#method_whenExtensionEnabled">whenExtensionEnabled</a>(string $extensionId, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $extenders)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L26" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../Flarum/Extend/Conditional.html"><abbr title="Flarum\Extend\Conditional">Conditional</abbr></a>
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_whenExtensionDisabled">whenExtensionDisabled</a>(string $extensionId, array $extenders)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L36" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../Flarum/Extend/Conditional.html"><abbr title="Flarum\Extend\Conditional">Conditional</abbr></a>
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_when">when</a>(<abbr title="Flarum\Extend\callable|bool">callable|bool</abbr> $condition, array $extenders)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>&lt;p&gt;Apply extenders only if a specific extension is enabled.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L43" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Conditional.html"><abbr title="Flarum\Extend\Conditional">Conditional</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_whenExtensionDisabled">whenExtensionDisabled</a>(string $extensionId, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $extenders)
+        
+                                            <p>&lt;p&gt;Apply extenders only if a specific extension is disabled.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L57" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Conditional.html"><abbr title="Flarum\Extend\Conditional">Conditional</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_when">when</a>(<abbr title="Flarum\Extend\callable|bool">callable|bool</abbr> $condition, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $extenders)
+        
+                                            <p>&lt;p&gt;Apply extenders based on a condition.&lt;/p&gt;</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L72" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -175,11 +176,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>&lt;p&gt;Iterates over the conditions and applies the associated extenders if the conditions are met.&lt;/p&gt;</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L53" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L89" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -194,18 +194,20 @@
                     <div class="method-item">
                     <h3 id="method_whenExtensionEnabled">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L26" target="_blank">
-            line 26
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L43" target="_blank">
+            line 43
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Conditional.html"><abbr title="Flarum\Extend\Conditional">Conditional</abbr></a>
-    <strong>whenExtensionEnabled</strong>(string $extensionId, array $extenders)
+    <strong>whenExtensionEnabled</strong>(string $extensionId, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $extenders)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Apply extenders only if a specific extension is enabled.&lt;/p&gt;</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -213,12 +215,12 @@
                     <tr>
                 <td>string</td>
                 <td>$extensionId</td>
-                <td></td>
+                <td>&lt;p&gt;The ID of the extension.&lt;/p&gt;</td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
                 <td>$extenders</td>
-                <td></td>
+                <td>&lt;p&gt;A callable returning an array of extenders, or an invokable class string.&lt;/p&gt;</td>
             </tr>
             </table>
 
@@ -241,18 +243,20 @@
                     <div class="method-item">
                     <h3 id="method_whenExtensionDisabled">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L36" target="_blank">
-            line 36
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L57" target="_blank">
+            line 57
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Conditional.html"><abbr title="Flarum\Extend\Conditional">Conditional</abbr></a>
-    <strong>whenExtensionDisabled</strong>(string $extensionId, array $extenders)
+    <strong>whenExtensionDisabled</strong>(string $extensionId, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $extenders)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Apply extenders only if a specific extension is disabled.&lt;/p&gt;</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -260,12 +264,12 @@
                     <tr>
                 <td>string</td>
                 <td>$extensionId</td>
-                <td></td>
+                <td>&lt;p&gt;The ID of the extension.&lt;/p&gt;</td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
                 <td>$extenders</td>
-                <td></td>
+                <td>&lt;p&gt;A callable returning an array of extenders, or an invokable class string.&lt;/p&gt;</td>
             </tr>
             </table>
 
@@ -288,18 +292,20 @@
                     <div class="method-item">
                     <h3 id="method_when">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L43" target="_blank">
-            line 43
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L72" target="_blank">
+            line 72
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Conditional.html"><abbr title="Flarum\Extend\Conditional">Conditional</abbr></a>
-    <strong>when</strong>(<abbr title="Flarum\Extend\callable|bool">callable|bool</abbr> $condition, array $extenders)
+    <strong>when</strong>(<abbr title="Flarum\Extend\callable|bool">callable|bool</abbr> $condition, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $extenders)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Apply extenders based on a condition.&lt;/p&gt;</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -307,12 +313,13 @@
                     <tr>
                 <td><abbr title="Flarum\Extend\callable|bool">callable|bool</abbr></td>
                 <td>$condition</td>
-                <td></td>
+                <td>&lt;p&gt;A boolean or callable that should return a boolean.
+If this evaluates to true, the extenders will be applied.&lt;/p&gt;</td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
                 <td>$extenders</td>
-                <td></td>
+                <td>&lt;p&gt;A callable returning an array of extenders, or an invokable class string.&lt;/p&gt;</td>
             </tr>
             </table>
 
@@ -335,8 +342,8 @@
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L53" target="_blank">
-            line 53
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Conditional.php#L89" target="_blank">
+            line 89
         </a>
         </div>
         <code>                    void
@@ -347,6 +354,8 @@
             
     
 
+                    <div class="method-description">
+                                    <p>&lt;p&gt;Iterates over the conditions and applies the associated extenders if the conditions are met.&lt;/p&gt;</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

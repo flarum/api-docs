@@ -2,23 +2,34 @@
     "entryPoints": ["flarum/framework/core/js", "flarum/extensions/*/js"],
     "entryPointStrategy": "packages",
     "includeVersion": true,
+    "categorizeByGroup": false,
 
     "gitRemote": "origin",
 
     "plugin": [
         "typedoc-plugin-extras",
-        "typedoc-plugin-merge-modules",
         "typedoc-plugin-missing-exports",
+        "typedoc-plugin-dt-links",
+        "typedoc-plugin-mdn-links",
+        "typedoc-plugin-rename-defaults",
     ],
+
+    "navigation": {
+        "includeFolders": true,
+        "compactFolders": true,
+        "includeGroups": false,
+        "includeCategories": false,
+        "excludeReferences": true
+    },
 
     "excludeExternals": true,
     "excludeReferences": true,
     "skipErrorChecking": false,
 
-    "mergeModulesMergeMode": "module",
-
     "footerTypedocVersion": true,
+    "footerLastModified": true,
+    "cacheBust": true,
 
-    "logLevel": "Verbose"
+    "logLevel": "Info"
 }
  

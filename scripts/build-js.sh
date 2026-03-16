@@ -26,6 +26,9 @@ generate () {
     (cd $FLARUM_PATH && git checkout -q -- . && git clean -f -d && git checkout -q $ref)
     (cd $FLARUM_PATH && yarn install --immutable)
 
+    # Rename to 'flarum' so that the JS docs are separate from the extensions.
+    sed -i 's/"name": "@flarum\/core"/"name": "flarum"/' "$FLARUM_CORE_PATH/js/package.json"
+
     cp -v "$REPO_PATH/typedoc.package.json" "$FLARUM_CORE_PATH/js/typedoc.json"
     sed -i '11d' "$FLARUM_CORE_PATH/js/typedoc.json"
     for i in $(echo "$FLARUM_PATH/extensions/*/js"); do        
@@ -45,7 +48,7 @@ generate () {
     cd $REPO_PATH
 }
 
-generate main
+# generate main
 generate "2.x"
 
 tags=$(cd $FLARUM_CORE_PATH && git tag)

@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Extension_ExtensionManager" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extension_ExtensionManager" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,20 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" selected>v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -77,7 +105,7 @@
             ExtensionManager
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -103,7 +131,7 @@
                 <td>$config</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L31" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L31" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -115,7 +143,7 @@
                 <td>$paths</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L36" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L36" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -127,7 +155,7 @@
                 <td>$container</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L38" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L38" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -139,7 +167,7 @@
                 <td>$migrator</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L40" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L40" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -151,7 +179,7 @@
                 <td>$dispatcher</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -163,7 +191,7 @@
                 <td>$filesystem</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L50" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L50" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -175,7 +203,7 @@
                 <td>$extensions</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L55" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L55" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -197,7 +225,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L57" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L57" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -214,7 +242,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L76" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L76" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -227,10 +255,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getExtension">getExtension</a>(string $name)
         
-                                            <p>&lt;p&gt;Loads an Extension with all information.&lt;/p&gt;</p>                </div>
+                                            <p>Loads an Extension with all information.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L166" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L166" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -243,10 +271,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_enable">enable</a>(string $name)
         
-                                            <p>&lt;p&gt;Enables the extension.&lt;/p&gt;</p>                </div>
+                                            <p>Enables the extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L178" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L178" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -259,10 +287,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_disable">disable</a>(string $name)
         
-                                            <p>&lt;p&gt;Disables an extension.&lt;/p&gt;</p>                </div>
+                                            <p>Disables an extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L220" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L220" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -275,10 +303,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_uninstall">uninstall</a>(string $name)
         
-                                            <p>&lt;p&gt;Uninstalls an extension.&lt;/p&gt;</p>                </div>
+                                            <p>Uninstalls an extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L257" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L257" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -291,10 +319,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_publishAssets">publishAssets</a>(<a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension)
         
-                                            <p>&lt;p&gt;Copy the assets from an extension&#039;s assets directory into public view.&lt;/p&gt;</p>                </div>
+                                            <p>Copy the assets from an extension&#039;s assets directory into public view.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L277" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L277" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -307,10 +335,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_unpublishAssets">unpublishAssets</a>(<a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension)
         
-                                            <p>&lt;p&gt;Delete an extension&#039;s assets from public view.&lt;/p&gt;</p>                </div>
+                                            <p>Delete an extension&#039;s assets from public view.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L287" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L287" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -323,10 +351,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getAsset">getAsset</a>(<a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension, string $path)
         
-                                            <p>&lt;p&gt;Get the path to an extension&#039;s published asset.&lt;/p&gt;</p>                </div>
+                                            <p>Get the path to an extension&#039;s published asset.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L299" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L299" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -339,10 +367,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getAssetsFilesystem">getAssetsFilesystem</a>()
         
-                                            <p>&lt;p&gt;Get an instance of the assets filesystem.&lt;/p&gt;</p>                </div>
+                                            <p>Get an instance of the assets filesystem.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L309" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L309" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -355,10 +383,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_migrate">migrate</a>(<a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension, string $direction = &#039;up&#039;)
         
-                                            <p>&lt;p&gt;Runs the database migrations for the extension.&lt;/p&gt;</p>                </div>
+                                            <p>Runs the database migrations for the extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L323" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L323" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -371,10 +399,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_migrateDown">migrateDown</a>(<a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension)
         
-                                            <p>&lt;p&gt;Runs the database migrations to reset the database to its old state.&lt;/p&gt;</p>                </div>
+                                            <p>Runs the database migrations to reset the database to its old state.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L340" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L340" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -387,10 +415,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getMigrator">getMigrator</a>()
         
-                                            <p>&lt;p&gt;The database migrator.&lt;/p&gt;</p>                </div>
+                                            <p>The database migrator.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L350" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L350" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -403,10 +431,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getEnabledExtensions">getEnabledExtensions</a>()
         
-                                            <p>&lt;p&gt;Get only enabled extensions.&lt;/p&gt;</p>                </div>
+                                            <p>Get only enabled extensions.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L360" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L360" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -419,10 +447,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
         
-                                            <p>&lt;p&gt;Call on all enabled extensions to extend the Flarum application.&lt;/p&gt;</p>                </div>
+                                            <p>Call on all enabled extensions to extend the Flarum application.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L379" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L379" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -435,10 +463,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getEnabled">getEnabled</a>()
         
-                                            <p>&lt;p&gt;The id&#039;s of the enabled extensions.&lt;/p&gt;</p>                </div>
+                                            <p>The id&#039;s of the enabled extensions.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L391" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L391" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -451,10 +479,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_setEnabledExtensions">setEnabledExtensions</a>(array $enabledExtensions)
         
-                                            <p>&lt;p&gt;Persist the currently enabled extensions.&lt;/p&gt;</p>                </div>
+                                            <p>Persist the currently enabled extensions.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L401" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L401" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -467,10 +495,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_isEnabled">isEnabled</a>($extension)
         
-                                            <p>&lt;p&gt;Whether the extension is enabled.&lt;/p&gt;</p>                </div>
+                                            <p>Whether the extension is enabled.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L418" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L418" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -483,10 +511,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_pluckTitles">pluckTitles</a>(array $exts)
         
-                                            <p>&lt;p&gt;Returns the titles of the extensions passed.&lt;/p&gt;</p>                </div>
+                                            <p>Returns the titles of the extensions passed.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L431" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L431" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -499,10 +527,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_resolveExtensionOrder">resolveExtensionOrder</a>(<a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>[] $extensionList)
         
-                                            <p>&lt;p&gt;Sort a list of extensions so that they are properly resolved in respect to order.&lt;/p&gt;</p>                </div>
+                                            <p>Sort a list of extensions so that they are properly resolved in respect to order.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L452" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L452" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -517,7 +545,7 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L57" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L57" target="_blank">
             line 57
         </a>
         </div>
@@ -575,7 +603,7 @@
                     <div class="method-item">
                     <h3 id="method_getExtensions">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L76" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L76" target="_blank">
             line 76
         </a>
         </div>
@@ -607,7 +635,7 @@
                     <div class="method-item">
                     <h3 id="method_getExtension">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L166" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L166" target="_blank">
             line 166
         </a>
         </div>
@@ -620,7 +648,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Loads an Extension with all information.&lt;/p&gt;</p>                                                </div>
+                                    <p>Loads an Extension with all information.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -651,7 +679,7 @@
                     <div class="method-item">
                     <h3 id="method_enable">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L178" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L178" target="_blank">
             line 178
         </a>
         </div>
@@ -664,7 +692,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Enables the extension.&lt;/p&gt;</p>                                                </div>
+                                    <p>Enables the extension.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -686,7 +714,7 @@
                     <div class="method-item">
                     <h3 id="method_disable">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L220" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L220" target="_blank">
             line 220
         </a>
         </div>
@@ -699,7 +727,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Disables an extension.&lt;/p&gt;</p>                                                </div>
+                                    <p>Disables an extension.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -721,7 +749,7 @@
                     <div class="method-item">
                     <h3 id="method_uninstall">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L257" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L257" target="_blank">
             line 257
         </a>
         </div>
@@ -734,7 +762,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Uninstalls an extension.&lt;/p&gt;</p>                                                </div>
+                                    <p>Uninstalls an extension.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -756,7 +784,7 @@
                     <div class="method-item">
                     <h3 id="method_publishAssets">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L277" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L277" target="_blank">
             line 277
         </a>
         </div>
@@ -769,7 +797,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Copy the assets from an extension&#039;s assets directory into public view.&lt;/p&gt;</p>                                                </div>
+                                    <p>Copy the assets from an extension&#039;s assets directory into public view.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -791,7 +819,7 @@
                     <div class="method-item">
                     <h3 id="method_unpublishAssets">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L287" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L287" target="_blank">
             line 287
         </a>
         </div>
@@ -804,7 +832,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Delete an extension&#039;s assets from public view.&lt;/p&gt;</p>                                                </div>
+                                    <p>Delete an extension&#039;s assets from public view.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -826,7 +854,7 @@
                     <div class="method-item">
                     <h3 id="method_getAsset">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L299" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L299" target="_blank">
             line 299
         </a>
         </div>
@@ -839,7 +867,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get the path to an extension&#039;s published asset.&lt;/p&gt;</p>                                                </div>
+                                    <p>Get the path to an extension&#039;s published asset.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -875,7 +903,7 @@
                     <div class="method-item">
                     <h3 id="method_getAssetsFilesystem">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L309" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L309" target="_blank">
             line 309
         </a>
         </div>
@@ -888,8 +916,8 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get an instance of the assets filesystem.&lt;/p&gt;</p>                    <p>&lt;p&gt;This is resolved dynamically because Flarum&#039;s filesystem configuration
-might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&gt;</p>                            </div>
+                                    <p>Get an instance of the assets filesystem.</p>                    <p>This is resolved dynamically because Flarum&#039;s filesystem configuration
+might not be booted yet when the ExtensionManager singleton initializes.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -910,7 +938,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <div class="method-item">
                     <h3 id="method_migrate">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L323" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L323" target="_blank">
             line 323
         </a>
         </div>
@@ -923,7 +951,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Runs the database migrations for the extension.&lt;/p&gt;</p>                                                </div>
+                                    <p>Runs the database migrations for the extension.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -959,7 +987,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <div class="method-item">
                     <h3 id="method_migrateDown">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L340" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L340" target="_blank">
             line 340
         </a>
         </div>
@@ -972,7 +1000,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Runs the database migrations to reset the database to its old state.&lt;/p&gt;</p>                                                </div>
+                                    <p>Runs the database migrations to reset the database to its old state.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -990,7 +1018,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <table class="table table-condensed">
         <tr>
             <td>array</td>
-            <td>&lt;p&gt;Notes from the migrator.&lt;/p&gt;</td>
+            <td>Notes from the migrator.</td>
         </tr>
     </table>
 
@@ -1003,7 +1031,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <div class="method-item">
                     <h3 id="method_getMigrator">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L350" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L350" target="_blank">
             line 350
         </a>
         </div>
@@ -1016,7 +1044,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;The database migrator.&lt;/p&gt;</p>                                                </div>
+                                    <p>The database migrator.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1037,7 +1065,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <div class="method-item">
                     <h3 id="method_getEnabledExtensions">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L360" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L360" target="_blank">
             line 360
         </a>
         </div>
@@ -1050,7 +1078,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get only enabled extensions.&lt;/p&gt;</p>                                                </div>
+                                    <p>Get only enabled extensions.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1071,7 +1099,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L379" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L379" target="_blank">
             line 379
         </a>
         </div>
@@ -1084,7 +1112,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Call on all enabled extensions to extend the Flarum application.&lt;/p&gt;</p>                                                </div>
+                                    <p>Call on all enabled extensions to extend the Flarum application.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1106,7 +1134,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <div class="method-item">
                     <h3 id="method_getEnabled">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L391" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L391" target="_blank">
             line 391
         </a>
         </div>
@@ -1119,7 +1147,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;The id&#039;s of the enabled extensions.&lt;/p&gt;</p>                                                </div>
+                                    <p>The id&#039;s of the enabled extensions.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1140,7 +1168,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <div class="method-item">
                     <h3 id="method_setEnabledExtensions">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L401" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L401" target="_blank">
             line 401
         </a>
         </div>
@@ -1153,7 +1181,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Persist the currently enabled extensions.&lt;/p&gt;</p>                                                </div>
+                                    <p>Persist the currently enabled extensions.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1175,7 +1203,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <div class="method-item">
                     <h3 id="method_isEnabled">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L418" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L418" target="_blank">
             line 418
         </a>
         </div>
@@ -1188,7 +1216,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Whether the extension is enabled.&lt;/p&gt;</p>                                                </div>
+                                    <p>Whether the extension is enabled.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1219,7 +1247,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <div class="method-item">
                     <h3 id="method_pluckTitles">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L431" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L431" target="_blank">
             line 431
         </a>
         </div>
@@ -1232,7 +1260,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Returns the titles of the extensions passed.&lt;/p&gt;</p>                                                </div>
+                                    <p>Returns the titles of the extensions passed.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1263,7 +1291,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <div class="method-item">
                     <h3 id="method_resolveExtensionOrder">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/ExtensionManager.php#L452" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/ExtensionManager.php#L452" target="_blank">
             line 452
         </a>
         </div>
@@ -1276,7 +1304,7 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Sort a list of extensions so that they are properly resolved in respect to order.&lt;/p&gt;</p>                    <p>&lt;p&gt;Effectively just topological sorting.&lt;/p&gt;</p>                            </div>
+                                    <p>Sort a list of extensions so that they are properly resolved in respect to order.</p>                    <p>Effectively just topological sorting.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1294,11 +1322,11 @@ might not be booted yet when the ExtensionManager singleton initializes.&lt;/p&g
                     <table class="table table-condensed">
         <tr>
             <td>array</td>
-            <td>&lt;p&gt;with 2 keys: &#039;valid&#039; points to an ordered array of \Flarum\Extension\Extension
+            <td>with 2 keys: &#039;valid&#039; points to an ordered array of \Flarum\Extension\Extension
 &#039;missingDependencies&#039; points to an associative array of extensions that could not be resolved due
-to missing dependencies, in the format extension id =&amp;gt; array of missing dependency IDs.
+    to missing dependencies, in the format extension id =&gt; array of missing dependency IDs.
 &#039;circularDependencies&#039; points to an array of extensions ids of extensions
-that cannot be processed due to circular dependencies&lt;/p&gt;</td>
+    that cannot be processed due to circular dependencies</td>
         </tr>
     </table>
 

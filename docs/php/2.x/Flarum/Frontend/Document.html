@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Frontend_Document" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Frontend_Document" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
-                                            <option value="../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -94,7 +120,7 @@
     
 
             <div class="description">
-            <p><p>A view which renders a HTML skeleton for Flarum's frontend app.</p></p>                                </div>
+            <p>A view which renders a HTML skeleton for Flarum's frontend app.</p>                                </div>
     
     
     
@@ -103,10 +129,10 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_title">
-                                                                                
+                                                                                string|null
                 </td>
                 <td>$title</td>
-                <td class="last">&lt;p&gt;The title of the document, displayed in the &lt;title&gt; tag.&lt;/p&gt;</td>
+                <td class="last">The title of the document, displayed in the &lt;title&gt; tag.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L31" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -115,10 +141,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_language">
-                                                                                
+                                                                                string|null
                 </td>
                 <td>$language</td>
-                <td class="last">&lt;p&gt;The language of the document, displayed as the value of the attribute &lt;code&gt;lang&lt;/code&gt; in the &lt;html&gt; tag.&lt;/p&gt;</td>
+                <td class="last">The language of the document, displayed as the value of the attribute `lang` in the &lt;html&gt; tag.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L36" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -127,10 +153,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_direction">
-                                                                                
+                                                                                string|null
                 </td>
                 <td>$direction</td>
-                <td class="last">&lt;p&gt;The text direction of the document, displayed as the value of the attribute &lt;code&gt;dir&lt;/code&gt; in the &lt;html&gt; tag.&lt;/p&gt;</td>
+                <td class="last">The text direction of the document, displayed as the value of the attribute `dir` in the &lt;html&gt; tag.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L41" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -139,10 +165,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_appView">
-                                                                                
+                                                                                string
                 </td>
                 <td>$appView</td>
-                <td class="last">&lt;p&gt;The name of the frontend app view to display.&lt;/p&gt;</td>
+                <td class="last">The name of the frontend app view to display.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L46" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -151,10 +177,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_layoutView">
-                                                                                
+                                                                                string
                 </td>
                 <td>$layoutView</td>
-                <td class="last">&lt;p&gt;The name of the frontend layout view to display.&lt;/p&gt;</td>
+                <td class="last">The name of the frontend layout view to display.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L51" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -163,10 +189,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_contentView">
-                                                                                
+                                                                                string
                 </td>
                 <td>$contentView</td>
-                <td class="last">&lt;p&gt;The name of the frontend content view to display.&lt;/p&gt;</td>
+                <td class="last">The name of the frontend content view to display.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L56" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -175,10 +201,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_content">
-                                                                                
+                                                                                <abbr title="Flarum\Frontend\string|Illuminate\Contracts\Support\Renderable|null">Renderable|null</abbr>
                 </td>
                 <td>$content</td>
-                <td class="last">&lt;p&gt;The SEO content of the page, displayed within the layout in &lt;noscript&gt; tags.&lt;/p&gt;</td>
+                <td class="last">The SEO content of the page, displayed within the layout in &lt;noscript&gt; tags.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L61" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -187,10 +213,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_payload">
-                                                                                
+                                                                                array
                 </td>
                 <td>$payload</td>
-                <td class="last">&lt;p&gt;Other variables to preload into the Flarum JS.&lt;/p&gt;</td>
+                <td class="last">Other variables to preload into the Flarum JS.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L66" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -199,10 +225,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_meta">
-                                                                                
+                                                                                array
                 </td>
                 <td>$meta</td>
-                <td class="last">&lt;p&gt;An array of meta tags to append to the page&#039;s &lt;head&gt;.&lt;/p&gt;</td>
+                <td class="last">An array of meta tags to append to the page&#039;s &lt;head&gt;.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L71" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -211,10 +237,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_canonicalUrl">
-                                                                                
+                                                                                string|null
                 </td>
                 <td>$canonicalUrl</td>
-                <td class="last">&lt;p&gt;The canonical URL for this page.&lt;/p&gt;</td>
+                <td class="last">The canonical URL for this page.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L80" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -223,10 +249,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_page">
-                                                                                
+                                                                                int|null
                 </td>
                 <td>$page</td>
-                <td class="last">&lt;p&gt;Which page of content are we on?&lt;/p&gt;</td>
+                <td class="last">Which page of content are we on?</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L87" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -235,10 +261,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_hasNextPage">
-                                                                                
+                                                                                bool|null
                 </td>
                 <td>$hasNextPage</td>
-                <td class="last">&lt;p&gt;Is there a next page?&lt;/p&gt;</td>
+                <td class="last">Is there a next page?</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L94" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -247,10 +273,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property_head">
-                                                                                
+                                                                                array
                 </td>
                 <td>$head</td>
-                <td class="last">&lt;p&gt;An array of strings to append to the page&#039;s &lt;head&gt;.&lt;/p&gt;</td>
+                <td class="last">An array of strings to append to the page&#039;s &lt;head&gt;.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L99" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -258,37 +284,49 @@
 </td>
             </tr>
                     <tr>
+                <td class="type" id="property_criticalCss">
+                                                                                string
+                </td>
+                <td>$criticalCss</td>
+                <td class="last">Inline critical CSS emitted before the async stylesheet links.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L105" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_foot">
-                                                                                
+                                                                                array
                 </td>
                 <td>$foot</td>
-                <td class="last">&lt;p&gt;An array of strings to prepend before the page&#039;s &lt;/body&gt;.&lt;/p&gt;</td>
+                <td class="last">An array of strings to prepend before the page&#039;s &lt;/body&gt;.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L104" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L110" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
                 <td class="type" id="property_js">
-                                                                                
+                                                                                array
                 </td>
                 <td>$js</td>
-                <td class="last">&lt;p&gt;An array of JavaScript URLs to load.&lt;/p&gt;</td>
+                <td class="last">An array of JavaScript URLs to load.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L109" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L115" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
                 <td class="type" id="property_css">
-                                                                                
+                                                                                array
                 </td>
                 <td>$css</td>
-                <td class="last">&lt;p&gt;An array of CSS URLs to load.&lt;/p&gt;</td>
+                <td class="last">An array of CSS URLs to load.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L114" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L120" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -298,21 +336,33 @@
                                                                                 array
                 </td>
                 <td>$preloads</td>
-                <td class="last">&lt;p&gt;An array of preloaded assets.&lt;/p&gt;</td>
+                <td class="last">An array of preloaded assets.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L136" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L142" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_extraAttributes">
+                                                                                <abbr title="Flarum\Frontend\array&lt;string,string">array&lt;string,string</abbr>|callable|<abbr title="Flarum\Frontend\array&gt;">array&gt;</abbr>
+                </td>
+                <td>$extraAttributes</td>
+                <td class="last">Document extra attributes.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L149" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
                 <td class="type" id="property_versioner">
-                                        protected                                        
+                                        protected                                        <a href="../../Flarum/Frontend/Compiler/VersionerInterface.html"><abbr title="Flarum\Frontend\Compiler\VersionerInterface">VersionerInterface</abbr></a>
                 </td>
                 <td>$versioner</td>
-                <td class="last">&lt;p&gt;We need the versioner to get the revisions of split chunks.&lt;/p&gt;</td>
+                <td class="last">We need the versioner to get the revisions of split chunks.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L141" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L156" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -328,13 +378,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, array $forumApiDocument, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a href="../../Flarum/Frontend/Driver/TitleDriverInterface.html"><abbr title="Flarum\Frontend\Driver\TitleDriverInterface">TitleDriverInterface</abbr></a> $titleDriver, <abbr title="Flarum\Foundation\Config">Config</abbr> $config, <abbr title="Illuminate\Contracts\Filesystem\Factory">Factory</abbr> $filesystem)
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, array $forumApiDocument, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a href="../../Flarum/Frontend/Driver/TitleDriverInterface.html"><abbr title="Flarum\Frontend\Driver\TitleDriverInterface">TitleDriverInterface</abbr></a> $titleDriver, <a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config, <abbr title="Illuminate\Contracts\Filesystem\Factory">Factory</abbr> $filesystem)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L143" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L158" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -351,7 +401,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L156" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L171" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -368,7 +418,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L163" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L178" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -385,7 +435,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L179" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L197" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -402,7 +452,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L184" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L202" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -419,7 +469,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L193" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L211" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -436,7 +486,41 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L198" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L216" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_makeExtraClasses">makeExtraClasses</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L229" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_makeExtraAttributes">makeExtraAttributes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L246" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -453,7 +537,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L211" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L273" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -470,7 +554,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L239" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L307" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -487,7 +571,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L246" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L314" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -504,7 +588,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L251" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L319" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -521,7 +605,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L256" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L324" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -538,7 +622,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L261" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L329" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -551,10 +635,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_setQueryParam">setQueryParam</a>(string $url, string $key, string|null $value)
         
-                                            <p>&lt;p&gt;Set or override a query param on a string URL to a particular value.&lt;/p&gt;</p>                </div>
+                                            <p>Set or override a query param on a string URL to a particular value.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L273" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L341" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -569,12 +653,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L143" target="_blank">
-            line 143
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L158" target="_blank">
+            line 158
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, array $forumApiDocument, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a href="../../Flarum/Frontend/Driver/TitleDriverInterface.html"><abbr title="Flarum\Frontend\Driver\TitleDriverInterface">TitleDriverInterface</abbr></a> $titleDriver, <abbr title="Flarum\Foundation\Config">Config</abbr> $config, <abbr title="Illuminate\Contracts\Filesystem\Factory">Factory</abbr> $filesystem)
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, array $forumApiDocument, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a href="../../Flarum/Frontend/Driver/TitleDriverInterface.html"><abbr title="Flarum\Frontend\Driver\TitleDriverInterface">TitleDriverInterface</abbr></a> $titleDriver, <a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config, <abbr title="Illuminate\Contracts\Filesystem\Factory">Factory</abbr> $filesystem)
         </code>
     </h3>
     <div class="details">
@@ -606,7 +690,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Foundation\Config">Config</abbr></td>
+                <td><a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a></td>
                 <td>$config</td>
                 <td></td>
             </tr>
@@ -627,8 +711,8 @@
                     <div class="method-item">
                     <h3 id="method_render">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L156" target="_blank">
-            line 156
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L171" target="_blank">
+            line 171
         </a>
         </div>
         <code>                    string
@@ -659,8 +743,8 @@
                     <div class="method-item">
                     <h3 id="method_makeView">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L163" target="_blank">
-            line 163
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L178" target="_blank">
+            line 178
         </a>
         </div>
         <code>            protected        <abbr title="Illuminate\Contracts\View\View">View</abbr>
@@ -691,8 +775,8 @@
                     <div class="method-item">
                     <h3 id="method_makeTitle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L179" target="_blank">
-            line 179
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L197" target="_blank">
+            line 197
         </a>
         </div>
         <code>            protected        string
@@ -723,8 +807,8 @@
                     <div class="method-item">
                     <h3 id="method_makeLayout">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L184" target="_blank">
-            line 184
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L202" target="_blank">
+            line 202
         </a>
         </div>
         <code>            protected        <abbr title="Flarum\Frontend\Illuminate\Contracts\View\View">View</abbr>|null
@@ -755,8 +839,8 @@
                     <div class="method-item">
                     <h3 id="method_makeContent">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L193" target="_blank">
-            line 193
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L211" target="_blank">
+            line 211
         </a>
         </div>
         <code>            protected        <abbr title="Illuminate\Contracts\View\View">View</abbr>
@@ -787,8 +871,8 @@
                     <div class="method-item">
                     <h3 id="method_makePreloads">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L198" target="_blank">
-            line 198
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L216" target="_blank">
+            line 216
         </a>
         </div>
         <code>            protected        array
@@ -817,10 +901,74 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_makeExtraClasses">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L229" target="_blank">
+            line 229
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>makeExtraClasses</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeExtraAttributes">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L246" target="_blank">
+            line 246
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>makeExtraAttributes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_makeHead">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L211" target="_blank">
-            line 211
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L273" target="_blank">
+            line 273
         </a>
         </div>
         <code>            protected        string
@@ -851,8 +999,8 @@
                     <div class="method-item">
                     <h3 id="method_makeJs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L239" target="_blank">
-            line 239
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L307" target="_blank">
+            line 307
         </a>
         </div>
         <code>            protected        string
@@ -883,8 +1031,8 @@
                     <div class="method-item">
                     <h3 id="method_makeFoot">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L246" target="_blank">
-            line 246
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L314" target="_blank">
+            line 314
         </a>
         </div>
         <code>            protected        string
@@ -915,8 +1063,8 @@
                     <div class="method-item">
                     <h3 id="method_getForumApiDocument">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L251" target="_blank">
-            line 251
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L319" target="_blank">
+            line 319
         </a>
         </div>
         <code>                    array
@@ -947,8 +1095,8 @@
                     <div class="method-item">
                     <h3 id="method_setForumApiDocument">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L256" target="_blank">
-            line 256
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L324" target="_blank">
+            line 324
         </a>
         </div>
         <code>                    void
@@ -989,8 +1137,8 @@
                     <div class="method-item">
                     <h3 id="method_setPageParam">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L261" target="_blank">
-            line 261
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L329" target="_blank">
+            line 329
         </a>
         </div>
         <code>        static            string
@@ -1036,8 +1184,8 @@
                     <div class="method-item">
                     <h3 id="method_setQueryParam">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L273" target="_blank">
-            line 273
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Document.php#L341" target="_blank">
+            line 341
         </a>
         </div>
         <code>        static    protected        string
@@ -1049,7 +1197,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Set or override a query param on a string URL to a particular value.&lt;/p&gt;</p>                                                </div>
+                                    <p>Set or override a query param on a string URL to a particular value.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

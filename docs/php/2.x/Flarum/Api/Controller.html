@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="namespace" data-name="namespace:Flarum_Api_Controller" data-root-path="../../">
+    <body id="namespace" data-name="namespace:Flarum_Api_Controller" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
-                                            <option value="../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -91,21 +117,6 @@
     <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/AbstractCreateController.html"><abbr title="Flarum\Api\Controller\AbstractCreateController">AbstractCreateController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/AbstractCreateController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
                                             <a href="../../Flarum/Api/Controller/AbstractDeleteController.html"><abbr title="Flarum\Api\Controller\AbstractDeleteController">AbstractDeleteController</abbr></a>
                                             
                 </div>
@@ -114,51 +125,6 @@
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/AbstractDeleteController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/AbstractListController.html"><abbr title="Flarum\Api\Controller\AbstractListController">AbstractListController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/AbstractListController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/AbstractSerializeController.html"><abbr title="Flarum\Api\Controller\AbstractSerializeController">AbstractSerializeController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/AbstractSerializeController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/AbstractShowController.html"><abbr title="Flarum\Api\Controller\AbstractShowController">AbstractShowController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/AbstractShowController.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -181,107 +147,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/CreateAccessTokenController.html"><abbr title="Flarum\Api\Controller\CreateAccessTokenController">CreateAccessTokenController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    <p>Not to be confused with the CreateTokenController,
-this controller is used by the actor to manually create a developer type access token.</p>
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/CreateAccessTokenController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/CreateDiscussionController.html"><abbr title="Flarum\Api\Controller\CreateDiscussionController">CreateDiscussionController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/CreateDiscussionController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/CreateGroupController.html"><abbr title="Flarum\Api\Controller\CreateGroupController">CreateGroupController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/CreateGroupController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/CreatePostController.html"><abbr title="Flarum\Api\Controller\CreatePostController">CreatePostController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/CreatePostController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
                                             <a href="../../Flarum/Api/Controller/CreateTokenController.html"><abbr title="Flarum\Api\Controller\CreateTokenController">CreateTokenController</abbr></a>
                                             
                 </div>
                 <div class="col-md-5">
-                    <p>Not to be confused with the CreateAccessTokenController,
+                    Not to be confused with the CreateAccessTokenController,
 this controller is used to authenticate a user with credentials,
-and return a system generated session-type access token.</p>
+and return a system generated session-type access token.
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/CreateTokenController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/CreateUserController.html"><abbr title="Flarum\Api\Controller\CreateUserController">CreateUserController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/CreateUserController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/DeleteAccessTokenController.html"><abbr title="Flarum\Api\Controller\DeleteAccessTokenController">DeleteAccessTokenController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteAccessTokenController.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -304,36 +179,6 @@ and return a system generated session-type access token.</p>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/DeleteAvatarController.html"><abbr title="Flarum\Api\Controller\DeleteAvatarController">DeleteAvatarController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteAvatarController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/DeleteDiscussionController.html"><abbr title="Flarum\Api\Controller\DeleteDiscussionController">DeleteDiscussionController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteDiscussionController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
                                             <a href="../../Flarum/Api/Controller/DeleteFaviconController.html"><abbr title="Flarum\Api\Controller\DeleteFaviconController">DeleteFaviconController</abbr></a>
                                             
                 </div>
@@ -342,21 +187,6 @@ and return a system generated session-type access token.</p>
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteFaviconController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/DeleteGroupController.html"><abbr title="Flarum\Api\Controller\DeleteGroupController">DeleteGroupController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteGroupController.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -379,14 +209,14 @@ and return a system generated session-type access token.</p>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/DeletePostController.html"><abbr title="Flarum\Api\Controller\DeletePostController">DeletePostController</abbr></a>
+                                            <a href="../../Flarum/Api/Controller/DeleteLogoDarkModeController.html"><abbr title="Flarum\Api\Controller\DeleteLogoDarkModeController">DeleteLogoDarkModeController</abbr></a>
                                             
                 </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeletePostController.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoDarkModeController.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -394,14 +224,14 @@ and return a system generated session-type access token.</p>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/DeleteUserController.html"><abbr title="Flarum\Api\Controller\DeleteUserController">DeleteUserController</abbr></a>
+                                            <a href="../../Flarum/Api/Controller/ExtensionBisectController.html"><abbr title="Flarum\Api\Controller\ExtensionBisectController">ExtensionBisectController</abbr></a>
                                             
                 </div>
                 <div class="col-md-5">
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteUserController.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ExtensionBisectController.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -424,96 +254,6 @@ and return a system generated session-type access token.</p>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ListAccessTokensController.html"><abbr title="Flarum\Api\Controller\ListAccessTokensController">ListAccessTokensController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListAccessTokensController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ListDiscussionsController.html"><abbr title="Flarum\Api\Controller\ListDiscussionsController">ListDiscussionsController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListDiscussionsController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ListGroupsController.html"><abbr title="Flarum\Api\Controller\ListGroupsController">ListGroupsController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListGroupsController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ListNotificationsController.html"><abbr title="Flarum\Api\Controller\ListNotificationsController">ListNotificationsController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListNotificationsController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ListPostsController.html"><abbr title="Flarum\Api\Controller\ListPostsController">ListPostsController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListPostsController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ListUsersController.html"><abbr title="Flarum\Api\Controller\ListUsersController">ListUsersController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListUsersController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
                                             <a href="../../Flarum/Api/Controller/ReadAllNotificationsController.html"><abbr title="Flarum\Api\Controller\ReadAllNotificationsController">ReadAllNotificationsController</abbr></a>
                                             
                 </div>
@@ -522,6 +262,22 @@ and return a system generated session-type access token.</p>
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ReadAllNotificationsController.php" target="_blank">
+        <img src="../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Flarum/Api/Controller/ResolveRegistrationTokenController.html"><abbr title="Flarum\Api\Controller\ResolveRegistrationTokenController">ResolveRegistrationTokenController</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    Resolves a registration token submitted in the POST body and returns the
+non-sensitive fields needed to pre-populate the sign-up modal.
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ResolveRegistrationTokenController.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -589,36 +345,6 @@ and return a system generated session-type access token.</p>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ShowDiscussionController.html"><abbr title="Flarum\Api\Controller\ShowDiscussionController">ShowDiscussionController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ShowDiscussionController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ShowExtensionReadmeController.html"><abbr title="Flarum\Api\Controller\ShowExtensionReadmeController">ShowExtensionReadmeController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ShowExtensionReadmeController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
                                             <a href="../../Flarum/Api/Controller/ShowForumController.html"><abbr title="Flarum\Api\Controller\ShowForumController">ShowForumController</abbr></a>
                                             
                 </div>
@@ -634,21 +360,6 @@ and return a system generated session-type access token.</p>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ShowGroupController.html"><abbr title="Flarum\Api\Controller\ShowGroupController">ShowGroupController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ShowGroupController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
                                             <a href="../../Flarum/Api/Controller/ShowMailSettingsController.html"><abbr title="Flarum\Api\Controller\ShowMailSettingsController">ShowMailSettingsController</abbr></a>
                                             
                 </div>
@@ -657,36 +368,6 @@ and return a system generated session-type access token.</p>
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ShowMailSettingsController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ShowPostController.html"><abbr title="Flarum\Api\Controller\ShowPostController">ShowPostController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ShowPostController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/ShowUserController.html"><abbr title="Flarum\Api\Controller\ShowUserController">ShowUserController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ShowUserController.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -724,21 +405,6 @@ and return a system generated session-type access token.</p>
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/UpdateDiscussionController.html"><abbr title="Flarum\Api\Controller\UpdateDiscussionController">UpdateDiscussionController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/UpdateDiscussionController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
                                             <a href="../../Flarum/Api/Controller/UpdateExtensionController.html"><abbr title="Flarum\Api\Controller\UpdateExtensionController">UpdateExtensionController</abbr></a>
                                             
                 </div>
@@ -747,81 +413,6 @@ and return a system generated session-type access token.</p>
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/UpdateExtensionController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/UpdateGroupController.html"><abbr title="Flarum\Api\Controller\UpdateGroupController">UpdateGroupController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/UpdateGroupController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/UpdateNotificationController.html"><abbr title="Flarum\Api\Controller\UpdateNotificationController">UpdateNotificationController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/UpdateNotificationController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/UpdatePostController.html"><abbr title="Flarum\Api\Controller\UpdatePostController">UpdatePostController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/UpdatePostController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/UpdateUserController.html"><abbr title="Flarum\Api\Controller\UpdateUserController">UpdateUserController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/UpdateUserController.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <a href="../../Flarum/Api/Controller/UploadAvatarController.html"><abbr title="Flarum\Api\Controller\UploadAvatarController">UploadAvatarController</abbr></a>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/UploadAvatarController.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -867,6 +458,21 @@ and return a system generated session-type access token.</p>
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/UploadLogoController.php" target="_blank">
+        <img src="../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Flarum/Api/Controller/UploadLogoDarkModeController.html"><abbr title="Flarum\Api\Controller\UploadLogoDarkModeController">UploadLogoDarkModeController</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/UploadLogoDarkModeController.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 

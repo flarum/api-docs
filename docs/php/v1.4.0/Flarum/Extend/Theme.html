@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Extend_Theme" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extend_Theme" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,20 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" selected>v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -77,7 +105,7 @@
             Theme
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Theme.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Theme.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -105,10 +133,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_overrideLessImport">overrideLessImport</a>(string $file, string $newFilePath, string $extensionId = null)
         
-                                            <p>&lt;p&gt;This can be used to override LESS files that are imported within the code.&lt;/p&gt;</p>                </div>
+                                            <p>This can be used to override LESS files that are imported within the code.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Theme.php#L33" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Theme.php#L33" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -121,10 +149,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_overrideFileSource">overrideFileSource</a>(string $file, string $newFilePath, string $extensionId = null)
         
-                                            <p>&lt;p&gt;This method allows overriding LESS file sources.&lt;/p&gt;</p>                </div>
+                                            <p>This method allows overriding LESS file sources.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Theme.php#L50" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Theme.php#L50" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -137,10 +165,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_addCustomLessFunction">addCustomLessFunction</a>(string $functionName, callable $callable)
         
-                                            <p>&lt;p&gt;This method allows you to add custom Less functions.&lt;/p&gt;</p>                </div>
+                                            <p>This method allows you to add custom Less functions.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Theme.php#L76" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Theme.php#L76" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -157,7 +185,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Theme.php#L103" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Theme.php#L103" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -172,7 +200,7 @@
                     <div class="method-item">
                     <h3 id="method_overrideLessImport">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Theme.php#L33" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Theme.php#L33" target="_blank">
             line 33
         </a>
         </div>
@@ -185,8 +213,8 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;This can be used to override LESS files that are imported within the code.&lt;/p&gt;</p>                    <p>&lt;p&gt;For example, core&#039;s &lt;code&gt;forum.less&lt;/code&gt; file imports a &lt;code&gt;forum/DiscussionListItem.less&lt;/code&gt; file.
-The contents of this file can be overriden with this method.&lt;/p&gt;</p>                            </div>
+                                    <p>This can be used to override LESS files that are imported within the code.</p>                    <p>For example, core&#039;s `forum.less` file imports a `forum/DiscussionListItem.less` file.
+The contents of this file can be overriden with this method.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -194,17 +222,17 @@ The contents of this file can be overriden with this method.&lt;/p&gt;</p>      
                     <tr>
                 <td>string</td>
                 <td>$file</td>
-                <td>&lt;p&gt;: Relative path of the file to override, for example: &lt;code&gt;forum/Hero.less&lt;/code&gt;&lt;/p&gt;</td>
+                <td>: Relative path of the file to override, for example: `forum/Hero.less`</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$newFilePath</td>
-                <td>&lt;p&gt;: Absolute path of the new file.&lt;/p&gt;</td>
+                <td>: Absolute path of the new file.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$extensionId</td>
-                <td>&lt;p&gt;: If overriding an extension file, specify its ID, for example: &lt;code&gt;flarum-tags&lt;/code&gt;.&lt;/p&gt;</td>
+                <td>: If overriding an extension file, specify its ID, for example: `flarum-tags`.</td>
             </tr>
             </table>
 
@@ -227,7 +255,7 @@ The contents of this file can be overriden with this method.&lt;/p&gt;</p>      
                     <div class="method-item">
                     <h3 id="method_overrideFileSource">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Theme.php#L50" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Theme.php#L50" target="_blank">
             line 50
         </a>
         </div>
@@ -240,8 +268,8 @@ The contents of this file can be overriden with this method.&lt;/p&gt;</p>      
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;This method allows overriding LESS file sources.&lt;/p&gt;</p>                    <p>&lt;p&gt;For example &lt;code&gt;forum.less&lt;/code&gt;, &lt;code&gt;admin.less&lt;/code&gt;, &lt;code&gt;mixins.less&lt;/code&gt; and &lt;code&gt;variables.less&lt;/code&gt; are file sources,
-and can therefore be overriden using this method.&lt;/p&gt;</p>                            </div>
+                                    <p>This method allows overriding LESS file sources.</p>                    <p>For example `forum.less`, `admin.less`, `mixins.less` and `variables.less` are file sources,
+and can therefore be overriden using this method.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -249,17 +277,17 @@ and can therefore be overriden using this method.&lt;/p&gt;</p>                 
                     <tr>
                 <td>string</td>
                 <td>$file</td>
-                <td>&lt;p&gt;: Name of the file to override, for example: &lt;code&gt;admin.less&lt;/code&gt;&lt;/p&gt;</td>
+                <td>: Name of the file to override, for example: `admin.less`</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$newFilePath</td>
-                <td>&lt;p&gt;: Absolute path of the new file.&lt;/p&gt;</td>
+                <td>: Absolute path of the new file.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$extensionId</td>
-                <td>&lt;p&gt;: If overriding an extension file, specify its ID, for example: &lt;code&gt;flarum-tags&lt;/code&gt;.&lt;/p&gt;</td>
+                <td>: If overriding an extension file, specify its ID, for example: `flarum-tags`.</td>
             </tr>
             </table>
 
@@ -282,7 +310,7 @@ and can therefore be overriden using this method.&lt;/p&gt;</p>                 
                     <div class="method-item">
                     <h3 id="method_addCustomLessFunction">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Theme.php#L76" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Theme.php#L76" target="_blank">
             line 76
         </a>
         </div>
@@ -295,12 +323,15 @@ and can therefore be overriden using this method.&lt;/p&gt;</p>                 
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;This method allows you to add custom Less functions.&lt;/p&gt;</p>                    <p>&lt;p&gt;All custom Less functions may only return numbers, strings or booleans.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example usage:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;(new Extend\Theme)
-    -&amp;gt;addCustomLessFunction(&#039;is-flarum&#039;, function (mixed $text) {
+                                    <p>This method allows you to add custom Less functions.</p>                    <p>All custom Less functions may only return numbers, strings or booleans.
+
+**Example usage:**
+```php
+(new Extend\Theme)
+    -&gt;addCustomLessFunction(&#039;is-flarum&#039;, function (mixed $text) {
         return strtolower($text) === &#039;flarum&#039;
-    }),&lt;/code&gt;&lt;/pre&gt;</p>                            </div>
+    }),
+```</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -308,12 +339,12 @@ and can therefore be overriden using this method.&lt;/p&gt;</p>                 
                     <tr>
                 <td>string</td>
                 <td>$functionName</td>
-                <td>&lt;p&gt;Name of the function identifier.&lt;/p&gt;</td>
+                <td>Name of the function identifier.</td>
             </tr>
                     <tr>
                 <td>callable</td>
                 <td>$callable</td>
-                <td>&lt;p&gt;The PHP function to run when the Less function is called.&lt;/p&gt;</td>
+                <td>The PHP function to run when the Less function is called.</td>
             </tr>
             </table>
 
@@ -347,7 +378,7 @@ and can therefore be overriden using this method.&lt;/p&gt;</p>                 
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Theme.php#L103" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Theme.php#L103" target="_blank">
             line 103
         </a>
         </div>

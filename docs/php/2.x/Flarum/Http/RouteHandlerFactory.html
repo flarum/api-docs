@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Http_RouteHandlerFactory" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Http_RouteHandlerFactory" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
-                                            <option value="../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -110,7 +136,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L24" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L25" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -127,7 +153,24 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L29" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L30" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure">Closure</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_toApiResource">toApiResource</a>(string $resourceClass, string $endpointName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L44" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -144,7 +187,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L40" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L60" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -155,13 +198,13 @@
                     <a target="_blank" href="http://php.net/Closure">Closure</a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_toForum">toForum</a>(string $content = null)
+                    <a href="#method_toForum">toForum</a>(string|null $content = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L49" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L69" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -172,13 +215,13 @@
                     <a target="_blank" href="http://php.net/Closure">Closure</a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_toAdmin">toAdmin</a>(string $content = null)
+                    <a href="#method_toAdmin">toAdmin</a>(string|null $content = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L54" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L74" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -193,8 +236,8 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L24" target="_blank">
-            line 24
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L25" target="_blank">
+            line 25
         </a>
         </div>
         <code>                    
@@ -226,8 +269,8 @@
                     <div class="method-item">
                     <h3 id="method_toController">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L29" target="_blank">
-            line 29
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L30" target="_blank">
+            line 30
         </a>
         </div>
         <code>                    <a target="_blank" href="http://php.net/Closure">Closure</a>
@@ -266,10 +309,57 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_toApiResource">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L44" target="_blank">
+            line 44
+        </a>
+        </div>
+        <code>                    <a target="_blank" href="http://php.net/Closure">Closure</a>
+    <strong>toApiResource</strong>(string $resourceClass, string $endpointName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resourceClass</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$endpointName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_toFrontend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L40" target="_blank">
-            line 40
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L60" target="_blank">
+            line 60
         </a>
         </div>
         <code>                    <a target="_blank" href="http://php.net/Closure">Closure</a>
@@ -315,12 +405,12 @@
                     <div class="method-item">
                     <h3 id="method_toForum">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L49" target="_blank">
-            line 49
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L69" target="_blank">
+            line 69
         </a>
         </div>
         <code>                    <a target="_blank" href="http://php.net/Closure">Closure</a>
-    <strong>toForum</strong>(string $content = null)
+    <strong>toForum</strong>(string|null $content = null)
         </code>
     </h3>
     <div class="details">
@@ -332,7 +422,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$content</td>
                 <td></td>
             </tr>
@@ -357,12 +447,12 @@
                     <div class="method-item">
                     <h3 id="method_toAdmin">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L54" target="_blank">
-            line 54
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RouteHandlerFactory.php#L74" target="_blank">
+            line 74
         </a>
         </div>
         <code>                    <a target="_blank" href="http://php.net/Closure">Closure</a>
-    <strong>toAdmin</strong>(string $content = null)
+    <strong>toAdmin</strong>(string|null $content = null)
         </code>
     </h3>
     <div class="details">
@@ -374,7 +464,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$content</td>
                 <td></td>
             </tr>

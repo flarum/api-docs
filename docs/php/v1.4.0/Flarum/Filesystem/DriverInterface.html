@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Filesystem_DriverInterface" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Filesystem_DriverInterface" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,20 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" selected>v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -77,7 +105,7 @@
             DriverInterface
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Filesystem/DriverInterface.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Filesystem/DriverInterface.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -104,10 +132,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_build">build</a>(string $diskName, <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config, array $localConfig)
         
-                                            <p>&lt;p&gt;Construct a Laravel Cloud filesystem for this filesystem driver.&lt;/p&gt;</p>                </div>
+                                            <p>Construct a Laravel Cloud filesystem for this filesystem driver.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Filesystem/DriverInterface.php#L38" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Filesystem/DriverInterface.php#L38" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -122,7 +150,7 @@
                     <div class="method-item">
                     <h3 id="method_build">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Filesystem/DriverInterface.php#L38" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Filesystem/DriverInterface.php#L38" target="_blank">
             line 38
         </a>
         </div>
@@ -135,14 +163,15 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Construct a Laravel Cloud filesystem for this filesystem driver.&lt;/p&gt;</p>                    <p>&lt;p&gt;Settings and configuration can either be pulled from the Flarum settings repository
-or the config.php file.&lt;/p&gt;
-&lt;p&gt;Typically, this is done by wrapping a Flysystem adapter in Laravel&#039;s
-&lt;code&gt;Illuminate\Filesystem\FilesystemAdapter&lt;/code&gt; class.
-You should ensure that the Flysystem adapter you use has a &lt;code&gt;getUrl&lt;/code&gt; method.
+                                    <p>Construct a Laravel Cloud filesystem for this filesystem driver.</p>                    <p>Settings and configuration can either be pulled from the Flarum settings repository
+or the config.php file.
+
+Typically, this is done by wrapping a Flysystem adapter in Laravel&#039;s
+`Illuminate\Filesystem\FilesystemAdapter` class.
+You should ensure that the Flysystem adapter you use has a `getUrl` method.
 If it doesn&#039;t, you should create a subclass implementing that method.
 Otherwise, this driver won&#039;t work for public-facing disks
-like &lt;code&gt;flarum-assets&lt;/code&gt; or &lt;code&gt;flarum-avatars&lt;/code&gt;.&lt;/p&gt;</p>                            </div>
+like `flarum-assets` or `flarum-avatars`.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

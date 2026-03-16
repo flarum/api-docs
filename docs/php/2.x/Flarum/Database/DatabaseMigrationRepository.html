@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Database_DatabaseMigrationRepository" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Database_DatabaseMigrationRepository" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
-                                            <option value="../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -124,7 +150,7 @@
                 <div class="col-md-6 type">
                     <a href="#method_getRan">getRan</a>(string|null $extension = null)
         
-                                            <p>&lt;p&gt;Get the ran migrations for the given extension.&lt;/p&gt;</p>                </div>
+                                            <p>Get the ran migrations for the given extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L23" target="_blank">
@@ -140,7 +166,7 @@
                 <div class="col-md-6 type">
                     <a href="#method_log">log</a>(string $file, string|null $extension = null)
         
-                                            <p>&lt;p&gt;Log that a migration was run.&lt;/p&gt;</p>                </div>
+                                            <p>Log that a migration was run.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L32" target="_blank">
@@ -156,10 +182,26 @@
                 <div class="col-md-6 type">
                     <a href="#method_delete">delete</a>(string $file, string|null $extension = null)
         
-                                            <p>&lt;p&gt;Remove a migration from the log.&lt;/p&gt;</p>                </div>
+                                            <p>Remove a migration from the log.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L39" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_createRepository">createRepository</a>()
+        
+                                            <p>Create the migration repository data store.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L55" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -172,10 +214,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_repositoryExists">repositoryExists</a>()
         
-                                            <p>&lt;p&gt;Determine if the migration repository exists.&lt;/p&gt;</p>                </div>
+                                            <p>Determine if the migration repository exists.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L52" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L70" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -188,10 +230,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_table">table</a>()
         
-                                            <p>&lt;p&gt;Get a query builder for the migration table.&lt;/p&gt;</p>                </div>
+                                            <p>Get a query builder for the migration table.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L62" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L80" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -257,7 +299,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get the ran migrations for the given extension.&lt;/p&gt;</p>                                                </div>
+                                    <p>Get the ran migrations for the given extension.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -301,7 +343,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Log that a migration was run.&lt;/p&gt;</p>                                                </div>
+                                    <p>Log that a migration was run.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -350,7 +392,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Remove a migration from the log.&lt;/p&gt;</p>                                                </div>
+                                    <p>Remove a migration from the log.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -384,10 +426,44 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_createRepository">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L55" target="_blank">
+            line 55
+        </a>
+        </div>
+        <code>                    void
+    <strong>createRepository</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create the migration repository data store.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_repositoryExists">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L52" target="_blank">
-            line 52
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L70" target="_blank">
+            line 70
         </a>
         </div>
         <code>                    bool
@@ -399,7 +475,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Determine if the migration repository exists.&lt;/p&gt;</p>                                                </div>
+                                    <p>Determine if the migration repository exists.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -420,8 +496,8 @@
                     <div class="method-item">
                     <h3 id="method_table">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L62" target="_blank">
-            line 62
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseMigrationRepository.php#L80" target="_blank">
+            line 80
         </a>
         </div>
         <code>            protected        <abbr title="Illuminate\Database\Query\Builder">Builder</abbr>
@@ -433,7 +509,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get a query builder for the migration table.&lt;/p&gt;</p>                                                </div>
+                                    <p>Get a query builder for the migration table.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Extend_Event" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extend_Event" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
-                                            <option value="../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -107,10 +133,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_listen">listen</a>(string $event, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $listener)
         
-                                            <p>&lt;p&gt;Add a listener to a domain event dispatched by flarum or a flarum extension.&lt;/p&gt;</p>                </div>
+                                            <p>Add a listener to a domain event dispatched by flarum or a flarum extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L35" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L33" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -123,10 +149,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_subscribe">subscribe</a>(string $subscriber)
         
-                                            <p>&lt;p&gt;Add a subscriber for a set of domain events dispatched by flarum or a flarum extension.&lt;/p&gt;</p>                </div>
+                                            <p>Add a subscriber for a set of domain events dispatched by flarum or a flarum extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L52" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L49" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -137,13 +163,13 @@
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L59" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L56" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -158,8 +184,8 @@
                     <div class="method-item">
                     <h3 id="method_listen">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L35" target="_blank">
-            line 35
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L33" target="_blank">
+            line 33
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Event.html"><abbr title="Flarum\Extend\Event">Event</abbr></a>
@@ -171,7 +197,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Add a listener to a domain event dispatched by flarum or a flarum extension.&lt;/p&gt;</p>                                                </div>
+                                    <p>Add a listener to a domain event dispatched by flarum or a flarum extension.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -184,13 +210,11 @@
                     <tr>
                 <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
                 <td>$listener</td>
-                <td>&lt;p&gt;The listener can either be:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A callback function that accepts an instance of the event as a parameter.&lt;/li&gt;
-&lt;li&gt;The ::class attribute of a class with a public &lt;code&gt;handle&lt;/code&gt; method, which accepts an instance of the event as a parameter.&lt;/li&gt;
-&lt;li&gt;An array, where the first argument is an object or class name, and the second argument is the method on the
-first argument that should be executed as the listener.&lt;/li&gt;
-&lt;/ul&gt;</td>
+                <td>The listener can either be:
+- A callback function that accepts an instance of the event as a parameter.
+- The ::class attribute of a class with a public `handle` method, which accepts an instance of the event as a parameter.
+- An array, where the first argument is an object or class name, and the second argument is the method on the
+  first argument that should be executed as the listener.</td>
             </tr>
             </table>
 
@@ -213,8 +237,8 @@ first argument that should be executed as the listener.&lt;/li&gt;
                     <div class="method-item">
                     <h3 id="method_subscribe">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L52" target="_blank">
-            line 52
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L49" target="_blank">
+            line 49
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Event.html"><abbr title="Flarum\Extend\Event">Event</abbr></a>
@@ -226,8 +250,8 @@ first argument that should be executed as the listener.&lt;/li&gt;
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Add a subscriber for a set of domain events dispatched by flarum or a flarum extension.&lt;/p&gt;</p>                    <p>&lt;p&gt;Event subscribers are classes that may subscribe to multiple events from within the subscriber class itself,
-allowing you to define several event handlers within a single class.&lt;/p&gt;</p>                            </div>
+                                    <p>Add a subscriber for a set of domain events dispatched by flarum or a flarum extension.</p>                    <p>Event subscribers are classes that may subscribe to multiple events from within the subscriber class itself,
+allowing you to define several event handlers within a single class.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -256,7 +280,7 @@ allowing you to define several event handlers within a single class.&lt;/p&gt;</
                     <table class="table table-condensed">
                     <tr>
                 <td>
-                                            <a href="https://laravel.com/docs/10.x/events#writing-event-subscribers">https://laravel.com/docs/10.x/events#writing-event-subscribers</a>
+                                            <a href="https://laravel.com/docs/11.x/events#writing-event-subscribers">https://laravel.com/docs/11.x/events#writing-event-subscribers</a>
                                     </td>
                 <td></td>
             </tr>
@@ -269,12 +293,12 @@ allowing you to define several event handlers within a single class.&lt;/p&gt;</
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L59" target="_blank">
-            line 59
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L56" target="_blank">
+            line 56
         </a>
         </div>
         <code>                    void
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -291,7 +315,7 @@ allowing you to define several event handlers within a single class.&lt;/p&gt;</
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a></td>
+                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
                 <td>$extension</td>
                 <td></td>
             </tr>

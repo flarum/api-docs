@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Frontend_Compiler_JsCompiler" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Frontend_Compiler_JsCompiler" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../../main" data-version="main">main</option>
-                                            <option value="../../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -137,19 +163,19 @@
                 <td>$sourcesCallbacks</td>
                 <td class="last"></td>
                 <td><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#property_sourcesCallbacks"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L20" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L23" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
                 <td class="type" id="property_versioner">
-                                        protected                                        
+                                        protected                                        <a href="../../../Flarum/Frontend/Compiler/VersionerInterface.html"><abbr title="Flarum\Frontend\Compiler\VersionerInterface">VersionerInterface</abbr></a>
                 </td>
                 <td>$versioner</td>
                 <td class="last"></td>
                 <td><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#property_versioner"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L27" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L28" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -171,7 +197,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_addSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L22" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L25" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -188,7 +214,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_getSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L30" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L33" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -205,7 +231,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_allowedSourceTypes"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L41" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L44" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -216,13 +242,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr> $assetsDir, string $filename)
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr> $assetsDir, string $filename, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method___construct"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L29" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L30" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -239,7 +265,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L36" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L38" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -256,7 +282,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_setFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L41" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L43" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -273,7 +299,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_commit"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L46" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L48" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -290,7 +316,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getUrl"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L68" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L70" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -324,7 +350,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_compile"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L112" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L113" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -358,7 +384,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_calculateRevision"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L131" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L132" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -375,7 +401,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getCacheDifferentiator"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L142" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L143" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -392,7 +418,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_flush"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L147" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L148" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -425,8 +451,8 @@
                     <h3 id="method_addSources">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_addSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/Concerns/HasSources.php#L22" target="_blank">
-            line 22
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/Concerns/HasSources.php#L25" target="_blank">
+            line 25
         </a>
         </div>
         <code>                    void
@@ -468,8 +494,8 @@
                     <h3 id="method_getSources">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_getSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/Concerns/HasSources.php#L30" target="_blank">
-            line 30
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/Concerns/HasSources.php#L33" target="_blank">
+            line 33
         </a>
         </div>
         <code>            protected        array
@@ -501,8 +527,8 @@
                     <h3 id="method_allowedSourceTypes">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_allowedSourceTypes"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/Concerns/HasSources.php#L41" target="_blank">
-            line 41
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/Concerns/HasSources.php#L44" target="_blank">
+            line 44
         </a>
         </div>
         <code>    abstract        protected        array
@@ -534,12 +560,12 @@
                     <h3 id="method___construct">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method___construct"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L29" target="_blank">
-            line 29
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L30" target="_blank">
+            line 30
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr> $assetsDir, string $filename)
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr> $assetsDir, string $filename, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
         </code>
     </h3>
     <div class="details">
@@ -560,6 +586,11 @@
                 <td>$filename</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td><a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -573,8 +604,8 @@
                     <h3 id="method_getFilename">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L36" target="_blank">
-            line 36
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L38" target="_blank">
+            line 38
         </a>
         </div>
         <code>                    string|null
@@ -606,8 +637,8 @@
                     <h3 id="method_setFilename">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_setFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L41" target="_blank">
-            line 41
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L43" target="_blank">
+            line 43
         </a>
         </div>
         <code>                    void
@@ -649,8 +680,8 @@
                     <h3 id="method_commit">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_commit"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L46" target="_blank">
-            line 46
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L48" target="_blank">
+            line 48
         </a>
         </div>
         <code>                    void
@@ -692,8 +723,8 @@
                     <h3 id="method_getUrl">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getUrl"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L68" target="_blank">
-            line 68
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L70" target="_blank">
+            line 70
         </a>
         </div>
         <code>                    string|null
@@ -758,7 +789,7 @@
                     <table class="table table-condensed">
         <tr>
             <td>bool</td>
-            <td>&lt;p&gt;true if the file was written, false if there was nothing to write&lt;/p&gt;</td>
+            <td>true if the file was written, false if there was nothing to write</td>
         </tr>
     </table>
 
@@ -772,8 +803,8 @@
                     <h3 id="method_compile">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_compile"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L112" target="_blank">
-            line 112
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L113" target="_blank">
+            line 113
         </a>
         </div>
         <code>            protected        string
@@ -857,8 +888,8 @@
                     <h3 id="method_calculateRevision">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_calculateRevision"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L131" target="_blank">
-            line 131
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L132" target="_blank">
+            line 132
         </a>
         </div>
         <code>            protected        string
@@ -900,8 +931,8 @@
                     <h3 id="method_getCacheDifferentiator">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getCacheDifferentiator"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L142" target="_blank">
-            line 142
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L143" target="_blank">
+            line 143
         </a>
         </div>
         <code>            protected        array|null
@@ -933,8 +964,8 @@
                     <h3 id="method_flush">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_flush"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L147" target="_blank">
-            line 147
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L148" target="_blank">
+            line 148
         </a>
         </div>
         <code>                    void

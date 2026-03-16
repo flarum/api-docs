@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Mail_Mailer" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Mail_Mailer" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
-                                            <option value="../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -104,13 +130,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(string $name, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $views, <abbr title="Symfony\Component\Mailer\Transport\TransportInterface">TransportInterface</abbr> $transport, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events = null, <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+                    <a href="#method___construct">__construct</a>(string $name, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $views, <abbr title="Symfony\Component\Mailer\Transport\TransportInterface">TransportInterface</abbr> $transport, <abbr title="Flarum\Mail\Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>|null $events, <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger, <a href="../../Flarum/User/UserRepository.html"><abbr title="Flarum\User\UserRepository">UserRepository</abbr></a> $users)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L20" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L24" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -127,7 +153,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L30" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L36" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -142,12 +168,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L20" target="_blank">
-            line 20
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L24" target="_blank">
+            line 24
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(string $name, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $views, <abbr title="Symfony\Component\Mailer\Transport\TransportInterface">TransportInterface</abbr> $transport, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events = null, <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+    <strong>__construct</strong>(string $name, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $views, <abbr title="Symfony\Component\Mailer\Transport\TransportInterface">TransportInterface</abbr> $transport, <abbr title="Flarum\Mail\Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>|null $events, <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger, <a href="../../Flarum/User/UserRepository.html"><abbr title="Flarum\User\UserRepository">UserRepository</abbr></a> $users)
         </code>
     </h3>
     <div class="details">
@@ -174,13 +200,23 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></td>
+                <td><abbr title="Flarum\Mail\Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>|null</td>
                 <td>$events</td>
                 <td></td>
             </tr>
                     <tr>
                 <td><a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
                 <td>$settings</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
+                <td>$logger</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/User/UserRepository.html"><abbr title="Flarum\User\UserRepository">UserRepository</abbr></a></td>
+                <td>$users</td>
                 <td></td>
             </tr>
             </table>
@@ -195,8 +231,8 @@
                     <div class="method-item">
                     <h3 id="method_send">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L30" target="_blank">
-            line 30
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Mailer.php#L36" target="_blank">
+            line 36
         </a>
         </div>
         <code>                    

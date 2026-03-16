@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="namespace" data-name="namespace:Flarum_Extend" data-root-path="../">
+    <body id="namespace" data-name="namespace:Flarum_Extend" data-root-path="../" data-search-index-url="../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,20 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" selected>v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -76,7 +104,7 @@
         <h1>
             Flarum\Extend
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/tree/v1.4.0/src/Extend" target="_blank">
+                <a href="https://github.com/flarum/framework/tree/v1.4.0/framework/core/src/Extend" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -96,7 +124,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/ApiController.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/ApiController.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -111,7 +139,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/ApiSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/ApiSerializer.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -126,7 +154,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Auth.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Auth.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -141,7 +169,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Console.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Console.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -156,7 +184,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Csrf.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Csrf.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -171,7 +199,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/ErrorHandling.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/ErrorHandling.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -186,7 +214,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Event.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Event.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -201,7 +229,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Filesystem.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Filesystem.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -216,7 +244,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Filter.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Filter.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -231,7 +259,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Formatter.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Formatter.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -246,7 +274,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Frontend.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Frontend.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -261,7 +289,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/LanguagePack.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/LanguagePack.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -276,7 +304,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Link.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Link.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -291,7 +319,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Locales.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Locales.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -306,7 +334,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Mail.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Mail.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -321,7 +349,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Middleware.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Middleware.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -336,7 +364,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Model.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Model.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -348,13 +376,13 @@
                                             
                 </div>
                 <div class="col-md-5">
-                    <p>Some models, in particular Discussion and CommentPost, are intended to
-support a &quot;private&quot; mode, wherein they aren't visible unless some
+                    Some models, in particular Discussion and CommentPost, are intended to
+support a "private" mode, wherein they aren't visible unless some
 criteria is met. This can be used to implement anything from
-private discussions to post approvals.</p>
+private discussions to post approvals.
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/ModelPrivate.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/ModelPrivate.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -369,7 +397,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/ModelUrl.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/ModelUrl.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -381,10 +409,10 @@ private discussions to post approvals.</p>
                                             
                 </div>
                 <div class="col-md-5">
-                    <p>Model visibility scoping allows us to scope queries based on the current user.</p>
+                    Model visibility scoping allows us to scope queries based on the current user.
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/ModelVisibility.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/ModelVisibility.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -399,7 +427,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Notification.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Notification.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -414,7 +442,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Policy.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Policy.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -429,7 +457,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Post.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Post.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -444,7 +472,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Routes.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Routes.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -459,7 +487,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/ServiceProvider.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/ServiceProvider.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -474,7 +502,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Settings.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Settings.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -489,7 +517,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/SimpleFlarumSearch.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/SimpleFlarumSearch.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -504,7 +532,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Theme.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Theme.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -519,7 +547,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/ThrottleApi.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/ThrottleApi.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -534,7 +562,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/User.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/User.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -549,7 +577,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/Validator.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/Validator.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -561,10 +589,10 @@ private discussions to post approvals.</p>
                                             
                 </div>
                 <div class="col-md-5">
-                    <p>Views are PHP files that use the Laravel Blade syntax for creation of server-side generated HTML.</p>
+                    Views are PHP files that use the Laravel Blade syntax for creation of server-side generated HTML.
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/View.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/View.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -584,7 +612,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/ExtenderInterface.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/ExtenderInterface.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -599,7 +627,7 @@ private discussions to post approvals.</p>
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extend/LifecycleInterface.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extend/LifecycleInterface.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 

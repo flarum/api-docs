@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Discussion_Query_HiddenFilterGambit" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Discussion_Query_HiddenFilterGambit" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,20 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" selected>v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -77,7 +105,7 @@
             HiddenFilterGambit
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -105,10 +133,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getGambitPattern">getGambitPattern</a>()
         
-                                            <p>&lt;p&gt;The regex pattern to match the bit against.&lt;/p&gt;</p>                </div>
+                                            <p>The regex pattern to match the bit against.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L23" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L23" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -121,10 +149,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_apply">apply</a>(<a href="../../../Flarum/Search/SearchState.html"><abbr title="Flarum\Search\SearchState">SearchState</abbr></a> $search, string $bit)
         
-                                            <p>&lt;p&gt;Apply conditions to the searcher for a bit of the search string.&lt;/p&gt;</p>                </div>
+                                            <p>Apply conditions to the searcher for a bit of the search string.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Search/AbstractRegexGambit.html#method_apply"><abbr title="Flarum\Search\AbstractRegexGambit">AbstractRegexGambit</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L22" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L22" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -137,10 +165,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_match">match</a>(string $bit)
         
-                                            <p>&lt;p&gt;Match the bit against this gambit.&lt;/p&gt;</p>                </div>
+                                            <p>Match the bit against this gambit.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Search/AbstractRegexGambit.html#method_match"><abbr title="Flarum\Search\AbstractRegexGambit">AbstractRegexGambit</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L39" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L39" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -153,10 +181,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_conditions">conditions</a>(<a href="../../../Flarum/Search/SearchState.html"><abbr title="Flarum\Search\SearchState">SearchState</abbr></a> $search, array $matches, bool $negate)
         
-                                            <p>&lt;p&gt;Apply conditions to the search, given that the gambit was matched.&lt;/p&gt;</p>                </div>
+                                            <p>Apply conditions to the search, given that the gambit was matched.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L31" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L31" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -169,10 +197,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getFilterKey">getFilterKey</a>()
         
-                                            <p>&lt;p&gt;This filter will only be run when a query contains a filter param with this key.&lt;/p&gt;</p>                </div>
+                                            <p>This filter will only be run when a query contains a filter param with this key.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L36" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L36" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -185,10 +213,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_filter">filter</a>(<a href="../../../Flarum/Filter/FilterState.html"><abbr title="Flarum\Filter\FilterState">FilterState</abbr></a> $filterState, string $filterValue, bool $negate)
         
-                                            <p>&lt;p&gt;Filters a query.&lt;/p&gt;</p>                </div>
+                                            <p>Filters a query.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L41" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L41" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -205,7 +233,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L46" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L46" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -220,7 +248,7 @@
                     <div class="method-item">
                     <h3 id="method_getGambitPattern">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L23" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L23" target="_blank">
             line 23
         </a>
         </div>
@@ -233,7 +261,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;The regex pattern to match the bit against.&lt;/p&gt;</p>                                                </div>
+                                    <p>The regex pattern to match the bit against.</p>                                                </div>
                 <div class="tags">
             
             
@@ -246,7 +274,7 @@
                     <h3 id="method_apply">
         <div class="location">
                             in <a href="../../../Flarum/Search/AbstractRegexGambit.html#method_apply"><abbr title="Flarum\Search\AbstractRegexGambit">AbstractRegexGambit</abbr></a>
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Search/AbstractRegexGambit.php#L22" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Search/AbstractRegexGambit.php#L22" target="_blank">
             line 22
         </a>
         </div>
@@ -259,7 +287,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Apply conditions to the searcher for a bit of the search string.&lt;/p&gt;</p>                                                </div>
+                                    <p>Apply conditions to the searcher for a bit of the search string.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -272,7 +300,7 @@
                     <tr>
                 <td>string</td>
                 <td>$bit</td>
-                <td>&lt;p&gt;The piece of the search string.&lt;/p&gt;</td>
+                <td>The piece of the search string.</td>
             </tr>
             </table>
 
@@ -282,7 +310,7 @@
                     <table class="table table-condensed">
         <tr>
             <td>bool</td>
-            <td>&lt;p&gt;Whether or not the gambit was active for this bit.&lt;/p&gt;</td>
+            <td>Whether or not the gambit was active for this bit.</td>
         </tr>
     </table>
 
@@ -296,7 +324,7 @@
                     <h3 id="method_match">
         <div class="location">
                             in <a href="../../../Flarum/Search/AbstractRegexGambit.html#method_match"><abbr title="Flarum\Search\AbstractRegexGambit">AbstractRegexGambit</abbr></a>
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Search/AbstractRegexGambit.php#L39" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Search/AbstractRegexGambit.php#L39" target="_blank">
             line 39
         </a>
         </div>
@@ -309,7 +337,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Match the bit against this gambit.&lt;/p&gt;</p>                                                </div>
+                                    <p>Match the bit against this gambit.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -340,7 +368,7 @@
                     <div class="method-item">
                     <h3 id="method_conditions">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L31" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L31" target="_blank">
             line 31
         </a>
         </div>
@@ -353,7 +381,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Apply conditions to the search, given that the gambit was matched.&lt;/p&gt;</p>                                                </div>
+                                    <p>Apply conditions to the search, given that the gambit was matched.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -361,18 +389,18 @@
                     <tr>
                 <td><a href="../../../Flarum/Search/SearchState.html"><abbr title="Flarum\Search\SearchState">SearchState</abbr></a></td>
                 <td>$search</td>
-                <td>&lt;p&gt;The search object.&lt;/p&gt;</td>
+                <td>The search object.</td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$matches</td>
-                <td>&lt;p&gt;An array of matches from the search bit.&lt;/p&gt;</td>
+                <td>An array of matches from the search bit.</td>
             </tr>
                     <tr>
                 <td>bool</td>
                 <td>$negate</td>
-                <td>&lt;p&gt;Whether or not the bit was negated, and thus whether
-or not the conditions should be negated.&lt;/p&gt;</td>
+                <td>Whether or not the bit was negated, and thus whether
+or not the conditions should be negated.</td>
             </tr>
             </table>
 
@@ -395,7 +423,7 @@ or not the conditions should be negated.&lt;/p&gt;</td>
                     <div class="method-item">
                     <h3 id="method_getFilterKey">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L36" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L36" target="_blank">
             line 36
         </a>
         </div>
@@ -408,7 +436,7 @@ or not the conditions should be negated.&lt;/p&gt;</td>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;This filter will only be run when a query contains a filter param with this key.&lt;/p&gt;</p>                                                </div>
+                                    <p>This filter will only be run when a query contains a filter param with this key.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -429,7 +457,7 @@ or not the conditions should be negated.&lt;/p&gt;</td>
                     <div class="method-item">
                     <h3 id="method_filter">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L41" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L41" target="_blank">
             line 41
         </a>
         </div>
@@ -442,7 +470,7 @@ or not the conditions should be negated.&lt;/p&gt;</td>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Filters a query.&lt;/p&gt;</p>                                                </div>
+                                    <p>Filters a query.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -474,7 +502,7 @@ or not the conditions should be negated.&lt;/p&gt;</td>
                     <div class="method-item">
                     <h3 id="method_constrain">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Discussion/Query/HiddenFilterGambit.php#L46" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Discussion/Query/HiddenFilterGambit.php#L46" target="_blank">
             line 46
         </a>
         </div>

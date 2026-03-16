@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Extend_SimpleFlarumSearch" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extend_SimpleFlarumSearch" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,21 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" selected>v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -78,7 +105,7 @@
             SimpleFlarumSearch
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -110,7 +137,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php#L26" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php#L26" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -123,10 +150,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_addGambit">addGambit</a>(string $gambitClass)
         
-                                            <p>&lt;p&gt;Add a gambit to this searcher. Gambits are used to filter search queries.&lt;/p&gt;</p>                </div>
+                                            <p>Add a gambit to this searcher. Gambits are used to filter search queries.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php#L38" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php#L38" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -139,10 +166,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_setFullTextGambit">setFullTextGambit</a>(string $gambitClass)
         
-                                            <p>&lt;p&gt;Set the full text gambit for this searcher. The full text gambit actually executes the search.&lt;/p&gt;</p>                </div>
+                                            <p>Set the full text gambit for this searcher. The full text gambit actually executes the search.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php#L52" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php#L52" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -155,10 +182,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_addSearchMutator">addSearchMutator</a>(callable|string $callback)
         
-                                            <p>&lt;p&gt;Add a callback through which to run all search queries after gambits have been applied.&lt;/p&gt;</p>                </div>
+                                            <p>Add a callback through which to run all search queries after gambits have been applied.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php#L72" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php#L72" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -175,7 +202,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php#L79" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php#L79" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -190,7 +217,7 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php#L26" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php#L26" target="_blank">
             line 26
         </a>
         </div>
@@ -223,7 +250,7 @@
                     <div class="method-item">
                     <h3 id="method_addGambit">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php#L38" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php#L38" target="_blank">
             line 38
         </a>
         </div>
@@ -236,7 +263,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Add a gambit to this searcher. Gambits are used to filter search queries.&lt;/p&gt;</p>                                                </div>
+                                    <p>Add a gambit to this searcher. Gambits are used to filter search queries.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -267,7 +294,7 @@
                     <div class="method-item">
                     <h3 id="method_setFullTextGambit">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php#L52" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php#L52" target="_blank">
             line 52
         </a>
         </div>
@@ -280,7 +307,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Set the full text gambit for this searcher. The full text gambit actually executes the search.&lt;/p&gt;</p>                                                </div>
+                                    <p>Set the full text gambit for this searcher. The full text gambit actually executes the search.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -311,7 +338,7 @@
                     <div class="method-item">
                     <h3 id="method_addSearchMutator">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php#L72" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php#L72" target="_blank">
             line 72
         </a>
         </div>
@@ -324,7 +351,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Add a callback through which to run all search queries after gambits have been applied.&lt;/p&gt;</p>                                                </div>
+                                    <p>Add a callback through which to run all search queries after gambits have been applied.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -332,12 +359,11 @@
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>&lt;p&gt;The callback can be a closure or an invokable class, and should accept:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;\Flarum\Search\SearchState $search&lt;/li&gt;
-&lt;li&gt;\Flarum\Query\QueryCriteria $criteria&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The callback should return void.&lt;/p&gt;</td>
+                <td>The callback can be a closure or an invokable class, and should accept:
+- \Flarum\Search\SearchState $search
+- \Flarum\Query\QueryCriteria $criteria
+
+The callback should return void.</td>
             </tr>
             </table>
 
@@ -360,7 +386,7 @@
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/SimpleFlarumSearch.php#L79" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/SimpleFlarumSearch.php#L79" target="_blank">
             line 79
         </a>
         </div>

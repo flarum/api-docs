@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Foundation_Application" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Foundation_Application" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
-                                            <option value="../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -104,8 +130,8 @@
                                             
                 </div>
                 <div class="col-md-5">
-                    <p>Implementation of the Laravel Application Contract,
-for the sake of better integration with Laravel packages/ecosystem.</p>
+                    Implementation of the Laravel Application Contract,
+for the sake of better integration with Laravel packages/ecosystem.
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php" target="_blank">
@@ -122,7 +148,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <tr>
                 <td>VERSION</td>
                 <td class="last">
-                    <p><em>&lt;p&gt;The Flarum version.&lt;/p&gt;</em></p>
+                    <p><em>The Flarum version.</em></p>
                     <p></p>
                 </td>
             </tr>
@@ -134,21 +160,9 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_booted">
-                                        protected                                        
+                                        protected                                        bool
                 </td>
                 <td>$booted</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L30" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_bootingCallbacks">
-                                        protected                                        
-                </td>
-                <td>$bootingCallbacks</td>
                 <td class="last"></td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L32" target="_blank">
@@ -157,10 +171,10 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
 </td>
             </tr>
                     <tr>
-                <td class="type" id="property_bootedCallbacks">
-                                        protected                                        
+                <td class="type" id="property_bootingCallbacks">
+                                        protected                                        array
                 </td>
-                <td>$bootedCallbacks</td>
+                <td>$bootingCallbacks</td>
                 <td class="last"></td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L34" target="_blank">
@@ -169,10 +183,10 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
 </td>
             </tr>
                     <tr>
-                <td class="type" id="property_serviceProviders">
-                                        protected                                        
+                <td class="type" id="property_bootedCallbacks">
+                                        protected                                        array
                 </td>
-                <td>$serviceProviders</td>
+                <td>$bootedCallbacks</td>
                 <td class="last"></td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L36" target="_blank">
@@ -181,13 +195,25 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
 </td>
             </tr>
                     <tr>
+                <td class="type" id="property_serviceProviders">
+                                        protected                                        array
+                </td>
+                <td>$serviceProviders</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L38" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_loadedProviders">
-                                        protected                                        
+                                        protected                                        array
                 </td>
                 <td>$loadedProviders</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L38" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L40" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -459,12 +485,12 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                 </div>
                 <div class="col-md-6 type">
                     <a href="#method_isDownForMaintenance">isDownForMaintenance</a>()
-        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+        
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_isDownForMaintenance"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L145" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L142" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -481,7 +507,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_registerConfiguredProviders"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L154" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L150" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -498,7 +524,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_registerDeferredProvider"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L162" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L158" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -515,7 +541,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_bootstrapWith"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L170" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L166" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -532,7 +558,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_getLocale"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L175" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L171" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -549,7 +575,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_getNamespace"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L180" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L176" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -566,7 +592,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_getProviders"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L185" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L181" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -583,7 +609,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_hasBeenBootstrapped"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L195" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L191" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -600,7 +626,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_loadDeferredProviders"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L203" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L199" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -617,7 +643,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_setLocale"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L208" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L204" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -634,7 +660,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_shouldSkipMiddleware"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L216" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L212" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -651,7 +677,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_joinPaths"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L221" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L217" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -668,7 +694,24 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L40" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L42" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getConfig">getConfig</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L50" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -685,7 +728,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L48" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L55" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -696,13 +739,13 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     string
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_url">url</a>(string $path = null)
+                    <a href="#method_url">url</a>(string|null $path = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L55" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L62" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -719,7 +762,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L67" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L74" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -736,7 +779,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L84" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L91" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -753,7 +796,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L89" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L96" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -770,7 +813,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L116" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L123" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -783,10 +826,10 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                 <div class="col-md-6 type">
                     <a href="#method_resolveProvider">resolveProvider</a>(<abbr title="Flarum\Foundation\class-string&lt;\Illuminate\Support\ServiceProvider&gt;">ServiceProvider&gt;</abbr> $provider)
         
-                                            <p>&lt;p&gt;Resolve a service provider instance from the class name.&lt;/p&gt;</p>                </div>
+                                            <p>Resolve a service provider instance from the class name.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L130" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L137" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -803,7 +846,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L135" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L142" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -820,7 +863,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L144" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L151" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -837,7 +880,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L149" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L156" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -854,7 +897,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L169" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L181" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -871,7 +914,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L178" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L190" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -888,7 +931,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L183" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L195" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -905,7 +948,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L192" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L204" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -922,7 +965,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L199" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L211" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -939,7 +982,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L227" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L240" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -1597,23 +1640,16 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_isDownForMaintenance">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_isDownForMaintenance"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L145" target="_blank">
-            line 145
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L142" target="_blank">
+            line 142
         </a>
         </div>
         <code>                    bool
     <strong>isDownForMaintenance</strong>()
-        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+        </code>
     </h3>
     <div class="details">
             
-            <p>
-                <small><sup><span class="label label-danger">deprecated</span></sup></small>
-                            <tr>
-                    <td>Not</td>
-                    <td>actually used/has no meaning in Flarum.</td>
-                </tr>
-                    </p>
     
 
                 <div class="tags">
@@ -1637,8 +1673,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_registerConfiguredProviders">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_registerConfiguredProviders"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L154" target="_blank">
-            line 154
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L150" target="_blank">
+            line 150
         </a>
         </div>
         <code>                    void
@@ -1677,8 +1713,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_registerDeferredProvider">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_registerDeferredProvider"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L162" target="_blank">
-            line 162
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L158" target="_blank">
+            line 158
         </a>
         </div>
         <code>                    void
@@ -1732,8 +1768,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_bootstrapWith">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_bootstrapWith"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L170" target="_blank">
-            line 170
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L166" target="_blank">
+            line 166
         </a>
         </div>
         <code>                    void
@@ -1782,8 +1818,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_getLocale">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_getLocale"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L175" target="_blank">
-            line 175
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L171" target="_blank">
+            line 171
         </a>
         </div>
         <code>                    string
@@ -1815,8 +1851,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_getNamespace">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_getNamespace"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L180" target="_blank">
-            line 180
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L176" target="_blank">
+            line 176
         </a>
         </div>
         <code>                    string
@@ -1848,8 +1884,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_getProviders">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_getProviders"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L185" target="_blank">
-            line 185
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L181" target="_blank">
+            line 181
         </a>
         </div>
         <code>                    array
@@ -1891,8 +1927,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_hasBeenBootstrapped">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_hasBeenBootstrapped"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L195" target="_blank">
-            line 195
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L191" target="_blank">
+            line 191
         </a>
         </div>
         <code>                    bool
@@ -1931,8 +1967,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_loadDeferredProviders">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_loadDeferredProviders"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L203" target="_blank">
-            line 203
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L199" target="_blank">
+            line 199
         </a>
         </div>
         <code>                    void
@@ -1971,8 +2007,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_setLocale">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_setLocale"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L208" target="_blank">
-            line 208
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L204" target="_blank">
+            line 204
         </a>
         </div>
         <code>                    void
@@ -2014,8 +2050,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_shouldSkipMiddleware">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_shouldSkipMiddleware"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L216" target="_blank">
-            line 216
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L212" target="_blank">
+            line 212
         </a>
         </div>
         <code>                    bool
@@ -2054,8 +2090,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <h3 id="method_joinPaths">
         <div class="location">
                             in <a href="../../Flarum/Foundation/Concerns/InteractsWithLaravel.html#method_joinPaths"><abbr title="Flarum\Foundation\Concerns\InteractsWithLaravel">InteractsWithLaravel</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L221" target="_blank">
-            line 221
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Concerns/InteractsWithLaravel.php#L217" target="_blank">
+            line 217
         </a>
         </div>
         <code>                    string
@@ -2101,8 +2137,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L40" target="_blank">
-            line 40
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L42" target="_blank">
+            line 42
         </a>
         </div>
         <code>                    
@@ -2132,10 +2168,42 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getConfig">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L50" target="_blank">
+            line 50
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a>
+    <strong>getConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_config">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L48" target="_blank">
-            line 48
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L55" target="_blank">
+            line 55
         </a>
         </div>
         <code>                    mixed
@@ -2181,12 +2249,12 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_url">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L55" target="_blank">
-            line 55
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L62" target="_blank">
+            line 62
         </a>
         </div>
         <code>                    string
-    <strong>url</strong>(string $path = null)
+    <strong>url</strong>(string|null $path = null)
         </code>
     </h3>
     <div class="details">
@@ -2198,7 +2266,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$path</td>
                 <td></td>
             </tr>
@@ -2223,8 +2291,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_registerBaseBindings">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L67" target="_blank">
-            line 67
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L74" target="_blank">
+            line 74
         </a>
         </div>
         <code>            protected        void
@@ -2255,8 +2323,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_registerBaseServiceProviders">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L84" target="_blank">
-            line 84
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L91" target="_blank">
+            line 91
         </a>
         </div>
         <code>            protected        void
@@ -2287,8 +2355,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_register">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L89" target="_blank">
-            line 89
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L96" target="_blank">
+            line 96
         </a>
         </div>
         <code>                    <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>
@@ -2334,8 +2402,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_getProvider">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L116" target="_blank">
-            line 116
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L123" target="_blank">
+            line 123
         </a>
         </div>
         <code>                    <abbr title="Flarum\Foundation\Illuminate\Support\ServiceProvider">ServiceProvider</abbr>|null
@@ -2376,8 +2444,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_resolveProvider">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L130" target="_blank">
-            line 130
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L137" target="_blank">
+            line 137
         </a>
         </div>
         <code>                    <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>
@@ -2389,7 +2457,7 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Resolve a service provider instance from the class name.&lt;/p&gt;</p>                                                </div>
+                                    <p>Resolve a service provider instance from the class name.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2420,8 +2488,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_markAsRegistered">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L135" target="_blank">
-            line 135
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L142" target="_blank">
+            line 142
         </a>
         </div>
         <code>            protected        void
@@ -2462,8 +2530,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_isBooted">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L144" target="_blank">
-            line 144
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L151" target="_blank">
+            line 151
         </a>
         </div>
         <code>                    bool
@@ -2494,8 +2562,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_boot">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L149" target="_blank">
-            line 149
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L156" target="_blank">
+            line 156
         </a>
         </div>
         <code>                    void
@@ -2526,8 +2594,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_bootProvider">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L169" target="_blank">
-            line 169
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L181" target="_blank">
+            line 181
         </a>
         </div>
         <code>            protected        mixed
@@ -2568,8 +2636,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_booting">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L178" target="_blank">
-            line 178
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L190" target="_blank">
+            line 190
         </a>
         </div>
         <code>                    void
@@ -2610,8 +2678,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_booted">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L183" target="_blank">
-            line 183
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L195" target="_blank">
+            line 195
         </a>
         </div>
         <code>                    void
@@ -2652,8 +2720,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_fireAppCallbacks">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L192" target="_blank">
-            line 192
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L204" target="_blank">
+            line 204
         </a>
         </div>
         <code>            protected        void
@@ -2694,8 +2762,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_registerCoreContainerAliases">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L199" target="_blank">
-            line 199
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L211" target="_blank">
+            line 211
         </a>
         </div>
         <code>                    void
@@ -2726,8 +2794,8 @@ for the sake of better integration with Laravel packages/ecosystem.</p>
                     <div class="method-item">
                     <h3 id="method_version">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L227" target="_blank">
-            line 227
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/Application.php#L240" target="_blank">
+            line 240
         </a>
         </div>
         <code>                    string

@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="namespace" data-name="namespace:Flarum_Api_Serializer" data-root-path="../../">
+    <body id="namespace" data-name="namespace:Flarum_Api_Serializer" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,21 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" selected>v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -77,7 +104,7 @@
         <h1>
             Flarum\Api\Serializer
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/tree/v1.5.0/src/Api/Serializer" target="_blank">
+                <a href="https://github.com/flarum/framework/tree/v1.5.0/framework/core/src/Api/Serializer" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -97,7 +124,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/AbstractSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/AbstractSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -112,7 +139,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/BasicDiscussionSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/BasicDiscussionSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -127,7 +154,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/BasicPostSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/BasicPostSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -142,7 +169,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/BasicUserSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/BasicUserSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -157,7 +184,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/CurrentUserSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/CurrentUserSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -172,7 +199,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/DiscussionSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/DiscussionSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -187,7 +214,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/ExtensionReadmeSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/ExtensionReadmeSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -202,7 +229,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/ForumSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/ForumSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -217,7 +244,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/GroupSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/GroupSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -232,7 +259,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/MailSettingsSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/MailSettingsSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -247,7 +274,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/NotificationSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/NotificationSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -262,7 +289,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/PostSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/PostSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 
@@ -277,7 +304,7 @@
                     
                 </div>
                 <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Api/Serializer/UserSerializer.php" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Api/Serializer/UserSerializer.php" target="_blank">
         <img src="../../assets/img/code.svg"  />
     </a>
 

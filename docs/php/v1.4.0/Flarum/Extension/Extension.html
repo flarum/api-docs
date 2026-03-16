@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Extension_Extension" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extension_Extension" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,20 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" selected>v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -77,7 +105,7 @@
             Extension
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -114,9 +142,9 @@
                                         protected                                        string
                 </td>
                 <td>$id</td>
-                <td class="last">&lt;p&gt;Unique Id of the extension.&lt;/p&gt;</td>
+                <td class="last">Unique Id of the extension.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L62" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L62" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -126,9 +154,9 @@
                                         protected                                        string
                 </td>
                 <td>$path</td>
-                <td class="last">&lt;p&gt;The directory of this extension.&lt;/p&gt;</td>
+                <td class="last">The directory of this extension.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L69" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L69" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -138,9 +166,9 @@
                                         protected                                        array
                 </td>
                 <td>$composerJson</td>
-                <td class="last">&lt;p&gt;Composer json of the package.&lt;/p&gt;</td>
+                <td class="last">Composer json of the package.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L76" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L76" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -150,9 +178,9 @@
                                         protected                                        string[]
                 </td>
                 <td>$extensionDependencyIds</td>
-                <td class="last">&lt;p&gt;The IDs of all Flarum extensions that this extension depends on.&lt;/p&gt;</td>
+                <td class="last">The IDs of all Flarum extensions that this extension depends on.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L83" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L83" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -162,10 +190,10 @@
                                         protected                                        string[]
                 </td>
                 <td>$optionalDependencyIds</td>
-                <td class="last">&lt;p&gt;The IDs of all Flarum extensions that this extension should be booted after
-if enabled.&lt;/p&gt;</td>
+                <td class="last">The IDs of all Flarum extensions that this extension should be booted after
+if enabled.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L91" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L91" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -175,9 +203,9 @@ if enabled.&lt;/p&gt;</td>
                                         protected                                        bool
                 </td>
                 <td>$installed</td>
-                <td class="last">&lt;p&gt;Whether the extension is installed.&lt;/p&gt;</td>
+                <td class="last">Whether the extension is installed.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L98" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L98" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -187,9 +215,9 @@ if enabled.&lt;/p&gt;</td>
                                         protected                                        string
                 </td>
                 <td>$version</td>
-                <td class="last">&lt;p&gt;The installed version of the extension.&lt;/p&gt;</td>
+                <td class="last">The installed version of the extension.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L105" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L105" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -201,7 +229,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$name</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -213,7 +241,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$description</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -225,7 +253,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$type</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -237,7 +265,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$keywords</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -249,7 +277,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$homepage</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -261,7 +289,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$time</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -273,7 +301,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$license</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -285,7 +313,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$authors</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -297,7 +325,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$support</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -309,7 +337,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$require</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -321,7 +349,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$requireDev</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -333,7 +361,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$autoload</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -345,7 +373,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$autoloadDev</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -357,7 +385,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$conflict</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -369,7 +397,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$replace</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -381,7 +409,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$provide</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -393,7 +421,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$suggest</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -405,7 +433,7 @@ if enabled.&lt;/p&gt;</td>
                 <td>$extra</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L45" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -427,7 +455,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L111" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L111" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -444,7 +472,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L118" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L118" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -457,10 +485,10 @@ if enabled.&lt;/p&gt;</td>
                 <div class="col-md-6 type">
                     <a href="#method_assignId">assignId</a>()
         
-                                            <p>&lt;p&gt;Assigns the id for the extension used globally.&lt;/p&gt;</p>                </div>
+                                            <p>Assigns the id for the extension used globally.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L129" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L129" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -477,7 +505,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L137" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L137" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -490,10 +518,10 @@ if enabled.&lt;/p&gt;</td>
                 <div class="col-md-6 type">
                     <a href="#method___get">__get</a>($name)
         
-                                            <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                </div>
+                                            <p>{@inheritdoc}</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L151" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L151" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -506,10 +534,10 @@ if enabled.&lt;/p&gt;</td>
                 <div class="col-md-6 type">
                     <a href="#method___isset">__isset</a>($name)
         
-                                            <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                </div>
+                                            <p>{@inheritdoc}</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L159" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L159" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -522,10 +550,10 @@ if enabled.&lt;/p&gt;</td>
                 <div class="col-md-6 type">
                     <a href="#method_composerJsonAttribute">composerJsonAttribute</a>($name)
         
-                                            <p>&lt;p&gt;Dot notation getter for composer.json attributes.&lt;/p&gt;</p>                </div>
+                                            <p>Dot notation getter for composer.json attributes.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L172" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L172" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -542,7 +570,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L183" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L183" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -559,7 +587,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L193" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L193" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -576,7 +604,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L204" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L204" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -589,10 +617,10 @@ if enabled.&lt;/p&gt;</td>
                 <div class="col-md-6 type">
                     <a href="#method_calculateDependencies">calculateDependencies</a>($extensionSet)
         
-                                            <p>&lt;p&gt;Get the list of flarum extensions that this extension depends on.&lt;/p&gt;</p>                </div>
+                                            <p>Get the list of flarum extensions that this extension depends on.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L222" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L222" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -609,7 +637,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L244" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L244" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -622,10 +650,10 @@ if enabled.&lt;/p&gt;</td>
                 <div class="col-md-6 type">
                     <a href="#method_getIcon">getIcon</a>()
         
-                                            <p>&lt;p&gt;Loads the icon information from the composer.json.&lt;/p&gt;</p>                </div>
+                                            <p>Loads the icon information from the composer.json.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L254" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L254" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -642,7 +670,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L280" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L280" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -659,7 +687,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L304" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L304" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -676,7 +704,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L314" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L314" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -689,10 +717,10 @@ if enabled.&lt;/p&gt;</td>
                 <div class="col-md-6 type">
                     <a href="#method_getId">getId</a>()
         
-                                            <p>&lt;p&gt;The raw path of the directory under extensions.&lt;/p&gt;</p>                </div>
+                                            <p>The raw path of the directory under extensions.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L326" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L326" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -709,7 +737,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L334" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L334" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -726,7 +754,7 @@ if enabled.&lt;/p&gt;</td>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L342" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L342" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -739,10 +767,10 @@ if enabled.&lt;/p&gt;</td>
                 <div class="col-md-6 type">
                     <a href="#method_getExtensionDependencyIds">getExtensionDependencyIds</a>()
         
-                                            <p>&lt;p&gt;The IDs of all Flarum extensions that this extension depends on.&lt;/p&gt;</p>                </div>
+                                            <p>The IDs of all Flarum extensions that this extension depends on.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L352" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L352" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -755,11 +783,11 @@ if enabled.&lt;/p&gt;</td>
                 <div class="col-md-6 type">
                     <a href="#method_getOptionalDependencyIds">getOptionalDependencyIds</a>()
         
-                                            <p>&lt;p&gt;The IDs of all Flarum extensions that this extension should be booted after
-if enabled.&lt;/p&gt;</p>                </div>
+                                            <p>The IDs of all Flarum extensions that this extension should be booted after
+if enabled.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L363" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L363" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -772,10 +800,10 @@ if enabled.&lt;/p&gt;</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_getLinks">getLinks</a>()
         
-                                            <p>&lt;p&gt;Compile a list of links for this extension.&lt;/p&gt;</p>                </div>
+                                            <p>Compile a list of links for this extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L412" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L412" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -788,10 +816,10 @@ if enabled.&lt;/p&gt;</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_hasAssets">hasAssets</a>()
         
-                                            <p>&lt;p&gt;Tests whether the extension has assets.&lt;/p&gt;</p>                </div>
+                                            <p>Tests whether the extension has assets.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L457" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L457" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -808,7 +836,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L465" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L465" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -821,10 +849,10 @@ if enabled.&lt;/p&gt;</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_hasMigrations">hasMigrations</a>()
         
-                                            <p>&lt;p&gt;Tests whether the extension has migrations.&lt;/p&gt;</p>                </div>
+                                            <p>Tests whether the extension has migrations.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L486" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L486" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -841,7 +869,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L494" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L494" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -854,10 +882,10 @@ if enabled.&lt;/p&gt;</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_toArray">toArray</a>()
         
-                                            <p>&lt;p&gt;Generates an array result for the object.&lt;/p&gt;</p>                </div>
+                                            <p>Generates an array result for the object.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L512" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L512" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -870,10 +898,10 @@ if enabled.&lt;/p&gt;</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_getReadme">getReadme</a>()
         
-                                            <p>&lt;p&gt;Gets the rendered contents of the extension README file as a HTML string.&lt;/p&gt;</p>                </div>
+                                            <p>Gets the rendered contents of the extension README file as a HTML string.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L532" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L532" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -888,7 +916,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L111" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L111" target="_blank">
             line 111
         </a>
         </div>
@@ -926,7 +954,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_nameToId">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L118" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L118" target="_blank">
             line 118
         </a>
         </div>
@@ -959,7 +987,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_assignId">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L129" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L129" target="_blank">
             line 129
         </a>
         </div>
@@ -972,7 +1000,7 @@ if enabled.&lt;/p&gt;</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Assigns the id for the extension used globally.&lt;/p&gt;</p>                                                </div>
+                                    <p>Assigns the id for the extension used globally.</p>                                                </div>
                 <div class="tags">
             
             
@@ -984,7 +1012,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L137" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L137" target="_blank">
             line 137
         </a>
         </div>
@@ -1017,7 +1045,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method___get">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L151" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L151" target="_blank">
             line 151
         </a>
         </div>
@@ -1030,7 +1058,7 @@ if enabled.&lt;/p&gt;</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                                                </div>
+                                    <p>{@inheritdoc}</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1052,7 +1080,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method___isset">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L159" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L159" target="_blank">
             line 159
         </a>
         </div>
@@ -1065,7 +1093,7 @@ if enabled.&lt;/p&gt;</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;{@inheritdoc}&lt;/p&gt;</p>                                                </div>
+                                    <p>{@inheritdoc}</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1087,7 +1115,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_composerJsonAttribute">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L172" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L172" target="_blank">
             line 172
         </a>
         </div>
@@ -1100,7 +1128,7 @@ if enabled.&lt;/p&gt;</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Dot notation getter for composer.json attributes.&lt;/p&gt;</p>                                                </div>
+                                    <p>Dot notation getter for composer.json attributes.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1142,7 +1170,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_setInstalled">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L183" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L183" target="_blank">
             line 183
         </a>
         </div>
@@ -1184,7 +1212,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_isInstalled">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L193" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L193" target="_blank">
             line 193
         </a>
         </div>
@@ -1216,7 +1244,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_setVersion">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L204" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L204" target="_blank">
             line 204
         </a>
         </div>
@@ -1258,7 +1286,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_calculateDependencies">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L222" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L222" target="_blank">
             line 222
         </a>
         </div>
@@ -1271,7 +1299,7 @@ if enabled.&lt;/p&gt;</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get the list of flarum extensions that this extension depends on.&lt;/p&gt;</p>                                                </div>
+                                    <p>Get the list of flarum extensions that this extension depends on.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1293,7 +1321,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_getVersion">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L244" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L244" target="_blank">
             line 244
         </a>
         </div>
@@ -1325,7 +1353,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_getIcon">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L254" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L254" target="_blank">
             line 254
         </a>
         </div>
@@ -1338,7 +1366,7 @@ if enabled.&lt;/p&gt;</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Loads the icon information from the composer.json.&lt;/p&gt;</p>                                                </div>
+                                    <p>Loads the icon information from the composer.json.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1359,7 +1387,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_getIconStyles">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L280" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L280" target="_blank">
             line 280
         </a>
         </div>
@@ -1391,7 +1419,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_enable">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L304" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L304" target="_blank">
             line 304
         </a>
         </div>
@@ -1424,7 +1452,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_disable">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L314" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L314" target="_blank">
             line 314
         </a>
         </div>
@@ -1457,7 +1485,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_getId">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L326" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L326" target="_blank">
             line 326
         </a>
         </div>
@@ -1470,7 +1498,7 @@ if enabled.&lt;/p&gt;</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;The raw path of the directory under extensions.&lt;/p&gt;</p>                                                </div>
+                                    <p>The raw path of the directory under extensions.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1491,7 +1519,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_getTitle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L334" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L334" target="_blank">
             line 334
         </a>
         </div>
@@ -1523,7 +1551,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_getPath">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L342" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L342" target="_blank">
             line 342
         </a>
         </div>
@@ -1555,7 +1583,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionDependencyIds">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L352" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L352" target="_blank">
             line 352
         </a>
         </div>
@@ -1568,7 +1596,7 @@ if enabled.&lt;/p&gt;</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;The IDs of all Flarum extensions that this extension depends on.&lt;/p&gt;</p>                                                </div>
+                                    <p>The IDs of all Flarum extensions that this extension depends on.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1589,7 +1617,7 @@ if enabled.&lt;/p&gt;</p>                </div>
                     <div class="method-item">
                     <h3 id="method_getOptionalDependencyIds">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L363" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L363" target="_blank">
             line 363
         </a>
         </div>
@@ -1602,8 +1630,8 @@ if enabled.&lt;/p&gt;</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;The IDs of all Flarum extensions that this extension should be booted after
-if enabled.&lt;/p&gt;</p>                                                </div>
+                                    <p>The IDs of all Flarum extensions that this extension should be booted after
+if enabled.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1624,7 +1652,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_getLinks">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L412" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L412" target="_blank">
             line 412
         </a>
         </div>
@@ -1637,7 +1665,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Compile a list of links for this extension.&lt;/p&gt;</p>                                                </div>
+                                    <p>Compile a list of links for this extension.</p>                                                </div>
                 <div class="tags">
             
             
@@ -1649,7 +1677,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_hasAssets">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L457" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L457" target="_blank">
             line 457
         </a>
         </div>
@@ -1662,7 +1690,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Tests whether the extension has assets.&lt;/p&gt;</p>                                                </div>
+                                    <p>Tests whether the extension has assets.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1683,7 +1711,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_copyAssetsTo">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L465" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L465" target="_blank">
             line 465
         </a>
         </div>
@@ -1716,7 +1744,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_hasMigrations">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L486" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L486" target="_blank">
             line 486
         </a>
         </div>
@@ -1729,7 +1757,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Tests whether the extension has migrations.&lt;/p&gt;</p>                                                </div>
+                                    <p>Tests whether the extension has migrations.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1750,7 +1778,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_migrate">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L494" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L494" target="_blank">
             line 494
         </a>
         </div>
@@ -1788,7 +1816,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_toArray">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L512" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L512" target="_blank">
             line 512
         </a>
         </div>
@@ -1801,7 +1829,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Generates an array result for the object.&lt;/p&gt;</p>                                                </div>
+                                    <p>Generates an array result for the object.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1822,7 +1850,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_getReadme">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Extension/Extension.php#L532" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Extension/Extension.php#L532" target="_blank">
             line 532
         </a>
         </div>
@@ -1835,7 +1863,7 @@ if enabled.&lt;/p&gt;</p>                                                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Gets the rendered contents of the extension README file as a HTML string.&lt;/p&gt;</p>                                                </div>
+                                    <p>Gets the rendered contents of the extension README file as a HTML string.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

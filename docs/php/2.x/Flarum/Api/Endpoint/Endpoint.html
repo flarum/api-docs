@@ -1,0 +1,3118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Api\Endpoint\Endpoint | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Api_Endpoint_Endpoint" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            Endpoint
+                
+            &nbsp;
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>Endpoint</strong>        implements
+        <abbr title="Tobyz\JsonApiServer\Endpoint\Endpoint">Endpoint</abbr></p>
+
+        
+    
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Flarum/Api/Endpoint/Concerns/ShowsResources.html"><abbr title="Flarum\Api\Endpoint\Concerns\ShowsResources">ShowsResources</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ShowsResources.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Tobyz\JsonApiServer\Endpoint\Concerns\FindsResources">FindsResources</abbr>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/JsonApiServer/Endpoint/Concerns/FindsResources.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    This is directed at eager loading relationships apart from the request includes.
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasEagerLoading.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasAuthorization.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Flarum/Api/Endpoint/Concerns/HasCustomHooks.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasCustomHooks">HasCustomHooks</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasCustomHooks.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Tobyz\JsonApiServer\Schema\Concerns\HasMeta">HasMeta</abbr>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/JsonApiServer/Schema/Concerns/HasMeta.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Tobyz\JsonApiServer\Endpoint\Concerns\IncludesData">IncludesData</abbr>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/JsonApiServer/Endpoint/Concerns/IncludesData.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Tobyz\JsonApiServer\Schema\Concerns\HasVisibility">HasVisibility</abbr>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/JsonApiServer/Schema/Concerns/HasVisibility.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasHooks.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_loadRelations">
+                                        protected                                        <abbr title="Flarum\Api\Endpoint\Concerns\(string">(string</abbr>|<abbr title="Flarum\Api\Endpoint\Concerns\callable)">callable)</abbr>[]
+                </td>
+                <td>$loadRelations</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#property_loadRelations"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L26" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_loadRelationWhere">
+                                        protected                                        <abbr title="Flarum\Api\Endpoint\Concerns\array&lt;string,callable&gt;">array&lt;string,callable&gt;</abbr>
+                </td>
+                <td>$loadRelationWhere</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#property_loadRelationWhere"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L31" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authenticated">
+                                        protected                                        bool|Closure
+                </td>
+                <td>$authenticated</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#property_authenticated"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L25" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ability">
+                                        protected                                        null|string|Closure
+                </td>
+                <td>$ability</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#property_ability"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L27" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_admin">
+                                        protected                                        bool
+                </td>
+                <td>$admin</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#property_admin"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L29" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_before">
+                                        protected                                        array
+                </td>
+                <td>$before</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#property_before"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L17" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after">
+                                        protected                                        array
+                </td>
+                <td>$after</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#property_after"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L18" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_extractFilterCallback">
+                                        protected                                        <a target="_blank" href="http://php.net/Closure">Closure</a>|null
+                </td>
+                <td>$extractFilterCallback</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#property_extractFilterCallback"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L20" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_extractSortCallback">
+                                        protected                                        <a target="_blank" href="http://php.net/Closure">Closure</a>|null
+                </td>
+                <td>$extractSortCallback</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#property_extractSortCallback"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L21" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_extractLimitCallback">
+                                        protected                                        <a target="_blank" href="http://php.net/Closure">Closure</a>|null
+                </td>
+                <td>$extractLimitCallback</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#property_extractLimitCallback"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L22" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_extractOffsetCallback">
+                                        protected                                        <a target="_blank" href="http://php.net/Closure">Closure</a>|null
+                </td>
+                <td>$extractOffsetCallback</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#property_extractOffsetCallback"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L23" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_limit">
+                                                                                int|null
+                </td>
+                <td>$limit</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#property_limit"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L25" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maxLimit">
+                                                                                int
+                </td>
+                <td>$maxLimit</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#property_maxLimit"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L26" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultSort">
+                                                                                string|null
+                </td>
+                <td>$defaultSort</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#property_defaultSort"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L27" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_method">
+                                                                                string
+                </td>
+                <td>$method</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L37" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_path">
+                                                                                string
+                </td>
+                <td>$path</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L38" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_action">
+                                        protected                                        <a target="_blank" href="http://php.net/Closure">Closure</a>|null
+                </td>
+                <td>$action</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L40" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response">
+                                        protected                                        <a target="_blank" href="http://php.net/Closure">Closure</a>|null
+                </td>
+                <td>$response</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L41" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_beforeSerialization">
+                                        protected                                        array
+                </td>
+                <td>$beforeSerialization</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L42" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_showResource">showResource</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, mixed $model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ShowsResources.html#method_showResource"><abbr title="Flarum\Api\Endpoint\Concerns\ShowsResources">ShowsResources</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L22" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_eagerLoad">eagerLoad</a>(array|string|Closure $relations)
+        
+                                            <p>Eager loads relationships needed for serializer logic.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_eagerLoad"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L38" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_eagerLoadWhenIncluded">eagerLoadWhenIncluded</a>(array $includedToRelations)
+        
+                                            <p>Eager load relations when a relation is included in the serialized response.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_eagerLoadWhenIncluded"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L54" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_eagerLoadWhere">eagerLoadWhere</a>(string $relation, callable $callback)
+        
+                                            <p>Allows loading a relationship with additional query modification.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_eagerLoadWhere"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L80" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_loadRelations">loadRelations</a>(<abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr> $models, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $included = [])
+        
+                                            <p>Eager loads relationships before serialization.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_loadRelations"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L90" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_compileSimpleEagerLoads">compileSimpleEagerLoads</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $included)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_compileSimpleEagerLoads"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L129" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_compileWhereEagerLoads">compileWhereEagerLoads</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_compileWhereEagerLoads"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L145" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getEagerLoadsFor">getEagerLoadsFor</a>(string $included, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_getEagerLoadsFor"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L155" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getWhereEagerLoadsFor">getWhereEagerLoadsFor</a>(string $included, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_getWhereEagerLoadsFor"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L175" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_authenticated">authenticated</a>(bool|Closure $condition = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_authenticated"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L31" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_can">can</a>(null|string|Closure $ability)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_can"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L38" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_admin">admin</a>(bool $admin = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_admin"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L45" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getAuthenticated">getAuthenticated</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_getAuthenticated"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L52" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getAuthorized">getAuthorized</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_getAuthorized"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L63" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_isVisible">isVisible</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_isVisible"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L78" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_before">before</a>(<abbr title="Flarum\Api\Endpoint\Concerns\callable|string">callable|string</abbr> $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#method_before"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L20" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_after">after</a>(<abbr title="Flarum\Api\Endpoint\Concerns\callable|string">callable|string</abbr> $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#method_after"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L27" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_resolveCallable">resolveCallable</a>(<abbr title="Flarum\Api\Endpoint\Concerns\callable|string">callable|string</abbr> $callable, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#method_resolveCallable"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L34" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_callBeforeHook">callBeforeHook</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#method_callBeforeHook"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L43" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_callAfterHook">callAfterHook</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, mixed $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#method_callAfterHook"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L51" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_limit">limit</a>(int $limit)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_limit"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L29" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_maxLimit">maxLimit</a>(int $maxLimit)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_maxLimit"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L36" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractFilter">extractFilter</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractFilter"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L43" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractSort">extractSort</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractSort"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L50" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractLimit">extractLimit</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractLimit"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L57" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractOffset">extractOffset</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractOffset"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L64" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractFilterValue">extractFilterValue</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $defaultExtracts)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractFilterValue"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L71" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractSortValue">extractSortValue</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $defaultExtracts)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractSortValue"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L78" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractLimitValue">extractLimitValue</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $defaultExtracts)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractLimitValue"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L87" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extractOffsetValue">extractOffsetValue</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $defaultExtracts)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractOffsetValue"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L94" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_defaultExtracts">defaultExtracts</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_defaultExtracts"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L101" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getAvailableSorts">getAvailableSorts</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_getAvailableSorts"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L111" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L44" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_make">make</a>(string|null $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L49" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setUp">setUp</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L58" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_name">name</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L62" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_action">action</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $action)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L69" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_response">response</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $response)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L76" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_route">route</a>(string $method, string $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L83" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_beforeSerialization">beforeSerialization</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L91" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_process">process</a>(<a href="../../../Flarum/Api/Context.html"><abbr title="Flarum\Api\Context">Context</abbr></a> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L98" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Flarum\Api\Endpoint\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_handle">handle</a>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L110" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_showResource">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ShowsResources.html#method_showResource"><abbr title="Flarum\Api\Endpoint\Concerns\ShowsResources">ShowsResources</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ShowsResources.php#L22" target="_blank">
+            line 22
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>showResource</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, mixed $model)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_eagerLoad">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_eagerLoad"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasEagerLoading.php#L38" target="_blank">
+            line 38
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+    <strong>eagerLoad</strong>(array|string|Closure $relations)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Eager loads relationships needed for serializer logic.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string|Closure</td>
+                <td>$relations</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_eagerLoadWhenIncluded">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_eagerLoadWhenIncluded"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasEagerLoading.php#L54" target="_blank">
+            line 54
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+    <strong>eagerLoadWhenIncluded</strong>(array $includedToRelations)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Eager load relations when a relation is included in the serialized response.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$includedToRelations</td>
+                <td>An array of included relation to relations to load &#039;includedRelation&#039; =&gt; [&#039;relation1&#039;, &#039;relation2&#039;]</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_eagerLoadWhere">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_eagerLoadWhere"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasEagerLoading.php#L80" target="_blank">
+            line 80
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+    <strong>eagerLoadWhere</strong>(string $relation, callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Allows loading a relationship with additional query modification.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td>The callback to modify the query, should accept:
+- \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Relations\Relation $query: A query object.
+- Context $context: An instance of the API context.
+- array $relations: An array of relations that are to be loaded.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadRelations">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_loadRelations"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasEagerLoading.php#L90" target="_blank">
+            line 90
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>loadRelations</strong>(<abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr> $models, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $included = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Eager loads relationships before serialization.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr></td>
+                <td>$models</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$included</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileSimpleEagerLoads">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_compileSimpleEagerLoads"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasEagerLoading.php#L129" target="_blank">
+            line 129
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>compileSimpleEagerLoads</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $included)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$included</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileWhereEagerLoads">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_compileWhereEagerLoads"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasEagerLoading.php#L145" target="_blank">
+            line 145
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>compileWhereEagerLoads</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEagerLoadsFor">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_getEagerLoadsFor"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasEagerLoading.php#L155" target="_blank">
+            line 155
+        </a>
+        </div>
+        <code>                    array
+    <strong>getEagerLoadsFor</strong>(string $included, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$included</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWhereEagerLoadsFor">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasEagerLoading.html#method_getWhereEagerLoadsFor"><abbr title="Flarum\Api\Endpoint\Concerns\HasEagerLoading">HasEagerLoading</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasEagerLoading.php#L175" target="_blank">
+            line 175
+        </a>
+        </div>
+        <code>                    array
+    <strong>getWhereEagerLoadsFor</strong>(string $included, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$included</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_authenticated">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_authenticated"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasAuthorization.php#L31" target="_blank">
+            line 31
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+    <strong>authenticated</strong>(bool|Closure $condition = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool|Closure</td>
+                <td>$condition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_can">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_can"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasAuthorization.php#L38" target="_blank">
+            line 38
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+    <strong>can</strong>(null|string|Closure $ability)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|string|Closure</td>
+                <td>$ability</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_admin">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_admin"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasAuthorization.php#L45" target="_blank">
+            line 45
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+    <strong>admin</strong>(bool $admin = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$admin</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthenticated">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_getAuthenticated"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasAuthorization.php#L52" target="_blank">
+            line 52
+        </a>
+        </div>
+        <code>                    bool
+    <strong>getAuthenticated</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthorized">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_getAuthorized"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasAuthorization.php#L63" target="_blank">
+            line 63
+        </a>
+        </div>
+        <code>                    string|null
+    <strong>getAuthorized</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isVisible">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasAuthorization.html#method_isVisible"><abbr title="Flarum\Api\Endpoint\Concerns\HasAuthorization">HasAuthorization</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasAuthorization.php#L78" target="_blank">
+            line 78
+        </a>
+        </div>
+        <code>                    bool
+    <strong>isVisible</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/User/Exception/NotAuthenticatedException.html"><abbr title="Flarum\User\Exception\NotAuthenticatedException">NotAuthenticatedException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Flarum/User/Exception/PermissionDeniedException.html"><abbr title="Flarum\User\Exception\PermissionDeniedException">PermissionDeniedException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_before">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#method_before"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasHooks.php#L20" target="_blank">
+            line 20
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a>
+    <strong>before</strong>(<abbr title="Flarum\Api\Endpoint\Concerns\callable|string">callable|string</abbr> $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Flarum\Api\Endpoint\Concerns\callable|string">callable|string</abbr></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_after">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#method_after"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasHooks.php#L27" target="_blank">
+            line 27
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a>
+    <strong>after</strong>(<abbr title="Flarum\Api\Endpoint\Concerns\callable|string">callable|string</abbr> $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Flarum\Api\Endpoint\Concerns\callable|string">callable|string</abbr></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveCallable">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#method_resolveCallable"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasHooks.php#L34" target="_blank">
+            line 34
+        </a>
+        </div>
+        <code>            protected        callable
+    <strong>resolveCallable</strong>(<abbr title="Flarum\Api\Endpoint\Concerns\callable|string">callable|string</abbr> $callable, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Flarum\Api\Endpoint\Concerns\callable|string">callable|string</abbr></td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callBeforeHook">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#method_callBeforeHook"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasHooks.php#L43" target="_blank">
+            line 43
+        </a>
+        </div>
+        <code>                    void
+    <strong>callBeforeHook</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callAfterHook">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/HasHooks.html#method_callAfterHook"><abbr title="Flarum\Api\Endpoint\Concerns\HasHooks">HasHooks</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/HasHooks.php#L51" target="_blank">
+            line 51
+        </a>
+        </div>
+        <code>                    mixed
+    <strong>callAfterHook</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, mixed $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_limit">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_limit"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L29" target="_blank">
+            line 29
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+    <strong>limit</strong>(int $limit)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_maxLimit">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_maxLimit"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L36" target="_blank">
+            line 36
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+    <strong>maxLimit</strong>(int $maxLimit)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$maxLimit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractFilter">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractFilter"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L43" target="_blank">
+            line 43
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+    <strong>extractFilter</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractSort">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractSort"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L50" target="_blank">
+            line 50
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+    <strong>extractSort</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractLimit">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractLimit"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L57" target="_blank">
+            line 57
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+    <strong>extractLimit</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractOffset">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractOffset"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L64" target="_blank">
+            line 64
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+    <strong>extractOffset</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractFilterValue">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractFilterValue"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L71" target="_blank">
+            line 71
+        </a>
+        </div>
+        <code>                    array
+    <strong>extractFilterValue</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $defaultExtracts)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$defaultExtracts</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractSortValue">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractSortValue"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L78" target="_blank">
+            line 78
+        </a>
+        </div>
+        <code>                    array|null
+    <strong>extractSortValue</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $defaultExtracts)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$defaultExtracts</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractLimitValue">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractLimitValue"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L87" target="_blank">
+            line 87
+        </a>
+        </div>
+        <code>                    int|null
+    <strong>extractLimitValue</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $defaultExtracts)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$defaultExtracts</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractOffsetValue">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_extractOffsetValue"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L94" target="_blank">
+            line 94
+        </a>
+        </div>
+        <code>                    int
+    <strong>extractOffsetValue</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context, array $defaultExtracts)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$defaultExtracts</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defaultExtracts">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_defaultExtracts"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L101" target="_blank">
+            line 101
+        </a>
+        </div>
+        <code>                    array
+    <strong>defaultExtracts</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAvailableSorts">
+        <div class="location">
+                            in <a href="../../../Flarum/Api/Endpoint/Concerns/ExtractsListingParams.html#method_getAvailableSorts"><abbr title="Flarum\Api\Endpoint\Concerns\ExtractsListingParams">ExtractsListingParams</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Concerns/ExtractsListingParams.php#L111" target="_blank">
+            line 111
+        </a>
+        </div>
+        <code>                    array
+    <strong>getAvailableSorts</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L44" target="_blank">
+            line 44
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_make">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L49" target="_blank">
+            line 49
+        </a>
+        </div>
+        <code>        static            <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+    <strong>make</strong>(string|null $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUp">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L58" target="_blank">
+            line 58
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>setUp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_name">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L62" target="_blank">
+            line 62
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+    <strong>name</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_action">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L69" target="_blank">
+            line 69
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+    <strong>action</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $action)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_response">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L76" target="_blank">
+            line 76
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+    <strong>response</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_route">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L83" target="_blank">
+            line 83
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+    <strong>route</strong>(string $method, string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_beforeSerialization">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L91" target="_blank">
+            line 91
+        </a>
+        </div>
+        <code>                    <a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a>
+    <strong>beforeSerialization</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Flarum/Api/Endpoint/Endpoint.html"><abbr title="Flarum\Api\Endpoint\Endpoint">Endpoint</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L98" target="_blank">
+            line 98
+        </a>
+        </div>
+        <code>                    mixed
+    <strong>process</strong>(<a href="../../../Flarum/Api/Context.html"><abbr title="Flarum\Api\Context">Context</abbr></a> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Api/Context.html"><abbr title="Flarum\Api\Context">Context</abbr></a></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Endpoint/Endpoint.php#L110" target="_blank">
+            line 110
+        </a>
+        </div>
+        <code>                    <abbr title="Flarum\Api\Endpoint\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null
+    <strong>handle</strong>(<abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Api\Endpoint\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

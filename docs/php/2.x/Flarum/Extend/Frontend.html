@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Extend\Frontend | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Extend_Frontend" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            Frontend
+                
+            &nbsp;
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>Frontend</strong>        implements
+        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(string $frontend)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L44" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_css">css</a>(string $path)
+        
+                                            <p>Add a CSS file to load in the frontend.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L54" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_js">js</a>(string $path)
+        
+                                            <p>Add a JavaScript file to load in the frontend.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L66" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_jsDirectory">jsDirectory</a>(string $path)
+        
+                                            <p>Add a directory of JavaScript files to include in the JS assets public directory.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L80" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_route">route</a>(string $path, string $name, <abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr> $content = null)
+        
+                                            <p>Add a route to the frontend.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L100" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_removeRoute">removeRoute</a>(string $name)
+        
+                                            <p>Remove a route from the frontend.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L113" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_content">content</a>(<abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr> $callback, int $priority = 0)
+        
+                                            <p>Modify the content of the frontend.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L132" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_preloads">preloads</a>(<abbr title="Flarum\Extend\callable|array">callable|array</abbr> $preloads)
+        
+                                            <p>Adds multiple asset preloads.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L162" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_title">title</a>(string $driverClass)
+        
+                                            <p>Register a new title driver to change the title of frontend documents.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L174" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extraDocumentAttributes">extraDocumentAttributes</a>(array $attributes)
+        
+                                            <p>Adds document root attributes.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L189" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extraDocumentClasses">extraDocumentClasses</a>(<abbr title="Flarum\Extend\string|array|callable">string|array|callable</abbr> $classes)
+        
+                                            <p>Adds document root classes.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L205" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L210" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L44" target="_blank">
+            line 44
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(string $frontend)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$frontend</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_css">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L54" target="_blank">
+            line 54
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+    <strong>css</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a CSS file to load in the frontend.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_js">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L66" target="_blank">
+            line 66
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+    <strong>js</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a JavaScript file to load in the frontend.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsDirectory">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L80" target="_blank">
+            line 80
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+    <strong>jsDirectory</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a directory of JavaScript files to include in the JS assets public directory.</p>                    <p>Primarily used to copy JS chunks.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The path to the specific frontend chunks directory.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_route">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L100" target="_blank">
+            line 100
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+    <strong>route</strong>(string $path, string $name, <abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr> $content = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a route to the frontend.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr></td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeRoute">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L113" target="_blank">
+            line 113
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+    <strong>removeRoute</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove a route from the frontend.</p>                    <p>This is necessary before overriding a route.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_content">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L132" target="_blank">
+            line 132
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+    <strong>content</strong>(<abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr> $callback, int $priority = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Modify the content of the frontend.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_preloads">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L162" target="_blank">
+            line 162
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+    <strong>preloads</strong>(<abbr title="Flarum\Extend\callable|array">callable|array</abbr> $preloads)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds multiple asset preloads.</p>                    <p>The parameter should be an array of preload arrays, or a callable that returns this.
+
+A preload array must contain keys that pertain to the `&lt;link rel=&quot;preload&quot;&gt;` tag.
+
+For example, the following will add preload tags for a script and font file:
+```
+$frontend-&gt;preloads([
+  [
+    &#039;href&#039; =&gt; &#039;/assets/my-script.js&#039;,
+    &#039;as&#039; =&gt; &#039;script&#039;,
+  ],
+  [
+    &#039;href&#039; =&gt; &#039;/assets/fonts/my-font.woff2&#039;,
+    &#039;as&#039; =&gt; &#039;font&#039;,
+    &#039;type&#039; =&gt; &#039;font/woff2&#039;,
+    &#039;crossorigin&#039; =&gt; &#039;&#039;
+  ]
+]);
+```</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Flarum\Extend\callable|array">callable|array</abbr></td>
+                <td>$preloads</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_title">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L174" target="_blank">
+            line 174
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+    <strong>title</strong>(string $driverClass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Register a new title driver to change the title of frontend documents.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$driverClass</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extraDocumentAttributes">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L189" target="_blank">
+            line 189
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+    <strong>extraDocumentAttributes</strong>(array $attributes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds document root attributes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extraDocumentClasses">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L205" target="_blank">
+            line 205
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
+    <strong>extraDocumentClasses</strong>(<abbr title="Flarum\Extend\string|array|callable">string|array|callable</abbr> $classes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds document root classes.</p>                    <p>Can either be a string or an array of strings.
+
+An array can be of a format acceptable by the @class blade directive.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Flarum\Extend\string|array|callable">string|array|callable</abbr></td>
+                <td>$classes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Frontend.php#L210" target="_blank">
+            line 210
+        </a>
+        </div>
+        <code>                    void
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

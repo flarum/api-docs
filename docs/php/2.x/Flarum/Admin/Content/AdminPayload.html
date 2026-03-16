@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Admin_Content_AdminPayload" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Admin_Content_AdminPayload" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../../main" data-version="main">main</option>
-                                            <option value="../../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -104,13 +130,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions, <abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr> $db, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <abbr title="Flarum\Foundation\Config">Config</abbr> $config, <a href="../../../Flarum/Foundation/ApplicationInfoProvider.html"><abbr title="Flarum\Foundation\ApplicationInfoProvider">ApplicationInfoProvider</abbr></a> $appInfo)
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions, <abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr> $db, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config, <a href="../../../Flarum/Foundation/ApplicationInfoProvider.html"><abbr title="Flarum\Foundation\ApplicationInfoProvider">ApplicationInfoProvider</abbr></a> $appInfo, <a href="../../../Flarum/Foundation/MaintenanceMode.html"><abbr title="Flarum\Foundation\MaintenanceMode">MaintenanceMode</abbr></a> $maintenance, <a href="../../../Flarum/Foundation/FontAwesome.html"><abbr title="Flarum\Foundation\FontAwesome">FontAwesome</abbr></a> $fontAwesome)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L31" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L33" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -127,7 +153,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L42" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L46" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -144,24 +170,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L87" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    bool
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_checkAdvancedPageEmpty">checkAdvancedPageEmpty</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L102" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L116" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -176,12 +185,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L31" target="_blank">
-            line 31
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L33" target="_blank">
+            line 33
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions, <abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr> $db, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <abbr title="Flarum\Foundation\Config">Config</abbr> $config, <a href="../../../Flarum/Foundation/ApplicationInfoProvider.html"><abbr title="Flarum\Foundation\ApplicationInfoProvider">ApplicationInfoProvider</abbr></a> $appInfo)
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions, <abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr> $db, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config, <a href="../../../Flarum/Foundation/ApplicationInfoProvider.html"><abbr title="Flarum\Foundation\ApplicationInfoProvider">ApplicationInfoProvider</abbr></a> $appInfo, <a href="../../../Flarum/Foundation/MaintenanceMode.html"><abbr title="Flarum\Foundation\MaintenanceMode">MaintenanceMode</abbr></a> $maintenance, <a href="../../../Flarum/Foundation/FontAwesome.html"><abbr title="Flarum\Foundation\FontAwesome">FontAwesome</abbr></a> $fontAwesome)
         </code>
     </h3>
     <div class="details">
@@ -218,13 +227,23 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Foundation\Config">Config</abbr></td>
+                <td><a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a></td>
                 <td>$config</td>
                 <td></td>
             </tr>
                     <tr>
                 <td><a href="../../../Flarum/Foundation/ApplicationInfoProvider.html"><abbr title="Flarum\Foundation\ApplicationInfoProvider">ApplicationInfoProvider</abbr></a></td>
                 <td>$appInfo</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Flarum/Foundation/MaintenanceMode.html"><abbr title="Flarum\Foundation\MaintenanceMode">MaintenanceMode</abbr></a></td>
+                <td>$maintenance</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Flarum/Foundation/FontAwesome.html"><abbr title="Flarum\Foundation\FontAwesome">FontAwesome</abbr></a></td>
+                <td>$fontAwesome</td>
                 <td></td>
             </tr>
             </table>
@@ -239,8 +258,8 @@
                     <div class="method-item">
                     <h3 id="method___invoke">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L42" target="_blank">
-            line 42
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L46" target="_blank">
+            line 46
         </a>
         </div>
         <code>                    void
@@ -286,8 +305,8 @@
                     <div class="method-item">
                     <h3 id="method_getSearchDrivers">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L87" target="_blank">
-            line 87
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L116" target="_blank">
+            line 116
         </a>
         </div>
         <code>            protected        array
@@ -305,38 +324,6 @@
                     <table class="table table-condensed">
         <tr>
             <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_checkAdvancedPageEmpty">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L102" target="_blank">
-            line 102
-        </a>
-        </div>
-        <code>            protected        bool
-    <strong>checkAdvancedPageEmpty</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
             <td></td>
         </tr>
     </table>

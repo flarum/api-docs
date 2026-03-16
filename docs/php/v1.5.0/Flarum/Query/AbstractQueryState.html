@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Query_AbstractQueryState" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Query_AbstractQueryState" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,21 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" selected>v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -78,7 +105,7 @@
             AbstractQueryState
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -104,7 +131,7 @@
                 <td>$query</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L20" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L20" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -116,7 +143,7 @@
                 <td>$actor</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L25" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L25" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -128,7 +155,7 @@
                 <td>$defaultSort</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L30" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L30" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -150,7 +177,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L36" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L36" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -163,10 +190,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getQuery">getQuery</a>()
         
-                                            <p>&lt;p&gt;Get the query builder for the search results query.&lt;/p&gt;</p>                </div>
+                                            <p>Get the query builder for the search results query.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L48" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L48" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -179,10 +206,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getActor">getActor</a>()
         
-                                            <p>&lt;p&gt;Get the user who is performing the search.&lt;/p&gt;</p>                </div>
+                                            <p>Get the user who is performing the search.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L58" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L58" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -195,10 +222,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getDefaultSort">getDefaultSort</a>()
         
-                                            <p>&lt;p&gt;Get the default sort order for the search.&lt;/p&gt;</p>                </div>
+                                            <p>Get the default sort order for the search.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L68" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L68" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -211,11 +238,11 @@
                 <div class="col-md-6 type">
                     <a href="#method_setDefaultSort">setDefaultSort</a>(mixed $defaultSort)
         
-                                            <p>&lt;p&gt;Set the default sort order for the search. This will only be applied if
-a sort order has not been specified in the search criteria.&lt;/p&gt;</p>                </div>
+                                            <p>Set the default sort order for the search. This will only be applied if
+a sort order has not been specified in the search criteria.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L83" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L83" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -230,7 +257,7 @@ a sort order has not been specified in the search criteria.&lt;/p&gt;</p>       
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L36" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L36" target="_blank">
             line 36
         </a>
         </div>
@@ -273,7 +300,7 @@ a sort order has not been specified in the search criteria.&lt;/p&gt;</p>       
                     <div class="method-item">
                     <h3 id="method_getQuery">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L48" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L48" target="_blank">
             line 48
         </a>
         </div>
@@ -286,7 +313,7 @@ a sort order has not been specified in the search criteria.&lt;/p&gt;</p>       
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get the query builder for the search results query.&lt;/p&gt;</p>                                                </div>
+                                    <p>Get the query builder for the search results query.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -307,7 +334,7 @@ a sort order has not been specified in the search criteria.&lt;/p&gt;</p>       
                     <div class="method-item">
                     <h3 id="method_getActor">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L58" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L58" target="_blank">
             line 58
         </a>
         </div>
@@ -320,7 +347,7 @@ a sort order has not been specified in the search criteria.&lt;/p&gt;</p>       
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get the user who is performing the search.&lt;/p&gt;</p>                                                </div>
+                                    <p>Get the user who is performing the search.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -341,7 +368,7 @@ a sort order has not been specified in the search criteria.&lt;/p&gt;</p>       
                     <div class="method-item">
                     <h3 id="method_getDefaultSort">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L68" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L68" target="_blank">
             line 68
         </a>
         </div>
@@ -354,7 +381,7 @@ a sort order has not been specified in the search criteria.&lt;/p&gt;</p>       
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get the default sort order for the search.&lt;/p&gt;</p>                                                </div>
+                                    <p>Get the default sort order for the search.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -375,7 +402,7 @@ a sort order has not been specified in the search criteria.&lt;/p&gt;</p>       
                     <div class="method-item">
                     <h3 id="method_setDefaultSort">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Query/AbstractQueryState.php#L83" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Query/AbstractQueryState.php#L83" target="_blank">
             line 83
         </a>
         </div>
@@ -388,8 +415,8 @@ a sort order has not been specified in the search criteria.&lt;/p&gt;</p>       
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Set the default sort order for the search. This will only be applied if
-a sort order has not been specified in the search criteria.&lt;/p&gt;</p>                                                </div>
+                                    <p>Set the default sort order for the search. This will only be applied if
+a sort order has not been specified in the search criteria.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -397,10 +424,10 @@ a sort order has not been specified in the search criteria.&lt;/p&gt;</p>       
                     <tr>
                 <td>mixed</td>
                 <td>$defaultSort</td>
-                <td>&lt;p&gt;An array of sort-order pairs, where the column
+                <td>An array of sort-order pairs, where the column
 is the key, and the order is the value. The order may be &#039;asc&#039;,
 &#039;desc&#039;, or an array of IDs to order by.
-Alternatively, a callable may be used.&lt;/p&gt;</td>
+Alternatively, a callable may be used.</td>
             </tr>
             </table>
 

@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Database_Eloquent_Collection" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Database_Eloquent_Collection" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../../main" data-version="main">main</option>
-                                            <option value="../../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -106,10 +132,28 @@
                 <div class="col-md-6 type">
                     <a href="#method_loadAggregate">loadAggregate</a>($relations, $column, $function = null)
         
-                                            <p>&lt;p&gt;This is done to prevent conflicts when using visibility scopes.&lt;/p&gt;</p>                </div>
+                                            <p>This is done to prevent conflicts when using visibility scopes.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Eloquent/Collection.php#L47" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_loadMissingRelation">loadMissingRelation</a>(<abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr> $models, array $path)
+        
+                                            <p>The original Laravel logic uses -&gt;whereNotNull() which is an abstraction that unnecessarily causes
+attribute mutators to run, so if a mutator relies on an eager loaded relationship, the mutator
+will be executed before the call to -&gt;loadMissing() is over.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Eloquent/Collection.php#L65" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -137,9 +181,11 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;This is done to prevent conflicts when using visibility scopes.&lt;/p&gt;</p>                    <p>&lt;p&gt;Without this, we get the following example query when using a visibility scope
-and eager loading the count of &lt;code&gt;mentionedBy&lt;/code&gt;:.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-sql&quot;&gt;SELECT `id`, (
+                                    <p>This is done to prevent conflicts when using visibility scopes.</p>                    <p>Without this, we get the following example query when using a visibility scope
+and eager loading the count of `mentionedBy`:.
+
+```sql
+SELECT `id`, (
   SELECT count(*)
   FROM `posts` AS `laravel_reserved_0`
   INNER JOIN `post_mentions_post` ON `laravel_reserved_0`.`id` = `post_mentions_post`.`post_id`
@@ -150,8 +196,10 @@ and eager loading the count of &lt;code&gt;mentionedBy&lt;/code&gt;:.&lt;/p&gt;
     AND `TYPE` in (&#039;discussionTagged&#039;, &#039;discussionStickied&#039;, &#039;discussionLocked&#039;, &#039;comment&#039;, &#039;discussionRenamed&#039;)
 ) AS `mentioned_by_count`
 FROM `posts`
-WHERE `posts`.`id` in (23642)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So by applying an alias on the parent query, we prevent Laravel from auto aliasing the sub-query.&lt;/p&gt;</p>                            </div>
+WHERE `posts`.`id` in (23642)
+```
+
+So by applying an alias on the parent query, we prevent Laravel from auto aliasing the sub-query.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -179,6 +227,57 @@ WHERE `posts`.`id` in (23642)&lt;/code&gt;&lt;/pre&gt;
                     <table class="table table-condensed">
         <tr>
             <td><a href="../../../Flarum/Database/Eloquent/Collection.html"><abbr title="Flarum\Database\Eloquent\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadMissingRelation">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Eloquent/Collection.php#L65" target="_blank">
+            line 65
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>loadMissingRelation</strong>(<abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr> $models, array $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The original Laravel logic uses -&gt;whereNotNull() which is an abstraction that unnecessarily causes
+attribute mutators to run, so if a mutator relies on an eager loaded relationship, the mutator
+will be executed before the call to -&gt;loadMissing() is over.</p>                    <p>We replace it with a simple -&gt;where(fn (mixed $relation) =&gt; $relation !== null) to avoid this issue.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr></td>
+                <td>$models</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
             <td></td>
         </tr>
     </table>

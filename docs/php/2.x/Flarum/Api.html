@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="namespace" data-name="namespace:Flarum_Api" data-root-path="../">
+    <body id="namespace" data-name="namespace:Flarum_Api" data-root-path="../" data-search-index-url="../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../main" data-version="main">main</option>
-                                            <option value="../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -87,7 +113,7 @@
 
             <h2>Namespaces</h2>
         <div class="namespace-list">
-            <a href="../Flarum/Api/Controller.html">Flarum\Api\Controller</a><a href="../Flarum/Api/Exception.html">Flarum\Api\Exception</a><a href="../Flarum/Api/Middleware.html">Flarum\Api\Middleware</a><a href="../Flarum/Api/Serializer.html">Flarum\Api\Serializer</a>        </div>
+            <a href="../Flarum/Api/Controller.html">Flarum\Api\Controller</a><a href="../Flarum/Api/Endpoint.html">Flarum\Api\Endpoint</a><a href="../Flarum/Api/Exception.html">Flarum\Api\Exception</a><a href="../Flarum/Api/Middleware.html">Flarum\Api\Middleware</a><a href="../Flarum/Api/Resource.html">Flarum\Api\Resource</a><a href="../Flarum/Api/Schema.html">Flarum\Api\Schema</a><a href="../Flarum/Api/Sort.html">Flarum\Api\Sort</a>        </div>
     
             <h2>Classes</h2>
         
@@ -102,6 +128,21 @@
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ApiKey.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Flarum/Api/ApiKeyFactory.html"><abbr title="Flarum\Api\ApiKeyFactory">ApiKeyFactory</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ApiKeyFactory.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 
@@ -154,6 +195,21 @@
             </div>
                     <div class="row">
                 <div class="col-md-6">
+                                            <a href="../Flarum/Api/Context.html"><abbr title="Flarum\Api\Context">Context</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Context.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
                                             <a href="../Flarum/Api/ForgotPasswordValidator.html"><abbr title="Flarum\Api\ForgotPasswordValidator">ForgotPasswordValidator</abbr></a>
                                             
                 </div>
@@ -169,6 +225,21 @@
             </div>
                     <div class="row">
                 <div class="col-md-6">
+                                            <a href="../Flarum/Api/JsonApi.html"><abbr title="Flarum\Api\JsonApi">JsonApi</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/JsonApi.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
                                             <a href="../Flarum/Api/JsonApiResponse.html"><abbr title="Flarum\Api\JsonApiResponse">JsonApiResponse</abbr></a>
                                             
                 </div>
@@ -177,6 +248,21 @@
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/JsonApiResponse.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Flarum/Api/Serializer.html"><abbr title="Flarum\Api\Serializer">Serializer</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Serializer.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 

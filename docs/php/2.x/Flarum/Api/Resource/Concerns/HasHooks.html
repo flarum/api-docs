@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Api\Resource\Concerns\HasHooks | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../assets/app.min.css">
+        <script src="../../../../assets/app.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Api_Resource_Concerns_HasHooks" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            HasHooks
+                
+            &nbsp;
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>            trait
+    <strong>HasHooks</strong></p>
+
+        
+    
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Flarum/Foundation/DispatchEventsTrait.html"><abbr title="Flarum\Foundation\DispatchEventsTrait">DispatchEventsTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/DispatchEventsTrait.php" target="_blank">
+        <img src="../../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_dispatchEventsFor">dispatchEventsFor</a>(mixed $entity, <abbr title="Flarum\Api\Resource\Concerns\Flarum\User\User">User</abbr>|null $actor = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L183" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_createAction">createAction</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L34" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_updateAction">updateAction</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L61" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_deleteAction">deleteAction</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L88" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_creating">creating</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L110" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_updating">updating</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L120" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_saving">saving</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L130" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_saved">saved</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L140" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_created">created</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L150" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_updated">updated</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L160" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_deleting">deleting</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L169" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_deleted">deleted</a>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L178" target="_blank">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_dispatchEventsFor">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L183" target="_blank">
+            line 183
+        </a>
+        </div>
+        <code>                    void
+    <strong>dispatchEventsFor</strong>(mixed $entity, <abbr title="Flarum\Api\Resource\Concerns\Flarum\User\User">User</abbr>|null $actor = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Api\Resource\Concerns\Flarum\User\User">User</abbr>|null</td>
+                <td>$actor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createAction">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L34" target="_blank">
+            line 34
+        </a>
+        </div>
+        <code>                    object
+    <strong>createAction</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateAction">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L61" target="_blank">
+            line 61
+        </a>
+        </div>
+        <code>                    object
+    <strong>updateAction</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteAction">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L88" target="_blank">
+            line 88
+        </a>
+        </div>
+        <code>                    void
+    <strong>deleteAction</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_creating">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L110" target="_blank">
+            line 110
+        </a>
+        </div>
+        <code>                    object|null
+    <strong>creating</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updating">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L120" target="_blank">
+            line 120
+        </a>
+        </div>
+        <code>                    object|null
+    <strong>updating</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saving">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L130" target="_blank">
+            line 130
+        </a>
+        </div>
+        <code>                    object|null
+    <strong>saving</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saved">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L140" target="_blank">
+            line 140
+        </a>
+        </div>
+        <code>                    object|null
+    <strong>saved</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_created">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L150" target="_blank">
+            line 150
+        </a>
+        </div>
+        <code>                    object|null
+    <strong>created</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updated">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L160" target="_blank">
+            line 160
+        </a>
+        </div>
+        <code>                    object|null
+    <strong>updated</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleting">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L169" target="_blank">
+            line 169
+        </a>
+        </div>
+        <code>                    void
+    <strong>deleting</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleted">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Resource/Concerns/HasHooks.php#L178" target="_blank">
+            line 178
+        </a>
+        </div>
+        <code>                    void
+    <strong>deleted</strong>(object $model, <abbr title="Tobyz\JsonApiServer\Context">Context</abbr> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tobyz\JsonApiServer\Context">Context</abbr></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

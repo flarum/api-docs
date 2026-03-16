@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Extend\Theme | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Extend_Theme" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" selected>1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            Theme
+                
+            &nbsp;
+                <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>Theme</strong>        implements
+        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_overrideLessImport">overrideLessImport</a>(string $file, string $newFilePath, string $extensionId = null)
+        
+                                            <p>This can be used to override LESS files that are imported within the code.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php#L34" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_overrideFileSource">overrideFileSource</a>(string $file, string $newFilePath, string $extensionId = null)
+        
+                                            <p>This method allows overriding LESS file sources.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php#L51" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_addCustomLessFunction">addCustomLessFunction</a>(string $functionName, callable $callable)
+        
+                                            <p>This method allows you to add custom Less functions.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php#L77" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_addCustomLessVariable">addCustomLessVariable</a>(string $variableName, callable $value)
+        
+                                            <p>Defines a new Less variable to be accessible in all Less files.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php#L132" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php#L139" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_overrideLessImport">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php#L34" target="_blank">
+            line 34
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+    <strong>overrideLessImport</strong>(string $file, string $newFilePath, string $extensionId = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This can be used to override LESS files that are imported within the code.</p>                    <p>For example, core&#039;s `forum.less` file imports a `forum/DiscussionListItem.less` file.
+The contents of this file can be overriden with this method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td>: Relative path of the file to override, for example: `forum/Hero.less`</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$newFilePath</td>
+                <td>: Absolute path of the new file.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$extensionId</td>
+                <td>: If overriding an extension file, specify its ID, for example: `flarum-tags`.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_overrideFileSource">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php#L51" target="_blank">
+            line 51
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+    <strong>overrideFileSource</strong>(string $file, string $newFilePath, string $extensionId = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This method allows overriding LESS file sources.</p>                    <p>For example `forum.less`, `admin.less`, `mixins.less` and `variables.less` are file sources,
+and can therefore be overriden using this method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td>: Name of the file to override, for example: `admin.less`</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$newFilePath</td>
+                <td>: Absolute path of the new file.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$extensionId</td>
+                <td>: If overriding an extension file, specify its ID, for example: `flarum-tags`.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addCustomLessFunction">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php#L77" target="_blank">
+            line 77
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+    <strong>addCustomLessFunction</strong>(string $functionName, callable $callable)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This method allows you to add custom Less functions.</p>                    <p>All custom Less functions may only return numbers, strings or booleans.
+
+**Example usage:**
+```php
+(new Extend\Theme)
+    -&gt;addCustomLessFunction(&#039;is-flarum&#039;, function (mixed $text) {
+        return strtolower($text) === &#039;flarum&#039;
+    }),
+```</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$functionName</td>
+                <td>Name of the function identifier.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callable</td>
+                <td>The PHP function to run when the Less function is called.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://leafo.net/lessphp/docs/#custom_functions">https://leafo.net/lessphp/docs/#custom_functions</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addCustomLessVariable">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php#L132" target="_blank">
+            line 132
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+    <strong>addCustomLessVariable</strong>(string $variableName, callable $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Defines a new Less variable to be accessible in all Less files.</p>                    <p>If you want to expose a setting from your database to Less, you should use
+the `registerLessConfigVar` extender from `Extend\Settings` instead.
+
+Please note the value returned from the callable will be inserted directly
+into the Less source. If it is unsafe in some way (e.g., contains a
+semi-colon), this will result in potential security issues with your
+stylesheet.
+
+Likewise, if you need your variable to be a string, you should surround it
+with quotes yourself.
+
+```php
+(new Extend\Theme())
+  -&gt;addCustomLessVariable(&#039;my-extension__asset_path&#039;, function () {
+    $url = resolve(UrlGenerator::class);
+    $assetUrl = $url-&gt;to(&#039;forum&#039;)-&gt;base().&#039;/assets/extensions/my-extension/my-asset.jpg&#039;;
+    return &quot;\&quot;$assetUrl\&quot;&quot;;
+  })
+```</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$variableName</td>
+                <td>Name of the variable identifier.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$value</td>
+                <td>The PHP function to run, which returns the value for the variable.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extend/Theme.php#L139" target="_blank">
+            line 139
+        </a>
+        </div>
+        <code>                    
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a> $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a></td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

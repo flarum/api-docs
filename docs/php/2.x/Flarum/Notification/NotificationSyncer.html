@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Notification_NotificationSyncer" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Notification_NotificationSyncer" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
-                                            <option value="../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -93,10 +119,10 @@
     
 
             <div class="description">
-            <p><p>The Notification Syncer commits notification blueprints to the database, and
+            <p>The Notification Syncer commits notification blueprints to the database, and
 sends them via email depending on user preference. Where a blueprint
 represents a single notification, the syncer associates it with a particular
-user(s) and makes it available in their inbox.</p></p>                                </div>
+user(s) and makes it available in their inbox.</p>                                </div>
     
     
     
@@ -105,10 +131,10 @@ user(s) and makes it available in their inbox.</p></p>                          
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_onePerUser">
-                    static                    protected                                        
+                    static                    protected                                        bool
                 </td>
                 <td>$onePerUser</td>
-                <td class="last">&lt;p&gt;Whether notifications are being limited to one per user.&lt;/p&gt;</td>
+                <td class="last">Whether notifications are being limited to one per user.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L27" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -120,7 +146,7 @@ user(s) and makes it available in their inbox.</p></p>                          
                     static                    protected                                        int[]
                 </td>
                 <td>$sentTo</td>
-                <td class="last">&lt;p&gt;An internal list of user IDs that notifications have been sent to.&lt;/p&gt;</td>
+                <td class="last">An internal list of user IDs that notifications have been sent to.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L34" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -132,7 +158,7 @@ user(s) and makes it available in their inbox.</p></p>                          
                     static                    protected                                        <a href="../../Flarum/Notification/Driver/NotificationDriverInterface.html"><abbr title="Flarum\Notification\Driver\NotificationDriverInterface">NotificationDriverInterface</abbr></a>[]
                 </td>
                 <td>$notificationDrivers</td>
-                <td class="last">&lt;p&gt;A map of notification drivers.&lt;/p&gt;</td>
+                <td class="last">A map of notification drivers.</td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L41" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
@@ -164,9 +190,9 @@ user(s) and makes it available in their inbox.</p></p>                          
                 <div class="col-md-6 type">
                     <a href="#method_sync">sync</a>(<a href="../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint, array $users)
         
-                                            <p>&lt;p&gt;Sync a notification so that it is visible to the specified users, and not
+                                            <p>Sync a notification so that it is visible to the specified users, and not
 visible to anyone else. If it is being made visible for the first time,
-attempt to send the user an email.&lt;/p&gt;</p>                </div>
+attempt to send the user an email.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L55" target="_blank">
@@ -182,10 +208,10 @@ attempt to send the user an email.&lt;/p&gt;</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_delete">delete</a>(<a href="../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint)
         
-                                            <p>&lt;p&gt;Delete a notification for all users.&lt;/p&gt;</p>                </div>
+                                            <p>Delete a notification for all users.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L114" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L110" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -198,10 +224,10 @@ attempt to send the user an email.&lt;/p&gt;</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_restore">restore</a>(<a href="../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a> $blueprint)
         
-                                            <p>&lt;p&gt;Restore a notification for all users.&lt;/p&gt;</p>                </div>
+                                            <p>Restore a notification for all users.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L122" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L118" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -214,11 +240,11 @@ attempt to send the user an email.&lt;/p&gt;</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_onePerUser">onePerUser</a>(callable $callback)
         
-                                            <p>&lt;p&gt;Limit notifications to one per user for the entire duration of the given
-callback.&lt;/p&gt;</p>                </div>
+                                            <p>Limit notifications to one per user for the entire duration of the given
+callback.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L131" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L128" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -231,10 +257,10 @@ callback.&lt;/p&gt;</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_setDeleted">setDeleted</a>(array $ids, bool $isDeleted)
         
-                                            <p>&lt;p&gt;Set the deleted status of a list of notification records.&lt;/p&gt;</p>                </div>
+                                            <p>Set the deleted status of a list of notification records.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L146" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L143" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -251,7 +277,7 @@ callback.&lt;/p&gt;</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L154" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L151" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -268,7 +294,7 @@ callback.&lt;/p&gt;</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L162" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L159" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -285,7 +311,7 @@ callback.&lt;/p&gt;</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L170" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L167" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -313,9 +339,9 @@ callback.&lt;/p&gt;</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Sync a notification so that it is visible to the specified users, and not
+                                    <p>Sync a notification so that it is visible to the specified users, and not
 visible to anyone else. If it is being made visible for the first time,
-attempt to send the user an email.&lt;/p&gt;</p>                                                </div>
+attempt to send the user an email.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -351,8 +377,8 @@ attempt to send the user an email.&lt;/p&gt;</p>                                
                     <div class="method-item">
                     <h3 id="method_delete">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L114" target="_blank">
-            line 114
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L110" target="_blank">
+            line 110
         </a>
         </div>
         <code>                    void
@@ -364,7 +390,7 @@ attempt to send the user an email.&lt;/p&gt;</p>                                
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Delete a notification for all users.&lt;/p&gt;</p>                                                </div>
+                                    <p>Delete a notification for all users.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -395,8 +421,8 @@ attempt to send the user an email.&lt;/p&gt;</p>                                
                     <div class="method-item">
                     <h3 id="method_restore">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L122" target="_blank">
-            line 122
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L118" target="_blank">
+            line 118
         </a>
         </div>
         <code>                    void
@@ -408,7 +434,7 @@ attempt to send the user an email.&lt;/p&gt;</p>                                
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Restore a notification for all users.&lt;/p&gt;</p>                                                </div>
+                                    <p>Restore a notification for all users.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -439,8 +465,8 @@ attempt to send the user an email.&lt;/p&gt;</p>                                
                     <div class="method-item">
                     <h3 id="method_onePerUser">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L131" target="_blank">
-            line 131
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L128" target="_blank">
+            line 128
         </a>
         </div>
         <code>                    void
@@ -452,8 +478,8 @@ attempt to send the user an email.&lt;/p&gt;</p>                                
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Limit notifications to one per user for the entire duration of the given
-callback.&lt;/p&gt;</p>                                                </div>
+                                    <p>Limit notifications to one per user for the entire duration of the given
+callback.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -484,8 +510,8 @@ callback.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_setDeleted">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L146" target="_blank">
-            line 146
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L143" target="_blank">
+            line 143
         </a>
         </div>
         <code>            protected        void
@@ -497,7 +523,7 @@ callback.&lt;/p&gt;</p>                                                </div>
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Set the deleted status of a list of notification records.&lt;/p&gt;</p>                                                </div>
+                                    <p>Set the deleted status of a list of notification records.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -533,8 +559,8 @@ callback.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_addNotificationDriver">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L154" target="_blank">
-            line 154
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L151" target="_blank">
+            line 151
         </a>
         </div>
         <code>        static            void
@@ -580,8 +606,8 @@ callback.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_getNotificationDrivers">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L162" target="_blank">
-            line 162
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L159" target="_blank">
+            line 159
         </a>
         </div>
         <code>        static            array
@@ -612,8 +638,8 @@ callback.&lt;/p&gt;</p>                                                </div>
                     <div class="method-item">
                     <h3 id="method_beforeSending">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L170" target="_blank">
-            line 170
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/NotificationSyncer.php#L167" target="_blank">
+            line 167
         </a>
         </div>
         <code>        static            void

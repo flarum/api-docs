@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Extend_Filesystem" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Extend_Filesystem" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,21 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" selected>v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -78,7 +105,7 @@
             Filesystem
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/Filesystem.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/Filesystem.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -106,10 +133,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_disk">disk</a>(string $name, string|callable $callback)
         
-                                            <p>&lt;p&gt;Declare a new filesystem disk.&lt;/p&gt;</p>                </div>
+                                            <p>Declare a new filesystem disk.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/Filesystem.php#L56" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/Filesystem.php#L56" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -122,10 +149,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_driver">driver</a>(string $name, string $driverClass)
         
-                                            <p>&lt;p&gt;Register a new filesystem driver.&lt;/p&gt;</p>                </div>
+                                            <p>Register a new filesystem driver.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/Filesystem.php#L71" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/Filesystem.php#L71" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -142,7 +169,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/Filesystem.php#L78" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/Filesystem.php#L78" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -157,7 +184,7 @@
                     <div class="method-item">
                     <h3 id="method_disk">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/Filesystem.php#L56" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/Filesystem.php#L56" target="_blank">
             line 56
         </a>
         </div>
@@ -170,11 +197,13 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Declare a new filesystem disk.&lt;/p&gt;</p>                    <p>&lt;p&gt;Disks represent storage locations, and are backed by storage drivers.
-Flarum core uses disks for storing assets and avatars.&lt;/p&gt;
-&lt;p&gt;By default, the &amp;quot;local&amp;quot; driver will be used for disks.
-The &amp;quot;local&amp;quot; driver represents the filesystem where your Flarum installation is running.&lt;/p&gt;
-&lt;p&gt;To declare a new disk, you must provide default configuration a &amp;quot;local&amp;quot; driver.&lt;/p&gt;</p>                            </div>
+                                    <p>Declare a new filesystem disk.</p>                    <p>Disks represent storage locations, and are backed by storage drivers.
+Flarum core uses disks for storing assets and avatars.
+
+By default, the &quot;local&quot; driver will be used for disks.
+The &quot;local&quot; driver represents the filesystem where your Flarum installation is running.
+
+To declare a new disk, you must provide default configuration a &quot;local&quot; driver.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -187,16 +216,13 @@ The &amp;quot;local&amp;quot; driver represents the filesystem where your Flarum
                     <tr>
                 <td>string|callable</td>
                 <td>$callback</td>
-                <td>&lt;p&gt;The callback can be a closure or an invokable class, and should accept:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;\Flarum\Foundation\Paths $paths&lt;/li&gt;
-&lt;li&gt;\Flarum\Http\UrlGenerator $url&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The callable should return:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A Laravel disk config array,
-The &lt;code&gt;driver&lt;/code&gt; key is not necessary for this array, and will be ignored.&lt;/li&gt;
-&lt;/ul&gt;</td>
+                <td>The callback can be a closure or an invokable class, and should accept:
+ - \Flarum\Foundation\Paths $paths
+ - \Flarum\Http\UrlGenerator $url
+
+The callable should return:
+- A Laravel disk config array,
+  The `driver` key is not necessary for this array, and will be ignored.</td>
             </tr>
             </table>
 
@@ -230,7 +256,7 @@ The &lt;code&gt;driver&lt;/code&gt; key is not necessary for this array, and wil
                     <div class="method-item">
                     <h3 id="method_driver">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/Filesystem.php#L71" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/Filesystem.php#L71" target="_blank">
             line 71
         </a>
         </div>
@@ -243,7 +269,7 @@ The &lt;code&gt;driver&lt;/code&gt; key is not necessary for this array, and wil
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Register a new filesystem driver.&lt;/p&gt;</p>                                                </div>
+                                    <p>Register a new filesystem driver.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -279,7 +305,7 @@ The &lt;code&gt;driver&lt;/code&gt; key is not necessary for this array, and wil
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.5.0/src/Extend/Filesystem.php#L78" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.5.0/framework/core/src/Extend/Filesystem.php#L78" target="_blank">
             line 78
         </a>
         </div>

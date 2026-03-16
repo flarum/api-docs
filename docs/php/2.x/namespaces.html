@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="namespaces" data-name="" data-root-path="">
+    <body id="namespaces" data-name="" data-root-path="" data-search-index-url="doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../main" data-version="main">main</option>
-                                            <option value="../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -78,7 +104,8 @@
     </div>
 
             <div class="namespaces clearfix">
-                                                                                                <div class="namespace-container">
+                                                                        <li><a href="[Global_Namespace].html">[Global Namespace]</a></li>
+                                                                                    <div class="namespace-container">
                         <h2>Flarum</h2>
                         <ul>
                                                     <li><a href="Flarum.html">Flarum</a></li>
@@ -88,9 +115,19 @@
                                                             <li><a href="Flarum/Admin/Middleware.html">Flarum\Admin\Middleware</a></li>
                                                             <li><a href="Flarum/Api.html">Flarum\Api</a></li>
                                                             <li><a href="Flarum/Api/Controller.html">Flarum\Api\Controller</a></li>
+                                                            <li><a href="Flarum/Api/Endpoint.html">Flarum\Api\Endpoint</a></li>
+                                                            <li><a href="Flarum/Api/Endpoint/Concerns.html">Flarum\Api\Endpoint\Concerns</a></li>
                                                             <li><a href="Flarum/Api/Exception.html">Flarum\Api\Exception</a></li>
                                                             <li><a href="Flarum/Api/Middleware.html">Flarum\Api\Middleware</a></li>
-                                                            <li><a href="Flarum/Api/Serializer.html">Flarum\Api\Serializer</a></li>
+                                                            <li><a href="Flarum/Api/Resource.html">Flarum\Api\Resource</a></li>
+                                                            <li><a href="Flarum/Api/Resource/Concerns.html">Flarum\Api\Resource\Concerns</a></li>
+                                                            <li><a href="Flarum/Api/Resource/Contracts.html">Flarum\Api\Resource\Contracts</a></li>
+                                                            <li><a href="Flarum/Api/Schema.html">Flarum\Api\Schema</a></li>
+                                                            <li><a href="Flarum/Api/Schema/Concerns.html">Flarum\Api\Schema\Concerns</a></li>
+                                                            <li><a href="Flarum/Api/Schema/Contracts.html">Flarum\Api\Schema\Contracts</a></li>
+                                                            <li><a href="Flarum/Api/Schema/Relationship.html">Flarum\Api\Schema\Relationship</a></li>
+                                                            <li><a href="Flarum/Api/Schema/Type.html">Flarum\Api\Schema\Type</a></li>
+                                                            <li><a href="Flarum/Api/Sort.html">Flarum\Api\Sort</a></li>
                                                             <li><a href="Flarum/Bus.html">Flarum\Bus</a></li>
                                                             <li><a href="Flarum/Console.html">Flarum\Console</a></li>
                                                             <li><a href="Flarum/Console/Cache.html">Flarum\Console\Cache</a></li>
@@ -130,7 +167,6 @@
                                                             <li><a href="Flarum/Frontend/Driver.html">Flarum\Frontend\Driver</a></li>
                                                             <li><a href="Flarum/Group.html">Flarum\Group</a></li>
                                                             <li><a href="Flarum/Group/Access.html">Flarum\Group\Access</a></li>
-                                                            <li><a href="Flarum/Group/Command.html">Flarum\Group\Command</a></li>
                                                             <li><a href="Flarum/Group/Event.html">Flarum\Group\Event</a></li>
                                                             <li><a href="Flarum/Group/Filter.html">Flarum\Group\Filter</a></li>
                                                             <li><a href="Flarum/Http.html">Flarum\Http</a></li>
@@ -145,16 +181,21 @@
                                                             <li><a href="Flarum/Install/Console.html">Flarum\Install\Console</a></li>
                                                             <li><a href="Flarum/Install/Controller.html">Flarum\Install\Controller</a></li>
                                                             <li><a href="Flarum/Install/Prerequisite.html">Flarum\Install\Prerequisite</a></li>
+                                                            <li><a href="Flarum/Install/Steps.html">Flarum\Install\Steps</a></li>
                                                             <li><a href="Flarum/Locale.html">Flarum\Locale</a></li>
+                                                            <li><a href="Flarum/Log.html">Flarum\Log</a></li>
+                                                            <li><a href="Flarum/Log/Context.html">Flarum\Log\Context</a></li>
                                                             <li><a href="Flarum/Mail.html">Flarum\Mail</a></li>
+                                                            <li><a href="Flarum/Mail/Event.html">Flarum\Mail\Event</a></li>
+                                                            <li><a href="Flarum/Mail/Job.html">Flarum\Mail\Job</a></li>
                                                             <li><a href="Flarum/Notification.html">Flarum\Notification</a></li>
                                                             <li><a href="Flarum/Notification/Blueprint.html">Flarum\Notification\Blueprint</a></li>
                                                             <li><a href="Flarum/Notification/Command.html">Flarum\Notification\Command</a></li>
                                                             <li><a href="Flarum/Notification/Driver.html">Flarum\Notification\Driver</a></li>
                                                             <li><a href="Flarum/Notification/Event.html">Flarum\Notification\Event</a></li>
+                                                            <li><a href="Flarum/Notification/Job.html">Flarum\Notification\Job</a></li>
                                                             <li><a href="Flarum/Post.html">Flarum\Post</a></li>
                                                             <li><a href="Flarum/Post/Access.html">Flarum\Post\Access</a></li>
-                                                            <li><a href="Flarum/Post/Command.html">Flarum\Post\Command</a></li>
                                                             <li><a href="Flarum/Post/Event.html">Flarum\Post\Event</a></li>
                                                             <li><a href="Flarum/Post/Exception.html">Flarum\Post\Exception</a></li>
                                                             <li><a href="Flarum/Post/Filter.html">Flarum\Post\Filter</a></li>
@@ -171,7 +212,9 @@
                                                             <li><a href="Flarum/Update/Controller.html">Flarum\Update\Controller</a></li>
                                                             <li><a href="Flarum/User.html">Flarum\User</a></li>
                                                             <li><a href="Flarum/User/Access.html">Flarum\User\Access</a></li>
+                                                            <li><a href="Flarum/User/Avatar.html">Flarum\User\Avatar</a></li>
                                                             <li><a href="Flarum/User/Command.html">Flarum\User\Command</a></li>
+                                                            <li><a href="Flarum/User/Console.html">Flarum\User\Console</a></li>
                                                             <li><a href="Flarum/User/DisplayName.html">Flarum\User\DisplayName</a></li>
                                                             <li><a href="Flarum/User/Event.html">Flarum\User\Event</a></li>
                                                             <li><a href="Flarum/User/Exception.html">Flarum\User\Exception</a></li>

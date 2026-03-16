@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="namespace" data-name="namespace:Flarum_Install" data-root-path="../">
+    <body id="namespace" data-name="namespace:Flarum_Install" data-root-path="../" data-search-index-url="../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../main" data-version="main">main</option>
-                                            <option value="../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -87,11 +113,26 @@
 
             <h2>Namespaces</h2>
         <div class="namespace-list">
-            <a href="../Flarum/Install/Console.html">Flarum\Install\Console</a><a href="../Flarum/Install/Controller.html">Flarum\Install\Controller</a><a href="../Flarum/Install/Prerequisite.html">Flarum\Install\Prerequisite</a>        </div>
+            <a href="../Flarum/Install/Console.html">Flarum\Install\Console</a><a href="../Flarum/Install/Controller.html">Flarum\Install\Controller</a><a href="../Flarum/Install/Prerequisite.html">Flarum\Install\Prerequisite</a><a href="../Flarum/Install/Steps.html">Flarum\Install\Steps</a>        </div>
     
             <h2>Classes</h2>
         
     <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Flarum/Install/AdminUser.html"><abbr title="Flarum\Install\AdminUser">AdminUser</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Install/AdminUser.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
                     <div class="row">
                 <div class="col-md-6">
                                             <a href="../Flarum/Install/BaseUrl.html"><abbr title="Flarum\Install\BaseUrl">BaseUrl</abbr></a>
@@ -109,6 +150,21 @@
             </div>
                     <div class="row">
                 <div class="col-md-6">
+                                            <a href="../Flarum/Install/DatabaseConfig.html"><abbr title="Flarum\Install\DatabaseConfig">DatabaseConfig</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Install/DatabaseConfig.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
                                             <a href="../Flarum/Install/InstallServiceProvider.html"><abbr title="Flarum\Install\InstallServiceProvider">InstallServiceProvider</abbr></a>
                                             
                 </div>
@@ -117,6 +173,21 @@
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Install/InstallServiceProvider.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Flarum/Install/Installation.html"><abbr title="Flarum\Install\Installation">Installation</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Install/Installation.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 

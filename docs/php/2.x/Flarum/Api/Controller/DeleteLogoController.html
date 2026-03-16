@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Api_Controller_DeleteLogoController" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Api_Controller_DeleteLogoController" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../../main" data-version="main">main</option>
-                                            <option value="../../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -99,13 +125,25 @@
 
             <table class="table table-condensed">
                     <tr>
+                <td class="type" id="property_filePathSettingKey">
+                                        protected                                        string
+                </td>
+                <td>$filePathSettingKey</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L20" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_uploadDir">
-                                        protected                                        
+                                        protected                                        <abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr>
                 </td>
                 <td>$uploadDir</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L20" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L21" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -144,7 +182,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L29" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L30" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -161,7 +199,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L22" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L23" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -219,8 +257,8 @@
                     <div class="method-item">
                     <h3 id="method_delete">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L29" target="_blank">
-            line 29
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L30" target="_blank">
+            line 30
         </a>
         </div>
         <code>            protected        void
@@ -261,8 +299,8 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L22" target="_blank">
-            line 22
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/DeleteLogoController.php#L23" target="_blank">
+            line 23
         </a>
         </div>
         <code>                    

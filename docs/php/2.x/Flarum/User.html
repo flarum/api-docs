@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="namespace" data-name="namespace:Flarum_User" data-root-path="../">
+    <body id="namespace" data-name="namespace:Flarum_User" data-root-path="../" data-search-index-url="../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../main" data-version="main">main</option>
-                                            <option value="../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -87,7 +113,7 @@
 
             <h2>Namespaces</h2>
         <div class="namespace-list">
-            <a href="../Flarum/User/Access.html">Flarum\User\Access</a><a href="../Flarum/User/Command.html">Flarum\User\Command</a><a href="../Flarum/User/DisplayName.html">Flarum\User\DisplayName</a><a href="../Flarum/User/Event.html">Flarum\User\Event</a><a href="../Flarum/User/Exception.html">Flarum\User\Exception</a><a href="../Flarum/User/Job.html">Flarum\User\Job</a><a href="../Flarum/User/Search.html">Flarum\User\Search</a><a href="../Flarum/User/Throttler.html">Flarum\User\Throttler</a>        </div>
+            <a href="../Flarum/User/Access.html">Flarum\User\Access</a><a href="../Flarum/User/Avatar.html">Flarum\User\Avatar</a><a href="../Flarum/User/Command.html">Flarum\User\Command</a><a href="../Flarum/User/Console.html">Flarum\User\Console</a><a href="../Flarum/User/DisplayName.html">Flarum\User\DisplayName</a><a href="../Flarum/User/Event.html">Flarum\User\Event</a><a href="../Flarum/User/Exception.html">Flarum\User\Exception</a><a href="../Flarum/User/Job.html">Flarum\User\Job</a><a href="../Flarum/User/Search.html">Flarum\User\Search</a><a href="../Flarum/User/Throttler.html">Flarum\User\Throttler</a>        </div>
     
             <h2>Classes</h2>
         
@@ -304,6 +330,21 @@
             </div>
                     <div class="row">
                 <div class="col-md-6">
+                                            <a href="../Flarum/User/TokensClearer.html"><abbr title="Flarum\User\TokensClearer">TokensClearer</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/User/TokensClearer.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
                                             <a href="../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>
                                             
                 </div>
@@ -312,6 +353,36 @@
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/User/User.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Flarum/User/UserFactory.html"><abbr title="Flarum\User\UserFactory">UserFactory</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/User/UserFactory.php" target="_blank">
+        <img src="../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Flarum/User/UserMetadataUpdater.html"><abbr title="Flarum\User\UserMetadataUpdater">UserMetadataUpdater</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/User/UserMetadataUpdater.php" target="_blank">
         <img src="../assets/img/code.svg"  />
     </a>
 

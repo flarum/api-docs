@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Database_Migrator" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Database_Migrator" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
-                                            <option value="../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -100,12 +126,12 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_output">
-                                        protected                                        
+                                        protected                                        <abbr title="Flarum\Database\Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr>|null
                 </td>
                 <td>$output</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L27" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L25" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -127,7 +153,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L29" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L27" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -140,10 +166,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_run">run</a>(string $path, <abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
         
-                                            <p>&lt;p&gt;Run the outstanding migrations at a given path.&lt;/p&gt;</p>                </div>
+                                            <p>Run the outstanding migrations at a given path.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L45" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L37" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -160,7 +186,41 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L56" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L48" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_runUpMigrations">runUpMigrations</a>(array $migrations, string $path, <abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L65" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_runDownMigrations">runDownMigrations</a>(array $migrations, string $path, <abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L81" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -173,10 +233,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_runUp">runUp</a>(string $path, string $file, <abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
         
-                                            <p>&lt;p&gt;Run &amp;quot;up&amp;quot; a migration instance.&lt;/p&gt;</p>                </div>
+                                            <p>Run &quot;up&quot; a migration instance.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L78" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L100" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -189,23 +249,7 @@
                 <div class="col-md-6 type">
                     <a href="#method_reset">reset</a>(string $path, <abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
         
-                                            <p>&lt;p&gt;Rolls all the currently applied migrations back.&lt;/p&gt;</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L93" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_runDown">runDown</a>(string $path, string $file, <abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
-        
-                                            <p>&lt;p&gt;Run &amp;quot;down&amp;quot; a migration instance.&lt;/p&gt;</p>                </div>
+                                            <p>Rolls all the currently applied migrations back.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L115" target="_blank">
@@ -219,12 +263,28 @@
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_runClosureMigration">runClosureMigration</a>(array $migration, string $direction = &#039;up&#039;)
+                    <a href="#method_runDown">runDown</a>(string $path, string $file, <abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
         
-                                            <p>&lt;p&gt;Runs a closure migration based on the migrate direction.&lt;/p&gt;</p>                </div>
+                                            <p>Run &quot;down&quot; a migration instance.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L132" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L135" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_runClosureMigration">runClosureMigration</a>(array $migration, string $direction = &#039;up&#039;)
+        
+                                            <p>Runs a closure migration based on the migrate direction.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L152" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -237,10 +297,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_resolveAndRunClosureMigration">resolveAndRunClosureMigration</a>(string $path, string $file, string $direction = &#039;up&#039;)
         
-                                            <p>&lt;p&gt;Resolves and run a migration and assign the filename to the exception if needed.&lt;/p&gt;</p>                </div>
+                                            <p>Resolves and run a migration and assign the filename to the exception if needed.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L146" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L166" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -253,10 +313,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getMigrationFiles">getMigrationFiles</a>(string $path)
         
-                                            <p>&lt;p&gt;Get all of the migration files in a given path.&lt;/p&gt;</p>                </div>
+                                            <p>Get all of the migration files in a given path.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L163" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L180" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -269,10 +329,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_resolve">resolve</a>(string $path, string $file)
         
-                                            <p>&lt;p&gt;Resolve a migration instance from a file.&lt;/p&gt;</p>                </div>
+                                            <p>Resolve a migration instance from a file.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L188" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L205" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -280,15 +340,15 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    bool
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_installFromSchema">installFromSchema</a>(string $path)
+                    <a href="#method_installFromSchema">installFromSchema</a>(string $path, string $driver)
         
-                                            <p>&lt;p&gt;Initialize the Flarum database from a schema dump.&lt;/p&gt;</p>                </div>
+                                            <p>Initialize the Flarum database from a schema dump.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L210" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L227" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -305,7 +365,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L241" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L270" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -322,7 +382,23 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L248" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L277" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Database/MigrationRepositoryInterface.html"><abbr title="Flarum\Database\MigrationRepositoryInterface">MigrationRepositoryInterface</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getRepository">getRepository</a>()
+        
+                                            <p>Get the migration repository instance.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L285" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -339,7 +415,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L253" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L290" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -354,8 +430,8 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L29" target="_blank">
-            line 29
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L27" target="_blank">
+            line 27
         </a>
         </div>
         <code>                    
@@ -397,8 +473,8 @@
                     <div class="method-item">
                     <h3 id="method_run">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L45" target="_blank">
-            line 45
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L37" target="_blank">
+            line 37
         </a>
         </div>
         <code>                    void
@@ -410,7 +486,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Run the outstanding migrations at a given path.&lt;/p&gt;</p>                                                </div>
+                                    <p>Run the outstanding migrations at a given path.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -446,8 +522,8 @@
                     <div class="method-item">
                     <h3 id="method_runMigrationList">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L56" target="_blank">
-            line 56
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L48" target="_blank">
+            line 48
         </a>
         </div>
         <code>                    void
@@ -496,10 +572,114 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_runUpMigrations">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L65" target="_blank">
+            line 65
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>runUpMigrations</strong>(array $migrations, string $path, <abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$migrations</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runDownMigrations">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L81" target="_blank">
+            line 81
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>runDownMigrations</strong>(array $migrations, string $path, <abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$migrations</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Database\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_runUp">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L78" target="_blank">
-            line 78
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L100" target="_blank">
+            line 100
         </a>
         </div>
         <code>            protected        void
@@ -511,7 +691,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Run &amp;quot;up&amp;quot; a migration instance.&lt;/p&gt;</p>                                                </div>
+                                    <p>Run &quot;up&quot; a migration instance.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -552,8 +732,8 @@
                     <div class="method-item">
                     <h3 id="method_reset">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L93" target="_blank">
-            line 93
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L115" target="_blank">
+            line 115
         </a>
         </div>
         <code>                    int
@@ -565,7 +745,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Rolls all the currently applied migrations back.&lt;/p&gt;</p>                                                </div>
+                                    <p>Rolls all the currently applied migrations back.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -601,8 +781,8 @@
                     <div class="method-item">
                     <h3 id="method_runDown">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L115" target="_blank">
-            line 115
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L135" target="_blank">
+            line 135
         </a>
         </div>
         <code>            protected        void
@@ -614,7 +794,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Run &amp;quot;down&amp;quot; a migration instance.&lt;/p&gt;</p>                                                </div>
+                                    <p>Run &quot;down&quot; a migration instance.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -655,8 +835,8 @@
                     <div class="method-item">
                     <h3 id="method_runClosureMigration">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L132" target="_blank">
-            line 132
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L152" target="_blank">
+            line 152
         </a>
         </div>
         <code>            protected        void
@@ -668,7 +848,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Runs a closure migration based on the migrate direction.&lt;/p&gt;</p>                                                </div>
+                                    <p>Runs a closure migration based on the migrate direction.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -713,8 +893,8 @@
                     <div class="method-item">
                     <h3 id="method_resolveAndRunClosureMigration">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L146" target="_blank">
-            line 146
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L166" target="_blank">
+            line 166
         </a>
         </div>
         <code>            protected        void
@@ -726,7 +906,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Resolves and run a migration and assign the filename to the exception if needed.&lt;/p&gt;</p>                                                </div>
+                                    <p>Resolves and run a migration and assign the filename to the exception if needed.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -776,8 +956,8 @@
                     <div class="method-item">
                     <h3 id="method_getMigrationFiles">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L163" target="_blank">
-            line 163
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L180" target="_blank">
+            line 180
         </a>
         </div>
         <code>                    array
@@ -789,7 +969,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get all of the migration files in a given path.&lt;/p&gt;</p>                                                </div>
+                                    <p>Get all of the migration files in a given path.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -820,8 +1000,8 @@
                     <div class="method-item">
                     <h3 id="method_resolve">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L188" target="_blank">
-            line 188
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L205" target="_blank">
+            line 205
         </a>
         </div>
         <code>                    array
@@ -833,7 +1013,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Resolve a migration instance from a file.&lt;/p&gt;</p>                                                </div>
+                                    <p>Resolve a migration instance from a file.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -878,12 +1058,12 @@
                     <div class="method-item">
                     <h3 id="method_installFromSchema">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L210" target="_blank">
-            line 210
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L227" target="_blank">
+            line 227
         </a>
         </div>
-        <code>                    void
-    <strong>installFromSchema</strong>(string $path)
+        <code>                    bool
+    <strong>installFromSchema</strong>(string $path, string $driver)
         </code>
     </h3>
     <div class="details">
@@ -891,7 +1071,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Initialize the Flarum database from a schema dump.&lt;/p&gt;</p>                                                </div>
+                                    <p>Initialize the Flarum database from a schema dump.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -899,7 +1079,12 @@
                     <tr>
                 <td>string</td>
                 <td>$path</td>
-                <td>&lt;p&gt;to the directory containing the dump.&lt;/p&gt;</td>
+                <td>to the directory containing the dump.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$driver</td>
+                <td></td>
             </tr>
             </table>
 
@@ -908,7 +1093,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>bool</td>
             <td></td>
         </tr>
     </table>
@@ -922,8 +1107,8 @@
                     <div class="method-item">
                     <h3 id="method_setOutput">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L241" target="_blank">
-            line 241
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L270" target="_blank">
+            line 270
         </a>
         </div>
         <code>                    <a href="../../Flarum/Database/Migrator.html"><abbr title="Flarum\Database\Migrator">Migrator</abbr></a>
@@ -964,8 +1149,8 @@
                     <div class="method-item">
                     <h3 id="method_note">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L248" target="_blank">
-            line 248
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L277" target="_blank">
+            line 277
         </a>
         </div>
         <code>            protected        void
@@ -1004,10 +1189,44 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getRepository">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L285" target="_blank">
+            line 285
+        </a>
+        </div>
+        <code>                    <a href="../../Flarum/Database/MigrationRepositoryInterface.html"><abbr title="Flarum\Database\MigrationRepositoryInterface">MigrationRepositoryInterface</abbr></a>
+    <strong>getRepository</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the migration repository instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Database/MigrationRepositoryInterface.html"><abbr title="Flarum\Database\MigrationRepositoryInterface">MigrationRepositoryInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_repositoryExists">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L253" target="_blank">
-            line 253
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/Migrator.php#L290" target="_blank">
+            line 290
         </a>
         </div>
         <code>                    bool

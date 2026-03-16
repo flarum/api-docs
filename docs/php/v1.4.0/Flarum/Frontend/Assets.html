@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Frontend_Assets" data-root-path="../../">
+    <body id="class" data-name="class:Flarum_Frontend_Assets" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,20 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../v1.0.0" data-version="v1.0.0">v1.0.0</option>
-                                            <option value="../../../v1.1.0" data-version="v1.1.0">v1.1.0</option>
-                                            <option value="../../../v1.2.0" data-version="v1.2.0">v1.2.0</option>
-                                            <option value="../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../main" data-version="main">main</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" selected>v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -77,7 +105,7 @@
             Assets
                 
             &nbsp;
-                <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -91,7 +119,7 @@
     
 
             <div class="description">
-            <p><p>A factory class for creating frontend asset compilers.</p></p>                                </div>
+            <p>A factory class for creating frontend asset compilers.</p>                                </div>
     
     
     
@@ -105,7 +133,7 @@
                 <td>$sources</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L28" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L28" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -117,7 +145,7 @@
                 <td>$name</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L38" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L38" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -129,7 +157,7 @@
                 <td>$assetsDir</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L43" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L43" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -141,7 +169,7 @@
                 <td>$cacheDir</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L48" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L48" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -153,7 +181,7 @@
                 <td>$lessImportDirs</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L53" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L53" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -165,7 +193,7 @@
                 <td>$lessImportOverrides</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L58" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L58" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -177,7 +205,7 @@
                 <td>$fileSourceOverrides</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L63" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L63" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -189,7 +217,7 @@
                 <td>$customFunctions</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L68" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L68" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -211,7 +239,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L70" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L70" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -228,7 +256,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L79" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L79" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -245,7 +273,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L86" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L86" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -262,7 +290,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L93" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L93" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -279,7 +307,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L100" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L100" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -296,7 +324,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L121" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L121" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -313,7 +341,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L130" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L130" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -330,7 +358,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L139" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L139" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -347,7 +375,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L148" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L148" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -364,7 +392,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L157" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L157" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -381,7 +409,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L162" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L162" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -398,7 +426,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L187" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L187" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -415,7 +443,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L192" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L192" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -432,7 +460,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L197" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L197" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -449,7 +477,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L202" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L202" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -466,7 +494,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L207" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L207" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -483,7 +511,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L212" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L212" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -500,7 +528,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L217" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L217" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -517,7 +545,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L222" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L222" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -534,7 +562,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L227" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L227" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -551,7 +579,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L232" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L232" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -566,7 +594,7 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L70" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L70" target="_blank">
             line 70
         </a>
         </div>
@@ -619,7 +647,7 @@
                     <div class="method-item">
                     <h3 id="method_js">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L79" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L79" target="_blank">
             line 79
         </a>
         </div>
@@ -652,7 +680,7 @@
                     <div class="method-item">
                     <h3 id="method_css">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L86" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L86" target="_blank">
             line 86
         </a>
         </div>
@@ -685,7 +713,7 @@
                     <div class="method-item">
                     <h3 id="method_localeJs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L93" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L93" target="_blank">
             line 93
         </a>
         </div>
@@ -718,7 +746,7 @@
                     <div class="method-item">
                     <h3 id="method_localeCss">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L100" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L100" target="_blank">
             line 100
         </a>
         </div>
@@ -751,7 +779,7 @@
                     <div class="method-item">
                     <h3 id="method_makeJs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L121" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L121" target="_blank">
             line 121
         </a>
         </div>
@@ -783,7 +811,7 @@
                     <div class="method-item">
                     <h3 id="method_makeCss">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L130" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L130" target="_blank">
             line 130
         </a>
         </div>
@@ -815,7 +843,7 @@
                     <div class="method-item">
                     <h3 id="method_makeLocaleJs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L139" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L139" target="_blank">
             line 139
         </a>
         </div>
@@ -857,7 +885,7 @@
                     <div class="method-item">
                     <h3 id="method_makeLocaleCss">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L148" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L148" target="_blank">
             line 148
         </a>
         </div>
@@ -899,7 +927,7 @@
                     <div class="method-item">
                     <h3 id="method_makeJsCompiler">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L157" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L157" target="_blank">
             line 157
         </a>
         </div>
@@ -932,7 +960,7 @@
                     <div class="method-item">
                     <h3 id="method_makeLessCompiler">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L162" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L162" target="_blank">
             line 162
         </a>
         </div>
@@ -974,7 +1002,7 @@
                     <div class="method-item">
                     <h3 id="method_getName">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L187" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L187" target="_blank">
             line 187
         </a>
         </div>
@@ -1006,7 +1034,7 @@
                     <div class="method-item">
                     <h3 id="method_setName">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L192" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L192" target="_blank">
             line 192
         </a>
         </div>
@@ -1039,7 +1067,7 @@
                     <div class="method-item">
                     <h3 id="method_getAssetsDir">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L197" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L197" target="_blank">
             line 197
         </a>
         </div>
@@ -1071,7 +1099,7 @@
                     <div class="method-item">
                     <h3 id="method_setAssetsDir">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L202" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L202" target="_blank">
             line 202
         </a>
         </div>
@@ -1104,7 +1132,7 @@
                     <div class="method-item">
                     <h3 id="method_getCacheDir">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L207" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L207" target="_blank">
             line 207
         </a>
         </div>
@@ -1136,7 +1164,7 @@
                     <div class="method-item">
                     <h3 id="method_setCacheDir">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L212" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L212" target="_blank">
             line 212
         </a>
         </div>
@@ -1169,7 +1197,7 @@
                     <div class="method-item">
                     <h3 id="method_getLessImportDirs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L217" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L217" target="_blank">
             line 217
         </a>
         </div>
@@ -1201,7 +1229,7 @@
                     <div class="method-item">
                     <h3 id="method_setLessImportDirs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L222" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L222" target="_blank">
             line 222
         </a>
         </div>
@@ -1234,7 +1262,7 @@
                     <div class="method-item">
                     <h3 id="method_addLessImportOverrides">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L227" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L227" target="_blank">
             line 227
         </a>
         </div>
@@ -1267,7 +1295,7 @@
                     <div class="method-item">
                     <h3 id="method_addFileSourceOverrides">
         <div class="location">
-                        at         <a href="https://github.com/flarum/flarum-core/blob/v1.4.0/src/Frontend/Assets.php#L232" target="_blank">
+                        at         <a href="https://github.com/flarum/framework/blob/v1.4.0/framework/core/src/Frontend/Assets.php#L232" target="_blank">
             line 232
         </a>
         </div>

@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Discussion_Search_FulltextFilter" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Discussion_Search_FulltextFilter" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../../main" data-version="main">main</option>
-                                            <option value="../../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -106,7 +132,7 @@
                 <div class="col-md-6 type">
                     <a href="#method_getFilterKey">getFilterKey</a>()
         
-                                            <p>&lt;p&gt;This filter will only be run when a query contains a filter param with this key.&lt;/p&gt;</p>                </div>
+                                            <p>This filter will only be run when a query contains a filter param with this key.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Search/AbstractFulltextFilter.html#method_getFilterKey"><abbr title="Flarum\Search\AbstractFulltextFilter">AbstractFulltextFilter</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L20" target="_blank">
@@ -122,7 +148,7 @@
                 <div class="col-md-6 type">
                     <a href="#method_filter">filter</a>(<a href="../../../Flarum/Search/SearchState.html"><abbr title="Flarum\Search\SearchState">SearchState</abbr></a> $state, <abbr title="Flarum\Search\Filter\string|array">string|array</abbr> $value, bool $negate)
         
-                                            <p>&lt;p&gt;Filters a query.&lt;/p&gt;</p>                </div>
+                                            <p>Filters a query.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Search/AbstractFulltextFilter.html#method_filter"><abbr title="Flarum\Search\AbstractFulltextFilter">AbstractFulltextFilter</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L25" target="_blank">
@@ -142,7 +168,75 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L25" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L33" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L28" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_sqlite">sqlite</a>(<a href="../../../Flarum/Search/Database/DatabaseSearchState.html"><abbr title="Flarum\Search\Database\DatabaseSearchState">DatabaseSearchState</abbr></a> $state, string $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L43" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_mysql">mysql</a>(<a href="../../../Flarum/Search/Database/DatabaseSearchState.html"><abbr title="Flarum\Search\Database\DatabaseSearchState">DatabaseSearchState</abbr></a> $state, string $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L63" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_pgsql">pgsql</a>(<a href="../../../Flarum/Search/Database/DatabaseSearchState.html"><abbr title="Flarum\Search\Database\DatabaseSearchState">DatabaseSearchState</abbr></a> $state, string $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L116" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -171,7 +265,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;This filter will only be run when a query contains a filter param with this key.&lt;/p&gt;</p>                                                </div>
+                                    <p>This filter will only be run when a query contains a filter param with this key.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -206,7 +300,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Filters a query.&lt;/p&gt;</p>                                                </div>
+                                    <p>Filters a query.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -247,8 +341,8 @@
                     <div class="method-item">
                     <h3 id="method_search">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L25" target="_blank">
-            line 25
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L33" target="_blank">
+            line 33
         </a>
         </div>
         <code>                    void
@@ -265,6 +359,180 @@
                     <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../Flarum/Search/SearchState.html"><abbr title="Flarum\Search\SearchState">SearchState</abbr></a></td>
+                <td>$state</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L28" target="_blank">
+            line 28
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sqlite">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L43" target="_blank">
+            line 43
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>sqlite</strong>(<a href="../../../Flarum/Search/Database/DatabaseSearchState.html"><abbr title="Flarum\Search\Database\DatabaseSearchState">DatabaseSearchState</abbr></a> $state, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Search/Database/DatabaseSearchState.html"><abbr title="Flarum\Search\Database\DatabaseSearchState">DatabaseSearchState</abbr></a></td>
+                <td>$state</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mysql">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L63" target="_blank">
+            line 63
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>mysql</strong>(<a href="../../../Flarum/Search/Database/DatabaseSearchState.html"><abbr title="Flarum\Search\Database\DatabaseSearchState">DatabaseSearchState</abbr></a> $state, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Search/Database/DatabaseSearchState.html"><abbr title="Flarum\Search\Database\DatabaseSearchState">DatabaseSearchState</abbr></a></td>
+                <td>$state</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pgsql">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Discussion/Search/FulltextFilter.php#L116" target="_blank">
+            line 116
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>pgsql</strong>(<a href="../../../Flarum/Search/Database/DatabaseSearchState.html"><abbr title="Flarum\Search\Database\DatabaseSearchState">DatabaseSearchState</abbr></a> $state, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Flarum/Search/Database/DatabaseSearchState.html"><abbr title="Flarum\Search\Database\DatabaseSearchState">DatabaseSearchState</abbr></a></td>
                 <td>$state</td>
                 <td></td>
             </tr>

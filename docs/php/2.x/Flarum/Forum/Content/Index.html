@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Forum_Content_Index" data-root-path="../../../">
+    <body id="class" data-name="class:Flarum_Forum_Content_Index" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -37,22 +37,48 @@
                     <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
-                                            <option value="../../../../v1.3.0" data-version="v1.3.0">v1.3.0</option>
-                                            <option value="../../../../v1.4.0" data-version="v1.4.0">v1.4.0</option>
-                                            <option value="../../../../v1.5.0" data-version="v1.5.0">v1.5.0</option>
-                                            <option value="../../../../v1.6.0" data-version="v1.6.0">v1.6.0</option>
-                                            <option value="../../../../v1.7.0" data-version="v1.7.0">v1.7.0</option>
-                                            <option value="../../../../v1.8.0" data-version="v1.8.0">v1.8.0</option>
-                                            <option value="../../../../main" data-version="main">main</option>
-                                            <option value="../../../../2.x" data-version="2.x">2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.14" >v1.8.14</option>
                                     </select>
             </form>
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="../../../search.html" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 
@@ -104,7 +130,7 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Api/Client.html"><abbr title="Flarum\Api\Client">Client</abbr></a> $api, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url, <a href="../../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a> $translator, <a href="../../../Flarum/Api/Controller/ListDiscussionsController.html"><abbr title="Flarum\Api\Controller\ListDiscussionsController">ListDiscussionsController</abbr></a> $controller)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Api/Client.html"><abbr title="Flarum\Api\Client">Client</abbr></a> $api, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url, <a href="../../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a> $translator, <a href="../../../Flarum/Api/Resource/DiscussionResource.html"><abbr title="Flarum\Api\Resource\DiscussionResource">DiscussionResource</abbr></a> $resource)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -140,10 +166,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getApiDocument">getApiDocument</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, array $params)
         
-                                            <p>&lt;p&gt;Get the result of an API request to list discussions.&lt;/p&gt;</p>                </div>
+                                            <p>Get the result of an API request to list discussions.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Content/Index.php#L76" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Content/Index.php#L73" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -163,7 +189,7 @@
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Api/Client.html"><abbr title="Flarum\Api\Client">Client</abbr></a> $api, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url, <a href="../../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a> $translator, <a href="../../../Flarum/Api/Controller/ListDiscussionsController.html"><abbr title="Flarum\Api\Controller\ListDiscussionsController">ListDiscussionsController</abbr></a> $controller)
+    <strong>__construct</strong>(<a href="../../../Flarum/Api/Client.html"><abbr title="Flarum\Api\Client">Client</abbr></a> $api, <abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url, <a href="../../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a> $translator, <a href="../../../Flarum/Api/Resource/DiscussionResource.html"><abbr title="Flarum\Api\Resource\DiscussionResource">DiscussionResource</abbr></a> $resource)
         </code>
     </h3>
     <div class="details">
@@ -200,8 +226,8 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Flarum/Api/Controller/ListDiscussionsController.html"><abbr title="Flarum\Api\Controller\ListDiscussionsController">ListDiscussionsController</abbr></a></td>
-                <td>$controller</td>
+                <td><a href="../../../Flarum/Api/Resource/DiscussionResource.html"><abbr title="Flarum\Api\Resource\DiscussionResource">DiscussionResource</abbr></a></td>
+                <td>$resource</td>
                 <td></td>
             </tr>
             </table>
@@ -263,8 +289,8 @@
                     <div class="method-item">
                     <h3 id="method_getApiDocument">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Content/Index.php#L76" target="_blank">
-            line 76
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Content/Index.php#L73" target="_blank">
+            line 73
         </a>
         </div>
         <code>            protected        object
@@ -276,7 +302,7 @@
     
 
                     <div class="method-description">
-                                    <p>&lt;p&gt;Get the result of an API request to list discussions.&lt;/p&gt;</p>                                                </div>
+                                    <p>Get the result of an API request to list discussions.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

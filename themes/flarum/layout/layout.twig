@@ -65,7 +65,9 @@
             <form action="#" method="GET">
                 <select id="version-switcher" class="form-control" name="version">
                     {% for version in project.versions %}
-                        <option value="{{ path('../' ~ version) }}" data-version="{{ version }}">{{ version.longname }}</option>
+                        <option
+                            value="{{ project.getBaseUrl()|replace({'%version%': version}) ~ '/index.html' }}"
+                            data-version="{{ version }}" {{ version == project.version ? 'selected' : ''}}>{{ version.longname }}</option>
                     {% endfor %}
                 </select>
             </form>
@@ -73,9 +75,19 @@
         <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
+
         <form id="search-form" action="{{ path('search.html') }}" method="GET">
             <span class="icon icon-search"></span>
-            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="{% trans 'Search' %}"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
         </form>
     </div>
 {% endblock %}

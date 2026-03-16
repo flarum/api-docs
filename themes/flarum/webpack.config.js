@@ -1,8 +1,7 @@
 const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const OptimizeJsPlugin = require('optimize-js-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -10,20 +9,17 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'public'),
         filename: 'app.min.js',
+        clean: false,
     },
     module: {
         rules: [
             {
-                // look for .js or .jsx files
                 test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
-                use: [
-                    'babel-loader'
-                ]
+                use: ['babel-loader']
             },
             {
                 test: /\.(css|less)$/,
-                include: path.resolve(__dirname, './src/less/index.less'),
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
@@ -32,48 +28,23 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|gif|svg)$/i,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            name: '[path][name].[ext]',
-                            context: 'src',
-                            limit: 8192,
-                        }
-                    },
-                    'image-webpack-loader',
-                ]
+                exclude: /fonts\//,
+                type: 'asset',
+                generator: {
+                    filename: 'img/[name][ext]',
+                }
             },
             {
-                test: /\.(|woff|woff2|eot|ttf)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'fonts/[name].[ext]',
-                            context: 'src',
-                        }
-                    }
-                ]
-            },
-            {
-                test: /fonts\/(.+?)\.svg$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'fonts/[name].[ext]',
-                            context: 'src',
-                        }
-                    }
-                ]
+                test: /(\.(woff|woff2|eot|ttf)$|fonts\/.*\.svg$)/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[name][ext]'
+                }
             }
         ]
     },
     plugins: [
         new MiniCssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output
-            // both options are optional
             filename: 'app.min.css',
             chunkFilename: '[id].css'
         }),
@@ -81,20 +52,18 @@ module.exports = {
     ],
     optimization: {
         minimizer: [
-            new OptimizeCSSAssetsPlugin(),
-            new UglifyJsPlugin({
-                cache: true,
+            new TerserPlugin({
                 parallel: true,
-                uglifyOptions: {
+                terserOptions: {
                     compress: false,
                     ecma: 6,
                     mangle: true
                 },
             }),
-            new OptimizeJsPlugin(),
+            new CssMinimizerPlugin(),
         ],
     },
     performance: {
         hints: false
     }
-}
+};

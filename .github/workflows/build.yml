@@ -31,11 +31,11 @@ jobs:
       - name: Clone flarum/framework
         run: git clone https://github.com/flarum/framework.git flarum
 
-      - name: PHP > Use PHP 7.4
+      - name: PHP > Use PHP 8.3
         if: ${{ matrix.language == 'php' }}
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '7.4'
+          php-version: '8.3'
 
       - name: PHP > Doctum cache
         uses: actions/cache@v3
@@ -43,15 +43,15 @@ jobs:
           path: cache
           key: ${{ runner.os }}-doctum
 
-      - name: JS > Use Node.js 16.x
+      - name: JS > Use Node.js 22.x
         if: ${{ matrix.language == 'js' }}
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 22.x
 
       - name: JS > Install dependencies
         if: ${{ matrix.language == 'js' }}
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Build
         run: ./scripts/build-${{ matrix.language }}.sh

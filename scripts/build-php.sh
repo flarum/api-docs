@@ -2,6 +2,9 @@
 
 source $(dirname $0)/_vars.sh
 
+# Clean git state
+(cd $FLARUM_PATH && git checkout -q -- . && git clean -f -d)
+
 echo -e "${style}Generating $reset"
 
 php "$REPO_PATH/doctum.phar" update doctum-config.php --force --no-progress --ignore-parse-errors

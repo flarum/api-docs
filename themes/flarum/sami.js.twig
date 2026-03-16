@@ -2,6 +2,85 @@
 
 window.projectVersion = '{{ project.version }}';
 
+var Doctum = {
+    treeJson: {{ tree|raw }},
+    {% verbatim -%}
+    loadTree: function () {
+        if (Doctum.treeLoaded) {
+            // Quick exit, already registered
+            return;
+        }
+        Doctum.rootPath = document.body.getAttribute('data-root-path');
+        Doctum.buildTreeNode(Doctum.treeJson.tree, document.getElementById('api-tree'), Doctum.treeJson.treeOpenLevel);
+
+        // Toggle left-nav divs on click
+        $('#api-tree .hd span').on('click', function () {
+            $(this).parent().parent().toggleClass('opened');
+        });
+
+        // Expand the parent namespaces of the current page.
+        var expected = $('body').attr('data-name');
+
+        if (expected) {
+            // Open the currently selected node and its parents.
+            var container = $('#api-tree');
+            var node = $('#api-tree li[data-name="' + expected + '"]');
+            // Node might not be found when simulating namespaces
+            if (node.length > 0) {
+                node.addClass('active').addClass('opened');
+                node.parents('li').addClass('opened');
+                var scrollPos = node.offset().top - container.offset().top + container.scrollTop();
+                // Position the item nearer to the top of the screen.
+                scrollPos -= 200;
+                container.scrollTop(scrollPos);
+            }
+        }
+        Doctum.treeLoaded = true;
+    },
+    buildTreeNode: function (treeNode, htmlNode, treeOpenLevel) {
+        var ulNode = document.createElement('ul');
+        for (var childKey in treeNode.c) {
+            var child = treeNode.c[childKey];
+            var liClass = document.createElement('li');
+            var hasChildren = child.hasOwnProperty('c');
+            var nodeSpecialName = (hasChildren ? 'namespace:' : 'class:') + child.p.replace(/\//g, '_');
+            liClass.setAttribute('data-name', nodeSpecialName);
+
+            // Create the node that will have the text
+            var divHd = document.createElement('div');
+            var levelCss = child.l - 1;
+            divHd.className = hasChildren ? 'hd' : 'hd leaf';
+            divHd.style.paddingLeft = (hasChildren ? (levelCss * 18) : (8 + (levelCss * 18))) + 'px';
+            if (hasChildren) {
+                if (child.l <= treeOpenLevel) {
+                    liClass.className = 'opened';
+                }
+                var spanIcon = document.createElement('span');
+                spanIcon.className = 'icon icon-play';
+                divHd.appendChild(spanIcon);
+            }
+            var aLink = document.createElement('a');
+
+            // Edit the HTML link to work correctly based on the current depth
+            aLink.href = Doctum.rootPath + child.p + '.html';
+            aLink.innerText = child.n;
+            divHd.appendChild(aLink);
+            liClass.appendChild(divHd);
+
+            // It has children
+            if (hasChildren) {
+                var divBd = document.createElement('div');
+                divBd.className = 'bd';
+                Doctum.buildTreeNode(child, divBd, treeOpenLevel);
+                liClass.appendChild(divBd);
+            }
+            ulNode.appendChild(liClass);
+        }
+        htmlNode.appendChild(ulNode);
+    },
+    {% endverbatim -%}
+};
+
 (function(root) {
 
     var bhIndex = null;
@@ -142,7 +221,9 @@ window.projectVersion = '{{ project.version }}';
         // Modify the HTML to work correctly based on the current depth
         rootPath = $('body').attr('data-root-path');
         treeHtml = treeHtml.replace(/href="/g, 'href="' + rootPath);
-        Sami.injectApiTree($('#api-tree'));
+        // Sami.injectApiTree($('#api-tree'));
+
+        Doctum.loadTree();
     });
 
     return root.Sami;
@@ -151,14 +232,30 @@ window.projectVersion = '{{ project.version }}';
 $(function() {
 
     // Enable the version switcher
-    $('#version-switcher').change(function() {
-        window.location = $(this).val()
-    });
+    var versionSwitcher = document.getElementById('version-switcher');
+    if (versionSwitcher !== null) {
+        var currentVersion = versionSwitcher.options[versionSwitcher.selectedIndex].dataset.version;
+        versionSwitcher.addEventListener('change', function (event) {
+            var targetVersion = event.target.options[event.target.selectedIndex].dataset.version;
+            var candidateUrl = window.location.pathname.replace(currentVersion, targetVersion);
+            // Check if the page exists before redirecting to it
+            var testRequest = new XMLHttpRequest();
+            testRequest.open('HEAD', candidateUrl, false);
+            testRequest.send();
+            if (testRequest.status >= 200 && testRequest.status < 300) {
+                // The page was found, go to it
+                window.location = candidateUrl;
+            } else {
+                // otherwise reroute to the home page of the new version
+                window.location = this.value;
+            }
+        });
+    }
 
     {% block treejs %}
 
         // Toggle left-nav divs on click
-        $('#api-tree .hd span').click(function() {
+        $('#api-tree .hd span').on('click', function () {
             $(this).parent().parent().toggleClass('opened');
         });
 

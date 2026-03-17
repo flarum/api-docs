@@ -2,9 +2,6 @@
 
 source $(dirname $0)/_vars.sh
 
-branches=()
-eval "$(git for-each-ref --shell --format='branches+=(%(refname))' refs/heads/)"
-
 echo -e "${style}Generating $reset"
 
 generate () {
@@ -14,10 +11,22 @@ generate () {
     path="$REPO_PATH/docs/js/$ref"
 
     if [ "$2" == "true" ] && [ -d "$path" ]; then
+        echo -e "$style - $ref -> tag already exists, skipping $reset"
         return
     fi
 
-    echo -e "$style - $ref (`git rev-parse --short HEAD`) $reset"
+    # Check if we need to generate at all comparing the ref
+    sha=$(cd "$FLARUM_CORE_PATH" && git rev-parse --verify --short "$ref^{commit}" 2>/dev/null || echo "unknown")
+    ref_sha=$(cd "$FLARUM_CORE_PATH" && git rev-parse --verify "$ref^{commit}" 2>/dev/null || echo "")
+    stamp_file="$path/.source-ref-sha"
+
+    if [[ -n "$ref_sha" && -f "$stamp_file" ]] && [[ "$(cat "$stamp_file")" == "$ref_sha" ]]; then
+        echo -e "$style - $ref ($sha) cached $reset"
+        return
+    fi
+
+
+    echo -e "$style - $ref ($sha) $reset"
 
     rm -rf $path
     mkdir $path
@@ -27,7 +36,9 @@ generate () {
     (cd $FLARUM_PATH && yarn install --immutable)
 
     # Rename to 'flarum' so that the JS docs are separate from the extensions.
-    sed -i 's/"name": "@flarum\/core"/"name": "flarum"/' "$FLARUM_CORE_PATH/js/package.json"
+    if [[ -f "$FLARUM_CORE_PATH/js/package.json" ]]; then
+        sed -i 's/"name": "@flarum\/core"/"name": "flarum"/' "$FLARUM_CORE_PATH/js/package.json"
+    fi
 
     cp -v "$REPO_PATH/typedoc.package.json" "$FLARUM_CORE_PATH/js/typedoc.json"
     sed -i '11d' "$FLARUM_CORE_PATH/js/typedoc.json"
@@ -45,21 +56,42 @@ generate () {
     export NODE_OPTIONS="--max-old-space-size=16384"
     npx typedoc --gitRevision $ref --out "$REPO_PATH/docs/js/$ref" --name "Flarum ($ref)" --readme "$REPO_PATH/src/readme-js.md"
 
+    printf '%s\n' "$ref_sha" > "$stamp_file"
+
     cd $REPO_PATH
 }
 
-# generate main
 generate "2.x"
+generate "1.x"
 
-tags=$(cd $FLARUM_CORE_PATH && git tag)
+declare -A latest_tags=()
 
-for tag in $tags; do
-    if [[ "$tag" =~ v[0-9]{1,}\.[0-9]{1,}\.[1-9]{1,}$  || "$tag" =~ 0.1.0-beta ]]; then
+while IFS= read -r tag; do
+    # Only consider tags that match the pattern vX.Y.Z, where X, Y, and Z are numbers.
+    # This ensures we ignore any tags that don't represent version numbers, such as pre-releases or other annotations.
+    if [[ ! "$tag" =~ ^v([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
         continue
     fi
 
-    generate $tag true
+    # Keep the first entry from descending version sort for each major.minor key.
+    key="${BASH_REMATCH[1]}.${BASH_REMATCH[2]}"
+
+    # Ignore versions 1.0, 1.1, and 1.2 as they are not compatible with the current TypeScript setup.
+    # They are from before the monorepo.
+    case "$key" in
+        1.0|1.1|1.2)
+            continue
+            ;;
+    esac
+
+    if [[ -z "${latest_tags[$key]}" ]]; then
+        latest_tags[$key]="$tag"
+    fi
+done < <(cd "$FLARUM_CORE_PATH" && git tag --sort=-v:refname)
+
+for key in $(printf '%s\n' "${!latest_tags[@]}" | sort -V); do
+    generate "${latest_tags[$key]}" true
 done
 
-bash $SCRIPTS_PATH/set-redirects.sh js
+bash $SCRIPTS_PATH/set-redirects.sh php
 bash $SCRIPTS_PATH/set-index-file.sh js

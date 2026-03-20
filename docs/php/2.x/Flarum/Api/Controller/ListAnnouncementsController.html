@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Admin\Content\AdminPayload | Flarum API</title>
+    <title>Flarum\Api\Controller\ListAnnouncementsController | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Admin_Content_AdminPayload" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Api_Controller_ListAnnouncementsController" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -102,10 +102,10 @@
                     
     <div class="page-header">
         <h1>
-            AdminPayload
+            ListAnnouncementsController
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListAnnouncementsController.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -113,13 +113,47 @@
     </div>
 
     <p>    class        
-    <strong>AdminPayload</strong></p>
+    <strong>ListAnnouncementsController</strong>        implements
+        <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></p>
 
         
     
 
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>CACHE_KEY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CACHE_FRESH_TTL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CACHE_STALE_TTL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CACHE_TTL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
     
             <h2>Methods</h2>
@@ -130,13 +164,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions, <abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr> $db, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config, <a href="../../../Flarum/Foundation/ApplicationInfoProvider.html"><abbr title="Flarum\Foundation\ApplicationInfoProvider">ApplicationInfoProvider</abbr></a> $appInfo, <a href="../../../Flarum/Foundation/MaintenanceMode.html"><abbr title="Flarum\Foundation\MaintenanceMode">MaintenanceMode</abbr></a> $maintenance, <a href="../../../Flarum/Foundation/FontAwesome.html"><abbr title="Flarum\Foundation\FontAwesome">FontAwesome</abbr></a> $fontAwesome)
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Cache\Repository">Repository</abbr> $cache, <a href="../../../Flarum/Announcements/AnnouncementsFetcher.html"><abbr title="Flarum\Announcements\AnnouncementsFetcher">AnnouncementsFetcher</abbr></a> $fetcher)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L33" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListAnnouncementsController.php#L27" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -144,33 +178,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___invoke">__invoke</a>(<a href="../../../Flarum/Frontend/Document.html"><abbr title="Flarum\Frontend\Document">Document</abbr></a> $document, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+                    <a href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L46" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_getSearchDrivers">getSearchDrivers</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L118" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListAnnouncementsController.php#L33" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -185,12 +202,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L33" target="_blank">
-            line 33
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListAnnouncementsController.php#L27" target="_blank">
+            line 27
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions, <abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr> $db, <abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr> $events, <a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config, <a href="../../../Flarum/Foundation/ApplicationInfoProvider.html"><abbr title="Flarum\Foundation\ApplicationInfoProvider">ApplicationInfoProvider</abbr></a> $appInfo, <a href="../../../Flarum/Foundation/MaintenanceMode.html"><abbr title="Flarum\Foundation\MaintenanceMode">MaintenanceMode</abbr></a> $maintenance, <a href="../../../Flarum/Foundation/FontAwesome.html"><abbr title="Flarum\Foundation\FontAwesome">FontAwesome</abbr></a> $fontAwesome)
+    <strong>__construct</strong>(<abbr title="Illuminate\Cache\Repository">Repository</abbr> $cache, <a href="../../../Flarum/Announcements/AnnouncementsFetcher.html"><abbr title="Flarum\Announcements\AnnouncementsFetcher">AnnouncementsFetcher</abbr></a> $fetcher)
         </code>
     </h3>
     <div class="details">
@@ -202,48 +219,13 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
-                <td>$container</td>
+                <td><abbr title="Illuminate\Cache\Repository">Repository</abbr></td>
+                <td>$cache</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
-                <td>$settings</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a></td>
-                <td>$extensions</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr></td>
-                <td>$db</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></td>
-                <td>$events</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a></td>
-                <td>$config</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Foundation/ApplicationInfoProvider.html"><abbr title="Flarum\Foundation\ApplicationInfoProvider">ApplicationInfoProvider</abbr></a></td>
-                <td>$appInfo</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Foundation/MaintenanceMode.html"><abbr title="Flarum\Foundation\MaintenanceMode">MaintenanceMode</abbr></a></td>
-                <td>$maintenance</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Foundation/FontAwesome.html"><abbr title="Flarum\Foundation\FontAwesome">FontAwesome</abbr></a></td>
-                <td>$fontAwesome</td>
+                <td><a href="../../../Flarum/Announcements/AnnouncementsFetcher.html"><abbr title="Flarum\Announcements\AnnouncementsFetcher">AnnouncementsFetcher</abbr></a></td>
+                <td>$fetcher</td>
                 <td></td>
             </tr>
             </table>
@@ -256,14 +238,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___invoke">
+                    <h3 id="method_handle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L46" target="_blank">
-            line 46
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ListAnnouncementsController.php#L33" target="_blank">
+            line 33
         </a>
         </div>
-        <code>                    void
-    <strong>__invoke</strong>(<a href="../../../Flarum/Frontend/Document.html"><abbr title="Flarum\Frontend\Document">Document</abbr></a> $document, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         </code>
     </h3>
     <div class="details">
@@ -274,11 +256,6 @@
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Flarum/Frontend/Document.html"><abbr title="Flarum\Frontend\Document">Document</abbr></a></td>
-                <td>$document</td>
-                <td></td>
-            </tr>
                     <tr>
                 <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
                 <td>$request</td>
@@ -291,39 +268,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getSearchDrivers">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L118" target="_blank">
-            line 118
-        </a>
-        </div>
-        <code>            protected        array
-    <strong>getSearchDrivers</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
             <td></td>
         </tr>
     </table>

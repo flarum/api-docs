@@ -507,6 +507,25 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_syncExtensionOrder">syncExtensionOrder</a>()
+        
+                                            <p>Re-sort and persist the enabled extension order based on current
+composer.json dependency declarations. Call this after a composer
+update so that any new or changed optional-dependencies are reflected
+without requiring a manual enable/disable cycle.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L455" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-6 type">
@@ -515,7 +534,7 @@
                                             <p>Whether the extension is enabled.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L453" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L466" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -531,7 +550,7 @@
                                             <p>Returns the titles of the extensions passed.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L466" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L479" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -547,7 +566,7 @@
                                             <p>Sort a list of extensions so that they are properly resolved in respect to order.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L488" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L501" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -1269,10 +1288,56 @@ might not be booted yet when the ExtensionManager singleton initializes.</p>    
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_syncExtensionOrder">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L455" target="_blank">
+            line 455
+        </a>
+        </div>
+        <code>                    void
+    <strong>syncExtensionOrder</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Re-sort and persist the enabled extension order based on current
+composer.json dependency declarations. Call this after a composer
+update so that any new or changed optional-dependencies are reflected
+without requiring a manual enable/disable cycle.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Extension/Exception/CircularDependenciesException.html"><abbr title="Flarum\Extension\Exception\CircularDependenciesException">CircularDependenciesException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_isEnabled">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L453" target="_blank">
-            line 453
+                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L466" target="_blank">
+            line 466
         </a>
         </div>
         <code>                    bool
@@ -1315,8 +1380,8 @@ might not be booted yet when the ExtensionManager singleton initializes.</p>    
                     <div class="method-item">
                     <h3 id="method_pluckTitles">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L466" target="_blank">
-            line 466
+                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L479" target="_blank">
+            line 479
         </a>
         </div>
         <code>        static            string[]
@@ -1359,8 +1424,8 @@ might not be booted yet when the ExtensionManager singleton initializes.</p>    
                     <div class="method-item">
                     <h3 id="method_resolveExtensionOrder">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L488" target="_blank">
-            line 488
+                        at         <a href="https://github.com/flarum/framework/blob/1.x/framework/core/src/Extension/ExtensionManager.php#L501" target="_blank">
+            line 501
         </a>
         </div>
         <code>        static            

@@ -787,7 +787,8 @@ var Doctum = {
                                                         {"type": "Method", "fromName": "Flarum\\Api\\Schema\\Arr", "fromLink": "Flarum/Api/Schema/Arr.html", "link": "Flarum/Api/Schema/Arr.html#method_make", "name": "Flarum\\Api\\Schema\\Arr::make", "doc": "null"},
             
             {"type": "Class", "fromName": "Flarum\\Api\\Schema", "fromLink": "Flarum/Api/Schema.html", "link": "Flarum/Api/Schema/Attribute.html", "name": "Flarum\\Api\\Schema\\Attribute", "doc": "null"},
-                    
+                                                        {"type": "Method", "fromName": "Flarum\\Api\\Schema\\Attribute", "fromLink": "Flarum/Api/Schema/Attribute.html", "link": "Flarum/Api/Schema/Attribute.html#method_serializeValue", "name": "Flarum\\Api\\Schema\\Attribute::serializeValue", "doc": "null"},
+            
             {"type": "Class", "fromName": "Flarum\\Api\\Schema", "fromLink": "Flarum/Api/Schema.html", "link": "Flarum/Api/Schema/Boolean.html", "name": "Flarum\\Api\\Schema\\Boolean", "doc": "null"},
                                                         {"type": "Method", "fromName": "Flarum\\Api\\Schema\\Boolean", "fromLink": "Flarum/Api/Schema/Boolean.html", "link": "Flarum/Api/Schema/Boolean.html#method_make", "name": "Flarum\\Api\\Schema\\Boolean::make", "doc": "null"},
             

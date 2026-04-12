@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\User\Avatar\DriverInterface | Flarum API</title>
+    <title>Flarum\Extension\Console\SyncAbandonedExtensionsCommand | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_User_Avatar_DriverInterface" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Extension_Console_SyncAbandonedExtensionsCommand" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -102,58 +102,70 @@
                     
     <div class="page-header">
         <h1>
-            DriverInterface
+            SyncAbandonedExtensionsCommand
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/User/Avatar/DriverInterface.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/Console/SyncAbandonedExtensionsCommand.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>        interface    
-    <strong>DriverInterface</strong></p>
+    <p>    class        
+    <strong>SyncAbandonedExtensionsCommand</strong>        extends <abbr title="Illuminate\Console\Command">Command</abbr></p>
 
         
     
 
-            <div class="description">
-            <p>An interface for an avatar driver.</p>                                </div>
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_signature">
+                                        protected                                        
+                </td>
+                <td>$signature</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/Console/SyncAbandonedExtensionsCommand.php#L17" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_description">
+                                        protected                                        
+                </td>
+                <td>$description</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/Console/SyncAbandonedExtensionsCommand.php#L18" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    string|null
+                    int
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_avatarUrl">avatarUrl</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
+                    <a href="#method_handle">handle</a>(<a href="../../../Flarum/Extension/AbandonedExtensionsFetcher.html"><abbr title="Flarum\Extension\AbandonedExtensionsFetcher">AbandonedExtensionsFetcher</abbr></a> $fetcher)
         
-                                            <p>Return an avatar URL for a user.</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/User/Avatar/DriverInterface.php#L24" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string|null
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_avatarSrcset">avatarSrcset</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
-        
-                                            <p>Return a srcset string for a user&#039;s avatar, or null if not supported.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/User/Avatar/DriverInterface.php#L34" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/Console/SyncAbandonedExtensionsCommand.php#L20" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -166,29 +178,27 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_avatarUrl">
+                    <h3 id="method_handle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/User/Avatar/DriverInterface.php#L24" target="_blank">
-            line 24
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/Console/SyncAbandonedExtensionsCommand.php#L20" target="_blank">
+            line 20
         </a>
         </div>
-        <code>                    string|null
-    <strong>avatarUrl</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
+        <code>                    int
+    <strong>handle</strong>(<a href="../../../Flarum/Extension/AbandonedExtensionsFetcher.html"><abbr title="Flarum\Extension\AbandonedExtensionsFetcher">AbandonedExtensionsFetcher</abbr></a> $fetcher)
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Return an avatar URL for a user.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
-                <td>$user</td>
+                <td><a href="../../../Flarum/Extension/AbandonedExtensionsFetcher.html"><abbr title="Flarum\Extension\AbandonedExtensionsFetcher">AbandonedExtensionsFetcher</abbr></a></td>
+                <td>$fetcher</td>
                 <td></td>
             </tr>
             </table>
@@ -198,54 +208,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string|null</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_avatarSrcset">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/User/Avatar/DriverInterface.php#L34" target="_blank">
-            line 34
-        </a>
-        </div>
-        <code>                    string|null
-    <strong>avatarSrcset</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $user)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Return a srcset string for a user&#039;s avatar, or null if not supported.</p>                    <p>Example return value: &quot;avatar.webp 1x, avatar@2x.webp 2x, avatar@3x.webp 3x&quot;
-
-Third-party drivers may override this to construct srcset strings using
-their provider&#039;s own sizing capabilities (e.g. Gravatar&#039;s ?s= parameter).</p>                            </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
-                <td>$user</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string|null</td>
+            <td>int</td>
             <td></td>
         </tr>
     </table>

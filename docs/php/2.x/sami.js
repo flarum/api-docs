@@ -2968,7 +2968,8 @@ var Doctum = {
                                                         {"type": "Method", "fromName": "Flarum\\Post\\RegisteredTypesScope", "fromLink": "Flarum/Post/RegisteredTypesScope.html", "link": "Flarum/Post/RegisteredTypesScope.html#method_apply", "name": "Flarum\\Post\\RegisteredTypesScope::apply", "doc": "&quot;Apply the scope to a given Eloquent query builder.&quot;"},
             
             {"type": "Class", "fromName": "Flarum\\Queue", "fromLink": "Flarum/Queue.html", "link": "Flarum/Queue/AbstractJob.html", "name": "Flarum\\Queue\\AbstractJob", "doc": "null"},
-                    
+                                                        {"type": "Method", "fromName": "Flarum\\Queue\\AbstractJob", "fromLink": "Flarum/Queue/AbstractJob.html", "link": "Flarum/Queue/AbstractJob.html#method___construct", "name": "Flarum\\Queue\\AbstractJob::__construct", "doc": "null"},
+            
             {"type": "Class", "fromName": "Flarum\\Queue\\Console", "fromLink": "Flarum/Queue/Console.html", "link": "Flarum/Queue/Console/DatabaseWorkerArgs.html", "name": "Flarum\\Queue\\Console\\DatabaseWorkerArgs", "doc": "null"},
                                                         {"type": "Method", "fromName": "Flarum\\Queue\\Console\\DatabaseWorkerArgs", "fromLink": "Flarum/Queue/Console/DatabaseWorkerArgs.html", "link": "Flarum/Queue/Console/DatabaseWorkerArgs.html#method___construct", "name": "Flarum\\Queue\\Console\\DatabaseWorkerArgs::__construct", "doc": "null"},
                     {"type": "Method", "fromName": "Flarum\\Queue\\Console\\DatabaseWorkerArgs", "fromLink": "Flarum/Queue/Console/DatabaseWorkerArgs.html", "link": "Flarum/Queue/Console/DatabaseWorkerArgs.html#method_args", "name": "Flarum\\Queue\\Console\\DatabaseWorkerArgs::args", "doc": "null"},

@@ -169,7 +169,7 @@ once requested by the application.</p>                </div>
                                             <p>Determine if a queue is paused.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L58" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L68" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -180,12 +180,76 @@ once requested by the application.</p>                </div>
                     array
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_getPausedQueues">getPausedQueues</a>()
+                    <a href="#method_getPausedQueues">getPausedQueues</a>(string $connection, array $queues)
         
-                                            <p>Get the list of paused queues.</p>                </div>
+                                            <p>Determine which of the given queues are currently paused.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L72" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L80" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_pause">pause</a>(string $connection, string $queue)
+        
+                                            <p>Pause a queue by its connection and name.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L92" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_pauseFor">pauseFor</a>(string $connection, string $queue, <a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>|<a target="_blank" href="http://php.net/DateInterval">DateInterval</a>|int $ttl)
+        
+                                            <p>Pause a queue by its connection and name for a given amount of time.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L105" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_resume">resume</a>(string $connection, string $queue)
+        
+                                            <p>Resume a paused queue by its connection and name.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L117" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_withoutInterruptionPolling">withoutInterruptionPolling</a>()
+        
+                                            <p>Indicate that queue workers should not poll for restart or pause signals.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L127" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -280,8 +344,8 @@ once requested by the application.</p>                                          
                     <div class="method-item">
                     <h3 id="method_isPaused">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L58" target="_blank">
-            line 58
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L68" target="_blank">
+            line 68
         </a>
         </div>
         <code>                    bool
@@ -293,9 +357,7 @@ once requested by the application.</p>                                          
     
 
                     <div class="method-description">
-                                    <p>Determine if a queue is paused.</p>                    <p>This is a no-op implementation since Flarum&#039;s simplified queue factory
-doesn&#039;t support queue pausing. Laravel 12&#039;s Worker expects this method
-to exist on the queue manager.</p>                            </div>
+                                    <p>Determine if a queue is paused.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -331,12 +393,12 @@ to exist on the queue manager.</p>                            </div>
                     <div class="method-item">
                     <h3 id="method_getPausedQueues">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L72" target="_blank">
-            line 72
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L80" target="_blank">
+            line 80
         </a>
         </div>
         <code>                    array
-    <strong>getPausedQueues</strong>()
+    <strong>getPausedQueues</strong>(string $connection, array $queues)
         </code>
     </h3>
     <div class="details">
@@ -344,16 +406,215 @@ to exist on the queue manager.</p>                            </div>
     
 
                     <div class="method-description">
-                                    <p>Get the list of paused queues.</p>                    <p>This is a no-op implementation since Flarum&#039;s simplified queue factory
-does not support queue pausing. illuminate/queue v13.11+ expects this
-method to exist on the queue manager.</p>                            </div>
+                                    <p>Determine which of the given queues are currently paused.</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connection</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$queues</td>
+                <td></td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
             <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pause">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L92" target="_blank">
+            line 92
+        </a>
+        </div>
+        <code>                    void
+    <strong>pause</strong>(string $connection, string $queue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pause a queue by its connection and name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connection</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pauseFor">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L105" target="_blank">
+            line 105
+        </a>
+        </div>
+        <code>                    void
+    <strong>pauseFor</strong>(string $connection, string $queue, <a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>|<a target="_blank" href="http://php.net/DateInterval">DateInterval</a>|int $ttl)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pause a queue by its connection and name for a given amount of time.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connection</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>|<a target="_blank" href="http://php.net/DateInterval">DateInterval</a>|int</td>
+                <td>$ttl</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resume">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L117" target="_blank">
+            line 117
+        </a>
+        </div>
+        <code>                    void
+    <strong>resume</strong>(string $connection, string $queue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resume a paused queue by its connection and name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connection</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutInterruptionPolling">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueFactory.php#L127" target="_blank">
+            line 127
+        </a>
+        </div>
+        <code>                    void
+    <strong>withoutInterruptionPolling</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Indicate that queue workers should not poll for restart or pause signals.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
             <td></td>
         </tr>
     </table>

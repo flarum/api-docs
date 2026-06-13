@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Update\Controller\IndexController | Flarum API</title>
+    <title>Flarum\Notification\Event\Sent | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Update_Controller_IndexController" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Notification_Event_Sent" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -102,10 +102,10 @@
                     
     <div class="page-header">
         <h1>
-            IndexController
+            Sent
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Update/Controller/IndexController.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/Event/Sent.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -113,11 +113,16 @@
     </div>
 
     <p>    class        
-    <strong>IndexController</strong>        extends <a href="../../../Flarum/Http/Controller/AbstractHtmlController.html"><abbr title="Flarum\Http\Controller\AbstractHtmlController">AbstractHtmlController</abbr></a></p>
+    <strong>Sent</strong></p>
 
         
     
 
+            <div class="description">
+            <p>Dispatched after notification records have been inserted for a blueprint.</p>            <p>Unlike the moment a driver is asked to send (which happens before the rows exist), this fires
+once the rows are committed, so listeners can rely on the notifications being queryable — e.g.
+via {[\Flarum\Notification\Notification::scopeMatchingBlueprint()}.](../../../Flarum/Notification/Notification.html) Only carries the
+recipients for whom a row was actually inserted on this run (not those skipped as duplicates).</p>                    </div>
     
     
     
@@ -127,50 +132,16 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Update/Controller/IndexController.php#L28" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <abbr title="Flarum\Http\Controller\Illuminate\Contracts\Support\Renderable|string">Renderable|string</abbr>
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_render">render</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Update/Controller/IndexController.php#L39" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a>|<a href="../../../Flarum/Notification/AlertableInterface.html"><abbr title="Flarum\Notification\AlertableInterface">AlertableInterface</abbr></a> $blueprint, array $recipients)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Update/Controller/IndexController.php#L22" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/Event/Sent.php#L29" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -183,98 +154,14 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_handle">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Update/Controller/IndexController.php#L28" target="_blank">
-            line 28
-        </a>
-        </div>
-        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_render">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Update/Controller/IndexController.php#L39" target="_blank">
-            line 39
-        </a>
-        </div>
-        <code>                    <abbr title="Flarum\Http\Controller\Illuminate\Contracts\Support\Renderable|string">Renderable|string</abbr>
-    <strong>render</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Flarum\Http\Controller\Illuminate\Contracts\Support\Renderable|string">Renderable|string</abbr></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Update/Controller/IndexController.php#L22" target="_blank">
-            line 22
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Notification/Event/Sent.php#L29" target="_blank">
+            line 29
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\View\Factory">Factory</abbr> $view, <a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a> $config)
+    <strong>__construct</strong>(<a href="../../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a>|<a href="../../../Flarum/Notification/AlertableInterface.html"><abbr title="Flarum\Notification\AlertableInterface">AlertableInterface</abbr></a> $blueprint, array $recipients)
         </code>
     </h3>
     <div class="details">
@@ -286,14 +173,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></td>
-                <td>$view</td>
+                <td><a href="../../../Flarum/Notification/Blueprint/BlueprintInterface.html"><abbr title="Flarum\Notification\Blueprint\BlueprintInterface">BlueprintInterface</abbr></a>|<a href="../../../Flarum/Notification/AlertableInterface.html"><abbr title="Flarum\Notification\AlertableInterface">AlertableInterface</abbr></a></td>
+                <td>$blueprint</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Flarum/Foundation/Config.html"><abbr title="Flarum\Foundation\Config">Config</abbr></a></td>
-                <td>$config</td>
-                <td></td>
+                <td>array</td>
+                <td>$recipients</td>
+                <td>The users for whom a notification record was just inserted.</td>
             </tr>
             </table>
 

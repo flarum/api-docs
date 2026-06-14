@@ -120,6 +120,20 @@
 
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>INTERNAL_ATTRIBUTE</td>
+                <td class="last">
+                    <p><em>Attribute key marking a request as an internal API call (dispatched via
+{\Flarum\Api\Client}, e.g. when a frontend page preloads its API
+document) rather than a request from an external client.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
     
             <h2>Methods</h2>
@@ -161,6 +175,42 @@ for API requests, so we need to check the priority list to determine whether it 
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_withInternal">withInternal</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L46" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_isInternal">isInternal</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p>Whether this request was dispatched internally. Internal requests are not
+held to the JSON:API spec&#039;s strict query-parameter validation: a frontend
+page forwards the browser&#039;s query string (which may carry tracking params
+like `fbclid`) into the API client, and those must not 400 the page.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L57" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;string
                 </div>
                 <div class="col-md-6 type">
@@ -169,7 +219,7 @@ for API requests, so we need to check the priority list to determine whether it 
                                             <p>Determine the client&#039;s preferred content type out of the given list.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L46" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L69" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -186,7 +236,7 @@ for API requests, so we need to check the priority list to determine whether it 
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L68" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L91" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -203,7 +253,7 @@ for API requests, so we need to check the priority list to determine whether it 
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L73" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L96" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -220,7 +270,7 @@ for API requests, so we need to check the priority list to determine whether it 
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L87" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L110" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -237,7 +287,7 @@ for API requests, so we need to check the priority list to determine whether it 
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L127" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L150" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -254,7 +304,7 @@ for API requests, so we need to check the priority list to determine whether it 
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L150" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L173" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -271,7 +321,7 @@ for API requests, so we need to check the priority list to determine whether it 
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L161" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L184" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -288,7 +338,7 @@ for API requests, so we need to check the priority list to determine whether it 
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L176" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L199" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -305,7 +355,7 @@ for API requests, so we need to check the priority list to determine whether it 
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L195" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L218" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -322,7 +372,7 @@ for API requests, so we need to check the priority list to determine whether it 
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L206" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L229" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -422,10 +472,99 @@ for API requests, so we need to check the priority list to determine whether it 
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getPreferredContentType">
+                    <h3 id="method_withInternal">
         <div class="location">
                         at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L46" target="_blank">
             line 46
+        </a>
+        </div>
+        <code>        static            <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+    <strong>withInternal</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isInternal">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L57" target="_blank">
+            line 57
+        </a>
+        </div>
+        <code>        static            bool
+    <strong>isInternal</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Whether this request was dispatched internally. Internal requests are not
+held to the JSON:API spec&#039;s strict query-parameter validation: a frontend
+page forwards the browser&#039;s query string (which may carry tracking params
+like `fbclid`) into the API client, and those must not 400 the page.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreferredContentType">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L69" target="_blank">
+            line 69
         </a>
         </div>
         <code>        static            string
@@ -473,8 +612,8 @@ for API requests, so we need to check the priority list to determine whether it 
                     <div class="method-item">
                     <h3 id="method_getActor">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L68" target="_blank">
-            line 68
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L91" target="_blank">
+            line 91
         </a>
         </div>
         <code>        static            <a href="../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>
@@ -515,8 +654,8 @@ for API requests, so we need to check the priority list to determine whether it 
                     <div class="method-item">
                     <h3 id="method_withActor">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L73" target="_blank">
-            line 73
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L96" target="_blank">
+            line 96
         </a>
         </div>
         <code>        static            <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
@@ -562,8 +701,8 @@ for API requests, so we need to check the priority list to determine whether it 
                     <div class="method-item">
                     <h3 id="method_extractSort">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L87" target="_blank">
-            line 87
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L110" target="_blank">
+            line 110
         </a>
         </div>
         <code>        static            array|null
@@ -614,8 +753,8 @@ for API requests, so we need to check the priority list to determine whether it 
                     <div class="method-item">
                     <h3 id="method_extractLimit">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L127" target="_blank">
-            line 127
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L150" target="_blank">
+            line 150
         </a>
         </div>
         <code>        static            int|null
@@ -666,8 +805,8 @@ for API requests, so we need to check the priority list to determine whether it 
                     <div class="method-item">
                     <h3 id="method_extractOffsetFromNumber">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L150" target="_blank">
-            line 150
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L173" target="_blank">
+            line 173
         </a>
         </div>
         <code>        static            int
@@ -713,8 +852,8 @@ for API requests, so we need to check the priority list to determine whether it 
                     <div class="method-item">
                     <h3 id="method_extractOffset">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L161" target="_blank">
-            line 161
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L184" target="_blank">
+            line 184
         </a>
         </div>
         <code>        static            int
@@ -760,8 +899,8 @@ for API requests, so we need to check the priority list to determine whether it 
                     <div class="method-item">
                     <h3 id="method_extractInclude">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L176" target="_blank">
-            line 176
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L199" target="_blank">
+            line 199
         </a>
         </div>
         <code>        static            array
@@ -807,8 +946,8 @@ for API requests, so we need to check the priority list to determine whether it 
                     <div class="method-item">
                     <h3 id="method_extractFilter">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L195" target="_blank">
-            line 195
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L218" target="_blank">
+            line 218
         </a>
         </div>
         <code>        static            array
@@ -849,8 +988,8 @@ for API requests, so we need to check the priority list to determine whether it 
                     <div class="method-item">
                     <h3 id="method_extractFields">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L206" target="_blank">
-            line 206
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/RequestUtil.php#L229" target="_blank">
+            line 229
         </a>
         </div>
         <code>        static            array

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Frontend\Content\CorePayload | Flarum API</title>
+    <title>Flarum\Api\Middleware\AddAssetsRevisionHeader | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Frontend_Content_CorePayload" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Api_Middleware_AddAssetsRevisionHeader" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -102,10 +102,10 @@
                     
     <div class="page-header">
         <h1>
-            CorePayload
+            AddAssetsRevisionHeader
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/CorePayload.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Middleware/AddAssetsRevisionHeader.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -113,13 +113,30 @@
     </div>
 
     <p>    class        
-    <strong>CorePayload</strong></p>
+    <strong>AddAssetsRevisionHeader</strong>        implements
+        <abbr title="Psr\Http\Server\MiddlewareInterface">MiddlewareInterface</abbr></p>
 
         
     
 
+            <div class="description">
+            <p>Stamps every API response with the current asset revision token, so a browsing
+client can notice when the JS/CSS it booted with has been superseded and offer
+the user a reload — without polling or a forced refresh.</p>                                </div>
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>HEADER_NAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
     
             <h2>Methods</h2>
@@ -130,13 +147,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Locale/LocaleManager.html"><abbr title="Flarum\Locale\LocaleManager">LocaleManager</abbr></a> $locales, <a href="../../../Flarum/Foundation/MaintenanceMode.html"><abbr title="Flarum\Foundation\MaintenanceMode">MaintenanceMode</abbr></a> $maintenance, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Frontend/Compiler/AssetsRevision.html"><abbr title="Flarum\Frontend\Compiler\AssetsRevision">AssetsRevision</abbr></a> $assetsRevision)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Frontend/Compiler/AssetsRevision.html"><abbr title="Flarum\Frontend\Compiler\AssetsRevision">AssetsRevision</abbr></a> $revision)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/CorePayload.php#L23" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Middleware/AddAssetsRevisionHeader.php#L27" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -144,16 +161,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___invoke">__invoke</a>(<a href="../../../Flarum/Frontend/Document.html"><abbr title="Flarum\Frontend\Document">Document</abbr></a> $document, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+                    <a href="#method_process">process</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/CorePayload.php#L31" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Middleware/AddAssetsRevisionHeader.php#L32" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -168,12 +185,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/CorePayload.php#L23" target="_blank">
-            line 23
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Middleware/AddAssetsRevisionHeader.php#L27" target="_blank">
+            line 27
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Locale/LocaleManager.html"><abbr title="Flarum\Locale\LocaleManager">LocaleManager</abbr></a> $locales, <a href="../../../Flarum/Foundation/MaintenanceMode.html"><abbr title="Flarum\Foundation\MaintenanceMode">MaintenanceMode</abbr></a> $maintenance, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Frontend/Compiler/AssetsRevision.html"><abbr title="Flarum\Frontend\Compiler\AssetsRevision">AssetsRevision</abbr></a> $assetsRevision)
+    <strong>__construct</strong>(<a href="../../../Flarum/Frontend/Compiler/AssetsRevision.html"><abbr title="Flarum\Frontend\Compiler\AssetsRevision">AssetsRevision</abbr></a> $revision)
         </code>
     </h3>
     <div class="details">
@@ -185,23 +202,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Flarum/Locale/LocaleManager.html"><abbr title="Flarum\Locale\LocaleManager">LocaleManager</abbr></a></td>
-                <td>$locales</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Foundation/MaintenanceMode.html"><abbr title="Flarum\Foundation\MaintenanceMode">MaintenanceMode</abbr></a></td>
-                <td>$maintenance</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
-                <td>$settings</td>
-                <td></td>
-            </tr>
-                    <tr>
                 <td><a href="../../../Flarum/Frontend/Compiler/AssetsRevision.html"><abbr title="Flarum\Frontend\Compiler\AssetsRevision">AssetsRevision</abbr></a></td>
-                <td>$assetsRevision</td>
+                <td>$revision</td>
                 <td></td>
             </tr>
             </table>
@@ -214,14 +216,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___invoke">
+                    <h3 id="method_process">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/CorePayload.php#L31" target="_blank">
-            line 31
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Middleware/AddAssetsRevisionHeader.php#L32" target="_blank">
+            line 32
         </a>
         </div>
-        <code>                    void
-    <strong>__invoke</strong>(<a href="../../../Flarum/Frontend/Document.html"><abbr title="Flarum\Frontend\Document">Document</abbr></a> $document, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>process</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr> $handler)
         </code>
     </h3>
     <div class="details">
@@ -233,13 +235,13 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Flarum/Frontend/Document.html"><abbr title="Flarum\Frontend\Document">Document</abbr></a></td>
-                <td>$document</td>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
+                <td><abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></td>
+                <td>$handler</td>
                 <td></td>
             </tr>
             </table>
@@ -249,7 +251,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
             <td></td>
         </tr>
     </table>

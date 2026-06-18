@@ -1085,6 +1085,23 @@ non-sensitive fields needed to pre-populate the sign-up modal.
             </div>
                     <div class="row">
                 <div class="col-md-6">
+                                            <a href="Flarum/Api/Middleware/AddAssetsRevisionHeader.html"><abbr title="Flarum\Api\Middleware\AddAssetsRevisionHeader">AddAssetsRevisionHeader</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    Stamps every API response with the current asset revision token, so a browsing
+client can notice when the JS/CSS it booted with has been superseded and offer
+the user a reload — without polling or a forced refresh.
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Middleware/AddAssetsRevisionHeader.php" target="_blank">
+        <img src="assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
                                             <a href="Flarum/Api/Middleware/FakeHttpMethods.html"><abbr title="Flarum\Api\Middleware\FakeHttpMethods">FakeHttpMethods</abbr></a>
                                             
                 </div>
@@ -4542,6 +4559,23 @@ for the sake of better integration with Laravel packages/ecosystem.
             </div>
                     <div class="row">
                 <div class="col-md-6">
+                                            <a href="Flarum/Frontend/Compiler/AssetsRevision.html"><abbr title="Flarum\Frontend\Compiler\AssetsRevision">AssetsRevision</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    Produces a single token representing the current state of all compiled asset
+revisions, so a long-lived client can detect when the assets it booted with
+have been superseded (e.g. after a rebuild or extension toggle).
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/AssetsRevision.php" target="_blank">
+        <img src="assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
                                             <em><a href="Flarum/Frontend/Compiler/CompilerInterface.html"><abbr title="Flarum\Frontend\Compiler\CompilerInterface">CompilerInterface</abbr></a></em>
                                             
                 </div>
@@ -4835,6 +4869,24 @@ for the sake of better integration with Laravel packages/ecosystem.
                 </div>
                 <div class="col-md-1 text-right">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Driver/TitleDriverInterface.php" target="_blank">
+        <img src="assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Flarum/Frontend/Event/AssetsRecompiled.html"><abbr title="Flarum\Frontend\Event\AssetsRecompiled">AssetsRecompiled</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    Dispatched after the frontend assets have been recompiled in place (e.g. an
+extension was toggled or the cache was cleared), so the compiled JS/CSS now has
+a new revision. Lets consumers react — for example, to notify connected clients
+that the assets they loaded are out of date.
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Event/AssetsRecompiled.php" target="_blank">
         <img src="assets/img/code.svg"  />
     </a>
 

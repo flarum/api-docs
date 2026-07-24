@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Console\ConsoleServiceProvider | Flarum API</title>
+    <title>Flarum\Console\TinkerHelpCommand | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Console_ConsoleServiceProvider" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Console_TinkerHelpCommand" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -102,10 +102,10 @@
                     
     <div class="page-header">
         <h1>
-            ConsoleServiceProvider
+            TinkerHelpCommand
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/ConsoleServiceProvider.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/TinkerHelpCommand.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -113,47 +113,36 @@
     </div>
 
     <p>    class        
-    <strong>ConsoleServiceProvider</strong>        extends <a href="../../Flarum/Foundation/AbstractServiceProvider.html"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></p>
+    <strong>TinkerHelpCommand</strong>        extends <abbr title="Psy\Command\Command">Command</abbr></p>
 
         
     
 
+            <div class="description">
+            <p>An in-shell `flarum` command that reprints the Flarum-specific context
+(scope variables, short-name model aliasing, docs link). This is the same
+information shown in the startup banner, made available on demand for once
+the banner has scrolled out of view. It is listed automatically by PsySH's
+built-in `help` command.</p>                                </div>
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_container">
-                                        protected                                        <abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr>
-                </td>
-                <td>$container</td>
-                <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#property_container"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/ConsoleServiceProvider.php#L17" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr> $app)
+                    <a href="#method_configure">configure</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/ConsoleServiceProvider.php#L19" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/TinkerHelpCommand.php#L25" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -161,33 +150,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    int
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_register">register</a>()
+                    <a href="#method_execute">execute</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/ConsoleServiceProvider.php#L38" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_boot">boot</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Illuminate\Events\Dispatcher">Dispatcher</abbr> $events, <abbr title="Illuminate\Console\Scheduling\Schedule">Schedule</abbr> $schedule)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/ConsoleServiceProvider.php#L87" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/TinkerHelpCommand.php#L34" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -200,48 +172,14 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_configure">
         <div class="location">
-                            in <a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/AbstractServiceProvider.php#L19" target="_blank">
-            line 19
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/TinkerHelpCommand.php#L25" target="_blank">
+            line 25
         </a>
         </div>
-        <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr> $app)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></td>
-                <td>$app</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_register">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/ConsoleServiceProvider.php#L38" target="_blank">
-            line 38
-        </a>
-        </div>
-        <code>                    void
-    <strong>register</strong>()
+        <code>            protected        void
+    <strong>configure</strong>()
         </code>
     </h3>
     <div class="details">
@@ -266,14 +204,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_boot">
+                    <h3 id="method_execute">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/ConsoleServiceProvider.php#L87" target="_blank">
-            line 87
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Console/TinkerHelpCommand.php#L34" target="_blank">
+            line 34
         </a>
         </div>
-        <code>                    void
-    <strong>boot</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Illuminate\Events\Dispatcher">Dispatcher</abbr> $events, <abbr title="Illuminate\Console\Scheduling\Schedule">Schedule</abbr> $schedule)
+        <code>            protected        int
+    <strong>execute</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
         </code>
     </h3>
     <div class="details">
@@ -285,18 +223,13 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
-                <td>$container</td>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Illuminate\Events\Dispatcher">Dispatcher</abbr></td>
-                <td>$events</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Illuminate\Console\Scheduling\Schedule">Schedule</abbr></td>
-                <td>$schedule</td>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
                 <td></td>
             </tr>
             </table>
@@ -306,7 +239,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>int</td>
             <td></td>
         </tr>
     </table>

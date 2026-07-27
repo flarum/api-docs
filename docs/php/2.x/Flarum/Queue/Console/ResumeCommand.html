@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Group\GroupServiceProvider | Flarum API</title>
+    <title>Flarum\Queue\Console\ResumeCommand | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
-        <script src="../../assets/app.min.js"></script>
-        <script src="../../sami.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
+        <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Group_GroupServiceProvider" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Queue_Console_ResumeCommand" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -25,7 +25,7 @@
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
-                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../..//">PHP</a></li>
                 <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
                 <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
             </ul>
@@ -67,7 +67,7 @@
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
 
-        <form id="search-form" action="../../search.html" method="GET">
+        <form id="search-form" action="../../../search.html" method="GET">
             <span class="icon icon-search"></span>
             <input name="search"
                    id="doctum-search-auto-complete"
@@ -88,13 +88,13 @@
             <div id="right-column">
                     <nav id="site-nav" class="navbar navbar-expand" role="navigation">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
 
-                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
-            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
-            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
-            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
         </ul>
     </nav>
 
@@ -102,22 +102,25 @@
                     
     <div class="page-header">
         <h1>
-            GroupServiceProvider
+            ResumeCommand
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/GroupServiceProvider.php" target="_blank">
-        <img src="../../assets/img/code.svg" height="30" />
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
     <p>    class        
-    <strong>GroupServiceProvider</strong>        extends <a href="../../Flarum/Foundation/AbstractServiceProvider.html"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></p>
+    <strong>ResumeCommand</strong>        extends <abbr title="Illuminate\Console\Command">Command</abbr></p>
 
         
     
 
+            <div class="description">
+            <p>Flarum's counterpart to Illuminate's queue:resume — see PauseCommand for
+why the upstream commands cannot be reused directly.</p>                                </div>
     
     
     
@@ -125,14 +128,26 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_container">
-                                        protected                                        <abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr>
+                <td class="type" id="property_signature">
+                                        protected                                        
                 </td>
-                <td>$container</td>
+                <td>$signature</td>
                 <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#property_container"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/GroupServiceProvider.php#L17" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L24" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_description">
+                                        protected                                        
+                </td>
+                <td>$description</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L26" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
@@ -144,51 +159,34 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    int
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr> $app)
+                    <a href="#method_handle">handle</a>(<abbr title="Illuminate\Contracts\Queue\Factory">Factory</abbr> $factory, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a></small></div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/GroupServiceProvider.php#L19" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L28" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    array
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_register">register</a>()
+                    <a href="#method_parseQueue">parseQueue</a>(string $argument, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/GroupServiceProvider.php#L18" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_boot">boot</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/GroupServiceProvider.php#L23" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L44" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -200,15 +198,14 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_handle">
         <div class="location">
-                            in <a href="../../Flarum/Foundation/AbstractServiceProvider.html#method___construct"><abbr title="Flarum\Foundation\AbstractServiceProvider">AbstractServiceProvider</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/AbstractServiceProvider.php#L19" target="_blank">
-            line 19
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L28" target="_blank">
+            line 28
         </a>
         </div>
-        <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr> $app)
+        <code>                    int
+    <strong>handle</strong>(<abbr title="Illuminate\Contracts\Queue\Factory">Factory</abbr> $factory, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
         </code>
     </h3>
     <div class="details">
@@ -220,41 +217,23 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></td>
-                <td>$app</td>
+                <td><abbr title="Illuminate\Contracts\Queue\Factory">Factory</abbr></td>
+                <td>$factory</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></td>
+                <td>$connection</td>
                 <td></td>
             </tr>
             </table>
 
             
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_register">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/GroupServiceProvider.php#L18" target="_blank">
-            line 18
-        </a>
-        </div>
-        <code>                    void
-    <strong>register</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>int</td>
             <td></td>
         </tr>
     </table>
@@ -266,14 +245,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_boot">
+                    <h3 id="method_parseQueue">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/GroupServiceProvider.php#L23" target="_blank">
-            line 23
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L44" target="_blank">
+            line 44
         </a>
         </div>
-        <code>                    void
-    <strong>boot</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container)
+        <code>            protected        array
+    <strong>parseQueue</strong>(string $argument, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
         </code>
     </h3>
     <div class="details">
@@ -285,8 +264,13 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
-                <td>$container</td>
+                <td>string</td>
+                <td>$argument</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></td>
+                <td>$connection</td>
                 <td></td>
             </tr>
             </table>
@@ -296,7 +280,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>array</td>
             <td></td>
         </tr>
     </table>

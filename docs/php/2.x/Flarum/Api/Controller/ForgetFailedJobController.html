@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Queue\Console\ResumeCommand | Flarum API</title>
+    <title>Flarum\Api\Controller\ForgetFailedJobController | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Queue_Console_ResumeCommand" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Api_Controller_ForgetFailedJobController" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -102,10 +102,10 @@
                     
     <div class="page-header">
         <h1>
-            ResumeCommand
+            ForgetFailedJobController
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ForgetFailedJobController.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -113,62 +113,31 @@
     </div>
 
     <p>    class        
-    <strong>ResumeCommand</strong>        extends <abbr title="Illuminate\Console\Command">Command</abbr></p>
+    <strong>ForgetFailedJobController</strong>        implements
+        <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></p>
 
         
     
 
-            <div class="description">
-            <p>Flarum's counterpart to Illuminate's queue:resume — see PauseCommand for
-why the upstream commands cannot be reused directly.</p>                                </div>
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_signature">
-                                        protected                                        
-                </td>
-                <td>$signature</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L25" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_description">
-                                        protected                                        
-                </td>
-                <td>$description</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L27" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    int
+                    
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_handle">handle</a>(<abbr title="Illuminate\Contracts\Queue\Factory">Factory</abbr> $factory, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Queue/FailedJobs.html"><abbr title="Flarum\Queue\FailedJobs">FailedJobs</abbr></a> $failed)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L29" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ForgetFailedJobController.php#L23" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -176,16 +145,16 @@ why the upstream commands cannot be reused directly.</p>                        
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_parseQueue">parseQueue</a>(string $argument, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
+                    <a href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L64" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ForgetFailedJobController.php#L28" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -198,14 +167,14 @@ why the upstream commands cannot be reused directly.</p>                        
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_handle">
+                    <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L29" target="_blank">
-            line 29
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ForgetFailedJobController.php#L23" target="_blank">
+            line 23
         </a>
         </div>
-        <code>                    int
-    <strong>handle</strong>(<abbr title="Illuminate\Contracts\Queue\Factory">Factory</abbr> $factory, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Flarum/Queue/FailedJobs.html"><abbr title="Flarum\Queue\FailedJobs">FailedJobs</abbr></a> $failed)
         </code>
     </h3>
     <div class="details">
@@ -217,27 +186,13 @@ why the upstream commands cannot be reused directly.</p>                        
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Queue\Factory">Factory</abbr></td>
-                <td>$factory</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></td>
-                <td>$connection</td>
+                <td><a href="../../../Flarum/Queue/FailedJobs.html"><abbr title="Flarum\Queue\FailedJobs">FailedJobs</abbr></a></td>
+                <td>$failed</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>int</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -245,14 +200,14 @@ why the upstream commands cannot be reused directly.</p>                        
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_parseQueue">
+                    <h3 id="method_handle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L64" target="_blank">
-            line 64
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ForgetFailedJobController.php#L28" target="_blank">
+            line 28
         </a>
         </div>
-        <code>            protected        array
-    <strong>parseQueue</strong>(string $argument, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         </code>
     </h3>
     <div class="details">
@@ -264,13 +219,8 @@ why the upstream commands cannot be reused directly.</p>                        
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$argument</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></td>
-                <td>$connection</td>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
                 <td></td>
             </tr>
             </table>
@@ -280,7 +230,7 @@ why the upstream commands cannot be reused directly.</p>                        
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
             <td></td>
         </tr>
     </table>

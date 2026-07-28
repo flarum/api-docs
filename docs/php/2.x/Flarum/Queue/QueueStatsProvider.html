@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Queue\Console\ResumeCommand | Flarum API</title>
+    <title>Flarum\Queue\QueueStatsProvider | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
-        <script src="../../../assets/app.min.js"></script>
-        <script src="../../../sami.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Queue_Console_ResumeCommand" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Queue_QueueStatsProvider" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -25,7 +25,7 @@
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
-                <li class="nav-item active"><a class="nav-link" href="../../..//">PHP</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
                 <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
                 <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
             </ul>
@@ -67,7 +67,7 @@
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
 
-        <form id="search-form" action="../../../search.html" method="GET">
+        <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
             <input name="search"
                    id="doctum-search-auto-complete"
@@ -88,13 +88,13 @@
             <div id="right-column">
                     <nav id="site-nav" class="navbar navbar-expand" role="navigation">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
 
-                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
-            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
-            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
-            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
         </ul>
     </nav>
 
@@ -102,74 +102,46 @@
                     
     <div class="page-header">
         <h1>
-            ResumeCommand
+            QueueStatsProvider
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php" target="_blank">
-        <img src="../../../assets/img/code.svg" height="30" />
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueStatsProvider.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>    class        
-    <strong>ResumeCommand</strong>        extends <abbr title="Illuminate\Console\Command">Command</abbr></p>
+    <p>        interface    
+    <strong>QueueStatsProvider</strong></p>
 
         
     
 
             <div class="description">
-            <p>Flarum's counterpart to Illuminate's queue:resume — see PauseCommand for
-why the upstream commands cannot be reused directly.</p>                                </div>
+            <p>Supplies the counts shown by the admin queue dashboard widget.</p>            <p>Core binds a database-backed implementation. Extensions that provide a
+different queue backend (fof/redis, fof/horizon) bind their own
+implementation so the same core widget works for every driver, rather than
+each shipping a parallel dashboard.</p>                    </div>
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_signature">
-                                        protected                                        
-                </td>
-                <td>$signature</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L25" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_description">
-                                        protected                                        
-                </td>
-                <td>$description</td>
-                <td class="last"></td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L27" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    int
+                    array
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_handle">handle</a>(<abbr title="Illuminate\Contracts\Queue\Factory">Factory</abbr> $factory, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
+                    <a href="#method_totals">totals</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Aggregate counts across all queues on the active connection.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L29" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueStatsProvider.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -179,14 +151,13 @@ why the upstream commands cannot be reused directly.</p>                        
                     array
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_parseQueue">parseQueue</a>(string $argument, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
+                    <a href="#method_queues">queues</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Per-queue pending/reserved counts, keyed by queue name.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L64" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueStatsProvider.php#L34" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -198,42 +169,29 @@ why the upstream commands cannot be reused directly.</p>                        
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_handle">
+                    <h3 id="method_totals">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L29" target="_blank">
-            line 29
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueStatsProvider.php#L27" target="_blank">
+            line 27
         </a>
         </div>
-        <code>                    int
-    <strong>handle</strong>(<abbr title="Illuminate\Contracts\Queue\Factory">Factory</abbr> $factory, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
+        <code>                    array
+    <strong>totals</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Aggregate counts across all queues on the active connection.</p>                                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\Queue\Factory">Factory</abbr></td>
-                <td>$factory</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></td>
-                <td>$connection</td>
-                <td></td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>int</td>
+            <td>array</td>
             <td></td>
         </tr>
     </table>
@@ -245,36 +203,23 @@ why the upstream commands cannot be reused directly.</p>                        
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_parseQueue">
+                    <h3 id="method_queues">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/Console/ResumeCommand.php#L64" target="_blank">
-            line 64
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/QueueStatsProvider.php#L34" target="_blank">
+            line 34
         </a>
         </div>
-        <code>            protected        array
-    <strong>parseQueue</strong>(string $argument, <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $connection)
+        <code>                    array
+    <strong>queues</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Per-queue pending/reserved counts, keyed by queue name.</p>                                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$argument</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></td>
-                <td>$connection</td>
-                <td></td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 

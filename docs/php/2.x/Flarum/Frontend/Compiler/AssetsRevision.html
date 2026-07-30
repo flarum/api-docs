@@ -177,7 +177,7 @@ boots with, so the manifest is canonicalised (sorted by key) before hashing.</p>
 client produce the same token from the same manifest regardless of order.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/AssetsRevision.php#L42" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/AssetsRevision.php#L50" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -257,8 +257,8 @@ client produce the same token from the same manifest regardless of order.</p>   
                     <div class="method-item">
                     <h3 id="method_tokenFor">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/AssetsRevision.php#L42" target="_blank">
-            line 42
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/AssetsRevision.php#L50" target="_blank">
+            line 50
         </a>
         </div>
         <code>        static            string
@@ -271,7 +271,13 @@ client produce the same token from the same manifest regardless of order.</p>   
 
                     <div class="method-description">
                                     <p>Canonicalise a revisions map (sort by key) and hash it, so the server and
-client produce the same token from the same manifest regardless of order.</p>                                                </div>
+client produce the same token from the same manifest regardless of order.</p>                    <p>Admin-only assets are excluded: the token exists to tell a *forum* client
+that what it loaded has been superseded, but the manifest is shared with
+the admin frontend. Without this, rebuilding any admin asset — e.g.
+toggling an admin-only extension — would move the token and prompt every
+forum visitor to reload for a change that cannot affect them. Forum and
+shared (`common`) chunks stay in: the forum can load those, so a genuine
+change to one must still trigger the prompt.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

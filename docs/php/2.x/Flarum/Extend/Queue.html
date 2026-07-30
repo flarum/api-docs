@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Queue\AbstractJob | Flarum API</title>
+    <title>Flarum\Extend\Queue | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
         <script src="../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Queue_AbstractJob" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Extend_Queue" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -102,10 +102,10 @@
                     
     <div class="page-header">
         <h1>
-            AbstractJob
+            Queue
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/AbstractJob.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Queue.php" target="_blank">
         <img src="../../assets/img/code.svg" height="30" />
     </a>
 
@@ -113,101 +113,47 @@
     </div>
 
     <p>    class        
-    <strong>AbstractJob</strong>        implements
-        <abbr title="Illuminate\Contracts\Queue\ShouldQueue">ShouldQueue</abbr></p>
+    <strong>Queue</strong>        implements
+        <a href="../../Flarum/Extend/ExtenderInterface.html"><abbr title="Flarum\Extend\ExtenderInterface">ExtenderInterface</abbr></a></p>
 
         
     
 
     
-            <h2>Traits</h2>
-
-        
-    <div class="container-fluid underlined">
-                    <div class="row">
-                <div class="col-md-6">
-                                            <abbr title="Illuminate\Queue\InteractsWithQueue">InteractsWithQueue</abbr>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/InteractsWithQueue.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <abbr title="Illuminate\Bus\Queueable">Queueable</abbr>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Bus/Queueable.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
-                                            <abbr title="Illuminate\Queue\SerializesModels">SerializesModels</abbr>
-                                            
-                </div>
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-1 text-right">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/SerializesModels.php" target="_blank">
-        <img src="../../assets/img/code.svg"  />
-    </a>
-
-                </div>
-            </div>
-            </div>
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_deleteWhenMissingModels">
-                                                                                bool
-                </td>
-                <td>$deleteWhenMissingModels</td>
-                <td class="last">If a serialized model on this job has been deleted between dispatch and
-worker pickup, treat the job as a no-op and remove it from the queue
-rather than calling failed(), which re-deserializes the payload and
-throws ModelNotFoundException a second time — producing duplicate error
-log entries for what is in fact a handled-correctly race.</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/AbstractJob.php#L33" target="_blank">
-        <img src="../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <a href="../../Flarum/Extend/Queue.html"><abbr title="Flarum\Extend\Queue">Queue</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>()
+                    <a href="#method_route">route</a>(string $jobClass, string $queue)
         
-                                            <p>Present so subclasses can safely call `parent::__construct()` (many do).</p>                </div>
+                                            <p>Route jobs of a class onto a named queue.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/AbstractJob.php#L41" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Queue.php#L38" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Queue.php#L45" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -220,14 +166,14 @@ log entries for what is in fact a handled-correctly race.</td>
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
+                    <h3 id="method_route">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/AbstractJob.php#L41" target="_blank">
-            line 41
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Queue.php#L38" target="_blank">
+            line 38
         </a>
         </div>
-        <code>                    
-    <strong>__construct</strong>()
+        <code>                    <a href="../../Flarum/Extend/Queue.html"><abbr title="Flarum\Extend\Queue">Queue</abbr></a>
+    <strong>route</strong>(string $jobClass, string $queue)
         </code>
     </h3>
     <div class="details">
@@ -235,11 +181,88 @@ log entries for what is in fact a handled-correctly race.</td>
     
 
                     <div class="method-description">
-                                    <p>Present so subclasses can safely call `parent::__construct()` (many do).</p>                    <p>Queue routing is applied when the job is pushed — see
-{\Flarum\Queue\RoutingQueue} and {\Flarum\Extend\Queue} — not
-here, so there is nothing to do at construction.</p>                            </div>
+                                    <p>Route jobs of a class onto a named queue.</p>                    <p>The queue is applied when the job is pushed (see
+{\Flarum\Queue\RoutingQueue}), so dispatch sites do not need to
+change and the routing decision is not stored on the job class.
+
+Routing a base/abstract class covers all of its subclasses: e.g. routing
+an abstract `GamilyticsJob` sends every job that extends it to that queue.
+The most specific registered class in a job&#039;s hierarchy wins, so a route
+on a concrete subclass overrides one on its base. An explicit queue passed
+at push time always takes precedence over any route.</p>                            </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$jobClass</td>
+                <td>A job extending Flarum\Queue\AbstractJob (or a base class of one).</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$queue</td>
+                <td>The queue name to dispatch its instances on.</td>
+            </tr>
+            </table>
+
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Extend/Queue.html"><abbr title="Flarum\Extend\Queue">Queue</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Queue.php#L45" target="_blank">
+            line 45
+        </a>
+        </div>
+        <code>                    void
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

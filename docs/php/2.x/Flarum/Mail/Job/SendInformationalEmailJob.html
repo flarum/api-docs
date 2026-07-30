@@ -190,18 +190,6 @@ log entries for what is in fact a handled-correctly race.</td>
     </a>
 </td>
             </tr>
-                    <tr>
-                <td class="type" id="property_onQueue">
-                    static                                                            string|null
-                </td>
-                <td>$onQueue</td>
-                <td class="last">Optional queue name onto which jobs of this class should be routed.</td>
-                <td><small>from&nbsp;<a href="../../../Flarum/Queue/AbstractJob.html#property_onQueue"><abbr title="Flarum\Queue\AbstractJob">AbstractJob</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Job/SendInformationalEmailJob.php#L43" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
             </table>
 
     
@@ -215,8 +203,7 @@ log entries for what is in fact a handled-correctly race.</td>
                 <div class="col-md-6 type">
                     <a href="#method___construct">__construct</a>(string $email, string $displayName, string $subject, string $body, string $forumTitle, string|null $bodyTitle = null, array $views = [&#039;text&#039; =&gt; &#039;mail::plain.information.generic&#039;, &#039;html&#039; =&gt; &#039;mail::html.information.generic&#039;], string|null $locale = null)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Present so subclasses can safely call `parent::__construct()` (many do).</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/Job/SendInformationalEmailJob.php#L20" target="_blank">
@@ -263,6 +250,10 @@ log entries for what is in fact a handled-correctly race.</td>
             
     
 
+                    <div class="method-description">
+                                    <p>Present so subclasses can safely call `parent::__construct()` (many do).</p>                    <p>Queue routing is applied when the job is pushed — see
+{\Flarum\Queue\RoutingQueue} and {\Flarum\Extend\Queue} — not
+here, so there is nothing to do at construction.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

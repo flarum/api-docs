@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Queue\RoutingQueue | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Queue_RoutingQueue" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" selected>2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.17" >v1.8.17</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            RoutingQueue
+                
+            &nbsp;
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>RoutingQueue</strong>        implements
+        <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></p>
+
+        
+    
+
+            <div class="description">
+            <p>Wraps the queue connection so jobs are routed onto their registered queue
+when they are pushed.</p>            <p>Laravel's native queue routing ({\Illuminate\Queue\QueueRoutes}) is only applied by the
+bus dispatcher (`dispatch()`); the low-level `push()` — which most of Flarum
+and its extensions use — bypasses it. This wrapper closes that gap: when a
+job is pushed with no explicit queue, its class is looked up in the route map
+(which resolves through the class hierarchy: parents, interfaces, traits) and
+the resulting queue is applied. An explicit queue always wins; an unrouted
+job falls through to the driver default.
+
+It wraps whatever connection is bound to `flarum.queue.connection` (core's or
+a replacement from FoF Redis / Horizon), so routing is driver-independent.
+Everything other than the routing decision is delegated to the wrapped
+connection, including methods beyond the Queue contract (via `__call`); the
+underlying driver is available through {\Flarum\Queue\getDriver()} for the few callers
+that need the concrete instance.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $driver, <abbr title="Illuminate\Queue\QueueRoutes">QueueRoutes</abbr> $routes)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L36" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getDriver">getDriver</a>()
+        
+                                            <p>The wrapped driver connection.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L45" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_routeFor">routeFor</a>(mixed $job, string|null $queue)
+        
+                                            <p>Resolve the queue for a job: an explicit queue wins; otherwise the route
+registered for the job&#039;s class (or an ancestor); otherwise null (driver
+default). Only job objects can be routed — string job names pass through.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L58" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_push">push</a>($job, $data = &#039;&#039;, $queue = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L67" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_later">later</a>($delay, $job, $data = &#039;&#039;, $queue = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L72" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_bulk">bulk</a>($jobs, $data = &#039;&#039;, $queue = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L77" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_pushOn">pushOn</a>($queue, $job, $data = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L98" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_laterOn">laterOn</a>($queue, $delay, $job, $data = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L103" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_pushRaw">pushRaw</a>($payload, $queue = null, array $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L108" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_pop">pop</a>($queue = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L113" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_size">size</a>($queue = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L118" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_pendingSize">pendingSize</a>($queue = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L123" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_delayedSize">delayedSize</a>($queue = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L128" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_reservedSize">reservedSize</a>($queue = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L133" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_creationTimeOfOldestPendingJob">creationTimeOfOldestPendingJob</a>($queue = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L138" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getConnectionName">getConnectionName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L143" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setConnectionName">setConnectionName</a>($name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L148" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___call">__call</a>(string $name, <abbr title="Flarum\Queue\array&lt;int,mixed&gt;">array&lt;int,mixed&gt;</abbr> $arguments)
+        
+                                            <p>Delegate any method beyond the Queue contract to the wrapped driver
+(drivers expose extra methods — setContainer(), getConnectionConfig(),
+etc. — that callers rely on).</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L165" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L36" target="_blank">
+            line 36
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr> $driver, <abbr title="Illuminate\Queue\QueueRoutes">QueueRoutes</abbr> $routes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></td>
+                <td>$driver</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Queue\QueueRoutes">QueueRoutes</abbr></td>
+                <td>$routes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDriver">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L45" target="_blank">
+            line 45
+        </a>
+        </div>
+        <code>                    <abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr>
+    <strong>getDriver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The wrapped driver connection.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_routeFor">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L58" target="_blank">
+            line 58
+        </a>
+        </div>
+        <code>            protected        string|null
+    <strong>routeFor</strong>(mixed $job, string|null $queue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve the queue for a job: an explicit queue wins; otherwise the route
+registered for the job&#039;s class (or an ancestor); otherwise null (driver
+default). Only job objects can be routed — string job names pass through.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$job</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_push">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L67" target="_blank">
+            line 67
+        </a>
+        </div>
+        <code>                    
+    <strong>push</strong>($job, $data = &#039;&#039;, $queue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$job</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_later">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L72" target="_blank">
+            line 72
+        </a>
+        </div>
+        <code>                    
+    <strong>later</strong>($delay, $job, $data = &#039;&#039;, $queue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$delay</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$job</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bulk">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L77" target="_blank">
+            line 77
+        </a>
+        </div>
+        <code>                    
+    <strong>bulk</strong>($jobs, $data = &#039;&#039;, $queue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$jobs</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pushOn">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L98" target="_blank">
+            line 98
+        </a>
+        </div>
+        <code>                    
+    <strong>pushOn</strong>($queue, $job, $data = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$job</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_laterOn">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L103" target="_blank">
+            line 103
+        </a>
+        </div>
+        <code>                    
+    <strong>laterOn</strong>($queue, $delay, $job, $data = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$delay</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$job</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pushRaw">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L108" target="_blank">
+            line 108
+        </a>
+        </div>
+        <code>                    
+    <strong>pushRaw</strong>($payload, $queue = null, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$payload</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pop">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L113" target="_blank">
+            line 113
+        </a>
+        </div>
+        <code>                    
+    <strong>pop</strong>($queue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_size">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L118" target="_blank">
+            line 118
+        </a>
+        </div>
+        <code>                    
+    <strong>size</strong>($queue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pendingSize">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L123" target="_blank">
+            line 123
+        </a>
+        </div>
+        <code>                    
+    <strong>pendingSize</strong>($queue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delayedSize">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L128" target="_blank">
+            line 128
+        </a>
+        </div>
+        <code>                    
+    <strong>delayedSize</strong>($queue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reservedSize">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L133" target="_blank">
+            line 133
+        </a>
+        </div>
+        <code>                    
+    <strong>reservedSize</strong>($queue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_creationTimeOfOldestPendingJob">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L138" target="_blank">
+            line 138
+        </a>
+        </div>
+        <code>                    
+    <strong>creationTimeOfOldestPendingJob</strong>($queue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$queue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnectionName">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L143" target="_blank">
+            line 143
+        </a>
+        </div>
+        <code>                    
+    <strong>getConnectionName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConnectionName">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L148" target="_blank">
+            line 148
+        </a>
+        </div>
+        <code>                    
+    <strong>setConnectionName</strong>($name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Queue/RoutingQueue.php#L165" target="_blank">
+            line 165
+        </a>
+        </div>
+        <code>                    mixed
+    <strong>__call</strong>(string $name, <abbr title="Flarum\Queue\array&lt;int,mixed&gt;">array&lt;int,mixed&gt;</abbr> $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delegate any method beyond the Queue contract to the wrapped driver
+(drivers expose extra methods — setContainer(), getConnectionConfig(),
+etc. — that callers rely on).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Queue\array&lt;int,mixed&gt;">array&lt;int,mixed&gt;</abbr></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

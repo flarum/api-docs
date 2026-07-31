@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Post\Access\ScopePostVisibility | Flarum API</title>
+    <title>Flarum\Post\Access\ScopesPostVisibilityWithinDiscussion | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Post_Access_ScopePostVisibility" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Post_Access_ScopesPostVisibilityWithinDiscussion" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -102,23 +102,33 @@
                     
     <div class="page-header">
         <h1>
-            ScopePostVisibility
+            ScopesPostVisibilityWithinDiscussion
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Post/Access/ScopePostVisibility.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Post/Access/ScopesPostVisibilityWithinDiscussion.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
-    <p>    class        
-    <strong>ScopePostVisibility</strong>        implements
-        <a href="../../../Flarum/Post/Access/ScopesPostVisibilityWithinDiscussion.html"><abbr title="Flarum\Post\Access\ScopesPostVisibilityWithinDiscussion">ScopesPostVisibilityWithinDiscussion</abbr></a></p>
+    <p>        interface    
+    <strong>ScopesPostVisibilityWithinDiscussion</strong></p>
 
         
     
 
+            <div class="description">
+            <p>A post visibility scoper that can take a fast path when every post in the
+query belongs to one discussion the actor is already allowed to see.</p>            <p>The generic `view` scope must embed discussion-level access checks into the
+SQL as per-row subqueries, because the posts may span discussions. When the
+discussion is known and pre-authorized, those checks are constants: they can
+be evaluated once in PHP and the subqueries omitted, which matters on large
+discussions where the generic scope's cost grows with the post count.
+
+Implementations MUST apply the same post-level restrictions as their
+ordinary scoper; only discussion-level conditions may be lifted out.
+Scopers that don't implement this interface are simply applied as usual.</p>                    </div>
     
     
     
@@ -133,28 +143,11 @@
                 <div class="col-md-6 type">
                     <a href="#method_withinDiscussion">withinDiscussion</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, <a href="../../../Flarum/Discussion/Discussion.html"><abbr title="Flarum\Discussion\Discussion">Discussion</abbr></a> $discussion)
         
-                                            <p>The fast path for posts of a single, already-authorized discussion: the
-per-row discussion subqueries below collapse to constants.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Post/Access/ScopePostVisibility.php#L22" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method___invoke">__invoke</a>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query)
-        
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Post/Access/ScopePostVisibility.php#L48" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Post/Access/ScopesPostVisibilityWithinDiscussion.php#L32" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -169,8 +162,8 @@ per-row discussion subqueries below collapse to constants.</p>                </
                     <div class="method-item">
                     <h3 id="method_withinDiscussion">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Post/Access/ScopePostVisibility.php#L22" target="_blank">
-            line 22
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Post/Access/ScopesPostVisibilityWithinDiscussion.php#L32" target="_blank">
+            line 32
         </a>
         </div>
         <code>                    void
@@ -181,9 +174,6 @@ per-row discussion subqueries below collapse to constants.</p>                </
             
     
 
-                    <div class="method-description">
-                                    <p>The fast path for posts of a single, already-authorized discussion: the
-per-row discussion subqueries below collapse to constants.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -201,53 +191,6 @@ per-row discussion subqueries below collapse to constants.</p>                  
                     <tr>
                 <td><a href="../../../Flarum/Discussion/Discussion.html"><abbr title="Flarum\Discussion\Discussion">Discussion</abbr></a></td>
                 <td>$discussion</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method___invoke">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Post/Access/ScopePostVisibility.php#L48" target="_blank">
-            line 48
-        </a>
-        </div>
-        <code>                    void
-    <strong>__invoke</strong>(<a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a> $actor, <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a></td>
-                <td>$actor</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
-                <td>$query</td>
                 <td></td>
             </tr>
             </table>

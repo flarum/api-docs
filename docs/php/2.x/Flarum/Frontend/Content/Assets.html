@@ -258,12 +258,15 @@
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_forceCommit">forceCommit</a>(array $compilers)
+                    <a href="#method_recompile">recompile</a>(array $compilers)
         
-                                            <p>Force compilation of assets when in debug mode.</p>                </div>
+                                            <p>Recompile assets on every request when in debug mode, so changes show up
+immediately. A plain commit() recompiles from source but only writes when
+the output actually changed — forcing here would rewrite every bundle,
+sourcemap and the revision manifest on every page view.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/Assets.php#L114" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/Assets.php#L117" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -279,7 +282,7 @@
                                             <p>Maps provided CompilerInterfaces to their URLs.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/Assets.php#L127" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/Assets.php#L130" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -565,14 +568,14 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_forceCommit">
+                    <h3 id="method_recompile">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/Assets.php#L114" target="_blank">
-            line 114
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/Assets.php#L117" target="_blank">
+            line 117
         </a>
         </div>
         <code>            protected        void
-    <strong>forceCommit</strong>(array $compilers)
+    <strong>recompile</strong>(array $compilers)
         </code>
     </h3>
     <div class="details">
@@ -580,7 +583,10 @@
     
 
                     <div class="method-description">
-                                    <p>Force compilation of assets when in debug mode.</p>                                                </div>
+                                    <p>Recompile assets on every request when in debug mode, so changes show up
+immediately. A plain commit() recompiles from source but only writes when
+the output actually changed — forcing here would rewrite every bundle,
+sourcemap and the revision manifest on every page view.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -611,8 +617,8 @@
                     <div class="method-item">
                     <h3 id="method_getUrls">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/Assets.php#L127" target="_blank">
-            line 127
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Content/Assets.php#L130" target="_blank">
+            line 130
         </a>
         </div>
         <code>            protected        array

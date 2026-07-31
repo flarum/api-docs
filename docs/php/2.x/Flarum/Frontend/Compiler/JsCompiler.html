@@ -168,6 +168,20 @@
     </a>
 </td>
             </tr>
+                    <tr>
+                <td class="type" id="property_pendingSidecars">
+                                        protected                                        <abbr title="Flarum\Frontend\Compiler\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </td>
+                <td>$pendingSidecars</td>
+                <td class="last">Sidecar files (e.g. JsCompiler&#039;s `.map`) queued by renderOutput() during
+the current commit, written only if the primary file is — so an unchanged
+bundle rewrites nothing at all.</td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#property_pendingSidecars"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L99" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
             </table>
 
     
@@ -283,11 +297,30 @@
                 <div class="col-md-6 type">
                     <a href="#method_commit">commit</a>(bool $force = false)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Recompile this asset and record its revision. Files are only written when
+the compiled output actually differs from what the revision manifest says
+is on disk (or the file has gone missing) — so routine rebuilds of
+unchanged assets are complete no-ops with zero writes.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_commit"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L46" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L57" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_writePendingSidecars">writePendingSidecars</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_writePendingSidecars"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L101" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -304,7 +337,7 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_hashOutput"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L73" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L108" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -341,7 +374,7 @@ comment and `format()` rewrite that the written file actually carries.</p>      
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getUrl"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L95" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L131" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -358,7 +391,7 @@ comment and `format()` rewrite that the written file actually carries.</p>      
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_compile"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L123" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L159" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -392,7 +425,7 @@ comment and `format()` rewrite that the written file actually carries.</p>      
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_flush"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L139" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/JsCompiler.php#L175" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -659,8 +692,8 @@ comment and `format()` rewrite that the written file actually carries.</p>      
                     <h3 id="method_commit">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_commit"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L46" target="_blank">
-            line 46
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L57" target="_blank">
+            line 57
         </a>
         </div>
         <code>                    void
@@ -671,6 +704,11 @@ comment and `format()` rewrite that the written file actually carries.</p>      
             
     
 
+                    <div class="method-description">
+                                    <p>Recompile this asset and record its revision. Files are only written when
+the compiled output actually differs from what the revision manifest says
+is on disk (or the file has gone missing) — so routine rebuilds of
+unchanged assets are complete no-ops with zero writes.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -699,11 +737,44 @@ comment and `format()` rewrite that the written file actually carries.</p>      
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_writePendingSidecars">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_writePendingSidecars"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L101" target="_blank">
+            line 101
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>writePendingSidecars</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_hashOutput">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_hashOutput"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L73" target="_blank">
-            line 73
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L108" target="_blank">
+            line 108
         </a>
         </div>
         <code>            protected        string
@@ -793,8 +864,8 @@ comment and `format()` rewrite that the written file actually carries.</p>      
                     <h3 id="method_getUrl">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getUrl"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L95" target="_blank">
-            line 95
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L131" target="_blank">
+            line 131
         </a>
         </div>
         <code>                    string|null
@@ -826,8 +897,8 @@ comment and `format()` rewrite that the written file actually carries.</p>      
                     <h3 id="method_compile">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_compile"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L123" target="_blank">
-            line 123
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L159" target="_blank">
+            line 159
         </a>
         </div>
         <code>            protected        string
@@ -911,8 +982,8 @@ comment and `format()` rewrite that the written file actually carries.</p>      
                     <h3 id="method_flush">
         <div class="location">
                             in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_flush"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L139" target="_blank">
-            line 139
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L175" target="_blank">
+            line 175
         </a>
         </div>
         <code>                    void

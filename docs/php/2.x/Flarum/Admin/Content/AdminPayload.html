@@ -137,7 +137,23 @@ powers the dashboard warning and the Advanced page toggle, regardless
 of the queue backend in use.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L40" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L41" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_sortMaps">sortMaps</a>()
+        
+                                            <p>The sort options each resource offers, keyed by resource type.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L67" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -154,7 +170,7 @@ of the queue backend in use.</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L51" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L88" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -171,7 +187,7 @@ of the queue backend in use.</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L64" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L101" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -188,7 +204,7 @@ of the queue backend in use.</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L140" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L178" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -203,8 +219,8 @@ of the queue backend in use.</p>                </div>
                     <div class="method-item">
                     <h3 id="method_pausedQueues">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L40" target="_blank">
-            line 40
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L41" target="_blank">
+            line 41
         </a>
         </div>
         <code>            protected        array
@@ -237,10 +253,52 @@ of the queue backend in use.</p>                                                
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_sortMaps">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L67" target="_blank">
+            line 67
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>sortMaps</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The sort options each resource offers, keyed by resource type.</p>                    <p>The forum already receives this, as it is what the sort dropdown is built
+from and how `?sort=newest` in a URL becomes `-createdAt` for the API. The
+admin side needs the same list wherever it offers sorting as a setting,
+and assembling one in JavaScript would mean a second copy that silently
+omits whatever sorts extensions have added.
+
+Only aliased sorts appear: a sort without one is perfectly usable through
+the API, but has no name to put in front of an administrator. Resources
+with nothing to offer are left out rather than published empty.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L51" target="_blank">
-            line 51
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L88" target="_blank">
+            line 88
         </a>
         </div>
         <code>                    
@@ -312,8 +370,8 @@ of the queue backend in use.</p>                                                
                     <div class="method-item">
                     <h3 id="method___invoke">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L64" target="_blank">
-            line 64
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L101" target="_blank">
+            line 101
         </a>
         </div>
         <code>                    void
@@ -359,8 +417,8 @@ of the queue backend in use.</p>                                                
                     <div class="method-item">
                     <h3 id="method_getSearchDrivers">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L140" target="_blank">
-            line 140
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Admin/Content/AdminPayload.php#L178" target="_blank">
+            line 178
         </a>
         </div>
         <code>            protected        array

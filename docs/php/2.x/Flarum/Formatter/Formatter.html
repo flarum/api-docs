@@ -131,7 +131,7 @@
                 <td>$configurationCallbacks</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L23" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L27" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -143,7 +143,7 @@
                 <td>$parsingCallbacks</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L24" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L28" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -155,7 +155,7 @@
                 <td>$unparsingCallbacks</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L25" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L29" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -167,7 +167,31 @@
                 <td>$renderingCallbacks</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L26" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L30" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_forumOrigin">
+                                        protected                                        array|null
+                </td>
+                <td>$forumOrigin</td>
+                <td class="last">The forum&#039;s own host and base path, worked out once per request.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L37" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_faviconUrl">
+                                        protected                                        <abbr title="Flarum\Formatter\string|false|null">string|false|null</abbr>
+                </td>
+                <td>$faviconUrl</td>
+                <td class="last">The forum&#039;s favicon URL, or null if there isn&#039;t one.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L44" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -183,13 +207,15 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Cache\Repository">Repository</abbr> $cache, string $cacheDir)
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Cache\Repository">Repository</abbr> $cache, string $cacheDir, <abbr title="Flarum\Formatter\Flarum\Foundation\Config">Config</abbr>|null $config = null)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>`$config` is optional because extensions subclass this and call
+`parent::__construct()` with the two arguments that existed before it
+was added. When it is absent the forum&#039;s address is resolved from the
+container instead, so those subclasses keep working untouched.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L28" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L52" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -206,7 +232,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L37" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L62" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -223,7 +249,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L45" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L70" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -240,7 +266,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L53" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L78" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -257,7 +283,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L61" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L86" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -274,7 +300,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L66" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L91" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -291,7 +317,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L84" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L109" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -308,7 +334,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L97" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L122" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -324,7 +350,7 @@
                                             <p>Flush the cache so that the formatter components are regenerated.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L113" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L138" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -341,7 +367,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L118" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L143" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -354,11 +380,42 @@
                 <div class="col-md-6 type">
                     <a href="#method_configureExternalLinks">configureExternalLinks</a>(<abbr title="s9e\TextFormatter\Configurator">Configurator</abbr> $configurator)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Let the link template carry attributes decided when a post is rendered.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L147" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L181" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_configureDiscussionLinks">configureDiscussionLinks</a>(<abbr title="s9e\TextFormatter\Configurator">Configurator</abbr> $configurator)
+        
+                                            <p>Show a link to a discussion as the discussion it points at.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L211" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getDiscussionLinkTemplate">getDiscussionLinkTemplate</a>()
+        
+                                            <p>The markup for a discussion link that is showing its label.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L238" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -374,7 +431,7 @@
                                             <p>Get a TextFormatter component (&quot;renderer&quot; or &quot;parser&quot; or &quot;js&quot;).</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L166" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L264" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -391,7 +448,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L175" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L273" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -408,7 +465,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L184" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L282" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -424,7 +481,7 @@
                                             <p>Get the formatter JavaScript.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L198" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L296" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -437,11 +494,74 @@
                 <div class="col-md-6 type">
                     <a href="#method_configureDefaultsOnLinks">configureDefaultsOnLinks</a>(string $xml)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Decide how each link in a post should be treated, based on where it goes.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L203" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L307" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_parseDiscussionUrl">parseDiscussionUrl</a>(string $url)
+        
+                                            <p>Pick out the discussion a URL points at, if it points at one.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L353" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getFaviconUrl">getFaviconUrl</a>()
+        
+                                            <p>The forum&#039;s favicon, if one has been uploaded.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L389" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getForumOrigin">getForumOrigin</a>()
+        
+                                            <p>The forum&#039;s host and base path.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L419" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_isInternalUrl">isInternalUrl</a>(string $url)
+        
+                                            <p>Does this URL point back at the forum itself?</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L443" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -457,7 +577,7 @@
                                             <p>Converts a plain text string (with or without Markdown) to it&#039;s HTML equivalent.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L215" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L488" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -472,18 +592,23 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L28" target="_blank">
-            line 28
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L52" target="_blank">
+            line 52
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Cache\Repository">Repository</abbr> $cache, string $cacheDir)
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Cache\Repository">Repository</abbr> $cache, string $cacheDir, <abbr title="Flarum\Formatter\Flarum\Foundation\Config">Config</abbr>|null $config = null)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>`$config` is optional because extensions subclass this and call
+`parent::__construct()` with the two arguments that existed before it
+was added. When it is absent the forum&#039;s address is resolved from the
+container instead, so those subclasses keep working untouched.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -498,6 +623,11 @@
                 <td>$cacheDir</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td><abbr title="Flarum\Formatter\Flarum\Foundation\Config">Config</abbr>|null</td>
+                <td>$config</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -510,8 +640,8 @@
                     <div class="method-item">
                     <h3 id="method_addConfigurationCallback">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L37" target="_blank">
-            line 37
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L62" target="_blank">
+            line 62
         </a>
         </div>
         <code>                    void
@@ -552,8 +682,8 @@
                     <div class="method-item">
                     <h3 id="method_addParsingCallback">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L45" target="_blank">
-            line 45
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L70" target="_blank">
+            line 70
         </a>
         </div>
         <code>                    void
@@ -594,8 +724,8 @@
                     <div class="method-item">
                     <h3 id="method_addUnparsingCallback">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L53" target="_blank">
-            line 53
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L78" target="_blank">
+            line 78
         </a>
         </div>
         <code>                    void
@@ -636,8 +766,8 @@
                     <div class="method-item">
                     <h3 id="method_addRenderingCallback">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L61" target="_blank">
-            line 61
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L86" target="_blank">
+            line 86
         </a>
         </div>
         <code>                    void
@@ -678,8 +808,8 @@
                     <div class="method-item">
                     <h3 id="method_parse">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L66" target="_blank">
-            line 66
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L91" target="_blank">
+            line 91
         </a>
         </div>
         <code>                    string
@@ -730,8 +860,8 @@
                     <div class="method-item">
                     <h3 id="method_render">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L84" target="_blank">
-            line 84
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L109" target="_blank">
+            line 109
         </a>
         </div>
         <code>                    string
@@ -782,8 +912,8 @@
                     <div class="method-item">
                     <h3 id="method_unparse">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L97" target="_blank">
-            line 97
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L122" target="_blank">
+            line 122
         </a>
         </div>
         <code>                    string|null
@@ -829,8 +959,8 @@
                     <div class="method-item">
                     <h3 id="method_flush">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L113" target="_blank">
-            line 113
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L138" target="_blank">
+            line 138
         </a>
         </div>
         <code>                    void
@@ -863,8 +993,8 @@
                     <div class="method-item">
                     <h3 id="method_getConfigurator">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L118" target="_blank">
-            line 118
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L143" target="_blank">
+            line 143
         </a>
         </div>
         <code>            protected        <abbr title="s9e\TextFormatter\Configurator">Configurator</abbr>
@@ -895,8 +1025,8 @@
                     <div class="method-item">
                     <h3 id="method_configureExternalLinks">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L147" target="_blank">
-            line 147
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L181" target="_blank">
+            line 181
         </a>
         </div>
         <code>            protected        void
@@ -907,6 +1037,12 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Let the link template carry attributes decided when a post is rendered.</p>                    <p>Whether a link points back at this forum is not known when the post is
+written — the forum may since have moved — so `rel`, `target` and `class`
+are worked out at render time and copied through here. A theme that
+replaces this template needs to copy them too, or links lose the
+treatment.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -935,10 +1071,94 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_configureDiscussionLinks">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L211" target="_blank">
+            line 211
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>configureDiscussionLinks</strong>(<abbr title="s9e\TextFormatter\Configurator">Configurator</abbr> $configurator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show a link to a discussion as the discussion it points at.</p>                    <p>A pasted address says nothing useful in the middle of a sentence, so
+where the writer pasted one bare — leaving the address as the link&#039;s own
+text — it is shown as `#123` instead, with the post number alongside it
+when the link points at a particular reply.
+
+When the writer chose their own words for the link, those words are what
+appears; the label replaces an address, never a sentence.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="s9e\TextFormatter\Configurator">Configurator</abbr></td>
+                <td>$configurator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDiscussionLinkTemplate">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L238" target="_blank">
+            line 238
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>getDiscussionLinkTemplate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The markup for a discussion link that is showing its label.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getComponent">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L166" target="_blank">
-            line 166
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L264" target="_blank">
+            line 264
         </a>
         </div>
         <code>            protected        mixed
@@ -981,8 +1201,8 @@
                     <div class="method-item">
                     <h3 id="method_getParser">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L175" target="_blank">
-            line 175
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L273" target="_blank">
+            line 273
         </a>
         </div>
         <code>            protected        <abbr title="s9e\TextFormatter\Parser">Parser</abbr>
@@ -1023,8 +1243,8 @@
                     <div class="method-item">
                     <h3 id="method_getRenderer">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L184" target="_blank">
-            line 184
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L282" target="_blank">
+            line 282
         </a>
         </div>
         <code>            protected        <abbr title="s9e\TextFormatter\Renderer">Renderer</abbr>
@@ -1055,8 +1275,8 @@
                     <div class="method-item">
                     <h3 id="method_getJs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L198" target="_blank">
-            line 198
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L296" target="_blank">
+            line 296
         </a>
         </div>
         <code>                    string
@@ -1089,8 +1309,8 @@
                     <div class="method-item">
                     <h3 id="method_configureDefaultsOnLinks">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L203" target="_blank">
-            line 203
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L307" target="_blank">
+            line 307
         </a>
         </div>
         <code>            protected        string
@@ -1101,6 +1321,9 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Decide how each link in a post should be treated, based on where it goes.</p>                    <p>Only fills in what has not already been set, so an extension rendering
+callback — which runs before this — keeps the last word on any link.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1129,10 +1352,175 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_parseDiscussionUrl">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L353" target="_blank">
+            line 353
+        </a>
+        </div>
+        <code>            protected        array|null
+    <strong>parseDiscussionUrl</strong>(string $url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pick out the discussion a URL points at, if it points at one.</p>                    <p>Matches the shape the discussion route declares: an id, optionally
+followed by a slug that carries no meaning here, and optionally a post
+number after it.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFaviconUrl">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L389" target="_blank">
+            line 389
+        </a>
+        </div>
+        <code>            protected        string|null
+    <strong>getFaviconUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The forum&#039;s favicon, if one has been uploaded.</p>                    <p>Looked up once per request for the same reason as the forum&#039;s address:
+this is consulted for every discussion link on the page.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getForumOrigin">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L419" target="_blank">
+            line 419
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>getForumOrigin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The forum&#039;s host and base path.</p>                    <p>`Config::url()` builds a fresh Uri on every call, and this is consulted
+once per link in every post on the page, so the answer is kept rather
+than rebuilt. It cannot change within a request.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isInternalUrl">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L443" target="_blank">
+            line 443
+        </a>
+        </div>
+        <code>            protected        bool
+    <strong>isInternalUrl</strong>(string $url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Does this URL point back at the forum itself?</p>                    <p>Host and path both have to match: a forum installed at example.com/forum
+does not own example.com/shop. The scheme is ignored, since a forum
+reachable over both http and https is still one forum, and a link is not
+a different destination for having been copied before the certificate
+was installed.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_convert">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L215" target="_blank">
-            line 215
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Formatter/Formatter.php#L488" target="_blank">
+            line 488
         </a>
         </div>
         <code>                    string

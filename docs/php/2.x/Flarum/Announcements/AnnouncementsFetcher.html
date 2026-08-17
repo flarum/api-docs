@@ -138,6 +138,27 @@
                 </td>
             </tr>
                     <tr>
+                <td>EXCLUDE_VERSION_TAGS</td>
+                <td class="last">
+                    <p><em>Version tags whose news is only relevant to older lines. A discussion is
+dropped from the feed when it carries one of these AND none of the tags in
+{KEEP_VERSION_TAGS} — so a 1.x-only patch note is hidden, but a post
+tagged for both 1.x and 2.x still comes through. Version-neutral posts
+(Community Updates, announcements) carry neither and are always kept.</em></p>
+                    <p>This has to be applied in PHP: the discussions API&#039;s negated tag filter
+excludes on the mere presence of a tag, so it can&#039;t express &quot;1.x but not
+also 2.x&quot; and would drop the dual-tagged posts we want to keep.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>KEEP_VERSION_TAGS</td>
+                <td class="last">
+                    <p><em>Version tags that rescue a discussion from exclusion — the current line&#039;s
+news. A post tagged for both an excluded line and this one is kept.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
                 <td>LIMIT</td>
                 <td class="last">
                     <p><em></em></p>
@@ -193,7 +214,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Announcements/AnnouncementsFetcher.php#L34" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Announcements/AnnouncementsFetcher.php#L58" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -241,8 +262,8 @@
                     <div class="method-item">
                     <h3 id="method_fetch">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Announcements/AnnouncementsFetcher.php#L34" target="_blank">
-            line 34
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Announcements/AnnouncementsFetcher.php#L58" target="_blank">
+            line 58
         </a>
         </div>
         <code>                    array

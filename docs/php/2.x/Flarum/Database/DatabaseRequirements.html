@@ -186,6 +186,30 @@ warn to encourage staying on a maintained release.</em></p>
                 </td>
             </tr>
                     <tr>
+                <td>IDENTIFIER_LIMITS</td>
+                <td class="last">
+                    <p><em>How long an identifier each driver accepts. MySQL and MariaDB count characters;
+PostgreSQL counts bytes. SQLite imposes no practical limit.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LONGEST_MIGRATION_IDENTIFIER</td>
+                <td class="last">
+                    <p><em>Length of the longest index or foreign key name any migration in core or the bundled
+extensions generates, currently `dialog_message_mentions_group_dialog_message_id_foreign`
+from flarum/messages.</em></p>
+                    <p>Laravel prepends the table prefix to generated index and foreign key names as well as
+to table names, so this plus the prefix has to fit inside the driver&#039;s limit. Because
+migrations are immutable and a new installation replays all of them, this is set by
+migration history rather than by the current schema — renaming a table later does not
+change it.
+
+flarum/testing asserts this against the migrations actually being run, so a migration
+introducing a longer name fails there rather than in someone&#039;s installation.</p>
+                </td>
+            </tr>
+                    <tr>
                 <td>OK</td>
                 <td class="last">
                     <p><em>The result of comparing a version against the tiers.</em></p>
@@ -215,6 +239,23 @@ warn to encourage staying on a maintained release.</em></p>
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
+                    static&nbsp;int|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_maxTablePrefixLength">maxTablePrefixLength</a>(string $driver)
+        
+                                            <p>Longest table prefix, in bytes, that leaves room for every identifier the migrations
+generate. Null where the driver has no meaningful limit.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L91" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;bool
                 </div>
                 <div class="col-md-6 type">
@@ -223,7 +264,7 @@ warn to encourage staying on a maintained release.</em></p>
                                             <p>Whether a raw `VERSION()` string reports a MariaDB server.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L71" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L108" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -240,7 +281,7 @@ warn to encourage staying on a maintained release.</em></p>
 `VERSION()` string.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L88" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L125" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -256,7 +297,7 @@ warn to encourage staying on a maintained release.</em></p>
                                             <p>The minimum and recommended versions for a MySQL/MariaDB server.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L106" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L143" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -272,7 +313,7 @@ warn to encourage staying on a maintained release.</em></p>
                                             <p>Compare a normalised version against a tier pair.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L118" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L155" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -285,10 +326,55 @@ warn to encourage staying on a maintained release.</em></p>
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method_maxTablePrefixLength">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L91" target="_blank">
+            line 91
+        </a>
+        </div>
+        <code>        static            int|null
+    <strong>maxTablePrefixLength</strong>(string $driver)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Longest table prefix, in bytes, that leaves room for every identifier the migrations
+generate. Null where the driver has no meaningful limit.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$driver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_isMariaDb">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L71" target="_blank">
-            line 71
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L108" target="_blank">
+            line 108
         </a>
         </div>
         <code>        static            bool
@@ -331,8 +417,8 @@ warn to encourage staying on a maintained release.</em></p>
                     <div class="method-item">
                     <h3 id="method_normaliseVersion">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L88" target="_blank">
-            line 88
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L125" target="_blank">
+            line 125
         </a>
         </div>
         <code>        static            string|null
@@ -387,8 +473,8 @@ always report all three parts, which the greedy match still captures.</p>       
                     <div class="method-item">
                     <h3 id="method_mysqlFamilyTiers">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L106" target="_blank">
-            line 106
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L143" target="_blank">
+            line 143
         </a>
         </div>
         <code>        static            array
@@ -431,8 +517,8 @@ always report all three parts, which the greedy match still captures.</p>       
                     <div class="method-item">
                     <h3 id="method_compare">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L118" target="_blank">
-            line 118
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/DatabaseRequirements.php#L155" target="_blank">
+            line 155
         </a>
         </div>
         <code>        static            string

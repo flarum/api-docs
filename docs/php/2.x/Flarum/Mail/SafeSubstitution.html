@@ -177,13 +177,12 @@ that repeated or nested renders in one request cannot mix values up.</p>        
                     static&nbsp;string
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_restore">restore</a>(string $rendered)
+                    <a href="#method_restore">restore</a>(string $rendered, bool $escape = true)
         
-                                            <p>Put the marked values back into rendered output, escaped so that they
-are shown rather than interpreted.</p>                </div>
+                                            <p>Put the marked values back into rendered output.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/SafeSubstitution.php#L50" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/SafeSubstitution.php#L54" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -199,7 +198,7 @@ are shown rather than interpreted.</p>                </div>
                                             <p>Whether rendered output still holds marked values.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/SafeSubstitution.php#L62" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/SafeSubstitution.php#L70" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -258,12 +257,12 @@ are shown rather than interpreted.</p>                </div>
                     <div class="method-item">
                     <h3 id="method_restore">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/SafeSubstitution.php#L50" target="_blank">
-            line 50
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/SafeSubstitution.php#L54" target="_blank">
+            line 54
         </a>
         </div>
         <code>        static            string
-    <strong>restore</strong>(string $rendered)
+    <strong>restore</strong>(string $rendered, bool $escape = true)
         </code>
     </h3>
     <div class="details">
@@ -271,8 +270,10 @@ are shown rather than interpreted.</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>Put the marked values back into rendered output, escaped so that they
-are shown rather than interpreted.</p>                                                </div>
+                                    <p>Put the marked values back into rendered output.</p>                    <p>In HTML the values are escaped so that they are shown rather than
+interpreted. In a plain-text part there is no markup to protect against,
+so the value is put back as-is — escaping it there would show literal
+entities like `&amp;amp;` to the reader. Pass `$escape = false` for text.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -280,6 +281,11 @@ are shown rather than interpreted.</p>                                          
                     <tr>
                 <td>string</td>
                 <td>$rendered</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$escape</td>
                 <td></td>
             </tr>
             </table>
@@ -303,8 +309,8 @@ are shown rather than interpreted.</p>                                          
                     <div class="method-item">
                     <h3 id="method_contains">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/SafeSubstitution.php#L62" target="_blank">
-            line 62
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/SafeSubstitution.php#L70" target="_blank">
+            line 70
         </a>
         </div>
         <code>        static            bool

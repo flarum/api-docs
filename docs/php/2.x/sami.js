@@ -3427,6 +3427,7 @@ var Doctum = {
             
             {"type": "Class", "fromName": "Flarum\\User\\Access", "fromLink": "Flarum/User/Access.html", "link": "Flarum/User/Access/UserPolicy.html", "name": "Flarum\\User\\Access\\UserPolicy", "doc": "null"},
                                                         {"type": "Method", "fromName": "Flarum\\User\\Access\\UserPolicy", "fromLink": "Flarum/User/Access/UserPolicy.html", "link": "Flarum/User/Access/UserPolicy.html#method_can", "name": "Flarum\\User\\Access\\UserPolicy::can", "doc": "null"},
+                    {"type": "Method", "fromName": "Flarum\\User\\Access\\UserPolicy", "fromLink": "Flarum/User/Access/UserPolicy.html", "link": "Flarum/User/Access/UserPolicy.html#method_editAvatar", "name": "Flarum\\User\\Access\\UserPolicy::editAvatar", "doc": "null"},
                     {"type": "Method", "fromName": "Flarum\\User\\Access\\UserPolicy", "fromLink": "Flarum/User/Access/UserPolicy.html", "link": "Flarum/User/Access/UserPolicy.html#method_editCredentials", "name": "Flarum\\User\\Access\\UserPolicy::editCredentials", "doc": "null"},
             
             {"type": "Class", "fromName": "Flarum\\User", "fromLink": "Flarum/User.html", "link": "Flarum/User/AccountActivationMailer.html", "name": "Flarum\\User\\AccountActivationMailer", "doc": "null"},

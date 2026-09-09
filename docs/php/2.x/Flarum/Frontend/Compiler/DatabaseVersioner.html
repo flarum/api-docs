@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Frontend\Compiler\FileVersioner | Flarum API</title>
+    <title>Flarum\Frontend\Compiler\DatabaseVersioner | Flarum API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Frontend_Compiler_FileVersioner" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Frontend_Compiler_DatabaseVersioner" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -102,10 +102,10 @@
                     
     <div class="page-header">
         <h1>
-            FileVersioner
+            DatabaseVersioner
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php" target="_blank">
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php" target="_blank">
         <img src="../../../assets/img/code.svg" height="30" />
     </a>
 
@@ -113,19 +113,37 @@
     </div>
 
     <p>    class        
-    <strong>FileVersioner</strong>        implements
+    <strong>DatabaseVersioner</strong>        implements
         <a href="../../../Flarum/Frontend/Compiler/VersionerInterface.html"><abbr title="Flarum\Frontend\Compiler\VersionerInterface">VersionerInterface</abbr></a></p>
 
         
     
 
+            <div class="description">
+            <p>Records asset revisions one row at a time, so several instances can record
+different assets at once.</p>            <p>{\Flarum\Frontend\Compiler\FileVersioner} keeps the whole map in a single JSON value, which means
+every write is a read-modify-write of all of it: a writer carrying a snapshot
+taken before someone else's write silently erases that write when it saves.
+Measured across two ECS tasks writing twenty assets each, half the writes
+were lost; across six local processes, 83% were. Because
+{[\Flarum\Frontend\Compiler\RevisionCompiler::getUrl()}](../../../Flarum/Frontend/Compiler/RevisionCompiler.html) only recompiles when a revision is
+*missing*, a lost revision is not noticed — it simply stays wrong until the
+next admin action.
+
+Here each revision is its own row, keyed by the asset's path, so a write
+touches nothing else and there is no shared value to clobber.
+
+Reads are memoised for the lifetime of the instance, matching FileVersioner:
+rendering a page reads the map around thirty times and individual revisions
+around sixty-five times through one shared instance, and every one of those
+would otherwise be a query.</p>                    </div>
     
     
             <h2>Constants</h2>
 
             <table class="table table-condensed">
                     <tr>
-                <td>REV_MANIFEST</td>
+                <td>TABLE</td>
                 <td class="last">
                     <p><em></em></p>
                     <p></p>
@@ -143,13 +161,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr> $filesystem)
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr> $database)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L20" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L51" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -165,7 +183,7 @@
                                             <p>Record the current revision of a file, or forget it when null.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L25" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L56" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -178,11 +196,31 @@
                 <div class="col-md-6 type">
                     <a href="#method_deferWrites">deferWrites</a>()
         
-                                            <p>No-ops: every write here already rewrites the whole manifest, so there is
-nothing for a batch to save.</p>                </div>
+                                            <p>Collect writes until {flushWrites()} instead of storing each one as
+it arrives, so a rebuild that records every asset in turn can store them
+together.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L43" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L89" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___destruct">__destruct</a>()
+        
+                                            <p>A batch left open — a caller that never flushed, or a rebuild that threw
+past its own flush — must still be stored. Reads are answered from the
+memo while a batch is open, so nothing else would notice the omission
+until the revisions were missing on the next request.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L100" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -198,7 +236,7 @@ nothing for a batch to save.</p>                </div>
                                             <p>Store anything {deferWrites()} collected, and stop deferring.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L47" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L110" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -214,7 +252,7 @@ nothing for a batch to save.</p>                </div>
                                             <p>The recorded revision, or null when there is none.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L51" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L151" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -227,10 +265,11 @@ nothing for a batch to save.</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_allRevisions">allRevisions</a>()
         
-                                            <p>Every recorded revision, keyed by file.</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L56" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L159" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -245,12 +284,12 @@ nothing for a batch to save.</p>                </div>
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L20" target="_blank">
-            line 20
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L51" target="_blank">
+            line 51
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr> $filesystem)
+    <strong>__construct</strong>(<abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr> $database)
         </code>
     </h3>
     <div class="details">
@@ -262,8 +301,8 @@ nothing for a batch to save.</p>                </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Contracts\Filesystem\Filesystem">Filesystem</abbr></td>
-                <td>$filesystem</td>
+                <td><abbr title="Illuminate\Database\ConnectionInterface">ConnectionInterface</abbr></td>
+                <td>$database</td>
                 <td></td>
             </tr>
             </table>
@@ -278,8 +317,8 @@ nothing for a batch to save.</p>                </div>
                     <div class="method-item">
                     <h3 id="method_putRevision">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L25" target="_blank">
-            line 25
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L56" target="_blank">
+            line 56
         </a>
         </div>
         <code>                    void
@@ -327,8 +366,8 @@ nothing for a batch to save.</p>                </div>
                     <div class="method-item">
                     <h3 id="method_deferWrites">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L43" target="_blank">
-            line 43
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L89" target="_blank">
+            line 89
         </a>
         </div>
         <code>                    void
@@ -340,8 +379,12 @@ nothing for a batch to save.</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>No-ops: every write here already rewrites the whole manifest, so there is
-nothing for a batch to save.</p>                                                </div>
+                                    <p>Collect writes until {flushWrites()} instead of storing each one as
+it arrives, so a rebuild that records every asset in turn can store them
+together.</p>                    <p>Buffered writes are still visible to this instance&#039;s own reads, and a
+read of anything buffered stores the buffer first, so nothing can observe
+a revision that has been recorded but not saved. An implementation with
+nothing to gain from batching may treat both methods as no-ops.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -360,10 +403,38 @@ nothing for a batch to save.</p>                                                
 
             </div>
                     <div class="method-item">
+                    <h3 id="method___destruct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L100" target="_blank">
+            line 100
+        </a>
+        </div>
+        <code>                    
+    <strong>__destruct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A batch left open — a caller that never flushed, or a rebuild that threw
+past its own flush — must still be stored. Reads are answered from the
+memo while a batch is open, so nothing else would notice the omission
+until the revisions were missing on the next request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_flushWrites">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L47" target="_blank">
-            line 47
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L110" target="_blank">
+            line 110
         </a>
         </div>
         <code>                    void
@@ -396,8 +467,8 @@ nothing for a batch to save.</p>                                                
                     <div class="method-item">
                     <h3 id="method_getRevision">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L51" target="_blank">
-            line 51
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L151" target="_blank">
+            line 151
         </a>
         </div>
         <code>                    string|null
@@ -440,8 +511,8 @@ nothing for a batch to save.</p>                                                
                     <div class="method-item">
                     <h3 id="method_allRevisions">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/FileVersioner.php#L56" target="_blank">
-            line 56
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/DatabaseVersioner.php#L159" target="_blank">
+            line 159
         </a>
         </div>
         <code>                    array
@@ -452,8 +523,6 @@ nothing for a batch to save.</p>                                                
             
     
 
-                    <div class="method-description">
-                                    <p>Every recorded revision, keyed by file.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

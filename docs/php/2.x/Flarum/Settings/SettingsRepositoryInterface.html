@@ -152,7 +152,7 @@
                                             <p>You generally should use the Settings extender&#039;s `default` method instead to register default values.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L23" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L29" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -169,7 +169,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L25" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L31" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -186,7 +186,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L27" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L33" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -233,8 +233,8 @@
                     <div class="method-item">
                     <h3 id="method_get">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L23" target="_blank">
-            line 23
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L29" target="_blank">
+            line 29
         </a>
         </div>
         <code>                    mixed
@@ -247,7 +247,11 @@
 
                     <div class="method-description">
                                     <p>You generally should use the Settings extender&#039;s `default` method instead to register default values.</p>                    <p>You may still need to use the `$default` parameters here in cases where you need to
-access the default value of a dynamic setting.</p>                            </div>
+access the default value of a dynamic setting.
+
+Reads shared, mutable state: another process can change a setting between
+two calls, so re-reading the same key may legitimately return a different
+value.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -294,8 +298,8 @@ access the default value of a dynamic setting.</p>                            </
                     <div class="method-item">
                     <h3 id="method_set">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L25" target="_blank">
-            line 25
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L31" target="_blank">
+            line 31
         </a>
         </div>
         <code>                    void
@@ -341,8 +345,8 @@ access the default value of a dynamic setting.</p>                            </
                     <div class="method-item">
                     <h3 id="method_delete">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L27" target="_blank">
-            line 27
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Settings/SettingsRepositoryInterface.php#L33" target="_blank">
+            line 33
         </a>
         </div>
         <code>                    void

@@ -327,7 +327,11 @@
 
                     <div class="method-description">
                                     <p>You generally should use the Settings extender&#039;s `default` method instead to register default values.</p>                    <p>You may still need to use the `$default` parameters here in cases where you need to
-access the default value of a dynamic setting.</p>                            </div>
+access the default value of a dynamic setting.
+
+Reads shared, mutable state: another process can change a setting between
+two calls, so re-reading the same key may legitimately return a different
+value.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

@@ -118,6 +118,42 @@
         
     
 
+            <div class="description">
+            <p>Records which revision of each compiled asset is current, so that a URL can
+be cache-busted and a client can tell when what it loaded was superseded.</p>            <p>Implementations are swappable — pointing the assets disk at S3 or sharing it
+between instances are both reasons to store revisions somewhere other than
+beside the files. What follows is what the compilers rely on, and what any
+replacement therefore has to provide.
+
+**A write must not disturb another file's revision.** Several instances
+record revisions at once — every one of them rebuilds a dirty asset set on
+its next request — and {[\Flarum\Frontend\Compiler\JsDirectoryCompiler::pruneStaleRevisions()}
+writes](../../../Flarum/Frontend/Compiler/JsDirectoryCompiler.html) once per stale chunk from `getUrl()`, so writes happen during ordinary
+page renders too. An implementation that saves the whole map back on every
+write loses whichever revisions were recorded since it last read: the writes
+report success, and because {[\Flarum\Frontend\Compiler\RevisionCompiler::getUrl()}](../../../Flarum/Frontend/Compiler/RevisionCompiler.html) only recompiles
+when a revision is *missing*, nothing notices the loss until the next admin
+action. Store each revision independently, or serialise the read-modify-write.
+
+**Writing an unchanged value must not write at all.** Pruning runs on
+renders, so a render that prunes nothing has to cost nothing.
+
+**Errors must propagate.** A read that fails but reports "no revision" makes
+`getUrl()` recompile on every request and then return null, dropping the
+stylesheet or bundle from the page; a write that fails but reports success
+leaves the old revision in place with nothing to trigger a retry.
+
+**Reads may be memoised for the lifetime of the instance, and no longer.**
+Rendering a page reads the map around thirty times and individual revisions
+around sixty-five, all through one shared instance, so caching within a
+request is expected. Caching beyond it would serve revisions that another
+instance has since replaced. A write must leave the memo agreeing with
+storage, so `getRevision()` returns what was just written.
+
+**`allRevisions()` must agree with `getRevision()`** for every file it
+contains: the map is inlined into the page for the client, and hashed into
+the asset revision token, so a disagreement shows up as a spurious reload
+prompt or a chunk the client cannot resolve.</p>                    </div>
     
     
     
@@ -132,11 +168,44 @@
                 <div class="col-md-6 type">
                     <a href="#method_putRevision">putRevision</a>(string $file, string|null $revision)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Record the current revision of a file, or forget it when null.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L14" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L56" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_deferWrites">deferWrites</a>()
+        
+                                            <p>Collect writes until {flushWrites()} instead of storing each one as
+it arrives, so a rebuild that records every asset in turn can store them
+together.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L68" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_flushWrites">flushWrites</a>()
+        
+                                            <p>Store anything {deferWrites()} collected, and stop deferring.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L75" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -149,11 +218,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_getRevision">getRevision</a>(string $file)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>The recorded revision, or null when there is none.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L16" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L80" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -166,11 +234,10 @@
                 <div class="col-md-6 type">
                     <a href="#method_allRevisions">allRevisions</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Every recorded revision, keyed by file.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L18" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L87" target="_blank">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -185,8 +252,8 @@
                     <div class="method-item">
                     <h3 id="method_putRevision">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L14" target="_blank">
-            line 14
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L56" target="_blank">
+            line 56
         </a>
         </div>
         <code>                    void
@@ -197,6 +264,8 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Record the current revision of a file, or forget it when null.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -230,10 +299,83 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_deferWrites">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L68" target="_blank">
+            line 68
+        </a>
+        </div>
+        <code>                    void
+    <strong>deferWrites</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Collect writes until {flushWrites()} instead of storing each one as
+it arrives, so a rebuild that records every asset in turn can store them
+together.</p>                    <p>Buffered writes are still visible to this instance&#039;s own reads, and a
+read of anything buffered stores the buffer first, so nothing can observe
+a revision that has been recorded but not saved. An implementation with
+nothing to gain from batching may treat both methods as no-ops.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushWrites">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L75" target="_blank">
+            line 75
+        </a>
+        </div>
+        <code>                    void
+    <strong>flushWrites</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Store anything {deferWrites()} collected, and stop deferring.</p>                    <p>Safe to call when nothing was deferred.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getRevision">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L16" target="_blank">
-            line 16
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L80" target="_blank">
+            line 80
         </a>
         </div>
         <code>                    string|null
@@ -244,6 +386,8 @@
             
     
 
+                    <div class="method-description">
+                                    <p>The recorded revision, or null when there is none.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -274,8 +418,8 @@
                     <div class="method-item">
                     <h3 id="method_allRevisions">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L18" target="_blank">
-            line 18
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/VersionerInterface.php#L87" target="_blank">
+            line 87
         </a>
         </div>
         <code>                    array
@@ -286,6 +430,8 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Every recorded revision, keyed by file.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

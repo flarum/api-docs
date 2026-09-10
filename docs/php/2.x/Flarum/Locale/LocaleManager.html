@@ -120,6 +120,20 @@
 
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>REVISION_STAMP_KEY</td>
+                <td class="last">
+                    <p><em>A setting any extension can bump to declare that translations have
+changed somewhere the registered files cannot show — the database, most
+obviously. Its value is opaque: only whether it differs matters.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
             <h2>Properties</h2>
 
@@ -131,7 +145,7 @@
                 <td>$locales</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L17" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L25" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -143,7 +157,7 @@
                 <td>$js</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L18" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L26" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -155,7 +169,20 @@
                 <td>$css</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L19" target="_blank">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L27" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_registered">
+                                        protected                                        <abbr title="Flarum\Locale\list&lt;string&gt;">list&lt;string&gt;</abbr>
+                </td>
+                <td>$registered</td>
+                <td class="last">Every translation file registered on this instance, as
+`&lt;locale&gt;|&lt;prefix&gt;|&lt;file&gt;`.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L35" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -171,13 +198,46 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../Flarum/Locale/Translator.html"><abbr title="Flarum\Locale\Translator">Translator</abbr></a> $translator, string|null $cacheDir = null)
+                    <a href="#method___construct">__construct</a>(<a href="../../Flarum/Locale/Translator.html"><abbr title="Flarum\Locale\Translator">Translator</abbr></a> $translator, string|null $cacheDir = null, <abbr title="Flarum\Locale\Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr>|null $settings = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L21" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L37" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_revision">revision</a>()
+        
+                                            <p>Identifies the translations this instance has been given.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L69" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_revisionStamp">revisionStamp</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L77" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -194,7 +254,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L27" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L82" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -211,7 +271,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L32" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L87" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -228,7 +288,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L37" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L92" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -245,7 +305,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L42" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L97" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -262,7 +322,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L47" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L102" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -279,7 +339,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L52" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L107" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -296,7 +356,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L63" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L121" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -313,7 +373,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L68" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L126" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -330,7 +390,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L81" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L139" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -347,7 +407,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L86" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L144" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -364,7 +424,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L99" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L157" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -381,7 +441,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L104" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L162" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -398,7 +458,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L109" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L167" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -413,12 +473,12 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L21" target="_blank">
-            line 21
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L37" target="_blank">
+            line 37
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../Flarum/Locale/Translator.html"><abbr title="Flarum\Locale\Translator">Translator</abbr></a> $translator, string|null $cacheDir = null)
+    <strong>__construct</strong>(<a href="../../Flarum/Locale/Translator.html"><abbr title="Flarum\Locale\Translator">Translator</abbr></a> $translator, string|null $cacheDir = null, <abbr title="Flarum\Locale\Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr>|null $settings = null)
         </code>
     </h3>
     <div class="details">
@@ -439,6 +499,11 @@
                 <td>$cacheDir</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td><abbr title="Flarum\Locale\Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr>|null</td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -449,10 +514,96 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_revision">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L69" target="_blank">
+            line 69
+        </a>
+        </div>
+        <code>                    string
+    <strong>revision</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Identifies the translations this instance has been given.</p>                    <p>A compiled catalogue&#039;s filename covers only the fallback locales, and in
+production `ConfigCache::isFresh()` answers `is_file()` — so once a
+catalogue exists nothing detects that the translations behind it have
+changed. Enabling an extension on one instance therefore leaves every
+other instance serving a catalogue that predates it, indefinitely: no
+mtime, no TTL and no revision would ever say otherwise, and only deleting
+the file forces a rebuild.
+
+This is derived from what an instance can see for itself — the files it
+was given, plus a stamp for translations that live elsewhere — so an
+instance that has been told nothing still works out that its catalogue is
+stale. Two instances given the same translations arrive at the same
+value, which is what keeps them from rebuilding in turn forever.
+
+Deliberately not derived from the contents or timestamps of those files:
+that would mean asking each registered resource whether it is fresh,
+which runs third-party code that has never executed in production — some
+of it resolving services and querying the database on every request. A
+file edited in place, with nothing added or removed and no stamp bumped,
+is the one change this does not see; clearing the cache covers it, which
+a deployment does anyway.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_revisionStamp">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L77" target="_blank">
+            line 77
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>revisionStamp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getLocale">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L27" target="_blank">
-            line 27
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L82" target="_blank">
+            line 82
         </a>
         </div>
         <code>                    string
@@ -483,8 +634,8 @@
                     <div class="method-item">
                     <h3 id="method_setLocale">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L32" target="_blank">
-            line 32
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L87" target="_blank">
+            line 87
         </a>
         </div>
         <code>                    void
@@ -525,8 +676,8 @@
                     <div class="method-item">
                     <h3 id="method_addLocale">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L37" target="_blank">
-            line 37
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L92" target="_blank">
+            line 92
         </a>
         </div>
         <code>                    void
@@ -572,8 +723,8 @@
                     <div class="method-item">
                     <h3 id="method_getLocales">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L42" target="_blank">
-            line 42
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L97" target="_blank">
+            line 97
         </a>
         </div>
         <code>                    array
@@ -604,8 +755,8 @@
                     <div class="method-item">
                     <h3 id="method_hasLocale">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L47" target="_blank">
-            line 47
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L102" target="_blank">
+            line 102
         </a>
         </div>
         <code>                    bool
@@ -646,8 +797,8 @@
                     <div class="method-item">
                     <h3 id="method_addTranslations">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L52" target="_blank">
-            line 52
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L107" target="_blank">
+            line 107
         </a>
         </div>
         <code>                    void
@@ -698,8 +849,8 @@
                     <div class="method-item">
                     <h3 id="method_addJsFile">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L63" target="_blank">
-            line 63
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L121" target="_blank">
+            line 121
         </a>
         </div>
         <code>                    void
@@ -745,8 +896,8 @@
                     <div class="method-item">
                     <h3 id="method_getJsFiles">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L68" target="_blank">
-            line 68
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L126" target="_blank">
+            line 126
         </a>
         </div>
         <code>                    array
@@ -787,8 +938,8 @@
                     <div class="method-item">
                     <h3 id="method_addCssFile">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L81" target="_blank">
-            line 81
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L139" target="_blank">
+            line 139
         </a>
         </div>
         <code>                    void
@@ -834,8 +985,8 @@
                     <div class="method-item">
                     <h3 id="method_getCssFiles">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L86" target="_blank">
-            line 86
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L144" target="_blank">
+            line 144
         </a>
         </div>
         <code>                    array
@@ -876,8 +1027,8 @@
                     <div class="method-item">
                     <h3 id="method_getTranslator">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L99" target="_blank">
-            line 99
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L157" target="_blank">
+            line 157
         </a>
         </div>
         <code>                    <a href="../../Flarum/Locale/Translator.html"><abbr title="Flarum\Locale\Translator">Translator</abbr></a>
@@ -908,8 +1059,8 @@
                     <div class="method-item">
                     <h3 id="method_setTranslator">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L104" target="_blank">
-            line 104
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L162" target="_blank">
+            line 162
         </a>
         </div>
         <code>                    void
@@ -950,8 +1101,8 @@
                     <div class="method-item">
                     <h3 id="method_clearCache">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L109" target="_blank">
-            line 109
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/LocaleManager.php#L167" target="_blank">
+            line 167
         </a>
         </div>
         <code>                    void

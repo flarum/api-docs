@@ -304,12 +304,12 @@ common rebuild concurrently rather than queueing behind one another.</p>        
                 </div>
                 <div class="col-md-6 type">
                     <a href="#method_flush">flush</a>()
-        
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L211" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L220" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -321,12 +321,12 @@ common rebuild concurrently rather than queueing behind one another.</p>        
                 </div>
                 <div class="col-md-6 type">
                     <a href="#method_flushCss">flushCss</a>()
-        
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L219" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L231" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -338,12 +338,12 @@ common rebuild concurrently rather than queueing behind one another.</p>        
                 </div>
                 <div class="col-md-6 type">
                     <a href="#method_flushJs">flushJs</a>()
-        
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L228" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L243" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -707,16 +707,29 @@ consumers (e.g. the realtime broadcaster) read a settled revision.</p>          
                     <div class="method-item">
                     <h3 id="method_flush">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L211" target="_blank">
-            line 211
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L220" target="_blank">
+            line 220
         </a>
         </div>
         <code>                    void
     <strong>flush</strong>()
-        </code>
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
     </h3>
     <div class="details">
             
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>2.1</td>
+                    <td>Use {@see \Flarum\Frontend\markDirty()} instead.
+
+Deleting the compiled files leaves already-served pages pointing at
+files that no longer exist, and nulls the revisions that would otherwise
+tell the next request what to rebuild. {@see \Flarum\Frontend\recompile()} overwrites in
+place and only where the output differs, and {@see \Flarum\Frontend\markDirty()} defers
+that to a request whose container reflects the change.</td>
+                </tr>
+                    </p>
     
 
                 <div class="tags">
@@ -739,16 +752,23 @@ consumers (e.g. the realtime broadcaster) read a settled revision.</p>          
                     <div class="method-item">
                     <h3 id="method_flushCss">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L219" target="_blank">
-            line 219
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L231" target="_blank">
+            line 231
         </a>
         </div>
         <code>            protected        void
     <strong>flushCss</strong>()
-        </code>
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
     </h3>
     <div class="details">
             
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>2.1</td>
+                    <td>See {@see \Flarum\Frontend\flush()}.</td>
+                </tr>
+                    </p>
     
 
                 <div class="tags">
@@ -771,16 +791,23 @@ consumers (e.g. the realtime broadcaster) read a settled revision.</p>          
                     <div class="method-item">
                     <h3 id="method_flushJs">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L228" target="_blank">
-            line 228
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/RecompileFrontendAssets.php#L243" target="_blank">
+            line 243
         </a>
         </div>
         <code>            protected        void
     <strong>flushJs</strong>()
-        </code>
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
     </h3>
     <div class="details">
             
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>2.1</td>
+                    <td>See {@see \Flarum\Frontend\flush()}.</td>
+                </tr>
+                    </p>
     
 
                 <div class="tags">

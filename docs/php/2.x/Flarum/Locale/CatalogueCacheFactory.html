@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Flarum\Api\Controller\ClearCacheController | Flarum API</title>
+    <title>Flarum\Locale\CatalogueCacheFactory | Flarum API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
-        <script src="../../../assets/app.min.js"></script>
-        <script src="../../../sami.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Flarum_Api_Controller_ClearCacheController" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+    <body id="class" data-name="class:Flarum_Locale_CatalogueCacheFactory" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
             <nav id="flarum-header" class="navbar navbar-expand-lg">
         <h1 class="flarum-title navbar-brand"></h1>
@@ -25,7 +25,7 @@
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
-                <li class="nav-item active"><a class="nav-link" href="../../..//">PHP</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
                 <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
                 <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
             </ul>
@@ -67,7 +67,7 @@
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
 
-        <form id="search-form" action="../../../search.html" method="GET">
+        <form id="search-form" action="../../search.html" method="GET">
             <span class="icon icon-search"></span>
             <input name="search"
                    id="doctum-search-auto-complete"
@@ -88,13 +88,13 @@
             <div id="right-column">
                     <nav id="site-nav" class="navbar navbar-expand" role="navigation">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
 
-                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
-            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
-            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
-            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
         </ul>
     </nav>
 
@@ -102,34 +102,29 @@
                     
     <div class="page-header">
         <h1>
-            ClearCacheController
+            CatalogueCacheFactory
                 
             &nbsp;
-                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php" target="_blank">
-        <img src="../../../assets/img/code.svg" height="30" />
+                <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCacheFactory.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
     </a>
 
         </h1>
     </div>
 
     <p>    class        
-    <strong>ClearCacheController</strong>        implements
-        <abbr title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr></p>
+    <strong>CatalogueCacheFactory</strong>        implements
+        <abbr title="Symfony\Component\Config\ConfigCacheFactoryInterface">ConfigCacheFactoryInterface</abbr></p>
 
         
     
 
             <div class="description">
-            <p>Clears the cache, reporting each step as it finishes.</p>            <p>The work recompiles every asset bundle for every frontend and locale, which
-is tens of seconds where the assets live on remote storage. Waiting until the
-end to answer leaves the admin watching a spinner with no way to tell a slow
-clear from a dead request, so the steps are streamed as newline-delimited
-JSON — one object per line, each complete in itself.
-
-Only the body streams. Authorisation, CSRF, throttling and error handling all
-still come from the API middleware: those wrap the response object, and it is
-the emitter that consumes the body, so a {\Laminas\Diactoros\CallbackStream} passes through
-them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>                    </div>
+            <p>Hands the translator a cache that knows which translations its catalogue was
+built from. See {CatalogueCache}.</p>            <p>The revision is resolved lazily, per call: the translator initialises a
+catalogue the first time one is needed, by which point every extension has
+registered its translation files — asking any earlier would describe a
+smaller set than the catalogue is actually built from.</p>                    </div>
     
     
     
@@ -142,31 +137,31 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Flarum/Foundation/Console/CacheClearCommand.html"><abbr title="Flarum\Foundation\Console\CacheClearCommand">CacheClearCommand</abbr></a> $command, <a href="../../../Flarum/Foundation/Console/AssetsPublishCommand.html"><abbr title="Flarum\Foundation\Console\AssetsPublishCommand">AssetsPublishCommand</abbr></a> $assetsPublishCommand)
+                    <a href="#method___construct">__construct</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $revision)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L39" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCacheFactory.php#L29" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                    <abbr title="Symfony\Component\Config\ConfigCacheInterface">ConfigCacheInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_handle">handle</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+                    <a href="#method_cache">cache</a>(string $file, callable $callback)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L45" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCacheFactory.php#L34" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
     </a>
 
                 </div>
@@ -180,12 +175,12 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L39" target="_blank">
-            line 39
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCacheFactory.php#L29" target="_blank">
+            line 29
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Flarum/Foundation/Console/CacheClearCommand.html"><abbr title="Flarum\Foundation\Console\CacheClearCommand">CacheClearCommand</abbr></a> $command, <a href="../../../Flarum/Foundation/Console/AssetsPublishCommand.html"><abbr title="Flarum\Foundation\Console\AssetsPublishCommand">AssetsPublishCommand</abbr></a> $assetsPublishCommand)
+    <strong>__construct</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $revision)
         </code>
     </h3>
     <div class="details">
@@ -197,13 +192,8 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Flarum/Foundation/Console/CacheClearCommand.html"><abbr title="Flarum\Foundation\Console\CacheClearCommand">CacheClearCommand</abbr></a></td>
-                <td>$command</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Flarum/Foundation/Console/AssetsPublishCommand.html"><abbr title="Flarum\Foundation\Console\AssetsPublishCommand">AssetsPublishCommand</abbr></a></td>
-                <td>$assetsPublishCommand</td>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$revision</td>
                 <td></td>
             </tr>
             </table>
@@ -216,14 +206,14 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_handle">
+                    <h3 id="method_cache">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L45" target="_blank">
-            line 45
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCacheFactory.php#L34" target="_blank">
+            line 34
         </a>
         </div>
-        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>handle</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        <code>                    <abbr title="Symfony\Component\Config\ConfigCacheInterface">ConfigCacheInterface</abbr>
+    <strong>cache</strong>(string $file, callable $callback)
         </code>
     </h3>
     <div class="details">
@@ -235,8 +225,13 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
                 <td></td>
             </tr>
             </table>
@@ -246,7 +241,7 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td><abbr title="Symfony\Component\Config\ConfigCacheInterface">ConfigCacheInterface</abbr></td>
             <td></td>
         </tr>
     </table>

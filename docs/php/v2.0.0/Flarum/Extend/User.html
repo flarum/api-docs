@@ -166,7 +166,7 @@
                     <a href="../../Flarum/Extend/User.html"><abbr title="Flarum\Extend\User">User</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_permissionGroups">permissionGroups</a>(<abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+                    <a href="#method_permissionGroups">permissionGroups</a>(callable|string $callback)
         
                                             <p>Dynamically process a user&#039;s list of groups when calculating permissions.</p>                </div>
                 <div class="col-md-2"></div>
@@ -198,7 +198,7 @@
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -240,12 +240,12 @@
                     <tr>
                 <td>string</td>
                 <td>$identifier</td>
-                <td></td>
+                <td>: Identifier for display name driver. E.g. &#039;username&#039; for UserNameDriver</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$driver</td>
-                <td></td>
+                <td>: ::class attribute of driver class, which must implement Flarum\User\DisplayName\DriverInterface</td>
             </tr>
             </table>
 
@@ -289,12 +289,12 @@
                     <tr>
                 <td>string</td>
                 <td>$identifier</td>
-                <td></td>
+                <td>: Identifier for avatar driver. E.g. &#039;gravatar&#039; for GravatarDriver</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$driver</td>
-                <td></td>
+                <td>: ::class attribute of driver class, which must implement Flarum\User\Avatar\DriverInterface</td>
             </tr>
             </table>
 
@@ -322,7 +322,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/User.html"><abbr title="Flarum\Extend\User">User</abbr></a>
-    <strong>permissionGroups</strong>(<abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+    <strong>permissionGroups</strong>(callable|string $callback)
         </code>
     </h3>
     <div class="details">
@@ -337,9 +337,16 @@ It will not change the group badges displayed for the user.</p>                 
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
+                <td>callable|string</td>
                 <td>$callback</td>
-                <td></td>
+                <td>
+
+The callable can be a closure or invokable class, and should accept:
+- \Flarum\User\User $user: the user in question.
+- array $groupIds: an array of ids for the groups the user belongs to.
+
+The callable should return:
+- array $groupIds: an array of ids for the groups the user belongs to.</td>
             </tr>
             </table>
 
@@ -421,7 +428,7 @@ It will not change the group badges displayed for the user.</p>                 
         </a>
         </div>
         <code>                    void
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -438,7 +445,7 @@ It will not change the group badges displayed for the user.</p>                 
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null</td>
                 <td>$extension</td>
                 <td></td>
             </tr>

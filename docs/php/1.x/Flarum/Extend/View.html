@@ -136,7 +136,7 @@
                     <a href="../../Flarum/Extend/View.html"><abbr title="Flarum\Extend\View">View</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_namespace">namespace</a>(string $namespace, $hints)
+                    <a href="#method_namespace">namespace</a>(string $namespace, string|string[] $hints)
         
                                             <p>Register a new namespace of Laravel views.</p>                </div>
                 <div class="col-md-2"></div>
@@ -152,7 +152,7 @@
                     <a href="../../Flarum/Extend/View.html"><abbr title="Flarum\Extend\View">View</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extendNamespace">extendNamespace</a>(string $namespace, $hints)
+                    <a href="#method_extendNamespace">extendNamespace</a>(string $namespace, string|string[] $hints)
         
                                             <p>Extend an existing namespace of Laravel views.</p>                </div>
                 <div class="col-md-2"></div>
@@ -228,7 +228,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/View.html"><abbr title="Flarum\Extend\View">View</abbr></a>
-    <strong>namespace</strong>(string $namespace, $hints)
+    <strong>namespace</strong>(string $namespace, string|string[] $hints)
         </code>
     </h3>
     <div class="details">
@@ -248,12 +248,13 @@ You can also pass variables into a view. For more information, see: https://lara
                     <tr>
                 <td>string</td>
                 <td>$namespace</td>
-                <td></td>
+                <td>: The name of the namespace.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|string[]</td>
                 <td>$hints</td>
-                <td></td>
+                <td>: This is a path (or an array of paths) to the folder(s)
+where view files are stored, relative to the extend.php file.</td>
             </tr>
             </table>
 
@@ -281,7 +282,7 @@ You can also pass variables into a view. For more information, see: https://lara
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/View.html"><abbr title="Flarum\Extend\View">View</abbr></a>
-    <strong>extendNamespace</strong>(string $namespace, $hints)
+    <strong>extendNamespace</strong>(string $namespace, string|string[] $hints)
         </code>
     </h3>
     <div class="details">
@@ -298,12 +299,13 @@ and register that folder under the existing namespace with this extender.</p>   
                     <tr>
                 <td>string</td>
                 <td>$namespace</td>
-                <td></td>
+                <td>: The name of the namespace.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|string[]</td>
                 <td>$hints</td>
-                <td></td>
+                <td>: This is a path (or an array of paths) to the folder(s)
+where view files are stored, relative to the extend.php file.</td>
             </tr>
             </table>
 

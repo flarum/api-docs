@@ -201,7 +201,7 @@
                     <a href="../../Flarum/Extend/ApiController.html"><abbr title="Flarum\Extend\ApiController">ApiController</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_addInclude">addInclude</a>($name, callable|string|null $callback = null)
+                    <a href="#method_addInclude">addInclude</a>(string|array $name, callable|string|null $callback = null)
         
                                             <p>Include the given relationship by default.</p>                </div>
                 <div class="col-md-2"></div>
@@ -217,7 +217,7 @@
                     <a href="../../Flarum/Extend/ApiController.html"><abbr title="Flarum\Extend\ApiController">ApiController</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_removeInclude">removeInclude</a>($name, callable|string|null $callback = null)
+                    <a href="#method_removeInclude">removeInclude</a>(string|array $name, callable|string|null $callback = null)
         
                                             <p>Don&#039;t include the given relationship by default.</p>                </div>
                 <div class="col-md-2"></div>
@@ -233,7 +233,7 @@
                     <a href="../../Flarum/Extend/ApiController.html"><abbr title="Flarum\Extend\ApiController">ApiController</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_addOptionalInclude">addOptionalInclude</a>($name, callable|string|null $callback = null)
+                    <a href="#method_addOptionalInclude">addOptionalInclude</a>(string|array $name, callable|string|null $callback = null)
         
                                             <p>Make the given relationship available for inclusion.</p>                </div>
                 <div class="col-md-2"></div>
@@ -249,7 +249,7 @@
                     <a href="../../Flarum/Extend/ApiController.html"><abbr title="Flarum\Extend\ApiController">ApiController</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_removeOptionalInclude">removeOptionalInclude</a>($name, callable|string|null $callback = null)
+                    <a href="#method_removeOptionalInclude">removeOptionalInclude</a>(string|array $name, callable|string|null $callback = null)
         
                                             <p>Don&#039;t allow the given relationship to be included.</p>                </div>
                 <div class="col-md-2"></div>
@@ -417,7 +417,8 @@
                     <tr>
                 <td>string</td>
                 <td>$controllerClass</td>
-                <td></td>
+                <td>: The ::class attribute of the controller you are modifying.
+This controller should extend from \Flarum\Api\Controller\AbstractSerializeController.</td>
             </tr>
             </table>
 
@@ -450,7 +451,9 @@
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.</td>
             </tr>
             </table>
@@ -493,7 +496,9 @@
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 - $data: Mixed, can be an array of data or an object (like an instance of Collection or AbstractModel).
 - $request: An instance of \Psr\Http\Message\ServerRequestInterface.
@@ -545,12 +550,14 @@ The callable should return:
                     <tr>
                 <td>string</td>
                 <td>$serializerClass</td>
-                <td></td>
+                <td>: The ::class attribute of the serializer.</td>
             </tr>
                     <tr>
                 <td>callable|string|null</td>
                 <td>$callback</td>
-                <td>The optional callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The optional callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 
 The callable should return:
@@ -582,7 +589,7 @@ The callable should return:
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/ApiController.html"><abbr title="Flarum\Extend\ApiController">ApiController</abbr></a>
-    <strong>addInclude</strong>($name, callable|string|null $callback = null)
+    <strong>addInclude</strong>(string|array $name, callable|string|null $callback = null)
         </code>
     </h3>
     <div class="details">
@@ -596,14 +603,16 @@ The callable should return:
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string|array</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation.</td>
             </tr>
                     <tr>
                 <td>callable|string|null</td>
                 <td>$callback</td>
-                <td>The optional callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The optional callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 
 The callable should return:
@@ -635,7 +644,7 @@ The callable should return:
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/ApiController.html"><abbr title="Flarum\Extend\ApiController">ApiController</abbr></a>
-    <strong>removeInclude</strong>($name, callable|string|null $callback = null)
+    <strong>removeInclude</strong>(string|array $name, callable|string|null $callback = null)
         </code>
     </h3>
     <div class="details">
@@ -649,14 +658,16 @@ The callable should return:
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string|array</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation.</td>
             </tr>
                     <tr>
                 <td>callable|string|null</td>
                 <td>$callback</td>
-                <td>The optional callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The optional callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 
 The callable should return:
@@ -688,7 +699,7 @@ The callable should return:
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/ApiController.html"><abbr title="Flarum\Extend\ApiController">ApiController</abbr></a>
-    <strong>addOptionalInclude</strong>($name, callable|string|null $callback = null)
+    <strong>addOptionalInclude</strong>(string|array $name, callable|string|null $callback = null)
         </code>
     </h3>
     <div class="details">
@@ -702,14 +713,16 @@ The callable should return:
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string|array</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation.</td>
             </tr>
                     <tr>
                 <td>callable|string|null</td>
                 <td>$callback</td>
-                <td>The optional callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The optional callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 
 The callable should return:
@@ -741,7 +754,7 @@ The callable should return:
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/ApiController.html"><abbr title="Flarum\Extend\ApiController">ApiController</abbr></a>
-    <strong>removeOptionalInclude</strong>($name, callable|string|null $callback = null)
+    <strong>removeOptionalInclude</strong>(string|array $name, callable|string|null $callback = null)
         </code>
     </h3>
     <div class="details">
@@ -755,14 +768,16 @@ The callable should return:
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string|array</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation.</td>
             </tr>
                     <tr>
                 <td>callable|string|null</td>
                 <td>$callback</td>
-                <td>The optional callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The optional callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 
 The callable should return:
@@ -815,7 +830,9 @@ The callable should return:
                     <tr>
                 <td>callable|string|null</td>
                 <td>$callback</td>
-                <td>The optional callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The optional callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 
 The callable should return:
@@ -868,7 +885,9 @@ The callable should return:
                     <tr>
                 <td>callable|string|null</td>
                 <td>$callback</td>
-                <td>The optional callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The optional callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 
 The callable should return:
@@ -921,7 +940,9 @@ The callable should return:
                     <tr>
                 <td>callable|string|null</td>
                 <td>$callback</td>
-                <td>The optional callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The optional callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 
 The callable should return:
@@ -974,7 +995,9 @@ The callable should return:
                     <tr>
                 <td>callable|string|null</td>
                 <td>$callback</td>
-                <td>The optional callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The optional callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 
 The callable should return:
@@ -1027,7 +1050,9 @@ The callable should return:
                     <tr>
                 <td>callable|string|null</td>
                 <td>$callback</td>
-                <td>The optional callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The optional callback can be a closure or an invokable class, and should accept:
 - $controller: An instance of this controller.
 
 The callable should return:
@@ -1120,12 +1145,17 @@ Sublevel relationships will only be loaded if the upper level was included or ma
                     <tr>
                 <td>string</td>
                 <td>$relation</td>
-                <td></td>
+                <td>: Relationship name, see load method description.</td>
             </tr>
                     <tr>
                 <td>callable</td>
                 <td>$callback</td>
-                <td></td>
+                <td>
+
+The callback to modify the query, should accept:
+- \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Relations\Relation $query: A query object.
+- \Psr\Http\Message\ServerRequestInterface|null $request: An instance of the request.
+- array $relations: An array of relations that are to be loaded.</td>
             </tr>
             </table>
 

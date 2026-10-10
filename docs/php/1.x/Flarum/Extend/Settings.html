@@ -134,7 +134,7 @@
                     <a href="../../Flarum/Extend/Settings.html"><abbr title="Flarum\Extend\Settings">Settings</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_serializeToForum">serializeToForum</a>(string $attributeName, string $key, $callback = null, $default = null)
+                    <a href="#method_serializeToForum">serializeToForum</a>(string $attributeName, string $key, string|callable|null $callback = null, mixed $default = null)
         
                                             <p>Serialize a setting value to the ForumSerializer attributes.</p>                </div>
                 <div class="col-md-2"></div>
@@ -150,7 +150,7 @@
                     <a href="../../Flarum/Extend/Settings.html"><abbr title="Flarum\Extend\Settings">Settings</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_default">default</a>(string $key, $value)
+                    <a href="#method_default">default</a>(string $key, mixed $value)
         
                                             <p>Set a default value for a setting.</p>                </div>
                 <div class="col-md-2"></div>
@@ -166,7 +166,7 @@
                     <a href="../../Flarum/Extend/Settings.html"><abbr title="Flarum\Extend\Settings">Settings</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_registerLessConfigVar">registerLessConfigVar</a>(string $configName, string $key, $callback = null)
+                    <a href="#method_registerLessConfigVar">registerLessConfigVar</a>(string $configName, string $key, string|callable|null $callback = null)
         
                                             <p>Register a setting as a LESS configuration variable.</p>                </div>
                 <div class="col-md-2"></div>
@@ -208,7 +208,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Settings.html"><abbr title="Flarum\Extend\Settings">Settings</abbr></a>
-    <strong>serializeToForum</strong>(string $attributeName, string $key, $callback = null, $default = null)
+    <strong>serializeToForum</strong>(string $attributeName, string $key, string|callable|null $callback = null, mixed $default = null)
         </code>
     </h3>
     <div class="details">
@@ -224,22 +224,28 @@
                     <tr>
                 <td>string</td>
                 <td>$attributeName</td>
-                <td></td>
+                <td>: The attribute name to be used in the ForumSerializer attributes array.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$key</td>
-                <td></td>
+                <td>: The key of the setting.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|callable|null</td>
                 <td>$callback</td>
-                <td></td>
+                <td>: Optional callback to modify the value before serialization.
+
+The callback can be a closure or an invokable class, and should accept:
+- mixed $value: The value of the setting.
+
+The callable should return:
+- mixed $value: The modified value.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$default</td>
-                <td></td>
+                <td>: Deprecated optional default serialized value. Will be run through the optional callback.</td>
             </tr>
             </table>
 
@@ -267,7 +273,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Settings.html"><abbr title="Flarum\Extend\Settings">Settings</abbr></a>
-    <strong>default</strong>(string $key, $value)
+    <strong>default</strong>(string $key, mixed $value)
         </code>
     </h3>
     <div class="details">
@@ -283,12 +289,12 @@
                     <tr>
                 <td>string</td>
                 <td>$key</td>
-                <td></td>
+                <td>: The setting key, must be unique. Namespace it with the extension ID (example: &#039;my-extension-id.setting_key&#039;).</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$value</td>
-                <td></td>
+                <td>: The setting value.</td>
             </tr>
             </table>
 
@@ -316,7 +322,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Settings.html"><abbr title="Flarum\Extend\Settings">Settings</abbr></a>
-    <strong>registerLessConfigVar</strong>(string $configName, string $key, $callback = null)
+    <strong>registerLessConfigVar</strong>(string $configName, string $key, string|callable|null $callback = null)
         </code>
     </h3>
     <div class="details">
@@ -332,17 +338,23 @@
                     <tr>
                 <td>string</td>
                 <td>$configName</td>
-                <td></td>
+                <td>: The name of the configuration variable, in hyphen case.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$key</td>
-                <td></td>
+                <td>: The key of the setting.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|callable|null</td>
                 <td>$callback</td>
-                <td></td>
+                <td>: Optional callback to modify the value.
+
+The callback can be a closure or an invokable class, and should accept:
+- mixed $value: The value of the setting.
+
+The callable should return:
+- mixed $value: The modified value.</td>
             </tr>
             </table>
 

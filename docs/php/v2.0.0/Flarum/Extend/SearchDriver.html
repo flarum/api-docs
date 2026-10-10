@@ -215,7 +215,7 @@
                     <a href="../../Flarum/Extend/SearchDriver.html"><abbr title="Flarum\Extend\SearchDriver">SearchDriver</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_addMutator">addMutator</a>(string $searcherClass, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+                    <a href="#method_addMutator">addMutator</a>(string $searcherClass, callable|string $callback)
         
                                             <p>Add a callback through which to run all search queries after filters have been applied.</p>                </div>
                 <div class="col-md-2"></div>
@@ -231,7 +231,7 @@
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -271,7 +271,8 @@
                     <tr>
                 <td>string</td>
                 <td>$driverClass</td>
-                <td></td>
+                <td>: The driver class you are modifying or adding.
+This driver must extend \Flarum\Search\AbstractDriver.</td>
             </tr>
             </table>
 
@@ -365,7 +366,8 @@ Or extend \Flarum\Search\Database\AbstractSearcher if using the default driver.<
                     <tr>
                 <td>string</td>
                 <td>$filterClass</td>
-                <td></td>
+                <td>: The ::class attribute of the filter you are adding.
+This filter must implement \Flarum\Search\FilterInterface</td>
             </tr>
             </table>
 
@@ -473,7 +475,8 @@ Or extend \Flarum\Search\Database\AbstractSearcher if using the default driver.<
                     <tr>
                 <td>string</td>
                 <td>$fulltextClass</td>
-                <td></td>
+                <td>: The ::class attribute of the full test filter you are adding.
+This filter must implement \Flarum\Search\FilterInterface</td>
             </tr>
             </table>
 
@@ -501,7 +504,7 @@ Or extend \Flarum\Search\Database\AbstractSearcher if using the default driver.<
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/SearchDriver.html"><abbr title="Flarum\Extend\SearchDriver">SearchDriver</abbr></a>
-    <strong>addMutator</strong>(string $searcherClass, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+    <strong>addMutator</strong>(string $searcherClass, callable|string $callback)
         </code>
     </h3>
     <div class="details">
@@ -522,9 +525,15 @@ This searcher must implement \Flarum\Search\SearcherInterface.
 Or extend \Flarum\Search\Database\AbstractSearcher if using the default driver.</td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
+                <td>callable|string</td>
                 <td>$callback</td>
-                <td></td>
+                <td>
+
+The callback can be a closure or an invokable class, and should accept:
+- \Flarum\Search\SearchState $search
+- \Flarum\Query\QueryCriteria $criteria
+
+The callback should return void.</td>
             </tr>
             </table>
 
@@ -552,7 +561,7 @@ Or extend \Flarum\Search\Database\AbstractSearcher if using the default driver.<
         </a>
         </div>
         <code>                    void
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -569,7 +578,7 @@ Or extend \Flarum\Search\Database\AbstractSearcher if using the default driver.<
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null</td>
                 <td>$extension</td>
                 <td></td>
             </tr>

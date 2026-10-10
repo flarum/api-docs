@@ -134,7 +134,7 @@
                     <a href="../../Flarum/Extend/Filesystem.html"><abbr title="Flarum\Extend\Filesystem">Filesystem</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_disk">disk</a>(string $name, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+                    <a href="#method_disk">disk</a>(string $name, callable|string $callback)
         
                                             <p>Declare a new filesystem disk.</p>                </div>
                 <div class="col-md-2"></div>
@@ -166,7 +166,7 @@
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -192,7 +192,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Filesystem.html"><abbr title="Flarum\Extend\Filesystem">Filesystem</abbr></a>
-    <strong>disk</strong>(string $name, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+    <strong>disk</strong>(string $name, callable|string $callback)
         </code>
     </h3>
     <div class="details">
@@ -214,12 +214,20 @@ To declare a new disk, you must provide default configuration a &quot;local&quot
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the disk.</td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
+                <td>callable|string</td>
                 <td>$callback</td>
-                <td></td>
+                <td>
+
+The callback can be a closure or an invokable class, and should accept:
+ - \Flarum\Foundation\Paths $paths
+ - \Flarum\Http\UrlGenerator $url
+
+The callable should return:
+- A Laravel disk config array,
+  The `driver` key is not necessary for this array, and will be ignored.</td>
             </tr>
             </table>
 
@@ -274,12 +282,13 @@ To declare a new disk, you must provide default configuration a &quot;local&quot
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the driver.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$driverClass</td>
-                <td></td>
+                <td>: The ::class attribute of the driver.
+Driver must implement `\Flarum\Filesystem\DriverInterface`.</td>
             </tr>
             </table>
 
@@ -307,7 +316,7 @@ To declare a new disk, you must provide default configuration a &quot;local&quot
         </a>
         </div>
         <code>                    void
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -324,7 +333,7 @@ To declare a new disk, you must provide default configuration a &quot;local&quot
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null</td>
                 <td>$extension</td>
                 <td></td>
             </tr>

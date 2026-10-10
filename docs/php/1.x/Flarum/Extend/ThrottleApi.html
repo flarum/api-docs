@@ -208,12 +208,14 @@
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the throttler.</td>
             </tr>
                     <tr>
                 <td>string|callable</td>
                 <td>$callback</td>
-                <td>The callable can be a closure or invokable class, and should accept:
+                <td>
+
+The callable can be a closure or invokable class, and should accept:
   - $request: The current `\Psr\Http\Message\ServerRequestInterface` request object.
               `\Flarum\Http\RequestUtil::getActor($request)` can be used to get the current user.
               `$request-&gt;getAttribute(&#039;routeName&#039;)` can be used to get the current route.
@@ -267,7 +269,7 @@ The callable should return one of:
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the throttler to remove.</td>
             </tr>
             </table>
 

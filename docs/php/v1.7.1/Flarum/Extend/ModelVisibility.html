@@ -236,7 +236,9 @@ of the ability, and will accept the ability name as an additional argument.</p> 
                     <tr>
                 <td>string</td>
                 <td>$modelClass</td>
-                <td></td>
+                <td>: The ::class attribute of the model you are applying scopers to.
+This model must extend from \Flarum\Database\AbstractModel,
+and use \Flarum\Database\ScopeVisibilityTrait.</td>
             </tr>
             </table>
 
@@ -276,7 +278,13 @@ of the ability, and will accept the ability name as an additional argument.</p> 
                     <tr>
                 <td>string</td>
                 <td>$ability</td>
-                <td></td>
+                <td>: Defaults to &#039;view&#039;.
+
+The callback can be a closure or invokable class, and should accept:
+- \Flarum\User\User $actor
+- \Illuminate\Database\Eloquent\Builder $query
+
+The callback should return void.</td>
             </tr>
             </table>
 
@@ -320,7 +328,9 @@ of the ability, and will accept the ability name as an additional argument.</p> 
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or invokable class, and should accept:
+                <td>
+
+The callback can be a closure or invokable class, and should accept:
 - \Flarum\User\User $actor
 - \Illuminate\Database\Eloquent\Builder $query
 - string $ability

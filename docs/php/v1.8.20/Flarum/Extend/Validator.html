@@ -208,7 +208,8 @@ used to make other changes to the validator as well.</p>                </div>
                     <tr>
                 <td>string</td>
                 <td>$validatorClass</td>
-                <td></td>
+                <td>: The ::class attribute of the validator you are modifying.
+The validator should inherit from \Flarum\Foundation\AbstractValidator.</td>
             </tr>
             </table>
 
@@ -244,7 +245,9 @@ used to make other changes to the validator as well.</p>                        
                     <tr>
                 <td>callable|<abbr title="Flarum\Extend\class-string">class-string</abbr></td>
                 <td>$callback</td>
-                <td>The callback can be a closure or invokable class, and should accept:
+                <td>
+
+The callback can be a closure or invokable class, and should accept:
 - \Flarum\Foundation\AbstractValidator $flarumValidator: The Flarum validator wrapper
 - \Illuminate\Validation\Validator $validator: The Laravel validator instance
 

@@ -224,12 +224,12 @@
                     <tr>
                 <td>string</td>
                 <td>$identifier</td>
-                <td></td>
+                <td>: Identifier for display name driver. E.g. &#039;username&#039; for UserNameDriver</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$driver</td>
-                <td></td>
+                <td>: ::class attribute of driver class, which must implement Flarum\User\DisplayName\DriverInterface</td>
             </tr>
             </table>
 
@@ -274,7 +274,9 @@ It will not change the group badges displayed for the user.</p>                 
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callable can be a closure or invokable class, and should accept:
+                <td>
+
+The callable can be a closure or invokable class, and should accept:
 - \Flarum\User\User $user: the user in question.
 - array $groupIds: an array of ids for the groups the user belongs to.
 

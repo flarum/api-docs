@@ -134,7 +134,7 @@
                     <a href="../../Flarum/Extend/Auth.html"><abbr title="Flarum\Extend\Auth">Auth</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_addPasswordChecker">addPasswordChecker</a>(string $identifier, $callback)
+                    <a href="#method_addPasswordChecker">addPasswordChecker</a>(string $identifier, callable|string $callback)
         
                                             <p>Add a new password checker.</p>                </div>
                 <div class="col-md-2"></div>
@@ -192,7 +192,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Auth.html"><abbr title="Flarum\Extend\Auth">Auth</abbr></a>
-    <strong>addPasswordChecker</strong>(string $identifier, $callback)
+    <strong>addPasswordChecker</strong>(string $identifier, callable|string $callback)
         </code>
     </h3>
     <div class="details">
@@ -208,12 +208,24 @@
                     <tr>
                 <td>string</td>
                 <td>$identifier</td>
-                <td></td>
+                <td>: Unique identifier for password checker.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>callable|string</td>
                 <td>$callback</td>
-                <td></td>
+                <td>: A closure or invokable class that contains the logic of the password checker.
+
+The callable should accept:
+- $user: An instance of the User model.
+- $password: A string.
+
+The callable should return:
+- `true` if the given password is valid.
+- `null` (or not return anything) if the given password is invalid, or this checker does not apply.
+          Generally, `null` should be returned instead of `false` so that other
+          password checkers can run.
+- `false` if the given password is invalid, and no other checkers should be considered.
+           Evaluation will be immediately halted if any checkers return `false`.</td>
             </tr>
             </table>
 
@@ -257,7 +269,7 @@
                     <tr>
                 <td>string</td>
                 <td>$identifier</td>
-                <td></td>
+                <td>: The unique identifier of the password checker to remove.</td>
             </tr>
             </table>
 

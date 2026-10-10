@@ -532,7 +532,7 @@ without requiring a manual enable/disable cycle.</p>                </div>
                     bool
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_isEnabled">isEnabled</a>($extension)
+                    <a href="#method_isEnabled">isEnabled</a>(mixed $extension)
         
                                             <p>Whether the extension is enabled.</p>                </div>
                 <div class="col-md-2"></div>
@@ -561,7 +561,7 @@ without requiring a manual enable/disable cycle.</p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    static&nbsp;<abbr title="Flarum\Extension\array{valid: \Flarum\Extension\Extension[], missingDependencies: array&lt;string, string[]&gt;, circularDependencies: string[]}">Extension[], missingDependencies: array&lt;string, string[]&gt;, circularDependencies: string[]}</abbr>
                 </div>
                 <div class="col-md-6 type">
                     <a href="#method_resolveExtensionOrder">resolveExtensionOrder</a>(<a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>[] $extensionList)
@@ -1344,7 +1344,7 @@ without requiring a manual enable/disable cycle.</p>                            
         </a>
         </div>
         <code>                    bool
-    <strong>isEnabled</strong>($extension)
+    <strong>isEnabled</strong>(mixed $extension)
         </code>
     </h3>
     <div class="details">
@@ -1358,7 +1358,7 @@ without requiring a manual enable/disable cycle.</p>                            
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$extension</td>
                 <td></td>
             </tr>
@@ -1431,7 +1431,7 @@ without requiring a manual enable/disable cycle.</p>                            
             line 512
         </a>
         </div>
-        <code>        static            
+        <code>        static            <abbr title="Flarum\Extension\array{valid: \Flarum\Extension\Extension[], missingDependencies: array&lt;string, string[]&gt;, circularDependencies: string[]}">Extension[], missingDependencies: array&lt;string, string[]&gt;, circularDependencies: string[]}</abbr>
     <strong>resolveExtensionOrder</strong>(<a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>[] $extensionList)
         </code>
     </h3>
@@ -1453,6 +1453,20 @@ without requiring a manual enable/disable cycle.</p>                            
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Flarum\Extension\array{valid: \Flarum\Extension\Extension[], missingDependencies: array&lt;string, string[]&gt;, circularDependencies: string[]}">Extension[], missingDependencies: array&lt;string, string[]&gt;, circularDependencies: string[]}</abbr></td>
+            <td>
+&#039;valid&#039; points to an ordered array of \Flarum\Extension\Extension
+&#039;missingDependencies&#039; points to an associative array of extensions that could not be resolved due
+    to missing dependencies, in the format extension id =&gt; array of missing dependency IDs.
+&#039;circularDependencies&#039; points to an array of extensions ids of extensions
+    that cannot be processed due to circular dependencies</td>
+        </tr>
+    </table>
+
             
             
                     </div>

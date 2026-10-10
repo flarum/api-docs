@@ -166,7 +166,7 @@ private instances under some conditions.</p>                    </div>
                     <a href="../../Flarum/Extend/ModelPrivate.html"><abbr title="Flarum\Extend\ModelPrivate">ModelPrivate</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_checker">checker</a>(<abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+                    <a href="#method_checker">checker</a>(callable|string $callback)
         
                                             <p>Add a model privacy checker.</p>                </div>
                 <div class="col-md-2"></div>
@@ -182,7 +182,7 @@ private instances under some conditions.</p>                    </div>
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -222,7 +222,8 @@ private instances under some conditions.</p>                    </div>
                     <tr>
                 <td>string</td>
                 <td>$modelClass</td>
-                <td></td>
+                <td>: The ::class attribute of the model you are applying private checkers to.
+This model must have a `is_private` field.</td>
             </tr>
             </table>
 
@@ -241,7 +242,7 @@ private instances under some conditions.</p>                    </div>
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/ModelPrivate.html"><abbr title="Flarum\Extend\ModelPrivate">ModelPrivate</abbr></a>
-    <strong>checker</strong>(<abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+    <strong>checker</strong>(callable|string $callback)
         </code>
     </h3>
     <div class="details">
@@ -255,9 +256,14 @@ private instances under some conditions.</p>                    </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
+                <td>callable|string</td>
                 <td>$callback</td>
-                <td></td>
+                <td>
+
+The callback can be a closure or invokable class, and should accept:
+- \Flarum\Database\AbstractModel $instance: An instance of the model.
+
+It should return `true` if the model instance should be made private.</td>
             </tr>
             </table>
 
@@ -285,7 +291,7 @@ private instances under some conditions.</p>                    </div>
         </a>
         </div>
         <code>                    void
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -302,7 +308,7 @@ private instances under some conditions.</p>                    </div>
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null</td>
                 <td>$extension</td>
                 <td></td>
             </tr>

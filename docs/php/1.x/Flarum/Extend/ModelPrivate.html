@@ -222,7 +222,8 @@ private instances under some conditions.</p>                    </div>
                     <tr>
                 <td>string</td>
                 <td>$modelClass</td>
-                <td></td>
+                <td>: The ::class attribute of the model you are applying private checkers to.
+This model must have a `is_private` field.</td>
             </tr>
             </table>
 
@@ -257,7 +258,9 @@ private instances under some conditions.</p>                    </div>
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or invokable class, and should accept:
+                <td>
+
+The callback can be a closure or invokable class, and should accept:
 - \Flarum\Database\AbstractModel $instance: An instance of the model.
 
 It should return `true` if the model instance should be made private.</td>

@@ -239,7 +239,8 @@
                     <tr>
                 <td>string</td>
                 <td>$searcherClass</td>
-                <td></td>
+                <td>: The ::class attribute of the Searcher you are modifying.
+This searcher must extend \Flarum\Search\AbstractSearcher.</td>
             </tr>
             </table>
 
@@ -274,7 +275,8 @@
                     <tr>
                 <td>string</td>
                 <td>$gambitClass</td>
-                <td></td>
+                <td>: The ::class attribute of the gambit you are adding.
+This gambit must extend \Flarum\Search\AbstractRegexGambit</td>
             </tr>
             </table>
 
@@ -318,7 +320,8 @@
                     <tr>
                 <td>string</td>
                 <td>$gambitClass</td>
-                <td></td>
+                <td>: The ::class attribute of the full test gambit you are adding.
+This gambit must implement \Flarum\Search\GambitInterface</td>
             </tr>
             </table>
 
@@ -362,7 +365,9 @@
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The callback can be a closure or an invokable class, and should accept:
 - \Flarum\Search\SearchState $search
 - \Flarum\Query\QueryCriteria $criteria
 

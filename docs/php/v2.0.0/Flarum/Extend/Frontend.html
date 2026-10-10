@@ -199,7 +199,7 @@
                     <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_route">route</a>(string $path, string $name, <abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr> $content = null)
+                    <a href="#method_route">route</a>(string $path, string $name, callable|string|null $content = null)
         
                                             <p>Add a route to the frontend.</p>                </div>
                 <div class="col-md-2"></div>
@@ -231,7 +231,7 @@
                     <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_content">content</a>(<abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr> $callback, int $priority = 0)
+                    <a href="#method_content">content</a>(callable|string|null $callback, int $priority = 0)
         
                                             <p>Modify the content of the frontend.</p>                </div>
                 <div class="col-md-2"></div>
@@ -247,7 +247,7 @@
                     <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_preloads">preloads</a>(<abbr title="Flarum\Extend\callable|array">callable|array</abbr> $preloads)
+                    <a href="#method_preloads">preloads</a>(callable|array $preloads)
         
                                             <p>Adds multiple asset preloads.</p>                </div>
                 <div class="col-md-2"></div>
@@ -295,7 +295,7 @@
                     <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extraDocumentClasses">extraDocumentClasses</a>(string|array|Closure $classes)
+                    <a href="#method_extraDocumentClasses">extraDocumentClasses</a>(string|array|<a target="_blank" href="http://php.net/Closure">Closure</a> $classes)
         
                                             <p>Adds document root classes.</p>                </div>
                 <div class="col-md-2"></div>
@@ -311,7 +311,7 @@
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -351,7 +351,7 @@
                     <tr>
                 <td>string</td>
                 <td>$frontend</td>
-                <td></td>
+                <td>: The name of the frontend.</td>
             </tr>
             </table>
 
@@ -386,7 +386,7 @@
                     <tr>
                 <td>string</td>
                 <td>$path</td>
-                <td></td>
+                <td>: The path to the CSS file.</td>
             </tr>
             </table>
 
@@ -430,7 +430,7 @@
                     <tr>
                 <td>string</td>
                 <td>$path</td>
-                <td></td>
+                <td>: The path to the JavaScript file.</td>
             </tr>
             </table>
 
@@ -502,7 +502,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
-    <strong>route</strong>(string $path, string $name, <abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr> $content = null)
+    <strong>route</strong>(string $path, string $name, callable|string|null $content = null)
         </code>
     </h3>
     <div class="details">
@@ -518,17 +518,23 @@
                     <tr>
                 <td>string</td>
                 <td>$path</td>
-                <td></td>
+                <td>: The path of the route.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the route, must be unique.</td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr></td>
+                <td>callable|string|null</td>
                 <td>$content</td>
-                <td></td>
+                <td>
+
+The content can be a closure or an invokable class, and should accept:
+- \Flarum\Frontend\Document $document
+- \Psr\Http\Message\ServerRequestInterface $request
+
+The callable should return void.</td>
             </tr>
             </table>
 
@@ -572,7 +578,7 @@
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the route.</td>
             </tr>
             </table>
 
@@ -600,7 +606,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
-    <strong>content</strong>(<abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr> $callback, int $priority = 0)
+    <strong>content</strong>(callable|string|null $callback, int $priority = 0)
         </code>
     </h3>
     <div class="details">
@@ -614,14 +620,20 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Flarum\Extend\callable|string|null">callable|string|null</abbr></td>
+                <td>callable|string|null</td>
                 <td>$callback</td>
-                <td></td>
+                <td>
+
+The content can be a closure or an invokable class, and should accept:
+- \Flarum\Frontend\Document $document
+- \Psr\Http\Message\ServerRequestInterface $request
+
+The callable should return void.</td>
             </tr>
                     <tr>
                 <td>int</td>
                 <td>$priority</td>
-                <td></td>
+                <td>: The priority of the content. Higher priorities are executed first.</td>
             </tr>
             </table>
 
@@ -649,7 +661,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
-    <strong>preloads</strong>(<abbr title="Flarum\Extend\callable|array">callable|array</abbr> $preloads)
+    <strong>preloads</strong>(callable|array $preloads)
         </code>
     </h3>
     <div class="details">
@@ -681,7 +693,7 @@ $frontend-&gt;preloads([
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Flarum\Extend\callable|array">callable|array</abbr></td>
+                <td>callable|array</td>
                 <td>$preloads</td>
                 <td></td>
             </tr>
@@ -799,7 +811,7 @@ $frontend-&gt;preloads([
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Frontend.html"><abbr title="Flarum\Extend\Frontend">Frontend</abbr></a>
-    <strong>extraDocumentClasses</strong>(string|array|Closure $classes)
+    <strong>extraDocumentClasses</strong>(string|array|<a target="_blank" href="http://php.net/Closure">Closure</a> $classes)
         </code>
     </h3>
     <div class="details">
@@ -815,7 +827,7 @@ An array can be of a format acceptable by the @class blade directive.</p>       
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string|array|Closure</td>
+                <td>string|array|<a target="_blank" href="http://php.net/Closure">Closure</a></td>
                 <td>$classes</td>
                 <td></td>
             </tr>
@@ -845,7 +857,7 @@ An array can be of a format acceptable by the @class blade directive.</p>       
         </a>
         </div>
         <code>                    void
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -862,7 +874,7 @@ An array can be of a format acceptable by the @class blade directive.</p>       
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null</td>
                 <td>$extension</td>
                 <td></td>
             </tr>

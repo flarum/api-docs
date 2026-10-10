@@ -214,12 +214,14 @@ To declare a new disk, you must provide default configuration a &quot;local&quot
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the disk.</td>
             </tr>
                     <tr>
                 <td>string|callable</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The callback can be a closure or an invokable class, and should accept:
  - \Flarum\Foundation\Paths $paths
  - \Flarum\Http\UrlGenerator $url
 
@@ -280,12 +282,13 @@ The callable should return:
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the driver.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$driverClass</td>
-                <td></td>
+                <td>: The ::class attribute of the driver.
+Driver must implement `\Flarum\Filesystem\DriverInterface`.</td>
             </tr>
             </table>
 

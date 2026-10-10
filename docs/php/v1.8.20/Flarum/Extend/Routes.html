@@ -151,7 +151,7 @@
                     <a href="../../Flarum/Extend/Routes.html"><abbr title="Flarum\Extend\Routes">Routes</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_get">get</a>(string $path, string $name, $handler)
+                    <a href="#method_get">get</a>(string $path, string $name, callable|string $handler)
         
                                             <p>Add a GET route.</p>                </div>
                 <div class="col-md-2"></div>
@@ -167,7 +167,7 @@
                     <a href="../../Flarum/Extend/Routes.html"><abbr title="Flarum\Extend\Routes">Routes</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_post">post</a>(string $path, string $name, $handler)
+                    <a href="#method_post">post</a>(string $path, string $name, callable|string $handler)
         
                                             <p>Add a POST route.</p>                </div>
                 <div class="col-md-2"></div>
@@ -183,7 +183,7 @@
                     <a href="../../Flarum/Extend/Routes.html"><abbr title="Flarum\Extend\Routes">Routes</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_put">put</a>(string $path, string $name, $handler)
+                    <a href="#method_put">put</a>(string $path, string $name, callable|string $handler)
         
                                             <p>Add a PUT route.</p>                </div>
                 <div class="col-md-2"></div>
@@ -199,7 +199,7 @@
                     <a href="../../Flarum/Extend/Routes.html"><abbr title="Flarum\Extend\Routes">Routes</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_patch">patch</a>(string $path, string $name, $handler)
+                    <a href="#method_patch">patch</a>(string $path, string $name, callable|string $handler)
         
                                             <p>Add a PATCH route.</p>                </div>
                 <div class="col-md-2"></div>
@@ -215,7 +215,7 @@
                     <a href="../../Flarum/Extend/Routes.html"><abbr title="Flarum\Extend\Routes">Routes</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_delete">delete</a>(string $path, string $name, $handler)
+                    <a href="#method_delete">delete</a>(string $path, string $name, callable|string $handler)
         
                                             <p>Add a DELETE route.</p>                </div>
                 <div class="col-md-2"></div>
@@ -287,7 +287,7 @@
                     <tr>
                 <td>string</td>
                 <td>$appName</td>
-                <td></td>
+                <td>: Name of the app (api, forum, admin).</td>
             </tr>
             </table>
 
@@ -306,7 +306,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Routes.html"><abbr title="Flarum\Extend\Routes">Routes</abbr></a>
-    <strong>get</strong>(string $path, string $name, $handler)
+    <strong>get</strong>(string $path, string $name, callable|string $handler)
         </code>
     </h3>
     <div class="details">
@@ -322,17 +322,27 @@
                     <tr>
                 <td>string</td>
                 <td>$path</td>
-                <td></td>
+                <td>: The path of the route</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the route, must be unique.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>callable|string</td>
                 <td>$handler</td>
-                <td></td>
+                <td>: ::class attribute of the controller class, or a closure.
+
+If the handler is a controller class, it should implement \Psr\Http\Server\RequestHandlerInterface,
+or extend one of the Flarum Api controllers within \Flarum\Api\Controller.
+
+The handler should accept:
+- \Psr\Http\Message\ServerRequestInterface $request
+- \Tobscure\JsonApi\Document $document: If it extends one of the Flarum Api controllers.
+
+The handler should return:
+- \Psr\Http\Message\ResponseInterface $response</td>
             </tr>
             </table>
 
@@ -360,7 +370,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Routes.html"><abbr title="Flarum\Extend\Routes">Routes</abbr></a>
-    <strong>post</strong>(string $path, string $name, $handler)
+    <strong>post</strong>(string $path, string $name, callable|string $handler)
         </code>
     </h3>
     <div class="details">
@@ -376,17 +386,27 @@
                     <tr>
                 <td>string</td>
                 <td>$path</td>
-                <td></td>
+                <td>: The path of the route</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the route, must be unique.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>callable|string</td>
                 <td>$handler</td>
-                <td></td>
+                <td>: ::class attribute of the controller class, or a closure.
+
+If the handler is a controller class, it should implement \Psr\Http\Server\RequestHandlerInterface,
+or extend one of the Flarum Api controllers within \Flarum\Api\Controller.
+
+The handler should accept:
+- \Psr\Http\Message\ServerRequestInterface $request
+- \Tobscure\JsonApi\Document $document: If it extends one of the Flarum Api controllers.
+
+The handler should return:
+- \Psr\Http\Message\ResponseInterface $response</td>
             </tr>
             </table>
 
@@ -414,7 +434,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Routes.html"><abbr title="Flarum\Extend\Routes">Routes</abbr></a>
-    <strong>put</strong>(string $path, string $name, $handler)
+    <strong>put</strong>(string $path, string $name, callable|string $handler)
         </code>
     </h3>
     <div class="details">
@@ -430,17 +450,27 @@
                     <tr>
                 <td>string</td>
                 <td>$path</td>
-                <td></td>
+                <td>: The path of the route</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the route, must be unique.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>callable|string</td>
                 <td>$handler</td>
-                <td></td>
+                <td>: ::class attribute of the controller class, or a closure.
+
+If the handler is a controller class, it should implement \Psr\Http\Server\RequestHandlerInterface,
+or extend one of the Flarum Api controllers within \Flarum\Api\Controller.
+
+The handler should accept:
+- \Psr\Http\Message\ServerRequestInterface $request
+- \Tobscure\JsonApi\Document $document: If it extends one of the Flarum Api controllers.
+
+The handler should return:
+- \Psr\Http\Message\ResponseInterface $response</td>
             </tr>
             </table>
 
@@ -468,7 +498,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Routes.html"><abbr title="Flarum\Extend\Routes">Routes</abbr></a>
-    <strong>patch</strong>(string $path, string $name, $handler)
+    <strong>patch</strong>(string $path, string $name, callable|string $handler)
         </code>
     </h3>
     <div class="details">
@@ -484,17 +514,27 @@
                     <tr>
                 <td>string</td>
                 <td>$path</td>
-                <td></td>
+                <td>: The path of the route</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the route, must be unique.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>callable|string</td>
                 <td>$handler</td>
-                <td></td>
+                <td>: ::class attribute of the controller class, or a closure.
+
+If the handler is a controller class, it should implement \Psr\Http\Server\RequestHandlerInterface,
+or extend one of the Flarum Api controllers within \Flarum\Api\Controller.
+
+The handler should accept:
+- \Psr\Http\Message\ServerRequestInterface $request
+- \Tobscure\JsonApi\Document $document: If it extends one of the Flarum Api controllers.
+
+The handler should return:
+- \Psr\Http\Message\ResponseInterface $response</td>
             </tr>
             </table>
 
@@ -522,7 +562,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Routes.html"><abbr title="Flarum\Extend\Routes">Routes</abbr></a>
-    <strong>delete</strong>(string $path, string $name, $handler)
+    <strong>delete</strong>(string $path, string $name, callable|string $handler)
         </code>
     </h3>
     <div class="details">
@@ -538,17 +578,27 @@
                     <tr>
                 <td>string</td>
                 <td>$path</td>
-                <td></td>
+                <td>: The path of the route</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the route, must be unique.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>callable|string</td>
                 <td>$handler</td>
-                <td></td>
+                <td>: ::class attribute of the controller class, or a closure.
+
+If the handler is a controller class, it should implement \Psr\Http\Server\RequestHandlerInterface,
+or extend one of the Flarum Api controllers within \Flarum\Api\Controller.
+
+The handler should accept:
+- \Psr\Http\Message\ServerRequestInterface $request
+- \Tobscure\JsonApi\Document $document: If it extends one of the Flarum Api controllers.
+
+The handler should return:
+- \Psr\Http\Message\ResponseInterface $response</td>
             </tr>
             </table>
 
@@ -592,7 +642,7 @@
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the route.</td>
             </tr>
             </table>
 

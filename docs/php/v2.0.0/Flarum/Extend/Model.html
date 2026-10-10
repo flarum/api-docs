@@ -249,7 +249,7 @@ it CANNOT be the `::class` attribute of an invokable class.</p>                <
                     <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_relationship">relationship</a>(string $name, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+                    <a href="#method_relationship">relationship</a>(string $name, callable|string $callback)
         
                                             <p>Add a relationship from this model to another model.</p>                </div>
                 <div class="col-md-2"></div>
@@ -265,7 +265,7 @@ it CANNOT be the `::class` attribute of an invokable class.</p>                <
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -305,7 +305,8 @@ it CANNOT be the `::class` attribute of an invokable class.</p>                <
                     <tr>
                 <td>string</td>
                 <td>$modelClass</td>
-                <td></td>
+                <td>: The ::class attribute of the model you are modifying.
+This model should extend from \Flarum\Database\AbstractModel.</td>
             </tr>
             </table>
 
@@ -340,12 +341,12 @@ it CANNOT be the `::class` attribute of an invokable class.</p>                <
                     <tr>
                 <td>string</td>
                 <td>$attribute</td>
-                <td></td>
+                <td>: The new attribute name.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$cast</td>
-                <td></td>
+                <td>: The cast type. See https://laravel.com/docs/13.x/eloquent-mutators#attribute-casting</td>
             </tr>
             </table>
 
@@ -441,22 +442,24 @@ For more complex relationships, use the -&gt;relationship method.</p>           
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. This doesn&#039;t have to be anything in particular,
+but has to be unique from other relation names for this model, and should
+work as the name of a method.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$related</td>
-                <td></td>
+                <td>: The ::class attribute of the model, which should extend \Flarum\Database\AbstractModel.</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$foreignKey</td>
-                <td></td>
+                <td>: The foreign key attribute of the parent model.</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$ownerKey</td>
-                <td></td>
+                <td>: The primary key attribute of the parent model.</td>
             </tr>
             </table>
 
@@ -501,37 +504,39 @@ For more complex relationships, use the -&gt;relationship method.</p>           
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. This doesn&#039;t have to be anything in particular,
+but has to be unique from other relation names for this model, and should
+work as the name of a method.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$related</td>
-                <td></td>
+                <td>: The ::class attribute of the model, which should extend \Flarum\Database\AbstractModel.</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$table</td>
-                <td></td>
+                <td>: The intermediate table for this relation</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$foreignPivotKey</td>
-                <td></td>
+                <td>: The foreign key attribute of the parent model.</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$relatedPivotKey</td>
-                <td></td>
+                <td>: The associated key attribute of the relation.</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$parentKey</td>
-                <td></td>
+                <td>: The key name of the parent model.</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$relatedKey</td>
-                <td></td>
+                <td>: The key name of the related model.</td>
             </tr>
             </table>
 
@@ -576,22 +581,24 @@ For more complex relationships, use the -&gt;relationship method.</p>           
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. This doesn&#039;t have to be anything in particular,
+but has to be unique from other relation names for this model, and should
+work as the name of a method.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$related</td>
-                <td></td>
+                <td>: The ::class attribute of the model, which should extend \Flarum\Database\AbstractModel.</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$foreignKey</td>
-                <td></td>
+                <td>: The foreign key attribute of the parent model.</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$localKey</td>
-                <td></td>
+                <td>: The primary key attribute of the parent model.</td>
             </tr>
             </table>
 
@@ -636,22 +643,24 @@ For more complex relationships, use the -&gt;relationship method.</p>           
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. This doesn&#039;t have to be anything in particular,
+but has to be unique from other relation names for this model, and should
+work as the name of a method.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$related</td>
-                <td></td>
+                <td>: The ::class attribute of the model, which should extend \Flarum\Database\AbstractModel.</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$foreignKey</td>
-                <td></td>
+                <td>: The foreign key attribute of the parent model.</td>
             </tr>
                     <tr>
                 <td>string|null</td>
                 <td>$localKey</td>
-                <td></td>
+                <td>: The primary key attribute of the parent model.</td>
             </tr>
             </table>
 
@@ -679,7 +688,7 @@ For more complex relationships, use the -&gt;relationship method.</p>           
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Model.html"><abbr title="Flarum\Extend\Model">Model</abbr></a>
-    <strong>relationship</strong>(string $name, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+    <strong>relationship</strong>(string $name, callable|string $callback)
         </code>
     </h3>
     <div class="details">
@@ -695,12 +704,16 @@ For more complex relationships, use the -&gt;relationship method.</p>           
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. This doesn&#039;t have to be anything in particular,
+but has to be unique from other relation names for this model, and should
+work as the name of a method.</td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
+                <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callable can be a closure or invokable class, and should accept:
+                <td>
+
+The callable can be a closure or invokable class, and should accept:
 - $instance: An instance of this model.
 
 The callable should return:
@@ -733,7 +746,7 @@ The callable should return:
         </a>
         </div>
         <code>                    void
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -750,7 +763,7 @@ The callable should return:
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null</td>
                 <td>$extension</td>
                 <td></td>
             </tr>

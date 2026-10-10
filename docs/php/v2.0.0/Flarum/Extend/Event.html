@@ -134,7 +134,7 @@
                     <a href="../../Flarum/Extend/Event.html"><abbr title="Flarum\Extend\Event">Event</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_listen">listen</a>(string $event, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $listener)
+                    <a href="#method_listen">listen</a>(string $event, callable|string $listener)
         
                                             <p>Add a listener to a domain event dispatched by flarum or a flarum extension.</p>                </div>
                 <div class="col-md-2"></div>
@@ -166,7 +166,7 @@
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -192,7 +192,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Event.html"><abbr title="Flarum\Extend\Event">Event</abbr></a>
-    <strong>listen</strong>(string $event, <abbr title="Flarum\Extend\callable|string">callable|string</abbr> $listener)
+    <strong>listen</strong>(string $event, callable|string $listener)
         </code>
     </h3>
     <div class="details">
@@ -208,16 +208,18 @@
                     <tr>
                 <td>string</td>
                 <td>$event</td>
-                <td></td>
+                <td>: Name of the event, can be the ::class attribute of the event class.</td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
+                <td>callable|string</td>
                 <td>$listener</td>
-                <td>The listener can either be:
-- A callback function that accepts an instance of the event as a parameter.
-- The ::class attribute of a class with a public `handle` method, which accepts an instance of the event as a parameter.
-- An array, where the first argument is an object or class name, and the second argument is the method on the
-  first argument that should be executed as the listener.</td>
+                <td>
+
+The listener can either be:
+ - A callback function that accepts an instance of the event as a parameter.
+ - The ::class attribute of a class with a public `handle` method, which accepts an instance of the event as a parameter.
+ - An array, where the first argument is an object or class name, and the second argument is the method on the
+   first argument that should be executed as the listener.</td>
             </tr>
             </table>
 
@@ -262,7 +264,7 @@ allowing you to define several event handlers within a single class.</p>        
                     <tr>
                 <td>string</td>
                 <td>$subscriber</td>
-                <td></td>
+                <td>: The ::class attribute of the subscriber class.</td>
             </tr>
             </table>
 
@@ -301,7 +303,7 @@ allowing you to define several event handlers within a single class.</p>        
         </a>
         </div>
         <code>                    void
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -318,7 +320,7 @@ allowing you to define several event handlers within a single class.</p>        
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null</td>
                 <td>$extension</td>
                 <td></td>
             </tr>

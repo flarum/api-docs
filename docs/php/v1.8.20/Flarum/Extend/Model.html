@@ -321,7 +321,8 @@ it CANNOT be the `::class` attribute of an invokable class.</p>                <
                     <tr>
                 <td>string</td>
                 <td>$modelClass</td>
-                <td></td>
+                <td>: The ::class attribute of the model you are modifying.
+This model should extend from \Flarum\Database\AbstractModel.</td>
             </tr>
             </table>
 
@@ -407,12 +408,12 @@ it CANNOT be the `::class` attribute of an invokable class.</p>                <
                     <tr>
                 <td>string</td>
                 <td>$attribute</td>
-                <td></td>
+                <td>: The new attribute name.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$cast</td>
-                <td></td>
+                <td>: The cast type. See https://laravel.com/docs/8.x/eloquent-mutators#attribute-casting</td>
             </tr>
             </table>
 
@@ -508,22 +509,24 @@ For more complex relationships, use the -&gt;relationship method.</p>           
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. This doesn&#039;t have to be anything in particular,
+but has to be unique from other relation names for this model, and should
+work as the name of a method.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$related</td>
-                <td></td>
+                <td>: The ::class attribute of the model, which should extend \Flarum\Database\AbstractModel.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$foreignKey</td>
-                <td></td>
+                <td>: The foreign key attribute of the parent model.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$ownerKey</td>
-                <td></td>
+                <td>: The primary key attribute of the parent model.</td>
             </tr>
             </table>
 
@@ -568,37 +571,39 @@ For more complex relationships, use the -&gt;relationship method.</p>           
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. This doesn&#039;t have to be anything in particular,
+but has to be unique from other relation names for this model, and should
+work as the name of a method.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$related</td>
-                <td></td>
+                <td>: The ::class attribute of the model, which should extend \Flarum\Database\AbstractModel.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$table</td>
-                <td></td>
+                <td>: The intermediate table for this relation</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$foreignPivotKey</td>
-                <td></td>
+                <td>: The foreign key attribute of the parent model.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$relatedPivotKey</td>
-                <td></td>
+                <td>: The associated key attribute of the relation.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$parentKey</td>
-                <td></td>
+                <td>: The key name of the parent model.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$relatedKey</td>
-                <td></td>
+                <td>: The key name of the related model.</td>
             </tr>
             </table>
 
@@ -643,22 +648,24 @@ For more complex relationships, use the -&gt;relationship method.</p>           
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. This doesn&#039;t have to be anything in particular,
+but has to be unique from other relation names for this model, and should
+work as the name of a method.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$related</td>
-                <td></td>
+                <td>: The ::class attribute of the model, which should extend \Flarum\Database\AbstractModel.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$foreignKey</td>
-                <td></td>
+                <td>: The foreign key attribute of the parent model.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$localKey</td>
-                <td></td>
+                <td>: The primary key attribute of the parent model.</td>
             </tr>
             </table>
 
@@ -703,22 +710,24 @@ For more complex relationships, use the -&gt;relationship method.</p>           
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. This doesn&#039;t have to be anything in particular,
+but has to be unique from other relation names for this model, and should
+work as the name of a method.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$related</td>
-                <td></td>
+                <td>: The ::class attribute of the model, which should extend \Flarum\Database\AbstractModel.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$foreignKey</td>
-                <td></td>
+                <td>: The foreign key attribute of the parent model.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$localKey</td>
-                <td></td>
+                <td>: The primary key attribute of the parent model.</td>
             </tr>
             </table>
 
@@ -762,12 +771,16 @@ For more complex relationships, use the -&gt;relationship method.</p>           
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. This doesn&#039;t have to be anything in particular,
+but has to be unique from other relation names for this model, and should
+work as the name of a method.</td>
             </tr>
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callable can be a closure or invokable class, and should accept:
+                <td>
+
+The callable can be a closure or invokable class, and should accept:
 - $instance: An instance of this model.
 
 The callable should return:

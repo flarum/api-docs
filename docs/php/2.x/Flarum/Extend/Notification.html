@@ -168,7 +168,7 @@
                     <a href="../../Flarum/Extend/Notification.html"><abbr title="Flarum\Extend\Notification">Notification</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_beforeSending">beforeSending</a>(<abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+                    <a href="#method_beforeSending">beforeSending</a>(callable|string $callback)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -185,7 +185,7 @@
                     void
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+                    <a href="#method_extend">extend</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -225,12 +225,14 @@
                     <tr>
                 <td>string</td>
                 <td>$blueprint</td>
-                <td></td>
+                <td>: The ::class attribute of the blueprint class.
+This blueprint should implement \Flarum\Notification\Blueprint\BlueprintInterface.</td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$driversEnabledByDefault</td>
-                <td></td>
+                <td>: The names of the drivers enabled by default for this notification type.
+(example: alert, email).</td>
             </tr>
             </table>
 
@@ -272,17 +274,18 @@
                     <tr>
                 <td>string</td>
                 <td>$driverName</td>
-                <td></td>
+                <td>: The name of the notification driver.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$driver</td>
-                <td></td>
+                <td>: The ::class attribute of the driver class.
+This driver should implement \Flarum\Notification\Driver\NotificationDriverInterface.</td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$typesEnabledByDefault</td>
-                <td></td>
+                <td>: The names of blueprint classes of types enabled by default for this driver.</td>
             </tr>
             </table>
 
@@ -310,7 +313,7 @@
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Notification.html"><abbr title="Flarum\Extend\Notification">Notification</abbr></a>
-    <strong>beforeSending</strong>(<abbr title="Flarum\Extend\callable|string">callable|string</abbr> $callback)
+    <strong>beforeSending</strong>(callable|string $callback)
         </code>
     </h3>
     <div class="details">
@@ -322,9 +325,16 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Flarum\Extend\callable|string">callable|string</abbr></td>
+                <td>callable|string</td>
                 <td>$callback</td>
-                <td></td>
+                <td>
+
+The callback can be a closure or an invokable class, and should accept:
+- \Flarum\Notification\Blueprint\BlueprintInterface $blueprint
+- \Flarum\User\User[] $newRecipients
+
+The callable should return an array of recipients.
+- \Flarum\User\User[] $newRecipients</td>
             </tr>
             </table>
 
@@ -352,7 +362,7 @@
         </a>
         </div>
         <code>                    void
-    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null $extension = null)
+    <strong>extend</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -369,7 +379,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Flarum\Extend\Flarum\Extension\Extension">Extension</abbr>|null</td>
+                <td><a href="../../Flarum/Extension/Extension.html"><abbr title="Flarum\Extension\Extension">Extension</abbr></a>|null</td>
                 <td>$extension</td>
                 <td></td>
             </tr>

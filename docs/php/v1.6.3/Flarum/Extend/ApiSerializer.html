@@ -307,12 +307,14 @@ This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</t
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the attribute.</td>
             </tr>
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The callback can be a closure or an invokable class, and should accept:
 - $serializer: An instance of this serializer.
 - $model: An instance of the model being serialized.
 - $attributes: An array of existing attributes.
@@ -362,7 +364,9 @@ The callable should return:
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The callback can be a closure or an invokable class, and should accept:
 - $serializer: An instance of this serializer.
 - $model: An instance of the model being serialized.
 - $attributes: An array of existing attributes.
@@ -413,12 +417,14 @@ The callable should return:
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. Has to be unique from other relation names.
+The relation has to exist in the model handled by this serializer.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$serializerClass</td>
-                <td></td>
+                <td>: The ::class attribute the serializer that handles this relation.
+This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</td>
             </tr>
             </table>
 
@@ -462,12 +468,14 @@ The callable should return:
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. Has to be unique from other relation names.
+The relation has to exist in the model handled by this serializer.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$serializerClass</td>
-                <td></td>
+                <td>: The ::class attribute the serializer that handles this relation.
+This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</td>
             </tr>
             </table>
 
@@ -511,12 +519,15 @@ The callable should return:
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>: The name of the relation. Has to be unique from other relation names.
+The relation has to exist in the model handled by this serializer.</td>
             </tr>
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callable can be a closure or an invokable class, and should accept:
+                <td>
+
+The callable can be a closure or an invokable class, and should accept:
 - $serializer: An instance of this serializer.
 - $model: An instance of the model being serialized.
 

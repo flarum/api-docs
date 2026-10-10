@@ -225,17 +225,20 @@
                     <tr>
                 <td>string</td>
                 <td>$blueprint</td>
-                <td></td>
+                <td>: The ::class attribute of the blueprint class.
+This blueprint should implement \Flarum\Notification\Blueprint\BlueprintInterface.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$serializer</td>
-                <td></td>
+                <td>: The ::class attribute of the serializer class.
+This serializer should extend from \Flarum\Api\Serializer\AbstractSerializer.</td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$driversEnabledByDefault</td>
-                <td></td>
+                <td>: The names of the drivers enabled by default for this notification type.
+(example: alert, email).</td>
             </tr>
             </table>
 
@@ -277,17 +280,18 @@
                     <tr>
                 <td>string</td>
                 <td>$driverName</td>
-                <td></td>
+                <td>: The name of the notification driver.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$driver</td>
-                <td></td>
+                <td>: The ::class attribute of the driver class.
+This driver should implement \Flarum\Notification\Driver\NotificationDriverInterface.</td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$typesEnabledByDefault</td>
-                <td></td>
+                <td>: The names of blueprint classes of types enabled by default for this driver.</td>
             </tr>
             </table>
 
@@ -329,7 +333,9 @@
                     <tr>
                 <td>callable|string</td>
                 <td>$callback</td>
-                <td>The callback can be a closure or an invokable class, and should accept:
+                <td>
+
+The callback can be a closure or an invokable class, and should accept:
 - \Flarum\Notification\Blueprint\BlueprintInterface $blueprint
 - \Flarum\User\User[] $newRecipients
 

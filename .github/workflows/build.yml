@@ -12,27 +12,26 @@ on:
     paths-ignore:
       - 'docs/**'
 
+concurrency:
+  group: documentation-build
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        language: ['js', 'php']
-
-    name: '${{ matrix.language }}'
-
     steps:
       - uses: actions/checkout@master
         with:
-          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
-          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+          fetch-depth: 0
 
       - name: Clone flarum/framework
         run: git clone https://github.com/flarum/framework.git flarum
 
       - name: PHP > Use PHP 8.3
-        if: ${{ matrix.language == 'php' }}
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
@@ -44,29 +43,29 @@ jobs:
           key: ${{ runner.os }}-doctum
 
       - name: JS > Use Node.js 22.x
-        if: ${{ matrix.language == 'js' }}
         uses: actions/setup-node@v3
         with:
           node-version: 22.x
 
       - name: JS > Install dependencies
-        if: ${{ matrix.language == 'js' }}
         run: yarn install --frozen-lockfile
 
-      - name: Build
-        run: ./scripts/build-${{ matrix.language }}.sh
+      - name: Build documentation
+        run: |
+          python scripts/build-js.py
+          python scripts/build-php.py
 
-      - name: Commit
+      - name: Commit and push documentation
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add docs
-          if [ "$(git status --porcelain docs/${{ matrix.language }} | wc -l)" -lt "2" ]; then
+          if [ "$(git status --porcelain docs | wc -l)" -lt "2" ]; then
             echo "No changes to commit"
             git reset
             git checkout -- .
           else
-            git commit -m "${{ matrix.language }}: update (flarum/framework@${FLARUM_SHA})" docs
+            git commit -m "docs: update (flarum/framework@${FLARUM_SHA})" docs
           fi
 
       - name: Pull

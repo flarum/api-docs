@@ -5,13 +5,13 @@ import shutil
 import subprocess
 import sys
 
-from _vars import FLARUM_PATH, FLARUM_CORE_PATH, REPO_PATH, SCRIPTS_PATH, git, initialize, run
+from _vars import FLARUM_PATH, FLARUM_CORE_PATH, REPO_PATH, SCRIPTS_PATH, git, group, initialize, run
 
 
 def generate(ref: str, skip_existing: bool = False) -> None:
     path = REPO_PATH / "docs" / "js" / ref
     if skip_existing and path.is_dir():
-        print(f" - {ref} -> tag already exists, skipping")
+        print(f" - {ref} -> tag already exists, skipping", flush=True)
         return
 
     try:
@@ -23,17 +23,18 @@ def generate(ref: str, skip_existing: bool = False) -> None:
 
     stamp_file = path / ".source-ref-sha"
     if ref_sha and stamp_file.is_file() and stamp_file.read_text(encoding="utf-8").strip() == ref_sha:
-        print(f" - {ref} ({short_sha}) cached")
+        print(f" - {ref} ({short_sha}) cached", flush=True)
         return
 
-    print(f" - {ref} ({short_sha})")
+    print(f" - {ref} ({short_sha})", flush=True)
     shutil.rmtree(path, ignore_errors=True)
     path.mkdir(parents=True)
 
-    run(["git", "checkout", "-q", "--", "."], cwd=FLARUM_PATH)
-    run(["git", "clean", "-f", "-d"], cwd=FLARUM_PATH)
-    run(["git", "checkout", "-q", ref], cwd=FLARUM_PATH)
-    run(["yarn", "install", "--immutable"], cwd=FLARUM_PATH)
+    with group("Prepare source"):
+        run(["git", "checkout", "-q", "--", "."], cwd=FLARUM_PATH)
+        run(["git", "clean", "-f", "-d"], cwd=FLARUM_PATH)
+        run(["git", "checkout", "-q", ref], cwd=FLARUM_PATH)
+        run(["yarn", "install", "--immutable"], cwd=FLARUM_PATH)
 
     package_file = FLARUM_CORE_PATH / "js" / "package.json"
     if package_file.is_file():
@@ -71,8 +72,10 @@ def generate(ref: str, skip_existing: bool = False) -> None:
 
 
 initialize()
-generate("2.x")
-generate("1.x")
+with group("Building JS v2.x"):
+    generate("2.x")
+with group("Building JS v1.x"):
+    generate("1.x")
 
 latest_tags: dict[str, str] = {}
 tags = git("tag", "--sort=-v:refname", cwd=FLARUM_CORE_PATH).splitlines()
@@ -86,7 +89,9 @@ for tag in tags:
     latest_tags[key] = tag
 
 for key in sorted(latest_tags, key=lambda value: tuple(int(part) for part in value.split("."))):
-    generate(latest_tags[key], True)
+    ref = latest_tags[key]
+    with group(f"Building JS {ref}"):
+        generate(ref, True)
 
 run([sys.executable, str(SCRIPTS_PATH / "set-redirects.py"), "js"], cwd=REPO_PATH)
 run([sys.executable, str(SCRIPTS_PATH / "set-index-file.py"), "js"], cwd=REPO_PATH)

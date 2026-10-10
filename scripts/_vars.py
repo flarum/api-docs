@@ -1,3 +1,5 @@
+from collections.abc import Generator
+from contextlib import contextmanager
 from pathlib import Path
 import os
 import shutil
@@ -12,7 +14,16 @@ _last_cwd = Path.cwd().resolve()
 
 
 def log(message: str) -> None:
-    print(f"##[command]{message}")
+    print(f"##[command]{message}", flush=True)
+
+
+@contextmanager
+def group(title: str) -> Generator[None, None, None]:
+    print(f"##[group]{title}", flush=True)
+    try:
+        yield
+    finally:
+        print("##[endgroup]", flush=True)
 
 
 def run(command: list[str], cwd: Path | None = None, **kwargs) -> None:
@@ -46,9 +57,9 @@ def initialize() -> None:
     os.environ["REPO_PATH"] = str(REPO_PATH)
     os.environ["FLARUM_PATH"] = str(FLARUM_PATH)
     os.environ["FLARUM_CORE_PATH"] = str(FLARUM_CORE_PATH)
-    print(f"Using flarum/framework @ {FLARUM_CORE_PATH}")
+    print(f"Using flarum/framework @ {FLARUM_CORE_PATH}", flush=True)
     if not os.environ.get("GITHUB_ENV"):
-        print("Assuming local environment. GITHUB_ENV not set.")
+        print("Assuming local environment. GITHUB_ENV not set.", flush=True)
     else:
         write_github_environment(
             "FLARUM_SHA", git("rev-parse", "--verify", "HEAD", "--short", cwd=FLARUM_CORE_PATH)

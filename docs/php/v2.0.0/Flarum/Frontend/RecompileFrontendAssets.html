@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Frontend\RecompileFrontendAssets | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Frontend_RecompileFrontendAssets" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.20" >v1.8.20</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v2.0.0" selected>v2.0.0</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            RecompileFrontendAssets
+                
+            &nbsp;
+                <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>RecompileFrontendAssets</strong></p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>REBUILD_LOCK_SECONDS</td>
+                <td class="last">
+                    <p><em>How long one request may hold the rebuild lock.</em></p>
+                    <p>A process killed mid-rebuild — OOM, an evicted container, a deploy —
+never releases the lock, so this is also the longest anything can go
+un-rebuilt after a crash. Sixty seconds is roughly twice the slowest
+full rebuild measured against remote storage, where every compiled file
+costs a network round trip.
+
+Both failure modes degrade to the behaviour that existed before this
+lock, never to anything worse: the dirty flag outlives the lock, so
+after a crash the next request past the TTL rebuilds, and a rebuild that
+legitimately outruns the TTL simply lets a second request start one.</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Flarum/Frontend/Assets.html"><abbr title="Flarum\Frontend\Assets">Assets</abbr></a> $assets, <a href="../../Flarum/Locale/LocaleManager.html"><abbr title="Flarum\Locale\LocaleManager">LocaleManager</abbr></a> $locales, <abbr title="Flarum\Frontend\Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>|null $events = null, <abbr title="Flarum\Frontend\Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr>|null $settings = null, <abbr title="Flarum\Frontend\Illuminate\Contracts\Cache\Repository">Repository</abbr>|null $cache = null, <abbr title="Flarum\Frontend\Flarum\Frontend\Compiler\VersionerInterface">VersionerInterface</abbr>|null $versioner = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L42" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_markDirty">markDirty</a>()
+        
+                                            <p>Flag this asset set as needing a rebuild, without touching the compiled
+files or their manifest revisions.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L67" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_recompileIfDirty">recompileIfDirty</a>()
+        
+                                            <p>Rebuild this asset set in place if it has been flagged dirty, then clear
+the flag. Runs early in a freshly-booted request — one whose container
+reflects the current extension state — so the rebuilt output is correct.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L85" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_rebuildAndClear">rebuildAndClear</a>()
+        
+                                            <p>Rebuild the set, clear the flag, then announce.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L137" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_rebuildLockKey">rebuildLockKey</a>()
+        
+                                            <p>Scoped to this asset set: the sets are independent, so forum, admin and
+common rebuild concurrently rather than queueing behind one another.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L150" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_dirtyKey">dirtyKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L155" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_settings">settings</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L160" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_recompile">recompile</a>()
+        
+                                            <p>Rebuild the compiled assets in place.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L181" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_commitAll">commitAll</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L188" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_flush">flush</a>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L220" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_flushCss">flushCss</a>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L231" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_flushJs">flushJs</a>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L243" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L42" target="_blank">
+            line 42
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Flarum/Frontend/Assets.html"><abbr title="Flarum\Frontend\Assets">Assets</abbr></a> $assets, <a href="../../Flarum/Locale/LocaleManager.html"><abbr title="Flarum\Locale\LocaleManager">LocaleManager</abbr></a> $locales, <abbr title="Flarum\Frontend\Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>|null $events = null, <abbr title="Flarum\Frontend\Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr>|null $settings = null, <abbr title="Flarum\Frontend\Illuminate\Contracts\Cache\Repository">Repository</abbr>|null $cache = null, <abbr title="Flarum\Frontend\Flarum\Frontend\Compiler\VersionerInterface">VersionerInterface</abbr>|null $versioner = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Flarum/Frontend/Assets.html"><abbr title="Flarum\Frontend\Assets">Assets</abbr></a></td>
+                <td>$assets</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Flarum/Locale/LocaleManager.html"><abbr title="Flarum\Locale\LocaleManager">LocaleManager</abbr></a></td>
+                <td>$locales</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Frontend\Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr>|null</td>
+                <td>$events</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Frontend\Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr>|null</td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Frontend\Illuminate\Contracts\Cache\Repository">Repository</abbr>|null</td>
+                <td>$cache</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Flarum\Frontend\Flarum\Frontend\Compiler\VersionerInterface">VersionerInterface</abbr>|null</td>
+                <td>$versioner</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_markDirty">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L67" target="_blank">
+            line 67
+        </a>
+        </div>
+        <code>                    void
+    <strong>markDirty</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flag this asset set as needing a rebuild, without touching the compiled
+files or their manifest revisions.</p>                    <p>The rebuild itself is deferred to the next request (see
+{\Flarum\Frontend\recompileIfDirty}): a request that toggles an extension booted
+before that extension&#039;s extenders were applied, so rebuilding here would
+bake the old sources — e.g. locale bundles without a newly-enabled
+extension&#039;s keys — into the manifest, and with the revision then
+matching, nothing would ever rebuild them. Deferring also means nothing
+is deleted or unset in the meantime: already-served asset URLs keep
+resolving, and the asset revision token doesn&#039;t flicker, so connected
+clients aren&#039;t prompted to reload for a rebuild that may not change
+anything they load.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_recompileIfDirty">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L85" target="_blank">
+            line 85
+        </a>
+        </div>
+        <code>                    void
+    <strong>recompileIfDirty</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Rebuild this asset set in place if it has been flagged dirty, then clear
+the flag. Runs early in a freshly-booted request — one whose container
+reflects the current extension state — so the rebuilt output is correct.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rebuildAndClear">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L137" target="_blank">
+            line 137
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>rebuildAndClear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Rebuild the set, clear the flag, then announce.</p>                    <p>The flag is cleared before announcing: if the process dies mid-rebuild
+the flag survives and the next request simply rebuilds again (a cheap
+no-op when the output already matches), while the event only ever fires
+once everything — including the bookkeeping — has settled.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rebuildLockKey">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L150" target="_blank">
+            line 150
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>rebuildLockKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Scoped to this asset set: the sets are independent, so forum, admin and
+common rebuild concurrently rather than queueing behind one another.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dirtyKey">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L155" target="_blank">
+            line 155
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>dirtyKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settings">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L160" target="_blank">
+            line 160
+        </a>
+        </div>
+        <code>            protected        <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a>
+    <strong>settings</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_recompile">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L181" target="_blank">
+            line 181
+        </a>
+        </div>
+        <code>                    void
+    <strong>recompile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Rebuild the compiled assets in place.</p>                    <p>Unlike {\Flarum\Frontend\flush}, nothing is deleted up front: each compiler renders
+its output and only overwrites the file (and its manifest revision) when
+the result actually differs. That means there is never a window where an
+already-served asset URL points at a missing file, and never a gap in the
+revision manifest that would flicker the asset revision token and fire a
+spurious &quot;new version available&quot; prompt on connected clients. A rebuild
+that produces identical output is a complete no-op.
+
+{\Flarum\Frontend\Event\AssetsRecompiled} is dispatched once the rebuild has finished, so
+consumers (e.g. the realtime broadcaster) read a settled revision.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commitAll">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L188" target="_blank">
+            line 188
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>commitAll</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flush">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L220" target="_blank">
+            line 220
+        </a>
+        </div>
+        <code>                    void
+    <strong>flush</strong>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>2.1</td>
+                    <td>Use {@see \Flarum\Frontend\markDirty()} instead.
+
+Deleting the compiled files leaves already-served pages pointing at
+files that no longer exist, and nulls the revisions that would otherwise
+tell the next request what to rebuild. {@see \Flarum\Frontend\recompile()} overwrites in
+place and only where the output differs, and {@see \Flarum\Frontend\markDirty()} defers
+that to a request whose container reflects the change.</td>
+                </tr>
+                    </p>
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushCss">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L231" target="_blank">
+            line 231
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>flushCss</strong>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>2.1</td>
+                    <td>See {@see \Flarum\Frontend\flush()}.</td>
+                </tr>
+                    </p>
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushJs">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/RecompileFrontendAssets.php#L243" target="_blank">
+            line 243
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>flushJs</strong>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>2.1</td>
+                    <td>See {@see \Flarum\Frontend\flush()}.</td>
+                </tr>
+                    </p>
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

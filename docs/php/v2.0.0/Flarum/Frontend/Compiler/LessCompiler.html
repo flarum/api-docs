@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Flarum\Frontend\Compiler\LessCompiler | Flarum API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Flarum_Frontend_Compiler_LessCompiler" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+            <nav id="flarum-header" class="navbar navbar-expand-lg">
+        <h1 class="flarum-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://flarum.org">Flarum</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discuss.flarum.org">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../..//">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="/js">JS</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/flarum/framework"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" class="form-control" name="version">
+                                            <option
+                            value="/index.html"
+                            data-version="1.x" >1.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="2.x" >2.x</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.3.1" >v1.3.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.4.0" >v1.4.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.5.0" >v1.5.0</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.6.3" >v1.6.3</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.7.1" >v1.7.1</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v1.8.20" >v1.8.20</option>
+                                            <option
+                            value="/index.html"
+                            data-version="v2.0.0" selected>v2.0.0</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                    <div id="api-tree"></div>
+
+            </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
+    </nav>
+
+                <div id="page-content">
+                    
+    <div class="page-header">
+        <h1>
+            LessCompiler
+                
+            &nbsp;
+                <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
+        </h1>
+    </div>
+
+    <p>    class        
+    <strong>LessCompiler</strong>        extends <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></p>
+
+        
+    
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/Concerns/HasSources.php" target="_blank">
+        <img src="../../../assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+            </div>
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>EMPTY_REVISION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_sourcesCallbacks">
+                                        protected                                        callable[]
+                </td>
+                <td>$sourcesCallbacks</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#property_sourcesCallbacks"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L23" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pendingSidecars">
+                                        protected                                        <abbr title="Flarum\Frontend\Compiler\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </td>
+                <td>$pendingSidecars</td>
+                <td class="last">Sidecar files (e.g. JsCompiler&#039;s `.map`) queued by renderOutput() during
+the current commit, written only if the primary file is — so an unchanged
+bundle rewrites nothing at all.</td>
+                <td><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#property_pendingSidecars"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L109" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cacheDir">
+                                        protected                                        string
+                </td>
+                <td>$cacheDir</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L23" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_importDirs">
+                                        protected                                        array
+                </td>
+                <td>$importDirs</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L24" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_customFunctions">
+                                        protected                                        array
+                </td>
+                <td>$customFunctions</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L25" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_lessImportOverrides">
+                                        protected                                        <abbr title="Flarum\Frontend\Compiler\Illuminate\Support\Collection">Collection</abbr>|null
+                </td>
+                <td>$lessImportOverrides</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L26" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fileSourceOverrides">
+                                        protected                                        <abbr title="Flarum\Frontend\Compiler\Illuminate\Support\Collection">Collection</abbr>|null
+                </td>
+                <td>$fileSourceOverrides</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L27" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fontsDir">
+                                        protected                                        string|null
+                </td>
+                <td>$fontsDir</td>
+                <td class="last"></td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L28" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_addSources">addSources</a>(callable $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_addSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L25" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getSources">getSources</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_getSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L33" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_allowedSourceTypes">allowedSourceTypes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_allowedSourceTypes"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L44" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr> $assetsDir, string $filename, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Frontend/Compiler/VersionerInterface.html"><abbr title="Flarum\Frontend\Compiler\VersionerInterface">VersionerInterface</abbr></a> $versioner)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method___construct"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L28" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getFilename">getFilename</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L36" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setFilename">setFilename</a>(string $filename)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_setFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L41" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_commit">commit</a>(bool $force = false)
+        
+                                            <p>Recompile this asset and record its revision. Files are only written when
+the compiled output actually differs from what the revision manifest says
+is on disk (or the file has gone missing) — so routine rebuilds of
+unchanged assets are complete no-ops with zero writes.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_commit"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L57" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_writePendingSidecars">writePendingSidecars</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_writePendingSidecars"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L111" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_hashOutput">hashOutput</a>(string $content)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_hashOutput"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L118" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_committedFileMatches">committedFileMatches</a>(string $output)
+        
+                                            <p>Whether the committed file is really the output its revision claims.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_committedFileMatches"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L129" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_renderOutput">renderOutput</a>(array $sources)
+        
+                                            <p>Produce the exact bytes to write to the primary asset file, or null when
+there is nothing to write (empty sources). This is what the revision is
+hashed from, so it must be identical to what gets committed — subclasses
+that transform or add to the output (e.g. JsCompiler&#039;s sourcemap handling)
+override this and queue any sidecar files (like the `.map`) on
+{$pendingSidecars} rather than writing them, so sidecars are only
+written when the bundle itself is.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_renderOutput"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L151" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getUrl">getUrl</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getUrl"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L158" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_compile">compile</a>(array $sources)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L150" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_format">format</a>(string $string)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_format"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L197" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_flush">flush</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_flush"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L202" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_delete">delete</a>(string $file)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_delete"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L211" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getCacheDir">getCacheDir</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L30" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setFontsDir">setFontsDir</a>(string|null $fontsDir)
+        
+                                            <p>The directory holding the webfonts that get published to `assets/fonts`.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L39" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setCacheDir">setCacheDir</a>(string $cacheDir)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L44" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getImportDirs">getImportDirs</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L49" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setImportDirs">setImportDirs</a>(array $importDirs)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L54" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setLessImportOverrides">setLessImportOverrides</a>(array $lessImportOverrides)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L59" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setFileSourceOverrides">setFileSourceOverrides</a>(array $fileSourceOverrides)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L64" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setCustomFunctions">setCustomFunctions</a>(array $customFunctions)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L69" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_containImports">containImports</a>(string $path)
+        
+                                            <p>Resolve an `@import` against the permitted directories, and refuse it
+otherwise.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L95" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_readCache">readCache</a>(Less_Parser $parser, string $filePath, string $cacheFile)
+        
+                                            <p>Read a cached parse result for less.php. Returns the cached rules, or
+null to signal a miss so less.php reparses the file.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L248" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_writeCache">writeCache</a>(Less_Parser $parser, string $filePath, string $cacheFile, mixed $rules)
+        
+                                            <p>Persist a parse result for less.php, writing atomically so a concurrent
+reader never observes a half-written cache file: serialize to a temporary
+file in the same directory, then rename() it into place (atomic on the
+same filesystem).</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L286" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_pruneCacheOnce">pruneCacheOnce</a>()
+        
+                                            <p>Prune expired cache files at most once per request. less.php&#039;s own GC
+(Less_Cache::CleanCache) only runs from its high-level Less_Cache::Get()
+API, which Flarum doesn&#039;t use — the direct Less_Parser path GC&#039;d inline on
+every serialize write instead. In callback mode neither fires, so without
+this the directory would grow unbounded.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L324" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_finalize">finalize</a>(string $parsedCss)
+        
+                                            <p>Point font URLs at the published `assets/fonts` directory, and stamp each
+with a revision derived from the font file itself.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L369" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_fontRevision">fontRevision</a>(string $file)
+        
+                                            <p>A short hash of a webfont&#039;s contents, or null when it can&#039;t be read —
+fonts are published separately, so a compile must never fail just because
+the directory isn&#039;t there yet.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L395" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_overrideSources">overrideSources</a>(array $sources)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L446" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_addSources">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_addSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/Concerns/HasSources.php#L25" target="_blank">
+            line 25
+        </a>
+        </div>
+        <code>                    void
+    <strong>addSources</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSources">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_getSources"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/Concerns/HasSources.php#L33" target="_blank">
+            line 33
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>getSources</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_allowedSourceTypes">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/Concerns/HasSources.html#method_allowedSourceTypes"><abbr title="Flarum\Frontend\Compiler\Concerns\HasSources">HasSources</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/Concerns/HasSources.php#L44" target="_blank">
+            line 44
+        </a>
+        </div>
+        <code>    abstract        protected        array
+    <strong>allowedSourceTypes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method___construct"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L28" target="_blank">
+            line 28
+        </a>
+        </div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr> $assetsDir, string $filename, <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings, <a href="../../../Flarum/Frontend/Compiler/VersionerInterface.html"><abbr title="Flarum\Frontend\Compiler\VersionerInterface">VersionerInterface</abbr></a> $versioner)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Filesystem\Cloud">Cloud</abbr></td>
+                <td>$assetsDir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a></td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Flarum/Frontend/Compiler/VersionerInterface.html"><abbr title="Flarum\Frontend\Compiler\VersionerInterface">VersionerInterface</abbr></a></td>
+                <td>$versioner</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFilename">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L36" target="_blank">
+            line 36
+        </a>
+        </div>
+        <code>                    string|null
+    <strong>getFilename</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFilename">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_setFilename"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L41" target="_blank">
+            line 41
+        </a>
+        </div>
+        <code>                    void
+    <strong>setFilename</strong>(string $filename)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commit">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_commit"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L57" target="_blank">
+            line 57
+        </a>
+        </div>
+        <code>                    void
+    <strong>commit</strong>(bool $force = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Recompile this asset and record its revision. Files are only written when
+the compiled output actually differs from what the revision manifest says
+is on disk (or the file has gone missing) — so routine rebuilds of
+unchanged assets are complete no-ops with zero writes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$force</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writePendingSidecars">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_writePendingSidecars"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L111" target="_blank">
+            line 111
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>writePendingSidecars</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hashOutput">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_hashOutput"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L118" target="_blank">
+            line 118
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>hashOutput</strong>(string $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_committedFileMatches">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_committedFileMatches"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L129" target="_blank">
+            line 129
+        </a>
+        </div>
+        <code>            protected        bool
+    <strong>committedFileMatches</strong>(string $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Whether the committed file is really the output its revision claims.</p>                    <p>Read back and compared rather than assumed: a recorded revision is only
+evidence about the file if the write that recorded it also landed.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderOutput">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_renderOutput"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L151" target="_blank">
+            line 151
+        </a>
+        </div>
+        <code>            protected        string|null
+    <strong>renderOutput</strong>(array $sources)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Produce the exact bytes to write to the primary asset file, or null when
+there is nothing to write (empty sources). This is what the revision is
+hashed from, so it must be identical to what gets committed — subclasses
+that transform or add to the output (e.g. JsCompiler&#039;s sourcemap handling)
+override this and queue any sidecar files (like the `.map`) on
+{$pendingSidecars} rather than writing them, so sidecars are only
+written when the bundle itself is.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$sources</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUrl">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_getUrl"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L158" target="_blank">
+            line 158
+        </a>
+        </div>
+        <code>                    string|null
+    <strong>getUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compile">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L150" target="_blank">
+            line 150
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>compile</strong>(array $sources)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$sources</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Less_Exception_Parser</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_format">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_format"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L197" target="_blank">
+            line 197
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>format</strong>(string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flush">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_flush"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L202" target="_blank">
+            line 202
+        </a>
+        </div>
+        <code>                    void
+    <strong>flush</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">
+                            in <a href="../../../Flarum/Frontend/Compiler/RevisionCompiler.html#method_delete"><abbr title="Flarum\Frontend\Compiler\RevisionCompiler">RevisionCompiler</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/RevisionCompiler.php#L211" target="_blank">
+            line 211
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>delete</strong>(string $file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheDir">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L30" target="_blank">
+            line 30
+        </a>
+        </div>
+        <code>                    string
+    <strong>getCacheDir</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFontsDir">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L39" target="_blank">
+            line 39
+        </a>
+        </div>
+        <code>                    void
+    <strong>setFontsDir</strong>(string|null $fontsDir)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The directory holding the webfonts that get published to `assets/fonts`.</p>                    <p>Used to revision the font URLs emitted into the compiled CSS.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$fontsDir</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCacheDir">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L44" target="_blank">
+            line 44
+        </a>
+        </div>
+        <code>                    void
+    <strong>setCacheDir</strong>(string $cacheDir)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$cacheDir</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getImportDirs">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L49" target="_blank">
+            line 49
+        </a>
+        </div>
+        <code>                    array
+    <strong>getImportDirs</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setImportDirs">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L54" target="_blank">
+            line 54
+        </a>
+        </div>
+        <code>                    void
+    <strong>setImportDirs</strong>(array $importDirs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$importDirs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLessImportOverrides">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L59" target="_blank">
+            line 59
+        </a>
+        </div>
+        <code>                    void
+    <strong>setLessImportOverrides</strong>(array $lessImportOverrides)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$lessImportOverrides</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFileSourceOverrides">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L64" target="_blank">
+            line 64
+        </a>
+        </div>
+        <code>                    void
+    <strong>setFileSourceOverrides</strong>(array $fileSourceOverrides)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fileSourceOverrides</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCustomFunctions">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L69" target="_blank">
+            line 69
+        </a>
+        </div>
+        <code>                    void
+    <strong>setCustomFunctions</strong>(array $customFunctions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$customFunctions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_containImports">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L95" target="_blank">
+            line 95
+        </a>
+        </div>
+        <code>            protected        array|null
+    <strong>containImports</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve an `@import` against the permitted directories, and refuse it
+otherwise.</p>                    <p>Raw LESS can read any file the process can reach — `@import (inline)`
+pastes it in verbatim, and `data-uri()` encodes it into the stylesheet —
+and custom LESS is written by an administrator but compiled into the
+*public* stylesheet. That has to be contained here rather than by
+rejecting spellings in the setting: less.php&#039;s import directive is
+matched as `@import?`, so `@impor` parses identically, and any blocklist
+only ever chases the parser&#039;s grammar.
+
+Registered as the sole entry in less.php&#039;s `import_dirs`. A closure there
+is asked to resolve the path and may decline by returning null — but for
+a local path declining lets less.php fall back to reading the raw path,
+so an import we will not resolve has to throw instead.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Less_Exception_Parser</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readCache">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L248" target="_blank">
+            line 248
+        </a>
+        </div>
+        <code>            protected        mixed
+    <strong>readCache</strong>(Less_Parser $parser, string $filePath, string $cacheFile)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read a cached parse result for less.php. Returns the cached rules, or
+null to signal a miss so less.php reparses the file.</p>                    <p>A corrupt or unreadable cache file (e.g. a partial write from a raced
+compile) is treated as a miss rather than allowed to fatal on
+unserialize()&#039;s &quot;Extra data&quot; warning, which Flarum&#039;s error handler would
+otherwise escalate to an uncaught exception.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Less_Parser</td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$cacheFile</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeCache">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L286" target="_blank">
+            line 286
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>writeCache</strong>(Less_Parser $parser, string $filePath, string $cacheFile, mixed $rules)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Persist a parse result for less.php, writing atomically so a concurrent
+reader never observes a half-written cache file: serialize to a temporary
+file in the same directory, then rename() it into place (atomic on the
+same filesystem).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Less_Parser</td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$cacheFile</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$rules</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pruneCacheOnce">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L324" target="_blank">
+            line 324
+        </a>
+        </div>
+        <code>            protected        void
+    <strong>pruneCacheOnce</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prune expired cache files at most once per request. less.php&#039;s own GC
+(Less_Cache::CleanCache) only runs from its high-level Less_Cache::Get()
+API, which Flarum doesn&#039;t use — the direct Less_Parser path GC&#039;d inline on
+every serialize write instead. In callback mode neither fires, so without
+this the directory would grow unbounded.</p>                    <p>We prune here rather than call CleanCache() because that method is
+deprecated-internal, and hand-rolling the sweep lets us tolerate the
+scandir/unlink race (a concurrent sweep removing the same aged file) by
+simply suppressing the &quot;No such file&quot; and moving on. Files are removed by
+mtime, matching less.php&#039;s own policy; a cache hit re-reads and is not
+touched, so anything past the lifetime is genuinely stale.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_finalize">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L369" target="_blank">
+            line 369
+        </a>
+        </div>
+        <code>            protected        string
+    <strong>finalize</strong>(string $parsedCss)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Point font URLs at the published `assets/fonts` directory, and stamp each
+with a revision derived from the font file itself.</p>                    <p>The stylesheet is already cache-busted (`forum.css?v=&lt;rev&gt;`), but the font
+URLs inside it were not. On a FontAwesome major upgrade every browser
+therefore picked up the new CSS immediately while continuing to serve the
+*previous* font file from cache — same filename, same URL, long max-age.
+The new CSS asks for codepoints the old font doesn&#039;t contain, so every
+icon rendered as a placeholder box until that cache entry happened to
+expire. Revisioning the URL means a changed font is always a new URL, for
+browser and CDN caches alike.
+
+Because the asset revision is a hash of this compiled output, a font
+change also moves the stylesheet&#039;s own revision — so connected clients get
+the usual &quot;reload for the new version&quot; prompt without any extra wiring.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parsedCss</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fontRevision">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L395" target="_blank">
+            line 395
+        </a>
+        </div>
+        <code>            protected        string|null
+    <strong>fontRevision</strong>(string $file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A short hash of a webfont&#039;s contents, or null when it can&#039;t be read —
+fonts are published separately, so a compile must never fail just because
+the directory isn&#039;t there yet.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_overrideSources">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/v2.0.0/framework/core/src/Frontend/Compiler/LessCompiler.php#L446" target="_blank">
+            line 446
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>overrideSources</strong>(array $sources)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$sources</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</p>
+        <p>Flarum API Docs created by <a href="https://github.com/datitisev">@datitisev</a>. Source code can be found on <a href="https://github.com/flarum/api-docs">GitHub</a>.</p>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

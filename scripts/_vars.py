@@ -42,6 +42,8 @@ def run(command: list[str], cwd: Path | None = None, **kwargs) -> None:
 
 
 def git(*args: str, cwd: Path, **kwargs: object) -> str:
+    log(f"git {' '.join(args)}")
+
     return subprocess.check_output(["git", *args], cwd=cwd, text=True, **kwargs).strip()
 
 

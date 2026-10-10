@@ -11,7 +11,10 @@ section = sys.argv[1]
 section_path = REPO_PATH / "docs" / section
 index_file = section_path / "index.html"
 
-shutil.copy(REPO_PATH / "src" / "index-template.html", index_file)
+TEMPLATE_FILE = REPO_PATH / "src" / "index-template.html"
+content = TEMPLATE_FILE.read_text(encoding="utf-8")
+
+# shutil.copy(REPO_PATH / "src" / "index-template.html", index_file)
 print(f"Filling {index_file.name}")
 
 directories = [directory.name for directory in section_path.iterdir() if directory.is_dir()]
@@ -38,7 +41,7 @@ versions = sorted(
 )
 
 def ref_date(ref: str) -> tuple[str, str]:
-    value = git("log", "-1", "--format=%cI", ref, cwd=FLARUM_CORE_PATH)
+    value = git("log", "-1", "--format=%cI", f"origin/{ref}" if ref in branches else ref, cwd=FLARUM_CORE_PATH)
     date = datetime.fromisoformat(value).date()
     display = date.strftime("%b %-d, %Y") if sys.platform != "win32" else date.strftime("%b %#d, %Y")
     return date.isoformat(), display
@@ -60,7 +63,6 @@ version_links = "".join(
     link(version) for version in versions
 )
 
-content = index_file.read_text(encoding="utf-8")
 content = content.replace("%BRANCHES%", branch_links)
 content = content.replace("%VERSIONS%", version_links)
 content = content.replace("%LANG%", section.upper())

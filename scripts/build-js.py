@@ -36,7 +36,7 @@ def generate(ref: str, skip_existing: bool = False) -> None:
     shutil.rmtree(path, ignore_errors=True)
     path.mkdir(parents=True)
 
-    with group("Prepare source"):
+    with group(f"JS {ref}: Prepare source"):
         run(["git", "checkout", "-q", "--", "."], cwd=FLARUM_PATH)
         run(["git", "clean", "-f", "-d"], cwd=FLARUM_PATH)
         run(["git", "checkout", "-q", ref], cwd=FLARUM_PATH)
@@ -68,20 +68,19 @@ def generate(ref: str, skip_existing: bool = False) -> None:
 
     env = os.environ.copy()
     env["NODE_OPTIONS"] = "--max-old-space-size=16384"
-    run(
-        ["npx", "typedoc", "--gitRevision", ref, "--out", str(path),
-         "--name", f"Flarum ({ref})", "--readme", str(REPO_PATH / "src" / "readme-js.md")],
-        cwd=REPO_PATH,
-        env=env,
-    )
+    with group(f"JS {ref}: Generate documentation"):
+        run(
+            ["npx", "typedoc", "--gitRevision", ref, "--out", str(path),
+             "--name", f"Flarum ({ref})", "--readme", str(REPO_PATH / "src" / "readme-js.md")],
+            cwd=REPO_PATH,
+            env=env,
+        )
     stamp_file.write_text(f"{ref_sha}\n", encoding="utf-8")
 
 
 initialize()
-with group("Building JS v2.x"):
-    generate("2.x")
-with group("Building JS v1.x"):
-    generate("1.x")
+generate("2.x")
+generate("1.x")
 
 latest_tags: dict[str, str] = {}
 tags = git("tag", "--sort=-v:refname", cwd=FLARUM_CORE_PATH).splitlines()
@@ -96,8 +95,7 @@ for tag in tags:
 
 for key in sorted(latest_tags, key=lambda value: tuple(int(part) for part in value.split("."))):
     ref = latest_tags[key]
-    with group(f"Building JS {ref}"):
-        generate(ref, True)
+    generate(ref, True)
 
 run([sys.executable, str(SCRIPTS_PATH / "set-redirects.py"), "js"], cwd=REPO_PATH)
 run([sys.executable, str(SCRIPTS_PATH / "set-index-file.py"), "js"], cwd=REPO_PATH)

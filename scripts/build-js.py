@@ -15,8 +15,14 @@ def generate(ref: str, skip_existing: bool = False) -> None:
         return
 
     try:
-        short_sha = git("rev-parse", "--verify", "--short", f"{ref}^{{commit}}", cwd=FLARUM_CORE_PATH)
-        ref_sha = git("rev-parse", "--verify", f"{ref}^{{commit}}", cwd=FLARUM_CORE_PATH)
+        ref_sha = git(
+            "rev-parse",
+            "--verify",
+            f"origin/{ref}^{{commit}}",
+            cwd=FLARUM_CORE_PATH,
+            stderr=subprocess.DEVNULL,
+        )
+        short_sha = ref_sha[:9]
     except subprocess.CalledProcessError:
         short_sha = "unknown"
         ref_sha = ""

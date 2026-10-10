@@ -41,8 +41,8 @@ def run(command: list[str], cwd: Path | None = None, **kwargs) -> None:
     subprocess.run([executable, *command[1:]], cwd=cwd, check=True, **kwargs)
 
 
-def git(*args: str, cwd: Path) -> str:
-    return subprocess.check_output(["git", *args], cwd=cwd, text=True).strip()
+def git(*args: str, cwd: Path, **kwargs: object) -> str:
+    return subprocess.check_output(["git", *args], cwd=cwd, text=True, **kwargs).strip()
 
 
 def write_github_environment(name: str, value: str) -> None:

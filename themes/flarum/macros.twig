@@ -9,13 +9,29 @@
 {%- endmacro %}
 
 {% macro class_link(class, absolute) -%}
-    {%- if class.projectclass -%}
-        <a href="{{ class_path(class) }}">
+    {%- set class_name = class.name|default(class) -%}
+    {%- set link_url = '' -%}
+    {%- set is_external = false -%}
+
+
+    {%  set laravel_version = [project.version ~ ':' ~ 'laravel']|map('package_version')|first %}
+    {%  set symfony_version = [project.version ~ ':' ~ 'symfony']|map('package_version')|first %}
+
+    {%- if class_name starts with 'Illuminate\\' -%}
+        {%- set link_url = 'https://laravel.com/api/' ~ laravel_version ~ '/' ~ class_name|replace({'\\': '/'}) ~ '.html' -%}
+        {%- set is_external = true -%}
+    {%- elseif class.projectclass -%}
+        {%- set link_url = class_path(class) -%}
     {%- elseif class.phpclass -%}
-        <a target="_blank" href="http://php.net/{{ class|raw }}">
-    {%- endif %}
+        {%- set link_url = 'https://www.php.net/manual/en/class.' ~ class|lower ~ '.php' -%}
+        {%- set is_external = true -%}
+    {%- endif -%}
+
+    {%- if link_url -%}
+        <a href="{{ link_url }}"{{ is_external ? ' target="_blank" rel="noopener noreferrer"' : '' }}>
+    {%- endif -%}
     {{- abbr_class(class, absolute|default(false)) }}
-    {%- if class.projectclass or class.phpclass %}</a>{% endif %}
+    {%- if link_url %}</a>{% endif -%}
 {%- endmacro %}
 
 {% macro method_link(method, absolute, classonly) -%}
@@ -54,7 +70,7 @@
 
 {% macro method_source_link(method) -%}
     {% if method.sourcepath %}
-        <a href="https://github.com/flarum/framework/blob/{{ project.version }}/framework/core/src/{{ method.class.name|split('\\')|slice(1)|join('/') }}.php#L{{ method.line }}" target="_blank">
+        <a href="https://github.com/flarum/framework/blob/{{ project.version }}/framework/core/src/{{ method.class.name|split('\\')|slice(1)|join('/') }}.php#L{{ method.line }}" target="_blank" rel="noopener noreferrer">
             line {{ method.line|raw }}
         </a>
     {%- else %}
@@ -157,7 +173,7 @@
 
 
 {% macro github_link(name, line, height, tree) %}
-    <a href="https://github.com/flarum/framework/{% if tree %}tree{% else %}blob{% endif %}/{{ project.version }}/framework/core/src/{{ name|split('\\')|slice(1)|join('/') }}{% if tree != true %}.php{% if line %}#L{{ line }}{% endif %}{% endif %}" target="_blank">
+    <a href="https://github.com/flarum/framework/{% if tree %}tree{% else %}blob{% endif %}/{{ project.version }}/framework/core/src/{{ name|split('\\')|slice(1)|join('/') }}{% if tree != true %}.php{% if line %}#L{{ line }}{% endif %}{% endif %}" target="_blank" rel="noopener noreferrer">
         <img src="{{ path('assets/img/code.svg') }}" {% if height %}height="{{ height }}"{% endif %} />
     </a>
 {% endmacro %}

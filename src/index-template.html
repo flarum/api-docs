@@ -51,8 +51,27 @@
       padding: 7.5px 0;
     }
 
+    .version-link {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .version-date {
+      color: #888;
+      font-size: 14px;
+      margin-left: 20px;
+      white-space: nowrap;
+    }
+
     li a:hover {
       background: #f6f6f6;
+    }
+
+    @media (max-width: 500px) {
+      .version-date {
+        font-size: 12px;
+      }
     }
 
   </style>
@@ -63,10 +82,16 @@
     <h2>Flarum API Docs &gt; %LANG% <a href="../index.html">&#x2190; Back</a></h2>
     <ul>
         <li><a href="latest">latest</a></li>
+    </ul>
 
-        <br>
+    <h3>Branches</h3>
+    <ul>
+        %BRANCHES%
+    </ul>
 
-        %LINKS%
+    <h3>Versions</h3>
+    <ul>
+        %VERSIONS%
     </ul>
   </div>
 </body>

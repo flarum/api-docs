@@ -8,6 +8,7 @@ SCRIPTS_PATH = Path(__file__).resolve().parent
 REPO_PATH = SCRIPTS_PATH.parent
 FLARUM_PATH = REPO_PATH / "flarum"
 FLARUM_CORE_PATH = FLARUM_PATH / "framework" / "core"
+_last_cwd = Path.cwd().resolve()
 
 
 def log(message: str) -> None:
@@ -15,6 +16,13 @@ def log(message: str) -> None:
 
 
 def run(command: list[str], cwd: Path | None = None, **kwargs) -> None:
+    # Log the working directory if it's changed as a `cd` command for GitHub Actions log.
+    global _last_cwd
+    current_cwd = (cwd or Path.cwd()).resolve()
+    if current_cwd != _last_cwd:
+        log(f"cd {current_cwd}")
+        _last_cwd = current_cwd
+
     log(" ".join(command))
     executable = shutil.which(command[0])
     if executable is None:

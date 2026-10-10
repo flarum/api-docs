@@ -134,12 +134,12 @@
                     <a href="../../Flarum/Extend/Event.html"><abbr title="Flarum\Extend\Event">Event</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_listen">listen</a>(string $event, callable|string $listener)
+                    <a href="#method_listen">listen</a>(string $event, callable|array|string $listener)
         
                                             <p>Add a listener to a domain event dispatched by flarum or a flarum extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L33" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L34" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -155,7 +155,7 @@
                                             <p>Add a subscriber for a set of domain events dispatched by flarum or a flarum extension.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L49" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L50" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -172,7 +172,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L56" target="_blank">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L57" target="_blank">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -187,12 +187,12 @@
                     <div class="method-item">
                     <h3 id="method_listen">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L33" target="_blank">
-            line 33
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L34" target="_blank">
+            line 34
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Event.html"><abbr title="Flarum\Extend\Event">Event</abbr></a>
-    <strong>listen</strong>(string $event, callable|string $listener)
+    <strong>listen</strong>(string $event, callable|array|string $listener)
         </code>
     </h3>
     <div class="details">
@@ -211,7 +211,7 @@
                 <td>: Name of the event, can be the ::class attribute of the event class.</td>
             </tr>
                     <tr>
-                <td>callable|string</td>
+                <td>callable|array|string</td>
                 <td>$listener</td>
                 <td>
 
@@ -219,7 +219,8 @@ The listener can either be:
  - A callback function that accepts an instance of the event as a parameter.
  - The ::class attribute of a class with a public `handle` method, which accepts an instance of the event as a parameter.
  - An array, where the first argument is an object or class name, and the second argument is the method on the
-   first argument that should be executed as the listener.</td>
+   first argument that should be executed as the listener. A class name is resolved through the container, so the
+   method does not have to be static.</td>
             </tr>
             </table>
 
@@ -242,8 +243,8 @@ The listener can either be:
                     <div class="method-item">
                     <h3 id="method_subscribe">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L49" target="_blank">
-            line 49
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L50" target="_blank">
+            line 50
         </a>
         </div>
         <code>                    <a href="../../Flarum/Extend/Event.html"><abbr title="Flarum\Extend\Event">Event</abbr></a>
@@ -298,8 +299,8 @@ allowing you to define several event handlers within a single class.</p>        
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L56" target="_blank">
-            line 56
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Event.php#L57" target="_blank">
+            line 57
         </a>
         </div>
         <code>                    void

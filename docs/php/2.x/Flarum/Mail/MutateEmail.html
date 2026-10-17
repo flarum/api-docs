@@ -130,16 +130,18 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    void
                 </div>
                 <div class="col-md-6 type">
                     <a href="#method_handle">handle</a>(    <a href="https://laravel.com/api/13.x/Illuminate/Mail/Events/MessageSending.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Mail\Events\MessageSending">MessageSending</abbr></a> $event)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Returns nothing on purpose: the mailer dispatches this event with
+`until()`, which stops at the first non-null return, so returning a
+value here would keep every later listener (every extension&#039;s) from
+running, and stop one from cancelling the mail by returning false.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/MutateEmail.php#L16" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/MutateEmail.php#L22" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -154,11 +156,11 @@
                     <div class="method-item">
                     <h3 id="method_handle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/MutateEmail.php#L16" target="_blank" rel="noopener noreferrer">
-            line 16
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Mail/MutateEmail.php#L22" target="_blank" rel="noopener noreferrer">
+            line 22
         </a>
         </div>
-        <code>                    bool
+        <code>                    void
     <strong>handle</strong>(    <a href="https://laravel.com/api/13.x/Illuminate/Mail/Events/MessageSending.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Mail\Events\MessageSending">MessageSending</abbr></a> $event)
         </code>
     </h3>
@@ -166,6 +168,11 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Returns nothing on purpose: the mailer dispatches this event with
+`until()`, which stops at the first non-null return, so returning a
+value here would keep every later listener (every extension&#039;s) from
+running, and stop one from cancelling the mail by returning false.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -182,7 +189,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>void</td>
             <td></td>
         </tr>
     </table>

@@ -773,12 +773,29 @@ with a revision derived from the font file itself.</p>                </div>
                 <div class="col-md-6 type">
                     <a href="#method_fontRevision">fontRevision</a>(string $file)
         
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L390" target="_blank" rel="noopener noreferrer">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_fontRevisionIn">fontRevisionIn</a>(string|null $fontsDir, string $file)
+        
                                             <p>A short hash of a webfont&#039;s contents, or null when it can&#039;t be read —
 fonts are published separately, so a compile must never fail just because
 the directory isn&#039;t there yet.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L395" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L405" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -795,7 +812,7 @@ the directory isn&#039;t there yet.</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L446" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L456" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -2070,8 +2087,8 @@ the usual &quot;reload for the new version&quot; prompt without any extra wiring
                     <div class="method-item">
                     <h3 id="method_fontRevision">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L395" target="_blank" rel="noopener noreferrer">
-            line 395
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L390" target="_blank" rel="noopener noreferrer">
+            line 390
         </a>
         </div>
         <code>            protected        string|null
@@ -2082,10 +2099,6 @@ the usual &quot;reload for the new version&quot; prompt without any extra wiring
             
     
 
-                    <div class="method-description">
-                                    <p>A short hash of a webfont&#039;s contents, or null when it can&#039;t be read —
-fonts are published separately, so a compile must never fail just because
-the directory isn&#039;t there yet.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2114,10 +2127,64 @@ the directory isn&#039;t there yet.</p>                                         
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_fontRevisionIn">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L405" target="_blank" rel="noopener noreferrer">
+            line 405
+        </a>
+        </div>
+        <code>        static            string|null
+    <strong>fontRevisionIn</strong>(string|null $fontsDir, string $file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A short hash of a webfont&#039;s contents, or null when it can&#039;t be read —
+fonts are published separately, so a compile must never fail just because
+the directory isn&#039;t there yet.</p>                    <p>This is the one place the revision is worked out: anything else that links
+to a bundled font (the font preloads) goes through
+{[\Flarum\Frontend\Assets::fontRevision()},](../../../Flarum/Frontend/Assets.html) which calls this with the
+same directory, so its URL is the one the stylesheet requests.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$fontsDir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_overrideSources">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L446" target="_blank" rel="noopener noreferrer">
-            line 446
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L456" target="_blank" rel="noopener noreferrer">
+            line 456
         </a>
         </div>
         <code>            protected        array

@@ -210,6 +210,19 @@
     </a>
 </td>
             </tr>
+                    <tr>
+                <td class="type" id="property_relatedScope">
+                                                                                bool
+                </td>
+                <td>$relatedScope</td>
+                <td class="last">Whether endpoints apply the related resource&#039;s scope() when they eager
+load this relationship. See withoutRelatedScope().</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L22" target="_blank" rel="noopener noreferrer">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
             </table>
 
     
@@ -644,12 +657,29 @@
                         <a href="../../../../Flarum/Api/Schema/Concerns/FlarumRelationship.html"><abbr title="Flarum\Api\Schema\Concerns\FlarumRelationship">FlarumRelationship</abbr></a>
                 </div>
                 <div class="col-md-6 type">
+                    <a href="#method_withoutRelatedScope">withoutRelatedScope</a>()
+        
+                                            <p>Have endpoints eager load this relationship in full, without the related
+resource&#039;s scope().</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L42" target="_blank" rel="noopener noreferrer">
+        <img src="../../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                        <a href="../../../../Flarum/Api/Schema/Concerns/FlarumRelationship.html"><abbr title="Flarum\Api\Schema\Concerns\FlarumRelationship">FlarumRelationship</abbr></a>
+                </div>
+                <div class="col-md-6 type">
                     <a href="#method_inverse">inverse</a>(string $inverse)
         
                                             <p>Set the inverse relationship name, used for eager loading.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L21" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L52" target="_blank" rel="noopener noreferrer">
         <img src="../../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -665,7 +695,7 @@
                                             <p>Allow this relationship to be included.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L31" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L62" target="_blank" rel="noopener noreferrer">
         <img src="../../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -1767,10 +1797,57 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_withoutRelatedScope">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L42" target="_blank" rel="noopener noreferrer">
+            line 42
+        </a>
+        </div>
+        <code>                        <a href="../../../../Flarum/Api/Schema/Concerns/FlarumRelationship.html"><abbr title="Flarum\Api\Schema\Concerns\FlarumRelationship">FlarumRelationship</abbr></a>
+    <strong>withoutRelatedScope</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Have endpoints eager load this relationship in full, without the related
+resource&#039;s scope().</p>                    <p>An endpoint applies the related resource&#039;s scope() to the relationships
+it eager loads, so that only what the actor may see is serialized. But
+the relation it loads is the model&#039;s own, and other code reads it too:
+a user&#039;s `groups`, for one, decide whether they are an admin and what
+they may do, and the policies that ask have to see every one of them,
+not only the ones the actor may see. Use this for a relationship that
+policies or other logic need to read in full.
+
+The field must then leave out what the actor may not see in its get()
+callback. With one, the serializer never loads the relationship itself,
+so endpoint eager loads are the only place this applies. Constraints
+given to eagerLoadWhere() still apply, and the rest of a path beyond
+this relationship is scoped as usual.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>    <a href="../../../../Flarum/Api/Schema/Concerns/FlarumRelationship.html"><abbr title="Flarum\Api\Schema\Concerns\FlarumRelationship">FlarumRelationship</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_inverse">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L21" target="_blank" rel="noopener noreferrer">
-            line 21
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L52" target="_blank" rel="noopener noreferrer">
+            line 52
         </a>
         </div>
         <code>                        <a href="../../../../Flarum/Api/Schema/Concerns/FlarumRelationship.html"><abbr title="Flarum\Api\Schema\Concerns\FlarumRelationship">FlarumRelationship</abbr></a>
@@ -1813,8 +1890,8 @@
                     <div class="method-item">
                     <h3 id="method_includable">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L31" target="_blank" rel="noopener noreferrer">
-            line 31
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Schema/Concerns/FlarumRelationship.php#L62" target="_blank" rel="noopener noreferrer">
+            line 62
         </a>
         </div>
         <code>                        <a href="../../../../Flarum/Api/Schema/Concerns/FlarumRelationship.html"><abbr title="Flarum\Api\Schema\Concerns\FlarumRelationship">FlarumRelationship</abbr></a>

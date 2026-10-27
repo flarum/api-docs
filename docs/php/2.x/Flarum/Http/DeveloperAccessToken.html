@@ -266,7 +266,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                 <td>$uniqueKeys</td>
                 <td class="last"></td>
                 <td><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#property_uniqueKeys"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L76" target="_blank" rel="noopener noreferrer">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L90" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -339,6 +339,20 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                 <td class="last"></td>
                 <td></td>
                 <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L16" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_configurableLifetime">
+                    static                    protected                                        bool
+                </td>
+                <td>$configurableLifetime</td>
+                <td class="last">These are issued deliberately, to be used by a script or an integration
+for as long as it needs them. An expiry set from the admin panel would
+break those quietly, weeks later, so this type keeps its own answer.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L23" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -735,7 +749,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                             <p>Generate an access token for the specified user.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_generate"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L81" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L95" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -752,7 +766,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_make"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L89" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L103" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -768,7 +782,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                             <p>Update the time of last usage of a token.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_touch"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L109" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L123" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -785,7 +799,40 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_user"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L147" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L161" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_lifetime">lifetime</a>()
+        
+                                            <p>How long this type of token stays valid, in seconds, taking into account
+anything the site has configured. Zero means it never expires.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_lifetime"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L174" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_hasConfigurableLifetime">hasConfigurableLifetime</a>()
+        
+                                            <p>Whether a site may change how long this type of token lasts.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_hasConfigurableLifetime"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L188" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -801,7 +848,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                             <p>Filters which tokens are valid at the given date for this particular token type.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_scopeValid"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L156" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L197" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -817,7 +864,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                             <p>Filters which tokens are expired at the given date and ready for garbage collection.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_scopeExpired"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L167" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L208" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -833,7 +880,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                             <p>Shortcut to find a valid token.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_findValid"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L180" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L221" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -849,7 +896,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                             <p>This query scope is intended to be used on the base AccessToken object to query for valid tokens of any type.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_scopeWhereValid"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L188" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L229" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -865,7 +912,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                             <p>This query scope is intended to be used on the base AccessToken object to query for expired tokens of any type.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_scopeWhereExpired"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L207" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L248" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -881,7 +928,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                             <p>Create a new model instance according to the access token type.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_newFromBuilder"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L230" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L271" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -897,7 +944,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                             <p>Get the type-to-model map.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_getModels"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L253" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L294" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -913,7 +960,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                                             <p>Set the model for the given access token type.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Flarum/Http/AccessToken.html#method_setModel"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a></small></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L263" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/DeveloperAccessToken.php#L304" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -1525,8 +1572,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_generate">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_generate"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L81" target="_blank" rel="noopener noreferrer">
-            line 81
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L95" target="_blank" rel="noopener noreferrer">
+            line 95
         </a>
         </div>
         <code>        static                <a href="../../Flarum/Http/AccessToken.html"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
@@ -1570,8 +1617,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_make">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_make"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L89" target="_blank" rel="noopener noreferrer">
-            line 89
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L103" target="_blank" rel="noopener noreferrer">
+            line 103
         </a>
         </div>
         <code>        static                <a href="../../Flarum/Http/AccessToken.html"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
@@ -1613,8 +1660,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_touch">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_touch"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L109" target="_blank" rel="noopener noreferrer">
-            line 109
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L123" target="_blank" rel="noopener noreferrer">
+            line 123
         </a>
         </div>
         <code>                    bool
@@ -1663,8 +1710,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_user">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_user"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L147" target="_blank" rel="noopener noreferrer">
-            line 147
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L161" target="_blank" rel="noopener noreferrer">
+            line 161
         </a>
         </div>
         <code>                        <a href="https://laravel.com/api/13.x/Illuminate/Database/Eloquent/Relations/BelongsTo.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></a>
@@ -1693,11 +1740,84 @@ will update the attribute on the DB. Measured in seconds.</em></p>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_lifetime">
+        <div class="location">
+                            in <a href="../../Flarum/Http/AccessToken.html#method_lifetime"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L174" target="_blank" rel="noopener noreferrer">
+            line 174
+        </a>
+        </div>
+        <code>        static            int
+    <strong>lifetime</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>How long this type of token stays valid, in seconds, taking into account
+anything the site has configured. Zero means it never expires.</p>                    <p>Resolved rather than fixed: `config.php` wins, then the setting an admin
+can change, then the default the class declares. A site that configures
+nothing keeps the lifetime it has always had.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasConfigurableLifetime">
+        <div class="location">
+                            in <a href="../../Flarum/Http/AccessToken.html#method_hasConfigurableLifetime"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L188" target="_blank" rel="noopener noreferrer">
+            line 188
+        </a>
+        </div>
+        <code>        static            bool
+    <strong>hasConfigurableLifetime</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Whether a site may change how long this type of token lasts.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_scopeValid">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_scopeValid"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L156" target="_blank" rel="noopener noreferrer">
-            line 156
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L197" target="_blank" rel="noopener noreferrer">
+            line 197
         </a>
         </div>
         <code>        static    protected        void
@@ -1709,7 +1829,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
     
 
                     <div class="method-description">
-                                    <p>Filters which tokens are valid at the given date for this particular token type.</p>                    <p>Uses the static::$lifetime value by default, can be overridden by children classes.</p>                            </div>
+                                    <p>Filters which tokens are valid at the given date for this particular token type.</p>                    <p>Uses the resolved lifetime by default, can be overridden by children classes.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1746,8 +1866,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_scopeExpired">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_scopeExpired"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L167" target="_blank" rel="noopener noreferrer">
-            line 167
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L208" target="_blank" rel="noopener noreferrer">
+            line 208
         </a>
         </div>
         <code>        static    protected        void
@@ -1759,7 +1879,7 @@ will update the attribute on the DB. Measured in seconds.</em></p>
     
 
                     <div class="method-description">
-                                    <p>Filters which tokens are expired at the given date and ready for garbage collection.</p>                    <p>Uses the static::$lifetime value by default, can be overridden by children classes.</p>                            </div>
+                                    <p>Filters which tokens are expired at the given date and ready for garbage collection.</p>                    <p>Uses the resolved lifetime by default, can be overridden by children classes.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1796,8 +1916,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_findValid">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_findValid"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L180" target="_blank" rel="noopener noreferrer">
-            line 180
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L221" target="_blank" rel="noopener noreferrer">
+            line 221
         </a>
         </div>
         <code>        static                <a href="../../Flarum/Http/AccessToken.html"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>|null
@@ -1841,8 +1961,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_scopeWhereValid">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_scopeWhereValid"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L188" target="_blank" rel="noopener noreferrer">
-            line 188
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L229" target="_blank" rel="noopener noreferrer">
+            line 229
         </a>
         </div>
         <code>                    void
@@ -1891,8 +2011,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_scopeWhereExpired">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_scopeWhereExpired"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L207" target="_blank" rel="noopener noreferrer">
-            line 207
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L248" target="_blank" rel="noopener noreferrer">
+            line 248
         </a>
         </div>
         <code>                    void
@@ -1941,8 +2061,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_newFromBuilder">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_newFromBuilder"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L230" target="_blank" rel="noopener noreferrer">
-            line 230
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L271" target="_blank" rel="noopener noreferrer">
+            line 271
         </a>
         </div>
         <code>                        <a href="../../Flarum/Http/AccessToken.html"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>|object
@@ -1991,8 +2111,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_getModels">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_getModels"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L253" target="_blank" rel="noopener noreferrer">
-            line 253
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L294" target="_blank" rel="noopener noreferrer">
+            line 294
         </a>
         </div>
         <code>        static            array
@@ -2026,8 +2146,8 @@ will update the attribute on the DB. Measured in seconds.</em></p>
                     <h3 id="method_setModel">
         <div class="location">
                             in <a href="../../Flarum/Http/AccessToken.html#method_setModel"><abbr title="Flarum\Http\AccessToken">AccessToken</abbr></a>
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L263" target="_blank" rel="noopener noreferrer">
-            line 263
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/AccessToken.php#L304" target="_blank" rel="noopener noreferrer">
+            line 304
         </a>
         </div>
         <code>        static            void

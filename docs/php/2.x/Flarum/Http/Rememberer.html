@@ -145,7 +145,7 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(    <a href="../../Flarum/Http/CookieFactory.html"><abbr title="Flarum\Http\CookieFactory">CookieFactory</abbr></a> $cookie)
+                    <a href="#method___construct">__construct</a>(    <a href="../../Flarum/Http/CookieFactory.html"><abbr title="Flarum\Http\CookieFactory">CookieFactory</abbr></a> $cookie,     <a href="../../Flarum/Http/SessionConfig.html"><abbr title="Flarum\Http\SessionConfig">SessionConfig</abbr></a> $sessionConfig)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -167,7 +167,24 @@
                                             <p>Sets the remember cookie on a response.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Rememberer.php#L27" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Rememberer.php#L28" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_cookieLifetime">cookieLifetime</a>()
+        
+                                            <p>How long the browser should keep the remember cookie, or `null` to keep
+it only until the browser closes.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Rememberer.php#L40" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -184,7 +201,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Rememberer.php#L35" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Rememberer.php#L49" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -204,7 +221,7 @@
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(    <a href="../../Flarum/Http/CookieFactory.html"><abbr title="Flarum\Http\CookieFactory">CookieFactory</abbr></a> $cookie)
+    <strong>__construct</strong>(    <a href="../../Flarum/Http/CookieFactory.html"><abbr title="Flarum\Http\CookieFactory">CookieFactory</abbr></a> $cookie,     <a href="../../Flarum/Http/SessionConfig.html"><abbr title="Flarum\Http\SessionConfig">SessionConfig</abbr></a> $sessionConfig)
         </code>
     </h3>
     <div class="details">
@@ -220,6 +237,11 @@
                 <td>$cookie</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>    <a href="../../Flarum/Http/SessionConfig.html"><abbr title="Flarum\Http\SessionConfig">SessionConfig</abbr></a></td>
+                <td>$sessionConfig</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -232,8 +254,8 @@
                     <div class="method-item">
                     <h3 id="method_remember">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Rememberer.php#L27" target="_blank" rel="noopener noreferrer">
-            line 27
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Rememberer.php#L28" target="_blank" rel="noopener noreferrer">
+            line 28
         </a>
         </div>
         <code>                        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
@@ -279,10 +301,45 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_cookieLifetime">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Rememberer.php#L40" target="_blank" rel="noopener noreferrer">
+            line 40
+        </a>
+        </div>
+        <code>            protected        int|null
+    <strong>cookieLifetime</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>How long the browser should keep the remember cookie, or `null` to keep
+it only until the browser closes.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_forget">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Rememberer.php#L35" target="_blank" rel="noopener noreferrer">
-            line 35
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Rememberer.php#L49" target="_blank" rel="noopener noreferrer">
+            line 49
         </a>
         </div>
         <code>                        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>

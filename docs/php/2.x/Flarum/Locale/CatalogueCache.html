@@ -130,20 +130,27 @@ detects that the translations behind it changed. Enabling an extension on one
 instance leaves every other instance serving a catalogue that predates it,
 with no mtime, TTL or revision that would ever say otherwise.
 
-The revision recorded beside a catalogue is compared against the current one
-on every request for that locale. It is derived from what the instance can
-see for itself, so an instance that was never told anything still works out
-that its catalogue is stale and rebuilds it.
+So each revision gets its own catalogue, named after it. The revision is
+derived from what the instance can see for itself, so an instance that was
+never told anything still looks for a catalogue that does not exist yet, and
+builds it. Because the name carries the revision, a catalogue cannot be
+paired with a revision it was not built for, instances on different
+revisions (old and new servers during a deploy) each keep their own, and no
+opcache anywhere holds an older compile under that name. Catalogues of
+earlier revisions stay until the cache is cleared, which every change of
+revision in core comes with.
 
 Freshness is decided per locale, because Symfony compiles catalogues lazily
 per locale: a request for `de` never touches `en`. A locale nobody asks for
 therefore costs nothing, and rebuilds the moment it is first requested —
 where previously it would have stayed stale indefinitely.
 
-Registered resources are never asked whether they are fresh. Doing so would
-run third-party {\Symfony\Component\Config\Resource\SelfCheckingResourceInterface}
+Outside debug mode, registered resources are never asked whether they are
+fresh. Doing so would run third-party {\Symfony\Component\Config\Resource\SelfCheckingResourceInterface}
 implementations that have never executed outside debug mode, some of which
-resolve services and query the database on every request.</p>                    </div>
+resolve services and query the database on every request. In debug mode they
+are asked, as Symfony's own cache did, so an edited translation file shows
+on the next request.</p>                    </div>
     
     
     
@@ -156,13 +163,13 @@ resolve services and query the database on every request.</p>                   
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(string $file, string $revision)
+                    <a href="#method___construct">__construct</a>(string $file, string $revision, bool $debug = false)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L41" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L55" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -179,7 +186,7 @@ resolve services and query the database on every request.</p>                   
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L47" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L63" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -196,7 +203,7 @@ resolve services and query the database on every request.</p>                   
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L52" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L68" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -213,7 +220,7 @@ resolve services and query the database on every request.</p>                   
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L61" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L77" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -228,12 +235,12 @@ resolve services and query the database on every request.</p>                   
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L41" target="_blank" rel="noopener noreferrer">
-            line 41
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L55" target="_blank" rel="noopener noreferrer">
+            line 55
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(string $file, string $revision)
+    <strong>__construct</strong>(string $file, string $revision, bool $debug = false)
         </code>
     </h3>
     <div class="details">
@@ -247,11 +254,16 @@ resolve services and query the database on every request.</p>                   
                     <tr>
                 <td>string</td>
                 <td>$file</td>
-                <td></td>
+                <td>The path Symfony names the catalogue by.</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$revision</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$debug</td>
                 <td></td>
             </tr>
             </table>
@@ -266,8 +278,8 @@ resolve services and query the database on every request.</p>                   
                     <div class="method-item">
                     <h3 id="method_getPath">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L47" target="_blank" rel="noopener noreferrer">
-            line 47
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L63" target="_blank" rel="noopener noreferrer">
+            line 63
         </a>
         </div>
         <code>                    string
@@ -298,8 +310,8 @@ resolve services and query the database on every request.</p>                   
                     <div class="method-item">
                     <h3 id="method_isFresh">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L52" target="_blank" rel="noopener noreferrer">
-            line 52
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L68" target="_blank" rel="noopener noreferrer">
+            line 68
         </a>
         </div>
         <code>                    bool
@@ -330,8 +342,8 @@ resolve services and query the database on every request.</p>                   
                     <div class="method-item">
                     <h3 id="method_write">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L61" target="_blank" rel="noopener noreferrer">
-            line 61
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Locale/CatalogueCache.php#L77" target="_blank" rel="noopener noreferrer">
+            line 77
         </a>
         </div>
         <code>                    void

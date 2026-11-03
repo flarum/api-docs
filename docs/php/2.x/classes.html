@@ -4900,6 +4900,108 @@ for the sake of better integration with Laravel packages/ecosystem.
             </div>
                     <div class="row">
                 <div class="col-md-6">
+                                                <a href="Flarum/Foundation/IconImage/Event/IconImageChanged.html"><abbr title="Flarum\Foundation\IconImage\Event\IconImageChanged">IconImageChanged</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    Dispatched once a model's new icon image, or its removal, has been saved
+through the icon image endpoints. `$model->icon_image_path` is null when the
+image was removed. The change is already stored when it is dispatched: a
+listener that throws fails the request but doesn't undo it.
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/IconImage/Event/IconImageChanged.php" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                                <a href="Flarum/Foundation/IconImage/Event/IconImageSaving.html"><abbr title="Flarum\Foundation\IconImage\Event\IconImageSaving">IconImageSaving</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    Dispatched before a model's icon image is stored or removed through the
+icon image endpoints, which don't run the resource's own saving hooks. A
+listener can throw to stop the change, or alter the image before it is
+stored. Check `$model` to act on one kind of model only.
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/IconImage/Event/IconImageSaving.php" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                                <a href="Flarum/Foundation/IconImage/HasIconImage.html"><abbr title="Flarum\Foundation\IconImage\HasIconImage">HasIconImage</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    For a model whose Font Awesome icon can be replaced by an uploaded image. The
+model's table needs a nullable `icon_image_path` string and an unsigned tiny
+integer `icon_image_scales` defaulting to 1.
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/IconImage/HasIconImage.php" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                                <a href="Flarum/Foundation/IconImage/IconImageApi.html"><abbr title="Flarum\Foundation\IconImage\IconImageApi">IconImageApi</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    The API surface of an icon image, for a resource whose model uses
+HasIconImage. Add the endpoints and fields to the resource:
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/IconImage/IconImageApi.php" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                                <a href="Flarum/Foundation/IconImage/IconImageUploader.html"><abbr title="Flarum\Foundation\IconImage\IconImageUploader">IconImageUploader</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    Stores an image used in place of a model's Font Awesome icon (a group's or a
+tag's, for example). The model needs the `icon_image_path` and
+`icon_image_scales` columns; see the HasIconImage concern.
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/IconImage/IconImageUploader.php" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                                <a href="Flarum/Foundation/IconImage/IconImageValidator.html"><abbr title="Flarum\Foundation\IconImage\IconImageValidator">IconImageValidator</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    Raster images only: an SVG served from the forum's own domain could run
+script, and GD cannot read it.
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Foundation/IconImage/IconImageValidator.php" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
                                                 <a href="Flarum/Foundation/InstalledApp.html"><abbr title="Flarum\Foundation\InstalledApp">InstalledApp</abbr></a>
                                             
                 </div>

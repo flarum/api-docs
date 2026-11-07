@@ -123,9 +123,9 @@
 
             <div class="description">
             <p>The forum's web app manifest, which Android and Chrome read for the name and
-icons of a shortcut added to the home screen. It opens the forum in the
-browser: running as an installed app is left to extensions that add what an
-app needs, such as offline support.</p>                                </div>
+icons of a shortcut added to the home screen. It opens the forum as an app,
+in a window of its own with a splash screen, unless an admin turns that off,
+and then in the browser.</p>                                </div>
     
     
     
@@ -138,7 +138,7 @@ app needs, such as offline support.</p>                                </div>
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(    <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings,     <a href="../../../Flarum/Forum/Branding/Branding.html"><abbr title="Flarum\Forum\Branding\Branding">Branding</abbr></a> $branding,     <a href="../../../Flarum/Forum/Branding/AppIcon.html"><abbr title="Flarum\Forum\Branding\AppIcon">AppIcon</abbr></a> $appIcon,     <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url,     <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Container/Container.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></a> $container,     <a href="../../../Flarum/Forum/Branding/ShortName.html"><abbr title="Flarum\Forum\Branding\ShortName">ShortName</abbr></a> $shortName)
+                    <a href="#method___construct">__construct</a>(    <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings,     <a href="../../../Flarum/Forum/Branding/Branding.html"><abbr title="Flarum\Forum\Branding\Branding">Branding</abbr></a> $branding,     <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url,     <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Container/Container.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></a> $container,     <a href="../../../Flarum/Forum/Branding/ShortName.html"><abbr title="Flarum\Forum\Branding\ShortName">ShortName</abbr></a> $shortName,     <a href="../../../Flarum/Forum/Branding/SplashScreen.html"><abbr title="Flarum\Forum\Branding\SplashScreen">SplashScreen</abbr></a> $splashScreen)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -169,10 +169,10 @@ list, or an extension has changed it.</p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    bool
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_build">build</a>()
+                    <a href="#method_opensAsApp">opensAsApp</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -189,13 +189,30 @@ list, or an extension has changed it.</p>                </div>
                     array
                 </div>
                 <div class="col-md-6 type">
+                    <a href="#method_build">build</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Branding/WebManifest.php#L48" target="_blank" rel="noopener noreferrer">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
                     <a href="#method_icons">icons</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Branding/WebManifest.php#L69" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Branding/WebManifest.php#L74" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -215,7 +232,7 @@ list, or an extension has changed it.</p>                </div>
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(    <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings,     <a href="../../../Flarum/Forum/Branding/Branding.html"><abbr title="Flarum\Forum\Branding\Branding">Branding</abbr></a> $branding,     <a href="../../../Flarum/Forum/Branding/AppIcon.html"><abbr title="Flarum\Forum\Branding\AppIcon">AppIcon</abbr></a> $appIcon,     <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url,     <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Container/Container.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></a> $container,     <a href="../../../Flarum/Forum/Branding/ShortName.html"><abbr title="Flarum\Forum\Branding\ShortName">ShortName</abbr></a> $shortName)
+    <strong>__construct</strong>(    <a href="../../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings,     <a href="../../../Flarum/Forum/Branding/Branding.html"><abbr title="Flarum\Forum\Branding\Branding">Branding</abbr></a> $branding,     <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a> $url,     <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Container/Container.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></a> $container,     <a href="../../../Flarum/Forum/Branding/ShortName.html"><abbr title="Flarum\Forum\Branding\ShortName">ShortName</abbr></a> $shortName,     <a href="../../../Flarum/Forum/Branding/SplashScreen.html"><abbr title="Flarum\Forum\Branding\SplashScreen">SplashScreen</abbr></a> $splashScreen)
         </code>
     </h3>
     <div class="details">
@@ -237,11 +254,6 @@ list, or an extension has changed it.</p>                </div>
                 <td></td>
             </tr>
                     <tr>
-                <td>    <a href="../../../Flarum/Forum/Branding/AppIcon.html"><abbr title="Flarum\Forum\Branding\AppIcon">AppIcon</abbr></a></td>
-                <td>$appIcon</td>
-                <td></td>
-            </tr>
-                    <tr>
                 <td>    <a href="../../../Flarum/Http/UrlGenerator.html"><abbr title="Flarum\Http\UrlGenerator">UrlGenerator</abbr></a></td>
                 <td>$url</td>
                 <td></td>
@@ -254,6 +266,11 @@ list, or an extension has changed it.</p>                </div>
                     <tr>
                 <td>    <a href="../../../Flarum/Forum/Branding/ShortName.html"><abbr title="Flarum\Forum\Branding\ShortName">ShortName</abbr></a></td>
                 <td>$shortName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>    <a href="../../../Flarum/Forum/Branding/SplashScreen.html"><abbr title="Flarum\Forum\Branding\SplashScreen">SplashScreen</abbr></a></td>
+                <td>$splashScreen</td>
                 <td></td>
             </tr>
             </table>
@@ -301,10 +318,42 @@ list, or an extension has changed it.</p>                                       
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_build">
+                    <h3 id="method_opensAsApp">
         <div class="location">
                         at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Branding/WebManifest.php#L43" target="_blank" rel="noopener noreferrer">
             line 43
+        </a>
+        </div>
+        <code>                    bool
+    <strong>opensAsApp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_build">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Branding/WebManifest.php#L48" target="_blank" rel="noopener noreferrer">
+            line 48
         </a>
         </div>
         <code>                    array
@@ -335,8 +384,8 @@ list, or an extension has changed it.</p>                                       
                     <div class="method-item">
                     <h3 id="method_icons">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Branding/WebManifest.php#L69" target="_blank" rel="noopener noreferrer">
-            line 69
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Branding/WebManifest.php#L74" target="_blank" rel="noopener noreferrer">
+            line 74
         </a>
         </div>
         <code>            protected        array

@@ -294,13 +294,31 @@
                         <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
                 </div>
                 <div class="col-md-6 type">
+                    <a href="#method_splashScreen">splashScreen</a>(string|callable $file, string|callable|null $landscape = null)
+        
+                                            <p>Sets the splash screen iPhones and iPads show while the forum opens from
+the home screen, in place of the one drawn from the app icon. Android
+can only show the app icon, so it keeps showing that.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Theme.php#L275" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                        <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+                </div>
+                <div class="col-md-6 type">
                     <a href="#method_manifest">manifest</a>(callable $callback)
         
                                             <p>Changes the forum&#039;s web app manifest, which phones read when the forum
 is added to a home screen.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Theme.php#L269" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Theme.php#L296" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -317,7 +335,7 @@ is added to a home screen.</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Theme.php#L311" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Theme.php#L338" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -883,10 +901,68 @@ Android&#039;s maskable icon are drawn on the background colour.</p>            
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_splashScreen">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Theme.php#L275" target="_blank" rel="noopener noreferrer">
+            line 275
+        </a>
+        </div>
+        <code>                        <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
+    <strong>splashScreen</strong>(string|callable $file, string|callable|null $landscape = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the splash screen iPhones and iPads show while the forum opens from
+the home screen, in place of the one drawn from the app icon. Android
+can only show the app icon, so it keeps showing that.</p>                    <p>The image is scaled to cover each screen and cropped from the middle, so
+keep what matters near the centre. Screens held sideways get the
+landscape image, if one is given. Images at least 1320 by 2868 pixels,
+or 2868 by 1320 for landscape, stay sharp on every screen.
+
+It&#039;s only shown with an app icon, set by an admin or with appIcon(), as
+the forum only opens as an app with one. Admins can still turn the
+splash screen off on the Appearance page.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|callable</td>
+                <td>$file</td>
+                <td>Absolute path of a PNG, JPEG, WebP or GIF file.</td>
+            </tr>
+                    <tr>
+                <td>string|callable|null</td>
+                <td>$landscape</td>
+                <td>Absolute path of a PNG, JPEG, WebP or GIF file.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>    <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_manifest">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Theme.php#L269" target="_blank" rel="noopener noreferrer">
-            line 269
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Theme.php#L296" target="_blank" rel="noopener noreferrer">
+            line 296
         </a>
         </div>
         <code>                        <a href="../../Flarum/Extend/Theme.html"><abbr title="Flarum\Extend\Theme">Theme</abbr></a>
@@ -933,8 +1009,8 @@ is added to a home screen.</p>                    <p>```php
                     <div class="method-item">
                     <h3 id="method_extend">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Theme.php#L311" target="_blank" rel="noopener noreferrer">
-            line 311
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extend/Theme.php#L338" target="_blank" rel="noopener noreferrer">
+            line 338
         </a>
         </div>
         <code>                    void

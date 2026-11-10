@@ -131,7 +131,13 @@ to reach the browser as they happen, and for those the body is a
 
 The distinction is drawn on the body rather than a flag, because
 `SapiEmitter` would defeat a callback body anyway: it casts the stream to a
-string, which runs the callback to completion before a single byte is sent.</p>                    </div>
+string, which runs the callback to completion before a single byte is sent.
+
+Before streaming, PHP is told not to hold the body back itself: the output
+buffers `output_buffering` opens are closed, so the callback's `flush()`
+reaches the server, and `zlib.output_compression` is turned off, as it
+would gather the body to compress it. {\Flarum\Http\EventStream} builds such a
+response.</p>                    </div>
     
     
     
@@ -144,13 +150,13 @@ string, which runs the callback to completion before a single byte is sent.</p> 
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(    <abbr title="Laminas\HttpHandlerRunner\Emitter\EmitterInterface">EmitterInterface</abbr> $buffered = new SapiEmitter(),     <abbr title="Laminas\HttpHandlerRunner\Emitter\EmitterInterface">EmitterInterface</abbr> $streamed = new SapiStreamEmitter())
+                    <a href="#method___construct">__construct</a>(    <abbr title="Laminas\HttpHandlerRunner\Emitter\EmitterInterface">EmitterInterface</abbr> $buffered = new SapiEmitter(),     <abbr title="Laminas\HttpHandlerRunner\Emitter\EmitterInterface">EmitterInterface</abbr> $streamed = new SapiStreamEmitter(),     <a href="https://www.php.net/manual/en/class.closure.php" target="_blank" rel="noopener noreferrer">Closure</a>|null $prepareToStream = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Emitter.php#L33" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Emitter.php#L43" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -167,7 +173,24 @@ string, which runs the callback to completion before a single byte is sent.</p> 
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Emitter.php#L39" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Emitter.php#L50" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_prepareToStream">prepareToStream</a>()
+        
+                                            <p>Stops PHP holding a streamed body back. A buffer that already holds
+output is left alone, for the emitter to report as output sent too soon.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Emitter.php#L65" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -182,12 +205,12 @@ string, which runs the callback to completion before a single byte is sent.</p> 
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Emitter.php#L33" target="_blank" rel="noopener noreferrer">
-            line 33
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Emitter.php#L43" target="_blank" rel="noopener noreferrer">
+            line 43
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(    <abbr title="Laminas\HttpHandlerRunner\Emitter\EmitterInterface">EmitterInterface</abbr> $buffered = new SapiEmitter(),     <abbr title="Laminas\HttpHandlerRunner\Emitter\EmitterInterface">EmitterInterface</abbr> $streamed = new SapiStreamEmitter())
+    <strong>__construct</strong>(    <abbr title="Laminas\HttpHandlerRunner\Emitter\EmitterInterface">EmitterInterface</abbr> $buffered = new SapiEmitter(),     <abbr title="Laminas\HttpHandlerRunner\Emitter\EmitterInterface">EmitterInterface</abbr> $streamed = new SapiStreamEmitter(),     <a href="https://www.php.net/manual/en/class.closure.php" target="_blank" rel="noopener noreferrer">Closure</a>|null $prepareToStream = null)
         </code>
     </h3>
     <div class="details">
@@ -208,6 +231,11 @@ string, which runs the callback to completion before a single byte is sent.</p> 
                 <td>$streamed</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>    <a href="https://www.php.net/manual/en/class.closure.php" target="_blank" rel="noopener noreferrer">Closure</a>|null</td>
+                <td>$prepareToStream</td>
+                <td>Run before a streamed response is sent; PHP&#039;s own preparation unless given.</td>
+            </tr>
             </table>
 
             
@@ -220,8 +248,8 @@ string, which runs the callback to completion before a single byte is sent.</p> 
                     <div class="method-item">
                     <h3 id="method_emit">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Emitter.php#L39" target="_blank" rel="noopener noreferrer">
-            line 39
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Emitter.php#L50" target="_blank" rel="noopener noreferrer">
+            line 50
         </a>
         </div>
         <code>                    bool
@@ -249,6 +277,41 @@ string, which runs the callback to completion before a single byte is sent.</p> 
                     <table class="table table-condensed">
         <tr>
             <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareToStream">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Http/Emitter.php#L65" target="_blank" rel="noopener noreferrer">
+            line 65
+        </a>
+        </div>
+        <code>        static            void
+    <strong>prepareToStream</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stops PHP holding a streamed body back. A buffer that already holds
+output is left alone, for the emitter to report as output sent too soon.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
             <td></td>
         </tr>
     </table>

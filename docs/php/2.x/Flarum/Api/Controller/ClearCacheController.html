@@ -126,13 +126,7 @@
             <p>Clears the cache, reporting each step as it finishes.</p>            <p>The work recompiles every asset bundle for every frontend and locale, which
 is tens of seconds where the assets live on remote storage. Waiting until the
 end to answer leaves the admin watching a spinner with no way to tell a slow
-clear from a dead request, so the steps are streamed as newline-delimited
-JSON — one object per line, each complete in itself.
-
-Only the body streams. Authorisation, CSRF, throttling and error handling all
-still come from the API middleware: those wrap the response object, and it is
-the emitter that consumes the body, so a {\Laminas\Diactoros\CallbackStream} passes through
-them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>                    </div>
+clear from a dead request, so the steps are streamed ({\Flarum\Http\EventStream}).</p>                    </div>
     
     
     
@@ -145,13 +139,13 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(    <a href="../../../Flarum/Foundation/Console/CacheClearCommand.html"><abbr title="Flarum\Foundation\Console\CacheClearCommand">CacheClearCommand</abbr></a> $command,     <a href="../../../Flarum/Foundation/Console/AssetsPublishCommand.html"><abbr title="Flarum\Foundation\Console\AssetsPublishCommand">AssetsPublishCommand</abbr></a> $assetsPublishCommand)
+                    <a href="#method___construct">__construct</a>(    <a href="../../../Flarum/Foundation/Console/CacheClearCommand.html"><abbr title="Flarum\Foundation\Console\CacheClearCommand">CacheClearCommand</abbr></a> $command,     <a href="../../../Flarum/Foundation/Console/AssetsPublishCommand.html"><abbr title="Flarum\Foundation\Console\AssetsPublishCommand">AssetsPublishCommand</abbr></a> $assetsPublishCommand,     <a href="../../../Flarum/Http/EventStream.html"><abbr title="Flarum\Http\EventStream">EventStream</abbr></a> $events)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L39" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L33" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -168,7 +162,7 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L45" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L40" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -183,12 +177,12 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L39" target="_blank" rel="noopener noreferrer">
-            line 39
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L33" target="_blank" rel="noopener noreferrer">
+            line 33
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(    <a href="../../../Flarum/Foundation/Console/CacheClearCommand.html"><abbr title="Flarum\Foundation\Console\CacheClearCommand">CacheClearCommand</abbr></a> $command,     <a href="../../../Flarum/Foundation/Console/AssetsPublishCommand.html"><abbr title="Flarum\Foundation\Console\AssetsPublishCommand">AssetsPublishCommand</abbr></a> $assetsPublishCommand)
+    <strong>__construct</strong>(    <a href="../../../Flarum/Foundation/Console/CacheClearCommand.html"><abbr title="Flarum\Foundation\Console\CacheClearCommand">CacheClearCommand</abbr></a> $command,     <a href="../../../Flarum/Foundation/Console/AssetsPublishCommand.html"><abbr title="Flarum\Foundation\Console\AssetsPublishCommand">AssetsPublishCommand</abbr></a> $assetsPublishCommand,     <a href="../../../Flarum/Http/EventStream.html"><abbr title="Flarum\Http\EventStream">EventStream</abbr></a> $events)
         </code>
     </h3>
     <div class="details">
@@ -209,6 +203,11 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
                 <td>$assetsPublishCommand</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>    <a href="../../../Flarum/Http/EventStream.html"><abbr title="Flarum\Http\EventStream">EventStream</abbr></a></td>
+                <td>$events</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -221,8 +220,8 @@ them untouched and is streamed by {\Flarum\Http\Emitter} at the end.</p>        
                     <div class="method-item">
                     <h3 id="method_handle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L45" target="_blank" rel="noopener noreferrer">
-            line 45
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/Controller/ClearCacheController.php#L40" target="_blank" rel="noopener noreferrer">
+            line 40
         </a>
         </div>
         <code>                        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>

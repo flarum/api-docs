@@ -124,6 +124,18 @@
 
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>ERROR_HANDLER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
             <h2>Properties</h2>
 
@@ -135,19 +147,31 @@
                 <td>$middlewares</td>
                 <td class="last"></td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L23" target="_blank" rel="noopener noreferrer">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L25" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
             </tr>
                     <tr>
-                <td class="type" id="property_pipe">
-                                        protected                                            <abbr title="Laminas\Stratigility\MiddlewarePipeInterface">MiddlewarePipeInterface</abbr>
+                <td class="type" id="property_handleErrors">
+                                        protected                                        bool|null
                 </td>
-                <td>$pipe</td>
-                <td class="last"></td>
+                <td>$handleErrors</td>
+                <td class="last">Null until errorHandling() is called: the configured list is used as it is.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L24" target="_blank" rel="noopener noreferrer">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L27" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pipes">
+                                        protected                                            <abbr title="Flarum\Api\array&lt;string, \Laminas\Stratigility\MiddlewarePipeInterface&gt;">MiddlewarePipeInterface&gt;</abbr>
+                </td>
+                <td>$pipes</td>
+                <td class="last">Built pipes, keyed by the error handling mode they were built for.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L34" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -169,7 +193,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L26" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L36" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -186,7 +210,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L33" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L43" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -203,7 +227,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L38" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L48" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -220,7 +244,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L43" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L53" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -237,7 +261,24 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L48" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L60" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                        <abbr title="Laminas\Stratigility\MiddlewarePipeInterface">MiddlewarePipeInterface</abbr>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_buildPipe">buildPipe</a>(bool|null $handleErrors)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L65" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -254,7 +295,7 @@
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L63" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L85" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -269,8 +310,8 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L26" target="_blank" rel="noopener noreferrer">
-            line 26
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L36" target="_blank" rel="noopener noreferrer">
+            line 36
         </a>
         </div>
         <code>                    
@@ -307,8 +348,8 @@
                     <div class="method-item">
                     <h3 id="method_process">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L33" target="_blank" rel="noopener noreferrer">
-            line 33
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L43" target="_blank" rel="noopener noreferrer">
+            line 43
         </a>
         </div>
         <code>                        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
@@ -354,8 +395,8 @@
                     <div class="method-item">
                     <h3 id="method_handle">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L38" target="_blank" rel="noopener noreferrer">
-            line 38
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L48" target="_blank" rel="noopener noreferrer">
+            line 48
         </a>
         </div>
         <code>                        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
@@ -396,8 +437,8 @@
                     <div class="method-item">
                     <h3 id="method_pipe">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L43" target="_blank" rel="noopener noreferrer">
-            line 43
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L53" target="_blank" rel="noopener noreferrer">
+            line 53
         </a>
         </div>
         <code>                    void
@@ -438,8 +479,8 @@
                     <div class="method-item">
                     <h3 id="method_getPipe">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L48" target="_blank" rel="noopener noreferrer">
-            line 48
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L60" target="_blank" rel="noopener noreferrer">
+            line 60
         </a>
         </div>
         <code>            protected            <abbr title="Laminas\Stratigility\MiddlewarePipeInterface">MiddlewarePipeInterface</abbr>
@@ -468,10 +509,52 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_buildPipe">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L65" target="_blank" rel="noopener noreferrer">
+            line 65
+        </a>
+        </div>
+        <code>            protected            <abbr title="Laminas\Stratigility\MiddlewarePipeInterface">MiddlewarePipeInterface</abbr>
+    <strong>buildPipe</strong>(bool|null $handleErrors)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool|null</td>
+                <td>$handleErrors</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>    <abbr title="Laminas\Stratigility\MiddlewarePipeInterface">MiddlewarePipeInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_errorHandling">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L63" target="_blank" rel="noopener noreferrer">
-            line 63
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Api/ClientMiddlewarePipe.php#L85" target="_blank" rel="noopener noreferrer">
+            line 85
         </a>
         </div>
         <code>                        <a href="../../Flarum/Api/ClientMiddlewarePipe.html"><abbr title="Flarum\Api\ClientMiddlewarePipe">ClientMiddlewarePipe</abbr></a>

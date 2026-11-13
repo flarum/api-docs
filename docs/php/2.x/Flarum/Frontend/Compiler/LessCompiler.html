@@ -712,62 +712,6 @@ otherwise.</p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_readCache">readCache</a>(    Less_Parser $parser, string $filePath, string $cacheFile)
-        
-                                            <p>Read a cached parse result for less.php. Returns the cached rules, or
-null to signal a miss so less.php reparses the file.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L248" target="_blank" rel="noopener noreferrer">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_writeCache">writeCache</a>(    Less_Parser $parser, string $filePath, string $cacheFile, mixed $rules)
-        
-                                            <p>Persist a parse result for less.php, writing atomically so a concurrent
-reader never observes a half-written cache file: serialize to a temporary
-file in the same directory, then rename() it into place (atomic on the
-same filesystem).</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L286" target="_blank" rel="noopener noreferrer">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_pruneCacheOnce">pruneCacheOnce</a>()
-        
-                                            <p>Prune expired cache files at most once per request. less.php&#039;s own GC
-(Less_Cache::CleanCache) only runs from its high-level Less_Cache::Get()
-API, which Flarum doesn&#039;t use — the direct Less_Parser path GC&#039;d inline on
-every serialize write instead. In callback mode neither fires, so without
-this the directory would grow unbounded.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L324" target="_blank" rel="noopener noreferrer">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-6 type">
@@ -777,7 +721,7 @@ this the directory would grow unbounded.</p>                </div>
 with a revision derived from the font file itself.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L369" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L257" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -794,7 +738,7 @@ with a revision derived from the font file itself.</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L390" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L278" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -812,7 +756,7 @@ fonts are published separately, so a compile must never fail just because
 the directory isn&#039;t there yet.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L405" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L293" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -829,7 +773,7 @@ the directory isn&#039;t there yet.</p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L456" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L344" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -1926,173 +1870,10 @@ so an import we will not resolve has to throw instead.</p>                      
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_readCache">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L248" target="_blank" rel="noopener noreferrer">
-            line 248
-        </a>
-        </div>
-        <code>            protected        mixed
-    <strong>readCache</strong>(    Less_Parser $parser, string $filePath, string $cacheFile)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Read a cached parse result for less.php. Returns the cached rules, or
-null to signal a miss so less.php reparses the file.</p>                    <p>A corrupt or unreadable cache file (e.g. a partial write from a raced
-compile) is treated as a miss rather than allowed to fatal on
-unserialize()&#039;s &quot;Extra data&quot; warning, which Flarum&#039;s error handler would
-otherwise escalate to an uncaught exception.</p>                            </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>    Less_Parser</td>
-                <td>$parser</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$filePath</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$cacheFile</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_writeCache">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L286" target="_blank" rel="noopener noreferrer">
-            line 286
-        </a>
-        </div>
-        <code>            protected        void
-    <strong>writeCache</strong>(    Less_Parser $parser, string $filePath, string $cacheFile, mixed $rules)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Persist a parse result for less.php, writing atomically so a concurrent
-reader never observes a half-written cache file: serialize to a temporary
-file in the same directory, then rename() it into place (atomic on the
-same filesystem).</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>    Less_Parser</td>
-                <td>$parser</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$filePath</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$cacheFile</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>mixed</td>
-                <td>$rules</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_pruneCacheOnce">
-        <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L324" target="_blank" rel="noopener noreferrer">
-            line 324
-        </a>
-        </div>
-        <code>            protected        void
-    <strong>pruneCacheOnce</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Prune expired cache files at most once per request. less.php&#039;s own GC
-(Less_Cache::CleanCache) only runs from its high-level Less_Cache::Get()
-API, which Flarum doesn&#039;t use — the direct Less_Parser path GC&#039;d inline on
-every serialize write instead. In callback mode neither fires, so without
-this the directory would grow unbounded.</p>                    <p>We prune here rather than call CleanCache() because that method is
-deprecated-internal, and hand-rolling the sweep lets us tolerate the
-scandir/unlink race (a concurrent sweep removing the same aged file) by
-simply suppressing the &quot;No such file&quot; and moving on. Files are removed by
-mtime, matching less.php&#039;s own policy; a cache hit re-reads and is not
-touched, so anything past the lifetime is genuinely stale.</p>                            </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_finalize">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L369" target="_blank" rel="noopener noreferrer">
-            line 369
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L257" target="_blank" rel="noopener noreferrer">
+            line 257
         </a>
         </div>
         <code>            protected        string
@@ -2147,8 +1928,8 @@ the usual &quot;reload for the new version&quot; prompt without any extra wiring
                     <div class="method-item">
                     <h3 id="method_fontRevision">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L390" target="_blank" rel="noopener noreferrer">
-            line 390
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L278" target="_blank" rel="noopener noreferrer">
+            line 278
         </a>
         </div>
         <code>            protected        string|null
@@ -2189,8 +1970,8 @@ the usual &quot;reload for the new version&quot; prompt without any extra wiring
                     <div class="method-item">
                     <h3 id="method_fontRevisionIn">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L405" target="_blank" rel="noopener noreferrer">
-            line 405
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L293" target="_blank" rel="noopener noreferrer">
+            line 293
         </a>
         </div>
         <code>        static            string|null
@@ -2243,8 +2024,8 @@ same directory, so its URL is the one the stylesheet requests.</p>              
                     <div class="method-item">
                     <h3 id="method_overrideSources">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L456" target="_blank" rel="noopener noreferrer">
-            line 456
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Frontend/Compiler/LessCompiler.php#L344" target="_blank" rel="noopener noreferrer">
+            line 344
         </a>
         </div>
         <code>            protected        array

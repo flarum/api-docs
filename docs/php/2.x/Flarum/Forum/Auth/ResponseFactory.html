@@ -164,6 +164,24 @@ the registration flow for a new one.</p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                        <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_findUserToLink">findUserToLink</a>(string $provider, string $identifier, array $provided)
+        
+                                            <p>Find an existing account to link this provider identity to, when it has
+no link yet. By default that is the account with the email address the
+provider vouched for ({Registration::provideTrustedEmail()}).</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Auth/ResponseFactory.php#L85" target="_blank" rel="noopener noreferrer">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                         <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-6 type">
@@ -172,7 +190,7 @@ the registration flow for a new one.</p>                </div>
                                             <p>Build a redirect response for a successfully authenticated existing user.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Auth/ResponseFactory.php#L80" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Auth/ResponseFactory.php#L100" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -188,7 +206,7 @@ the registration flow for a new one.</p>                </div>
                                             <p>Build a redirect response that triggers the registration modal on the frontend.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Auth/ResponseFactory.php#L99" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Auth/ResponseFactory.php#L119" target="_blank" rel="noopener noreferrer">
         <img src="../../../assets/img/code.svg" height="18" />
     </a>
 
@@ -296,10 +314,68 @@ Must be validated by the caller before being passed here.</td>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_findUserToLink">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Auth/ResponseFactory.php#L85" target="_blank" rel="noopener noreferrer">
+            line 85
+        </a>
+        </div>
+        <code>            protected            <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>|null
+    <strong>findUserToLink</strong>(string $provider, string $identifier, array $provided)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find an existing account to link this provider identity to, when it has
+no link yet. By default that is the account with the email address the
+provider vouched for ({Registration::provideTrustedEmail()}).</p>                    <p>Override this to change which account is linked. Returning null sends
+the user to sign up, where an address already in use is rejected until
+3.0 makes email addresses non-unique (flarum/framework#4426).</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$identifier</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$provided</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>    <a href="../../../Flarum/User/User.html"><abbr title="Flarum\User\User">User</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_makeLoggedInResponse">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Auth/ResponseFactory.php#L80" target="_blank" rel="noopener noreferrer">
-            line 80
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Auth/ResponseFactory.php#L100" target="_blank" rel="noopener noreferrer">
+            line 100
         </a>
         </div>
         <code>            protected            <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
@@ -349,8 +425,8 @@ Override this method to customise the login redirect or cookie behaviour.</p>   
                     <div class="method-item">
                     <h3 id="method_makeRegistrationResponse">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Auth/ResponseFactory.php#L99" target="_blank" rel="noopener noreferrer">
-            line 99
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Forum/Auth/ResponseFactory.php#L119" target="_blank" rel="noopener noreferrer">
+            line 119
         </a>
         </div>
         <code>            protected            <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>

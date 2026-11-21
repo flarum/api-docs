@@ -122,18 +122,20 @@
     
 
             <div class="description">
-            <p>Caches the permission lists of group-ID sets for the lifetime of the
-application instance.</p>            <p>The permissions a user has are fully determined by the set of group IDs
+            <p>Caches the permission lists of group-ID sets.</p>            <p>The permissions a user has are fully determined by the set of group IDs
 they belong to, so users sharing a group set can share one `group_permission`
 load. Without this, any code that checks an ability against each serialized
 user — extension serializer flags, policies, visibility scopers — issues one
 identical query per user instance.
 
-The cache is a container singleton, so its lifetime is one request under
-PHP-FPM. Entries are invalidated when permissions change: per affected group
-for model writes, and wholesale for the admin permission endpoint (which
-writes through the query builder and bypasses model events). Code that
-modifies the `group_permission` table directly should call `flush()`.</p>                    </div>
+The cache is a container singleton, so its entries last one request under
+PHP-FPM; a queue worker flushes it as each job starts. Changes made by
+another process never reach it, so other long-running processes must flush
+it themselves. Within a process, entries are invalidated when permissions
+change: per affected group for model writes, and wholesale for the admin
+permission endpoint (which writes through the query builder and bypasses
+model events). Code that modifies the `group_permission` table directly
+should call `flush()`.</p>                    </div>
     
     
     
@@ -147,7 +149,7 @@ modifies the `group_permission` table directly should call `flush()`.</p>       
                 <td>$permissions</td>
                 <td class="last">Permission lists keyed by sorted group-ID set.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L35" target="_blank" rel="noopener noreferrer">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L37" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -169,7 +171,7 @@ modifies the `group_permission` table directly should call `flush()`.</p>       
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L41" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L43" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -186,7 +188,7 @@ modifies the `group_permission` table directly should call `flush()`.</p>       
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L50" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L52" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -203,7 +205,7 @@ modifies the `group_permission` table directly should call `flush()`.</p>       
 group&#039;s permissions changed or the group was deleted.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L59" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L61" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -220,7 +222,7 @@ group&#039;s permissions changed or the group was deleted.</p>                </
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L68" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L70" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -237,7 +239,7 @@ group&#039;s permissions changed or the group was deleted.</p>                </
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L76" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L78" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -252,8 +254,8 @@ group&#039;s permissions changed or the group was deleted.</p>                </
                     <div class="method-item">
                     <h3 id="method_get">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L41" target="_blank" rel="noopener noreferrer">
-            line 41
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L43" target="_blank" rel="noopener noreferrer">
+            line 43
         </a>
         </div>
         <code>                    array|null
@@ -294,8 +296,8 @@ group&#039;s permissions changed or the group was deleted.</p>                </
                     <div class="method-item">
                     <h3 id="method_put">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L50" target="_blank" rel="noopener noreferrer">
-            line 50
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L52" target="_blank" rel="noopener noreferrer">
+            line 52
         </a>
         </div>
         <code>                    void
@@ -341,8 +343,8 @@ group&#039;s permissions changed or the group was deleted.</p>                </
                     <div class="method-item">
                     <h3 id="method_forgetGroup">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L59" target="_blank" rel="noopener noreferrer">
-            line 59
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L61" target="_blank" rel="noopener noreferrer">
+            line 61
         </a>
         </div>
         <code>                    void
@@ -386,8 +388,8 @@ group&#039;s permissions changed or the group was deleted.</p>                  
                     <div class="method-item">
                     <h3 id="method_flush">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L68" target="_blank" rel="noopener noreferrer">
-            line 68
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L70" target="_blank" rel="noopener noreferrer">
+            line 70
         </a>
         </div>
         <code>                    void
@@ -418,8 +420,8 @@ group&#039;s permissions changed or the group was deleted.</p>                  
                     <div class="method-item">
                     <h3 id="method_key">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L76" target="_blank" rel="noopener noreferrer">
-            line 76
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L78" target="_blank" rel="noopener noreferrer">
+            line 78
         </a>
         </div>
         <code>            protected        string

@@ -2333,6 +2333,26 @@ built-in `help` command.
             </div>
                     <div class="row">
                 <div class="col-md-6">
+                                                <a href="Flarum/Database/IntegerKey.html"><abbr title="Flarum\Database\IntegerKey">IntegerKey</abbr></a>
+                                            
+                </div>
+                <div class="col-md-5">
+                    Ids come from URLs, slugs and filters, so they can be any text. Only digits
+can match an integer column: MySQL reads "2abc" as 2, and PostgreSQL refuses
+to compare it. PostgreSQL also refuses a number beyond the column's range, so
+the range is read from the column itself: `integer` and `bigint` keys both
+report the `int` key type in Eloquent. Values within the `integer` range skip
+that read, so `smallint` columns are not covered.
+                </div>
+                <div class="col-md-1 text-right">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Database/IntegerKey.php" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/code.svg"  />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
                                                 <a href="Flarum/Database/Migration.html"><abbr title="Flarum\Database\Migration">Migration</abbr></a>
                                             
                 </div>

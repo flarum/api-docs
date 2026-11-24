@@ -135,7 +135,10 @@ it themselves. Within a process, entries are invalidated when permissions
 change: per affected group for model writes, and wholesale for the admin
 permission endpoint (which writes through the query builder and bypasses
 model events). Code that modifies the `group_permission` table directly
-should call `flush()`.</p>                    </div>
+should call `flush()`.
+
+Values derived from a group set's permissions, such as a policy verdict,
+can be kept here with `remember()`, so that they share this lifecycle.</p>                    </div>
     
     
     
@@ -149,7 +152,19 @@ should call `flush()`.</p>                    </div>
                 <td>$permissions</td>
                 <td class="last">Permission lists keyed by sorted group-ID set.</td>
                 <td></td>
-                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L37" target="_blank" rel="noopener noreferrer">
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L40" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_derived">
+                                        protected                                            <abbr title="Flarum\Group\array&lt;string, array&lt;string, mixed&gt;&gt;">array&lt;string, array&lt;string, mixed&gt;&gt;</abbr>
+                </td>
+                <td>$derived</td>
+                <td class="last">Derived values keyed by sorted group-ID set, then by the caller&#039;s key.</td>
+                <td></td>
+                <td width="24px">    <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L47" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 </td>
@@ -171,7 +186,7 @@ should call `flush()`.</p>                    </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L43" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L53" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -188,7 +203,24 @@ should call `flush()`.</p>                    </div>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L52" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L62" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_remember">remember</a>(array $groupIds, string $key, callable $callback)
+        
+                                            <p>A value derived from the group set&#039;s permissions, worked out by the
+callback the first time it is asked for and forgotten with the set.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L79" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -205,7 +237,7 @@ should call `flush()`.</p>                    </div>
 group&#039;s permissions changed or the group was deleted.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L61" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L94" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -222,7 +254,24 @@ group&#039;s permissions changed or the group was deleted.</p>                </
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L70" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L100" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_withoutGroup">withoutGroup</a>(array $entries, int $groupId)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L111" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -239,7 +288,7 @@ group&#039;s permissions changed or the group was deleted.</p>                </
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L78" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L123" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -254,8 +303,8 @@ group&#039;s permissions changed or the group was deleted.</p>                </
                     <div class="method-item">
                     <h3 id="method_get">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L43" target="_blank" rel="noopener noreferrer">
-            line 43
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L53" target="_blank" rel="noopener noreferrer">
+            line 53
         </a>
         </div>
         <code>                    array|null
@@ -296,8 +345,8 @@ group&#039;s permissions changed or the group was deleted.</p>                </
                     <div class="method-item">
                     <h3 id="method_put">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L52" target="_blank" rel="noopener noreferrer">
-            line 52
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L62" target="_blank" rel="noopener noreferrer">
+            line 62
         </a>
         </div>
         <code>                    void
@@ -341,10 +390,66 @@ group&#039;s permissions changed or the group was deleted.</p>                </
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_remember">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L79" target="_blank" rel="noopener noreferrer">
+            line 79
+        </a>
+        </div>
+        <code>                    mixed
+    <strong>remember</strong>(array $groupIds, string $key, callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A value derived from the group set&#039;s permissions, worked out by the
+callback the first time it is asked for and forgotten with the set.</p>                    <p>The key must name everything else the value depends on: two callers
+with the same group set and key are given the same value.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$groupIds</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_forgetGroup">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L61" target="_blank" rel="noopener noreferrer">
-            line 61
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L94" target="_blank" rel="noopener noreferrer">
+            line 94
         </a>
         </div>
         <code>                    void
@@ -388,8 +493,8 @@ group&#039;s permissions changed or the group was deleted.</p>                  
                     <div class="method-item">
                     <h3 id="method_flush">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L70" target="_blank" rel="noopener noreferrer">
-            line 70
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L100" target="_blank" rel="noopener noreferrer">
+            line 100
         </a>
         </div>
         <code>                    void
@@ -418,10 +523,57 @@ group&#039;s permissions changed or the group was deleted.</p>                  
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_withoutGroup">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L111" target="_blank" rel="noopener noreferrer">
+            line 111
+        </a>
+        </div>
+        <code>            protected        array
+    <strong>withoutGroup</strong>(array $entries, int $groupId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$entries</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$groupId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_key">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L78" target="_blank" rel="noopener noreferrer">
-            line 78
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Group/PermissionCache.php#L123" target="_blank" rel="noopener noreferrer">
+            line 123
         </a>
         </div>
         <code>            protected        string

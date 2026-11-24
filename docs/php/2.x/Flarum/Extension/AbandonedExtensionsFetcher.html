@@ -148,6 +148,28 @@
                 </td>
             </tr>
                     <tr>
+                <td>LIST_CACHE_KEY</td>
+                <td class="last">
+                    <p><em>The whole upstream list, installed or not; the setting above holds only
+the installed packages, because every setting is loaded on every request.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LIST_TTL</td>
+                <td class="last">
+                    <p><em>A week and a day, so the weekly sync refreshes it before it expires.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FAILED_LIST_TTL</td>
+                <td class="last">
+                    <p><em>How long a failed fetch waits before it is tried again.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
                 <td>SOURCE_URL</td>
                 <td class="last">
                     <p><em></em></p>
@@ -166,13 +188,13 @@
                     
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method___construct">__construct</a>(    <a href="../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions,     <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings,     <abbr title="GuzzleHttp\Client">Client</abbr> $client,     <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Queue/Queue.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></a> $queue,     <a href="../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a> $translator,     <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>|null $logger = null)
+                    <a href="#method___construct">__construct</a>(    <a href="../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions,     <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings,     <abbr title="GuzzleHttp\Client">Client</abbr> $client,     <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Queue/Queue.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></a> $queue,     <a href="../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a> $translator,     <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>|null $logger = null,     <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Cache/Repository.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Cache\Repository">Repository</abbr></a>|null $cache = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L37" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L54" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -185,11 +207,47 @@
                 <div class="col-md-6 type">
                     <a href="#method_sync">sync</a>(bool $notify = false, bool $manual = false)
         
-                                            <p>Fetch the upstream abandoned extensions list, filter to installed packages,
-persist the result to settings, and optionally notify admins.</p>                </div>
+                                            <p>Fetch the upstream abandoned extensions list, keep all of it for
+getFullMap(), persist the installed packages&#039; entries to settings, and
+optionally notify admins.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L60" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L79" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getFullMap">getFullMap</a>(bool $fetch = true)
+        
+                                            <p>Every package on the upstream list, installed or not, for checking
+packages before they are installed. Fetched when nothing is stored,
+unless $fetch is false, and empty when it cannot be fetched.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L146" target="_blank" rel="noopener noreferrer">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_store">store</a>(callable $use)
+        
+                                            <p>A store that cannot be used, such as files a command run as another user
+left behind, is treated as empty rather than failing the request.</p>                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L176" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -206,7 +264,7 @@ persist the result to settings, and optionally notify admins.</p>               
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L121" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L194" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -223,7 +281,7 @@ persist the result to settings, and optionally notify admins.</p>               
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L131" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L204" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -240,7 +298,7 @@ persist the result to settings, and optionally notify admins.</p>               
                                     </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L155" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L228" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -257,7 +315,7 @@ persist the result to settings, and optionally notify admins.</p>               
 installed Flarum extensions.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L198" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L271" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -273,7 +331,7 @@ installed Flarum extensions.</p>                </div>
                                             <p>Return the cached map from settings, or an empty array if not yet fetched.</p>                </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L214" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L287" target="_blank" rel="noopener noreferrer">
         <img src="../../assets/img/code.svg" height="18" />
     </a>
 
@@ -288,12 +346,12 @@ installed Flarum extensions.</p>                </div>
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L37" target="_blank" rel="noopener noreferrer">
-            line 37
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L54" target="_blank" rel="noopener noreferrer">
+            line 54
         </a>
         </div>
         <code>                    
-    <strong>__construct</strong>(    <a href="../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions,     <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings,     <abbr title="GuzzleHttp\Client">Client</abbr> $client,     <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Queue/Queue.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></a> $queue,     <a href="../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a> $translator,     <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>|null $logger = null)
+    <strong>__construct</strong>(    <a href="../../Flarum/Extension/ExtensionManager.html"><abbr title="Flarum\Extension\ExtensionManager">ExtensionManager</abbr></a> $extensions,     <a href="../../Flarum/Settings/SettingsRepositoryInterface.html"><abbr title="Flarum\Settings\SettingsRepositoryInterface">SettingsRepositoryInterface</abbr></a> $settings,     <abbr title="GuzzleHttp\Client">Client</abbr> $client,     <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Queue/Queue.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Queue\Queue">Queue</abbr></a> $queue,     <a href="../../Flarum/Locale/TranslatorInterface.html"><abbr title="Flarum\Locale\TranslatorInterface">TranslatorInterface</abbr></a> $translator,     <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>|null $logger = null,     <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Cache/Repository.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Cache\Repository">Repository</abbr></a>|null $cache = null)
         </code>
     </h3>
     <div class="details">
@@ -334,6 +392,11 @@ installed Flarum extensions.</p>                </div>
                 <td>$logger</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>    <a href="https://laravel.com/api/13.x/Illuminate/Contracts/Cache/Repository.html" target="_blank" rel="noopener noreferrer"><abbr title="Illuminate\Contracts\Cache\Repository">Repository</abbr></a>|null</td>
+                <td>$cache</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -346,8 +409,8 @@ installed Flarum extensions.</p>                </div>
                     <div class="method-item">
                     <h3 id="method_sync">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L60" target="_blank" rel="noopener noreferrer">
-            line 60
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L79" target="_blank" rel="noopener noreferrer">
+            line 79
         </a>
         </div>
         <code>                    array
@@ -359,8 +422,9 @@ installed Flarum extensions.</p>                </div>
     
 
                     <div class="method-description">
-                                    <p>Fetch the upstream abandoned extensions list, filter to installed packages,
-persist the result to settings, and optionally notify admins.</p>                    <p>When $notify is true and the notify-admins setting is enabled:
+                                    <p>Fetch the upstream abandoned extensions list, keep all of it for
+getFullMap(), persist the installed packages&#039; entries to settings, and
+optionally notify admins.</p>                    <p>When $notify is true and the notify-admins setting is enabled:
 - On a scheduled (automatic) run: only notifies about packages newly flagged
   since the last sync, to avoid repeating the same email every week.
 - On a manual run ($manual = true): notifies about all currently installed
@@ -407,10 +471,101 @@ persist the result to settings, and optionally notify admins.</p>               
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getFullMap">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L146" target="_blank" rel="noopener noreferrer">
+            line 146
+        </a>
+        </div>
+        <code>                    array
+    <strong>getFullMap</strong>(bool $fetch = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Every package on the upstream list, installed or not, for checking
+packages before they are installed. Fetched when nothing is stored,
+unless $fetch is false, and empty when it cannot be fetched.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$fetch</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_store">
+        <div class="location">
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L176" target="_blank" rel="noopener noreferrer">
+            line 176
+        </a>
+        </div>
+        <code>            protected        mixed
+    <strong>store</strong>(callable $use)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A store that cannot be used, such as files a command run as another user
+left behind, is treated as empty rather than failing the request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$use</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_pendingNotification">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L121" target="_blank" rel="noopener noreferrer">
-            line 121
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L194" target="_blank" rel="noopener noreferrer">
+            line 194
         </a>
         </div>
         <code>            protected        array
@@ -441,8 +596,8 @@ persist the result to settings, and optionally notify admins.</p>               
                     <div class="method-item">
                     <h3 id="method_fetch">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L131" target="_blank" rel="noopener noreferrer">
-            line 131
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L204" target="_blank" rel="noopener noreferrer">
+            line 204
         </a>
         </div>
         <code>            protected        array
@@ -482,8 +637,8 @@ persist the result to settings, and optionally notify admins.</p>               
                     <div class="method-item">
                     <h3 id="method_notifyAdmins">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L155" target="_blank" rel="noopener noreferrer">
-            line 155
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L228" target="_blank" rel="noopener noreferrer">
+            line 228
         </a>
         </div>
         <code>            protected        void
@@ -529,8 +684,8 @@ persist the result to settings, and optionally notify admins.</p>               
                     <div class="method-item">
                     <h3 id="method_installedPackageNames">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L198" target="_blank" rel="noopener noreferrer">
-            line 198
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L271" target="_blank" rel="noopener noreferrer">
+            line 271
         </a>
         </div>
         <code>            protected        array
@@ -564,8 +719,8 @@ installed Flarum extensions.</p>                                                
                     <div class="method-item">
                     <h3 id="method_getCachedMap">
         <div class="location">
-                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L214" target="_blank" rel="noopener noreferrer">
-            line 214
+                        at         <a href="https://github.com/flarum/framework/blob/2.x/framework/core/src/Extension/AbandonedExtensionsFetcher.php#L287" target="_blank" rel="noopener noreferrer">
+            line 287
         </a>
         </div>
         <code>        static            array
